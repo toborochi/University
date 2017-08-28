@@ -1,0 +1,1486 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{afterpage}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage{makeidx}
+\usepackage{pstricks}
+\usepackage{tikz}
+\usepackage{fancybox}
+\usepackage{pst-node}
+\usepackage{pgfkeys}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+
+\usepackage[headheight=15pt,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usetikzlibrary{shapes.geometric,arrows,positioning,fit,calc,shapes}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Apuntes de Cálculo I}
+\fancyhead[RE,LO]{\includegraphics[scale=0.15]{uagrm}}
+\fancyfoot[CE,CO]{\leftmark}
+\cfoot{\thepage}
+
+\author{Añez Vladimirovna Leonardo}
+\title
+{
+\includegraphics[scale=0.40]{ficct_monocromo}\\ \vspace{2cm}
+{\LARGE \textbf{APUNTES DE CALCULO I}} \\ {\large Semestre I-2017} \\ \vspace{1cm} 
+{\large Universidad Autónoma Gabriel René Moreno}\\
+{\normalsize Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones}
+}
+
+\graphicspath{ {images/} }
+
+\setlength{\headheight}{17pt}
+
+\definecolor{myblue}{RGB}{56,94,141}
+\pgfplotsset{compat=1.14}
+
+\newcommand*\ruleline[1]{\par\noindent\raisebox{.8ex}{\makebox[\linewidth]{\hrulefill\hspace{1ex}\raisebox{-.8ex}{#1}\hspace{1ex}\hrulefill}}}
+
+\begin{document}
+ 	
+ \maketitle
+ 
+ \tableofcontents
+ 
+\chapter{Introducción}
+En este capítulo se llevan temas introductorios como la noción de conjuntos, conjuntos numéricos, operaciones con conjuntos y desigualdades.
+\section{Conjuntos}
+\subsection{Concepto}
+
+\begin{framed}\noindent
+Un conjunto es simplemente una colección de objetos. En ocasiones se hace referencia a los objetos como elementos o miembros.
+\begin{flushright}
+\textit{{\scriptsize Matemáticas Discretas, Sexta Edición, Richard Johnsonbaugh - Capítulo 2}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+
+
+\subsection{Conjuntos Numéricos}
+\subsubsection{Números Naturales}
+Son aquellos que utilizamos para ordenar y contar, se representan con el símbolo: $\mathbb{N}$ 
+
+\begin{center}
+$\mathbb{N} = \lbrace 1,2,3,4,5,6,7,... \rbrace$
+\end{center}
+
+\subsubsection{Números Enteros}
+Es el conjunto de números formados por los Números Naturales, el Cero y los números Naturales con signo negativo, se representan con el símbolo: $\mathbb{Z}$
+
+\begin{center}
+$\mathbb{Z} = \lbrace ...,-3,-2,-1,0,1,2,3,... \rbrace$
+\end{center}
+
+\subsubsection{Números Racionales}
+Son los números que pueden ser expresados como la división de dos números enteros donde el divisor puede ser cualquier número entero \textit{excepto} el cero. Se representa con el símbolo: $\mathbb{Q}$
+
+\begin{center}
+$\mathbb{Q} = \bigg\lbrace x / x = \dfrac{a}{b} \hspace{0.3cm} \wedge \hspace{0.3cm} a,b \in \mathbb{Z}  \hspace{0.3cm} \wedge \hspace{0.3cm} b \neq 0 \bigg\rbrace$
+\end{center}
+
+\subsubsection{Números Irracionales}
+Son los números que no pueden ser expresados como la división de dos números enteros. Se representa con el símbolo: $\mathbb{I}$. Algunos ejemplos de estos números son: $\pi$, $\sqrt{2}$ y $e$
+
+\subsubsection{Números Reales}
+Es la unión de los conjuntos de números racionales e irracionales. Se representa con el símbolo: $\mathbb{R}$
+
+\begin{figure}[ht]
+
+\begin{center}
+\begin{tikzpicture}
+        
+        %\node (root) at (0,0) [draw=red, circle, radius=3cm] {};
+		\draw [] (0,0) circle (0.4cm)
+            node (sun) {};
+        \node (sunlabel) [above=-0.45 of sun]{ $\mathbb{N}$ };    
+        
+        \draw [] (0,0) circle (1cm)
+            node (sun) {};
+        \node (sunlabel) [above=0.25 of sun]{ $\mathbb{Z}$ };  
+        
+        \draw [] (0,0) circle (1.7cm)
+            node (sun) {};
+        \node (sunlabel) [above=0.85 of sun]{ $\mathbb{Q}$ };         
+            
+        \draw [] (2.35,0) circle (0.6cm)
+            node (sun) {};
+        \node (sunlabel) [above=-0.5 of sun]{ $\mathbb{I}$ };  
+        %draw=black, ultra thick
+        \draw [] (0,0) circle (3.5cm)
+            node (sun) {};
+        \node (sunlabel) [above=2 of sun]{ $\mathbb{R}$ };          
+        
+         
+            
+            
+    \end{tikzpicture}
+    \caption{En Cálculo, el conjunto sobre el que se trabaja es el conjunto de los números Reales.}
+\end{center}
+\end{figure}
+\section{Operaciones con Conjuntos}
+
+\subsection{Unión}
+\begin{framed}\noindent
+La unión de dos conjuntos $A$ y $B$ es el conjunto formado por los elementos que pertenecen a $A$ o a $B$.
+\begin{flushright}
+\textit{{\scriptsize Álgebra I, Armando Rojo - Capitulo 2}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+
+\subsubsection{Diagrama de Venn}
+\begin{center}
+\begin{tikzpicture}
+%\fill[black] (-1.85,-1.65) rectangle (3.65,1.4);
+\fill[white] (-2,-1.5) rectangle (3.5,1.5);
+\draw (-2,-1.5) rectangle (3.5,1.5) node[below left]{$U$};
+\fill[lightgray] (0,0) circle (1cm);
+\fill[lightgray] (1.5,0) circle (1cm);
+\draw (0,0) circle (1cm) node {$A$};
+\draw (1.5,0) circle (1cm) node {$B$};
+\end{tikzpicture}
+\end{center}
+\subsubsection{Definición Formal}
+
+\begin{center}
+$A \cup B \Leftrightarrow \lbrace x/x \in A$ $\vee$ $x\in B \rbrace$
+\end{center}
+
+\ruleline{\textbf{Ejemplos}}
+\noindent{\textbf{1.} Dado el conjunto $A$ y el conjunto $B$, donde:} $A = \lbrace 1,2,3,4,5 \rbrace$ y $B = \lbrace 4,5,6, 13,17 \rbrace$.\\ La unión de estos dos conjuntos será:
+\begin{center}
+$A \cup B = \lbrace 1,2,3,4,5,6,13,17 \rbrace$
+\end{center}
+
+\noindent{\textbf{2.} Dado el conjunto $M$ y el conjunto $N$, donde:} $M = \lbrace a,b,c \rbrace$ y $N = \lbrace x,y,z \rbrace$.\\ La unión de estos dos conjuntos será:
+\begin{center}
+$M \cup N = \lbrace a,b,c,x,y,z \rbrace$
+\end{center}
+
+\noindent{\textbf{3.} Dado los conjuntos $A,B$ y $C$, donde:} $A = \lbrace 1,2 \rbrace$ , $ B= \lbrace a,b \rbrace$ y $C = \lbrace p,q \rbrace$\\ La unión de estos conjuntos será:
+\begin{center}
+$A \cup B \cup C = \lbrace 1,2,a,b,p,q \rbrace$
+\end{center}
+
+
+\subsection{Intersección}
+\begin{framed}\noindent
+La Intersección de dos conjuntos $A$ y $B$ es el conjunto formado por los elementos que pertenecen a $A$ y a $B$.
+\begin{flushright}
+\textit{{\scriptsize Álgebra I, Armando Rojo - Capitulo 2}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+\subsubsection{Diagrama de Venn}
+\begin{center}
+\begin{tikzpicture}
+%\fill[black] (-1.85,-1.65) rectangle (3.65,1.4);
+\fill[white] (-2,-1.5) rectangle (3.5,1.5);
+\draw (-2,-1.5) rectangle (3.5,1.5) node[below left]{$U$};
+\begin{scope}                       % start of clip scope
+\clip (0,0) circle (1cm);
+\fill[lightgray] (1.5,0) circle (1cm);
+\end{scope}                         % end of clip scope
+\draw (0,0) circle (1cm) node[left] {$A$};
+\draw (1.5,0) circle (1cm) node[right] {$B$};
+\end{tikzpicture}
+\end{center}
+\subsubsection{Definición Formal}
+\begin{center}
+$A \wedge B \Leftrightarrow \lbrace x/x \in A$ $\wedge$ $x\in B \rbrace$ 
+\end{center}
+
+\ruleline{\textbf{Ejemplos}}
+\noindent{\textbf{1.} Dado el conjunto $A$ y el conjunto $B$, donde:} $A = \lbrace a,b,c \rbrace$ y $B = \lbrace b,c,d \rbrace$.\\ La intersección de estos dos conjuntos será:
+\begin{center}
+$A \cap B = \lbrace b,c \rbrace$
+\end{center}
+
+\noindent{\textbf{2.} Dado los conjuntos $A,B$ y $C$, donde:} $A = \lbrace 1,2,4 \rbrace$ , $ B= \lbrace 2,3,4 \rbrace$ y $C = \lbrace 2,3,4,5 \rbrace$\\ La intersección de estos conjuntos será:
+\begin{center}
+$A \cap B \cap C = \lbrace 2,4 \rbrace$
+\end{center}
+
+
+\noindent{\textbf{3.} Dado los conjuntos $P$ y $Q$, donde:} $P = \lbrace gatos,perros \rbrace$ y $ Q= \lbrace gatos,loros \rbrace$.\\ La intersección de estos conjuntos será:
+\begin{center}
+$P \cap Q= \lbrace gatos \rbrace$
+\end{center}
+
+
+\subsection{Complemento}
+\begin{framed}\noindent
+Se define como el complemento de $A$ al conjunto formado por los elementos de $U$, que no pertenecen a $A$.
+\begin{flushright}
+\textit{{\scriptsize Álgebra I, Armando Rojo - Capitulo 2}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+
+\subsubsection{Diagrama de Venn}
+\begin{center}
+\begin{tikzpicture}
+%\fill[black] (-1.85,-1.65) rectangle (3.65,1.4);
+\fill[white] (-2,-1.5) rectangle (3.5,1.5);
+\fill[lightgray] (-2,-1.5) rectangle (3.5,1.5);
+\draw (-2,-1.5) rectangle (3.5,1.5) node[below left]{$U$};
+\fill[white] (0.8,0) circle (1cm);
+\draw (0.8,0) circle (1cm) node {$A$};
+\end{tikzpicture}
+\end{center}
+\subsubsection{Definición Formal}
+\begin{center}
+ $A^{c} \Leftrightarrow \lbrace x/x \notin A \rbrace$
+\end{center}
+
+\ruleline{\textbf{Ejemplos}}
+\noindent{\textbf{1.} Dado el conjunto $A$ y el Universo $U$, donde:} $A = \lbrace 1,2,3 \rbrace$ y $U = \lbrace 1,2,3,4,5,6,7,8 \rbrace$.\\ El complemento de $A$ será:
+\begin{center}
+$A^c = \lbrace 4,5,6,7,8 \rbrace$
+\end{center}
+
+\noindent{\textbf{2.} Dado el conjunto $Q$ y el Universo $U$, donde: $Q = \lbrace a,x \rbrace$ y $U = \lbrace a,b,c,x,y,z \rbrace$.\\El complemento de $Q$ será:
+\begin{center}
+$Q^c = \lbrace b,c,y,z \rbrace$
+\end{center}
+
+
+\noindent{\textbf{3.} Dado el conjunto $P$, el cual es parte del conjunto $\mathbb{N}$ (Conjunto de Números Naturales), donde: $P = \lbrace x / x \text{ es par} \rbrace$. El complemento del conjunto $P$, serán todos los números naturales que sean impares.
+
+
+\subsection{Diferencia}
+\begin{framed}\noindent
+La Diferencia entre dos conjuntos $A$ y $B$ es el conjunto formado por los elementos de $A$ que no pertenecen a $B$.
+\begin{flushright}
+\textit{{\scriptsize Álgebra I, Armando Rojo - Capitulo 2}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+\subsubsection{Diagrama de Venn}
+\begin{center}
+\begin{tikzpicture}
+%\fill[black] (-1.85,-1.65) rectangle (3.65,1.4);
+\fill[white] (-2,-1.5) rectangle (3.5,1.5);
+\draw (-2,-1.5) rectangle (3.5,1.5) node[below left]{$U$};
+\fill[lightgray] (0,0) circle (1cm);
+\fill[white] (1.5,0) circle (1cm);
+\draw (0,0) circle (1cm) node {$A$};
+\draw (1.5,0) circle (1cm) node {$B$};
+\end{tikzpicture}
+\end{center}
+
+\subsubsection{Definición Formal}
+\begin{center}
+$A - B \Leftrightarrow \lbrace x/x \in A$ $\wedge$ $x\notin B \rbrace$
+\end{center}
+
+\ruleline{\textbf{Ejemplos}}
+\noindent{\textbf{1.} Dado el conjunto $A$ y el conjunto $B$, donde:} $A = \lbrace a,b,c,d,e \rbrace$ y $B = \lbrace a,c,d \rbrace$.\\ La diferencia de estos dos conjuntos será:
+\begin{center}
+$A - B = \lbrace b,e \rbrace$
+\end{center}
+
+\noindent{\textbf{2.} Dado el conjunto $M$ y el conjunto $N$, donde:} $M = \lbrace 1,2,3,4,5,6 \rbrace$ y $N = \lbrace 4,5,6,7 \rbrace$.\\ La diferencia de estos dos conjuntos será:
+\begin{center}
+$M - N = \lbrace 1,2,3 \rbrace$
+\end{center}
+
+\noindent{\textbf{3.} Con los anteriores conjuntos $M$ y $N$, la diferencia $N-M$ será:}
+\begin{center}
+$N - M = \lbrace 7 \rbrace$
+\end{center}
+
+
+\section{Desigualdades}
+\begin{framed}\noindent
+Es una declaración matemática que define un rango de números; las desigualdades contienen los símbolos $<,>,\leq $ o $\geq$.
+\begin{flushright}
+\textit{{\scriptsize Álgebra I - www.montereyinstitute.org}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+
+\subsection{Reglas}
+\begin{framed}\noindent
+\textbf{(I).} Si a ambos lados de una desigualdad se suma el mismo número, la desigualdad no cambia.\\${ }$\\
+\textbf{(II).} Si a ambos lados de una desigualdad se multiplica por un número positivo, la desigualdad no cambia.\\${ }$\\
+\textbf{(III).} Si a ambos lados de una desigualdad se multiplican por un número negativo, la desigualdad cambia de sentido.
+\end{framed}
+\ruleline{\textbf{Ejemplos}}
+\noindent{\textbf{1.}} Hallar el Conjunto Solución en la siguiente desigualdad:
+\begin{center}
+$2x > 5 - x$
+\end{center}
+\textbf{Resolución}\\${ }$\\
+\textbf{P1.} $2x > 5 - x$ \\
+\textbf{P2.} $2x + x > 5 - x + x$ \\
+\textbf{P3.} $3x > 5 $  \\${ }$\\
+\textbf{P4.} $x > \dfrac{5}{3} $ \\
+Entonces el Conjunto Solución para la desigualdad será: $\bigg( \dfrac{5}{3} , \infty \bigg)$\\${ }$\\
+\noindent{\textbf{2.}} Hallar el Conjunto Solución en la siguiente desigualdad:
+\begin{center}
+$ x^2 -7x +6 \leq  0 $
+\end{center}
+\textbf{Resolución}\\${ }$\\
+\textbf{P1.} $x^2 -7x +6 \leq 0$ \\
+\textbf{P2.} $(x-6)(x-1)\leq 0$ \\
+\textbf{P3.} Si separamos tendremos $ x-6\leq 0 $ y $ x-1\leq 0$ \\
+\textbf{P4.} Entonces podremos decir que $x\leq 6$ y $x\leq 1$\\${ }$\\
+Entonces el Conjunto Solución para la desigualdad será: $[1,6]$\\${ }$\\
+\noindent{\textbf{3.}} Hallar el Conjunto Solución en la siguiente desigualdad:
+\begin{center}
+$ \dfrac{x-1}{x+1} \leq \dfrac{1}{2} $
+\end{center}
+\textbf{Resolución}\\${ }$\\
+\textbf{P1.} $ \dfrac{x-1}{x+1} \leq \dfrac{1}{2} $ \\${ }$\\
+\textbf{P2.} $ \dfrac{x-1}{x+1} - \dfrac{1}{2} \leq 0 $ \\${ }$\\
+\textbf{P3.} $ \dfrac{x-3}{2(x+1)} \leq 0 $ \\${ }$\\
+\textbf{P4.} Tomando como puntos de referencia tenemos $x - 3 \leq 0$ y $2(x+1) < 0$\\${ }$\\
+Obsérvese que $2(x+1) < 0$ no tiene $\leq$ ya que como es el denominador no puede ser igual a cero.\\${ }$\\
+\noindent{El Conjunto Solución es: $(-1,3]$.}\\${ }$\\
+ 
+\noindent{\textbf{4. }}Hallar el conjunto solución de la siguiente desigualdad:
+\begin{center}
+$14-x>4x-1$
+\end{center}
+\textbf{Resolución:}\\${ }$\\
+\textbf{P1. } $14-x>4x-1$\\
+\textbf{P2. } $-x-4x>-1-14$\\
+\textbf{P3. } $-5x > -15 $\\
+\textbf{P4. } $-x > -3 $  $ \cdot(-1)$\\
+\textbf{P5. } $x <3 $\\${ }$\\
+El Conjunto Solución para esta desigualdad será: $(-\infty,3).$
+\noindent{Hasta el paso \textbf{4.} la desigualdad se trabaja como una ecuación cualquiera. En el quinto paso lo que hacemos es multiplicar cada extremo por $-1$, para deshacernos del signo negativo del lado de la $x$. Una vez hecho esto la desigualdad cambia de sentido (ver regla \textbf{III.}), cambiamos $>$ por $<$.}\\${ }$\\
+
+\noindent{\textbf{5.}} Hallar el Conjunto Solución en la siguiente desigualdad:
+\begin{center}
+ $ x^2 > -(2x+1)$
+\end{center} 
+\textbf{Resolución:}\\${ }$\\
+\textbf{P1. } $x^2 > -(2x+1)$ \\
+\textbf{P2. } $x^2 > -2x-1$ \\
+\textbf{P3. } $x^2 +2x +1 > 0$ \\
+\textbf{P4. } $(x+1)^2 > 0$ \\${ }$\\
+En esta desigualdad podemos ver que el único valor que no puede estar en $x$ es el $-1$. \\${ }$\\Entonces el Conjunto Solución serán todos los números Reales ($\mathbb{R}$) excepto el $-1$.
+
+\subsection{Desigualdades con Valor Absoluto}
+\subsubsection{Valor Absoluto}
+\begin{framed}\noindent
+El valor absoluto de un número real es su distancia al cero. Puesto que un número real puede ser
+positivo, negativo o cero, se tiene:
+
+\begin{center}
+$|a| = \begin{cases} a & \mbox{si } a\geq 0 \\ -a & \mbox{si } a<0 \end{cases}$
+\end{center}
+
+\begin{flushright}
+\textit{{\scriptsize Desigualdades y Valor Absoluto, CIMAT - Capítulo 2}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+\subsubsection{Teoremas}
+\begin{framed}\noindent
+\textbf{T1.} $|a| < b \Leftrightarrow -b < a < b$\\${ }$\\
+\textbf{T2.} $|a| > b \Leftrightarrow a>b \hspace{0.3cm} \vee \hspace{0.3cm} a<-b$
+\end{framed}
+\ruleline{\textbf{Ejemplos}}
+\textbf{1.} Dada la siguiente desigualdad, encontrar su Conjunto Solución:
+\begin{center}
+$|5+x|< 17$
+\end{center}
+\textbf{Resolución}\\${ }$\\
+\textbf{P1.} $|5+x|< 17$ \\
+\textbf{P2.} $-17 < 5+x < 17$\\
+\textbf{P3.} $-17-5< 5+x-5 < 17-5$\\
+\textbf{P4.} $-22 < x < 12$\\${ }$\\
+El Conjunto Solución de la desigualdad se encuentra en el intervalo: $(-22,12)$.
+\\${ }$\\
+\textbf{2.} Dada la siguiente desigualdad, encontrar su Conjunto Solución:
+\begin{center}
+$|2x|>4$
+\end{center}
+\textbf{Resolución}\\${ }$\\
+\textbf{P1.} $|2x|>4$ \\
+\textbf{P2.} $2x>4 \hspace{0.3cm} \vee \hspace{0.3cm} 2x<-4$\\
+\textbf{P3.} $x>2 \hspace{0.3cm} \vee \hspace{0.3cm} x<-2$\\${ }$\\
+El Conjunto Solución de la desigualdad será: $(-\infty,-2)\cup (2,\infty)$\\${ }$\\
+\textbf{3.} Dada la siguiente desigualdad, encontrar su Conjunto Solución:
+\begin{center}
+$|2x| < 16$
+\end{center}
+\textbf{Resolución}\\${ }$\\
+\textbf{P1.} $|2x| < 16 $ \\
+\textbf{P2.} $-16 < 2x < 16$\\
+\textbf{P3.} $-8 < x < 8$\\${ }$\\
+El Conjunto Solución de la desigualdad se encuentra en el intervalo: $(-22,12)$.
+\\${ }$\\
+
+
+
+\chapter{Relaciones y Funciones}
+\section{Relaciones}
+\subsection{Par Ordenado}
+\begin{framed}\noindent
+Un par ordenado, es una pareja de elementos $(a,b)$ que guardan cierto orden. Donde $a$ es la primer componente y $b$ la segunda componente.
+\end{framed}
+\subsubsection{Propiedad}
+\begin{center}
+$(a,b) = (c,d) \Leftrightarrow a=c \hspace{0.3cm}\wedge \hspace{0.3cm} b=d$ 
+\end{center}
+Esto quiere decir que dos pares ordenados son iguales si sus primeras y segundas componentes son iguales respectivamente.
+\subsection{Producto Cartesiano}
+
+\begin{framed}\noindent
+El Producto Cartesiano $A \times B$ de los conjuntos $A,B$; es el conjunto de todos los pares ordenados $(a,b)$; donde $a \in A$, $b \in B$. Simbólicamente se tiene:
+\begin{center}
+$A \times B = \lbrace (a,b)/ a\in A \hspace{0.3cm} \wedge \hspace{0.3cm} b \in B \rbrace$
+\end{center}
+\begin{flushright}
+\textit{{\scriptsize Cálculo I, Víctor Chungara - Capítulo 2}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+\ruleline{\textbf{Ejemplos}}
+\textbf{1.} Si se tiene dos conjuntos $A=\lbrace 1,2,3 \rbrace$ y $B = \lbrace 4,5 \rbrace$. El producto cartesiano $A \times B$ será:
+
+\begin{center}
+$A \times B = \lbrace  (1,4),(1,5),(2,4),(2,5),(3,4),(3,5) \rbrace$
+\end{center}
+Nótese que las primeras componentes son todos partes del primer conjunto $A$ y las segundas componentes del conjunto $B$.\\${ }$\\
+\textbf{2.} Si se tiene el conjunto $A=\lbrace a,b,c \rbrace$. El producto cartesiano $A \times A$ será:
+
+\begin{center}
+$A \times A = \lbrace  (a,a),(a,b),(a,c),(b,a),(b,b),(b,c),(c,a),(c,b),(c,c) \rbrace$
+\end{center}
+
+\noindent{\textbf{3.}} Si $M=\lbrace x,y \rbrace$ y $N= \lbrace p,q \rbrace$, entonces $N \times M = \lbrace (p,x),(p,y),(q,x),(q,y) \rbrace$.
+
+
+\subsection{Relación}
+\begin{framed}\noindent
+Una relación de $A$ en $B$ es un subconjunto del producto cartesiano $A \times B$.
+\end{framed}
+\ruleline{\textbf{Ejemplos}}
+Utilizando los productos cartesianos del anterior ejemplo, algunas relaciones posibles pueden ser:\\${ }$\\
+\textbf{1.} $S = \lbrace (1,4),(1,5),(2,4) \rbrace \subset A \times B$ \\${ }$\\
+\textbf{2.} $K = \lbrace (p,x),(q,y) \rbrace \subset N \times M$\\${ }$\\
+\textbf{3.} $W = \lbrace (a,a),(b,b),(c,c) \rbrace \subset A \times A$
+
+\section{Funciones}
+\begin{framed}\noindent
+Una función $f$ consiste en un conjunto de entrada, un conjunto de salida, y una regla que asigna a cada entrada exactamente una salida. El conjunto de entrada es llamado \textbf{Dominio.} El conjunto de salida es llamado \textbf{Rango} de la función.
+\begin{flushright}
+\textit{{\scriptsize Calculus Volume 1, Edwin Herman \& Gilbert Strang - Capitulo 1 (Traducido)}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+\subsubsection{Criterios de Funciones}
+Los siguientes puntos son criterios que determinan si una relación es una función:
+\begin{framed}\noindent
+\textbf{Totalidad: } Todos los elementos del primer conjunto están emparejados con otro elemento del segundo conjunto.\\${ }$\\
+\textbf{Unicidad: } Cada elemento de del primer conjunto está relacionado con solo un elemento del segundo conjunto.
+\end{framed}
+\ruleline{\textbf{Ejemplos}}
+
+\begin{figure}[h]
+\centering
+
+\begin{subfigure}[b]{0.4\textwidth}
+\begin{center}
+\begin{tikzpicture}[line width=0.25mm]
+\node (a1) {\textbullet};
+\node[below=0.2cm of a1] (a2) {\textbullet};
+\node[below=0.2cm of a2] (a3) {\textbullet};
+
+\node[right=2cm of a1] (b1) {\textbullet};
+\node[below=0.2cm of b1] (b2) {\textbullet};
+\node[below=0.2cm of b2] (b3) {\textbullet};
+
+\node[shape=ellipse,draw=black,minimum size=1.5cm,fit={(a1) (a3)}] {};
+\node[shape=ellipse,draw=black,minimum size=1.5cm,fit={(b1) (b3)}] {};
+
+\node[below=1cm of a3,font=\color{black}\bfseries] {A};
+\node[below=1cm of b3,font=\color{black}\bfseries] {B};
+
+\draw[-latex,black] (a1) -- (b1);
+\draw[-latex,black] (a1) -- (b2);
+\draw[-latex,black] (a3) -- (b2);
+\draw[-latex,black] (a2) -- (b3);
+\end{tikzpicture}
+\end{center}
+\end{subfigure}
+%
+\begin{subfigure}[b]{0.4\textwidth}
+\begin{center}
+\begin{tikzpicture}[line width=0.25mm]
+\node (a1) {\textbullet};
+\node[below=0.2cm of a1] (a2) {\textbullet};
+\node[below=0.2cm of a2] (a3) {\textbullet};
+
+\node[right=2cm of a1] (b1) {\textbullet};
+\node[below=0.2cm of b1] (b2) {\textbullet};
+\node[below=0.2cm of b2] (b3) {\textbullet};
+
+\node[shape=ellipse,draw=black,minimum size=1.5cm,fit={(a1) (a3)}] {};
+\node[shape=ellipse,draw=black,minimum size=1.5cm,fit={(b1) (b3)}] {};
+
+\node[below=1cm of a3,font=\color{black}\bfseries] {A};
+\node[below=1cm of b3,font=\color{black}\bfseries] {B};
+
+\draw[-latex,black] (a1) -- (b1);
+\draw[-latex,black] (a2) -- (b3);
+\draw[-latex,black] (a3) -- (b3);
+\end{tikzpicture}
+\end{center}
+\end{subfigure}
+
+\caption{{\footnotesize Relaciones representadas por diagramas.}}
+\end{figure}
+{\footnotesize La primera relación cumple con la condición de \textbf{Totalidad}, es decir, ningún elemento del primer conjunto está sin pareja, pero no cumple en la \textbf{Unicidad} ya que de un elemento de partida salen dos flechas hacia el conjunto de llegada, así que este no es una función. El segundo ejemplo cumple con ambas condiciones, entonces decimos que es una función.}
+
+\subsection{Dominio y Rango}
+
+\begin{framed}\noindent
+\textbf{Dominio: }Es el conjunto de Primeras Componentes de los pares ordenados de una función. \\${ }$\\
+\textbf{Rango: } También llamado Codominio, es el conjunto de las segundas componentes de los pares ordenados de una función.
+\begin{flushright}
+\textit{{\scriptsize Cálculo I, Víctor Chungara - Capítulo 2}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+\ruleline{\textbf{Ejemplos}}
+\textbf{1.} Dada la función $f$, donde $f=\lbrace (1,2),(2,4),(3,6),(4,8) \rbrace$ su Dominio y Rango serán:
+
+\begin{center}
+\textbf{Dominio: } $D_f = \lbrace 1,2,3,4 \rbrace$ \hspace{1.5cm} \textbf{Rango: } $R_f = \lbrace 2,4,6,8 \rbrace$
+\end{center}
+En el Dominio tenemos las primeras componentes de los pares ordenados de $f$ y en el Rango las segundas componentes.\\${ }$\\
+\textbf{2.} Se tiene la siguiente gráfica que describe una función $f$:
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+\addplot [only marks] table {
+-2 -3
+3 4
+};
+\addplot[black] coordinates{(-2,-3)(3,4)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+Su Dominio estará extendido sobre el eje $x$, y será $D_f=[-2,3]$ y su Rango sobre el eje $y$ y será $R_f=[-3,4]$\\${ }$\\
+
+
+\noindent{\textbf{3.}} Se tiene la siguiente gráfica que describe una función $f$ tal que $D_f=\mathbb{R}$ (Es decir, el Dominio está compuesto por todos los números Reales) y $R_f=[0,\infty] $.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+\draw[-latex] (0,0) parabola (4,4);
+\draw[-latex] (0,0) parabola (-4,4);
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection{Restricciones}
+\begin{framed}\noindent
+\textbf{(I.)} Evitar la división entre cero.\\${ }$\\
+\textbf{(II.)} Evitar números negativos bajo raíz par.\\${ }$\\
+\textbf{(III.)} Evitar números negativos como argumentos de logaritmos.\\${ }$\\
+\textbf{(IV.)} En una función exponencial la base debe ser mayor a cero.
+\end{framed}
+
+\ruleline{\textbf{Ejemplos}}
+\textbf{1.} Hallar el Dominio de la siguiente función:
+
+\begin{center}
+$f(x)=\sqrt{x^2 - 9}$
+\end{center}
+Viendo esta función, rápidamente podemos afirmar que lo que está dentro de la raíz no puede ser negativo. Entonces: $x^2 - 9 \geq 0$\\${ }$\\
+Podemos reescribir $x^2-9\geq 0$ de la siguiente manera: $(x-3)(x+3)\geq 0$. Con esta desigualdad, podemos decir:
+\begin{center}
+$x_1=3 \hspace{1cm} x_2=-3$
+\end{center}
+Estos valores son \textbf{referencias} que utilizaremos para hallar el Dominio.\vspace{1cm}
+
+\begin{center}
+\begin{tikzpicture}
+\draw[latex-latex] (-6.5,0) -- (6.5,0) ; %edit here for the axis
+\foreach \x in  {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6} % edit here for the vertical lines
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6} % edit here for the numbers
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+{$\x$};
+%\draw[*-o] (0,0.5) -- (2,0.5);
+\draw[*-o] (-3,0.5);
+\draw[*-o] (3,0.5);
+
+%\draw[very thick] (0,0.5) -- (1.85,0.5);
+\end{tikzpicture}
+\end{center}
+Tomando estas dos referencias, la recta se divide en tres intervalos. Para hallar el Dominio reemplazamos en la desigualdad cualquier valor que se encuentre en los intervalos. Por comodidad utilizar el intervalo donde esté el cero es mas conveniente ya que es mas fácil de operar cuando reemplazamos en la desigualdad. El cero se encuentra en el intervalo entre $-3$ y $3$. Reemplazando en la desigualdad:\\${ }$\\
+\textbf{P1.} $(x-3)(x+3)$\\
+\textbf{P2.} $(0-3)(0+3)$\\
+\textbf{P3.} $(-3)(3)$\\
+\textbf{P4.} $-9$\\${ }$\\
+Con este resultado, sabemos que cualquier número entre $-3$ y $3$ que reemplacemos en la desigualdad, nos dará un número negativo. Para saber el signo que tendrán los otros intervalos intervalos basta colocarlos de manera intercalada.
+
+\begin{center}
+\begin{tikzpicture}
+\draw[latex-latex] (-6.5,0) -- (6.5,0) ; %edit here for the axis
+\foreach \x in  {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6} % edit here for the vertical lines
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6} % edit here for the numbers
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+{$\x$};
+%\draw[*-o] (0,0.5) -- (2,0.5);
+\draw[*-o] (-3,0.5);
+\draw[*-o] (3,0.5);
+\foreach \Point in {(0,1)}{
+    \node at \Point {$-$};
+}
+\foreach \Point in {(4.5,1),(-4.5,1)}{
+    \node at \Point {$+$};
+}
+%\draw[very thick] (0,0.5) -- (1.85,0.5);
+\end{tikzpicture}
+\end{center} 
+\vspace{2cm}
+Por último, la desigualdad nos dice que los valores que tome $x^2 - 9$ tienen que ser positivos, entonces tomamos los intervalos con signo positivo.
+\begin{center}
+\begin{tikzpicture}
+\draw[latex-latex] (-6.5,0) -- (6.5,0) ; %edit here for the axis
+\foreach \x in  {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6} % edit here for the vertical lines
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6} % edit here for the numbers
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+{$\x$};
+%\draw[*-o] (0,0.5) -- (2,0.5);
+\draw[*-o] (-3,0.5);
+\draw[*-o] (3,0.5);
+\foreach \Point in {(0,1)}{
+    \node at \Point {$-$};
+}
+\foreach \Point in {(4.5,1),(-4.5,1)}{
+    \node at \Point {$+$};
+}
+\draw[very thick,latex-] (-6,0.42) -- (-3,0.42);
+\draw[very thick,-latex] (3,0.42) -- (6,0.42);
+\end{tikzpicture}
+\end{center} 
+El Dominio se encuentra desde el $-3$ hacia la izquierda, y desde el $3$ hacia la derecha, Lo escribimos de la siguiente manera:
+\begin{center}
+$D_f = (\infty,-3] \cup [3,\infty)$
+\end{center}
+\subsubsection{Gráfica de la función}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+%\addplot[mark=none,samples=9800,unbounded coords=jump,black] {sqrt(x^2 - 9)};
+\addplot [yshift=-3.63,black,samples=800,latex-latex]  {sqrt(x^2 - 9)};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{2.}} Hallar el dominio de la siguiente función:
+\begin{center}
+$f(x)=\dfrac{2}{x^2+3x-4}$
+\end{center}
+
+Para hallar el Dominio de esta función, primeramente veremos que parte de ella nos presenta alguna restricción, en este caso, el denominador no puede ser cero.
+Igualaremos el denominador a cero, y así sabremos que valores no puede tener $x$:\\${ }$\\
+\textbf{P1.} $x^2+3x-4=0$\\
+\textbf{P2.} $(x+4)(x-1)=0$\\
+\textbf{P3.} $x_1=-4 \hspace{1cm} x_2=1$ \\${ }$\\
+
+\noindent{Entonces el Dominio de la función será:}
+
+\begin{center}
+$D_f= \mathbb{R} - \lbrace -4,1\rbrace$
+\end{center}
+
+\noindent{Esto significa que el Dominio son todos los Reales excepto el número $-4$ y $1$.}
+
+\subsubsection{Gráfica de la función}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot [yshift=0,black,samples=800,restrict expr to domain={(x>-4)&&(x<0.98)||(x>1.02)&&(x<=5)||(x<-4.02)&&(x>-5)}{1:1}]  {2/(x^2 + 3*x -4)};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{3.}} Hallar el Dominio de la siguiente función:}
+
+\begin{center}
+$m(x)=\sqrt{\dfrac{x+2}{x-5}}$
+\end{center}
+
+\noindent{Igual} que los anteriores ejemplos, hay que analizar las restricciones de la función. Primero vemos que tenemos una raíz, esto nos indica que cualquier expresión dentro de esta debe ser mayor o igual a cero, además la expresión dentro de la raíz es una fracción y el denominador de esta debe ser diferente de cero.
+
+\begin{center}
+ $\dfrac{x+2}{x-5} \geq 0$
+\end{center}
+
+Como en el primer ejemplo, tomaremos $(x+2)$ y $(x-5)$, despejando $x$ de cada uno. Estos puntos son \textbf{referencias} para hallar el Dominio.
+\begin{center}
+$x_1=-2 \hspace{1cm} x_2=5$
+\end{center}
+La recta Real quedará dividida en tres intervalos.
+\begin{center}
+\begin{tikzpicture}
+\draw[latex-latex] (-6.5,0) -- (6.5,0) ; %edit here for the axis
+\foreach \x in  {-6,-5,...,6} % edit here for the vertical lines
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-6,-5,...,6} % edit here for the numbers
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+{$\x$};
+%\draw[*-o] (0,0.5) -- (2,0.5);
+\draw[*-o] (-2,0.5);
+
+\foreach \Point in {(5,0.5)}{
+    \node at \Point {$\circ$};
+}
+
+%\draw[very thick] (0,0.5) -- (1.85,0.5);
+\end{tikzpicture}
+\end{center}
+Ahora, podemos reemplazar con cualquier valor que este en los intervalos, pero nos conviene tomar aquel en el que se encuentra el cero. Si reemplazamos:\\${ }$\\
+\textbf{P1.} $\dfrac{x+2}{x-5} $\\${ }$\\
+\textbf{P2.} $\dfrac{0+2}{0-5}$\\${ }$\\
+\textbf{P3.} $-\dfrac{2}{5}$\\${ }$\\
+El intervalo donde se encuentra el cero tendrá signo negativo, el resto de los intervalos se los coloca de manera intercalada.
+
+\begin{center}
+\begin{tikzpicture}
+\draw[latex-latex] (-6.5,0) -- (6.5,0) ; %edit here for the axis
+\foreach \x in  {-6,-5,...,6} % edit here for the vertical lines
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-6,-5,...,6} % edit here for the numbers
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+{$\x$};
+%\draw[*-o] (0,0.5) -- (2,0.5);
+\draw[*-o] (-2,0.5);
+
+\foreach \Point in {(5,0.5)}{
+    \node at \Point {$\circ$};
+}
+
+\foreach \Point in {(1.5,1)}{
+    \node at \Point {$-$};
+}
+\foreach \Point in {(6,1),(-4,1)}{
+    \node at \Point {$+$};
+}
+%\draw[very thick] (0,0.5) -- (1.85,0.5);
+
+\draw[very thick,latex-] (-6,0.42) -- (-2,0.42);
+\draw[very thick,-latex] (5.07,0.51) -- (6,0.51);
+
+\end{tikzpicture}
+\end{center} 
+El Dominio de la función será:
+
+\begin{center}
+$D_m=(\infty,-2] \cup (5,\infty)$
+\end{center}
+
+\subsubsection{Gráfica de la función}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-7,-6,...,7},
+ytick={-7,-6,...,7},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-7.5,
+xmax=7.5,
+ymin=-7.5,
+ymax=7.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+\addplot[black,domain=5.05:7] {1/(x-5)};
+\addplot[black,samples=500,domain=-7:-2] {sqrt( (x+2)/(x-5) };
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{4.}} Hallar el Dominio de la siguiente función:
+
+\begin{center}
+$g(x)=\log(5-x)$
+\end{center}
+
+Primeramente debemos notar que el argumento del logaritmo no debe ser cero o negativo: $5-x>0$. Resolviendo la desigualdad obtenemos que $x$ debe ser menor a 5.
+El Dominio de la función será:
+\begin{center}
+$D_g=(-\infty,5)$
+\end{center}
+\subsubsection{Gráfica de la función}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {log10(5-x)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\section{Tipos de Funciones}
+\subsection{Función Lineal}
+\begin{framed}\noindent
+Una función lineal se define por:
+\begin{center}
+$f(x) = mx + b$
+\end{center}
+Donde $m$ y $b$ son constantes y $m \neq 0$. Su gráfica es una recta cuya pendiente es $m$ y su intercepción y ordenada al origen es $b$.
+\begin{flushright}
+\textit{{\scriptsize El Cálculo, 7ma Edición, Luis Leithold - Capítulo I}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+
+\noindent{\textbf{Casos}}
+\begin{framed}\noindent
+\textbf{(I.)} $f(x)=x$\\${ }$\\
+\textbf{(II.)} $f(x)=mx$ \\${ }$\\
+\textbf{(III.)} $f(x)=mx + b$
+\end{framed}
+\noindent{\textbf{Gráficas}}\\${ }$\\
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {x};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\noindent{\textbf{(I.)}} Esta gráfica simplemente asigna a cualquier valor $x$ el mismo $x$. Debido a esto luce como una línea recta de 45 grados.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {10*x};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{(II.)}} Esta gráfica corresponde al segundo tipo, y en este modelo se tiene la variable $m$, que es la pendiente de la recta. Igual que la anterior gráfica, esta pasa por el origen.
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {-4*x+2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\noindent{\textbf{(III.)}} Esta gráfica no pasa por el origen, y esto es debido a que la variable $b$ hace que se desplace hacia arriba o hacia abajo.
+
+\subsection{Función Polinómica de Grado 2}
+\begin{framed}\noindent
+Las funciones polinómicas de segundo grado se llaman \textit{funciones cuadráticas} y son del tipo:
+
+\begin{center}
+$f(x) = ax^2 + bx + c$
+\end{center}
+Donde $a \neq 0$ y su gráfica es una parábola.
+\begin{flushright}
+\textit{{\scriptsize Artículo, Funciones - calculo.cc}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+
+\noindent{\textbf{Casos}}
+
+\begin{framed}\noindent
+\textbf{(I.)} $f(x)=ax^2$\\${ }$\\
+\textbf{(II.)} $f(x)=ax^2 + c$ \\${ }$\\
+\textbf{(III.)} $f(x)=a(x-h)^2$\\${ }$\\
+\textbf{(IV.)} $f(x)=a(x-h)^2 + k$\\${ }$\\
+\textbf{(V.)} $f(x)=ax^2 + bx + c$
+\end{framed}
+\vspace{7cm}
+\ruleline{\textbf{Ejemplos}}
+\noindent{\textbf{Gráficas}}\\${ }$\\
+\textbf{(I.)} $f(x)=3x^2$
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {3*x^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{(II.)}} $f(x)=3x^2-4$
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {(3*x^2) - 4};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{(III.)}} $f(x)=2(x-3)^2$
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {2*(x-3)^2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\vspace{4cm}
+\noindent{\textbf{(IV.)}} $f(x)=2(x-3)^2 - 3$
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {2*(x-3)^2 - 3};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{(V.)}} $f(x)=3x^2 + 5x -2$
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {3*x^2 + 5*x -2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection{Función de Proporcionalidad Inversa}
+\begin{framed}\noindent
+Una función de proporcionalidad inversa es una función que relaciona dos magnitudes inversamente proporcionales. Su expresión algebraica es del tipo:
+\begin{center}
+$f(x)=\dfrac{k}{x}$
+\end{center}
+Donde $k$ es la constante de proporcionalidad.
+\begin{flushright}
+\textit{{\scriptsize Artículo, Funciones - calculo.cc}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+\subsection{Función Logarítmica}
+\begin{framed}\noindent
+Una función logarítmica es aquella que genéricamente se expresa como:
+\begin{center}
+$f(x)= \log_a(x)$
+\end{center}
+Siendo $a$ la base de esta función, que ha de ser positiva y distinta de 1. 
+\begin{flushright}
+\textit{{\scriptsize Artículo, Función Logarítmica - www.hiru.eus}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+
+\begin{framed}\noindent
+\noindent{\textbf{Propiedades de los Logaritmos}}\\${ }$\\
+\textbf{(I).} $\log_a a = 1$ \hspace{4.2cm} \textbf{(IV).} $\log{\bigg( \dfrac{A}{B} \bigg)} = \log{A} - \log{B}$ \\${ }$\\
+\textbf{(II).} $\log_a 1 = 0$ \hspace{4cm} \textbf{(V).} $\log a^n = n \cdot \log a$ \\${ }$\\
+\textbf{(III).} $\log{(A \cdot B)} = \log{A} + \log{B}$
+\end{framed}
+
+\ruleline{\textbf{Ejemplo}}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {log10(x+3)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{1.}} $f(x)=\log(x+3)$
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {-log10(x+2)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{2.}} $f(x)=-\log(x+2)$
+
+
+\subsection{Función Exponencial}
+\begin{framed}\noindent
+Las funciones exponenciales son las funciones que tienen la variable independiente $x$ en el exponente, es decir, son de la forma:
+\begin{center}
+$f(x) = a^x$
+\end{center}
+Siendo $a>0$ y $a \neq 1$
+\begin{flushright}
+\textit{{\scriptsize Artículo, Funciones - calculo.cc}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+\ruleline{\textbf{Ejemplos}}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {4^x};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{1.}} $f(x)=4^x$
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300] {(2)^(-2*x)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent{\textbf{2.}} $f(x)=2^{-2x}$
+
+\section{Composición de Funciones}
+La composición es una operación entre funciones que se establece de la siguiente manera: 
+\begin{framed}\noindent
+Dadas  dos  funciones  $f$ y $g$, se define como la  composición de la función  $f$ con  la  función $g$, a la función denotada:
+\begin{center}
+ $(f \circ g)(x) = f [ g(x) ]$
+\end{center}
+\begin{flushright}
+\textit{{\scriptsize Artículo, Composición de Funciones, Alejandra Vargas y Sergio Crail - UNAM}}
+\end{flushright}
+\vspace{-0.5cm}
+\end{framed}
+
+\section{Álgebra de Funciones}
+\begin{framed}\noindent
+Las operaciones entre funciones Reales de variable Real, se definen únicamente en dominios comunes, es decir sobre la intersección de sus respectivos Dominios. Las operaciones entre éstas funciones se efectúan de acuerdo a las Clásicas Reglas Algebraicas.
+\end{framed}
+\subsubsection{Operaciones}
+\begin{framed}\noindent
+\noindent{\textbf{Suma: } $(f \pm g)(x) = f(x) \pm g(x)$} \hspace{2cm} \textbf{Dominio} $D_{f \pm g} =  D_f \cap D_g$ \\${ }$\\
+\textbf{Producto: } $(f \cdot g)(x) = f(x) \cdot g(x)$ \hspace{1.75cm}\textbf{Dominio} $D_{f \cdot g} =  D_f \cap D_g$ \\${ }$ \\
+\textbf{División: } $\bigg( \dfrac{f}{g} \bigg)(x) = \dfrac{f(x)}{g(x)}$ \hspace{3cm} \textbf{Dominio} $D_{\frac{f}{g}} =  (D_f \cap D_g) - \lbrace x / g(x)=0 \rbrace$
+\end{framed}
+
+\ruleline{\textbf{Ejemplos}}
+\noindent{\textbf{1. }} Hallar el Dominio de la siguiente función:
+\begin{center}
+$f(x)= \sqrt{4-x^2} + ln(x^2- 1) $
+\end{center}
+Entonces:
+\begin{center}
+$f_1 (x)= \sqrt{4-x^2} \hspace{1cm} f_2 (x) = ln(x^2 - 1) $
+\end{center}
+El Dominio de de $f_1$ será $[-2,2]$ y el Dominio de $f_2$ será $(-\infty,-1) \cup (1,\infty)$. Por lo tanto, el Dominio de la función $f$ será la intersección de las funciones respectivas:
+
+\begin{center}
+$D_f = [-2,-1) \cup (1,2]$
+
+\end{center}
+
+
+\section{Funciones definidas por secciones}
+Una función se puede definir por diferentes reglas de correspondencia para diferentes secciones de su dominio.
+
+\ruleline{\textbf{Ejemplos}}
+
+\begin{center}
+\begin{centering}
+\fbox{%
+\begin{minipage}[]{2.5in}
+\vspace{-0.25cm}
+\begin{equation*}
+f(x)=  
+\begin{cases}
+  3 \hspace{1.3cm} x < 0\\    
+  x \hspace{1.3cm} 0\leq x < 2  \\
+  x^2 - 4  \hspace{0.5cm} x\geq 2
+\end{cases}
+\vspace{0.25cm}
+\end{equation*}
+\end{minipage}}
+\end{centering}
+\end{center}
+\subsubsection{Gráfica de la función}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis x line=center,
+axis y line=center,
+xtick={-5,-4,...,5},
+ytick={-5,-4,...,5},
+xlabel={$x$},
+ylabel={$y$},
+xlabel style={below right},
+ylabel style={above left},
+xmin=-5.5,
+xmax=5.5,
+ymin=-5.5,
+ymax=5.5,
+yticklabel style = {font=\tiny,xshift=0.5ex},
+xticklabel style = {font=\tiny,yshift=0.5ex},
+line width = 0.25mm
+]
+
+\addplot[black,samples=300,domain=-5:0] {3};
+\addplot[black,samples=300,domain=0:2] {x};
+\addplot[black,samples=300,domain=2:5] {x^2 - 4};
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\chapter{Límites}
+\section{Límites Laterales}
+\section{Límites al Infinito}
+\section{Límites Infinitos}
+\section{Cálculo de Límites}
+\subsection{Límites de Polinomios}
+\subsection{Límites de Funciones Racionales}
+\subsection{Límites de Funciones Irracionales}
+\subsection{Límites Trigonométricos}
+\subsection{Límites Exponenciales}
+\subsection{Límites Logarítmicos}
+\section{Continuidad}
+\subsection{Clasificación de Discontinuidades}
+\section{Asíntotas}
+
+\chapter{Derivadas}
+\section{Introducción}
+\section{Regla de la Cadena}
+\section{Derivabilidad y Continuidad}
+\section{Derivadas Laterales}
+\section{Derivada de Funciones Inversas}
+\section{Derivada de Funciones Implícitas}
+\section{Derivadas de Orden Superior}
+\section{Interpretación Geométrica}
+\subsection{Recta Tangente}
+\section{Valores Extremos de Funciones}
+\subsection{Teorema del Valor Extremo}
+\subsection{Valores Extremos Locales (Relativos)}
+\section{Puntos Críticos}
+\subsection{Procedimiento para encontrar los Máximos y Mínimos absolutos}
+\section{Teorema del Valor Medio}
+\section{Características de las Funciones}
+\subsection{Crecimiento y Decrecimiento}
+No mames men
+\subsection{Máximos y Mínimos Locales}
+\subsection{Concavidad y Convexidad}
+\section{Aplicaciones de las Derivadas}
+\section{Regla de L'Hopital}
+
+\chapter{Integrales}
+\section{Diferenciales}
+\section{Integral Indefinida}
+\section{Integración por Partes}
+\section{Integral Definida}
+\subsection{Teorema Fundamental del Cálculo}
+
+\end{document}
