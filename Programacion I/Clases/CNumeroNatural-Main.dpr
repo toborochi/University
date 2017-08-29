@@ -1,3 +1,7 @@
+{
+  PROGRAMACION I
+}
+
 program Project1;
 
 uses
@@ -8,7 +12,7 @@ uses
 var
   x : CNumeroNatural;
   k : Cardinal;
-  n : Integer;
+  n,a,b : Integer;
 
 begin
   x := CNumeroNatural.Crear;
@@ -32,7 +36,16 @@ begin
   writeln('Hexadecimal: ',x.Hexa);
   writeln('Numero en Romano: ',x.Romano);
   writeln('Literal: ',x.Literal);
+  write('Insertar digito (Posicion,Digito): ');
+  readln(a,b);
+  x.InsertarDigito(a,b);
+  writeln('Nuevo Numero: ',x.ObtenerValor);
 
+  write('Eliminar digito (Posicion): ');
+  readln(a);
+  x.EliminarDigito(a);
+  writeln('Nuevo Numero: ',x.ObtenerValor);
 
   readln;
 end.
+
