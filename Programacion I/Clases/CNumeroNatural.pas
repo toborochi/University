@@ -1,4 +1,4 @@
-unit Unit1;
+unit Unit2;
 
 interface
 
@@ -28,6 +28,7 @@ type CNumeroNatural = class
   Function Literal : String;
   Procedure InsertarDigito( Posicion: Byte ; Digito : Byte);
   Procedure EliminarDigito( Posicion : Byte );
+  Function BaseNS(conjunto : string) : string;
   end;
 
 implementation
@@ -324,6 +325,29 @@ implementation
   End;
 
   End;
+  //BASE N con conjunto de digitos variados
+  Function CNumeroNatural.BaseNS(conjunto: string) : string;
+  var
+    aux : Cardinal;
+    base,i : Byte;
+    ans,ss : string;
+  begin
+    aux := Valor;
+    base:=length(conjunto);
+    while(aux>0)do
+    begin
+      ans:=ans + conjunto[(aux mod base)+1];
+      aux:=aux div base;
+    end;
+
+    for i := length(ans) downto 1 do
+      begin
+        ss:=ss+ans[i];
+      end;
+
+      Result:=ss;
+
+  end;
 
 
   begin
