@@ -4,9 +4,12 @@ interface
 
 type CNumeroNatural = class
   Private
+
   Valor : Cardinal;
   Function LiteralDigitos(V1,V2 : Cardinal) : String;
+
   Public
+
   Constructor Crear;
   Procedure AsignarValor( NuevoValor : Cardinal);
   Function ObtenerValor : Cardinal;
@@ -23,6 +26,8 @@ type CNumeroNatural = class
   Function Hexa : String;
   Function Romano : String;
   Function Literal : String;
+  Procedure InsertarDigito( Posicion: Byte ; Digito : Byte);
+  Procedure EliminarDigito( Posicion : Byte );
   end;
 
 implementation
@@ -226,7 +231,7 @@ implementation
     s : string;
   begin
     aux := V1;
-    if((aux=0) and (V2=0)) then s:='Cero' else s:='';
+    if((aux=0) and (V2=0)) then s:='Cero';
 
     if((aux>=1) and (aux<=20)) then s:=e[aux] else
     begin
@@ -241,7 +246,7 @@ implementation
 
       s:=s+d[ (aux mod 100)div 10 ];
 
-      if ((aux mod 10 >0) and ((aux mod 100)>30) and ((aux mod 100) < 100 )) then s:=s+' y ';
+      if ((aux mod 10 > 0) and ((aux mod 100)>30) and ((aux mod 100) < 100 )) then s:=s+' y ';
 
       s:= s + e[aux mod 10];
 
@@ -258,13 +263,68 @@ implementation
     aux : Cardinal;
   begin
       aux := Valor;
-      if(aux>=1000) then lit:=lit+LiteralDigitos(aux div 1000,aux) + ' mil ';
+      if((aux<2000) and (aux>=1000)) then lit:=lit+'mil ';
+      if(aux>=2000) then lit:=lit+LiteralDigitos(aux div 1000,aux) + ' mil ';
       aux:= aux mod 1000;
       lit:=lit+LiteralDigitos(aux,Valor);
 
       Result:=lit;
 
   end;
+  //INSERTAR DIGITO
+  Procedure CNumeroNatural.InsertarDigito( Posicion: Byte ; Digito : Byte);
+  Var
+    Aux , Aux2 , Digi :Cardinal;
+  Begin
+    Aux := Valor;
+    if( Posicion > 0)and( Posicion <= numeroDigitos) then
+  Begin
+    Aux2 := 0;
+    Digi := 0;
+      While( Digi <= NumeroDigitos-Posicion )do
+      Begin
+        Aux2 := ( Aux2 * 10 ) + Aux Mod 10;
+        Aux := Aux Div 10;
+        Inc( Digi );
+      End;
+        Aux := ( Aux * 10 ) + Digito;//Inserta Digito
+          While( Digi > 0 )do
+          Begin
+            Aux := ( Aux * 10 ) + ( Aux2 Mod 10 );
+            Aux2 := Aux2 Div 10;
+            Dec( Digi );
+          End;
+        Valor := Aux;
+  end;
+  End;
+  // ELIMINAR DIGITO
+  Procedure CNumeroNatural.EliminarDigito( Posicion : Byte );
+  Var
+    Aux , Aux2 , Digi :Cardinal;
+  Begin
+    Aux := Valor;
+  if( Posicion > 0) and ( Posicion <= NumeroDigitos ) then
+  Begin
+    Aux2 := 0;
+    Digi := 0;
+      While ( Digi < NumeroDigitos-Posicion ) do
+      Begin
+        Aux2 := ( Aux2 * 10 ) + Aux Mod 10;
+        Aux := Aux Div 10;
+        Inc( Digi );
+      End;
+        Aux := ( Aux Div 10 );//Elimina Digito
+      While( Digi > 0 )do
+      Begin
+        Aux := ( Aux * 10 ) + ( Aux2 Mod 10 );
+        Aux2 := Aux2 Div 10;
+        Dec( Digi );
+      End;
+        Valor := Aux;
+  End;
+
+  End;
+
 
   begin
   end.
