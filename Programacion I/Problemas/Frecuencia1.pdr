@@ -1,0 +1,49 @@
+program Project1;
+
+uses
+  System.SysUtils,
+  Unit1 in 'Unit1.pas';
+
+
+var
+  x,n : CNumeroNatural;
+  k : Cardinal;
+  i,aux,total : Integer;
+
+begin
+
+  x := CNumeroNatural.Crear;
+  n := CNumeroNatural.Crear;
+
+  readln(k);
+  x.AsignarValor(k);
+
+  i:=1;
+
+  while (i<=x.NumeroDigitos) do
+  begin
+
+    aux:=x.Digito(i);
+    n.AsignarValor(x.ObtenerValor);
+    total:=0;
+
+    while(i<=n.NumeroDigitos)do
+    begin
+      if(aux=n.Digito(i))then
+      begin
+        n.EliminarDigito(i);
+        total:=total+1;
+        i:=1;
+      end
+      else i:=i+1;
+
+    end;
+
+    writeln(aux,' ',total);
+    x.AsignarValor( n.ObtenerValor );
+
+    i:=1;
+  end;
+
+  readln;
+end.
