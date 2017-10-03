@@ -20,7 +20,10 @@ Type
     Function Dimension : Word;
     Function ComoString: String;
     Procedure Intercambiar(i,j : integer);
-    Procedure OrdenamientoIntercambio;
+    Procedure OrdenamientoIntercambio(ini,fin : integer);
+    Procedure OrdenamientoMitades;
+
+
 End;
 
 
@@ -76,14 +79,34 @@ implementation
 
   end;
 
-  Procedure CVector.OrdenamientoIntercambio;
+  Procedure CVector.OrdenamientoIntercambio(ini,fin : integer);
   var
     i,j : Word;
   begin
-      for i := 1 to N-1 do
-       for j := i+1 to N do
+      for i := ini to fin-1 do
+       for j := i+1 to fin do
          if(Elementos[j]<Elementos[i]) then
            Intercambiar(i,j);
   end;
+
+  Procedure CVector.OrdenamientoMitades;
+  var i : integer;
+  begin
+    OrdenamientoIntercambio(1,N div 2);
+    for i := (N div 2)+1 to N do
+    begin
+      Elementos[i]:=Elementos[i]*-1;
+    end;
+
+    OrdenamientoIntercambio((N div 2)+1,N);
+
+    for i := (N div 2)+1 to N do
+    begin
+      Elementos[i]:=Elementos[i]*-1;
+    end;
+  end;
+
+
+
 
 end.
