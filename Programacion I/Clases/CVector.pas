@@ -1,4 +1,4 @@
-unit UCVector;
+unit Unit1;
 
 interface
 
@@ -19,12 +19,14 @@ Type
     Function Elemento(Pos: Word ): Word ;
     Function Dimension : Word;
     Function ComoString: String;
+    Procedure Intercambiar(i,j : integer);
+    Procedure OrdenamientoIntercambio;
 End;
 
 
 
 implementation
-    
+
   uses  System.SysUtils;
 
   Constructor CVector.crear;
@@ -39,7 +41,7 @@ implementation
 
   Procedure CVector.Poner(Pos : word ; Val: integer);
   begin
-      if ((Pos >0) and (Pos <= N)) then Elementos[Pos]:=Val;       
+      if ((Pos >0) and (Pos <= N)) then Elementos[Pos]:=Val;
   end;
 
   Function  CVector.Elemento(Pos:word):word;
@@ -50,11 +52,11 @@ implementation
   Function CVector.Dimension:Word;
   Begin
     Dimension:=N;
-  End; 
+  End;
 
   Function  CVector.comostring:String;
   Var
-    s: string; 
+    s: string;
     i : integer;
   Begin
   s:='';
@@ -62,11 +64,26 @@ implementation
     begin
       s:=  s + IntToStr(elementos[i]) + ' ' ;
     end;
-    Result:=s;          
+    Result:=s;
   End;
-  
-  
-end.  
-        
-      
- 
+
+  Procedure CVector.Intercambiar(i,j : integer);
+  var aux : integer;
+  begin
+     aux:= Elementos[i];
+     Elementos[i]:=Elementos[j];
+     Elementos[j]:=aux;
+
+  end;
+
+  Procedure CVector.OrdenamientoIntercambio;
+  var
+    i,j : Word;
+  begin
+      for i := 1 to N-1 do
+       for j := i+1 to N do
+         if(Elementos[j]<Elementos[i]) then
+           Intercambiar(i,j);
+  end;
+
+end.
