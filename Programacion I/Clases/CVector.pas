@@ -22,6 +22,7 @@ Type
     Procedure Intercambiar(i,j : integer);
     Procedure OrdenamientoIntercambio(ini,fin : integer);
     Procedure OrdenamientoMitades;
+    Procedure OrdenarConteo;
 
 
 End;
@@ -70,6 +71,7 @@ implementation
     Result:=s;
   End;
 
+
   Procedure CVector.Intercambiar(i,j : integer);
   var aux : integer;
   begin
@@ -106,6 +108,38 @@ implementation
     end;
   end;
 
+
+  Procedure CVector.OrdenarConteo;
+  Var
+    i,m: integer;
+    b : ConjuntoElementos;
+    count : array[0..100000] of longint;
+  BEGIN
+    m:=0;
+
+    FILLCHAR(COUNT,SIZEOF(COUNT),0);
+
+    for i:= 1 to N do
+    Begin+
+    count[ Elementos[ i ]]:= count[ elementos[i]] + 1;
+    if Elementos[i] > m then m:=Elementos[i];
+  end;
+
+  for i:=1 to M do
+  begin
+    count[i]:=count[i] +count[i-1];
+  end;
+
+
+  b:=Elementos;
+
+  for i:=N downto 1 do
+  begin
+    Elementos[count[ b[ i ]] ] := b[i];
+    count[ b [i] ]:=count[ b[i]]-1;
+  end;
+
+  END;
 
 
 
