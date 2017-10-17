@@ -24,7 +24,7 @@ Type
     Procedure OrdenamientoMitades;
     Procedure OrdenarSeleccion;
     Procedure OrdenarConteo;                               //ORD3
-
+    Procedure OrdenarSaltado;
 End;
 
 
@@ -153,5 +153,51 @@ implementation
   end;
 
   END;
+
+  Procedure CVector.OrdenarSaltado;
+  var
+   i,j : integer;
+  begin
+    i:=1;
+    while i<=N-1 do
+    begin
+      j:=i+2;
+      while j<=N do
+      begin
+         if(Elementos[j]<Elementos[i]) then
+         Intercambiar(i,j);
+         j:=j+2;
+      end;
+      i:=i+2;
+    end;
+
+    i:=2;
+    while i<=N do
+    begin
+      Elementos[i]:=Elementos[i]*-1;
+      i:=i+2;
+    end;
+
+    i:=2;
+    while i<=N-1 do
+    begin
+      j:=i+2;
+      while j<=N do
+      begin
+         if(Elementos[j]<Elementos[i]) then
+         Intercambiar(i,j);
+         j:=j+2;
+      end;
+      i:=i+2;
+    end;
+
+    i:=2;
+    while i<=N do
+    begin
+      Elementos[i]:=Elementos[i]*-1;
+      i:=i+2;
+    end;
+
+  end;
 
 end.
