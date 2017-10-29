@@ -2,8 +2,8 @@
 
 This semester there are 5 subjects.
 
-- Physics
-- Programming I
-- Calculus II
-- Linear Algebra
-- English II
+- **FIS102** - Physics II
+- **INF120** - Programming I
+- **MAT102** - Calculus II
+- **MAT103** - Linear Algebra
+- **LIN101** - English II
