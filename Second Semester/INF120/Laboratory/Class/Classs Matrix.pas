@@ -55,18 +55,50 @@ implementation
   end;
 
   Function CMatriz.EsMagico : boolean;
-  var i,j,sum : longint;
+  var
+    i,j,sum,tmp,tmp2,D1,D2 : longint;
+    esMagico : boolean;
   begin
+
+    esMagico:=true;
+    tmp:=0;
+    tmp2:=0;
+    D1:=0;
+    D2:=0;
+    sum:= (NF*(NF*NF+1)) div 2;
+
+    if NF<>NC then esMagico:=false;
+    
 
     for  i:= 1 to NF do
     begin
       for j := 1 to NC do
       begin
+          tmp:=tmp+M[i,j];
 
+          tmp2:=tmp2+M[i,j];
+
+          if i=j then D1:=D1+M[i,j];
+
+          if i+j=NF+1 then D2:=D2+M[i,j];
       end;
+
+      if tmp<>sum then esMagico:=false;
+      if tmp2<>sum then esMagico:=false;
+
+      tmp:=0;
+      tmp2:=0;
+
     end;
 
+    if D1<>sum then esMagico:=false;
 
+    if D2<>sum then esMagico:=false;
+
+    //writeln(D1);
+    //writeln(D2);
+
+    Result:=esMagico;
 
   end;
 
