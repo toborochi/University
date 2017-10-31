@@ -83,17 +83,17 @@ implementation
           if i+j=NF+1 then D2:=D2+M[i,j];
       end;
 
-      if tmp<>sum then esMagico:=false;
-      if tmp2<>sum then esMagico:=false;
+      if tmp mod sum <> 0 then esMagico:=false;
+      if tmp2 mod sum <> 0 then esMagico:=false;
 
       tmp:=0;
       tmp2:=0;
 
     end;
 
-    if D1<>sum then esMagico:=false;
+    if D1  mod sum <> 0 then esMagico:=false;
 
-    if D2<>sum then esMagico:=false;
+    if D2  mod sum <> 0 then esMagico:=false;
 
     //writeln(D1);
     //writeln(D2);
