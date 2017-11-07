@@ -28,14 +28,22 @@ implementation
   end;
 
   procedure Cjuego.cargar;
+    procedure llenar(f:integer; s:string);
+    var
+    c : integer;
+    begin
+      for c := 1 to length(s) do
+       M[f,c]:=strtoint(s[c]);
+    end;
   begin
     Nf:=4;
     Nc:=4;
-    M[1,1]:=1; M[1,2]:=1; M[1,3]:=1; M[1,4]:=1;
-    M[2,1]:=1; M[2,2]:=0; M[2,3]:=0; M[2,4]:=1;
-    M[3,1]:=1; M[3,2]:=0; M[3,3]:=0; M[3,4]:=1;
-    M[4,1]:=1; M[4,2]:=1; M[4,3]:=1; M[4,4]:=1;
+    llenar(1,'1111');
+    llenar(2,'1001');
+    llenar(3,'1201');
+    llenar(4,'1111');
   end;
+
 
   /// Posx = Cx + (c-1)*tamano
   /// Posy = Cy + (f-1)*tamano
