@@ -10,14 +10,16 @@ type
   Cjuego = class
   private
     M : array[1..50,1..50] of integer;
-    Nf,Nc : integer;
+    Nf,Nc,bx,by : integer;
       pantX,pantY : integer;
     dimpieza : integer;
+    Bicho : integer;
   public
     constructor crear;
     procedure cargar;
     procedure dibujarpieza(f,c : integer; Pant :  Tcanvas);
-    procedure DibujarPlano(Pant :  Tcanvas);
+    procedure DibujarPlano(Pant : Tcanvas);
+    procedure MoverDerecha(Pant : Tcanvas);
 end;
 
 implementation
@@ -42,6 +44,8 @@ implementation
     llenar(2,'1001');
     llenar(3,'1201');
     llenar(4,'1111');
+    bx:=2;
+    by:=3;
   end;
 
 
@@ -77,6 +81,15 @@ implementation
       end;
 
 
+  end;
+
+  procedure Cjuego.MoverDerecha(Pant: TCanvas);
+  begin
+    M[by,bx]:=camino;
+    dibujarPieza(by,bx,pant);
+    inc(bx);
+    m[by,bx]:=2; //Bicho = 2
+    dibujarPieza(by,bx,pant);
   end;
 
 end.
