@@ -43,6 +43,13 @@ implementation
     pantX,pantY : integer;
     dimpieza : integer;
   begin
+    pantX:=100;
+    pantY:=100;
+    dimpieza := 50;
+    xr:=pantx + (c-1)*dimpieza;
+    yr:=panty + (f-1)*dimpieza;
+    codFigura:=M[f,c];
+    pant.TextOut(xr,yr,inttostr(codFigura));
 
   end;
 
