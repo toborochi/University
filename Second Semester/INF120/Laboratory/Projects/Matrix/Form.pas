@@ -1,82 +1,52 @@
-Unit UJuego;
+unit Proyect;
 
 interface
-uses sysutils,graphics,dialogs;
-const
-	pared =1;
-	camino=0;
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,UJuego;
 
 type
-  Cjuego = class
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
-    M : array[1..50,1..50] of integer;
-    Nf,Nc : integer;
-      pantX,pantY : integer;
-    dimpieza : integer;
+    { Private declarations }
   public
-    constructor crear;
-    procedure cargar;
-    procedure dibujarpieza(f,c : integer; Pant :  Tcanvas);
-    procedure DibujarPlano(Pant :  Tcanvas);
-end;
+     J : Cjuego;
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
 
 implementation
-  constructor Cjuego.crear;
-  begin
-    Nf:=0;
-    Nc:=0;
-  end;
 
-  procedure Cjuego.cargar;
-    procedure llenar(f:integer; s:string);
-    var
-    c : integer;
-    begin
-      for c := 1 to length(s) do
-       M[f,c]:=strtoint(s[c]);
-    end;
-  begin
-    Nf:=4;
-    Nc:=4;
-    llenar(1,'1111');
-    llenar(2,'1001');
-    llenar(3,'1201');
-    llenar(4,'1111');
-  end;
+{$R *.dfm}
 
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+ j:=Cjuego.crear;
+end;
 
-  /// Posx = Cx + (c-1)*tamano
-  /// Posy = Cy + (f-1)*tamano
-  ///  tamano = tamano de la figura
-  ///  Cx y Cy posiciones iniciales
-  procedure Cjuego.dibujarpieza(f,c:integer; pant : Tcanvas);
-  var
-    xr,yr : integer;
-    cod : integer;
-  begin
-    PANTX:=200;
-    PANTY:=100;
-    dimpieza:=20;
-    xr:= pantx + (c-1)*dimpieza;
-    yr:= panty + (f-1)*dimpieza;
-    cod:=M[f,c];
-    pant.TextOut(xr,yr,inttostr(cod));
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  j.cargar;
+end;
 
-  end;
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+   j.dibujarplano(canvas);
+end;
 
-  procedure Cjuego.DibujarPlano(Pant :  Tcanvas);
-  var
-   fi,co:integer;
-  begin
-    for FI := 1 to Nf do
-      begin
-        for Co := 1 to Nc do
-          begin
-            dibujarpieza(fi,co,pant);
-          end;
-      end;
+procedure TForm1.FormCreate(Sender: TObject);
+begin
 
-
-  end;
+end;
 
 end.
