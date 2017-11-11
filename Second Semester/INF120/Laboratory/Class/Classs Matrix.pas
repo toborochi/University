@@ -76,7 +76,7 @@ implementation
       begin
           tmp:=tmp+M[i,j];
 
-          tmp2:=tmp2+M[i,j];
+          tmp2:=tmp2+M[j,i];
 
           if i=j then D1:=D1+M[i,j];
 
