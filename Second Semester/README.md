@@ -2,8 +2,10 @@
 
 This semester there are 5 subjects.
 
-- **FIS102** - Physics II **(Professor: Franklin Calderón)**
-- **INF120** - Programming I **(Professor: Mario Winnipeg)**
-- **MAT102** - Calculus II **(Professor: René Flores)**
-- **MAT103** - Linear Algebra **(Professor: Julio Cortez)**
-- **LIN101** - English II **(Professor: Miriam de Molina)**
+| Materia                       | Sigla  | Docente                |
+| ----------------------------- |:------:| ---------------------- |
+| Física II                     | FIS102 | Franklin Calderón      |
+| Programación I                | INF120 | Mario Winnipeg         |
+| Cálculo II                    | MAT102 | René Flores            |
+| Álgebra Lineal                | MAT103 | Julio Cortez           |
+| Inglés II                     | LIN101 | Miriam de Molina       |
