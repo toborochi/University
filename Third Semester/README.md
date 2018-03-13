@@ -8,5 +8,5 @@ This semester there are 5 subjects but I choose 6.
 | Programación II               | INF210 | Juan Contreras         |
 | Ecuaciones Diferenciales      | MAT207 | Carlos Miranda         |
 | Arquitectura del Computador   | INF211 | Said Hinojosa          |
-| Administración                | ADM100 | Flores                 |
-| Contabilidad                  | ADM200 | Flores                 |
+| Administración                | ADM100 | Marcos Flores          |
+| Contabilidad                  | ADM200 | Marcos Flores          |
