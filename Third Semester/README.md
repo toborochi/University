@@ -2,6 +2,8 @@
 
 This semester there are 5 subjects but I choose 6. 
 
+:es:
+
 | Materia                       | Sigla  | Docente                |
 | ----------------------------- |:------:| ---------------------- |
 | Probabilidad y Estadísitca I  | MAT202 | Cáceres Chacón Braulio |
