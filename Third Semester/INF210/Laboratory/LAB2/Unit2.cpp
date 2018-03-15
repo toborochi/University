@@ -1,6 +1,6 @@
 /*
 	Sesion de Laboratorio #2
-    Docente: Juan Contreras
+    	Docente: Juan Contreras
 
 	U.A.G.R.M.
 	Facultad  de Ingenieria en Ciencias de la Computacion y Telecomunicaciones
