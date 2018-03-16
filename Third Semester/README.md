@@ -1,14 +1,14 @@
 # Third Semester
 
-This semester there are 5 subjects but I choose 6. 
+This semester there are 6 subjetcs:
 
 :es:
 
-| Materia                       | Sigla  | Docente                |
+| Subjects                      | Code   | Professor              |
 | ----------------------------- |:------:| ---------------------- |
-| Probabilidad y Estadísitca I  | MAT202 | Cáceres Chacón Braulio |
-| Programación II               | INF210 | Juan Contreras         |
-| Ecuaciones Diferenciales      | MAT207 | Carlos Miranda         |
-| Arquitectura del Computador   | INF211 | Said Hinojosa          |
-| Administración                | ADM100 | Marcos Flores          |
-| Contabilidad                  | ADM200 | Marcos Flores          |
+| Probability and Statistic I   | MAT202 | Cáceres Chacón Braulio |
+| Programming II                | INF210 | Juan Contreras         |
+| Diferential Ecuations         | MAT207 | Carlos Miranda         |
+| Computers Architecture        | INF211 | Said Hinojosa          |
+| Economy                       | ADM100 | Marcos Flores          |
+| Accounting                    | ADM200 | Marcos Flores          |
