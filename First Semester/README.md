@@ -1,11 +1,9 @@
 # First Semester
 
-This semester there are 5 subjects.
-
-| Materia                        | Sigla  | Docente                |
+| Subjects                       |  Code  | Professor              |
 | ------------------------------ |:------:| ---------------------- |
-| Física I                       | FIS100 | Chao Wong Jorge        |
-| Inglés I                       | LIN100 | Wilma Zúñiga           |
-| introducción a la Programación | INF100 | Zuna Villagomez        |
-| Cálculo I                      | MAT101 | Carlos Miranda         |
-| Estructuras Discretas          | INF119 | Cáceres Chacón Braulio |
+| Physics I                      | FIS100 | Chao Wong Jorge        |
+| English I                      | LIN100 | Wilma Zúñiga           |
+| Introduction to Programming    | INF100 | Zuna Villagomez        |
+| Calculus I                     | MAT101 | Carlos Miranda         |
+| Discrete Structures            | INF119 | Cáceres Chacón Braulio |
