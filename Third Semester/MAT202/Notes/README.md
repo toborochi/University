@@ -1,1 +1,1 @@
-Lecture Notes 
+Did you get here? Awesome! :rainbow: 
