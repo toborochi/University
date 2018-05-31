@@ -1,0 +1,42 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage[affil-it]{authblk}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{slashbox}
+\usepackage{diagbox}
+\usepackage{slashbox,multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+
+\subfile{Archivos/Introduccion}
+\subfile{Archivos/CAP1/Capitulo_I}
+\subfile{Archivos/CAP2/Capitulo_II}
+\subfile{Archivos/CAP3/Capitulo_III}
+\subfile{Archivos/CAP4/Capitulo_IV}
+\subfile{Archivos/CAP5/Capitulo_V}
+\subfile{Archivos/Bibliografia}
+\end{document}

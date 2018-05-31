@@ -1,0 +1,18 @@
+\section{Definición Axiomática de Probabilidad}
+Sea $S$ un espacio muestral asociado a un cierto experimento aleatorio y sea $\Gamma$ $\sigma$-algebra de eventos subconjunto de $S$.
+\subsection{Propiedades de la Probabilidad de Eventos}
+\begin{enumerate}
+\item Si $\phi$ es un evento imposible entonces: $P(\phi)=0$
+\item Si $A^c$ es el evento complementario de $A$, entonces:
+$$P(A^c)=1-P(A) \hspace{0.5cm} \textrm{ó} \hspace{0.5cm}  P(A)=1-P(A^c)$$
+\item Si $A$ y $B$ son eventos tales que: $A\subset B$ entonces:
+$$P(A)\leq P(B)$$
+\item Si $A$ y $B$ son eventos cualesquiera, entonces:
+$$P(A\cup B)=P(A)+P(B)-P(A\cap B)$$
+\item Si $A,B$ y $C$ son eventos mutuamente excluyentes, entonces:
+$$P(A\cup B \cup C) = P(A)+P(B)+P(C)$$
+\item Si $A,B$ y $C$ son eventos cualesquiera, entonces:
+$$P(A\cup B \cup C) = P(A)+P(B)+P(C) - P(A\cap B)-P(A\cap C)-P(B\cap C)+P(A\cap B\cap C)$$
+\item Si $A_1,A_2,A_3,\ldots,A_n$ son eventos cualesquiera:
+$$ P\left( \bigcup\limits_{i=1}^{n} A_i\right)   \leq \sum_{i=1}^{n}P(A_i)$$
+\end{enumerate}

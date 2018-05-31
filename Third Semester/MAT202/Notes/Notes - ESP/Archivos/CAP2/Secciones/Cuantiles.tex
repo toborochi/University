@@ -1,0 +1,34 @@
+\section{Cuantiles}
+Como consecuencia del estudio de la mediana, surgen otros estadígrafos que dividen a las observaciones en otras proporciones y no solo en mitades como lo hace la media, los estadígrafos mas frecuentes de este tipo en el análisis estadístico son:
+\begin{itemize}
+\item \textbf{Cuartiles $(Q_i)$}
+\item \textbf{Deciles $(D_i)$}
+\item \textbf{Percentiles $(P_i)$}
+\end{itemize}
+Los cuantiles se emplean para describir el comportamiento de una población y sus resultados se expresan en tanto por ciento.
+\subsection{Cuartiles $(Q_i)$}
+Son valores que dividen a un conjunto de datos ordenados de forma ascendente o descendente en cuatro partes iguales:
+\subsection{Deciles $(D_i)$}
+Son valores que dividen a un conjunto de datos ordenados de forma ascendente o descendente en diez partes iguales:
+\subsection{Percentiles $(P_i)$}
+Son valores que dividen a un conjunto de datos ordenados de forma ascendente o descendente en cien partes iguales:
+\subsection{Cálculo de Cuantiles}
+\subsubsection{Para datos Originales}
+\begin{itemize}
+\item \textbf{Cuartiles:}
+$$Q_i=x_{\frac{i(n+1)}{4}}$$
+\item \textbf{Deciles:}
+$$D_i=x_{\frac{i(n+1)}{10}}$$
+\item \textbf{Percentiles:}
+$$P_i=x_{\frac{i(n+1)}{100}}$$
+\end{itemize}
+\subsubsection{Para datos Agrupados}
+\begin{itemize}
+\item \textbf{Cuartiles:}
+$$Q_i=y_{j-1}'+C_j\dfrac{i\frac{n}{4}-F_{j-1}}{f_j}$$
+\item \textbf{Deciles:}
+$$D_i=y_{j-1}'+C_j\dfrac{i\frac{n}{10}-F_{j-1}}{f_j}$$
+\item \textbf{Percentiles:}
+$$P_i=y_{j-1}'+C_j\dfrac{i\frac{n}{100}-F_{j-1}}{f_j}$$
+\end{itemize}
+\subsection{Ejemplos}

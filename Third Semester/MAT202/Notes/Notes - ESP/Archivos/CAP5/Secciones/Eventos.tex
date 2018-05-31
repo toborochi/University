@@ -1,0 +1,60 @@
+\section{Eventos}
+Evento es un subconjunto del espacio muestral. Existen los siguientes tipos de eventos:
+\begin{itemize}
+\item \textbf{Evento Imposible:} es el evento que nunca ocurre y se denota por: $\phi$.
+\item \textbf{Evento Seguro:} es el evento que siempre ocurre, denotado por: $S$ o $\Omega$.
+\item \textbf{Evento Elemental:} es el evento que esta compuesto por un elemento, se lo denota como conjunto \textit{Unitario.}
+\item \textbf{Evento Compuesto:} formado por varios Eventos.
+\item \textbf{Eventos Incompatibles:} también llamados mutuamente excluyentes.
+$$\binom{\textrm{$A$ y $B$}}{\textrm{{\footnotesize Son Eventos Excuyentes}}}\Leftrightarrow A\cap B= \phi$$
+\item \textbf{Eventos Compatibles:}
+$$\binom{\textrm{$A$ y $B$}}{\textrm{{\footnotesize Son Eventos Compatibles}}}\Leftrightarrow A\cap B \neq \phi$$
+\item \textbf{Eventos Colectivamente Exhaustivos:}
+$$\binom{\textrm{$A$ y $B$}}{\textrm{{\footnotesize Son E.C.E.}}}\Leftrightarrow 
+\begin{cases}
+A\cup B = \Omega\\
+A\cap B = \phi
+\end{cases}$$
+\end{itemize}
+\subsection{Operaciones con Eventos}
+\subsubsection{Unión}
+Sea $A$ y $B$ eventos cualquiera; la unión de estos eventos es el evento que ocurre, si $A$ ocurre y $B$ ocurre, o ambos ocurren.
+\begin{itemize}
+\item \textbf{Formalmente}
+$$A\cup B = \{ w\in S / w\in A \vee w\in B\}$$
+\item \textbf{Generalización}
+$$ \bigcup\limits_{i=1}^{n} A_i = \{w\in S/ \exists i\in I : w\in A_i \}$$
+\end{itemize}
+\subsubsection{Intersección}
+\begin{itemize}
+\item \textbf{Formalmente}
+$$A\cap B = \{ w\in S / w\in A \wedge w\in B\}$$
+\item \textbf{Generalización}
+$$ \bigcap\limits_{i=1}^{n} A_i  = \{w\in S/ \exists i\in I : w\in A_i \}$$
+\end{itemize}
+\subsubsection{Diferencia Relativa}
+\begin{itemize}
+\item \textbf{Formalmente}
+$$A-B = \left\lbrace w\in S / w\in A \wedge w\notin B\right\rbrace $$
+\end{itemize}
+\subsubsection{Diferencia Simétrica
+}\begin{itemize}
+\item \textbf{Formalmente}
+$$A\vartriangle B = \left\lbrace w\in S / w\in A \veebar w\in B\right\rbrace $$
+\end{itemize}
+\subsubsection{Complemento}
+\begin{itemize}
+\item \textbf{Formalmente}
+$$A^c = \{ w\in S/w\notin A \}$$
+\end{itemize}
+\subsubsection{Inclusión}
+\begin{itemize}
+\item \textbf{Formalmente}
+$$A\subseteq B \Leftrightarrow \forall w \in S, (w\in A \rightarrow w\in B)$$
+\end{itemize}
+\subsubsection{Igualdad de Eventos}
+\begin{itemize}
+\item \textbf{Formalmente}
+$$A=B \Leftrightarrow (A\subseteq B \wedge B\subseteq A)$$
+\end{itemize}
+
