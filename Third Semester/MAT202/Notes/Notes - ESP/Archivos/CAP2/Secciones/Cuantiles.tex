@@ -8,6 +8,13 @@ Como consecuencia del estudio de la mediana, surgen otros estadígrafos que divi
 Los cuantiles se emplean para describir el comportamiento de una población y sus resultados se expresan en tanto por ciento.
 \subsection{Cuartiles $(Q_i)$}
 Son valores que dividen a un conjunto de datos ordenados de forma ascendente o descendente en cuatro partes iguales:
+\begin{center}
+\begin{tikzpicture}
+    \draw (0,0) -- (4,0);
+    \foreach \i in {0,25,50,75,100} % numbers on line
+      \draw (\i,0.1) -- + (0,-0.2) node[below] {\i%};
+  \end{tikzpicture}
+\end{center}
 \subsection{Deciles $(D_i)$}
 Son valores que dividen a un conjunto de datos ordenados de forma ascendente o descendente en diez partes iguales:
 \subsection{Percentiles $(P_i)$}

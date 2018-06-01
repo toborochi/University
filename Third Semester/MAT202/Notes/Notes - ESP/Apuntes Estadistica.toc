@@ -64,7 +64,8 @@
 \contentsline {subsubsection}{Para datos Originales}{14}
 \contentsline {subsubsection}{Para datos Agrupados}{14}
 \contentsline {subsection}{\numberline {2.7.2}Usos de la Media Arm\IeC {\'o}nica}{15}
-\contentsline {subsection}{\numberline {2.7.3}Ejemplos}{15}
+\contentsline {subsection}{\numberline {2.7.3}Ventajas y Desventajas}{15}
+\contentsline {subsection}{\numberline {2.7.4}Ejemplos}{15}
 \contentsline {section}{\numberline {2.8}Media Cuadr\IeC {\'a}tica $(\overline {X_c})$}{15}
 \contentsline {subsection}{\numberline {2.8.1}C\IeC {\'a}lculo}{15}
 \contentsline {subsubsection}{Datos Originales}{15}

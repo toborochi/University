@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  31 MAY 2018 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  31 MAY 2018 23:54
 entering extended mode
 **"./Apuntes Estadistica.tex"
 ("Apuntes Estadistica.tex"
@@ -890,6 +890,392 @@ File: pstricks.tex 2018/01/06 v2.82 `PSTricks' (tvz,hv)
 ex")
 File: pst-fp.tex 2018/01/06 v2.82 `PST-fp' (hv)
 )
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.s
+ty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.revision.tex")
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\t
+ikz.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.
+sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrc
+s.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-common.tex"
+\pgfutil@everybye=\toks43
+\pgfutil@tempdima=\dimen191
+\pgfutil@tempdimb=\dimen192
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-common-lists.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-latex.def"
+\pgfutil@abb=\box65
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+rcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfc
+ore.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgf
+sys.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keys.code.tex")
+\pgf@x=\dimen193
+\pgf@y=\dimen194
+\pgf@xa=\dimen195
+\pgf@ya=\dimen196
+\pgf@xb=\dimen197
+\pgf@yb=\dimen198
+\pgf@xc=\dimen199
+\pgf@yc=\dimen256
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count166
+\c@pgf@countb=\count167
+\c@pgf@countc=\count168
+\c@pgf@countd=\count169
+\t@pgf@toka=\toks44
+\t@pgf@tokb=\toks45
+\t@pgf@tokc=\toks46
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count170
+\pgfsyssoftpath@bigbuffer@items=\count171
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen257
+\pgf@picmaxx=\dimen258
+\pgf@picminy=\dimen259
+\pgf@picmaxy=\dimen260
+\pgf@pathminx=\dimen261
+\pgf@pathmaxx=\dimen262
+\pgf@pathminy=\dimen263
+\pgf@pathmaxy=\dimen264
+\pgf@xx=\dimen265
+\pgf@xy=\dimen266
+\pgf@yx=\dimen267
+\pgf@yy=\dimen268
+\pgf@zx=\dimen269
+\pgf@zy=\dimen270
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen271
+\pgf@path@lasty=\dimen272
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen273
+\pgf@shorten@start@additional=\dimen274
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box66
+\pgf@hbox=\box67
+\pgf@layerbox@main=\box68
+\pgf@picture@serial@count=\count172
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen275
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen276
+\pgf@pt@y=\dimen277
+\pgf@pt@temp=\dimen278
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen279
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen280
+\pgf@sys@shading@range@num=\count173
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box69
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+duleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box70
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+duleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
+gfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen281
+\pgf@nodesepend=\dimen282
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
+gfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgffo
+r.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfke
+ys.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keys.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.st
+y"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+for.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex")
+\pgffor@iter=\dimen283
+\pgffor@skip=\dimen284
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count174
+\pgfplotmarksize=\dimen285
+)
+\tikz@lastx=\dimen286
+\tikz@lasty=\dimen287
+\tikz@lastxsaved=\dimen288
+\tikz@lastysaved=\dimen289
+\tikzleveldistance=\dimen290
+\tikzsiblingdistance=\dimen291
+\tikz@figbox=\box71
+\tikz@figbox@bg=\box72
+\tikz@tempbox=\box73
+\tikz@tempbox@bg=\box74
+\tikztreelevel=\count175
+\tikznumberofchildren=\count176
+\tikznumberofcurrentchild=\count177
+\tikz@fig@count=\count178
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+dulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count179
+\pgfmatrixcurrentcolumn=\count180
+\pgf@matrix@numberofcolumns=\count181
+)
+\tikz@expandcount=\count182
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+core.code.tex"
+\t@pgfplots@toka=\toks49
+\t@pgfplots@tokb=\toks50
+\t@pgfplots@tokc=\toks51
+\pgfplots@tmpa=\dimen292
+\c@pgfplots@coordindex=\count183
+\c@pgfplots@scanlineindex=\count184
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfp
+lotssysgeneric.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\pgf
+plotslibrary.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfco
+mpatib\pgfplotsoldpgfsupp_loader.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryfpu.code.tex")
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfco
+mpatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfco
+mpatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count185
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfco
+mpatib\pgfplotsoldpgfsupp_leq.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotsutil.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
+cture\pgfplotsliststructure.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
+cture\pgfplotsliststructureext.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
+cture\pgfplotsarray.code.tex"
+\c@pgfplotsarray@tmp=\count186
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
+cture\pgfplotsmatrix.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\numtable
+\pgfplotstableshared.code.tex"
+\c@pgfplotstable@counta=\count187
+\t@pgfplotstable@a=\toks52
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
+cture\pgfplotsdeque.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotsbinary.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotsbinary.data.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotsutil.verb.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\pgf
+librarypgfplots.surfshading.code.tex"
+\c@pgfplotslibrarysurf@no=\count188
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfl
+ibrarypgfplots.surfshading.pgfsys-pdftex.def")))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotscolormap.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotscolor.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+stackedplots.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+plothandlers.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+meshplothandler.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+meshplotimage.code.tex")))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.scaling.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+coordprocessing.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.errorbars.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.markers.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+ticks.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.paths.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+duledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen293
+\pgfdecoratedremainingdistance=\dimen294
+\pgfdecoratedinputsegmentcompleteddistance=\dimen295
+\pgfdecoratedinputsegmentremainingdistance=\dimen296
+\pgf@decorate@distancetomove=\dimen297
+\pgf@decorate@repeatstate=\count189
+\pgfdecorationsegmentamplitude=\dimen298
+\pgfdecorationsegmentlength=\dimen299
+)
+\tikz@lib@dec@box=\box75
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\dec
+orations\pgflibrarydecorations.pathmorphing.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\dec
+orations\pgflibrarydecorations.pathreplacing.code.tex"))
+\pgfplots@numplots=\count190
+\pgfplots@xmin@reg=\dimen300
+\pgfplots@xmax@reg=\dimen301
+\pgfplots@ymin@reg=\dimen302
+\pgfplots@ymax@reg=\dimen303
+\pgfplots@zmin@reg=\dimen304
+\pgfplots@zmax@reg=\dimen305
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryplotmarks.code.tex"
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryplotmarks.code.tex"
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
 ty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -907,18 +1293,18 @@ Package ifvtex Info: VTeX not detected.
 ty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count166
-\Gm@cntv=\count167
-\c@Gm@tempcnt=\count168
-\Gm@bindingoffset=\dimen191
-\Gm@wd@mp=\dimen192
-\Gm@odd@mp=\dimen193
-\Gm@even@mp=\dimen194
-\Gm@layoutwidth=\dimen195
-\Gm@layoutheight=\dimen196
-\Gm@layouthoffset=\dimen197
-\Gm@layoutvoffset=\dimen198
-\Gm@dimlist=\toks43
+\Gm@cnth=\count191
+\Gm@cntv=\count192
+\c@Gm@tempcnt=\count193
+\Gm@bindingoffset=\dimen306
+\Gm@wd@mp=\dimen307
+\Gm@odd@mp=\dimen308
+\Gm@even@mp=\dimen309
+\Gm@layoutwidth=\dimen310
+\Gm@layoutheight=\dimen311
+\Gm@layouthoffset=\dimen312
+\Gm@layoutvoffset=\dimen313
+\Gm@dimlist=\toks53
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
 fg")) ("Apuntes Estadistica.aux"
@@ -927,35 +1313,35 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `"Apuntes Estadistica.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count169
-\scratchdimen=\dimen199
-\scratchbox=\box65
-\nofMPsegments=\count170
-\nofMParguments=\count171
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count172
-\MPscratchDim=\dimen256
-\MPnumerator=\count173
-\makeMPintoPDFobject=\count174
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count194
+\scratchdimen=\dimen314
+\scratchbox=\box76
+\nofMPsegments=\count195
+\nofMParguments=\count196
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count197
+\MPscratchDim=\dimen315
+\MPnumerator=\count198
+\makeMPintoPDFobject=\count199
+\everyMPtoPDFconversion=\toks55
 )
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
 ase.sty"
@@ -1014,7 +1400,13 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
+) ABD: EveryShipout initializing macros
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
+your preamble.
+ on input line 35.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1084,8 +1476,8 @@ LaTeX Info: Redefining \% on input line 1.
  [3
 
 ])
-\tf@toc=\write3
-\openout3 = `"Apuntes Estadistica.toc"'.
+\tf@toc=\write4
+\openout4 = `"Apuntes Estadistica.toc"'.
 
 ) (Archivos/CAP1/Capitulo_I.tex
 LaTeX Info: Redefining \. on input line 1.
@@ -1124,8 +1516,8 @@ LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 
 [11]) (Archivos/CAP2/Secciones/Moda.tex
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
  [12])
 (Archivos/CAP2/Secciones/MediaGeometrica.tex
 LaTeX Info: Redefining \. on input line 17.
@@ -1200,20 +1592,20 @@ LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
  [28]))
 (Archivos/Bibliografia.tex)
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
  [29] ("Apuntes Estadistica.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 13310 strings out of 493305
- 224143 string characters out of 3130237
- 343604 words of memory out of 3000000
- 16459 multiletter control sequences out of 15000+200000
+ 27615 strings out of 493305
+ 664972 string characters out of 3130237
+ 918566 words of memory out of 3000000
+ 30472 multiletter control sequences out of 15000+200000
  17498 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,40p,468b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,14n,96p,720b,655s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fon
@@ -1245,9 +1637,9 @@ type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Asus/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/Asus/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "Apuntes Estadistica.pdf" (29 pages, 399620 bytes).
+Output written on "Apuntes Estadistica.pdf" (29 pages, 402501 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
+ 206 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
