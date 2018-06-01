@@ -103,7 +103,7 @@
 \contentsline {subsection}{\numberline {3.7.1}Indice de Gini $(G)$}{20}
 \contentsline {subsubsection}{C\IeC {\'a}lculo}{21}
 \contentsline {subsubsection}{Interpretaci\IeC {\'o}n de $\frac {G}{2}$}{21}
-\contentsline {subsection}{\numberline {3.7.2}Curva de Lorentz}{21}
+\contentsline {subsection}{\numberline {3.7.2}Curva de Lorenz}{21}
 \contentsline {section}{\numberline {3.8}Distribuci\IeC {\'o}n Bivariante}{21}
 \contentsline {subsection}{\numberline {3.8.1}Distribuci\IeC {\'o}n de Frecuencias Absolutas Conjuntas}{21}
 \contentsline {subsection}{\numberline {3.8.2}Distribuci\IeC {\'o}n de Frecuencias Relativas Conjuntas}{22}
@@ -124,6 +124,13 @@
 \contentsline {section}{\numberline {4.3}Regresi\IeC {\'o}n Potencial}{25}
 \contentsline {section}{\numberline {4.4}Regresi\IeC {\'o}n Exponencial}{25}
 \contentsline {section}{\numberline {4.5}Regresi\IeC {\'o}n Parab\IeC {\'o}lica}{25}
+\contentsline {section}{\numberline {4.6}Coeficiente de Correlaci\IeC {\'o}n Rectil\IeC {\'\i }neo}{25}
+\contentsline {subsection}{\numberline {4.6.1}Propiedades}{25}
+\contentsline {subsubsection}{Observaciones}{26}
+\contentsline {subsection}{\numberline {4.6.2}C\IeC {\'a}lculo}{26}
+\contentsline {subsubsection}{Mediante F\IeC {\'o}rmula propuesta por Pearson}{26}
+\contentsline {subsubsection}{En t\IeC {\'e}rminos de Covarianza y Desviaci\IeC {\'o}n Est\IeC {\'a}ndar}{26}
+\contentsline {subsubsection}{Error Est\IeC {\'a}ndar de Estimaci\IeC {\'o}n}{26}
 \contentsline {chapter}{\numberline {5}Probabilidad}{27}
 \contentsline {subsubsection}{Experimentos Determin\IeC {\'\i }sticos}{27}
 \contentsline {subsubsection}{Experimentos no Determin\IeC {\'\i }sticos}{27}
@@ -136,8 +143,6 @@
 \contentsline {subsubsection}{Complemento}{28}
 \contentsline {subsubsection}{Inclusi\IeC {\'o}n}{28}
 \contentsline {subsubsection}{Igualdad de Eventos}{28}
-\contentsline {section}{\numberline {5.2}Ejemplos}{28}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{29}
-\contentsline {section}{\numberline {5.3}$\sigma $-\IeC {\'a}lgebra de Eventos}{29}
-\contentsline {section}{\numberline {5.4}Definici\IeC {\'o}n Axiom\IeC {\'a}tica de Probabilidad}{29}
-\contentsline {subsection}{\numberline {5.4.1}Propiedades de la Probabilidad de Eventos}{29}
+\contentsline {section}{\numberline {5.2}$\sigma $-\IeC {\'a}lgebra de Eventos}{28}
+\contentsline {section}{\numberline {5.3}Definici\IeC {\'o}n Axiom\IeC {\'a}tica de Probabilidad}{29}
+\contentsline {subsection}{\numberline {5.3.1}Propiedades de la Probabilidad de Eventos}{29}

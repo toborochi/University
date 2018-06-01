@@ -1,0 +1,34 @@
+\section{Coeficiente de Correlación Rectilíneo}
+\subsection{Propiedades}
+\begin{enumerate}
+\item $-1\leq r \leq 1$
+\item Si $r>0$, entonces existe correlación directa positiva.
+\item Si $r<0$, entonces existe correlación inversa negativa.
+\item $r^2=0$, los datos forman una línea recta, en caso de correlación rectilínea.
+\item Si $r=1$, entonces existe correlación perfecta positiva.
+\item Si $r=-1$, entonces existe correlación perfecta negativa.
+\item Si $r=0$, los datos son incorrelacionados.
+\end{enumerate}
+\subsubsection{Observaciones}
+\begin{itemize}
+\item El signo de $r$ es el mismo signo de $b$ de la ecuación de regresión: $\hat{y}=a+bx$
+\item En la interpretación clásica se sostiene:
+\begin{enumerate}
+\item Si $0.00 \leq r < 0.20$, existe correlación no significativa.
+\item Si $0.20 \leq r < 0.40$, existe baja correlación.
+\item Si $0.40 \leq r < 0.70$, existe correlación significativa.
+\item Si $0.70 \leq r < 1.00$, existe alto grado de asociación.
+\end{enumerate}
+\end{itemize}
+\subsection{Cálculo}
+\subsubsection{Mediante Fórmula propuesta por Pearson}
+$$r=
+\dfrac{n\cdot \displaystyle\sum_{i=1}^{n}x_i y_i -  \left( \displaystyle\sum_{i=1}^{n}x_i\right) \left( \displaystyle\sum_{i=1}^{n}y_i\right) }
+{\sqrt{\left[ n\cdot\displaystyle\sum_{i=1}^{n}x_i^2 - \left( \displaystyle\sum_{i=1}^{n}x_i\right)^2\right]
+\left[ n\cdot\displaystyle\sum_{i=1}^{n}y_i^2 - \left( \displaystyle\sum_{i=1}^{n}y_i\right)^2\right]
+ }}$$
+
+\subsubsection{En términos de Covarianza y Desviación Estándar}
+$$r=\dfrac{Cov(x,y)}{S_x\cdot S_y}$$
+\subsubsection{Error Estándar de Estimación}
+$$S_{yx}=\sqrt{\dfrac{\displaystyle\sum_{i=1}^{n}y_i^2-a\cdot \displaystyle\sum_{i=1}^{n}y_i-b\cdot\displaystyle\sum_{i=1}^{n}y_i x_i}{n}}$$
