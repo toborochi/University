@@ -63,3 +63,18 @@ Observar que $0\leq G \leq 1$ y $0\leq\frac{G}{2}\leq \frac{1}{2}$.
 \subsubsection{Interpretación de $\frac{G}{2}$}
 Si $\frac{G}{2}>10\%$ se considera que la distribución es alta.
 \subsection{Curva de Lorenz}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    xmin=0, xmax=100,
+    ymin=0, ymax=100,
+    minor tick num = 4,
+    grid,
+    ]
+\addplot[color=black,line width=0.25mm] plot 
+    coordinates { (0,0) (20,10) (50,15) (75,35) (90,60) (100,100)};
+\addplot[color=black] plot
+    coordinates { (0,0) (100,100)};
+\end{axis}
+\end{tikzpicture}
+\end{center}

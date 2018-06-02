@@ -12,6 +12,16 @@ Como ejemplo podemos tener los siguientes conjuntos:
 \end{enumerate}
 Para el primer conjunto, la moda es $M_o=3$ ya que es el dato que mas se repite de las observaciones. Del segundo ejemplo, la moda es $M_o=4$ y $M_o=5$, ya que ambos datos son los que mas se repiten. Finalmente, en el tercer ejemplo, no hay moda.
 \subsection{Cálculo}
+\subsubsection{En Intervalo de Clase}
+\begin{itemize}
+\item \textbf{De Amplitud Constante:}
+$$M_o=y_{j-1}' + C_j\cdot\dfrac{f_j-f_{j-1}}{(f_j-f_{j-1})+(f_j-f_{j+1})}$$
+\item \textbf{De Amplitud Variable:}
+$$M_o=y_{j-1}' + C_j\cdot\dfrac{\dfrac{f_{j+1}}{a_{j+1}}}{\dfrac{f_{j+1}}{a_{j+1}}+\dfrac{f_{j-1}}{a_{j-1}}}$$
+esto es:
+$$M_o=y_{j-1}' + C_j\cdot\dfrac{h_{j+1}}{h_{j+1}+h_{j-1}}$$
+\end{itemize}
+
 \subsection{Ventajas y Desventajas}
 \begin{multicols}{2}
 \textbf{Ventajas}
