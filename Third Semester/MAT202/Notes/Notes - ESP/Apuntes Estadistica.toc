@@ -103,6 +103,7 @@
 \contentsline {section}{\numberline {3.6}Medidas de Forma}{20}
 \contentsline {subsection}{\numberline {3.6.1}Coeficientes de Asimetr\IeC {\'\i }a}{20}
 \contentsline {subsection}{\numberline {3.6.2}Curtosis o Apuntalamiento}{21}
+\contentsline {subsubsection}{Curtosis en funci\IeC {\'o}n del Momento}{21}
 \contentsline {section}{\numberline {3.7}Medidas de Concentraci\IeC {\'o}n}{21}
 \contentsline {subsection}{\numberline {3.7.1}Indice de Gini $(G)$}{21}
 \contentsline {subsubsection}{C\IeC {\'a}lculo}{21}
