@@ -107,21 +107,21 @@
 \contentsline {subsection}{\numberline {3.7.1}Indice de Gini $(G)$}{21}
 \contentsline {subsubsection}{C\IeC {\'a}lculo}{21}
 \contentsline {subsubsection}{Interpretaci\IeC {\'o}n de $\frac {G}{2}$}{21}
-\contentsline {subsection}{\numberline {3.7.2}Curva de Lorenz}{21}
+\contentsline {subsection}{\numberline {3.7.2}Curva de Lorenz}{22}
 \contentsline {section}{\numberline {3.8}Distribuci\IeC {\'o}n Bivariante}{22}
 \contentsline {subsection}{\numberline {3.8.1}Distribuci\IeC {\'o}n de Frecuencias Absolutas Conjuntas}{22}
-\contentsline {subsection}{\numberline {3.8.2}Distribuci\IeC {\'o}n de Frecuencias Relativas Conjuntas}{22}
-\contentsline {subsection}{\numberline {3.8.3}Distribuci\IeC {\'o}n de Frecuencias Absolutas Acumuladas Conjuntas}{22}
+\contentsline {subsection}{\numberline {3.8.2}Distribuci\IeC {\'o}n de Frecuencias Relativas Conjuntas}{23}
+\contentsline {subsection}{\numberline {3.8.3}Distribuci\IeC {\'o}n de Frecuencias Absolutas Acumuladas Conjuntas}{23}
 \contentsline {subsection}{\numberline {3.8.4}Distribuci\IeC {\'o}n de Frecuencias Relativa Acumuladas Conjuntas}{23}
 \contentsline {subsection}{\numberline {3.8.5}Distribuciones Marginales}{23}
 \contentsline {subsubsection}{Distribuci\IeC {\'o}n Marginal de $X$}{23}
 \contentsline {subsubsection}{Distribuci\IeC {\'o}n Marginal de $Y$}{23}
-\contentsline {section}{\numberline {3.9}Covarianza $(S_{xy})$}{23}
-\contentsline {subsection}{\numberline {3.9.1}C\IeC {\'a}lculo}{23}
-\contentsline {subsubsection}{Para datos Originales}{23}
-\contentsline {subsubsection}{Para datos Agrupados}{23}
-\contentsline {subsection}{\numberline {3.9.2}Propiedades}{23}
-\contentsline {subsection}{\numberline {3.9.3}Interpretaci\IeC {\'o}n}{23}
+\contentsline {section}{\numberline {3.9}Covarianza $(S_{xy})$}{24}
+\contentsline {subsection}{\numberline {3.9.1}C\IeC {\'a}lculo}{24}
+\contentsline {subsubsection}{Para datos Originales}{24}
+\contentsline {subsubsection}{Para datos Agrupados}{24}
+\contentsline {subsection}{\numberline {3.9.2}Propiedades}{24}
+\contentsline {subsection}{\numberline {3.9.3}Interpretaci\IeC {\'o}n}{24}
 \contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de Regresi\IeC {\'o}n y Correlaci\IeC {\'o}n}{25}
 \contentsline {section}{\numberline {4.1}Modelo de Regresi\IeC {\'o}n Lineal Simple}{25}
 \contentsline {section}{\numberline {4.2}Regresi\IeC {\'o}n Lineal}{25}
