@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  2 JUN 2018 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  3 JUN 2018 00:26
 entering extended mode
 **"./Apuntes Estadistica.tex"
 ("Apuntes Estadistica.tex"
@@ -1567,42 +1567,57 @@ LaTeX Info: Redefining \% on input line 1.
 [24]
 Cap\'{\i }tulo 4.
 (Archivos/CAP4/Secciones/ModeloRegresionSimple.tex)
-(Archivos/CAP4/Secciones/RegresionLineal.tex)
-(Archivos/CAP4/Secciones/RegresionPotencial.tex)
+(Archivos/CAP4/Secciones/RegresionLineal.tex
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+
+ []
+
+[25
+
+]) (Archivos/CAP4/Secciones/RegresionPotencial.tex)
 (Archivos/CAP4/Secciones/RegresionExponencial.tex)
 (Archivos/CAP4/Secciones/RegresionParabolica.tex)
-(Archivos/CAP4/Secciones/CoeficienteCorrelacion.tex [25
-
-]))
+(Archivos/CAP4/Secciones/CoeficienteCorrelacion.tex
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+ [26]))
 (Archivos/CAP5/Capitulo_V.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [26]
-Cap\'{\i }tulo 5.
-(Archivos/CAP5/Secciones/Eventos.tex [27
+ [27]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [28
 
-])
+]
+Cap\'{\i }tulo 5.
+(Archivos/CAP5/Secciones/Eventos.tex [29])
 (Archivos/CAP5/Secciones/SigmaAlgebra.tex)
 (Archivos/CAP5/Secciones/AxiomaProbabilidad.tex
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [28]))
+ [30]))
 (Archivos/Bibliografia.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [29]
+ [31]
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [30
+ [32
 
-]) [31] ("Apuntes Estadistica.aux"
+]) [33] ("Apuntes Estadistica.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
  28163 strings out of 493305
  679779 string characters out of 3130237
- 919566 words of memory out of 3000000
+ 919564 words of memory out of 3000000
  31016 multiletter control sequences out of 15000+200000
  17847 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1640,9 +1655,9 @@ grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Asus/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users
 /Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb>
-Output written on "Apuntes Estadistica.pdf" (31 pages, 428878 bytes).
+Output written on "Apuntes Estadistica.pdf" (33 pages, 434056 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
+ 223 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

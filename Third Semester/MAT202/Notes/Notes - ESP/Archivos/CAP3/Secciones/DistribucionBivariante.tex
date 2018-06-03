@@ -12,7 +12,7 @@ Paralelamente a los conceptos de frecuencia acumulada y relativa para distribuci
   $x_{2}'-x_3'$ &$x_3$ & $f_{31}$& $f_{32}$ & $f_{33}$ & $\ldots$& $f_{3q}$ & $f_{3.}$\\ [0.25cm]\hline
   $\vdots$ &$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$ & $\vdots$& $\vdots$ \\ [0.25cm]\hline
   $x_{p-1}'-x_p'$ &$x_p$ & $f_{p1}$ & $f_{p2}$  & $f_{p3}$  & $\ldots$  & $f_{pq}$ & $f_{p.}$\\ [0.25cm] \hline
-  Totales &$\displaystyle\sum_{j=1}^{p}f_{ij}=f_{.j}$ & $f_{.1}$ & $f_{.2}$  & $f_{.3}$  & $\ldots$  & $f_{.q}$ & $n=\displaystyle{\sum_{j=1}^{p}\sum_{i=1}^{q}} f_{ij}$\\ 
+  Totales &$\displaystyle\sum_{j=1}^{p}f_{ij}=f_{.j}$ & $f_{\textrm{.} 1}$ & $f_{\textrm{.} 2}$  & $f_{\textrm{.} 3}$  & $\ldots$  & $f_{.q}$ & $n=\displaystyle{\sum_{j=1}^{p}\sum_{i=1}^{q}} f_{ij}$\\ 
   \hline
 \end{tabular}
 \end{center}
@@ -27,7 +27,7 @@ Paralelamente a los conceptos de frecuencia acumulada y relativa para distribuci
   $x_{2}'-x_3'$ &$x_3$ & $h_{31}$& $h_{32}$ & $h_{33}$ & $\ldots$& $h_{3q}$ & $h_{3.}$\\ [0.25cm]\hline
   $\vdots$ &$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$ & $\vdots$& $\vdots$ \\ [0.25cm]\hline
   $x_{p-1}'-x_p'$ &$x_p$ & $h_{p1}$ & $h_{p2}$  & $h_{p3}$  & $\ldots$  & $h_{pq}$ & $h_{p.}$\\ [0.25cm] \hline
-  Totales &$\displaystyle\sum_{j=1}^{p}h_{ij}=h_{.j}$ & $h_{.1}$ & $h_{.2}$  & $h_{.3}$  & $\ldots$  & $h_{.q}$ & $\displaystyle{\sum_{j=1}^{p}\sum_{i=1}^{q}} h_{ij}=1$\\ 
+  Totales &$\displaystyle\sum_{j=1}^{p}h_{ij}=h_{.j}$ & $h_{\textrm{.} 1}$ & $h_{\textrm{.} 2}$  & $h_{\textrm{.} 3}$  & $\ldots$  & $h_{.q}$ & $\displaystyle{\sum_{j=1}^{p}\sum_{i=1}^{q}} h_{ij}=1$\\ 
   \hline
 \end{tabular}
 \end{center}
@@ -84,18 +84,19 @@ $x_p$ & $f_{p.}$ & $h_{p.}$ \\
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline 
-$Y$ & $f_{.j}$ & $h_{.j}$ \\ 
+$Y$ & $f_{.j}$ & $h_{\textrm{.} j}$ \\ 
 \hline 
-$y_1$ & $f_{.1}$ & $h_{.1}$ \\ 
+$y_1$ & $f_{\textrm{.} 1}$ & $h_{\textrm{.} 1}$ \\ 
 \hline 
-$y_2$ & $f_{.2}$ & $h_{.2}$ \\ 
+$y_2$ & $f_{\textrm{.} 2}$ & $h_{\textrm{.} 2}$ \\ 
 \hline 
-$y_3$ & $f_{.3}$ & $h_{.3}$ \\ 
+$y_3$ & $f_{\textrm{.} 3}$ & $h_{\textrm{.} 3}$ \\ 
 \hline 
 $\vdots$ & $\vdots$ & $\vdots$ \\ 
 \hline 
-$y_p$ & $f_{.p}$ & $h_{.q}$ \\ 
+$y_p$ & $f_{.p}$ & $h_{\textrm{.} q}$ \\ 
 \hline 
 \end{tabular} 
 \end{center}
 \end{multicols}
+Son las distribuciones correspondientes a cada una de las filas o columnas de la tabla de doble entrada, si la variable $x$ toma $p$ valores y $y$ toma $q$ valores, entonces existen: $p+q$ distribuciones condicionadas.

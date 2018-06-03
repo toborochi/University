@@ -6,3 +6,48 @@ $$\hat{y}=a+bx$$
 Para determinar $a$ y $b$, que es la tarea principal de la estimación de la ecuación de regresión, recurrimos al \textit{Método de Mínimos Cuadrados (MMC)}:
 $$z=\sum_{i=1}^{n}(y_i-\hat{y})^2 \Leftrightarrow z=\sum_{i=1}^{n}(y_i-a-bx_i)^2$$
 Derivando parcialmente respecto a cada uno de los parámetros se obtienen dos ecuaciones llamadas, \textit{Ecuaciones Normales:}
+\begin{multicols}{2}
+\begin{flushleft}
+Derivamos respecto de $a$:
+$$\dfrac{\partial z}{\partial a} = 2\sum_{i=1}^{n}(y_i-a-bx_i)(-1)=0$$
+Multiplicamos todo por $-1$ y dejamos igualado a cero:\\
+$$\sum_{i=1}^{n}(-y_i+a+bx_i)=0$$
+Distribuimos la sumatoria:
+$$-\sum_{i=1}^{n}y_i+\sum_{i=1}^{n}a+b\sum_{i=1}^{n}x_i=0$$
+
+\end{flushleft}
+\columnbreak
+Derivamos respecto de $b$:
+$$\dfrac{\partial z}{\partial a} = 2\sum_{i=1}^{n}(y_i-a-bx_i)(-x_i)=0$$
+Multiplicamos todo por $-x_i$ y dejamos igualado a cero:\\
+$$\sum_{i=1}^{n}(-y_ix_i+ax_i+bx_i^2)=0$$
+Distribuimos la sumatoria:\\
+$$-\sum_{i=1}^{n}y_ix_i+a\sum_{i=1}^{n}x_i+b\sum_{i=1}^{n}x_i^2=0$$
+
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{flushleft}
+Dejamos de la siguiente manera:
+$$\sum_{i=1}^{n}y_i=a\cdot n+b\sum_{i=1}^{n}x_i$$
+\end{flushleft}
+\columnbreak
+Dejamos de la siguiente manera:
+$$\sum_{i=1}^{n}y_ix_i=a\sum_{i=1}^{n}x_i+b\sum_{i=1}^{n}x_i^2$$
+\end{multicols}
+Hacemos el siguiente sistema de ecuaciones:
+$$
+\begin{cases} 
+\displaystyle\sum_{i=1}^{n}y_i=a\cdot n+b\sum_{i=1}^{n}x_i \\ \vspace{0.01cm}\\
+
+\displaystyle\sum_{i=1}^{n}y_ix_i=a\sum_{i=1}^{n}x_i+b\sum_{i=1}^{n}x_i^2
+\end{cases}
+$$
+Hallamos $b$ mediante la determinante:
+$$b=\dfrac{\left| \begin{array}{cc} n & \displaystyle\sum_{i=1}^{n}y_i \\ \displaystyle\sum_{i=1}^{n}x_i & \displaystyle\sum_{i=1}^{n}y_i\cdot x_i \end{array} \right|}{\left| \begin{array}{cc} n & \displaystyle\sum_{i=1}^{n}x_i \\ \displaystyle\sum_{i=1}^{n}x_i & \displaystyle\sum_{i=1}^{n}x_i^2 \end{array} \right|}=\dfrac{n\displaystyle\sum_{i=1}^{n}y_i\cdot x_i-\displaystyle\sum_{i=1}^{n}x_i \cdot \displaystyle\sum_{i=1}^{n}y_i }{n\displaystyle\sum_{i=1}^{n}x_i^2-\bigg(\displaystyle\sum_{i=1}^{n}x_i\bigg)^2}$$
+Para hallar $a$ tomamos la primera ecuación del sistema y despejamos $a$:
+$$a=\dfrac{\displaystyle\sum_{i=1}^{n}y_i}{n}-\dfrac{b\displaystyle\sum_{i=1}^{n}x_i}{n}
+\Leftrightarrow a=\overline{y}-b\overline{x}
+$$
+Con esto, reemplazamos luego de hallar sus valores utilizando los datos, en:
+$$\hat{y}=a+bx$$
