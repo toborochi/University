@@ -1,9 +1,33 @@
-\section*{Algoritmia}
-\subsection*{Conceptos}
-\subsubsection*{Algoritmo}
+\section{Algoritmia}
+\subsection{Conceptos}
+\subsubsection{Algoritmo}
 Secuencia de pasos a seguir para resolver un problema. Un algoritmo tiene las siguientes características:
 \begin{itemize}
 \item Finitud
 \item Exactitud
 \item Sin Ambiguedades
 \end{itemize}
+Esquema de un algoritmo:
+\begin{itemize}
+\item \textbf{Entrada:} Conjunto de Datos a ser procesado. Donde la cantidad de datos es representada por: $n$.
+\item \textbf{Salida:} Conjunto de datos resultantes del proceso.
+\item \textbf{Proceso:} Conjunto de Instrucciones para transformar la entrada en la salida.
+\end{itemize}
+\subsection{Tiempo de Ejecución}
+Denotado por:
+$$T_A(n)$$
+Es el tiempo que le toma a un algoritmo $A$ procesar una entrada de tamaño $n$. Para determinar esto es necesario diferenciar: \textit{Cantidad de Operaciones} y \textit{Cantidad de Instrucciones.}
+\subsubsection{Cantidad de Operaciones}
+Para entender este punto basta ver el siguiente ejemplo:
+\lstinputlisting[language=C++]{Codigos/codigo_intro.cpp}
+Donde la cantidad de operaciones es de tres, estas son el producto de de \texttt{b*c}, esto con la suma de \texttt{a} forman dos operaciones la tercera operación es todo eso asignado a \texttt{x}.
+\subsubsection{Cantidad de Instrucciones}
+Para el mísmo ejemplo anterior:
+\lstinputlisting[language=C++]{Codigos/codigo_intro.cpp}
+En este caso la cantidad de \textit{Instrucciones} es de una.
+\subsection{Cálculo de $T(n)$}
+Para el cálculo de tiempo tendremos dos clasificaciones:
+\begin{enumerate}
+\item \textbf{Algoritmos Iterativos:} Usando tablas de conteo.
+\item \textbf{Algoritmos Recursivos:} Mediante Ecuaciones de Recurrencia.
+\end{enumerate}
