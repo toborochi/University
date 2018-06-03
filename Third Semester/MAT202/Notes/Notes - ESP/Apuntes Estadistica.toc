@@ -104,10 +104,11 @@
 \contentsline {subsection}{\numberline {3.6.1}Coeficientes de Asimetr\IeC {\'\i }a}{20}
 \contentsline {subsection}{\numberline {3.6.2}Curtosis o Apuntalamiento}{21}
 \contentsline {subsubsection}{Curtosis en funci\IeC {\'o}n del Momento}{21}
+\contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{21}
 \contentsline {section}{\numberline {3.7}Medidas de Concentraci\IeC {\'o}n}{21}
 \contentsline {subsection}{\numberline {3.7.1}Indice de Gini $(G)$}{21}
-\contentsline {subsubsection}{C\IeC {\'a}lculo}{21}
-\contentsline {subsubsection}{Interpretaci\IeC {\'o}n de $\frac {G}{2}$}{21}
+\contentsline {subsubsection}{C\IeC {\'a}lculo}{22}
+\contentsline {subsubsection}{Interpretaci\IeC {\'o}n de $\frac {G}{2}$}{22}
 \contentsline {subsection}{\numberline {3.7.2}Curva de Lorenz}{22}
 \contentsline {section}{\numberline {3.8}Distribuci\IeC {\'o}n Bivariante}{22}
 \contentsline {subsection}{\numberline {3.8.1}Distribuci\IeC {\'o}n de Frecuencias Absolutas Conjuntas}{22}
