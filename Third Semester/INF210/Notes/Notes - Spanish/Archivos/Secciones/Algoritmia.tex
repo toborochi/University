@@ -55,3 +55,27 @@ Para el cálculo de tiempo tendremos dos clasificaciones:
 \captionsetup{justification=centering}
 \caption[caption]{\footnotesize Gráfica que expresa el crecimiento de las operaciones para cada Grado de Complejidad. \\ \textbf{Fuente:} \texttt{http://bigocheatsheet.com}}
 \end{figure}
+\section{Cálculo de Tiempo}
+\subsection{Algoritmos Constantes}
+Tiene la siguiente forma:
+$$T(n)=C \hspace{1cm} \textrm{donde $C$ es una Constante}$$
+Son algoritmos que no contienen ciclos (que se ejecuten) y tarda siempre el mismo tiempo.
+\subsubsection{Ejemplos}
+\begin{enumerate}
+\item Función que Intercambia dos variables por referencia:
+\lstinputlisting[language=C++]{Codigos/intercambiar.cpp}
+Podemos ver que las únicas líneas que contienen instrucciones son las líneas \texttt{3,4} y \texttt{5}. Y estas siempre serán las instrucciones que se ejecutaran, sin importar los datos de la función. Por lo tanto:
+$$T_{intercambiar}(2)=3$$
+\item Función que devuelve el mayor de los datos de un vector ordenado:
+\lstinputlisting[language=C++]{Codigos/mayor.cpp}
+En esta función no hay mucho misterio, si vemos la línea \texttt{3} sabemos que:
+$$T_{mayor}=1$$
+\end{enumerate}
+\subsection{Algoritmos Lineales}
+Tienen la siguiente forma:
+$$T(n)=An+B$$
+\subsubsection{Ejemplos}
+\begin{enumerate}
+\item Función que devuelva la suma de los elementos de un arreglo:
+\lstinputlisting[language=C++]{Codigos/suma_elementos.cpp}
+\end{enumerate}
