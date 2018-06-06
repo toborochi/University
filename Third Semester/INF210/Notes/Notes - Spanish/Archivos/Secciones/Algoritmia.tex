@@ -78,4 +78,23 @@ $$T(n)=An+B$$
 \begin{enumerate}
 \item Función que devuelva la suma de los elementos de un arreglo:
 \lstinputlisting[language=C++]{Codigos/suma_elementos.cpp}
+Realizamos una tabla de conteo para cada línea que contenga instrucciones:
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+$l$ & $T(l)$ \\ 
+\hline 
+\texttt{4} & $2$ \\ 
+\texttt{5} & $n+1$ \\ 
+\texttt{7} & $n$ \\ 
+\texttt{8} & $n$\\ 
+\texttt{10} & $1$\\ 
+\hline 
+\end{tabular} 
+\end{center}
+Finalmente el tiempo de este ejemplo es la suma de los tiempos de todas las líneas, esto es: 
+$$T_{SumaElementos}(n)=3n+4$$ 
+Esto quiere decir que por ejemplo, si tuvieramos un vector con cuatro elementos, el tiempo de este algoritmo sería:
+$$T_{SumaElementos}(4)=3\cdot 4+4=16$$
+Esto significa que le tomara 16 instrucciones sumar un vector de cuatro elementos.
 \end{enumerate}
