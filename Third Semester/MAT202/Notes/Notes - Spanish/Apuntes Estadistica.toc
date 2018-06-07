@@ -152,3 +152,6 @@
 \contentsline {section}{\numberline {5.2}$\sigma $-\IeC {\'a}lgebra de Eventos}{30}
 \contentsline {section}{\numberline {5.3}Definici\IeC {\'o}n Axiom\IeC {\'a}tica de Probabilidad}{31}
 \contentsline {subsection}{\numberline {5.3.1}Propiedades de la Probabilidad de Eventos}{31}
+\contentsline {section}{\numberline {5.4}Definici\IeC {\'o}n Cl\IeC {\'a}sica de Probabilidad}{31}
+\contentsline {subsection}{\numberline {5.4.1}Probabilidad Condicionada}{32}
+\contentsline {subsubsection}{Propiedades}{32}

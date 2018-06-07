@@ -1,5 +1,20 @@
 \section{Definición Axiomática de Probabilidad}
 Sea $S$ un espacio muestral asociado a un cierto experimento aleatorio y sea $\Gamma$ $\sigma$-algebra de eventos subconjunto de $S$.
+
+\begin{align*}
+  P \colon \Gamma &\to [0,1]\\
+  A &\mapsto P(A)
+\end{align*}
+Tal que satisface los siguientes axiomas:
+\begin{enumerate}[label=(\roman*)]
+\item $0\leq P(A)\leq 1$
+\item $P(S)=1$
+\item $P\left( \bigcup\limits_{i=1}^{n} A_i\right)=
+\displaystyle\sum_{i=1}^{n}P(A_i) \hspace{1cm}A_i \textrm{son eventos mutuamente excluyentes}$
+\end{enumerate}
+Una consecuencia inmediata del axioma (III) es:
+$$P(A\cup B)=P(A)+P(B)$$
+Esto es si $A$ y $BB$ son eventos mutuamente excluyentes.
 \subsection{Propiedades de la Probabilidad de Eventos}
 \begin{enumerate}
 \item Si $\phi$ es un evento imposible entonces: $P(\phi)=0$
