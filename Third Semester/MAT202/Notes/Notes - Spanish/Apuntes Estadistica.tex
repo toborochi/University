@@ -19,6 +19,9 @@
 \usepackage{pstricks}
 \usepackage{pgfplots}
 \usepackage{tikz}
+\usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
+\usepackage{empheq}
+
 
 \DeclarePairedDelimiter{\Ex}{[}{]}
 \newcommand{\E}{\Ex}
@@ -38,6 +41,9 @@
 \pgfmathdeclarefunction{gauss}{2}{%
   \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
 }
+
+\newcommand{\varstackrel}[3][T]{\stackrel{\raisebox{0.5ex}{\clap{\scriptsize#2}}}{#3}}
+
 
 \begin{document}
 

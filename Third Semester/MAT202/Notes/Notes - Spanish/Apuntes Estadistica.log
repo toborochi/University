@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  11 JUN 2018 23:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  12 JUN 2018 14:31
 entering extended mode
 **"./Apuntes Estadistica.tex"
 ("Apuntes Estadistica.tex"
@@ -1276,6 +1276,30 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 libraryplotmarks.code.tex"
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 )))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.s
+ty"
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\empheq.st
+y"
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+\l_EQ_equationtype_int=\count191
+\l_EQ_alignmentmode_int=\count192
+\l_EQ_totalwidth_dim=\dimen306
+\l_EQ_displaywidth_dim=\dimen307
+\l_EQ_temp_linewidth_dim=\dimen308
+\EmphEqdelimitershortfall=\dimen309
+\EmphEqdelimiterfactor=\count193
+\g_EQ_toptag_height_dim=\dimen310
+\g_EQ_bottomtag_depth_dim=\dimen311
+\g_EQ_toprow_height_dim=\dimen312
+\g_EQ_bottomrow_depth_dim=\dimen313
+\g_EQ_widesttag_dim=\dimen314
+\EQ_mathdisplay_box=\box76
+\EQ_tag_box=\box77
+\g_EQ_temprow_int=\count194
+)
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
 ty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -1293,17 +1317,17 @@ Package ifvtex Info: VTeX not detected.
 ty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count191
-\Gm@cntv=\count192
-\c@Gm@tempcnt=\count193
-\Gm@bindingoffset=\dimen306
-\Gm@wd@mp=\dimen307
-\Gm@odd@mp=\dimen308
-\Gm@even@mp=\dimen309
-\Gm@layoutwidth=\dimen310
-\Gm@layoutheight=\dimen311
-\Gm@layouthoffset=\dimen312
-\Gm@layoutvoffset=\dimen313
+\Gm@cnth=\count195
+\Gm@cntv=\count196
+\c@Gm@tempcnt=\count197
+\Gm@bindingoffset=\dimen315
+\Gm@wd@mp=\dimen316
+\Gm@odd@mp=\dimen317
+\Gm@even@mp=\dimen318
+\Gm@layoutwidth=\dimen319
+\Gm@layoutheight=\dimen320
+\Gm@layouthoffset=\dimen321
+\Gm@layoutvoffset=\dimen322
 \Gm@dimlist=\toks53
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
@@ -1313,34 +1337,34 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `"Apuntes Estadistica.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count194
-\scratchdimen=\dimen314
-\scratchbox=\box76
-\nofMPsegments=\count195
-\nofMParguments=\count196
+\scratchcounter=\count198
+\scratchdimen=\dimen323
+\scratchbox=\box78
+\nofMPsegments=\count199
+\nofMParguments=\count266
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count197
-\MPscratchDim=\dimen315
-\MPnumerator=\count198
-\makeMPintoPDFobject=\count199
+\MPscratchCnt=\count267
+\MPscratchDim=\dimen324
+\MPnumerator=\count268
+\makeMPintoPDFobject=\count269
 \everyMPtoPDFconversion=\toks55
 )
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
@@ -1404,6 +1428,7 @@ G,.JBIG2,.JB2,.eps]
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
+\Hy@linkcounter=\count270
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1449,7 +1474,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 15.
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-[1
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 15.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
 Non-PDF special ignored!
@@ -1605,22 +1634,28 @@ LaTeX Info: Redefining \% on input line 7.
 (Archivos/CAP5/Secciones/DefinicionClasica.tex
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
- [31]))
+ [31]
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
+ [32]))
 (Archivos/Bibliografia.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [32]) [33
+ [33]
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+ [34
 
-] ("Apuntes Estadistica.aux"
+]) [35] ("Apuntes Estadistica.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 28194 strings out of 493305
- 681566 string characters out of 3130237
- 919566 words of memory out of 3000000
- 31044 multiletter control sequences out of 15000+200000
- 17850 words of font info for 68 fonts, out of 3000000 for 9000
+ 28479 strings out of 493305
+ 687156 string characters out of 3130237
+ 924848 words of memory out of 3000000
+ 31316 multiletter control sequences out of 15000+200000
+ 19169 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,17n,127p,737b,2134s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
@@ -1657,9 +1692,9 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users
 /Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pf
 b><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 symbols/msam10.pfb>
-Output written on "Apuntes Estadistica.pdf" (33 pages, 447873 bytes).
+Output written on "Apuntes Estadistica.pdf" (35 pages, 450396 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
+ 233 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

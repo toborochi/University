@@ -54,3 +54,42 @@ Si $A$ y $B$ son eventos mutuamente independientes, entonces:
 \item $A$ y $B^c$ son independientes.
 \item $A^c$ y $B^c$ son independientes.
 \end{enumerate}
+\subsubsection{Demostración de los Teoremas}
+\begin{itemize}
+\item Demostración de $1.$ :
+\begin{align*}
+P(A/B) &\varstackrel{1}{=} \dfrac{P(A\cap B)}{P(B)} \\
+&\varstackrel{2}{=} \dfrac{P(A)\cdot P(B)}{P(B)} \\
+&\varstackrel{3}{=} P(A)
+\end{align*}
+\item Demostración de $2.$ :
+\begin{align*}
+P(B/A) &\varstackrel{1}{=} \dfrac{P(B\cap A)}{P(A)} \\
+&\varstackrel{2}{=} \dfrac{P(A)\cdot P(B)}{P(A)}  \\
+&\varstackrel{3}{=} P(B)
+\end{align*}
+\item Demostración de $3.$ :
+$$P(A^c \cap B) = P(A^c)\cdot P(B)$$
+Formamos el siguiente sistema:
+$$
+\begin{cases} 
+B = (A\cap B) \cup (A^c \cap B)\\
+\phi = (A\cap B) \cap (A^c \cap B)
+\end{cases}
+$$
+Ya que son excluyentes:
+$$P(B)=P(A\cap B)+P(A^c \cap B)$$
+Despejamos $P(A^c \cap B)$ ya que es lo que nos interesa demostrar:
+$$P(A^c \cap B)=P(B)-P(A\cap B)$$
+Como $A$ y $B$ son independientes, según la hipótesis, tenemos que $P(A\cap B)=P(A)P(B)$\\
+Reemplazando en el anterior paso:
+\begin{align*}
+P(A^c \cap B) &\varstackrel{1}{=} P(B)-P(A)P(B) \\
+&\varstackrel{2}{=} P(B)\cdot [1-P(A)]  \\
+&\varstackrel{3}{=} P(B)\cdot P(A^c)
+\end{align*}
+Con esto que demostrado $3$.
+\item Demostración de $4.$ :
+\item Demostración de $5.$ :
+\end{itemize}
+%$\mathscr{L}$
