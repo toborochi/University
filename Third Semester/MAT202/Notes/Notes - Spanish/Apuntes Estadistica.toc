@@ -155,3 +155,7 @@
 \contentsline {section}{\numberline {5.4}Definici\IeC {\'o}n Cl\IeC {\'a}sica de Probabilidad}{31}
 \contentsline {subsection}{\numberline {5.4.1}Probabilidad Condicionada}{32}
 \contentsline {subsubsection}{Propiedades}{32}
+\contentsline {subsection}{\numberline {5.4.2}Eventos Dependientes}{32}
+\contentsline {subsection}{\numberline {5.4.3}Eventos Independientes}{32}
+\contentsline {subsubsection}{Observaciones}{32}
+\contentsline {subsubsection}{Teorema}{32}

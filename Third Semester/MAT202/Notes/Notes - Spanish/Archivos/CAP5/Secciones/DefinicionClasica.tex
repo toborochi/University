@@ -18,3 +18,39 @@ Si $B$ es un evento tal que $P(B)>0$, entonces $P(\bullet/B)$ tiene las siguient
 \item $P((A\cup C)/B)=P(A/B)+P(C/B)-P((A\cap C)/B)$
 \item $A\in C \Rightarrow P(A/B)\leq P(C/B)$
 \end{enumerate}
+\subsection{Eventos Dependientes}
+Se dice que los eventos $A$ y $B$ son estadísticamente dependientes, si:
+
+\begin{equation*}
+\begin{rcases}
+  P(A\cap B)=P(B)\cdot P(A/B)\\
+  P(A\cap B)=P(A)\cdot P(B/A)
+\end{rcases}
+\text{Regla General de la Multiplicación}
+\end{equation*}
+\subsection{Eventos Independientes}
+Se dice que los eventos $A$ y $B$ son estadísticamente independientes, si:
+$$P(A\cap B)=P(A)\cdot P(B)$$
+\subsubsection{Observaciones}
+\begin{enumerate}
+\item $\begin{rcases}
+  P(A)\\
+  P(B)
+\end{rcases} \text{Probabilidades Marginales}$
+\item $\begin{rcases}
+  P(A/B)\\
+  P(B/A)
+\end{rcases} \text{Probabilidades Condicionales}$
+\item $P(A/B)\neq P(B/A)$
+\item $P(A \cap B) \hspace{0.5cm} \text{Probabilidades Condicionales}$
+\item Decir \textit{'Eventos Independientes'} no es lo mismo que decir \textit{'Evento Mutuamente Excluyente'}.
+\end{enumerate}
+\subsubsection{Teorema}
+Si $A$ y $B$ son eventos mutuamente independientes, entonces:
+\begin{enumerate}
+\item $P(A/B)=P(A)$
+\item $P(B/A)=P(B)$
+\item $A^c$ y $B$ son independientes.
+\item $A$ y $B^c$ son independientes.
+\item $A^c$ y $B^c$ son independientes.
+\end{enumerate}
