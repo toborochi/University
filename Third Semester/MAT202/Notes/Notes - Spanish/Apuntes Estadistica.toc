@@ -17,8 +17,7 @@
 \contentsline {subsection}{\numberline {1.3.1}Diagrama de Barras}{8}
 \contentsline {subsection}{\numberline {1.3.2}Diagrama de Sectores}{8}
 \contentsline {subsection}{\numberline {1.3.3}Diagrama de Bastones}{8}
-\contentsline {subsection}{\numberline {1.3.4}Pol\IeC {\'\i }gono de Frecuencia}{8}
-\contentsline {subsection}{\numberline {1.3.5}Histograma}{8}
+\contentsline {subsection}{\numberline {1.3.4}Histograma y Pol\IeC {\'\i }gono de Frecuencia}{8}
 \contentsline {chapter}{\numberline {2}Estad\IeC {\'\i }grafos de Tendencia Central}{9}
 \contentsline {subsubsection}{Caracter\IeC {\'\i }sticas del Valor Central}{9}
 \contentsline {section}{\numberline {2.1}Media Aritmetica Simple $(\mathaccentV {bar}016{X})$}{9}

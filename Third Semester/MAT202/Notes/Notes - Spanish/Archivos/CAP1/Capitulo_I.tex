@@ -158,6 +158,42 @@ $Totales$ & $n$ &  & $1$ & \\
 \subsection{Diagrama de Barras}
 \subsection{Diagrama de Sectores}
 \subsection{Diagrama de Bastones}
-\subsection{Polígono de Frecuencia}
-\subsection{Histograma}
-\texttt{PENDIENTE} $\blacksquare$
+\begin{center}
+\begin{tikzpicture} 
+\begin{axis} 
+\addplot[ycomb,draw=black,fill=black] plot coordinates {(0,3) (1,2) (2,4) (3,1) (4,2)}; 
+\addplot [only marks] table {
+0 3
+1 2
+2 4
+3 1
+4 2
+};
+\end{axis} 
+\end{tikzpicture}
+\end{center}
+\subsection{Histograma y Polígono de Frecuencia}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    ymin=0, ymax=55,
+    minor y tick num = 3,
+    area style,
+    ]
+\addplot+[ybar interval,mark=no,fill=lightgray, draw=black] plot coordinates { (0, 5) (5, 35) (10, 50) (15, 30) (20, 15) (25, 0) };
+\addplot [only marks] table {
+2.5 5
+7.5 35
+12.5 50
+17.5 30
+22.5 15
+};
+\draw[dotted,line width=1pt] (-2.5,0) -- (2.5,5);
+\draw[dotted,line width=1pt] (2.5,5) -- (7.5,35);
+\draw[dotted,line width=1pt] (7.5,35) -- (12.5,50);
+\draw[dotted,line width=1pt] (12.5,50) -- (17.5,30);
+\draw[dotted,line width=1pt] (17.5,30) -- (22.5,15);
+\draw[dotted,line width=1pt] (22.5,15) -- (27.5,0);
+\end{axis}
+\end{tikzpicture}
+\end{center}
