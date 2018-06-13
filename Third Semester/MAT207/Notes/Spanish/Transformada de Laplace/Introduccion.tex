@@ -71,3 +71,19 @@ Si $C_1,C_2$ son constantes y $F_1(t),F_2(t)$ funciones con transformadas de Lap
 $$\mathscr{L} \lbrace C_1 F_1(t)+C_2 F_2(t) \rbrace = C_1\mathscr{L}\lbrace F_1(t)\rbrace + C_2\mathscr{L}\lbrace F_2(t)\rbrace$$
 Esto es:
 $$\mathscr{L} \lbrace C_1 F_1(t)+C_2 F_2(t) \rbrace = C_1 f_1(s) +  C_2 f_2(s)$$
+\subsection*{Transformadas de Laplace de la Derivadas}
+\subsubsection*{T.1.}
+Si $\mathscr{L} \lbrace F(t) \rbrace = f(s)$ entonces:
+$$\mathscr{L} \lbrace F'(t) \rbrace = s\cdot f(s) - F(0)$$
+Asumiendo:
+\begin{center}
+$e^{-st} \to 0$ cuando $t\to\infty$
+\end{center}
+\subsubsection*{T.2.}
+Si $\mathscr{L} \lbrace F(t) \rbrace = f(s)$ entonces:
+$$\mathscr{L} \lbrace F''(t) \rbrace = s^2\cdot f(s) - s\cdot F(0)-F'(0)$$
+\subsubsection*{T.3.}
+Si $\mathscr{L} \lbrace F(t) \rbrace = f(s)$ entonces:
+$$\mathscr{L} \lbrace F'''(t) \rbrace = s^3\cdot f(s) - s^2 \cdot F(0)-s\cdot F'(0)-F''(0)$$
+\subsection*{Generalizando}
+$$\mathscr{L} \lbrace F^{(n)}(t) \rbrace = $$
