@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  13 JUN 2018 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  13 JUN 2018 12:56
 entering extended mode
 **"./Apuntes Estadistica.tex"
 ("Apuntes Estadistica.tex"
@@ -1276,6 +1276,9 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 libraryplotmarks.code.tex"
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 )))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.s
 ty"
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
@@ -1337,20 +1340,20 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `"Apuntes Estadistica.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Info: Redefining \. on input line 48.
-LaTeX Info: Redefining \% on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
@@ -1524,76 +1527,86 @@ LaTeX Info: Redefining \% on input line 91.
  [6]
 LaTeX Info: Redefining \. on input line 144.
 LaTeX Info: Redefining \% on input line 144.
- [7]) (Archivos/CAP2/Capitulo_II.tex
+ [7] (Imagenes/DiagramaSectores.tex
+\c@a=\count271
+\c@b=\count272
+)
+LaTeX Info: Redefining \. on input line 203.
+LaTeX Info: Redefining \% on input line 203.
+ [8]) (Archivos/CAP2/Capitulo_II.tex
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
- [8]
+
+[9]
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+ [10
+
+]
 Cap\'{\i }tulo 2.
 (Archivos/CAP2/Secciones/IntroduccionEstadigrafos.tex)
-(Archivos/CAP2/Secciones/MediaAritmetica.tex [9
-
-])
+(Archivos/CAP2/Secciones/MediaAritmetica.tex [11])
 (Archivos/CAP2/Secciones/MediaPonderada.tex
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
- [10])
+ [12])
 (Archivos/CAP2/Secciones/Mediana.tex
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
- [11])
+ [13])
 (Archivos/CAP2/Secciones/Cuantiles.tex
 LaTeX Info: Redefining \. on input line 59.
 LaTeX Info: Redefining \% on input line 59.
- [12]) (Archivos/CAP2/Secciones/Moda.tex
+ [14]) (Archivos/CAP2/Secciones/Moda.tex
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
 
-[13]) (Archivos/CAP2/Secciones/MediaGeometrica.tex
+[15]) (Archivos/CAP2/Secciones/MediaGeometrica.tex
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
- [14])
+ [16])
 (Archivos/CAP2/Secciones/MediaArmonica.tex)
 (Archivos/CAP2/Secciones/MediaCuadratica.tex
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [15]))
+ [17]))
 (Archivos/CAP3/Capitulo_III.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [16]
+ [18]
 Cap\'{\i }tulo 3.
 (Archivos/CAP3/Secciones/Recorridos.tex)
 (Archivos/CAP3/Secciones/DesviacionMedia.tex)
-(Archivos/CAP3/Secciones/Varianza.tex [17
+(Archivos/CAP3/Secciones/Varianza.tex [19
 
 ]
 LaTeX Info: Redefining \. on input line 52.
 LaTeX Info: Redefining \% on input line 52.
- [18])
+ [20])
 (Archivos/CAP3/Secciones/DesviacionEstandar.tex)
 (Archivos/CAP3/Secciones/DispersionRelativa.tex
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
- [19])
+ [21])
 (Archivos/CAP3/Secciones/MedidasForma.tex
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- [20]
+ [22]
 LaTeX Info: Redefining \. on input line 45.
 LaTeX Info: Redefining \% on input line 45.
- [21])
+ [23])
 (Archivos/CAP3/Secciones/DistribucionBivariante.tex
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
- [22]
+ [24]
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
- [23])
+ [25])
 (Archivos/CAP3/Secciones/Covarianza.tex)) (Archivos/CAP4/Capitulo_IV.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
-[24]
+[26]
 Cap\'{\i }tulo 4.
 (Archivos/CAP4/Secciones/ModeloRegresionSimple.tex)
 (Archivos/CAP4/Secciones/RegresionLineal.tex
@@ -1606,7 +1619,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
 
-[25
+[27
 
 ]) (Archivos/CAP4/Secciones/RegresionPotencial.tex)
 (Archivos/CAP4/Secciones/RegresionExponencial.tex)
@@ -1614,47 +1627,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
 (Archivos/CAP4/Secciones/CoeficienteCorrelacion.tex
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
- [26]))
+ [28]))
 (Archivos/CAP5/Capitulo_V.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [27]
+ [29]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [28
+ [30
 
 ]
 Cap\'{\i }tulo 5.
-(Archivos/CAP5/Secciones/Eventos.tex [29])
+(Archivos/CAP5/Secciones/Eventos.tex [31])
 (Archivos/CAP5/Secciones/SigmaAlgebra.tex)
 (Archivos/CAP5/Secciones/AxiomaProbabilidad.tex
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
- [30])
+ [32])
 (Archivos/CAP5/Secciones/DefinicionClasica.tex
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
- [31]
+ [33]
 LaTeX Info: Redefining \. on input line 64.
 LaTeX Info: Redefining \% on input line 64.
- [32]))
+ [34]))
 (Archivos/Bibliografia.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [33]
+ [35]
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [34
+ [36
 
-]) [35] ("Apuntes Estadistica.aux"
+]) [37] ("Apuntes Estadistica.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 28480 strings out of 493305
- 686766 string characters out of 3130237
- 924837 words of memory out of 3000000
- 31317 multiletter control sequences out of 15000+200000
+ 28692 strings out of 493305
+ 690979 string characters out of 3130237
+ 926207 words of memory out of 3000000
+ 31521 multiletter control sequences out of 15000+200000
  19169 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,17n,127p,737b,2134s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1692,9 +1705,9 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users
 /Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pf
 b><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 symbols/msam10.pfb>
-Output written on "Apuntes Estadistica.pdf" (35 pages, 451663 bytes).
+Output written on "Apuntes Estadistica.pdf" (37 pages, 454073 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
+ 242 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
