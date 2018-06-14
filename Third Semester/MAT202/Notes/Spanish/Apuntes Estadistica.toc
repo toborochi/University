@@ -16,7 +16,7 @@
 \contentsline {section}{\numberline {1.3}Representaciones Gr\IeC {\'a}ficas}{8}
 \contentsline {subsection}{\numberline {1.3.1}Diagrama de Barras}{8}
 \contentsline {subsection}{\numberline {1.3.2}Diagrama de Sectores}{8}
-\contentsline {subsection}{\numberline {1.3.3}Diagrama de Bastones}{8}
+\contentsline {subsection}{\numberline {1.3.3}Diagrama de Bastones}{9}
 \contentsline {subsection}{\numberline {1.3.4}Histograma y Pol\IeC {\'\i }gono de Frecuencia}{9}
 \contentsline {chapter}{\numberline {2}Estad\IeC {\'\i }grafos de Tendencia Central}{11}
 \contentsline {subsubsection}{Caracter\IeC {\'\i }sticas del Valor Central}{11}

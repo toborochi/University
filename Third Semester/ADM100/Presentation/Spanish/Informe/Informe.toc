@@ -1,0 +1,4 @@
+\babel@toc {spanish}{}
+\contentsline {section}{Introducci\IeC {\'o}n}{4}
+\contentsline {subsection}{Concepto}{4}
+\contentsline {subsection}{Elementos de concepto}{4}

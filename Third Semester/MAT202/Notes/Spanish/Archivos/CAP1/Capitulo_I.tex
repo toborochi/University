@@ -155,7 +155,28 @@ $Totales$ & $n$ &  & $1$ & \\
 \end{itemize}
 \end{enumerate}
 \section{Representaciones Gráficas}
+Las gráficas son instrumentos estadísticos muy útiles para dar idea global acerca de una situación estadística:
 \subsection{Diagrama de Barras}
+\pgfplotstableread[row sep=\\,col sep=&]{
+    interval & carT & carD & carR \\
+    0     & 1.2  & 0.1  & 0.2  \\
+    2     & 12.8 & 3.8  & 4.9  \\
+    4    & 15.5 & 10.4 & 13.4 \\
+    6   & 14.0 & 17.3 & 22.2 \\
+    8  & 7.9  & 21.1 & 27.0 \\
+    10      & 3.0  & 22.3 & 28.6 \\
+    }\mydata
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+            ybar,
+            symbolic x coords={0,2,4,6,8,10},
+            xtick=data,
+        ]
+        \addplot[fill=lightgray,line width=0.75pt] table[x=interval,y=carT]{\mydata};
+    \end{axis}
+\end{tikzpicture}
+\end{center}
 \subsection{Diagrama de Sectores}
 
 \subfile{Imagenes/DiagramaSectores}
@@ -165,7 +186,7 @@ $Totales$ & $n$ &  & $1$ & \\
 \begin{center}
 \begin{tikzpicture} 
 \begin{axis} 
-\addplot[ycomb,draw=black,fill=black] plot coordinates {(0,3) (1,2) (2,4) (3,1) (4,2)}; 
+\addplot[ycomb,draw=black,fill=black,line width=1pt] plot coordinates {(0,3) (1,2) (2,4) (3,1) (4,2)}; 
 \addplot [only marks] table {
 0 3
 1 2
