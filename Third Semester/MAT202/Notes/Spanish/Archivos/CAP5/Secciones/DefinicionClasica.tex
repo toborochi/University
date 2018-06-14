@@ -90,6 +90,26 @@ P(A^c \cap B) &\varstackrel{1}{=} P(B)-P(A)P(B) \\
 \end{align*}
 Con esto que demostrado $3$.
 \item Demostración de $4.$ :
+$$P(A \cap B^c) = P(A)\cdot P(B^c)$$
+Formamos el siguiente sistema:
+$$
+\begin{cases} 
+A = (A\cap B) \cup (A \cap B^c)\\
+\phi = (A\cap B) \cap (A\cap B^c)
+\end{cases}
+$$
+Ya que son excluyentes:
+$$P(A)=P(A\cap B^c)+P(A \cap B)$$
+Despejamos $P(A \cap B^c)$ ya que es lo que nos interesa demostrar:
+$$P(A \cap B^c)=P(A)-P(A\cap B)$$
+Como $A$ y $B$ son independientes, según la hipótesis, tenemos que $P(A\cap B)=P(A)P(B)$\\
+Reemplazando en el anterior paso:
+\begin{align*}
+P(A \cap B^c) &\varstackrel{1}{=} P(A)-P(A)P(B) \\
+&\varstackrel{2}{=} P(A)\cdot [1-P(B)]  \\
+&\varstackrel{3}{=} P(A)\cdot P(B^c)
+\end{align*}
+Con esto que demostrado $4$.
 \item Demostración de $5.$ :
 \end{itemize}
 %$\mathscr{L}$
