@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  17 JUN 2018 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  17 JUN 2018 13:18
 entering extended mode
 **./Proyecto.tex
 (Proyecto.tex
@@ -977,12 +977,12 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 250.
-<Imagenes/Proteus-Circuito.png, id=18, 304.43738pt x 214.09987pt>
+<Imagenes/Proteus-Circuito.png, id=18, 1212.9315pt x 845.559pt>
 File: Imagenes/Proteus-Circuito.png Graphic file (type png)
 <use Imagenes/Proteus-Circuito.png>
 Package pdftex.def Info: Imagenes/Proteus-Circuito.png  used on input line 251.
 
-(pdftex.def)             Requested size: 456.65492pt x 321.149pt.
+(pdftex.def)             Requested size: 485.164pt x 338.2176pt.
 
 [2 <./Imagenes/Proteus-Circuito.png>] (Proyecto.aux
 LaTeX Info: Redefining \. on input line 6.
@@ -1007,7 +1007,7 @@ s/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
 mr17.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmr7.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmtt10.pfb>
-Output written on Proyecto.pdf (3 pages, 111286 bytes).
+Output written on Proyecto.pdf (3 pages, 210660 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
