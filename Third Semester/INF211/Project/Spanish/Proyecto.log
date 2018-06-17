@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  17 JUN 2018 08:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  17 JUN 2018 09:02
 entering extended mode
 **./Proyecto.tex
 (Proyecto.tex
@@ -968,24 +968,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-{C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 213.
+{C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [1]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 242.
 
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 213.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 242.
 
-[1] (Proyecto.aux
+[2] (Proyecto.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
  14408 strings out of 493305
  277645 string characters out of 3130237
- 395502 words of memory out of 3000000
+ 398594 words of memory out of 3000000
  17665 multiletter control sequences out of 15000+200000
  13483 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1001,9 +1001,9 @@ s/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
 mr17.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmr7.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmtt10.pfb>
-Output written on Proyecto.pdf (2 pages, 92668 bytes).
+Output written on Proyecto.pdf (3 pages, 96857 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

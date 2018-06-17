@@ -172,6 +172,35 @@ Erik Edwin Vidal
 \section*{Descripción}
 \section*{Materiales}
 \section*{Diseño Lógico}
+Estados del \texttt{Contador MOD10}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\texttt{DEC} & $Q_3$ & $Q_2$ & $Q_1$ & $Q_0$ \\ 
+\hline 
+0 & 0 & 0 & 0 & 0 \\ 
+\hline 
+1 & 0 & 0 & 0 & 1 \\ 
+\hline 
+2 & 0 & 0 & 1 & 0 \\ 
+\hline 
+3 & 0 & 0 & 1 & 1 \\ 
+\hline 
+4 & 0 & 1 & 0 & 0 \\ 
+\hline 
+5 & 0 & 0 & 0 & 1 \\ 
+\hline 
+6 & 0 & 1 & 1 & 0 \\ 
+\hline 
+7 & 0 & 1 & 1 & 1 \\ 
+\hline 
+8 & 1 & 0 & 0 & 0 \\ 
+\hline 
+9 & 1 & 0 & 0 & 1 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
 En esta sección se detallan los mapas de Karnaugh para el \texttt{Contador MOD10 (0-9)}
 \begin{center}
     \begin{Karnaugh}
