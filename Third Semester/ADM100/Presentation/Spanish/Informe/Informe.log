@@ -1,23 +1,22 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  19 JUN 2018 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  19 JUN 2018 15:51
 entering extended mode
 **./Informe.tex
 (Informe.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
-("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
-Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk12.clo"
-File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -358,15 +357,15 @@ Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count88
+\babel@savecnt=\count87
 \U@D=\dimen103
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.de
 f")
-\bbl@dirlevel=\count89
+\bbl@dirlevel=\count88
 )
 \es@quottoks=\toks16
-\es@quotdepth=\count90
+\es@quotdepth=\count89
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -394,13 +393,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count91
+\inf@bad=\count90
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count92
-\leftroot@=\count93
+\uproot@=\count91
+\leftroot@=\count92
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count94
-\DOTSCASE@=\count95
+\classnum@=\count93
+\DOTSCASE@=\count94
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -409,15 +408,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen106
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count96
-\c@MaxMatrixCols=\count97
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
 \dotsspace@=\muskip10
-\c@parentequation=\count98
-\dspbrk@lvl=\count99
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
 \tag@help=\toks18
-\row@=\count100
-\column@=\count101
-\maxfields@=\count102
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
 \andhelp@=\toks19
 \eqnshift@=\dimen107
 \alignsep@=\dimen108
@@ -490,9 +489,9 @@ Package ifvtex Info: VTeX not detected.
 ty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count103
-\Gm@cntv=\count104
-\c@Gm@tempcnt=\count105
+\Gm@cnth=\count102
+\Gm@cntv=\count103
+\c@Gm@tempcnt=\count104
 \Gm@bindingoffset=\dimen115
 \Gm@wd@mp=\dimen116
 \Gm@odd@mp=\dimen117
@@ -528,16 +527,16 @@ LaTeX Info: Redefining \% on input line 34.
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
+\scratchcounter=\count105
 \scratchdimen=\dimen123
 \scratchbox=\box28
-\nofMPsegments=\count107
-\nofMParguments=\count108
+\nofMPsegments=\count106
+\nofMParguments=\count107
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count109
+\MPscratchCnt=\count108
 \MPscratchDim=\dimen124
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
 \everyMPtoPDFconversion=\toks25
 )
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
@@ -605,7 +604,7 @@ G,.JBIG2,.JB2,.eps]
 * paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
 * v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
 * \paperwidth=614.295pt
@@ -614,21 +613,21 @@ G,.JBIG2,.JB2,.eps]
 * \textheight=681.15898pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-47.23828pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
-* \headsep=19.8738pt
+* \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=98.0pt
-* \marginparsep=7.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -643,42 +642,36 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-
 {C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 69.
-
-("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+[3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
+ ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
-
-[3] [4] (Informe.aux
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
+ [4] (Informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 4079 strings out of 493305
- 54920 string characters out of 3130237
- 130806 words of memory out of 3000000
- 7553 multiletter control sequences out of 15000+200000
- 14817 words of font info for 57 fonts, out of 3000000 for 9000
+ 4056 strings out of 493305
+ 54678 string characters out of 3130237
+ 130370 words of memory out of 3000000
+ 7531 multiletter control sequences out of 15000+200000
+ 14465 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,30p,581b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,30p,581b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmr12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Asus/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Asus/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Asus/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Us
-ers/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
-2.pfb>
-Output written on Informe.pdf (4 pages, 85409 bytes).
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Asus/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Asus/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Informe.pdf (4 pages, 76338 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
+ 39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
