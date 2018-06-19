@@ -109,7 +109,43 @@ P(A \cap B^c) &\varstackrel{1}{=} P(A)-P(A)P(B) \\
 &\varstackrel{2}{=} P(A)\cdot [1-P(B)]  \\
 &\varstackrel{3}{=} P(A)\cdot P(B^c)
 \end{align*}
-Con esto que demostrado $4$.
+Con esto queda demostrado $4$.
 \item Demostración de $5.$ :
+En este punto, lo que tratamos de demostrar es: 
+$$P(A^c \cap B^c)=P(A^c)P(B^c)$$
+Comenzamos aplicando D'Morgan:
+\begin{align*}
+P(A^c \cap B^c) &\varstackrel{1}{=} P[(A\cup B)^c] \\
+&\varstackrel{2}{=} 1-P(A\cup B) \\
+&\varstackrel{3}{=} 1-[P(A)+P(B)-P(A\cap B)]\\
+&\varstackrel{4}{=} 1-P(A)-P(B)+P(A\cap B) \\
+&\varstackrel{5}{=} [1-P(A)]-[P(B)-P(A\cap B)]\\ 
+&\varstackrel{6}{=} [1-P(A)]-[P(B)-P(A)P(B)]\\
+&\varstackrel{7}{=} [1-P(A)]-P(B)[1-P(A)]\\
+&\varstackrel{8}{=} [1-P(A)][1-P(B)]\\
+&\varstackrel{9}{=} P(A^c)P(B^c)
+\end{align*}
+Con esto queda demostrado $5$.
 \end{itemize}
 %$\mathscr{L}$
+\subsection{Teorema de la Probabilidad Total}
+También llamada \textit{Regla de Eliminación}. Si los eventos mutuamente excluyentes:
+$$B_1,B_2,B_3,\ldots,B_n$$
+Constituyen una partición del espacio muestral $S$, de tal manera que $\forall i\in I,P(B_i)>0$. Entonces para cualquier evento $A$ de $S$ se cumple:
+$$P(A)=\displaystyle\sum_{i=1}^{n} P(B_i)P(A/B_i)$$
+\subsubsection{Demostración}
+\begin{align*}
+P(A) &\varstackrel{1}{=} [(B_1\cap A)\cup (B_2\cap A)\cup \ldots \cup (B_n\cap A)] \\
+&\varstackrel{2}{=} P(B_1\cap A)+P(B_2\cap A)+ \ldots + P(B_n\cap A) \\
+&\varstackrel{3}{=} \displaystyle\sum_{i=1}^{n}(B_i \cap A) \\
+&\varstackrel{4}{=} \displaystyle\sum_{i=1}^{n} P(B_i)\cdot P(A/B_i) 
+\end{align*}
+\subsection{Teorema de Bayes}
+Si los eventos: $B_1,B_2,B_3,\ldots,B_n$ , constituyen una partición del espacio muestral $S$, de tal modo que; $\forall i\in I,P(B_i)>0$, entonces para cualquier evento $A$ de $S$, tal que $P(A)>0$ se cumple:
+$$P(A)=\dfrac{P(B_r)P(A/B_r)}{\displaystyle\sum_{i=1}^{n} P(B_i)P(A/B_i)}$$
+\subsubsection{Demostración}
+\begin{align*}
+P(B_r/A) &\varstackrel{1}{=} \dfrac{P(B_r\cap A)}{P(A)} \\
+&\varstackrel{2}{=} \dfrac{P(B_r)P(A/B_r)}{P(A)}  \\
+&\varstackrel{3}{=} \dfrac{P(B_r)P(A/B_r)}{\displaystyle\sum_{i=1}^{n} P(B_i)P(A/B_i)}
+\end{align*}

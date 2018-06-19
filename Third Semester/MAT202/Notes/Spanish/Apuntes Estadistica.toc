@@ -159,3 +159,7 @@
 \contentsline {subsubsection}{Observaciones}{34}
 \contentsline {subsubsection}{Teorema}{34}
 \contentsline {subsubsection}{Demostraci\IeC {\'o}n de los Teoremas}{35}
+\contentsline {subsection}{\numberline {5.4.4}Teorema de la Probabilidad Total}{36}
+\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{36}
+\contentsline {subsection}{\numberline {5.4.5}Teorema de Bayes}{36}
+\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{37}
