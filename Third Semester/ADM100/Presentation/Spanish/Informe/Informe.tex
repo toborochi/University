@@ -5,6 +5,9 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{
 {\Large \textbf{Grupo Nº 5}}\\${ }$\\
@@ -13,23 +16,26 @@
 \hline 
 Nombre & Registro \\ 
 \hline 
-Leonardo H. Añez Vladimirovna & 217002498 \\ \hline
-Leonardo H. Añez Vladimirovna & 217002498 \\ \hline
-Leonardo H. Añez Vladimirovna & 217002498 \\ \hline
-Leonardo H. Añez Vladimirovna & 217002498 \\ \hline
-Leonardo H. Añez Vladimirovna & 217002498 \\ \hline
-Leonardo H. Añez Vladimirovna & 217002498 \\ \hline
-Leonardo H. Añez Vladimirovna & 217002498 \\ \hline
-Leonardo H. Añez Vladimirovna & 217002498 \\ 
+Cristhian Relox Brito            & 216183243 \\ \hline
+Pedro Antonio Arce Espinoza      & 217003613 \\ \hline
+Ruddy Albert Olmos Tila          & 212105779 \\ \hline
+Victor Hugo Mamani Copa          & 213095671 \\ \hline
+Hernan Huanca Pernea             & 200660608 \\ \hline
+Raul Yampara Huarachi            & 215167287 \\ \hline
+Leonardo Henry Añez Vladimirovna & 217002498 \\ \hline
+Roger Miguel Aguilera Masabi	  & 216155241 \\ \hline
+Extid Yeferson Moreno Marquéz    & 216084415 \\ 
 \hline 
 \end{tabular} 
 }
 \title{
-{\large \texttt{ADM100 - GRUPO SC}}\\ {\normalsize \textbf{Docente:} Oscar Flores} \\ \vspace{3cm}
+{\large \texttt{ADM100 - GRUPO SA}}\\ {\normalsize \textbf{Docente:} Oscar Flores} \\ \vspace{3cm}
 {\Huge El Control}
 }
 
 %\setcounter{secnumdepth}{0} % sections are level 1
+
+\graphicspath{ {Imagenes/} }
 
 \begin{document}
 \maketitle
@@ -38,6 +44,10 @@ Leonardo H. Añez Vladimirovna & 217002498 \\
 
 \section{Introducción}
 El control ha sido definido bajo dos grandes perspectivas, una perspectiva limitada y una perspectiva amplia. Desde la perspectiva limitada, el control se concibe como la verificación a posteriori de los resultados conseguidos en el seguimiento de los objetivos planteados y el control de gastos invertido en el proceso realizado por los niveles directivos donde la estandarización en términos cuantitativos, forma parte central de la acción de control.
+\section{Antecedentes}
+Desde tiempos remotos, el ser humano ha tenido la necesidad de control, los cuales empezaron con cuentas simples con los dedos de las manos, los pies y piedras hasta llegar al desarrollo de verdaderos sistemas de enumeración que además de la simple identificación de cantidades permitió el avance en otro tipo de operaciones en los antiguos imperios, en los cuales se debe una forma de control y cobro de impuestos Resalta que se vea la necesidad de desarrollar las operaciones que se están realizando en una comunidad.\\${ }$\\
+El origen del control interno, suele ubicarse en el tiempo con el surgimiento de la partida doble, que fué una de las medidas de control, pero no fué hasta a fines del siglo XIX que los hombres de negocios se preocuparon por formar y establecer sistemas adecuados para la protección de sus intereses.
+A finales de este siglo como consecuencia del notable aumento de la producción, los propietarios se vieron imposibilitados de continuar atendiendo personalmente lo problemas productivos , comerciales y administrativos, viéndose forzados a delegar funciones dentro de la organización conjuntamente con la creación de sistemas y procedimientos que disminuyeran los fraudes y errores. 
 \section{Concepto}
 El control es una etapa primordial en la administración, pues, aunque una empresa cuente con magníficos planes, una estructura organizacional adecuada y una dirección eficiente, el ejecutivo no podrá verificar cuál es la situación real de la organización si no existe un mecanismo que se cerciore e informe si los hechos van de acuerdo con los objetivos.\\${ }$\\
 El concepto de control es muy general y puede ser utilizado en el contexto organizacional para evaluar el desempeño general frente a un plan estratégico.
@@ -50,31 +60,47 @@ A fin de incentivar que cada uno establezca una definición propia del concepto 
 \section{Importancia del Control}
 Una de las razones más evidentes de la importancia del control es porque hasta el mejor de los planes se puede desviar. El control se emplea para:
 \begin{itemize}
-\item \textbf{Crear mejor calidad:} Las fallas del proceso se detectan y el proceso se corrige para eliminar errores.
-\item \textbf{Enfrentar el cambio:} Este forma parte ineludible del ambiente de cualquier organización. Los mercados cambian, la competencia en todo el mundo ofrece productos o servicios nuevos que captan la atención del público. Surgen materiales y tecnologías nuevas. Se aprueban o enmiendan reglamentos gubernamentales. La función del control sirve a los gerentes para responder a las amenazas o las oportunidades de todo ello, porque les ayuda a detectar los cambios que están afectando los productos y los servicios de sus organizaciones.
-\item \textbf{Producir ciclos más rápidos:} Una cosa es reconocer la demanda de los consumidores para un diseño, calidad, o tiempo de entregas mejorados, y otra muy distinta es acelerar los ciclos que implican el desarrollo y la entrega de esos productos y servicios nuevos a los clientes. Los clientes de la actualidad no solo esperan velocidad, sino también productos y servicios a su medida.
-\end{itemize}
-\subsection{Bases del Control}
-\begin{itemize}
-\item	Los objetivos son los programas que desea lograr la empresa, los que facilitarán alcanzar la meta de esta. Lo que hace necesaria la planificación y organización para fijar qué debe hacerse y cómo.
-\item 	El hacer es poner en práctica el cómo se planificó y organizó la consecución de los objetivos. De éste hacer se desprende una información que proporciona detalles sobre lo que se está realizando, o sea, ella va a esclarecer cuáles son los hechos reales. Esta información debe ser clara, práctica y actualizada al evaluar.
-\item	El evaluar que no es más que la interpretación y comparación de la información obtenida con los objetivos trazados, se puedan tomar decisiones acerca de que medidas deben ser necesarias tomar.
-\item	La mejora es la puesta en práctica de las medidas que resolverán las desviaciones que hacen perder el equilibrio al sistema.
+
+\item Establece medidas para corregir las actividades, de tal forma que se alcancen planes exitosamente.
+\item Se aplica a todo: a las cosas, alas personas, y a los actos.
+\item Determina y analiza rápidamente las causas que pueden originar desviaciones, para que no se vuelvan a presentar en el futuro.
+\item Localiza a los lectores responsables de la administración, desde el momento en que se establecen medidas correctivas.
+\item Proporciona información acerca de la situación de la ejecución de los planes, sirviendo como fundamento al reiniciarse el proceso de planeación.
+\item Reduce costos y ahorra tiempo al evitar errores.
+\item Su aplicación incide directamente en la racionalización de la administración y consecuentemente, en el logro de la productividad de todos los recursos de la empresa.
 \end{itemize}
 \subsection{Areas del Control}
 El control actúa en todas las áreas y en todos los niveles de la empresa. Prácticamente todas las actividades de una empresa están bajo alguna forma de control o monitoreo. Las principales áreas de control en la empresa son:
 \begin{itemize}
-\item \textbf{Áreas de producción:} Si la empresa es industrial, el área de producción es aquella donde se fabrican los productos; si la empresa fuera prestadora de servicios, el área de producción es aquella donde se prestan los servicios.
+\item \textbf{Áreas de producción:} Si la empresa es industrial, el área de producción es aquella donde se fabrican los productos; si la empresa fuera prestadora de servicios, el área de producción es aquella donde se prestan los servicios. Como ejemplo tenemos la siguiente figura:
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.4]{CicloReciclaje}
+\caption{Grafica que Ilustra el Ciclo de Venta de Cajas de Cartón}
+\end{figure}
 \item \textbf{Control de producción:} El objetivo fundamental de este control es programar, coordinar e implantar todas las medidas tendientes a lograr un optima rendimiento en las unidades producidas, e indicar el modo, tiempo y lugar más idóneos para lograr las metas de producción, cumpliendo así con todas las necesidades del departamento de ventas. 
 \end{itemize}
-\section{Reglas del Proceso de Control}
+\section{Principios}
+La aplicación racional del control debe fundamentarse en los siguientes principios:
+\begin{itemize}
+\item \textbf{Equilibrio:} A cada grupo conferido debe proporcionarse al grado del control correspondiente. De la misma manera que la autoridad se delega y la responsabilidad se comparte, al delegar autoridad es necesario establecer los mecanismos suficientes para verificar que se esta cumpliendo con la responsabilidad conferida, y que la autoridad delegada esta siendo debidamente ejercida.
+\item \textbf{De los Objetivos:} Se refiere a que el control existe en función de los objetivos, es decir, el control no es un fin, sino un medio para alcanzar los objetivos preestablecidos.
+\item \textbf{De la Oportunidad:} El control, para que sea eficaz, necesita ser oportuno, es decir, debe aplicarse antes de que se efectúe el error. De tal manera que sea posible tomar medidas correctivas, con anticipación.
+\item \textbf{De las Desviaciones:} Todas las variaciones o desviaciones que se presenten en relación con los planes deben ser analizadas detalladamente, de tal manera que sea posible conocer las causas que las originaron, a fin de tomar las medidas necesarias para evitarlas en el futuro.
+\item \textbf{Costeabilidad: }Es establecimiento de un sistema de control debe justificar el costo que este represente en tiempo y dinero, en relaciona con las ventajas reales que este reporte.
+\item \textbf{Excepción:} El control debe aplicarse, preferentemente, a las actividades excepcionales o representativas, a fin de reducir costos y tiempo, delimitando adecuadamente cuales funciones estratégicas requiere el control.
+\item \textbf{De la Función Controlada:} La función controlada por ningún motivo debe comprender a la función controlada, ya que pierde efectividad el control. Este principio es básico, ya que señala que la persona o la función que realiza el control no debe estar involucrada con la actividad a controlar.
+
+\end{itemize}
+
+\section{Reglas del Control}
 \begin{enumerate}
 \item	\textit{Establecimiento de los medios de control.}
 \item	\textit{Operaciones de recolección de datos.}
 \item	\textit{Interpretación y valoración de los resultados.}
 \item	\textit{Utilización de los mismos resultados.}
 \end{enumerate}
-\subsection{Elementos del Control}
+\subsection{Procesos del Control}
 El control es un proceso cíclico y repetitivo. Está compuesto de cuatro elementos que se suceden:
 \begin{itemize}
 \item \textbf{Establecimiento de estándares:} Es la primera etapa del control, que establece los estándares o criterios de evaluación o comparación. Un estándar es una norma o un criterio que sirve de base para la evaluación o comparación de alguna cosa. Existen cuatro tipos de estándares; los cuales se presentan a continuación:
@@ -88,4 +114,51 @@ El control es un proceso cíclico y repetitivo. Está compuesto de cuatro elemen
 \item \textbf{Comparación del desempeño con el estándar establecido:} Es la tercera etapa del control, que compara el desempeño con lo que fue establecido como estándar, para verificar si hay desvío o variación, esto es, algún error o falla con relación al desempeño esperado.
 \item \textbf{Acción correctiva:} Es la cuarta y última etapa del control que busca corregir el desempeño para adecuarlo al estándar esperado. La acción correctiva es siempre una medida de corrección y adecuación de algún desvío o variación con relación al estándar esperado.
 \end{itemize}
+
+
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\matrix [column sep=7mm, row sep=5mm] {
+  \node (se) [draw, shape=rectangle] {Establecimiento de Estandares}; &
+  \node (ul) [draw, shape=rectangle] {Evaluación de Desempeño}; \\
+  \node (we) [draw, shape=rectangle] {Evaluación de  Resultados}; &
+  \node (pu) [draw, shape=rectangle] {Retroalimentación (Acción Correctiva)}; \\
+};
+\draw[thick,-Latex] (se) -- (ul);
+\draw[thick,-Latex] (ul) -- (pu);
+\draw[thick,-Latex] (pu) -- (we);
+\draw[thick,-Latex] (we) -- (se);
+
+\end{tikzpicture}
+\caption{Gráfica que representa los Procesos del Control}
+\end{figure}
+
+
+
+\newpage
+
+
+\begin{thebibliography}{9}
+\bibitem{Tecnologico} 
+Elvina Solano.
+\textit{Control como Funcion Administrativa}. 
+Tecnologico de Estudios Superiores de Chimalhuacán, 2013.
+ 
+\bibitem{einstein} 
+Rafael Franco Ruíz. \textit{Revista Nº 5 - Evolución histórica del control}, legal.legis.com.co, 2001.
+
+ 
+\bibitem{Monografias} 
+Marco Antonio. \textit{Concepto, Importancia y Principios del Control}, monografias.com, 2010.
+\\\texttt{http://www.monografias.com/trabajos11/prico/prico.shtml}
+
+\bibitem{Monografias} 
+Laura Esmeralda. \textit{Antecedentes del Control  Administrativo}, Instituto Tecnológico de Altamira., 2010.
+
+\end{thebibliography}
+
+
+
 \end{document}
