@@ -210,30 +210,32 @@ Estados del \texttt{Contador MOD10}
 \end{center}
 
 En esta sección se detallan los mapas de Karnaugh para el \texttt{Contador MOD10 (0-9)}
+\vspace{3cm}
 \begin{center}
     \begin{Karnaugh}
-        \contingut{1,1,\textbf{x},1,x,x,\textbf{x},x,x,x,\textbf{x},\textbf{x},1,1,\textbf{x},\textbf{x}}
+        \contingut{1,1,1,\textbf{x},x,x,x,\textbf{x},1,1,\textbf{x},\textbf{x},x,x,\textbf{x},\textbf{x}}
     \implicant{0}{10}{green}
     \end{Karnaugh}
     %
    \begin{Karnaugh}
-        \contingut{x,x,\textbf{x},x,1,1,\textbf{x},1,1,1,\textbf{x},\textbf{x},x,x,\textbf{x},\textbf{x}}
+        \contingut{x,x,x,\textbf{x},1,1,1,\textbf{x},x,x,\textbf{x},\textbf{x},1,1,\textbf{x},\textbf{x}}
     \implicant{0}{10}{purple}
     \end{Karnaugh}   
 \end{center}
-
+$$J_0=1 \hspace{3cm} K_0=1$$
 
 \begin{center}
     \begin{Karnaugh}
-        \contingut{0,0,\textbf{x},0,1,1,\textbf{x},0,x,x,\textbf{x},\textbf{x},x,x,\textbf{x},\textbf{x}}
+        \contingut{0,0,0,\textbf{x},1,1,0,\textbf{x},x,x,\textbf{x},\textbf{x},x,x,\textbf{x},\textbf{x}}
      \implicant{4}{13}{yellow}
     \end{Karnaugh}
     %
    \begin{Karnaugh}
-        \contingut{x,x,x,x,x,x,x,0,x,x,x,x,x,x,x,x}
+        \contingut{x,x,x,\textbf{x},x,x,x,\textbf{x},0,0,\textbf{x},\textbf{x},1,1,\textbf{x},\textbf{x}}
     \implicant{4}{14}{red}
     \end{Karnaugh}
 \end{center}
+$$J_1=Q_0 \overline{Q}_3 \hspace{3cm} K_1=Q_0$$
 
 \begin{center}
     \begin{Karnaugh}
@@ -242,10 +244,11 @@ En esta sección se detallan los mapas de Karnaugh para el \texttt{Contador MOD1
     \end{Karnaugh}
     %
    \begin{Karnaugh}
-        \contingut{x,x,x,x,x,x,x,0,x,x,x,x,x,x,x,x}
+        \contingut{x,0,0,\textbf{x},x,0,x,\textbf{x},x,0,\textbf{x},\textbf{x},x,1,\textbf{x},\textbf{x}}
 	    \implicant{12}{14}{pink}
     \end{Karnaugh}
 \end{center}
+$$J_2=Q_0 Q_1 \hspace{3cm} K_2=Q_0 Q_1$$
 
 \begin{center}
     \begin{Karnaugh}
@@ -258,6 +261,7 @@ En esta sección se detallan los mapas de Karnaugh para el \texttt{Contador MOD1
     \implicant{4}{14}{green}
     \end{Karnaugh}
 \end{center}
+$$J_3=Q_0 Q_1 Q_2 \hspace{3cm} K_3=Q_0$$
 
 \section*{Diseño en Proteus 8.6 $^\text{{\small \textcopyright}}$ }
 \includegraphics[scale=0.4]{Proteus-Circuito}
