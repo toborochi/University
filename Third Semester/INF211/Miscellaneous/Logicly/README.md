@@ -1,2 +1,3 @@
 # List of Projects
-  * 2 Bit Counter
+![](https://i.imgur.com/SpNhDIN.png)
+*2-Bit Counter*
