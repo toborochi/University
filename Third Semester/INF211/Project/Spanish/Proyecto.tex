@@ -13,7 +13,11 @@ Leonardo Añez Vladimirovna\\
 Cristian Terceros Coca\\
 Erik Edwin Vidal
 }
-\title{Contador 0-99}
+\title{
+Universidad Autónoma Gabriél René Moreno \\
+Facultad de Ingeniería en Ciencias de la  Computación y Telecomunicaciones \\\vspace{1cm}
+\texttt{Arquitectura del Computador} \\\vspace{3cm}
+Contador 0-99\\\vspace{2cm}}
 
 \graphicspath{ {Imagenes/} }
 
@@ -171,13 +175,18 @@ Erik Edwin Vidal
 \maketitle
 
 \section*{Introducción}
+El contador digital es aquella secuencia constante de números de 0 a 9, el cual se aprecia su funcionamiento en un display de 7 Segmentos, en este proyecto veremos el
+funcionamiento lógico de los circuitos internos utilizados para llegar a que funcione este contador.
 \section*{Descripción}
+Para el circuito, desarrollaremos las tablas de Karnaugh para el caso 0-9 (Contador \texttt{MOD10}), ya que de este se puede partir a una generalización de un contador.
 \section*{Materiales}
 \begin{itemize}
-\item Proto-Board (1)
-\item Capacitor de Cerámica (1)
-\item Resistor de 1K $\Omega$ (3)
-\item LED (2)
+\item Circuitos Integrados \texttt{SN7447 AN} (2)
+\item Circuitos Integrados \texttt{SN74SL190 AN} (2)
+\item Resistencia de 220 Ohm (14)
+\item Display de 7 Segmentos, Anodo Comun (2)
+\item Protoboard (2)
+\item Cable \texttt{UTP}
 \end{itemize}
 \section*{Diseño Lógico}
 Estados del \texttt{Contador MOD10}
@@ -210,7 +219,9 @@ Estados del \texttt{Contador MOD10}
 \end{center}
 
 En esta sección se detallan los mapas de Karnaugh para el \texttt{Contador MOD10 (0-9)}
-\vspace{3cm}
+
+\subsubsection{Mapas de Karnaugh}
+
 \begin{center}
     \begin{Karnaugh}
         \contingut{1,1,1,\textbf{x},x,x,x,\textbf{x},1,1,\textbf{x},\textbf{x},x,x,\textbf{x},\textbf{x}}
@@ -222,7 +233,7 @@ En esta sección se detallan los mapas de Karnaugh para el \texttt{Contador MOD1
     \implicant{0}{10}{purple}
     \end{Karnaugh}   
 \end{center}
-$$J_0=1 \hspace{3cm} K_0=1$$
+
 
 \begin{center}
     \begin{Karnaugh}
@@ -235,7 +246,7 @@ $$J_0=1 \hspace{3cm} K_0=1$$
     \implicant{4}{14}{red}
     \end{Karnaugh}
 \end{center}
-$$J_1=Q_0 \overline{Q}_3 \hspace{3cm} K_1=Q_0$$
+
 
 \begin{center}
     \begin{Karnaugh}
@@ -248,7 +259,7 @@ $$J_1=Q_0 \overline{Q}_3 \hspace{3cm} K_1=Q_0$$
 	    \implicant{12}{14}{pink}
     \end{Karnaugh}
 \end{center}
-$$J_2=Q_0 Q_1 \hspace{3cm} K_2=Q_0 Q_1$$
+
 
 \begin{center}
     \begin{Karnaugh}
@@ -261,10 +272,15 @@ $$J_2=Q_0 Q_1 \hspace{3cm} K_2=Q_0 Q_1$$
     \implicant{4}{14}{green}
     \end{Karnaugh}
 \end{center}
-$$J_3=Q_0 Q_1 Q_2 \hspace{3cm} K_3=Q_0$$
+\subsubsection{Diagrama}
+\begin{center}
+\includegraphics[scale=0.3]{CircuitoLLogico}
+\end{center}
 
 \section*{Diseño en Proteus 8.6 $^\text{{\small \textcopyright}}$ }
-\includegraphics[scale=0.4]{Proteus-Circuito}
+\begin{center}
+\includegraphics[scale=0.85]{Proteus-Circuito}
+\end{center}
 \section*{Conclusión}
     
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  21 JUN 2018 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  22 JUN 2018 09:15
 entering extended mode
 **./Proyecto.tex
 (Proyecto.tex
@@ -835,20 +835,20 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `Proyecto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Info: Redefining \. on input line 169.
-LaTeX Info: Redefining \% on input line 169.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Info: Redefining \. on input line 173.
+LaTeX Info: Redefining \% on input line 173.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
@@ -957,11 +957,11 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 171.
+LaTeX Font Info:    Try loading font information for U+msa on input line 175.
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 171.
+LaTeX Font Info:    Try loading font information for U+msb on input line 175.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -969,31 +969,37 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 266.
+<Imagenes/CircuitoLLogico.png, id=20, 1464.47125pt x 419.5675pt>
+File: Imagenes/CircuitoLLogico.png Graphic file (type png)
+<use Imagenes/CircuitoLLogico.png>
+Package pdftex.def Info: Imagenes/CircuitoLLogico.png  used on input line 277.
+(pdftex.def)             Requested size: 439.34477pt x 125.87122pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 280.
 
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 266.
-<Imagenes/Proteus-Circuito.png, id=19, 1212.9315pt x 845.559pt>
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 280.
+<Imagenes/Proteus-Circuito.png, id=22, 571.23413pt x 279.74513pt>
 File: Imagenes/Proteus-Circuito.png Graphic file (type png)
 <use Imagenes/Proteus-Circuito.png>
-Package pdftex.def Info: Imagenes/Proteus-Circuito.png  used on input line 267.
+Package pdftex.def Info: Imagenes/Proteus-Circuito.png  used on input line 282.
 
-(pdftex.def)             Requested size: 485.164pt x 338.2176pt.
+(pdftex.def)             Requested size: 485.5513pt x 237.78448pt.
 
-[2] [3 <./Imagenes/Proteus-Circuito.png>] (Proyecto.aux
+[2 <./Imagenes/CircuitoLLogico.png>] [3 <./Imagenes/Proteus-Circuito.png>]
+(Proyecto.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 14414 strings out of 493305
- 277795 string characters out of 3130237
- 395463 words of memory out of 3000000
- 17668 multiletter control sequences out of 15000+200000
- 13483 words of font info for 53 fonts, out of 3000000 for 9000
+ 14423 strings out of 493305
+ 277986 string characters out of 3130237
+ 394484 words of memory out of 3000000
+ 17675 multiletter control sequences out of 15000+200000
+ 13652 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,69p,420b,876s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
@@ -1007,10 +1013,11 @@ C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmr12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmr17.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr7.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Proyecto.pdf (4 pages, 220410 bytes).
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Asus/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Proyecto.pdf (4 pages, 169541 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
