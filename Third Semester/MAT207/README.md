@@ -15,6 +15,7 @@ Some useful sources sorted by categories:
 
 **Non Linear Diferential Equation System**
 * [Sistemas no Homogeneas y Aplicaciones](http://www.ehu.eus/izaballa/Ecu_Dif/Apuntes/lec10.pdf)
+* [Ecuaciones diferenciales. Profesor Bogart Méndez](https://www.uv.mx/personal/aherrera/files/2014/04/21.-Resolucion-de-Sists-de-EDO-Lins-con-coefs.-ctes.-Met-de-los-opers1.pdf)
 
 **Extra Resources:**
 * [Ion Zaballaren Orria, Lectures](http://www.ehu.eus/izaballa/)
