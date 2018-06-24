@@ -17,7 +17,7 @@ Some useful sources sorted by categories:
 * [Sistemas no Homogeneas y Aplicaciones](http://www.ehu.eus/izaballa/Ecu_Dif/Apuntes/lec10.pdf)
 
 **Extra Resources:**
-
+* [Ion Zaballaren Orria, Lectures](http://www.ehu.eus/izaballa/)
 * [Trigonometric Identities](https://www.adelaide.edu.au/mathslearning/handouts/useful-trig-identities.pdf)
 
 
