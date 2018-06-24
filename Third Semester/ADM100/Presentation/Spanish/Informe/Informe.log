@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  20 JUN 2018 22:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  24 JUN 2018 17:56
 entering extended mode
 **./Informe.tex
 (Informe.tex
@@ -1048,56 +1048,63 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-<Imagenes/Fayol.png, id=16, 180.675pt x 200.75pt>
+<Imagenes/Fayol.png, id=17, 180.675pt x 200.75pt>
 File: Imagenes/Fayol.png Graphic file (type png)
 <use Imagenes/Fayol.png>
-Package pdftex.def Info: Imagenes/Fayol.png  used on input line 80.
+Package pdftex.def Info: Imagenes/Fayol.png  used on input line 84.
 (pdftex.def)             Requested size: 90.33727pt x 100.37474pt.
-<Imagenes/Buchele.png, id=18, 180.675pt x 200.75pt>
+<Imagenes/Buchele.png, id=19, 180.675pt x 200.75pt>
 File: Imagenes/Buchele.png Graphic file (type png)
 <use Imagenes/Buchele.png>
-Package pdftex.def Info: Imagenes/Buchele.png  used on input line 87.
+Package pdftex.def Info: Imagenes/Buchele.png  used on input line 91.
 (pdftex.def)             Requested size: 90.33727pt x 100.37474pt.
-<Imagenes/KoonzODon.png, id=19, 371.3875pt x 200.75pt>
+<Imagenes/KoonzODon.png, id=20, 371.3875pt x 200.75pt>
 File: Imagenes/KoonzODon.png Graphic file (type png)
 <use Imagenes/KoonzODon.png>
-Package pdftex.def Info: Imagenes/KoonzODon.png  used on input line 93.
+Package pdftex.def Info: Imagenes/KoonzODon.png  used on input line 97.
 (pdftex.def)             Requested size: 185.69328pt x 100.37474pt.
-<Imagenes/Terry.png, id=20, 180.675pt x 200.75pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Imagenes/Terry.png, id=21, 180.675pt x 200.75pt>
 File: Imagenes/Terry.png Graphic file (type png)
 <use Imagenes/Terry.png>
-Package pdftex.def Info: Imagenes/Terry.png  used on input line 99.
+Package pdftex.def Info: Imagenes/Terry.png  used on input line 103.
 (pdftex.def)             Requested size: 90.33727pt x 100.37474pt.
-
-[3 <./Imagenes/Fayol.png> <./Imagenes/Buchele.png> <./Imagenes/KoonzODon.png>]
-[4 <./Imagenes/Terry.png>]
+[3 <./Imagenes/Fayol.png> <./Imagenes/Buchele.png>] [4 <./Imagenes/KoonzODon.pn
+g> <./Imagenes/Terry.png>]
 <Imagenes/CicloReciclaje.png, id=32, 127.97812pt x 110.814pt>
 File: Imagenes/CicloReciclaje.png Graphic file (type png)
 <use Imagenes/CicloReciclaje.png>
-Package pdftex.def Info: Imagenes/CicloReciclaje.png  used on input line 159.
+Package pdftex.def Info: Imagenes/CicloReciclaje.png  used on input line 163.
 (pdftex.def)             Requested size: 179.16814pt x 155.1385pt.
- [5 <./Imagenes/CicloReciclaje.png>] [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 193.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5] [6 <./Imagenes/CicloReciclaje.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 197.
 
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 193.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 197.
 
 [7] [8] [9] (Informe.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 15505 strings out of 493305
- 297946 string characters out of 3130237
- 349412 words of memory out of 3000000
- 18714 multiletter control sequences out of 15000+200000
+ 15506 strings out of 493305
+ 297952 string characters out of 3130237
+ 349416 words of memory out of 3000000
+ 18715 multiletter control sequences out of 15000+200000
  15931 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,18n,67p,565b,842s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,18n,67p,615b,842s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmr10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/font
@@ -1108,7 +1115,7 @@ ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Use
 rs/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.
 pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmtt12.pfb>
-Output written on Informe.pdf (9 pages, 423847 bytes).
+Output written on Informe.pdf (9 pages, 424895 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
