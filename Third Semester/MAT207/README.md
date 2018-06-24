@@ -13,6 +13,11 @@ Some useful sources sorted by categories:
 * [Paul's Online Math Notes - Exact Differential Equations](http://tutorial.math.lamar.edu/Classes/DE/Exact.aspx)
 * [CliffsNotes](https://www.cliffsnotes.com/study-guides/differential-equations/first-order-equations/exact-equations)
 
+**Non Linear Diferential Equation System**
+* [Sistemas no Homogeneas y Aplicaciones](http://www.ehu.eus/izaballa/Ecu_Dif/Apuntes/lec10.pdf)
+
 **Extra Resources:**
 
 * [Trigonometric Identities](https://www.adelaide.edu.au/mathslearning/handouts/useful-trig-identities.pdf)
+
+
