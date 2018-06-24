@@ -2,7 +2,7 @@ This is some useful sources and notes of Diferential Ecuations:
 
 ## Notes
 
-
+  * [Laplace Transform](https://github.com/toborochi/University/blob/master/Third%20Semester/MAT207/Notes/Spanish/Transformada%20de%20Laplace/Laplace.pdf)
 
 ## Core
 
