@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  13 JUN 2018 00:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  24 JUN 2018 00:44
 entering extended mode
 **./Laplace.tex
 (Laplace.tex
@@ -790,8 +790,8 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 23.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
-{C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]) [2]
-(Laplace.aux
+{C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2])
+[3] (Laplace.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
@@ -821,9 +821,9 @@ Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Us
 ers/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/
 rsfs10.pfb>
-Output written on Laplace.pdf (2 pages, 170394 bytes).
+Output written on Laplace.pdf (3 pages, 171090 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
