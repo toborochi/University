@@ -7,9 +7,17 @@ $$F(x,y,y',y'',\ldots,y^{(n)})=0$$
 Si se logra conseguir una función $\alpha(x)$ tal que, al reemplazar en la Ecuación:
 $$F(x,\alpha(x),\alpha'(x),\alpha''(x),\ldots,\alpha^{(n)}(x))=0$$
 Entonces se dice que $\alpha(x)$ es \textbf{Solución} de la Ecuación Diferencial.
+\subsubsection*{Familia de Curvas}
+Una ED en su forma mas simple tiene la siguiente apariencia:
+$$\dfrac{dy}{dx}=f(x)$$
+Para resolver esta ED debemos realizar el proceso inverso de la derivada, es decir integrar:
+$$\int\dfrac{dy}{dx}dx=\int f(x) dx\Rightarrow y=F(x)+C$$
+Debe notarse que debido a $C$ esta solución es en realidad un número infinito de soluciones. A esto se le llama \textbf{Familia de Curvas}. Una solución particular de esta ecuación, es una sola curva contenida en la familia de curvas.
 \subsection*{Orden, Grado y Linealidad de una Ecuación Diferencial}
 \begin{itemize}
 \item \textbf{Orden:} El Orden de una ED\footnote{ED = Ecuaciones Diferenciales (notación que usaremos de aquí en adelante)} es el orden de la derivada mas alta de la función desconocida (variable dependiente) que aparece en la ecuación.
 \item \textbf{Grado:} El grado se expresa mediante el mayor exponente de la derivada de mayor orden.
 \item \textbf{Linealidad:} Una ED Lineal de orden $n$ es una ecuación de la forma:
+$$a_n(x)\dfrac{d^ny}{dx^n}+a_{n-1}(x)\dfrac{d^{n-1}y}{dx^{n-1}}+\cdots + a_2(x)\dfrac{d^2y}{dx^2}+a_1(x)\dfrac{dy}{dx}+a(x)y=h(x)$$
+Cuyos coeficientes $a_0(x),a_1(x),\ldots,a_n(x)$ y el segundo miembro $h(x)$ son continuos en un Intervalo $I$ en el que la $a_n(x)\neq 0$. Si $h(x)=0$ la Ecuación se llama \textit{Ecuación Diferencial de Orden $n$ Homogénea.}
 \end{itemize}
