@@ -21,3 +21,19 @@ Debe notarse que debido a $C$ esta solución es en realidad un número infinito 
 $$a_n(x)\dfrac{d^ny}{dx^n}+a_{n-1}(x)\dfrac{d^{n-1}y}{dx^{n-1}}+\cdots + a_2(x)\dfrac{d^2y}{dx^2}+a_1(x)\dfrac{dy}{dx}+a(x)y=h(x)$$
 Cuyos coeficientes $a_0(x),a_1(x),\ldots,a_n(x)$ y el segundo miembro $h(x)$ son continuos en un Intervalo $I$ en el que la $a_n(x)\neq 0$. Si $h(x)=0$ la Ecuación se llama \textit{Ecuación Diferencial de Orden $n$ Homogénea.}
 \end{itemize}
+\section{Formas de Resolución}
+\subsection{Ecuaciones con Variables Separables}
+Una ED de 1er Orden $\frac{dy}{dx}=f(x,y)$ es separable, si la función $f(x,y)$ se puede escribir como un producto de una función de $x$ y una función de $y$.
+$$\dfrac{dy}{dx}=f(x,y)\Rightarrow \dfrac{dy}{dx}=f(x)g(y)$$
+\section{Ecuaciones Homogéneas}
+Una función $M(x,y)$ es Homogénea de grado $n$ si la suma de las potencias de $x$ y $y$ en cada termino es $n$. Esto es:
+$$M(\lambda x,\lambda y)=\lambda^nM(x,y)$$
+Una ED Homogénea es una ED de la forma:
+$$\dfrac{dy}{dx}=\dfrac{M(x,y)}{N(x,y)}$$
+Donde $M$ y $N$ son funciones homogéneas del mismo grado.
+\subsection{Método de Solución}
+Las ED Homogéneas se resuelven haciendo la sustitución:
+$$y=Vx \hspace{1.5cm} V=\dfrac{y}{x}$$
+donde $V$ es una función de $x$ por lo tanto:
+$$\dfrac{dy}{dx}=V+x\dfrac{dV}{dx}$$
+El miembro que corresponde a la función se puede expresar en términos de $\frac{y}{x}$. Esto se hace dividiendo todo entre $x^n$. Donde $n$ es el grado de: $N$ y $M$.

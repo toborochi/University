@@ -1,3 +1,7 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Conceptos Generales}{5}
 \contentsline {subsubsection}{Teorema}{5}
+\contentsline {section}{\numberline {1.1}Formas de Resoluci\IeC {\'o}n}{6}
+\contentsline {subsection}{\numberline {1.1.1}Ecuaciones con Variables Separables}{6}
+\contentsline {section}{\numberline {1.2}Ecuaciones Homog\IeC {\'e}neas}{6}
+\contentsline {subsection}{\numberline {1.2.1}M\IeC {\'e}todo de Soluci\IeC {\'o}n}{6}
