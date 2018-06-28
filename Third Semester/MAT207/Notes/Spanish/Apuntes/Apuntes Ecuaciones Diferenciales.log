@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  27 JUN 2018 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  27 JUN 2018 22:43
 entering extended mode
 **"./Apuntes Ecuaciones Diferenciales.tex"
 ("Apuntes Ecuaciones Diferenciales.tex"
@@ -1360,6 +1360,8 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikzmark\tikzlibrar
+ytikzmark.code.tex")
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
 ty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -1542,23 +1544,30 @@ LaTeX Info: Redefining \% on input line 1.
 
 ]
 Cap\'{\i }tulo 1.
-[5]) (Archivos/Bibliografia.tex
+[5]
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+ [6]) (Archivos/Bibliografia.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [6]) [7
+ [7]
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+ [8
 
-] ("Apuntes Ecuaciones Diferenciales.aux"
+]) [9]
+("Apuntes Ecuaciones Diferenciales.aux"
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 28579 strings out of 493305
- 680504 string characters out of 3130237
- 892566 words of memory out of 3000000
- 31507 multiletter control sequences out of 15000+200000
+ 28674 strings out of 493305
+ 682968 string characters out of 3130237
+ 894566 words of memory out of 3000000
+ 31598 multiletter control sequences out of 15000+200000
  16795 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,8n,127p,750b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,10n,127p,750b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fon
@@ -1581,10 +1590,10 @@ m/cmsy7.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Asus/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "Apuntes Ecuaciones Diferenciales.pdf" (7 pages, 231756 bytes
+Output written on "Apuntes Ecuaciones Diferenciales.pdf" (9 pages, 238885 bytes
 ).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 111 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

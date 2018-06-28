@@ -18,7 +18,7 @@ Debe notarse que debido a $C$ esta solución es en realidad un número infinito 
 \item \textbf{Orden:} El Orden de una ED\footnote{ED = Ecuaciones Diferenciales (notación que usaremos de aquí en adelante)} es el orden de la derivada mas alta de la función desconocida (variable dependiente) que aparece en la ecuación.
 \item \textbf{Grado:} El grado se expresa mediante el mayor exponente de la derivada de mayor orden.
 \item \textbf{Linealidad:} Una ED Lineal de orden $n$ es una ecuación de la forma:
-$$a_n(x)\dfrac{d^ny}{dx^n}+a_{n-1}(x)\dfrac{d^{n-1}y}{dx^{n-1}}+\cdots + a_2(x)\dfrac{d^2y}{dx^2}+a_1(x)\dfrac{dy}{dx}+a(x)y=h(x)$$
+$$a_n(x)\dfrac{d^ny}{dx^n}+a_{n-1}(x)\dfrac{d^{n-1}y}{dx^{n-1}}+\cdots + a_2(x)\dfrac{d^2y}{dx^2}+a_1(x)\dfrac{dy}{dx}+a_0(x)y=h(x)$$
 Cuyos coeficientes $a_0(x),a_1(x),\ldots,a_n(x)$ y el segundo miembro $h(x)$ son continuos en un Intervalo $I$ en el que la $a_n(x)\neq 0$. Si $h(x)=0$ la Ecuación se llama \textit{Ecuación Diferencial de Orden $n$ Homogénea.}
 \end{itemize}
 \section{Formas de Resolución}
@@ -37,3 +37,33 @@ $$y=Vx \hspace{1.5cm} V=\dfrac{y}{x}$$
 donde $V$ es una función de $x$ por lo tanto:
 $$\dfrac{dy}{dx}=V+x\dfrac{dV}{dx}$$
 El miembro que corresponde a la función se puede expresar en términos de $\frac{y}{x}$. Esto se hace dividiendo todo entre $x^n$. Donde $n$ es el grado de: $N$ y $M$.
+\section{Ecuación Lineal de 1er Orden}
+Recordando la definición de una ED de orden $n$:
+$$a_n(x)\dfrac{d^ny}{dx^n}+a_{n-1}(x)\dfrac{d^{n-1}y}{dx^{n-1}}+\cdots + a_2(x)\dfrac{d^2y}{dx^2}+a_1(x)\dfrac{dy}{dx}+a_0(x)y=h(x)$$
+tenemos, para 1er Orden:
+\begin{equation}
+a_1(x)\dfrac{dy}{dx}+a_0(x)y=h(x)
+\end{equation}
+Dividiendo la ED entre el coeficiente de $a_1(x)$:
+$$\dfrac{dy}{dx}+\underbrace{\dfrac{a_0(x)}{a_1(x)}}_{P(x)}y=\underbrace{\dfrac{h(x)}{a_1(x)}}_{Q(x)}$$
+Con esto tenemos:
+\begin{equation}
+\dfrac{dy}{dx}+P(x)y=Q(x)
+\end{equation}
+\subsection{Método de Solución}
+Partimos de:
+$$\dfrac{d}{dx}\Bigg[\mu(x)\cdot y\Bigg]=\mu(x)\dfrac{dy}{dx}+\mu(x)P(x) \cdot y = \mu(x)P(x) $$
+
+Tenemos:
+\[
+\dfrac{d}{dx}\Bigg[\mu(x)\cdot y\Bigg]=\mu(x)\dfrac{dy}{dx}+y  \overbrace{\dfrac{d\mu}{dx}}\tikzmark{0}=\mu(x)\dfrac{dy}{dx}+ \overbrace{\tikzmark{1}\mu(x)P(x)}\cdot y =  \mu(x)Q(x)
+\]
+%
+\begin{tikzpicture}[remember picture, overlay, bend left=30,line width=0.25mm]
+  \draw ([yshift=5ex]pic cs:0) to ([yshift=5ex]pic cs:1);
+\end{tikzpicture}
+
+\pagebreak
+A partir de esta igualdad obtendremos lo que se llama como \textit{Factor Integrando:}
+$$\dfrac{d\mu}{dx}=\mu(x)P(x)$$
+Para simplificar, escribiremos $\mu(x)$ simplemente como $\mu$, sobreentenderemos que esta en función de $x$:
