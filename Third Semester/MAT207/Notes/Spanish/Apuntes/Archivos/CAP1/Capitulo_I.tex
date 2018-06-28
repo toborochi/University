@@ -74,5 +74,32 @@ Para simplificar, escribiremos $\mu(x)$ simplemente como $\mu$, sobreentenderemo
 e^{\ln(\mu)} & = e^{\int P(x) dx}
 \end{align*}
 \begin{equation}
-\fbox{\mu  = e^{\int P(x) dx}} 
+\mu  = e^{\int P(x) dx}
+\end{equation}
+Una vez hallado el FI, procedemos a reemplazar en la ecuación:
+\begin{align*}
+\dfrac{d}{dx}\Big[ \mu(x)\cdot y \Big] & = \mu(x)\cdot Q(x) \\
+\dfrac{d}{dx}\Big[ e^{\int P(x)dx} y \Big] & = e^{\int P(x) dx} Q(x)
+\end{align*}
+Integrando:
+\begin{align*}
+e^{\int P(x) dx} \cdot y & = \int e^{\int P(x) dx} \cdot Q(x) dx
+\end{align*}
+$$ \boxed{y  = e^{-\int P(x) dx} \int e^{\int P(x) dx} \cdot Q(x) dx}$$
+\section{Ecuación de Bernoulli}
+Tiene la siguiente forma:
+$$\dfrac{dy}{dx}+P(x)\cdot y =Q(x)\cdot y^n $$
+Para poder tratar la ecuación, dividimos entre $y^n$:
+$$y^{-n}\cdot\dfrac{dy}{dx}+P(x)\cdot y^{1-n} =Q(x)$$
+\section{Ecuaciones Diferenciales Exactas}
+La ecuación:
+\begin{equation}
+M(x,y)dx+N(x,y)dy=0
+\end{equation}
+Es exacta se se puede escribir en la forma:
+$$\dfrac{d}{dx}\Big[ f(x,y) \Big] = 0$$
+\subsubsection{Criterio}
+La diferencia total:
+\begin{equation}
+\dfrac{\partial f}{\partial x}dx - \dfrac{\partial f}{\partial y}dy=0
 \end{equation}
