@@ -10,3 +10,5 @@
 \contentsline {section}{\numberline {1.4}Ecuaci\IeC {\'o}n de Bernoulli}{7}
 \contentsline {section}{\numberline {1.5}Ecuaciones Diferenciales Exactas}{7}
 \contentsline {subsubsection}{Criterio}{7}
+\contentsline {subsubsection}{Por Clairaut}{8}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{8}
