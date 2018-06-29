@@ -129,3 +129,23 @@ El objetivo es obtener la ED de una familia de curvas, mediante el proceso de el
 \subsubsection{Procedimiento}
 Dada la familia de curvas:
 $$F(x,y,C_1,C_2,\ldots,C_n)=0$$
+Para obtener la ED asociada a la familia de Curvas se deben utilizar las constantes en el sistema:
+\begin{align*}
+F(x,y,C_1,C_2,\ldots,C_n) & = 0 \\
+\dfrac{d}{dx}\left[ F(x,y,C_1,C_2,\ldots,C_n)\right]  & = 0 \\
+\dfrac{d^2}{dx^2}\left[ F(x,y,C_1,C_2,\ldots,C_n)\right]  & = 0 
+\end{align*}
+\begin{center}
+$\vdots $
+\end{center}
+\begin{align*}
+\dfrac{d^n}{dx^n}\left[ F(x,y,C_1,C_2,\ldots,C_n)\right]  & = 0 
+\end{align*}
+\section{Trayectorias Ortogonales}
+\subsection{Determinación}
+\subsubsection{Primer Paso}
+Dada una familia de curvas con parámetro $C$ se encuentra su ED de la forma:
+$$y'=f(x,y)$$
+\subsubsection{Segundo Paso}
+Se encuentra las trayectorias ortogonales resolviendo la ED:
+$$y' = -\dfrac{1}{f(x,y)}$$
