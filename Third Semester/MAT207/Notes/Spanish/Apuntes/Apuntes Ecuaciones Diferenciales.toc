@@ -22,8 +22,7 @@
 \contentsline {subsection}{\numberline {3.1.1}Soluci\IeC {\'o}n General}{11}
 \contentsline {section}{\numberline {3.2}Ecuaciones Diferenciales Homog\IeC {\'e}neas con Coeficientes Constantes de Orden $n$}{11}
 \contentsline {subsection}{\numberline {3.2.1}Procedimiento}{11}
-\contentsline {chapter}{\numberline {4}Ecuaciones Diferenciales no Homog\IeC {\'e}neas}{13}
-\contentsline {chapter}{\numberline {5}Sistemas de Ecuaciones Diferenciales}{15}
-\contentsline {section}{\numberline {5.1}Sistemas no Homog\IeC {\'e}neos}{15}
-\contentsline {chapter}{\numberline {6}Otros M\IeC {\'e}todos de Soluci\IeC {\'o}n}{17}
-\contentsline {section}{\numberline {6.1}Transformada de Laplace}{17}
+\contentsline {chapter}{\numberline {4}Sistemas de Ecuaciones Diferenciales}{13}
+\contentsline {section}{\numberline {4.1}Sistemas no Homog\IeC {\'e}neos}{13}
+\contentsline {chapter}{\numberline {5}Otros M\IeC {\'e}todos de Soluci\IeC {\'o}n}{15}
+\contentsline {section}{\numberline {5.1}Transformada de Laplace}{15}

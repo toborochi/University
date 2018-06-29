@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  29 JUN 2018 09:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  29 JUN 2018 09:54
 entering extended mode
 **"./Apuntes Ecuaciones Diferenciales.tex"
 ("Apuntes Ecuaciones Diferenciales.tex"
@@ -1544,62 +1544,55 @@ LaTeX Info: Redefining \% on input line 1.
 
 ]
 Cap\'{\i }tulo 1.
-[5]
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
+[5]) (Archivos/CAP2/Capitulo_II.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [6]
 Cap\'{\i }tulo 2.
 [7
 
 ]
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
- [8]
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+ [8]) (Archivos/CAP3/Capitulo_III.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [9]
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [10
 
 ]
 Cap\'{\i }tulo 3.
-[11]
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
+) (Archivos/CAP4/Capitulo_IV.tex [11]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [12
 
 ]
 Cap\'{\i }tulo 4.
-[13]
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
+) (Archivos/CAP5/Capitulo_V.tex [13]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [14
 
 ]
 Cap\'{\i }tulo 5.
-[15]
-LaTeX Info: Redefining \. on input line 175.
-LaTeX Info: Redefining \% on input line 175.
- [16
-
-]
-Cap\'{\i }tulo 6.
-) (Archivos/Bibliografia.tex [17]
+) (Archivos/Bibliografia.tex [15]
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [18
+ [16
 
-]) [19]
+]) [17]
 ("Apuntes Ecuaciones Diferenciales.aux"
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 28685 strings out of 493305
- 683104 string characters out of 3130237
+ 28717 strings out of 493305
+ 684408 string characters out of 3130237
  895566 words of memory out of 3000000
- 31608 multiletter control sequences out of 15000+200000
+ 31620 multiletter control sequences out of 15000+200000
  18543 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,12n,127p,750b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1628,10 +1621,10 @@ l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Asus/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:
 /Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 tt9.pfb>
-Output written on "Apuntes Ecuaciones Diferenciales.pdf" (19 pages, 278025 byte
+Output written on "Apuntes Ecuaciones Diferenciales.pdf" (17 pages, 276044 byte
 s).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
