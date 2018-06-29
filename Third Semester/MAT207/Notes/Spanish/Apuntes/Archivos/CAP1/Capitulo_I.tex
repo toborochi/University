@@ -37,7 +37,7 @@ $$y=Vx \hspace{1.5cm} V=\dfrac{y}{x}$$
 donde $V$ es una función de $x$ por lo tanto:
 $$\dfrac{dy}{dx}=V+x\dfrac{dV}{dx}$$
 El miembro que corresponde a la función se puede expresar en términos de $\frac{y}{x}$. Esto se hace dividiendo todo entre $x^n$. Donde $n$ es el grado de: $N$ y $M$.
-\section{Ecuación Lineal de 1er Orden}
+\chapter{Ecuación Lineal de Primer Orden}
 Recordando la definición de una ED de orden $n$:
 $$a_n(x)\dfrac{d^ny}{dx^n}+a_{n-1}(x)\dfrac{d^{n-1}y}{dx^{n-1}}+\cdots + a_2(x)\dfrac{d^2y}{dx^2}+a_1(x)\dfrac{dy}{dx}+a_0(x)y=h(x)$$
 tenemos, para 1er Orden:
@@ -50,7 +50,7 @@ Con esto tenemos:
 \begin{equation}
 \dfrac{dy}{dx}+P(x)y=Q(x)
 \end{equation}
-\subsection{Método de Solución}
+\subsection*{Método de Solución}
 Partimos de:
 $$\dfrac{d}{dx}\Bigg[\mu(x)\cdot y\Bigg]=\mu(x)\dfrac{dy}{dx}+\mu(x)P(x) \cdot y = \mu(x)P(x) $$
 
@@ -60,10 +60,8 @@ Tenemos:
 \]
 %
 \begin{tikzpicture}[remember picture, overlay, bend left=30,line width=0.25mm]
-  \draw ([yshift=5ex]pic cs:0) to ([yshift=5ex]pic cs:1);
+  \draw ([yshift=4ex]pic cs:0) to ([yshift=4ex]pic cs:1);
 \end{tikzpicture}
-
-\pagebreak
 A partir de esta igualdad obtendremos lo que se llama como \textit{Factor Integrando:}
 $$\dfrac{d\mu}{dx}=\mu(x)P(x)$$
 Para simplificar, escribiremos $\mu(x)$ simplemente como $\mu$, sobreentenderemos que esta en función de $x$:
@@ -149,3 +147,30 @@ $$y'=f(x,y)$$
 \subsubsection{Segundo Paso}
 Se encuentra las trayectorias ortogonales resolviendo la ED:
 $$y' = -\dfrac{1}{f(x,y)}$$
+\chapter{Ecuaciones Diferenciales Homogéneas}
+\section{Ecuaciones Diferenciales Homogéneas con Coeficientes Constantes}
+\begin{equation}
+ay'' + by' +cy = 0
+\end{equation}
+Donde $a,b$ y $c$ son constantes. \\${ }$\\
+Ecuaciones de este tipo tienen dos soluciones independientes.
+\subsection{Solución General}
+En general, si $y=y_1(x)$ y $y=y_2(x)$ son ambas soluciones de $1\texttt{.}8$ entonces, cualquier combinación lineal de $y_1$ y $y_2$ es también solución de $1\texttt{.}8$. Esto quiere decir:
+\begin{align*}
+ ay_1''(x)+by_1'(x) +cy_1(x)=0 \\
+ay_2''(x)+by_2'(x) +cy_2(x)=0
+\end{align*}
+Sea: $y=Ay_1(x)+By_2(x)$ una combinación lineal de $y_1$ y $y_2$.
+\section{Ecuaciones Diferenciales Homogéneas con Coeficientes Constantes de Orden $n$}
+$$a_ny^{(n)}+a_{n-1}y^{(n-1)}+\cdots + a_0 y = 0$$
+Donde: $a_i$ son constantes y $a_n\neq 0$ \\${ }$\\
+El procedimiento es similar al de orden 2. \\${ }$\\
+Si $y=e^{mx}$ es una solución, entonces $m$ es una raíz de la Ecuación Característica.
+$$\boxed{a_nm^n+a_{n-1}m^{n-1}+\cdots +a_1 m + a_0 = 0}$$
+El polinomio de grado $n$ tiene $n$ raíces, pero no necesitan ser distinas, la multiplicidad de una raíz es el número de veces que se repite. La suma de todas las multiplicidades de todas las raíces distintas es igual al grado del polinomio.
+\subsection{Procedimiento}
+\chapter{Ecuaciones Diferenciales no Homogéneas}
+\chapter{Sistemas de Ecuaciones Diferenciales}
+\section{Sistemas no Homogéneos}
+\chapter{Otros Métodos de Solución}
+\section{Transformada de Laplace}
