@@ -1,2 +1,73 @@
 \chapter{Otros Métodos de Solución}
 \section{Transformada de Laplace}
+\subsection*{Definición} Sea $F(t)$ definida para $t>0$. Entonces la Integral:
+
+$$\mathscr{L} \lbrace F(t)\rbrace = f(s) = \displaystyle\int_{0}^{\infty} e^{-st}\cdot F(t) dt$$
+Es la \textit{Transformada de Laplace} siempre que la Integral Converja. Veamos un ejemplo: 
+\subsubsection*{Ejemplo}
+Se tiene $F(t)=1$, hallar $\mathscr{L} \lbrace F(t)\rbrace$, comenzamos reemplazando en la integral:
+$$\mathscr{L} \lbrace F(t)\rbrace=\displaystyle\int_{0}^{\infty} e^{-st}\cdot 1 dt$$
+Expresamos la integral en forma de límite:
+$$\displaystyle\int_{0}^{\infty} e^{-st} dt = \lim_{b\to\infty} \displaystyle\int_{0}^{b} e^{-st} dt$$
+Realizamos la Integral:
+$$\lim_{b\to\infty} \displaystyle\int_{0}^{b} e^{-st} dt = \lim_{b\to\infty}\left[ \left( -\dfrac{1}{s}\cdot e^{-st} \right)\Bigg|_0^b \right] $$
+Evaluando la Integral en $b$ y $0$:
+$$\lim_{b\to\infty}\left[  -\dfrac{1}{s}\cdot \left( e^{-sb} - e^0\right) \right] = \lim_{b\to\infty}\left[  -\dfrac{1}{s}\cdot \left( \dfrac{1}{e^{sb}} - 1\right) \right] $$
+Aplicamos el límite:
+$$\lim_{b\to\infty}\left[  -\dfrac{1}{s}\cdot \left( \dfrac{1}{e^{sb}} - 1\right) \right]=-\dfrac{1}{s}\cdot(0-1)= \fbox{$\dfrac{1}{s}$}$$
+Por lo tanto:
+$$\mathscr{L} \lbrace 1\rbrace=f(s)=\dfrac{1}{s}$$
+\pagebreak
+\subsection*{Transformada de Laplace de algunas Funciones Elementales}
+De igual manera que el ejemplo del anterior punto, estas Transformadas se pueden obtener:
+\begin{multicols}{2}
+\begin{center}
+$F(t)$
+\end{center}
+\begin{enumerate}[1)]
+\item $1$
+\item $t$ 
+\item $t^n$
+\item $e^{at}$
+\item $sen(at)$
+\item $cos(at)$
+\item $senh(at)$
+\item $cosh(at)$
+\columnbreak
+$$\mathscr{L} \lbrace F(t) \rbrace=f(s)$$
+\item[] $\dfrac{1}{s} \hspace{0.25cm};\hspace{0.5cm}s>0$
+\item[] $\dfrac{1}{s^2} \hspace{0.25cm};\hspace{0.5cm}s>0$
+\item[] $\dfrac{n!}{s^{n+1}} \hspace{0.25cm};\hspace{0.5cm}s>0$
+\item[] $\dfrac{1}{s-a}$
+\item[] $\dfrac{a}{s^2+a^2}$
+\item[] $\dfrac{s}{s^2+a^2}$
+\item[] $\dfrac{a}{s^2-a^2} \hspace{0.25cm};\hspace{0.5cm}s>|a|$
+\item[] $\dfrac{s}{s^2-a^2} \hspace{0.25cm};\hspace{0.5cm}s>|a|$
+\end{enumerate}
+\end{multicols}
+\subsection*{Propiedades}
+\subsubsection*{Teorema}
+Si $C_1,C_2$ son constantes y $F_1(t),F_2(t)$ funciones con transformadas de Laplace: $f_1(s),f_2(s)$ respectivamente, entonces:
+$$\mathscr{L} \lbrace C_1 F_1(t)+C_2 F_2(t) \rbrace = C_1\mathscr{L}\lbrace F_1(t)\rbrace + C_2\mathscr{L}\lbrace F_2(t)\rbrace$$
+Esto es:
+$$\mathscr{L} \lbrace C_1 F_1(t)+C_2 F_2(t) \rbrace = C_1 f_1(s) +  C_2 f_2(s)$$
+\subsection*{Transformadas de Laplace de la Derivadas}
+\subsubsection*{T.1.}
+Si $\mathscr{L} \lbrace F(t) \rbrace = f(s)$ entonces:
+$$\mathscr{L} \lbrace F'(t) \rbrace = s\cdot f(s) - F(0)$$
+Asumiendo:
+\begin{center}
+$e^{-st} \to 0$ cuando $t\to\infty$
+\end{center}
+\subsubsection*{T.2.}
+Si $\mathscr{L} \lbrace F(t) \rbrace = f(s)$ entonces:
+$$\mathscr{L} \lbrace F''(t) \rbrace = s^2\cdot f(s) - s\cdot F(0)-F'(0)$$
+\subsubsection*{T.3.}
+Si $\mathscr{L} \lbrace F(t) \rbrace = f(s)$ entonces:
+$$\mathscr{L} \lbrace F'''(t) \rbrace = s^3\cdot f(s) - s^2 \cdot F(0)-s\cdot F'(0)-F''(0)$$
+\subsection*{Generalizando}
+$$\mathscr{L} \lbrace F(t) \rbrace = s^n\cdot f(s)-s^{n-1}F(0)-s^{n-2}F'(0)-\cdots -s\cdot F^{n-2}(0)-F^{n-1}(0)$$
+\subsection*{Transformada Inversa}
+Si $\mathscr{L}\left\lbrace F(t) \right\rbrace = f(s)$ entonces $f(s)$ es la transformada inversa de Laplace. Esto es:
+$$\mathscr{L}^{-1} \lbrace f(s) \rbrace = F(t)$$
+Para la inversa se pueden utilizar las transformadas normales, teniendo en cuenta que ahora trabajamos con las inversas.
