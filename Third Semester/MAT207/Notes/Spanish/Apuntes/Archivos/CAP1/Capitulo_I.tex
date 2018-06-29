@@ -105,7 +105,10 @@ La diferencia total:
 \end{equation}
 
 Para $(1\texttt{.}4)$ y $(1\texttt{.} 5)$ serán lo mismo:
-$$\dfrac{\partial f}{\partial x}=M(x,y) \hspace{1cm} \wedge \hspace{1cm} \dfrac{\partial f}{\partial y}=N(x,y)$$
+\begin{equation}
+\dfrac{\partial f}{\partial x}=M(x,y) \hspace{1cm} \wedge \hspace{1cm} \dfrac{\partial f}{\partial y}=N(x,y)
+\end{equation}
+
 $$\dfrac{\partial^2 f}{\partial x \partial y}=M(x,y) \hspace{1cm} \wedge \hspace{1cm} \dfrac{\partial^2 f}{\partial y\partial x}=N(x,y)$$
 \subsubsection{Por Clairaut}
 Si existen las segundas derivadas cruzadas y son continuas entonces estas son iguales:
@@ -114,3 +117,15 @@ $$\dfrac{\partial^2 f}{\partial y\partial x}=\dfrac{\partial^2 f}{\partial x\par
 \begin{align*}
 \dfrac{\partial f}{\partial x} & = M(x,y)
 \end{align*}
+\begin{equation}
+f(x,y)= \int M(x,y) dx + C(y)
+\end{equation}
+\begin{align*}
+\dfrac{\partial f}{\partial y} & = \dfrac{\partial}{\partial y}\left[\int M(x,y)\right]  dx + C'(y) 
+\end{align*}
+Recordando $1\texttt{.}6$:
+\subsection{Ecuación Diferencial Asociada}
+El objetivo es obtener la ED de una familia de curvas, mediante el proceso de eliminación de constantes arbitrarias involucradas en la familia de curvas. Es importante recordar que ninguna ED contiene constantes arbitrarias por lo tanto debemos eliminar la constante que aparece en la familia de curvas.
+\subsubsection{Procedimiento}
+Dada la familia de curvas:
+$$F(x,y,C_1,C_2,\ldots,C_n)=0$$

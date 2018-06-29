@@ -12,3 +12,5 @@
 \contentsline {subsubsection}{Criterio}{7}
 \contentsline {subsubsection}{Por Clairaut}{8}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{8}
+\contentsline {subsection}{\numberline {1.5.1}Ecuaci\IeC {\'o}n Diferencial Asociada}{8}
+\contentsline {subsubsection}{Procedimiento}{8}
