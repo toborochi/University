@@ -149,3 +149,34 @@ P(B_r/A) &\varstackrel{1}{=} \dfrac{P(B_r\cap A)}{P(A)} \\
 &\varstackrel{2}{=} \dfrac{P(B_r)P(A/B_r)}{P(A)}  \\
 &\varstackrel{3}{=} \dfrac{P(B_r)P(A/B_r)}{\displaystyle\sum_{i=1}^{n} P(B_i)P(A/B_i)}
 \end{align*}
+\subsection{Ejemplos}
+\begin{enumerate}
+\item Demostrar que: $P(A/B)+P(A^c/B)=1$
+\subsubsection{Solución}
+\begin{align*}
+P(A/B)+P(A^c/B) &\varstackrel{1}{=} \dfrac{P(A\cap B)}{P(B)} + \dfrac{P(A^c\cap B)}{P(B)} \\
+  &\varstackrel{2}{=} \dfrac{P(A\cap B)+P(A^c\cap B)}{P(B)} \\
+    &\varstackrel{3}{=} \dfrac{P[(A\cap B)\cup(A^c\cap B)]}{P(B)} \\
+      &\varstackrel{4}{=} \dfrac{P[(A\cup A^c)\cap B]}{P(B)} \\
+        &\varstackrel{5}{=} \dfrac{P(\Omega\cap B)}{P(B)} \\
+           &\varstackrel{6}{=} \dfrac{P(B)]}{P(B)} \\
+                 &\varstackrel{7}{=} 1 \\
+\end{align*}
+\item Demostrar que: $P(A/B^c)+P(A^c/B)=1$
+\subsubsection{Solución}
+\item La probabilidad de que llueva en Santa Cruz el 10 de Junio es de 40\%, de que truene es 5\% y de que, llueve y truene es de 3\%. ¿Cual es la probabilidad de que llueva o truene ese día?
+\subsubsection{Solución}
+\item Sea $A$ y $B$ dos eventos, tal que: $P(A)=0.20\% ; P(B)=0.30\%;P(A\cup B)=0.10\%$ \\ Hallar:
+\begin{enumerate}[label=(\alph*)]
+\item $P(A^c\cap B^c)$
+\item $P(A^c\cap B)$
+\item $P(A\cap B^c)$
+\item $P(A^c\cup B)$
+\end{enumerate}
+\item Con 7 ingenieros y 4 médicos se formaron comités de 6 miembros. ¿Cuál es la probabilidad que el comité incluya: ?
+\begin{enumerate}[label=(\alph*)]
+\item Exactamente 2 médicos.
+\item Al menos 2 ingenieros.
+\end{enumerate}
+\item En la UAGRM el 30\% de los estudiantes son cruceños, el 10\% estudia Ingeniería Informática, y el 1\% son cruceños y estudian Informática. Si se selecciona al azar un estudiante de la UAGRM. Hallar las siguientes probabilidades:
+\end{enumerate}
