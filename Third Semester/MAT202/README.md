@@ -8,3 +8,4 @@ Here you find my notes in Probability and Statistic I, course:
 ## Bibliography
   * Miller & Freund's, _Probability and Statistics for Engineers, Ninth Edition,_ 2017.
   * Fadil H. Zuwaylif, _General Applied Statistics_, 1979.
+  * Manuel Córdova Zamora, _Estadistica Descriptiva e Inferencial_, Quinta Edicion, 2003.
