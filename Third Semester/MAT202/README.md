@@ -9,6 +9,7 @@ Here you find my notes in Probability and Statistic I, course:
   * [Ejercicios Probabilidad](http://www.lapresentacion.com/granada/antigua/materias/matematicas/bto2ccss/ejercicios_probabilidad.pdf)
   * [Calculo de Probabilidades](http://www.ugr.es/~bioestad/_private/Tema_2_color.pdf)
   * [Ejercicios Resueltos de Probabilidad, Juan Jose Salazar Gonzalez & Marta Lopez Yurda](https://matematicasiesoja.files.wordpress.com/2015/03/terc3ada-y-ejercicios-de-probabilidad.pdf)
+  * [Teoria de Conjuntos](http://www.metonymie.com/apuntes/2008/09/10/teoria-de-conjuntos-definiciones-y-formulas-basicas.html)
 ## Bibliography
   * Miller & Freund's, _Probability and Statistics for Engineers, Ninth Edition,_ 2017.
   * Fadil H. Zuwaylif, _General Applied Statistics_, 1979.
