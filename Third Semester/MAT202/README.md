@@ -8,6 +8,7 @@ Here you find my notes in Probability and Statistic I, course:
   * [Teorema de Probabilidad Total y Bayes](http://www3.gobiernodecanarias.org/medusa/ecoblog/pfeldom/files/2012/09/Teorema-de-la-probabilidad-total-y-Bayes.pdf)
   * [Ejercicios Probabilidad](http://www.lapresentacion.com/granada/antigua/materias/matematicas/bto2ccss/ejercicios_probabilidad.pdf)
   * [Calculo de Probabilidades](http://www.ugr.es/~bioestad/_private/Tema_2_color.pdf)
+  * [Ejercicios Resueltos de Probabilidad, Juan Jose Salazar Gonzalez & Marta Lopez Yurda](https://matematicasiesoja.files.wordpress.com/2015/03/terc3ada-y-ejercicios-de-probabilidad.pdf)
 ## Bibliography
   * Miller & Freund's, _Probability and Statistics for Engineers, Ninth Edition,_ 2017.
   * Fadil H. Zuwaylif, _General Applied Statistics_, 1979.
