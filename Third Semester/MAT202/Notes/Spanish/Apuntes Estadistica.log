@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  3 JUL 2018 00:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  3 JUL 2018 00:18
 entering extended mode
 **"./Apuntes Estadistica.tex"
 ("Apuntes Estadistica.tex"
@@ -1683,22 +1683,28 @@ LaTeX Info: Redefining \% on input line 127.
 LaTeX Info: Redefining \. on input line 151.
 LaTeX Info: Redefining \% on input line 151.
  [36]
-LaTeX Info: Redefining \. on input line 184.
-LaTeX Info: Redefining \% on input line 184.
- [37]))
-(Archivos/Bibliografia.tex
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
+ [37]
+LaTeX Info: Redefining \. on input line 231.
+LaTeX Info: Redefining \% on input line 231.
+
+[38])) (Archivos/Bibliografia.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [38]) [39
+ [39]
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+ [40
 
-] ("Apuntes Estadistica.aux"
+]) [41] ("Apuntes Estadistica.aux"
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
  29598 strings out of 493305
  712306 string characters out of 3130237
- 960630 words of memory out of 3000000
+ 960631 words of memory out of 3000000
  32410 multiletter control sequences out of 15000+200000
  19169 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1737,9 +1743,9 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users
 /Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pf
 b><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 symbols/msam10.pfb>
-Output written on "Apuntes Estadistica.pdf" (39 pages, 466424 bytes).
+Output written on "Apuntes Estadistica.pdf" (41 pages, 468345 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
+ 254 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
