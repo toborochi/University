@@ -1,4 +1,6 @@
-Here is the course resources:
+## Course Resources:
   * [Fundamentals of Algorithm](https://pro2uagrm.blogspot.com/p/unidad-i.html)
   * [Recursion](https://pro2uagrm.blogspot.com/p/unidad-ii.html)
   * [OOP](https://pro2uagrm.blogspot.com/p/unidad-iii.html)
+## Bibliography
+  * Elisabeth Freeman & Kathy Sierra,  _Head First Design Patterns: A Brain-Friendly Guide_, 2014.
