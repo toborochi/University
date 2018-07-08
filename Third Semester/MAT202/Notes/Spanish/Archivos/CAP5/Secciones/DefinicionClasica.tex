@@ -214,6 +214,29 @@ $$P(A\cup B\cup C)=P(A)+P(B)+P(C)-P(A\cap C)-P(B\cap C)-P(A\cap B)+P(A\cap B \ca
 \subsubsection{Solución}
 \item La probabilidad de que un estudiante apruebe matemáticas es $\frac{2}{3}$ y que apruebe física es $\frac{4}{9}$. Si la probabilidad de aprobar al menos una de estas materias es $\frac{4}{5}$. ¿ Cual es la probabilidad de aprobar ambas materias?
 \subsubsection{Solución}
+El problema nos plantea los siguientes datos:
+\begin{itemize}
+\item $A=$ \textit{Aprobar Matemáticas.}
+\item $B=$ \textit{Aprobar Física.}
+\item $A\cup B =$ \textit{Aprobar al menos una de estas materias.}
+\end{itemize}
+Por lo tanto, las probabilidades ya están dadas:
+\begin{itemize}
+\item $P(A)= \frac{2}{3}$
+\item $P(B)=  \frac{4}{9}$
+\item $P(A\cup B)= \frac{4}{5}$
+\end{itemize}
+Como el problema pide la probabilidad de aprobar ambas materias, esto es: $P(A\cap B)$. Si partimos de la siguiente igualdad:
+\begin{align*}
+P(A\cup B) = P(A) + P(B) - P(A\cap B)
+\end{align*}
+Luego, despejamos $P(A\cap B)$ y reemplazamos:
+\begin{align*}
+P(A\cap B) &= P(A) + P(B) - P(A\cup B) \\
+           &= \dfrac{2}{3}+\dfrac{4}{9}-\dfrac{4}{5} \\
+           &= \dfrac{14}{45} \approx 31.11 \%
+\end{align*}
+Obtenemos que la probabilidad de aprobar ambas materias es de $31.11\%$.
 \item En los últimos años la Universidad \textbf{ABC} ha estado llevando un registro de sus egresados, en la actualidad tienen empleo, anotando el número de años que utilizaron para terminar su carrera y su posición (alta, media o baja) que tienen como profesionales.
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
