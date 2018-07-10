@@ -1,175 +1,185 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Aspectos B\IeC {\'a}sicos de las Estad\IeC {\'\i }sticas}{5}
-\contentsline {section}{\numberline {1.1}Conceptos Generales de la Estad\IeC {\'\i }stica}{5}
-\contentsline {subsection}{\numberline {1.1.1}Generalidades}{5}
-\contentsline {subsection}{\numberline {1.1.2}Variables Estad\IeC {\'\i }sticas}{5}
-\contentsline {subsubsection}{Tipos de Variables Estad\IeC {\'\i }sticas}{6}
-\contentsline {section}{\numberline {1.2}Representaci\IeC {\'o}n de la Informaci\IeC {\'o}n en Cuadros o Tablas}{6}
-\contentsline {subsection}{\numberline {1.2.1}Conceptos Iniciales}{6}
-\contentsline {subsection}{\numberline {1.2.2}Frecuencia}{7}
-\contentsline {subsubsection}{Frecuencias}{7}
-\contentsline {subsubsection}{Propiedades de la Frecuencias}{7}
-\contentsline {subsection}{\numberline {1.2.3}Tablas de Distribuci\IeC {\'o}n de Frecuencia}{7}
-\contentsline {subsubsection}{Distribuci\IeC {\'o}n de Frecuencia para Datos Agrupados no en Intervalos de Clase}{7}
-\contentsline {subsubsection}{Distribuci\IeC {\'o}n de Frecuencias para Datos Agrupados en Intervalo de Clase}{7}
-\contentsline {subsubsection}{Estructura de una Tabla Estad\IeC {\'\i }stica}{8}
-\contentsline {section}{\numberline {1.3}Representaciones Gr\IeC {\'a}ficas}{8}
-\contentsline {subsection}{\numberline {1.3.1}Diagrama de Barras}{8}
-\contentsline {subsection}{\numberline {1.3.2}Diagrama de Sectores}{8}
-\contentsline {subsection}{\numberline {1.3.3}Diagrama de Bastones}{9}
-\contentsline {subsection}{\numberline {1.3.4}Histograma y Pol\IeC {\'\i }gono de Frecuencia}{9}
-\contentsline {chapter}{\numberline {2}Estad\IeC {\'\i }grafos de Tendencia Central}{11}
-\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas del Valor Central}{11}
-\contentsline {section}{\numberline {2.1}Media Aritmetica Simple $(\mathaccentV {bar}016{X})$}{11}
-\contentsline {subsection}{\numberline {2.1.1}C\IeC {\'a}lculo}{11}
-\contentsline {subsubsection}{Para Datos no Agrupados (Originales)}{11}
-\contentsline {subsubsection}{Para Agrupados}{11}
-\contentsline {subsection}{\numberline {2.1.2}Propiedades}{11}
-\contentsline {subsection}{\numberline {2.1.3}M\IeC {\'e}todos Abreviados para el C\IeC {\'a}lculo de la Media}{12}
-\contentsline {subsubsection}{Primer M\IeC {\'e}todo Abreviado}{12}
-\contentsline {subsubsection}{Segundo M\IeC {\'e}todo Abreviado}{12}
-\contentsline {subsubsection}{Media Aritm\IeC {\'e}tica en Distribuciones Sim\IeC {\'e}tricas}{12}
-\contentsline {subsection}{\numberline {2.1.4}Ventajas y Desventajas}{12}
-\contentsline {subsection}{\numberline {2.1.5}Ejemplos}{12}
-\contentsline {section}{\numberline {2.2}Media Aritmetica Ponderada $(\mathaccentV {bar}016{X_p})$}{12}
-\contentsline {subsection}{\numberline {2.2.1}C\IeC {\'a}lculo}{13}
-\contentsline {subsection}{\numberline {2.2.2}Ejemplos}{13}
-\contentsline {section}{\numberline {2.3}Mediana $(M_e)$}{13}
-\contentsline {subsection}{\numberline {2.3.1}C\IeC {\'a}lculo}{13}
-\contentsline {subsubsection}{Datos no Agrupados}{13}
-\contentsline {subsubsection}{Datos Agrupados}{13}
-\contentsline {subsubsection}{Mediana en Distribuciones Sim\IeC {\'e}tricas}{13}
-\contentsline {subsection}{\numberline {2.3.2}Ejemplos}{14}
-\contentsline {section}{\numberline {2.4}Cuantiles}{14}
-\contentsline {subsection}{\numberline {2.4.1}Cuartiles $(Q_i)$}{14}
-\contentsline {subsection}{\numberline {2.4.2}Deciles $(D_i)$}{14}
-\contentsline {subsection}{\numberline {2.4.3}Percentiles $(P_i)$}{14}
-\contentsline {subsection}{\numberline {2.4.4}C\IeC {\'a}lculo de Cuantiles}{14}
-\contentsline {subsubsection}{Para datos Originales}{14}
-\contentsline {subsubsection}{Para datos Agrupados}{15}
-\contentsline {subsection}{\numberline {2.4.5}Ejemplos}{15}
-\contentsline {section}{\numberline {2.5}Moda o Modo $(M_o)$}{15}
-\contentsline {subsubsection}{Observaci\IeC {\'o}n}{15}
-\contentsline {subsection}{\numberline {2.5.1}C\IeC {\'a}lculo}{15}
-\contentsline {subsubsection}{En Intervalo de Clase}{15}
-\contentsline {subsection}{\numberline {2.5.2}Ventajas y Desventajas}{15}
-\contentsline {section}{\numberline {2.6}Media Geom\IeC {\'e}trica $(M_g)$}{16}
-\contentsline {subsection}{\numberline {2.6.1}C\IeC {\'a}lculo}{16}
-\contentsline {subsubsection}{Para datos no Agrupados}{16}
-\contentsline {subsubsection}{Para datos Agrupados}{16}
-\contentsline {subsection}{\numberline {2.6.2}Propiedades y Usos}{16}
-\contentsline {subsection}{\numberline {2.6.3}Ejemplos}{17}
-\contentsline {section}{\numberline {2.7}Media Arm\IeC {\'o}nica $(M_h)$}{17}
-\contentsline {subsection}{\numberline {2.7.1}C\IeC {\'a}lculo}{17}
-\contentsline {subsubsection}{Para datos Originales}{17}
+\contentsline {chapter}{\numberline {1}Aspectos B\IeC {\'a}sicos de las Estad\IeC {\'\i }sticas}{7}
+\contentsline {section}{\numberline {1.1}Conceptos Generales de la Estad\IeC {\'\i }stica}{7}
+\contentsline {subsection}{\numberline {1.1.1}Generalidades}{7}
+\contentsline {subsection}{\numberline {1.1.2}Variables Estad\IeC {\'\i }sticas}{7}
+\contentsline {subsubsection}{Tipos de Variables Estad\IeC {\'\i }sticas}{8}
+\contentsline {section}{\numberline {1.2}Representaci\IeC {\'o}n de la Informaci\IeC {\'o}n en Cuadros o Tablas}{8}
+\contentsline {subsection}{\numberline {1.2.1}Conceptos Iniciales}{8}
+\contentsline {subsection}{\numberline {1.2.2}Frecuencia}{9}
+\contentsline {subsubsection}{Frecuencias}{9}
+\contentsline {subsubsection}{Propiedades de la Frecuencias}{9}
+\contentsline {subsection}{\numberline {1.2.3}Tablas de Distribuci\IeC {\'o}n de Frecuencia}{9}
+\contentsline {subsubsection}{Distribuci\IeC {\'o}n de Frecuencia para Datos Agrupados no en Intervalos de Clase}{9}
+\contentsline {subsubsection}{Distribuci\IeC {\'o}n de Frecuencias para Datos Agrupados en Intervalo de Clase}{9}
+\contentsline {subsubsection}{Estructura de una Tabla Estad\IeC {\'\i }stica}{10}
+\contentsline {section}{\numberline {1.3}Representaciones Gr\IeC {\'a}ficas}{10}
+\contentsline {subsection}{\numberline {1.3.1}Diagrama de Barras}{10}
+\contentsline {subsection}{\numberline {1.3.2}Diagrama de Sectores}{10}
+\contentsline {subsection}{\numberline {1.3.3}Diagrama de Bastones}{11}
+\contentsline {subsection}{\numberline {1.3.4}Histograma y Pol\IeC {\'\i }gono de Frecuencia}{11}
+\contentsline {chapter}{\numberline {2}Estad\IeC {\'\i }grafos de Tendencia Central}{13}
+\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas del Valor Central}{13}
+\contentsline {section}{\numberline {2.1}Media Aritmetica Simple $(\mathaccentV {bar}016{X})$}{13}
+\contentsline {subsection}{\numberline {2.1.1}C\IeC {\'a}lculo}{13}
+\contentsline {subsubsection}{Para Datos no Agrupados (Originales)}{13}
+\contentsline {subsubsection}{Para Agrupados}{13}
+\contentsline {subsection}{\numberline {2.1.2}Propiedades}{13}
+\contentsline {subsection}{\numberline {2.1.3}M\IeC {\'e}todos Abreviados para el C\IeC {\'a}lculo de la Media}{14}
+\contentsline {subsubsection}{Primer M\IeC {\'e}todo Abreviado}{14}
+\contentsline {subsubsection}{Segundo M\IeC {\'e}todo Abreviado}{14}
+\contentsline {subsubsection}{Media Aritm\IeC {\'e}tica en Distribuciones Sim\IeC {\'e}tricas}{14}
+\contentsline {subsection}{\numberline {2.1.4}Ventajas y Desventajas}{14}
+\contentsline {subsection}{\numberline {2.1.5}Ejemplos}{14}
+\contentsline {section}{\numberline {2.2}Media Aritmetica Ponderada $(\mathaccentV {bar}016{X_p})$}{14}
+\contentsline {subsection}{\numberline {2.2.1}C\IeC {\'a}lculo}{15}
+\contentsline {subsection}{\numberline {2.2.2}Ejemplos}{15}
+\contentsline {section}{\numberline {2.3}Mediana $(M_e)$}{15}
+\contentsline {subsection}{\numberline {2.3.1}C\IeC {\'a}lculo}{15}
+\contentsline {subsubsection}{Datos no Agrupados}{15}
+\contentsline {subsubsection}{Datos Agrupados}{15}
+\contentsline {subsubsection}{Mediana en Distribuciones Sim\IeC {\'e}tricas}{15}
+\contentsline {subsection}{\numberline {2.3.2}Ejemplos}{16}
+\contentsline {section}{\numberline {2.4}Cuantiles}{16}
+\contentsline {subsection}{\numberline {2.4.1}Cuartiles $(Q_i)$}{16}
+\contentsline {subsection}{\numberline {2.4.2}Deciles $(D_i)$}{16}
+\contentsline {subsection}{\numberline {2.4.3}Percentiles $(P_i)$}{16}
+\contentsline {subsection}{\numberline {2.4.4}C\IeC {\'a}lculo de Cuantiles}{16}
+\contentsline {subsubsection}{Para datos Originales}{16}
 \contentsline {subsubsection}{Para datos Agrupados}{17}
-\contentsline {subsection}{\numberline {2.7.2}Usos de la Media Arm\IeC {\'o}nica}{17}
-\contentsline {subsection}{\numberline {2.7.3}Ventajas y Desventajas}{17}
-\contentsline {subsection}{\numberline {2.7.4}Ejemplos}{17}
-\contentsline {section}{\numberline {2.8}Media Cuadr\IeC {\'a}tica $(\overline {X_c})$}{17}
-\contentsline {subsection}{\numberline {2.8.1}C\IeC {\'a}lculo}{17}
-\contentsline {subsubsection}{Datos Originales}{17}
-\contentsline {subsubsection}{Datos Agrupados}{18}
-\contentsline {subsubsection}{Relaci\IeC {\'o}n entre los Promedios Computados}{18}
-\contentsline {subsection}{\numberline {2.8.2}Ejemplos}{18}
-\contentsline {chapter}{\numberline {3}Estad\IeC {\'\i }grafos de Dispersi\IeC {\'o}n}{19}
-\contentsline {section}{\numberline {3.1}Recorridos}{19}
-\contentsline {subsection}{\numberline {3.1.1}Recorrido $(R)$}{19}
-\contentsline {subsection}{\numberline {3.1.2}Recorrido Intercuart\IeC {\'\i }lico $(R_I)$}{19}
-\contentsline {section}{\numberline {3.2}Desviaci\IeC {\'o}n Media $(D_M)$}{19}
-\contentsline {section}{\numberline {3.3}Varianza $(S^2,\mathaccentV {hat}05E{S})$}{19}
-\contentsline {subsection}{\numberline {3.3.1}C\IeC {\'a}lculo}{19}
+\contentsline {subsection}{\numberline {2.4.5}Ejemplos}{17}
+\contentsline {section}{\numberline {2.5}Moda o Modo $(M_o)$}{17}
+\contentsline {subsubsection}{Observaci\IeC {\'o}n}{17}
+\contentsline {subsection}{\numberline {2.5.1}C\IeC {\'a}lculo}{17}
+\contentsline {subsubsection}{En Intervalo de Clase}{17}
+\contentsline {subsection}{\numberline {2.5.2}Ventajas y Desventajas}{17}
+\contentsline {section}{\numberline {2.6}Media Geom\IeC {\'e}trica $(M_g)$}{18}
+\contentsline {subsection}{\numberline {2.6.1}C\IeC {\'a}lculo}{18}
+\contentsline {subsubsection}{Para datos no Agrupados}{18}
+\contentsline {subsubsection}{Para datos Agrupados}{18}
+\contentsline {subsection}{\numberline {2.6.2}Propiedades y Usos}{18}
+\contentsline {subsection}{\numberline {2.6.3}Ejemplos}{19}
+\contentsline {section}{\numberline {2.7}Media Arm\IeC {\'o}nica $(M_h)$}{19}
+\contentsline {subsection}{\numberline {2.7.1}C\IeC {\'a}lculo}{19}
+\contentsline {subsubsection}{Para datos Originales}{19}
+\contentsline {subsubsection}{Para datos Agrupados}{19}
+\contentsline {subsection}{\numberline {2.7.2}Usos de la Media Arm\IeC {\'o}nica}{19}
+\contentsline {subsection}{\numberline {2.7.3}Ventajas y Desventajas}{19}
+\contentsline {subsection}{\numberline {2.7.4}Ejemplos}{19}
+\contentsline {section}{\numberline {2.8}Media Cuadr\IeC {\'a}tica $(\overline {X_c})$}{19}
+\contentsline {subsection}{\numberline {2.8.1}C\IeC {\'a}lculo}{19}
 \contentsline {subsubsection}{Datos Originales}{19}
-\contentsline {subsection}{\numberline {3.3.2}Propiedades}{20}
-\contentsline {subsection}{\numberline {3.3.3}Componentes de la Varianza}{20}
-\contentsline {subsubsection}{Intervarianza}{20}
-\contentsline {subsubsection}{Intravarianza}{20}
-\contentsline {subsection}{\numberline {3.3.4}M\IeC {\'e}todos Abreviados para el C\IeC {\'a}lculo de la Varianza}{20}
-\contentsline {subsubsection}{Primer M\IeC {\'e}todo Abreviado}{20}
-\contentsline {subsubsection}{Segundo M\IeC {\'e}todo Abreviado}{21}
-\contentsline {subsubsection}{Tercer M\IeC {\'e}todo Abreviado}{21}
-\contentsline {subsection}{\numberline {3.3.5}Ejemplos}{21}
-\contentsline {section}{\numberline {3.4}Desviaci\IeC {\'o}n Est\IeC {\'a}ndar}{21}
-\contentsline {subsection}{\numberline {3.4.1}Propiedades}{21}
-\contentsline {subsection}{\numberline {3.4.2}Ejemplos}{21}
-\contentsline {section}{\numberline {3.5}Medidas de Dispersi\IeC {\'o}n Relativa}{21}
-\contentsline {subsection}{\numberline {3.5.1}Coeficiente de Variaci\IeC {\'o}n $(C_v)$}{22}
-\contentsline {subsubsection}{C\IeC {\'a}lculo del Coeficiente de Variaci\IeC {\'o}n}{22}
-\contentsline {subsection}{\numberline {3.5.2}Momentos}{22}
-\contentsline {subsubsection}{Momentos Respecto a un Punto $(M_{r,A})$}{22}
-\contentsline {subsubsection}{Momentos Respecto del Origen $(M_r')$}{22}
-\contentsline {subsubsection}{Momentos Respecto a la Media $(M_r)$}{22}
-\contentsline {section}{\numberline {3.6}Medidas de Forma}{22}
-\contentsline {subsection}{\numberline {3.6.1}Coeficientes de Asimetr\IeC {\'\i }a}{22}
-\contentsline {subsection}{\numberline {3.6.2}Curtosis o Apuntalamiento}{23}
-\contentsline {subsubsection}{Curtosis en funci\IeC {\'o}n del Momento}{23}
-\contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{23}
-\contentsline {section}{\numberline {3.7}Medidas de Concentraci\IeC {\'o}n}{23}
-\contentsline {subsection}{\numberline {3.7.1}Indice de Gini $(G)$}{23}
-\contentsline {subsubsection}{C\IeC {\'a}lculo}{24}
-\contentsline {subsubsection}{Interpretaci\IeC {\'o}n de $\frac {G}{2}$}{24}
-\contentsline {subsection}{\numberline {3.7.2}Curva de Lorenz}{24}
-\contentsline {section}{\numberline {3.8}Distribuci\IeC {\'o}n Bivariante}{24}
-\contentsline {subsection}{\numberline {3.8.1}Distribuci\IeC {\'o}n de Frecuencias Absolutas Conjuntas}{24}
-\contentsline {subsection}{\numberline {3.8.2}Distribuci\IeC {\'o}n de Frecuencias Relativas Conjuntas}{25}
-\contentsline {subsection}{\numberline {3.8.3}Distribuci\IeC {\'o}n de Frecuencias Absolutas Acumuladas Conjuntas}{25}
-\contentsline {subsection}{\numberline {3.8.4}Distribuci\IeC {\'o}n de Frecuencias Relativa Acumuladas Conjuntas}{25}
-\contentsline {subsection}{\numberline {3.8.5}Distribuciones Marginales}{25}
-\contentsline {subsubsection}{Distribuci\IeC {\'o}n Marginal de $X$}{25}
-\contentsline {subsubsection}{Distribuci\IeC {\'o}n Marginal de $Y$}{25}
-\contentsline {section}{\numberline {3.9}Covarianza $(S_{xy})$}{26}
-\contentsline {subsection}{\numberline {3.9.1}C\IeC {\'a}lculo}{26}
-\contentsline {subsubsection}{Para datos Originales}{26}
-\contentsline {subsubsection}{Para datos Agrupados}{26}
-\contentsline {subsection}{\numberline {3.9.2}Propiedades}{26}
-\contentsline {subsection}{\numberline {3.9.3}Interpretaci\IeC {\'o}n}{26}
-\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de Regresi\IeC {\'o}n y Correlaci\IeC {\'o}n}{27}
-\contentsline {section}{\numberline {4.1}Modelo de Regresi\IeC {\'o}n Lineal Simple}{27}
-\contentsline {section}{\numberline {4.2}Regresi\IeC {\'o}n Lineal}{27}
-\contentsline {section}{\numberline {4.3}Regresi\IeC {\'o}n Potencial}{28}
-\contentsline {section}{\numberline {4.4}Regresi\IeC {\'o}n Exponencial}{28}
-\contentsline {section}{\numberline {4.5}Regresi\IeC {\'o}n Parab\IeC {\'o}lica}{28}
-\contentsline {section}{\numberline {4.6}Coeficiente de Correlaci\IeC {\'o}n Rectil\IeC {\'\i }neo}{28}
-\contentsline {subsection}{\numberline {4.6.1}Propiedades}{28}
-\contentsline {subsubsection}{Observaciones}{29}
-\contentsline {subsection}{\numberline {4.6.2}C\IeC {\'a}lculo}{29}
-\contentsline {subsubsection}{Mediante F\IeC {\'o}rmula propuesta por Pearson}{29}
-\contentsline {subsubsection}{En t\IeC {\'e}rminos de Covarianza y Desviaci\IeC {\'o}n Est\IeC {\'a}ndar}{29}
-\contentsline {subsubsection}{Error Est\IeC {\'a}ndar de Estimaci\IeC {\'o}n}{29}
-\contentsline {chapter}{\numberline {5}Probabilidad}{31}
-\contentsline {subsubsection}{Experimentos Determin\IeC {\'\i }sticos}{31}
-\contentsline {subsubsection}{Experimentos no Determin\IeC {\'\i }sticos}{31}
-\contentsline {section}{\numberline {5.1}Eventos}{31}
-\contentsline {subsection}{\numberline {5.1.1}Operaciones con Eventos}{32}
-\contentsline {subsubsection}{Uni\IeC {\'o}n}{32}
-\contentsline {subsubsection}{Intersecci\IeC {\'o}n}{32}
-\contentsline {subsubsection}{Diferencia Relativa}{32}
-\contentsline {subsubsection}{Diferencia Sim\IeC {\'e}trica }{32}
-\contentsline {subsubsection}{Complemento}{32}
-\contentsline {subsubsection}{Inclusi\IeC {\'o}n}{32}
-\contentsline {subsubsection}{Igualdad de Eventos}{32}
-\contentsline {section}{\numberline {5.2}$\sigma $-\IeC {\'a}lgebra de Eventos}{32}
-\contentsline {section}{\numberline {5.3}Definici\IeC {\'o}n Axiom\IeC {\'a}tica de Probabilidad}{33}
-\contentsline {subsection}{\numberline {5.3.1}Propiedades de la Probabilidad de Eventos}{33}
-\contentsline {section}{\numberline {5.4}Definici\IeC {\'o}n Cl\IeC {\'a}sica de Probabilidad}{33}
-\contentsline {subsection}{\numberline {5.4.1}Probabilidad Condicionada}{34}
-\contentsline {subsubsection}{Propiedades}{34}
-\contentsline {subsection}{\numberline {5.4.2}Eventos Dependientes}{34}
-\contentsline {subsection}{\numberline {5.4.3}Eventos Independientes}{34}
-\contentsline {subsubsection}{Observaciones}{34}
-\contentsline {subsubsection}{Teorema}{34}
-\contentsline {subsubsection}{Demostraci\IeC {\'o}n de los Teoremas}{35}
-\contentsline {subsection}{\numberline {5.4.4}Teorema de la Probabilidad Total}{36}
-\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{36}
-\contentsline {subsection}{\numberline {5.4.5}Teorema de Bayes}{36}
-\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{37}
-\contentsline {subsection}{\numberline {5.4.6}Ejemplos}{37}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{37}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{37}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{37}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{38}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{38}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{38}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{38}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{38}
+\contentsline {subsubsection}{Datos Agrupados}{20}
+\contentsline {subsubsection}{Relaci\IeC {\'o}n entre los Promedios Computados}{20}
+\contentsline {subsection}{\numberline {2.8.2}Ejemplos}{20}
+\contentsline {chapter}{\numberline {3}Estad\IeC {\'\i }grafos de Dispersi\IeC {\'o}n}{21}
+\contentsline {section}{\numberline {3.1}Recorridos}{21}
+\contentsline {subsection}{\numberline {3.1.1}Recorrido $(R)$}{21}
+\contentsline {subsection}{\numberline {3.1.2}Recorrido Intercuart\IeC {\'\i }lico $(R_I)$}{21}
+\contentsline {section}{\numberline {3.2}Desviaci\IeC {\'o}n Media $(D_M)$}{21}
+\contentsline {section}{\numberline {3.3}Varianza $(S^2,\mathaccentV {hat}05E{S})$}{21}
+\contentsline {subsection}{\numberline {3.3.1}C\IeC {\'a}lculo}{21}
+\contentsline {subsubsection}{Datos Originales}{21}
+\contentsline {subsection}{\numberline {3.3.2}Propiedades}{22}
+\contentsline {subsection}{\numberline {3.3.3}Componentes de la Varianza}{22}
+\contentsline {subsubsection}{Intervarianza}{22}
+\contentsline {subsubsection}{Intravarianza}{22}
+\contentsline {subsection}{\numberline {3.3.4}M\IeC {\'e}todos Abreviados para el C\IeC {\'a}lculo de la Varianza}{22}
+\contentsline {subsubsection}{Primer M\IeC {\'e}todo Abreviado}{22}
+\contentsline {subsubsection}{Segundo M\IeC {\'e}todo Abreviado}{23}
+\contentsline {subsubsection}{Tercer M\IeC {\'e}todo Abreviado}{23}
+\contentsline {subsection}{\numberline {3.3.5}Ejemplos}{23}
+\contentsline {section}{\numberline {3.4}Desviaci\IeC {\'o}n Est\IeC {\'a}ndar}{23}
+\contentsline {subsection}{\numberline {3.4.1}Propiedades}{23}
+\contentsline {subsection}{\numberline {3.4.2}Ejemplos}{23}
+\contentsline {section}{\numberline {3.5}Medidas de Dispersi\IeC {\'o}n Relativa}{23}
+\contentsline {subsection}{\numberline {3.5.1}Coeficiente de Variaci\IeC {\'o}n $(C_v)$}{24}
+\contentsline {subsubsection}{C\IeC {\'a}lculo del Coeficiente de Variaci\IeC {\'o}n}{24}
+\contentsline {subsection}{\numberline {3.5.2}Momentos}{24}
+\contentsline {subsubsection}{Momentos Respecto a un Punto $(M_{r,A})$}{24}
+\contentsline {subsubsection}{Momentos Respecto del Origen $(M_r')$}{24}
+\contentsline {subsubsection}{Momentos Respecto a la Media $(M_r)$}{24}
+\contentsline {section}{\numberline {3.6}Medidas de Forma}{24}
+\contentsline {subsection}{\numberline {3.6.1}Coeficientes de Asimetr\IeC {\'\i }a}{24}
+\contentsline {subsection}{\numberline {3.6.2}Curtosis o Apuntalamiento}{25}
+\contentsline {subsubsection}{Curtosis en funci\IeC {\'o}n del Momento}{25}
+\contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{25}
+\contentsline {section}{\numberline {3.7}Medidas de Concentraci\IeC {\'o}n}{25}
+\contentsline {subsection}{\numberline {3.7.1}Indice de Gini $(G)$}{25}
+\contentsline {subsubsection}{C\IeC {\'a}lculo}{26}
+\contentsline {subsubsection}{Interpretaci\IeC {\'o}n de $\frac {G}{2}$}{26}
+\contentsline {subsection}{\numberline {3.7.2}Curva de Lorenz}{26}
+\contentsline {section}{\numberline {3.8}Distribuci\IeC {\'o}n Bivariante}{26}
+\contentsline {subsection}{\numberline {3.8.1}Distribuci\IeC {\'o}n de Frecuencias Absolutas Conjuntas}{26}
+\contentsline {subsection}{\numberline {3.8.2}Distribuci\IeC {\'o}n de Frecuencias Relativas Conjuntas}{27}
+\contentsline {subsection}{\numberline {3.8.3}Distribuci\IeC {\'o}n de Frecuencias Absolutas Acumuladas Conjuntas}{27}
+\contentsline {subsection}{\numberline {3.8.4}Distribuci\IeC {\'o}n de Frecuencias Relativa Acumuladas Conjuntas}{27}
+\contentsline {subsection}{\numberline {3.8.5}Distribuciones Marginales}{27}
+\contentsline {subsubsection}{Distribuci\IeC {\'o}n Marginal de $X$}{27}
+\contentsline {subsubsection}{Distribuci\IeC {\'o}n Marginal de $Y$}{27}
+\contentsline {section}{\numberline {3.9}Covarianza $(S_{xy})$}{28}
+\contentsline {subsection}{\numberline {3.9.1}C\IeC {\'a}lculo}{28}
+\contentsline {subsubsection}{Para datos Originales}{28}
+\contentsline {subsubsection}{Para datos Agrupados}{28}
+\contentsline {subsection}{\numberline {3.9.2}Propiedades}{28}
+\contentsline {subsection}{\numberline {3.9.3}Interpretaci\IeC {\'o}n}{28}
+\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de Regresi\IeC {\'o}n y Correlaci\IeC {\'o}n}{29}
+\contentsline {section}{\numberline {4.1}Modelo de Regresi\IeC {\'o}n Lineal Simple}{29}
+\contentsline {section}{\numberline {4.2}Regresi\IeC {\'o}n Lineal}{29}
+\contentsline {section}{\numberline {4.3}Regresi\IeC {\'o}n Potencial}{30}
+\contentsline {section}{\numberline {4.4}Regresi\IeC {\'o}n Exponencial}{30}
+\contentsline {section}{\numberline {4.5}Regresi\IeC {\'o}n Parab\IeC {\'o}lica}{30}
+\contentsline {section}{\numberline {4.6}Coeficiente de Correlaci\IeC {\'o}n Rectil\IeC {\'\i }neo}{30}
+\contentsline {subsection}{\numberline {4.6.1}Propiedades}{30}
+\contentsline {subsubsection}{Observaciones}{31}
+\contentsline {subsection}{\numberline {4.6.2}C\IeC {\'a}lculo}{31}
+\contentsline {subsubsection}{Mediante F\IeC {\'o}rmula propuesta por Pearson}{31}
+\contentsline {subsubsection}{En t\IeC {\'e}rminos de Covarianza y Desviaci\IeC {\'o}n Est\IeC {\'a}ndar}{31}
+\contentsline {subsubsection}{Error Est\IeC {\'a}ndar de Estimaci\IeC {\'o}n}{31}
+\contentsline {chapter}{\numberline {5}Probabilidad}{33}
+\contentsline {subsubsection}{Experimentos Determin\IeC {\'\i }sticos}{33}
+\contentsline {subsubsection}{Experimentos no Determin\IeC {\'\i }sticos}{33}
+\contentsline {section}{\numberline {5.1}Eventos}{33}
+\contentsline {subsection}{\numberline {5.1.1}Operaciones con Eventos}{34}
+\contentsline {subsubsection}{Uni\IeC {\'o}n}{34}
+\contentsline {subsubsection}{Intersecci\IeC {\'o}n}{34}
+\contentsline {subsubsection}{Diferencia Relativa}{34}
+\contentsline {subsubsection}{Diferencia Sim\IeC {\'e}trica }{34}
+\contentsline {subsubsection}{Complemento}{34}
+\contentsline {subsubsection}{Inclusi\IeC {\'o}n}{34}
+\contentsline {subsubsection}{Igualdad de Eventos}{34}
+\contentsline {section}{\numberline {5.2}$\sigma $-\IeC {\'a}lgebra de Eventos}{34}
+\contentsline {section}{\numberline {5.3}Definici\IeC {\'o}n Axiom\IeC {\'a}tica de Probabilidad}{35}
+\contentsline {subsection}{\numberline {5.3.1}Propiedades de la Probabilidad de Eventos}{35}
+\contentsline {section}{\numberline {5.4}Definici\IeC {\'o}n Cl\IeC {\'a}sica de Probabilidad}{35}
+\contentsline {subsection}{\numberline {5.4.1}Probabilidad Condicionada}{36}
+\contentsline {subsubsection}{Propiedades}{36}
+\contentsline {subsection}{\numberline {5.4.2}Eventos Dependientes}{36}
+\contentsline {subsection}{\numberline {5.4.3}Eventos Independientes}{36}
+\contentsline {subsubsection}{Observaciones}{36}
+\contentsline {subsubsection}{Teorema}{36}
+\contentsline {subsubsection}{Demostraci\IeC {\'o}n de los Teoremas}{37}
+\contentsline {subsection}{\numberline {5.4.4}Teorema de la Probabilidad Total}{38}
+\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{38}
+\contentsline {subsection}{\numberline {5.4.5}Teorema de Bayes}{38}
+\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{39}
+\contentsline {section}{\numberline {5.5}Ejemplos}{39}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{39}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{39}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{40}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{40}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{40}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{41}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{41}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{41}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{41}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{41}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{42}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{42}
+\contentsline {chapter}{\numberline {6}Series Cronol\IeC {\'o}gicas}{43}
+\contentsline {section}{\numberline {6.1}Generalidades}{43}
+\contentsline {section}{\numberline {6.2}Componentes de las Series Cronol\IeC {\'o}gicas}{43}
+\contentsline {subsection}{\numberline {6.2.1}Tendencia o Movimiento Secular}{43}
+\contentsline {subsection}{\numberline {6.2.2}Variaciones Estacionales}{43}
+\contentsline {subsection}{\numberline {6.2.3}Variaciones C\IeC {\'\i }clicas}{43}
+\contentsline {subsection}{\numberline {6.2.4}Variaciones Irregulares}{43}

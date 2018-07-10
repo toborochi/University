@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  7 JUL 2018 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  8 JUL 2018 14:27
 entering extended mode
 **"./Apuntes Estadistica.tex"
 ("Apuntes Estadistica.tex"
@@ -1527,18 +1527,24 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [3
 
-])
+]
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+ [4])
 \tf@toc=\write4
 \openout4 = `"Apuntes Estadistica.toc"'.
 
 ) (Archivos/CAP1/Capitulo_I.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [4]
-Cap\'{\i }tulo 1.
-[5
+ [5]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [6
 
 ]
+Cap\'{\i }tulo 1.
+[7]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
  ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1547,10 +1553,10 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
 LaTeX Info: Redefining \. on input line 91.
 LaTeX Info: Redefining \% on input line 91.
- [6]
+ [8]
 LaTeX Info: Redefining \. on input line 144.
 LaTeX Info: Redefining \% on input line 144.
- [7]
+ [9]
 Package pgfplots info on input line 175: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
  (Imagenes/DiagramaSectores.tex
@@ -1559,80 +1565,80 @@ coord trafo unsupported.
 )
 LaTeX Info: Redefining \. on input line 199.
 LaTeX Info: Redefining \% on input line 199.
- [8]) (Archivos/CAP2/Capitulo_II.tex
+ [10]) (Archivos/CAP2/Capitulo_II.tex
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 
-[9]
+[11]
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
- [10
+ [12
 
 ]
 Cap\'{\i }tulo 2.
 (Archivos/CAP2/Secciones/IntroduccionEstadigrafos.tex)
-(Archivos/CAP2/Secciones/MediaAritmetica.tex [11])
+(Archivos/CAP2/Secciones/MediaAritmetica.tex [13])
 (Archivos/CAP2/Secciones/MediaPonderada.tex
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
- [12])
+ [14])
 (Archivos/CAP2/Secciones/Mediana.tex
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
- [13])
+ [15])
 (Archivos/CAP2/Secciones/Cuantiles.tex
 LaTeX Info: Redefining \. on input line 59.
 LaTeX Info: Redefining \% on input line 59.
- [14]) (Archivos/CAP2/Secciones/Moda.tex
+ [16]) (Archivos/CAP2/Secciones/Moda.tex
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
 
-[15]) (Archivos/CAP2/Secciones/MediaGeometrica.tex
+[17]) (Archivos/CAP2/Secciones/MediaGeometrica.tex
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
- [16])
+ [18])
 (Archivos/CAP2/Secciones/MediaArmonica.tex)
 (Archivos/CAP2/Secciones/MediaCuadratica.tex
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- [17]))
+ [19]))
 (Archivos/CAP3/Capitulo_III.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [18]
+ [20]
 Cap\'{\i }tulo 3.
 (Archivos/CAP3/Secciones/Recorridos.tex)
 (Archivos/CAP3/Secciones/DesviacionMedia.tex)
-(Archivos/CAP3/Secciones/Varianza.tex [19
+(Archivos/CAP3/Secciones/Varianza.tex [21
 
 ]
 LaTeX Info: Redefining \. on input line 52.
 LaTeX Info: Redefining \% on input line 52.
- [20])
+ [22])
 (Archivos/CAP3/Secciones/DesviacionEstandar.tex)
 (Archivos/CAP3/Secciones/DispersionRelativa.tex
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
- [21])
+ [23])
 (Archivos/CAP3/Secciones/MedidasForma.tex
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- [22]
+ [24]
 LaTeX Info: Redefining \. on input line 45.
 LaTeX Info: Redefining \% on input line 45.
- [23])
+ [25])
 (Archivos/CAP3/Secciones/DistribucionBivariante.tex
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
- [24]
+ [26]
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
- [25])
+ [27])
 (Archivos/CAP3/Secciones/Covarianza.tex)) (Archivos/CAP4/Capitulo_IV.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
-[26]
+[28]
 Cap\'{\i }tulo 4.
 (Archivos/CAP4/Secciones/ModeloRegresionSimple.tex)
 (Archivos/CAP4/Secciones/RegresionLineal.tex
@@ -1645,7 +1651,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
 
-[27
+[29
 
 ]) (Archivos/CAP4/Secciones/RegresionPotencial.tex)
 (Archivos/CAP4/Secciones/RegresionExponencial.tex)
@@ -1653,59 +1659,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
 (Archivos/CAP4/Secciones/CoeficienteCorrelacion.tex
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
- [28]))
+ [30]))
 (Archivos/CAP5/Capitulo_V.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [29]
+ [31]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [30
+ [32
 
 ]
 Cap\'{\i }tulo 5.
-(Archivos/CAP5/Secciones/Eventos.tex [31])
+(Archivos/CAP5/Secciones/Eventos.tex [33])
 (Archivos/CAP5/Secciones/SigmaAlgebra.tex)
 (Archivos/CAP5/Secciones/AxiomaProbabilidad.tex
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
- [32])
+ [34])
 (Archivos/CAP5/Secciones/DefinicionClasica.tex
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
- [33]
+ [35]
 LaTeX Info: Redefining \. on input line 64.
 LaTeX Info: Redefining \% on input line 64.
- [34]
+ [36]
 LaTeX Info: Redefining \. on input line 127.
 LaTeX Info: Redefining \% on input line 127.
- [35]
+ [37]
 LaTeX Info: Redefining \. on input line 151.
 LaTeX Info: Redefining \% on input line 151.
- [36]
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
- [37]
-LaTeX Info: Redefining \. on input line 226.
-LaTeX Info: Redefining \% on input line 226.
-
-[38])) (Archivos/Bibliografia.tex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
+ [38]
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
  [39]
+LaTeX Info: Redefining \. on input line 235.
+LaTeX Info: Redefining \% on input line 235.
+
+[40]
+LaTeX Info: Redefining \. on input line 278.
+LaTeX Info: Redefining \% on input line 278.
+ [41])) (Archivos/CAP6/Capitulo_VI.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [42]
+Cap\'{\i }tulo 6.
+) (Archivos/Bibliografia.tex [43
+
+]
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [40
+ [44
 
-]) [41] ("Apuntes Estadistica.aux"
+]) [45] ("Apuntes Estadistica.aux"
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 29598 strings out of 493305
- 712306 string characters out of 3130237
+ 29606 strings out of 493305
+ 712510 string characters out of 3130237
  960633 words of memory out of 3000000
- 32410 multiletter control sequences out of 15000+200000
+ 32413 multiletter control sequences out of 15000+200000
  19169 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,17n,127p,737b,2134s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1743,9 +1756,9 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users
 /Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pf
 b><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 symbols/msam10.pfb>
-Output written on "Apuntes Estadistica.pdf" (41 pages, 470653 bytes).
+Output written on "Apuntes Estadistica.pdf" (45 pages, 477641 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
+ 267 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

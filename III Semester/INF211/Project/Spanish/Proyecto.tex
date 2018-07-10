@@ -1,4 +1,4 @@
-\documentclass[10pt,letterpaper]{report}
+\documentclass[10pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
@@ -174,21 +174,40 @@ Contador 0-99\\\vspace{2cm}}
 
 \maketitle
 
+\pagebreak
+
 \section*{Introducción}
 El contador digital es aquella secuencia constante de números de 0 a 9, el cual se aprecia su funcionamiento en un display de 7 Segmentos, en este proyecto veremos el
 funcionamiento lógico de los circuitos internos utilizados para llegar a que funcione este contador.
-\section*{Descripción}
+\section{Descripción}
 Para el circuito, desarrollaremos las tablas de Karnaugh para el caso 0-9 (Contador \texttt{MOD10}), ya que de este se puede partir a una generalización de un contador.
-\section*{Materiales}
+\subsection{Decodificador BCD de 7 Segmentos (7447)}
+Es un dispositivo que \textit{decodifica} un código de entrada en otro. Es decir, transforma una combinación de unos y cero, en otra. 74LS47, en particular transforma el código binario en el código de 7 segmentos.
+\begin{center}
+\includegraphics[scale=0.5]{7447}
+\end{center}
+El decodificador recibe en su entrada el número que será visualizado en el display. Posee 7 salidas, una para cada segmento. Para un valor de entrada, cada salida toma un estado determinado (activada o desactivada).
+\subsubsection{Uso del  Decodificador}
+Entonces, como ya lo dijimos, hay que aplicar el número deseado en la entrada y el dispositivo, automáticamente, habilita los segmentos correspondientes a la salida. Supongamos que queremos mostrar el número 5. Utilizando la tabla anterior vemos que 5 en binario es \texttt{0101.} Debemos aplicar este valor en los pines de entrada en el orden \texttt{DCBA}, es decir \texttt{DCBA = 0101}, o sea \texttt{D=0, C=1, B=0, A=1.} Al hacerlo, el integrado enciende todos los segmentos, salvo \texttt{b} y \texttt{e} para mostrar el número 5.
+\begin{center}
+\includegraphics[scale=0.75]{Ejemplo7447}
+\end{center}
+\section{Materiales}
 \begin{itemize}
-\item Circuitos Integrados \texttt{SN7447 AN} (2)
-\item Circuitos Integrados \texttt{SN74SL190 AN} (2)
+\item Circuito Integrado \texttt{555}
+\item Circuitos Integrados \texttt{SN7447AN} (2)
+\item Circuitos Integrados \texttt{SN74SL90N} (2)
 \item Resistencia de 220 Ohm (14)
 \item Display de 7 Segmentos, Anodo Comun (2)
 \item Protoboard (2)
-\item Cable \texttt{UTP}
+\item 1 metro de Cable \texttt{UTP}
+\item Potenciometro 10K (1)
+\item Condensador de 100$\mu$F
+\item Fuente de Alimentación de \texttt{5V}
+\item Multímetro Básico (Instrumentación)
+\item Pinzas (Instrumentación)
 \end{itemize}
-\section*{Diseño Lógico}
+\section{Diseño Lógico}
 Estados del \texttt{Contador MOD10}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
@@ -273,14 +292,32 @@ En esta sección se detallan los mapas de Karnaugh para el \texttt{Contador MOD1
     \end{Karnaugh}
 \end{center}
 \subsubsection{Diagrama}
+
 \begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+$J_i$ & $K_i$ \\ 
+\hline 
+$J_0=1$ & $K_0=1$ \\ 
+$J_1=Q_0 \overline{Q}_3$ & $K_1=Q_0$ \\ 
+$J_2=Q_0 Q_1$ & $K_2=Q_0 Q_1$ \\ 
+$J_3=Q_0 Q_1 Q_2$ & $K_3=Q_0$ \\ 
+\hline
+\end{tabular} 
 \includegraphics[scale=0.3]{CircuitoLLogico}
 \end{center}
-
-\section*{Diseño en Proteus 8.6 $^\text{{\small \textcopyright}}$ }
+Como el circuito lógico es un contador \texttt{0-9} simplemente se procede a obtener del pin que de el pulso de subida cuando llega a 9 a otro del mismo tipo, solo que este va directamente donde iría el pulso de reloj.
+\section{Diseño en Proteus 8.6 $^\text{{\small \textcopyright}}$ }
 \begin{center}
-\includegraphics[scale=0.85]{Proteus-Circuito}
+\includegraphics[scale=0.45]{Proteus-Circuito}
 \end{center}
+Para el contador \texttt{0-99} hemos realizado el contador \texttt{0-9}, este, a travez del pulso de reloj cuenta, y una vez llega a 9 se reinicia en cero. Como este princio puede ser generalizado podemos conectar un circuito bajo el mismo esquema del \texttt{7447} y \texttt{7490}, mandar desde la conección \texttt{11-6}, al pin 14 del \texttt{7490} para las decenas, y así sucesivamente para 999,9999,99999, etc...
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.08]{Circuito-Real2}
+\caption{Foto del Circuito Final}
+\end{figure}
+\pagebreak
 \section*{Conclusión}
-    
+En si pudimos apreciar el funcionamiento lógico de los \textit{circuitos integrados} en la manera de cómo va la información según a los pulsos de voltaje y como se puede realizar una extensión para realizar un contador hasta 999, 9999, etc. Porque los circuitos integrados al igual que la informática se basa en la lectura y escritura de números binarios.
 \end{document}
