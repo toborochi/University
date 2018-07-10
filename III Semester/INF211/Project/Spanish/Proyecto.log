@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  9 JUL 2018 21:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  9 JUL 2018 22:44
 entering extended mode
 **./Proyecto.tex
 (Proyecto.tex
@@ -834,20 +834,20 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `Proyecto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Info: Redefining \. on input line 182.
+LaTeX Info: Redefining \% on input line 182.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
@@ -956,11 +956,11 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 175.
+LaTeX Font Info:    Try loading font information for U+msa on input line 184.
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 175.
+LaTeX Font Info:    Try loading font information for U+msb on input line 184.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -968,38 +968,38 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<Imagenes/7447.png, id=12, 274.02374pt x 184.69pt>
+<Imagenes/7447.png, id=13, 274.02374pt x 184.69pt>
 File: Imagenes/7447.png Graphic file (type png)
 <use Imagenes/7447.png>
-Package pdftex.def Info: Imagenes/7447.png  used on input line 187.
+Package pdftex.def Info: Imagenes/7447.png  used on input line 196.
 (pdftex.def)             Requested size: 137.01154pt x 92.34476pt.
-<Imagenes/Ejemplo7447.png, id=13, 144.23888pt x 118.041pt>
+<Imagenes/Ejemplo7447.png, id=14, 144.23888pt x 118.041pt>
 File: Imagenes/Ejemplo7447.png Graphic file (type png)
 <use Imagenes/Ejemplo7447.png>
-Package pdftex.def Info: Imagenes/Ejemplo7447.png  used on input line 193.
+Package pdftex.def Info: Imagenes/Ejemplo7447.png  used on input line 202.
 (pdftex.def)             Requested size: 108.17888pt x 88.53052pt.
  [2 <./Imagenes/7447.png> <./Imagenes/Ejemplo7447.png>] [3]
 <Imagenes/CircuitoLLogico.png, id=27, 1464.47125pt x 419.5675pt>
 File: Imagenes/CircuitoLLogico.png Graphic file (type png)
 <use Imagenes/CircuitoLLogico.png>
-Package pdftex.def Info: Imagenes/CircuitoLLogico.png  used on input line 307.
+Package pdftex.def Info: Imagenes/CircuitoLLogico.png  used on input line 316.
 (pdftex.def)             Requested size: 439.34477pt x 125.87122pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 310.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 319.
 
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 310.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 319.
 <Imagenes/Proteus-Circuito.png, id=29, 1142.46825pt x 584.1825pt>
 File: Imagenes/Proteus-Circuito.png Graphic file (type png)
 <use Imagenes/Proteus-Circuito.png>
-Package pdftex.def Info: Imagenes/Proteus-Circuito.png  used on input line 312.
+Package pdftex.def Info: Imagenes/Proteus-Circuito.png  used on input line 321.
 
 (pdftex.def)             Requested size: 514.10597pt x 262.87968pt.
 
-Overfull \hbox (13.62198pt too wide) in paragraph at lines 312--313
+Overfull \hbox (13.62198pt too wide) in paragraph at lines 321--322
  [] 
  []
 
@@ -1007,7 +1007,7 @@ Overfull \hbox (13.62198pt too wide) in paragraph at lines 312--313
 <Imagenes/Circuito-Real2.jpg, id=35, 4175.6pt x 3131.7pt>
 File: Imagenes/Circuito-Real2.jpg Graphic file (type jpg)
 <use Imagenes/Circuito-Real2.jpg>
-Package pdftex.def Info: Imagenes/Circuito-Real2.jpg  used on input line 317.
+Package pdftex.def Info: Imagenes/Circuito-Real2.jpg  used on input line 326.
 (pdftex.def)             Requested size: 334.05482pt x 250.54112pt.
  [5 <./Imagenes/Proteus-Circuito.png> <./Imagenes/Circuito-Real2.jpg>] [6] (Pro
 yecto.aux
@@ -1037,7 +1037,7 @@ e1/public/amsfonts/cm/cmr17.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Asus/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Asu
 s/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Proyecto.pdf (6 pages, 2921463 bytes).
+Output written on Proyecto.pdf (6 pages, 2924256 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
