@@ -4,6 +4,8 @@ Here you find my notes in Probability and Statistic I, course:
   * [Spanish](https://github.com/toborochi/University/blob/master/Third%20Semester/MAT202/Notes/Spanish/Apuntes%20Estadistica.pdf)
   * English (not for now :sweat_smile:)
 ## Useful links
+### Statistics
+ * [Lorenz Curve (Wolfram)](http://mathworld.wolfram.com/LorenzCurve.html)
 ### Probability
   * [Teoria de Conjuntos](http://www.metonymie.com/apuntes/2008/09/10/teoria-de-conjuntos-definiciones-y-formulas-basicas.html)
   * [Calculo de Probabilidades](http://www.ugr.es/~bioestad/_private/Tema_2_color.pdf)
