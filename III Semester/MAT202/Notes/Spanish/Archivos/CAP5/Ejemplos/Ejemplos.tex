@@ -1,0 +1,195 @@
+\section{Ejemplos}
+\begin{enumerate}
+\item Un inversionista planea escoger dos de las cinco oportunidades de inversión que le han recomendado. Describa el espacio muestral que represeta las opciones posibles.
+\subsubsection{Solución}
+Diremos que las cinco oportunidades serán: $A,B,C,D$ y $E$. Como tiene que escoger dos oportunidades, el orden de las parejas no importa, por lo tanto, el espacio muestral será:
+\begin{equation*}
+S=
+\left\lbrace 
+\begin{aligned}
+(A,B),(A,C),(A,D),(A,E), \\
+(B,C),(B,D),(B,E), \\
+(C,D),(C,E), \\
+(D,E)
+\end{aligned}
+\right\rbrace 
+\end{equation*}
+\item Tres artículos son extraídos con reposición de un lote de mercancías, cada artículo ha de ser identificado como defectuoso (D) y no defectuoso (N). Describir todos los puntos posibles del espacio muestral para este experimento.
+\subsubsection{Solución}
+\begin{equation*}
+S=
+\left\lbrace 
+\begin{aligned}
+(D,D,D),(N,D,D),\\
+(D,D,N),(N,D,N),\\
+(D,N,D),(N,N,D),\\
+(D,N,N),(N,N,N)
+\end{aligned}
+\right\rbrace 
+\end{equation*}
+\item Una moneda se lanza tres veces. Describir los siguientes eventos:
+\begin{itemize}
+\item $A:$ \textit{Ocurre por lo menos dos caras.}
+\item $B:$ \textit{Ocurre, sello en el tercer lanzamiento.}
+\item $C:$ \textit{Ocurre a lo mas, una cara.}
+\end{itemize}
+Luego hallar:
+\begin{enumerate}
+\item $A\cup B$
+\item $B-C$
+\item $A^c \cap B^c$
+\item $A$ {\footnotesize $\triangle$} $C$
+\end{enumerate}
+\subsubsection{Solución}
+Describiendo los eventos $A,B$ y $C$:
+\item Sea el experimento, \textit{Lanzar una moneda hasta que ocurra cara y contar el número de lanzamientos de la moneda.}  Considerando:
+\begin{itemize}
+\item $A:$ \textit{Se necesita un número par de lanzamientos}
+\item $B:$ \textit{Se necesitan mas de diez lanzamientos.}
+\end{itemize}
+Hallar:
+\begin{enumerate}
+\item $A\cap B$
+\item $A-B$
+\item $B-A$
+\item $A^c$
+\item $B^c$
+\item $A^c \cap B^c$
+\end{enumerate}
+\subsubsection{Solución}
+\item Demostrar que: $P(A/B)+P(A^c/B)=1$
+\subsubsection{Solución}
+\begin{align*}
+P(A/B)+P(A^c/B) &\varstackrel{1}{=} \dfrac{P(A\cap B)}{P(B)} + \dfrac{P(A^c\cap B)}{P(B)} \\
+  &\varstackrel{2}{=} \dfrac{P(A\cap B)+P(A^c\cap B)}{P(B)} \\
+    &\varstackrel{3}{=} \dfrac{P[(A\cap B)\cup(A^c\cap B)]}{P(B)} \\
+      &\varstackrel{4}{=} \dfrac{P[(A\cup A^c)\cap B]}{P(B)} \\
+        &\varstackrel{5}{=} \dfrac{P(\Omega\cap B)}{P(B)} \\
+           &\varstackrel{6}{=} \dfrac{P(B)}{P(B)} \\
+                 &\varstackrel{7}{=} 1 \\
+\end{align*}
+$\therefore P(A/B)+P(A^c/B)=1$
+\item Demostrar que: $P(A/B^c)+P(A^c/B)=1$
+\subsubsection{Solución}
+\begin{align*}
+P(A/B^c)+P(A^c/B) &\varstackrel{1}{=} \dfrac{P(A\cap B^c)}{P(B^c)} + \dfrac{P(A^c\cap B)}{P(B)} \\
+&\varstackrel{2}{=} \dfrac{P(A)-P(A\cap B)}{P(B^c)}+ \dfrac{P(B)-P(A\cap B)}{P(B)}
+\end{align*}
+\item La probabilidad de que llueva en Santa Cruz el 10 de Junio es de 40\%, de que truene es 5\% y de que, llueve y truene es de 3\%. ¿Cual es la probabilidad de que llueva o truene ese día?
+\subsubsection{Solución}
+Conociendo los siguientes eventos:
+\begin{itemize}
+\item $A:$ Llueva
+\item $B:$ Truene
+\item $A\cap B:$ Llueva y truene
+\end{itemize}
+Sabemos los valores de las probabilidades de cada uno, de acuerdo al enunciado:
+\begin{itemize}
+\item $P(A)=40\%$
+\item $P(B)=5\%$
+\item $P(A\cap B)=3\%$
+\end{itemize}
+Con estos datos nos queda hallar $A\cup B$, por lo tanto calculamos simplemente reemplazando en la igualdad:
+\begin{align*}
+ P(A\cup B) &= P(A)+P(B)-P(A\cap B)\\
+ 	      &= 40\% + 5\% - 3\%    \\
+ 	      	&= 42\%
+\end{align*}
+\item Sea $A$ y $B$ dos eventos, tal que: $P(A)=0.20\% ; P(B)=0.30\%;P(A\cup B)=0.10\%$ \\ Hallar:
+\begin{enumerate}
+\item $P(A^c\cap B^c)$
+\item $P(A^c\cap B)$
+\item $P(A\cap B^c)$
+\item $P(A^c\cup B)$
+\end{enumerate}
+
+
+\subsubsection{Solución}
+\item Con 7 ingenieros y 4 médicos se formaron comités de 6 miembros. ¿Cuál es la probabilidad que el comité incluya: ?
+\begin{enumerate}
+\item Exactamente 2 médicos.
+\item Al menos 2 ingenieros.
+\end{enumerate}
+\subsubsection{Solución}
+\item En la UAGRM el 30\% de los estudiantes son cruceños, el 10\% estudia Ingeniería Informática, y el 1\% son cruceños y estudian Informática. Si se selecciona al azar un estudiante de la UAGRM. Hallar las siguientes probabilidades:
+\begin{enumerate}
+\item El estudiante no es cruceño.
+\item Sea cruceño o pertenezca a Ingeniería Informática.
+\item Sea cruceño y no estudie Ingeniería Informática.
+\item No sea cruceño ni estudie Ingeniería Informática.
+\end{enumerate}
+\subsubsection{Solución}
+\item En una encuesta pública se determina que la probabilidad que una persona consuma $A$ es $0.50$ que consuma $B$ es $0.37$, que consuma $C$ es $0.30$, que consuma $A$ y $B$ es $0.12$ que consuma solamente $A$ y $C$ es $0.08$ que consuma solamente $B$ y $C$ es $0.05$ y que consuma solamente $C$ es $0.15$.
+\begin{itemize}
+\item Calcular la probabilidad que de que alguien consuma $A$ o $B$ pero no $C$.
+\end{itemize}
+\subsubsection{Solución}
+\item Se lanza un dado legal sobre una mesa y se observa el número que aparece en la cara superior.
+\begin{enumerate}
+\item ¿Cual es la probabilidad de obtener un número par?
+\item ¿Cual es la probabilidad de obtener un número impar?
+\item Los eventos \textit{''Obtener número par''} y \textit{''Obtener número impar''} son mutuamente excluyentes?¿Son Independientes?
+ 
+\end{enumerate}
+\subsubsection{Solución}
+\begin{enumerate}
+\item Primeramente definamos el espacio muestral, que sería $\Omega = \lbrace 1,2,3,4,5,6 \rbrace$, de este e.m. tomamos en cuenta todos los casos que sean favorables al enunciado, \textit{''Obtener Número Par''}, estos son un evento $A=\lbrace 2,4,6\rbrace$. Finalmente:
+$$P(A)=\dfrac{n(A)}{n(\Omega)}=\dfrac{3}{6}=\dfrac{1}{2} (50\%)$$
+\item Bajo la misma lógica anterior realizamos para los números impares, teniendo: $B=\lbrace 1,3,5\rbrace$
+$$P(B)=\dfrac{n(B)}{n(\Omega)}=\dfrac{3}{6}=\dfrac{1}{2} (50\%)$$
+\end{enumerate}
+\item Una urna contiene 6 fichas blancas y 4 negras. Se extraen 2 fichas sucesivamente y sin restitución.
+\begin{enumerate}
+\item ¿Cual es la probabilidad de que ambas sean negras?
+\item ¿Cual es la probabilidad de que la primera sea blanca y la segunda negra?
+\item ¿Cual es la probabilidad de que la primera sea negra y la segunda blanca?
+\item ¿Cual es la probabilidad de que ambas sean blancas?
+\end{enumerate}
+\item En un grupo de personas hay 3 mujeres y 4 hombres varones. Si se elige una persona al azar ¿Cual es la probabilidad que sea varón?
+\item Si $A$ y  $B$ son eventos cualesquiera, demostrar:
+$$P(A\cup B\cup C)=P(A)+P(B)+P(C)-P(A\cap C)-P(B\cap C)-P(A\cap B)+P(A\cap B \cap C)$$
+\subsubsection{Solución}
+\item La probabilidad de que un estudiante apruebe matemáticas es $\frac{2}{3}$ y que apruebe física es $\frac{4}{9}$. Si la probabilidad de aprobar al menos una de estas materias es $\frac{4}{5}$. ¿ Cual es la probabilidad de aprobar ambas materias?
+\subsubsection{Solución}
+El problema nos plantea los siguientes datos:
+\begin{itemize}
+\item $A:$ \textit{Aprobar Matemáticas.}
+\item $B:$ \textit{Aprobar Física.}
+\item $A\cup B :$ \textit{Aprobar al menos una de estas materias.} (Es decir, aprobar Física o Matemáticas)
+\end{itemize}
+Por lo tanto, las probabilidades ya están dadas:
+\begin{itemize}
+\item $P(A)= \frac{2}{3}$
+\item $P(B)=  \frac{4}{9}$
+\item $P(A\cup B)= \frac{4}{5}$
+\end{itemize}
+Como el problema pide la probabilidad de aprobar ambas materias, esto es: $P(A\cap B)$. Si partimos de la siguiente igualdad:
+\begin{align*}
+P(A\cup B) = P(A) + P(B) - P(A\cap B)
+\end{align*}
+Luego, despejamos $P(A\cap B)$ y reemplazamos:
+\begin{align*}
+P(A\cap B) &= P(A) + P(B) - P(A\cup B) \\
+           &= \dfrac{2}{3}+\dfrac{4}{9}-\dfrac{4}{5} \\
+           &= \dfrac{14}{45} \approx 31.11 \%
+\end{align*}
+Obtenemos que la probabilidad de aprobar ambas materias es de $31.11\%$.
+\item En los últimos años la Universidad \textbf{ABC} ha estado llevando un registro de sus egresados, en la actualidad tienen empleo, anotando el número de años que utilizaron para terminar su carrera y su posición (alta, media o baja) que tienen como profesionales.
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+  \hline
+  \diagbox[innerwidth=2cm,height=1.2cm]{Posición}{Tiempo} & Alta & Media & Baja  & Total \\ \hline
+  5 Años & $30$ & $70$ & $20$ & $120$ \\ \hline
+  +5 Años & $20$ & $30$ & $30$ & $80$ \\ \hline
+  Total & $50$ & $100$ & $50$ & $200$ \\
+  \hline
+\end{tabular}
+\end{center}
+\begin{enumerate}
+\item Basados en la información anterior.  ¿ Cual es la probabilidad de que si la duración de sus estudios fue de 5 años, tenga una alta posición profesional en su empleo actual?
+\item Si el empleado tiene baja posición ¿Cual es la probabilidad de que tal persona haya realizado sus estudios en +5 años?
+\item Si el egresado tiene posición profesional media, ¿ Cual es la probabilidad de que tal persona haya realizado la cerrera en 5 años?
+\end{enumerate}
+\item La urna $A$ contiene 6 fichas grises y 4 rojas, y la urna $B$ contiene 2 fichas grises y 7 rojas. Se saca una ficha de $A$ y se coloca en la $B$, en seguida se saca una ficha de $B$. Dado que la ficha extraída de $B$ es gris. ¿Cual es la probabilidad de que la ficha sacada de $A$ sea gris?
+\item La urna $A_1$ contiene 8 fichas blancas y 2 negras. La urna $A_2$ contiene 3 fichas blancas y 7 negras, finalmente, la urna $A_3$ contiene 5 fichas blancas y 5 negras. Se lanza un dado no cargado, si resulta $\left\lbrace 1,2,3\right\rbrace $ se saca una ficha de la urna $A_1$; si resulta $\left\lbrace 4,5 \right\rbrace $ se saca una ficha de $A_2$, si resulta $\left\lbrace 6 \right\rbrace $ se saca de la urna $A_3$. \\${ }$\\ Dado que la ficha extraída es blanca. ¿ Cual es la probabilidad de que venga de $A_2$?
+\end{enumerate}
