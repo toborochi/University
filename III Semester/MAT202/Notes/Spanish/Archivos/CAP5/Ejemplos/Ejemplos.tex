@@ -1,5 +1,6 @@
 \section{Ejemplos}
 \begin{enumerate}
+\item Un experimento consiste en lanzar dos dados y observar los números que aparecen en la cara superior:
 \item Un inversionista planea escoger dos de las cinco oportunidades de inversión que le han recomendado. Describa el espacio muestral que represeta las opciones posibles.
 \subsubsection{Solución}
 Diremos que las cinco oportunidades serán: $A,B,C,D$ y $E$. Como tiene que escoger dos oportunidades, el orden de las parejas no importa, por lo tanto, el espacio muestral será:
@@ -42,6 +43,62 @@ Luego hallar:
 \end{enumerate}
 \subsubsection{Solución}
 Describiendo los eventos $A,B$ y $C$:
+\begin{multicols}{3}
+\noindent
+\begin{equation*}
+A=
+\left\lbrace 
+\begin{aligned}
+(C,C,C),(C,C,S), \\
+(C,S,C),(S,C,C)
+\end{aligned}
+\right\rbrace 
+\end{equation*}
+\columnbreak
+\begin{equation*}
+B=
+\left\lbrace 
+\begin{aligned}
+(C,C,S),(C,S,S),\\
+(S,C,S),(S,S,S)
+\end{aligned}
+\right\rbrace 
+\end{equation*}
+\columnbreak
+\begin{equation*}
+C=
+\left\lbrace 
+\begin{aligned}
+(C,S,S),(S,C,S),\\
+(S,S,C),(S,S,S)
+\end{aligned}
+\right\rbrace 
+\end{equation*}
+\end{multicols}
+Haciendo las operaciones de los incisos:
+\begin{enumerate}
+\item \begin{equation*}
+A\cup B=
+\left\lbrace 
+\begin{aligned}
+(C,C,C),(C,C,S),(C,S,C),(S,C,C) \\ 
+(C,S,S),(S,S,S),(S,C,S)
+\end{aligned}
+\right\rbrace 
+\end{equation*}
+\item \begin{equation*}
+B-C=
+\left\lbrace 
+\begin{aligned}
+(C,C,S)
+\end{aligned}
+\right\rbrace 
+\end{equation*}
+\item 
+\begin{equation*}
+(A^c \cap B^c)=(A\cup B)^c = \{ (S,S,C) \}
+\end{equation*}
+\end{enumerate}
 \item Sea el experimento, \textit{Lanzar una moneda hasta que ocurra cara y contar el número de lanzamientos de la moneda.}  Considerando:
 \begin{itemize}
 \item $A:$ \textit{Se necesita un número par de lanzamientos}
