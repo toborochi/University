@@ -123,6 +123,7 @@
 \contentsline {subsubsection}{Para datos Agrupados}{28}
 \contentsline {subsection}{\numberline {3.9.2}Propiedades}{28}
 \contentsline {subsection}{\numberline {3.9.3}Interpretaci\IeC {\'o}n}{28}
+\contentsline {section}{\numberline {3.10}Ejemplos}{28}
 \contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de Regresi\IeC {\'o}n y Correlaci\IeC {\'o}n}{29}
 \contentsline {section}{\numberline {4.1}Modelo de Regresi\IeC {\'o}n Lineal Simple}{29}
 \contentsline {section}{\numberline {4.2}Regresi\IeC {\'o}n Lineal}{29}
@@ -136,6 +137,10 @@
 \contentsline {subsubsection}{Mediante F\IeC {\'o}rmula propuesta por Pearson}{31}
 \contentsline {subsubsection}{En t\IeC {\'e}rminos de Covarianza y Desviaci\IeC {\'o}n Est\IeC {\'a}ndar}{31}
 \contentsline {subsubsection}{Error Est\IeC {\'a}ndar de Estimaci\IeC {\'o}n}{31}
+\contentsline {section}{\numberline {4.7}Ejemplos}{31}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{32}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{32}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{32}
 \contentsline {chapter}{\numberline {5}Probabilidad}{33}
 \contentsline {subsubsection}{Experimentos Determin\IeC {\'\i }sticos}{33}
 \contentsline {subsubsection}{Experimentos no Determin\IeC {\'\i }sticos}{33}
