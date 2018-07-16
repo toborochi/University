@@ -1,6 +1,47 @@
 \section{Ejemplos}
 \begin{enumerate}
+\item Tres señoritas: María, Marta y Maritza. Compiten en un concurso de belleza. Los premios son solamente otorgados a las que ocupan el primer y segundo lugar.
+\begin{enumerate}
+\item Listar los elementos del espacio muestral, correspondiente a los experimentos \textit{''Elegir dos Ganadores''}
+\item Definir como subconjunto de $S$, los eventos:
+\begin{itemize}
+\item $A$: María gana el concurso de Belleza.
+\item $B$: María gana el segundo lugar.
+\item $C$: Maritza y Marta ganan los premios.
+\end{itemize}
+\end{enumerate}
+\subsubsection{Solución}
+\begin{enumerate}
+\item Correspondiente al experimento, \textit{''Elegir dos Ganadores''}:
+\begin{equation*}
+S=
+\left\lbrace 
+\begin{aligned}
+(Maria,Marta),(Maria,Maritza), \\
+(Marta,Maria),(Marta,Maritza), \\
+(Maritza,Maria),(Maritza,Marta)
+\end{aligned}
+\right\rbrace 
+\end{equation*}
+\item
+\begin{itemize}
+\item $A=\left\lbrace (Maria,Marta),(Maria,Maritza),(Marta,Maria),(Maritza,Maria)\right\rbrace $
+\item $B=\left\lbrace (Marta,Maria),(Maritza,Maria)\right\rbrace$
+\item $C=\left\lbrace (Maritza,Marta),(Marta,Maritza)\right\rbrace$
+\end{itemize}
+\end{enumerate}
 \item Un experimento consiste en lanzar dos dados y observar los números que aparecen en la cara superior:
+\begin{enumerate}
+\item Listar los elementos del espacio muestral.
+\item Listar los elementos tal que:
+\begin{itemize}
+\item $A:$ La suma de los números es 5.
+\item $B:$ La suma de los números es 12.
+\item $C:$ El producto de los números es 24.
+\item $D:$ La suma de los números es divisibles por 7.
+\end{itemize}
+\end{enumerate}
+\subsubsection{Solución}
 \item Un inversionista planea escoger dos de las cinco oportunidades de inversión que le han recomendado. Describa el espacio muestral que represeta las opciones posibles.
 \subsubsection{Solución}
 Diremos que las cinco oportunidades serán: $A,B,C,D$ y $E$. Como tiene que escoger dos oportunidades, el orden de las parejas no importa, por lo tanto, el espacio muestral será:
@@ -98,6 +139,16 @@ B-C=
 \begin{equation*}
 (A^c \cap B^c)=(A\cup B)^c = \{ (S,S,C) \}
 \end{equation*}
+\item Podemos reescribir de la siguiente manera, y aplicamos la unión:
+$$
+\text{$A$ {\footnotesize $\triangle$} $C$} = (A-C)\cup (C-A)
+$$
+Hallamos $(A-C)$ y $(C-A)$ respectivamente:
+\begin{align*}
+A-C &= \{ (C,C,C),(C,C,S),(C,S,C),(S,C,C)\} \\
+C-A &= \{ (C,S,S),(S,C,S),(S,S,C),(S,S,S)\} 
+\end{align*}
+Como podemos ver, al realizar la unión, obtenemos todos los posibles resultados del espacio muestral. Por lo tanto: $A$ {\footnotesize $\triangle$} $C=S$
 \end{enumerate}
 \item Sea el experimento, \textit{Lanzar una moneda hasta que ocurra cara y contar el número de lanzamientos de la moneda.}  Considerando:
 \begin{itemize}
@@ -202,7 +253,9 @@ $$P(B)=\dfrac{n(B)}{n(\Omega)}=\dfrac{3}{6}=\dfrac{1}{2} (50\%)$$
 \item ¿Cual es la probabilidad de que la primera sea negra y la segunda blanca?
 \item ¿Cual es la probabilidad de que ambas sean blancas?
 \end{enumerate}
+\subsubsection{Solución}
 \item En un grupo de personas hay 3 mujeres y 4 hombres varones. Si se elige una persona al azar ¿Cual es la probabilidad que sea varón?
+\subsubsection{Solución}
 \item Si $A$ y  $B$ son eventos cualesquiera, demostrar:
 $$P(A\cup B\cup C)=P(A)+P(B)+P(C)-P(A\cap C)-P(B\cap C)-P(A\cap B)+P(A\cap B \cap C)$$
 \subsubsection{Solución}
@@ -248,5 +301,7 @@ Obtenemos que la probabilidad de aprobar ambas materias es de $31.11\%$.
 \item Si el egresado tiene posición profesional media, ¿ Cual es la probabilidad de que tal persona haya realizado la cerrera en 5 años?
 \end{enumerate}
 \item La urna $A$ contiene 6 fichas grises y 4 rojas, y la urna $B$ contiene 2 fichas grises y 7 rojas. Se saca una ficha de $A$ y se coloca en la $B$, en seguida se saca una ficha de $B$. Dado que la ficha extraída de $B$ es gris. ¿Cual es la probabilidad de que la ficha sacada de $A$ sea gris?
+\subsubsection{Solución}
 \item La urna $A_1$ contiene 8 fichas blancas y 2 negras. La urna $A_2$ contiene 3 fichas blancas y 7 negras, finalmente, la urna $A_3$ contiene 5 fichas blancas y 5 negras. Se lanza un dado no cargado, si resulta $\left\lbrace 1,2,3\right\rbrace $ se saca una ficha de la urna $A_1$; si resulta $\left\lbrace 4,5 \right\rbrace $ se saca una ficha de $A_2$, si resulta $\left\lbrace 6 \right\rbrace $ se saca de la urna $A_3$. \\${ }$\\ Dado que la ficha extraída es blanca. ¿ Cual es la probabilidad de que venga de $A_2$?
+\subsubsection{Solución}
 \end{enumerate}
