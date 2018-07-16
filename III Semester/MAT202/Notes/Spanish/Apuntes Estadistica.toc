@@ -124,75 +124,78 @@
 \contentsline {subsection}{\numberline {3.9.2}Propiedades}{28}
 \contentsline {subsection}{\numberline {3.9.3}Interpretaci\IeC {\'o}n}{28}
 \contentsline {section}{\numberline {3.10}Ejemplos}{28}
-\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de Regresi\IeC {\'o}n y Correlaci\IeC {\'o}n}{29}
-\contentsline {section}{\numberline {4.1}Modelo de Regresi\IeC {\'o}n Lineal Simple}{29}
-\contentsline {section}{\numberline {4.2}Regresi\IeC {\'o}n Lineal}{29}
-\contentsline {section}{\numberline {4.3}Regresi\IeC {\'o}n Potencial}{30}
-\contentsline {section}{\numberline {4.4}Regresi\IeC {\'o}n Exponencial}{30}
-\contentsline {section}{\numberline {4.5}Regresi\IeC {\'o}n Parab\IeC {\'o}lica}{30}
-\contentsline {section}{\numberline {4.6}Coeficiente de Correlaci\IeC {\'o}n Rectil\IeC {\'\i }neo}{30}
-\contentsline {subsection}{\numberline {4.6.1}Propiedades}{30}
-\contentsline {subsubsection}{Observaciones}{31}
-\contentsline {subsection}{\numberline {4.6.2}C\IeC {\'a}lculo}{31}
-\contentsline {subsubsection}{Mediante F\IeC {\'o}rmula propuesta por Pearson}{31}
-\contentsline {subsubsection}{En t\IeC {\'e}rminos de Covarianza y Desviaci\IeC {\'o}n Est\IeC {\'a}ndar}{31}
-\contentsline {subsubsection}{Error Est\IeC {\'a}ndar de Estimaci\IeC {\'o}n}{31}
-\contentsline {section}{\numberline {4.7}Ejemplos}{31}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{32}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{32}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{32}
-\contentsline {chapter}{\numberline {5}Probabilidad}{33}
-\contentsline {subsubsection}{Experimentos Determin\IeC {\'\i }sticos}{33}
-\contentsline {subsubsection}{Experimentos no Determin\IeC {\'\i }sticos}{33}
-\contentsline {section}{\numberline {5.1}Eventos}{33}
-\contentsline {subsection}{\numberline {5.1.1}Operaciones con Eventos}{34}
-\contentsline {subsubsection}{Uni\IeC {\'o}n}{34}
-\contentsline {subsubsection}{Intersecci\IeC {\'o}n}{34}
-\contentsline {subsubsection}{Diferencia Relativa}{34}
-\contentsline {subsubsection}{Diferencia Sim\IeC {\'e}trica }{34}
-\contentsline {subsubsection}{Complemento}{34}
-\contentsline {subsubsection}{Inclusi\IeC {\'o}n}{34}
-\contentsline {subsubsection}{Igualdad de Eventos}{34}
-\contentsline {section}{\numberline {5.2}$\sigma $-\IeC {\'a}lgebra de Eventos}{34}
-\contentsline {section}{\numberline {5.3}Definici\IeC {\'o}n Axiom\IeC {\'a}tica de Probabilidad}{35}
-\contentsline {subsection}{\numberline {5.3.1}Propiedades de la Probabilidad de Eventos}{35}
-\contentsline {section}{\numberline {5.4}Definici\IeC {\'o}n Cl\IeC {\'a}sica de Probabilidad}{35}
-\contentsline {subsection}{\numberline {5.4.1}Probabilidad Condicionada}{36}
-\contentsline {subsubsection}{Propiedades}{36}
-\contentsline {subsection}{\numberline {5.4.2}Eventos Dependientes}{36}
-\contentsline {subsection}{\numberline {5.4.3}Eventos Independientes}{36}
-\contentsline {subsubsection}{Observaciones}{36}
-\contentsline {subsubsection}{Teorema}{36}
-\contentsline {subsubsection}{Demostraci\IeC {\'o}n de los Teoremas}{37}
-\contentsline {subsection}{\numberline {5.4.4}Teorema de la Probabilidad Total}{38}
-\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{38}
-\contentsline {subsection}{\numberline {5.4.5}Teorema de Bayes}{38}
-\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{39}
-\contentsline {section}{\numberline {5.5}Ejemplos}{39}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{39}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{39}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{39}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{40}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{40}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{41}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{28}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{29}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{29}
+\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de Regresi\IeC {\'o}n y Correlaci\IeC {\'o}n}{31}
+\contentsline {section}{\numberline {4.1}Modelo de Regresi\IeC {\'o}n Lineal Simple}{31}
+\contentsline {section}{\numberline {4.2}Regresi\IeC {\'o}n Lineal}{31}
+\contentsline {section}{\numberline {4.3}Regresi\IeC {\'o}n Potencial}{32}
+\contentsline {section}{\numberline {4.4}Regresi\IeC {\'o}n Exponencial}{32}
+\contentsline {section}{\numberline {4.5}Regresi\IeC {\'o}n Parab\IeC {\'o}lica}{32}
+\contentsline {section}{\numberline {4.6}Coeficiente de Correlaci\IeC {\'o}n Rectil\IeC {\'\i }neo}{32}
+\contentsline {subsection}{\numberline {4.6.1}Propiedades}{32}
+\contentsline {subsubsection}{Observaciones}{33}
+\contentsline {subsection}{\numberline {4.6.2}C\IeC {\'a}lculo}{33}
+\contentsline {subsubsection}{Mediante F\IeC {\'o}rmula propuesta por Pearson}{33}
+\contentsline {subsubsection}{En t\IeC {\'e}rminos de Covarianza y Desviaci\IeC {\'o}n Est\IeC {\'a}ndar}{33}
+\contentsline {subsubsection}{Error Est\IeC {\'a}ndar de Estimaci\IeC {\'o}n}{33}
+\contentsline {section}{\numberline {4.7}Ejemplos}{33}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{34}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{34}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{34}
+\contentsline {chapter}{\numberline {5}Probabilidad}{35}
+\contentsline {subsubsection}{Experimentos Determin\IeC {\'\i }sticos}{35}
+\contentsline {subsubsection}{Experimentos no Determin\IeC {\'\i }sticos}{35}
+\contentsline {section}{\numberline {5.1}Eventos}{35}
+\contentsline {subsection}{\numberline {5.1.1}Operaciones con Eventos}{36}
+\contentsline {subsubsection}{Uni\IeC {\'o}n}{36}
+\contentsline {subsubsection}{Intersecci\IeC {\'o}n}{36}
+\contentsline {subsubsection}{Diferencia Relativa}{36}
+\contentsline {subsubsection}{Diferencia Sim\IeC {\'e}trica }{36}
+\contentsline {subsubsection}{Complemento}{36}
+\contentsline {subsubsection}{Inclusi\IeC {\'o}n}{36}
+\contentsline {subsubsection}{Igualdad de Eventos}{36}
+\contentsline {section}{\numberline {5.2}$\sigma $-\IeC {\'a}lgebra de Eventos}{36}
+\contentsline {section}{\numberline {5.3}Definici\IeC {\'o}n Axiom\IeC {\'a}tica de Probabilidad}{37}
+\contentsline {subsection}{\numberline {5.3.1}Propiedades de la Probabilidad de Eventos}{37}
+\contentsline {section}{\numberline {5.4}Definici\IeC {\'o}n Cl\IeC {\'a}sica de Probabilidad}{37}
+\contentsline {subsection}{\numberline {5.4.1}Probabilidad Condicionada}{38}
+\contentsline {subsubsection}{Propiedades}{38}
+\contentsline {subsection}{\numberline {5.4.2}Eventos Dependientes}{38}
+\contentsline {subsection}{\numberline {5.4.3}Eventos Independientes}{38}
+\contentsline {subsubsection}{Observaciones}{38}
+\contentsline {subsubsection}{Teorema}{38}
+\contentsline {subsubsection}{Demostraci\IeC {\'o}n de los Teoremas}{39}
+\contentsline {subsection}{\numberline {5.4.4}Teorema de la Probabilidad Total}{40}
+\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{40}
+\contentsline {subsection}{\numberline {5.4.5}Teorema de Bayes}{40}
+\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{41}
+\contentsline {section}{\numberline {5.5}Ejemplos}{41}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{41}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{41}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{41}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{42}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{42}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{42}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{42}
-\contentsline {subsubsection}{Soluci\IeC {\'o}n}{43}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{43}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{43}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{43}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{43}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{44}
 \contentsline {subsubsection}{Soluci\IeC {\'o}n}{44}
-\contentsline {chapter}{\numberline {6}Series Cronol\IeC {\'o}gicas}{45}
-\contentsline {section}{\numberline {6.1}Generalidades}{45}
-\contentsline {section}{\numberline {6.2}Componentes de las Series Cronol\IeC {\'o}gicas}{45}
-\contentsline {subsection}{\numberline {6.2.1}Tendencia o Movimiento Secular}{45}
-\contentsline {subsection}{\numberline {6.2.2}Variaciones Estacionales}{45}
-\contentsline {subsection}{\numberline {6.2.3}Variaciones C\IeC {\'\i }clicas}{45}
-\contentsline {subsection}{\numberline {6.2.4}Variaciones Irregulares}{45}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{44}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{44}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{45}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{45}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{45}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{45}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{45}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{46}
+\contentsline {subsubsection}{Soluci\IeC {\'o}n}{46}
+\contentsline {chapter}{\numberline {6}Series Cronol\IeC {\'o}gicas}{47}
+\contentsline {section}{\numberline {6.1}Generalidades}{47}
+\contentsline {section}{\numberline {6.2}Componentes de las Series Cronol\IeC {\'o}gicas}{47}
+\contentsline {subsection}{\numberline {6.2.1}Tendencia o Movimiento Secular}{47}
+\contentsline {subsection}{\numberline {6.2.2}Variaciones Estacionales}{47}
+\contentsline {subsection}{\numberline {6.2.3}Variaciones C\IeC {\'\i }clicas}{47}
+\contentsline {subsection}{\numberline {6.2.4}Variaciones Irregulares}{47}
