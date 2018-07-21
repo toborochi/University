@@ -1,0 +1,69 @@
+\chapter{Matrices}
+\section{Conceptos}
+\subsection{Matriz}
+Es un arreglo de números. Los números en el arreglo se denominan elementos de la matriz. Para denotarlas se utilizan letras mayúsculas.
+\begin{itemize}
+\item \textbf{Tamaño u Orden:} Se describe en términos como el número de filas y columnas de la matriz.
+\item \textbf{Identificación de Elementos:} Se los identifica indicando la fila y la columna.
+\end{itemize}
+\section{Operaciones con Matrices}
+\subsection{Propiedades de las Operaciones con Matrices}
+\begin{itemize}
+\item $A+B=B+A$
+\item $A+(B+C)=(A+B)+C$
+\item $A(BC)=(AB)C$
+\item $A(B\pm C)=AB\pm AC$
+\item $(B\pm A)C = BA\pm AC$
+\item $a(B\pm C)= aB\pm aC$ \hspace{1cm} $a$ es un escalar.
+\item $(a\pm b)C = aC\pm bC$ \hspace{1cm} $b$ es un escalar.
+\item $(ab)C = a(bC) = b(aC)$
+\item $a(BC)=(aB)C=B(aC)$
+\item $(A^t)^t=A$
+\item $(A\pm B)^t=A^t \pm B^t$
+\item $(kA)^t=kA^t$
+\item $(AB)^t = B^t A^t$
+\end{itemize}
+\subsection{Operaciones Elementales}
+\begin{itemize}
+\item \textbf{Permutaciones:} de una fila (o columna) con otra $P_{ij}$ o $P_{ij}^c$
+\item \textbf{Multiplicación:} de una fila (o columna) por un escalar: $k\neq 0$. Cuya notación será: $M_{i(k)}$ o $M_{j(k)}^c$
+\end{itemize}
+\section{Matrices Cuadradas}
+\subsection{Matriz Identidad}
+$$I_{(n)}/[I]_{ij}=
+\begin{cases} 
+1 \text{ si } i=j \\
+0 \text{ si } i\neq j
+\end{cases}
+$$
+\subsubsection{Propiedades}
+\begin{itemize}
+\item Actúa como el elemento neutro en el Producto de Matrices.
+$$
+\text{Si } A_{(m\times n)} \Rightarrow
+\begin{cases} 
+AI_{(n)} = A\\
+I_{(n)}A = A
+
+\end{cases}
+$$
+\end{itemize}
+\subsection{Matriz Simétrica}
+\subsection{Matriz Antisimétrica}
+\subsection{Matriz Triangular Superior}
+\subsection{Matriz Triangular Inferior}
+\subsection{Matriz Diagonal}
+\subsubsection{Matriz Escalar}
+Es una matriz diagonal donde $[A]_{ij}=k$, siendo $k$ un escalar cualquiera.
+\subsection{Matriz Elemental}
+Es una Matriz que proviene de la Identidad, al aplicarle una \textbf{única} operación elemental.
+\subsection{Matriz no Singular}
+Una matriz $A_{(n)}$ es no singular si existe una matriz $B(n)$ tal que:
+$$AB=BA=I$$
+$B$ es la Inversa de $A$ y se representa por $A^{-1}$:
+$$AA^{-1}=A^{-1}A=I$$
+Si $A$ no tiene inversa se la denomina \textit{Singular.}
+\chapter{Sistemas de Ecuaciones Lineales}
+\chapter{Función Determinante}
+\chapter{Vectores}
+\chapter{Espacios Vectoriales}

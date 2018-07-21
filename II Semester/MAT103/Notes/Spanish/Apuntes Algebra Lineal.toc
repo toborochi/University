@@ -1,0 +1,22 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Matrices}{5}
+\contentsline {section}{\numberline {1.1}Conceptos}{5}
+\contentsline {subsection}{\numberline {1.1.1}Matriz}{5}
+\contentsline {section}{\numberline {1.2}Operaciones con Matrices}{5}
+\contentsline {subsection}{\numberline {1.2.1}Propiedades de las Operaciones con Matrices}{5}
+\contentsline {subsection}{\numberline {1.2.2}Operaciones Elementales}{5}
+\contentsline {section}{\numberline {1.3}Matrices Cuadradas}{6}
+\contentsline {subsection}{\numberline {1.3.1}Matriz Identidad}{6}
+\contentsline {subsubsection}{Propiedades}{6}
+\contentsline {subsection}{\numberline {1.3.2}Matriz Sim\IeC {\'e}trica}{6}
+\contentsline {subsection}{\numberline {1.3.3}Matriz Antisim\IeC {\'e}trica}{6}
+\contentsline {subsection}{\numberline {1.3.4}Matriz Triangular Superior}{6}
+\contentsline {subsection}{\numberline {1.3.5}Matriz Triangular Inferior}{6}
+\contentsline {subsection}{\numberline {1.3.6}Matriz Diagonal}{6}
+\contentsline {subsubsection}{Matriz Escalar}{6}
+\contentsline {subsection}{\numberline {1.3.7}Matriz Elemental}{6}
+\contentsline {subsection}{\numberline {1.3.8}Matriz no Singular}{6}
+\contentsline {chapter}{\numberline {2}Sistemas de Ecuaciones Lineales}{7}
+\contentsline {chapter}{\numberline {3}Funci\IeC {\'o}n Determinante}{9}
+\contentsline {chapter}{\numberline {4}Vectores}{11}
+\contentsline {chapter}{\numberline {5}Espacios Vectoriales}{13}
