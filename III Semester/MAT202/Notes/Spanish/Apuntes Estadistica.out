@@ -1,0 +1,111 @@
+\BOOKMARK [0][-]{chapter.1}{Aspectos B\341sicos de las Estad\355sticas}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Conceptos Generales de la Estad\355stica}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Generalidades}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Variables Estad\355sticas}{section.1.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Representaci\363n de la Informaci\363n en Cuadros o Tablas}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.2.1}{Conceptos Iniciales}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.2}{Frecuencia}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.3}{Tablas de Distribuci\363n de Frecuencia}{section.1.2}% 8
+\BOOKMARK [1][-]{section.1.3}{Representaciones Gr\341ficas}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.3.1}{Diagrama de Barras}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.2}{Diagrama de Sectores}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.3}{Diagrama de Bastones}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.4}{Histograma y Pol\355gono de Frecuencia}{section.1.3}% 13
+\BOOKMARK [0][-]{chapter.2}{Estad\355grafos de Tendencia Central}{}% 14
+\BOOKMARK [1][-]{section.2.1}{Media Aritmetica Simple \(\)}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.1.1}{C\341lculo}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.2}{Propiedades}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.3}{M\351todos Abreviados para el C\341lculo de la Media}{section.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.1.4}{Ventajas y Desventajas}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.5}{Ejemplos}{section.2.1}% 20
+\BOOKMARK [1][-]{section.2.2}{Media Aritmetica Ponderada \(\)}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.1}{C\341lculo}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.2}{Ejemplos}{section.2.2}% 23
+\BOOKMARK [1][-]{section.2.3}{Mediana \(Me\)}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.3.1}{C\341lculo}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.2}{Ejemplos}{section.2.3}% 26
+\BOOKMARK [1][-]{section.2.4}{Cuantiles}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.4.1}{Cuartiles \(Qi\)}{section.2.4}% 28
+\BOOKMARK [2][-]{subsection.2.4.2}{Deciles \(Di\)}{section.2.4}% 29
+\BOOKMARK [2][-]{subsection.2.4.3}{Percentiles \(Pi\)}{section.2.4}% 30
+\BOOKMARK [2][-]{subsection.2.4.4}{C\341lculo de Cuantiles}{section.2.4}% 31
+\BOOKMARK [2][-]{subsection.2.4.5}{Ejemplos}{section.2.4}% 32
+\BOOKMARK [1][-]{section.2.5}{Moda o Modo \(Mo\)}{chapter.2}% 33
+\BOOKMARK [2][-]{subsection.2.5.1}{C\341lculo}{section.2.5}% 34
+\BOOKMARK [2][-]{subsection.2.5.2}{Ventajas y Desventajas}{section.2.5}% 35
+\BOOKMARK [1][-]{section.2.6}{Media Geom\351trica \(Mg\)}{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.6.1}{C\341lculo}{section.2.6}% 37
+\BOOKMARK [2][-]{subsection.2.6.2}{Propiedades y Usos}{section.2.6}% 38
+\BOOKMARK [2][-]{subsection.2.6.3}{Ejemplos}{section.2.6}% 39
+\BOOKMARK [1][-]{section.2.7}{Media Arm\363nica \(Mh\)}{chapter.2}% 40
+\BOOKMARK [2][-]{subsection.2.7.1}{C\341lculo}{section.2.7}% 41
+\BOOKMARK [2][-]{subsection.2.7.2}{Usos de la Media Arm\363nica}{section.2.7}% 42
+\BOOKMARK [2][-]{subsection.2.7.3}{Ventajas y Desventajas}{section.2.7}% 43
+\BOOKMARK [2][-]{subsection.2.7.4}{Ejemplos}{section.2.7}% 44
+\BOOKMARK [1][-]{section.2.8}{Media Cuadr\341tica \(Xc\)}{chapter.2}% 45
+\BOOKMARK [2][-]{subsection.2.8.1}{C\341lculo}{section.2.8}% 46
+\BOOKMARK [2][-]{subsection.2.8.2}{Ejemplos}{section.2.8}% 47
+\BOOKMARK [0][-]{chapter.3}{Estad\355grafos de Dispersi\363n}{}% 48
+\BOOKMARK [1][-]{section.3.1}{Recorridos}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.1.1}{Recorrido \(R\)}{section.3.1}% 50
+\BOOKMARK [2][-]{subsection.3.1.2}{Recorrido Intercuart\355lico \(RI\)}{section.3.1}% 51
+\BOOKMARK [1][-]{section.3.2}{Desviaci\363n Media \(DM\)}{chapter.3}% 52
+\BOOKMARK [1][-]{section.3.3}{Varianza \(S2,\)}{chapter.3}% 53
+\BOOKMARK [2][-]{subsection.3.3.1}{C\341lculo}{section.3.3}% 54
+\BOOKMARK [2][-]{subsection.3.3.2}{Propiedades}{section.3.3}% 55
+\BOOKMARK [2][-]{subsection.3.3.3}{Componentes de la Varianza}{section.3.3}% 56
+\BOOKMARK [2][-]{subsection.3.3.4}{M\351todos Abreviados para el C\341lculo de la Varianza}{section.3.3}% 57
+\BOOKMARK [2][-]{subsection.3.3.5}{Ejemplos}{section.3.3}% 58
+\BOOKMARK [1][-]{section.3.4}{Desviaci\363n Est\341ndar}{chapter.3}% 59
+\BOOKMARK [2][-]{subsection.3.4.1}{Propiedades}{section.3.4}% 60
+\BOOKMARK [2][-]{subsection.3.4.2}{Ejemplos}{section.3.4}% 61
+\BOOKMARK [1][-]{section.3.5}{Medidas de Dispersi\363n Relativa}{chapter.3}% 62
+\BOOKMARK [2][-]{subsection.3.5.1}{Coeficiente de Variaci\363n \(Cv\)}{section.3.5}% 63
+\BOOKMARK [2][-]{subsection.3.5.2}{Momentos}{section.3.5}% 64
+\BOOKMARK [1][-]{section.3.6}{Medidas de Forma}{chapter.3}% 65
+\BOOKMARK [2][-]{subsection.3.6.1}{Coeficientes de Asimetr\355a}{section.3.6}% 66
+\BOOKMARK [2][-]{subsection.3.6.2}{Curtosis o Apuntalamiento}{section.3.6}% 67
+\BOOKMARK [1][-]{section.3.7}{Medidas de Concentraci\363n}{chapter.3}% 68
+\BOOKMARK [2][-]{subsection.3.7.1}{Indice de Gini \(G\)}{section.3.7}% 69
+\BOOKMARK [2][-]{subsection.3.7.2}{Curva de Lorenz}{section.3.7}% 70
+\BOOKMARK [1][-]{section.3.8}{Distribuci\363n Bivariante}{chapter.3}% 71
+\BOOKMARK [2][-]{subsection.3.8.1}{Distribuci\363n de Frecuencias Absolutas Conjuntas}{section.3.8}% 72
+\BOOKMARK [2][-]{subsection.3.8.2}{Distribuci\363n de Frecuencias Relativas Conjuntas}{section.3.8}% 73
+\BOOKMARK [2][-]{subsection.3.8.3}{Distribuci\363n de Frecuencias Absolutas Acumuladas Conjuntas}{section.3.8}% 74
+\BOOKMARK [2][-]{subsection.3.8.4}{Distribuci\363n de Frecuencias Relativa Acumuladas Conjuntas}{section.3.8}% 75
+\BOOKMARK [2][-]{subsection.3.8.5}{Distribuciones Marginales}{section.3.8}% 76
+\BOOKMARK [1][-]{section.3.9}{Covarianza \(Sxy\)}{chapter.3}% 77
+\BOOKMARK [2][-]{subsection.3.9.1}{C\341lculo}{section.3.9}% 78
+\BOOKMARK [2][-]{subsection.3.9.2}{Propiedades}{section.3.9}% 79
+\BOOKMARK [2][-]{subsection.3.9.3}{Interpretaci\363n}{section.3.9}% 80
+\BOOKMARK [1][-]{section.3.10}{Ejemplos}{chapter.3}% 81
+\BOOKMARK [0][-]{chapter.4}{An\341lisis de Regresi\363n y Correlaci\363n}{}% 82
+\BOOKMARK [1][-]{section.4.1}{Modelo de Regresi\363n Lineal Simple}{chapter.4}% 83
+\BOOKMARK [1][-]{section.4.2}{Regresi\363n Lineal}{chapter.4}% 84
+\BOOKMARK [1][-]{section.4.3}{Regresi\363n Potencial}{chapter.4}% 85
+\BOOKMARK [1][-]{section.4.4}{Regresi\363n Exponencial}{chapter.4}% 86
+\BOOKMARK [1][-]{section.4.5}{Regresi\363n Parab\363lica}{chapter.4}% 87
+\BOOKMARK [1][-]{section.4.6}{Coeficiente de Correlaci\363n Rectil\355neo}{chapter.4}% 88
+\BOOKMARK [2][-]{subsection.4.6.1}{Propiedades}{section.4.6}% 89
+\BOOKMARK [2][-]{subsection.4.6.2}{C\341lculo}{section.4.6}% 90
+\BOOKMARK [1][-]{section.4.7}{Ejemplos}{chapter.4}% 91
+\BOOKMARK [0][-]{chapter.5}{Probabilidad}{}% 92
+\BOOKMARK [1][-]{section.5.1}{Eventos}{chapter.5}% 93
+\BOOKMARK [2][-]{subsection.5.1.1}{Operaciones con Eventos}{section.5.1}% 94
+\BOOKMARK [1][-]{section.5.2}{-\341lgebra de Eventos}{chapter.5}% 95
+\BOOKMARK [1][-]{section.5.3}{Definici\363n Axiom\341tica de Probabilidad}{chapter.5}% 96
+\BOOKMARK [2][-]{subsection.5.3.1}{Propiedades de la Probabilidad de Eventos}{section.5.3}% 97
+\BOOKMARK [1][-]{section.5.4}{Definici\363n Cl\341sica de Probabilidad}{chapter.5}% 98
+\BOOKMARK [2][-]{subsection.5.4.1}{Probabilidad Condicionada}{section.5.4}% 99
+\BOOKMARK [2][-]{subsection.5.4.2}{Eventos Dependientes}{section.5.4}% 100
+\BOOKMARK [2][-]{subsection.5.4.3}{Eventos Independientes}{section.5.4}% 101
+\BOOKMARK [2][-]{subsection.5.4.4}{Teorema de la Probabilidad Total}{section.5.4}% 102
+\BOOKMARK [2][-]{subsection.5.4.5}{Teorema de Bayes}{section.5.4}% 103
+\BOOKMARK [1][-]{section.5.5}{Ejemplos}{chapter.5}% 104
+\BOOKMARK [0][-]{chapter.6}{Series Cronol\363gicas}{}% 105
+\BOOKMARK [1][-]{section.6.1}{Generalidades}{chapter.6}% 106
+\BOOKMARK [1][-]{section.6.2}{Componentes de las Series Cronol\363gicas}{chapter.6}% 107
+\BOOKMARK [2][-]{subsection.6.2.1}{Tendencia o Movimiento Secular}{section.6.2}% 108
+\BOOKMARK [2][-]{subsection.6.2.2}{Variaciones Estacionales}{section.6.2}% 109
+\BOOKMARK [2][-]{subsection.6.2.3}{Variaciones C\355clicas}{section.6.2}% 110
+\BOOKMARK [2][-]{subsection.6.2.4}{Variaciones Irregulares}{section.6.2}% 111
