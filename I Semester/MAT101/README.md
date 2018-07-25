@@ -1,4 +1,7 @@
 # Calculus
+## Useful
+ * Theorems and Derivatives.
+
 ## Bibliography
   * Richard Johnsonbaugh. _Matemáticas Discretas, Sexta Edición._ Pearson, Prentice Hall, 2005.
   * Louis Leithold. _El Cálculo, Séptima Edición._ Oxford University Press, 1998.
