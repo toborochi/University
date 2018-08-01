@@ -18,7 +18,33 @@ using namespace std;
 // Constante que define el nombre del archivo y su extension
 const char filename_in[] = "entrada.txt";
 
+bool esNumero(char &c)
+{
+    return (c>='0' && c<='9');
+}
 
+int conteoNumero(string &s)
+{
+	int total = 0;
+
+	for(int i=0;i<s.size();++i)
+	{
+
+		  if(esNumero(s[i]))
+		  {
+			 int j = i;
+             while(esNumero(s[j]) && j<s.size() )
+			 {
+				 j++;
+			 }
+			i = j;
+		  	total++;
+		  }
+
+	}
+
+    return total;
+}
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -33,11 +59,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	while (!file.eof())
 	{
 		getline (file, temp);
-		for(int i=0;i<temp.size();++i)
-		{
-			cout<<temp[i];
-		}
-        cout<<endl;
+        totalNumeros += conteoNumero(temp);
 	}
 
 

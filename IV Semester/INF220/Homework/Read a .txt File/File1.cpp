@@ -18,11 +18,13 @@ using namespace std;
 // Constante que define el nombre del archivo y su extension
 const char filename_in[] = "entrada.txt";
 
+// Funcion que Indica si un caracter es Numero
 bool esNumero(char &c)
 {
     return (c>='0' && c<='9');
 }
 
+// Funcion que devuelve la cantidad de Numeros en una cadena
 int conteoNumero(string &s)
 {
 	int total = 0;
