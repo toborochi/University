@@ -1,0 +1,56 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage[shortlabels]{enumitem}
+\usepackage[affil-it]{authblk}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{slashbox}
+\usepackage{diagbox}
+\usepackage{slashbox,multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{pstricks}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
+\usepackage{empheq}
+\usepackage{svg}
+\usepackage{url}
+\usetikzlibrary{tikzmark}
+\usepackage{caption}
+
+\DeclarePairedDelimiter{\Ex}{[}{]}
+\newcommand{\E}{\Ex}
+
+\pgfplotsset{compat=1.16}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\newcommand{\varstackrel}[3][T]{\stackrel{\raisebox{0.5ex}{\clap{\scriptsize#2}}}{#3}}
+\graphicspath{ {./Imagenes/} }
+\begin{document}
+\subfile{Archivos/Introduccion}
+\subfile{Archivos/CAP1/Capitulo_I}
+\subfile{Archivos/Bibliografia}
+\end{document}
