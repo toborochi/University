@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  5 AUG 2018 10:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  5 AUG 2018 10:42
 entering extended mode
 **"./Apuntes Programacion Ensamblador.tex"
 ("Apuntes Programacion Ensamblador.tex"
@@ -1570,21 +1570,39 @@ File: ./Imagenes/Niveles.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Niveles.png  used on input line 8.
 (pdftex.def)             Requested size: 354.32289pt x 75.78293pt.
 Missing character: There is no ] in font nullfont!
-) (Archivos/Bibliografia.tex [5 <./Imagenes/Niveles.png>]
+<./Imagenes/ASCII.png, id=33, 475.7775pt x 205.5178pt>
+File: ./Imagenes/ASCII.png Graphic file (type png)
+<use ./Imagenes/ASCII.png>
+Package pdftex.def Info: ./Imagenes/ASCII.png  used on input line 38.
+(pdftex.def)             Requested size: 475.77632pt x 205.5173pt.
+) (Archivos/Bibliografia.tex
+Overfull \hbox (7.07945pt too wide) in paragraph at lines 38--2
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--2
+
+ []
+
+
+Underfull \vbox (badness 6526) has occurred while \output is active []
+
+ [5 <./Imagenes/Niveles.png>]
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [6
+ [6 <./Imagenes/ASCII.png>]) [7
 
-]) [7]
+]
 ("Apuntes Programacion Ensamblador.aux"
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 29858 strings out of 493305
- 705350 string characters out of 3130237
- 909091 words of memory out of 3000000
- 32771 multiletter control sequences out of 15000+200000
+ 29863 strings out of 493305
+ 705458 string characters out of 3130237
+ 910091 words of memory out of 3000000
+ 32775 multiletter control sequences out of 15000+200000
  16965 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,16n,127p,750b,1568s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1607,10 +1625,10 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users
 fb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmtt8.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt9.pfb>
-Output written on "Apuntes Programacion Ensamblador.pdf" (7 pages, 208870 bytes
+Output written on "Apuntes Programacion Ensamblador.pdf" (7 pages, 214130 bytes
 ).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 24 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
