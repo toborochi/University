@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  5 AUG 2018 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  5 AUG 2018 10:45
 entering extended mode
 **"./Apuntes Programacion Ensamblador.tex"
 ("Apuntes Programacion Ensamblador.tex"
@@ -1573,28 +1573,18 @@ Missing character: There is no ] in font nullfont!
 <./Imagenes/ASCII.png, id=33, 475.7775pt x 205.5178pt>
 File: ./Imagenes/ASCII.png Graphic file (type png)
 <use ./Imagenes/ASCII.png>
-Package pdftex.def Info: ./Imagenes/ASCII.png  used on input line 38.
-(pdftex.def)             Requested size: 475.77632pt x 205.5173pt.
-) (Archivos/Bibliografia.tex
-Overfull \hbox (7.07945pt too wide) in paragraph at lines 38--2
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--2
-
- []
-
+Package pdftex.def Info: ./Imagenes/ASCII.png  used on input line 39.
+(pdftex.def)             Requested size: 356.83223pt x 154.13797pt.
 
 Underfull \vbox (badness 6526) has occurred while \output is active []
 
- [5 <./Imagenes/Niveles.png>]
+ [5 <./Imagenes/Niveles.png>]) (Archivos/Bibliografia.tex
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
- [6 <./Imagenes/ASCII.png>]) [7
+ [6 <./Imagenes/ASCII.png>])
+[7
 
-]
-("Apuntes Programacion Ensamblador.aux"
+] ("Apuntes Programacion Ensamblador.aux"
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
@@ -1625,7 +1615,7 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users
 fb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmtt8.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt9.pfb>
-Output written on "Apuntes Programacion Ensamblador.pdf" (7 pages, 214130 bytes
+Output written on "Apuntes Programacion Ensamblador.pdf" (7 pages, 214997 bytes
 ).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
