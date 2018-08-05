@@ -1,7 +1,36 @@
 \chapter{Introducción}
+Primeramente hay que entender que es el Lenguaje de Programación \textit{Ensamblador}. Para ello hay que entender los niveles de los lenguajes del computador.
+\section{Entendiendo los Niveles de Lenguajes de Programación}
+Solo hay un lenguaje de programación que cualquier computadora puede entender y ejecutar: su propio código de máquina, \textit{binario nativo}. Este es el nivel de lenguaje más bajo posible en el cual se puede escribir un programa de computadora. Se dice que todos los otros idiomas son de nivel alto o bajo de acuerdo con cuán cerca se puede decir que se asemejan al código de la máquina.
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{Niveles}
 \captionsetup{justification=centering}
 \caption[caption]{\footnotesize Niveles de Programación en el Computador. \\ \textbf{Fuente:} \texttt{http://www.codecommit.com/blog/java/defining-high-mid-and-low-level-languages}}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {shape=rectangle, rounded corners,
+    draw, align=center,
+    top color=white, bottom color=blue!20}]]
+  \node {Datos}
+    child { node {Números} 
+  	  child { node {Enteros}
+  	  	child { node {Sin Singo}}
+  	  	child { node {Con Signo}
+			child { node {
+			$\bigstar$ Signo Magnitud\\
+			$\bigstar$ Complemento 1\\
+			$\bigstar$ Complemento 2
+			}}  	  	
+  	  	}
+  	  }
+        child { node {Reales}}  	  
+  	  }
+    child { node {Alfanuméricos}};
+\end{tikzpicture}
+\caption{Datos en un Computador}
 \end{figure}
