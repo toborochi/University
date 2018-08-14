@@ -11,40 +11,77 @@
 #include <conio.h>
 #include <fstream>
 #include <string>
+#include <windows.h>
+#include <sstream>
+#include <iomanip>
+
 
 using namespace std;
 
 // Constante que define el nombre del archivo y su extension
 const char filename_in[] = "entrada.txt";
 
+double totalSuma = 0,cant=0;
+
 // Funcion que Indica si un caracter es Numero
 bool esNumero(char &c)
 {
-    return (c>='0' && c<='9');
+	return (c>='0' && c<='9');
 }
 
-// Funcion que devuelve la cantidad de Numeros en una cadena
-int conteoNumero(string &s)
-{
-	int total = 0;
 
+void Promedio(string &s)
+{
+	int num;
+	stringstream tmp;
+	for(int i=0;i<s.size();++i)
+	{
+		if(!esNumero(s[i]))s[i]=' ';
+	}
+	tmp<<s;
+	while(tmp>>num)
+	{
+		totalSuma += float(num);
+		cant+=1;
+	}
+
+}
+
+
+// Funcion que devuelve la cantidad de Numeros en una cadena
+void conteoNumero(string &s)
+{
+	int num;
+	stringstream tmp;
+	for(int i=0;i<s.size();++i)
+	{
+		if(!esNumero(s[i]))s[i]=' ';
+	}
+	tmp<<s;
+	while(tmp>>num)
+	{
+		totalSuma += float(num);
+		cant+=1;
+	}
+
+
+	/*
+	int total = 0;
 	for(int i=0;i<s.size();++i)
 	{
 
 		  if(esNumero(s[i]))
 		  {
 			 int j = i;
-             while(esNumero(s[j]) && j<s.size() )
+			 while(esNumero(s[j]) && j<s.size() )
 			 {
 				 j++;
 			 }
 			i = j;
-		  	total++;
+			total++;
 		  }
 
-	}
-
-    return total;
+	}   */
 }
 
 int _tmain(int argc, _TCHAR* argv[])
@@ -60,11 +97,24 @@ int _tmain(int argc, _TCHAR* argv[])
 	while (!file.eof())
 	{
 		getline (file, temp);
-        totalNumeros += conteoNumero(temp);
+		Promedio(temp);
 	}
 
 
-    cout<<"Total Numeros Detectados: "<<totalNumeros<<endl;
+	//cout<<"Total Numeros Detectados: "<<totalNumeros<<endl;
+
+	if( int(cant)!=0 )
+	{
+		cout<<"Promedio: "<<totalSuma/cant<<endl;
+	}else
+	{
+         cout<<"No existen numeros"<<endl;
+	}
+
+
+	// Abre la Pagina donde deberia estar Ubicado el .html
+	//ShellExecute(NULL, "open", "http://dreamincode.net",
+	 //			NULL, NULL, SW_SHOWNORMAL);
 
 	// Esperar tecla para Finalizar
 	getch();
