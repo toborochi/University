@@ -1,0 +1,256 @@
+Microsoft Windows [Versión 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. Reservados todos los derechos.
+
+C:\Users\Estudiante>cd..
+
+C:\Users>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 8CC4-C360
+
+ Directorio de C:\Users
+
+18/06/2018  04:01 p.m.    <DIR>          .
+18/06/2018  04:01 p.m.    <DIR>          ..
+10/07/2018  03:26 p.m.    <DIR>          Estudiante
+02/07/2018  04:58 p.m.    <DIR>          MsDtsServer110
+10/07/2018  01:47 p.m.    <DIR>          MSSQLFDLauncher
+06/06/2018  03:48 p.m.    <DIR>          MSSQLSERVER
+06/06/2018  03:48 p.m.    <DIR>          MSSQLServerOLAPService
+07/06/2018  02:23 p.m.    <DIR>          PC
+14/07/2009  06:10 a.m.    <DIR>          Public
+06/06/2018  03:48 p.m.    <DIR>          ReportServer
+               0 archivos              0 bytes
+              10 dirs  131.817.111.552 bytes libres
+
+C:\Users>cd..
+
+C:\>cd ensamblador
+
+C:\Ensamblador>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 8CC4-C360
+
+ Directorio de C:\Ensamblador
+
+10/07/2018  05:17 p.m.    <DIR>          .
+10/07/2018  05:17 p.m.    <DIR>          ..
+10/07/2018  05:17 p.m.    <DIR>          Ensamblador NUEVO
+               0 archivos              0 bytes
+               3 dirs  131.816.837.120 bytes libres
+
+C:\Ensamblador>cd ensamblador nuevo
+
+C:\Ensamblador\Ensamblador NUEVO>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 8CC4-C360
+
+ Directorio de C:\Ensamblador\Ensamblador NUEVO
+
+10/07/2018  05:17 p.m.    <DIR>          .
+10/07/2018  05:17 p.m.    <DIR>          ..
+10/07/2018  05:17 p.m.    <DIR>          MinGWok
+10/07/2018  05:17 p.m.    <DIR>          modos
+09/08/2018  07:45 a.m.    <DIR>          OllyDbg
+               0 archivos              0 bytes
+               5 dirs  131.816.108.032 bytes libres
+
+C:\Ensamblador\Ensamblador NUEVO>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 8CC4-C360
+
+ Directorio de C:\Ensamblador\Ensamblador NUEVO
+
+10/07/2018  05:17 p.m.    <DIR>          .
+10/07/2018  05:17 p.m.    <DIR>          ..
+10/07/2018  05:17 p.m.    <DIR>          MinGWok
+10/07/2018  05:17 p.m.    <DIR>          modos
+09/08/2018  07:45 a.m.    <DIR>          OllyDbg
+               0 archivos              0 bytes
+               5 dirs  131.814.936.576 bytes libres
+
+C:\Ensamblador\Ensamblador NUEVO>mkdir programa
+
+C:\Ensamblador\Ensamblador NUEVO>programas
+"programas" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Ensamblador\Ensamblador NUEVO>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 8CC4-C360
+
+ Directorio de C:\Ensamblador\Ensamblador NUEVO
+
+09/08/2018  08:28 a.m.    <DIR>          .
+09/08/2018  08:28 a.m.    <DIR>          ..
+10/07/2018  05:17 p.m.    <DIR>          MinGWok
+10/07/2018  05:17 p.m.    <DIR>          modos
+09/08/2018  07:45 a.m.    <DIR>          OllyDbg
+09/08/2018  08:32 a.m.    <DIR>          programa
+               0 archivos              0 bytes
+               6 dirs  131.813.421.056 bytes libres
+
+C:\Ensamblador\Ensamblador NUEVO>programa
+"programa" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Ensamblador\Ensamblador NUEVO>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 8CC4-C360
+
+ Directorio de C:\Ensamblador\Ensamblador NUEVO
+
+09/08/2018  08:28 a.m.    <DIR>          .
+09/08/2018  08:28 a.m.    <DIR>          ..
+10/07/2018  05:17 p.m.    <DIR>          MinGWok
+10/07/2018  05:17 p.m.    <DIR>          modos
+09/08/2018  07:45 a.m.    <DIR>          OllyDbg
+09/08/2018  08:32 a.m.    <DIR>          programa
+               0 archivos              0 bytes
+               6 dirs  131.813.421.056 bytes libres
+
+C:\Ensamblador\Ensamblador NUEVO>programa
+"programa" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Ensamblador\Ensamblador NUEVO>cd
+C:\Ensamblador\Ensamblador NUEVO
+
+C:\Ensamblador\Ensamblador NUEVO>programa
+"programa" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Ensamblador\Ensamblador NUEVO>cd..
+
+C:\Ensamblador>cd ensamblador
+El sistema no puede encontrar la ruta especificada.
+
+C:\Ensamblador>cd ensamblador nuevo
+
+C:\Ensamblador\Ensamblador NUEVO>cd programa
+
+C:\Ensamblador\Ensamblador NUEVO\programa>nasm
+"nasm" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Ensamblador\Ensamblador NUEVO\programa>path C:\Ensamblador\Ensamblador NUEVO\
+MinGWok\bin\
+
+C:\Ensamblador\Ensamblador NUEVO\programa>nasm
+nasm: error: no input file specified
+type `nasm -h' for help
+
+C:\Ensamblador\Ensamblador NUEVO\programa>nasm -h
+usage: nasm [-@ response file] [-o outfile] [-f format] [-l listfile]
+            [options...] [--] filename
+    or nasm -v (or --v) for version info
+
+    -t          assemble in SciTech TASM compatible mode
+    -g          generate debug information in selected format
+    -E (or -e)  preprocess only (writes output to stdout by default)
+    -a          don't preprocess (assemble only)
+    -M          generate Makefile dependencies on stdout
+    -MG         d:o, missing files assumed generated
+    -MF <file>  set Makefile dependency file
+    -MD <file>  assemble and generate dependencies
+    -MT <file>  dependency target name
+    -MQ <file>  dependency target name (quoted)
+    -MP         emit phony target
+
+    -Z<file>    redirect error messages to file
+    -s          redirect error messages to stdout
+
+    -F format   select a debugging format
+
+    -o outfile  write output to an outfile
+
+    -f format   select an output format
+
+    -l listfile write listing to a listfile
+
+    -I<path>    adds a pathname to the include file path
+    -O<digit>   optimize branch offsets
+                -O0: No optimization
+                -O1: Minimal optimization
+                -Ox: Multipass optimization (default)
+
+    -P<file>    pre-includes a file
+    -D<macro>[=<value>] pre-defines a macro
+    -U<macro>   undefines a macro
+    -X<format>  specifies error reporting format (gnu or vc)
+    -w+foo      enables warning foo (equiv. -Wfoo)
+    -w-foo      disable warning foo (equiv. -Wno-foo)
+
+    -h          show invocation summary and exit
+
+--prefix,--postfix
+  this options prepend or append the given argument to all
+  extern and global variables
+--allow-64-bit
+  do not restrict 64-bit code to 64-bit capable output
+  formats (use with care, no complaining)
+
+Warnings:
+    error                   treat warnings as errors (default off)
+    macro-params            macro calls with wrong parameter count (default on)
+    macro-selfref           cyclic macro references (default off)
+    macro-defaults          macros with more default than optional parameters (d
+efault on)
+    orphan-labels           labels alone on lines without trailing `:' (default
+on)
+    number-overflow         numeric constant does not fit (default on)
+    gnu-elf-extensions      using 8- or 16-bit relocation in ELF32, a GNU extens
+ion (default off)
+    float-overflow          floating point overflow (default on)
+    float-denorm            floating point denormal (default off)
+    float-underflow         floating point underflow (default off)
+    float-toolong           too many digits in floating-point number (default on
+)
+    user                    %warning directives (default on)
+    lock                    lock prefix on unlockable instructions (default on)
+    hle                     invalid hle prefixes (default on)
+    bnd                     invalid bnd prefixes (default on)
+    zext-reloc              relocation zero-extended to match output format (def
+ault on)
+
+response files should contain command line parameters, one per line.
+
+For a list of valid output formats, use -hf.
+For a list of debug formats, use -f <form> -y.
+
+C:\Ensamblador\Ensamblador NUEVO\programa>nasm -f win32 -o P1.o P1.asm -l P1.lst
+
+
+C:\Ensamblador\Ensamblador NUEVO\programa>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 8CC4-C360
+
+ Directorio de C:\Ensamblador\Ensamblador NUEVO\programa
+
+09/08/2018  08:39 a.m.    <DIR>          .
+09/08/2018  08:39 a.m.    <DIR>          ..
+09/08/2018  08:32 a.m.               587 P1.asm
+09/08/2018  08:39 a.m.             1.867 P1.lst
+09/08/2018  08:39 a.m.               422 P1.o
+               3 archivos          2.876 bytes
+               2 dirs  131.813.404.672 bytes libres
+
+C:\Ensamblador\Ensamblador NUEVO\programa>gcc -o P1.exe P1.o
+
+C:\Ensamblador\Ensamblador NUEVO\programa>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 8CC4-C360
+
+ Directorio de C:\Ensamblador\Ensamblador NUEVO\programa
+
+09/08/2018  08:44 a.m.    <DIR>          .
+09/08/2018  08:44 a.m.    <DIR>          ..
+09/08/2018  08:32 a.m.               587 P1.asm
+09/08/2018  08:44 a.m.            68.521 P1.exe
+09/08/2018  08:39 a.m.             1.867 P1.lst
+09/08/2018  08:39 a.m.               422 P1.o
+               4 archivos         71.397 bytes
+               2 dirs  131.812.028.416 bytes libres
+
+C:\Ensamblador\Ensamblador NUEVO\programa>p1
+
+C:\Ensamblador\Ensamblador NUEVO\programa>
