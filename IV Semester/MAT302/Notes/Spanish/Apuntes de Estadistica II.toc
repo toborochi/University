@@ -4,3 +4,12 @@
 \contentsline {subsubsection}{Notaci\IeC {\'o}n Conjuntista}{5}{section*.4}
 \contentsline {subsubsection}{Notaciones}{5}{section*.5}
 \contentsline {section}{\numberline {1.1}Clasificaci\IeC {\'o}n de Variables Aleatorias}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Funci\IeC {\'o}n de Probabilidad de una Variable Aleatoria}{6}{section.1.2}
+\contentsline {section}{\numberline {1.3}Funci\IeC {\'o}n de Distribuci\IeC {\'o}n Acumulada (FDA)}{6}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Representaci\IeC {\'o}n Gr\IeC {\'a}fica}{6}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Caso Continuo}{6}{subsection.1.3.2}
+\contentsline {subsubsection}{Funci\IeC {\'o}n de Densidad}{6}{section*.6}
+\contentsline {subsubsection}{FDA}{7}{section*.7}
+\contentsline {subsection}{\numberline {1.3.3}Propiedades de la FDA}{7}{subsection.1.3.3}
+\contentsline {subsubsection}{Caso Discreto}{7}{section*.8}
+\contentsline {subsubsection}{Caso Continuo}{7}{section*.9}

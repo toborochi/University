@@ -18,3 +18,73 @@ Donde:
 \subsubsection{Notaciones}
 Las \textbf{v.a.} se denotan con letras mayúsculas tales como $X,Y$ o $Z$, y los valores correspondientes con letras minúsculas.
 \section{Clasificación de Variables Aleatorias}
+\begin{itemize}
+\item \textbf{Discreta:} Cuyo recorrido es un conjunto finito o infinito numerable de valores:
+$$
+X \text{ es \textbf{v.a.} discreta} \Rightarrow
+\begin{cases}
+\text{Conjunto Finito de Valores} \\
+\text{Conjunto Infinito Numerable de Valores}
+\end{cases}
+$$
+\item \textbf{Contínua:} Es aquella cuyo recorrido es conjunto finito no numerable de valores, puede tomar cualquier valor en un intervalo o conjunto.
+\end{itemize}
+$\blacklozenge$ En general las \textbf{v.a.} \textit{discretas} representan datos que provienen del \textit{conteo} de número de elementos. Pueden ser número de titulados, número de estudiantes, etc. Mientras que las \textbf{v.a.} \textit{contínuas} representan mediciones, como longitud, capacidad,etc.
+\section{Función de Probabilidad de una Variable Aleatoria}
+\noindent También llamada función de cuantía o función de masa de probabilidad de una \textbf{v.a.}. \\${ }$\\
+Se denomina función de probabilidad de una \textbf{v.a.} discreta $X$ a una función $p$ o $f$, cuyo valor es $p(x)$ o $P(X=x)0$ ya que a cada valor distinto de la \textbf{v.a.} discreta $X$ hace corresponder en un número entre los valores $[0,1]$ que es su probabilidad, de ahí el nombre de función de cuantía o función de probabilidad. Estos valores satisfacen las siguientes condiciones:
+\begin{enumerate}
+\item $P(x)\geq 0 \hspace{0.25cm};\hspace{0.25cm} \forall x\in \mathbb{R}$
+\item $\displaystyle\sum_{x_i\in Rec_X}^{}p(x_i)=1$
+\begin{itemize}
+\item Si $Rec_X=\lbrace x_1,x_2,\ldots ,x_n \rbrace$ entonces la condición \textbf{(II)} es: $\displaystyle\sum_{i=1}^{n}p(x_i)=1$
+\item Si $Rec_X=\lbrace x_1,x_2,\ldots ,x_n,\ldots \rbrace$ entonces la condición \textbf{(II)} es: $\displaystyle\sum_{i=1}^{\infty}p(x_i)=1$
+\end{itemize}
+\end{enumerate}
+Si $A$ es un evento en el recorrido de la \textbf{v.a.} discreta $X$ entonces la probabilidad de $A$ es el número:
+$$P(A)=\displaystyle\sum P(X=x)=\sum p(x)$$
+\textbf{Nota:}
+$$P(X=x)
+\begin{cases}
+p(x)\geq 0 ;\hspace{0.25cm} \forall x\in \mathbb{R} \\
+f(x)\geq 0 ;\hspace{0.25cm} \forall x\in \mathbb{R}
+\end{cases}
+$$
+La función de probabilidad de una \textbf{v.a.} discreta $X$ se puede expresar por:
+\begin{itemize}
+\item \textbf{Un Conjunto:} 
+$$p=\lbrace (x,P(X))/x\in D_p \rbrace$$
+\item \textbf{Una Tabla:}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+$x_i$ & $x_1$ & $x_2$ & $\ldots$ & $x_n$ \\ 
+\hline 
+$p(x_i)$ & $p(x_1)$ & $p(x_2)$ & $\ldots$ & $p(x_n)$ \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\item \textbf{Una Gráfica:}
+\end{itemize}
+\section{Función de Distribución Acumulada (FDA)}
+El valor de la \textbf{FDA} de una \textbf{v.a.} discreta $X$, que es $F(x)$, viene dada por la sumatoria de las probabilidades, desde un valor mínimo $t$ hasta un valor específico $x$; esto es:
+$$F(x)=P(X\leq x)=\displaystyle\sum_{t\leq x} P(t),\hspace{0.25cm} \forall x\in \mathbb{R}$$
+\subsection{Representación Gráfica}
+Valores $F(x)$ aumentan en \textit{saltos}, presentando entonces la forma de una escalera:
+%Hacer la grafica
+\subsection{Caso Continuo}
+\subsubsection{Función de Densidad}
+$f$ es función densidad, si $f(x)$ cumple las siguientes condiciones:
+\begin{enumerate}[label=(\roman*)]
+\item $f(x)\geq 0;\hspace{0.25cm} \forall x\in \mathbb{R}$
+\item $\displaystyle\int_{-\infty}^{\infty}f(x) dx = 1$
+\item $p(a\leq x \leq b)=\displaystyle\int_{a}^{b}f(x)dx$
+\end{enumerate}
+\subsubsection{FDA}
+$$F(x)=P(X\leq x)=\displaystyle\int_{-\infty}^{x} f(x) dx$$
+\subsection{Propiedades de la FDA}
+\subsubsection{Caso Discreto}
+\begin{enumerate}
+\item $0\leq F(x) \leq 1;\hspace{0.25cm}\forall x\in\mathbb{R}$
+\end{enumerate}
+\subsubsection{Caso Continuo}
