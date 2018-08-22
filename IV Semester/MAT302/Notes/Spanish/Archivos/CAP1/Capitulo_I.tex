@@ -86,5 +86,20 @@ $$F(x)=P(X\leq x)=\displaystyle\int_{-\infty}^{x} f(x) dx$$
 \subsubsection{Caso Discreto}
 \begin{enumerate}
 \item $0\leq F(x) \leq 1;\hspace{0.25cm}\forall x\in\mathbb{R}$
+\item $F(-\infty)=0$
+\item $F(+\infty)=1$
+\item $P(X\leq a) = F(a)$
+\item $P(X>a)=1-P(X<a)=1-F(a)$
+\item $P(X<a)=
+\begin{cases}
+F(a-1), \text{si } a\in\mathbb{Z} \\
+F([\![ a ]\!]), \text{si } a\notin \mathbb{Z}
+\end{cases}
+$
+\item $P(X\leq -a)=1-P(X\leq a)=1-F(a)$
+\item $P(a<X\leq b)=F(b)-F(a)$
+\item $P(a\leq X \leq b)=F(b)-F(a)+P(X=x)$
+\item $P(a<X<b)=F(b)-F(a)-P(X=b)$
+\item $P(X=x_i)=F(x_i)-F(x_{i-1})$
 \end{enumerate}
 \subsubsection{Caso Continuo}
