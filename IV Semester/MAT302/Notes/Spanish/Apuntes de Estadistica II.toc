@@ -13,3 +13,4 @@
 \contentsline {subsection}{\numberline {1.3.3}Propiedades de la FDA}{7}{subsection.1.3.3}
 \contentsline {subsubsection}{Caso Discreto}{7}{section*.8}
 \contentsline {subsubsection}{Caso Continuo}{7}{section*.9}
+\contentsline {section}{\numberline {1.4}Esperanza Matem\IeC {\'a}tica}{7}{section.1.4}
