@@ -116,3 +116,40 @@ $
 \end{enumerate}
 \section{Esperanza Matemática}
 Sea $X$ una \textbf{v.a.} con función de probabilidad $f$ definida por $f(x)$. La \textit{esperanza matemática} de $X$, denotada por $E(x),\mu$ ó $\mu_x$; está dada por:
+
+$$
+E(x)=\mu =\mu_x =
+\begin{cases}
+\displaystyle\sum_{x} x\cdot p(x), \text{ Si $X$ es \textbf{v.a.} Discreta}\vspace{0.25cm}\\
+\displaystyle\int_{-\infty}^{+\infty} x\cdot f(x) dx, \text{ Si $X$ es \textbf{v.a.} Continua}
+\end{cases}
+$$
+\subsubsection{Propiedades}
+\begin{enumerate}
+\item $E(a)=a$
+\item $E(x\pm a)=E(x)\pm a$
+\item $E(ax)=aE(x)$
+\item $E(ax\pm b)=aE(x)\pm b$
+\end{enumerate}
+\subsection{Varianza}
+Notaciones: $V(x),\sigma^2,\sigma_{x}^{2}$
+$$
+V(x)=\sigma^2 =
+\begin{cases}
+E[x-\mu]^2 = \displaystyle\sum_{x} (x-\mu)^2 f(x); \text{ Si $X$ es \textbf{v.a.} Discreta}\vspace{0.25cm}\\
+E[x-\mu]^2 = \displaystyle\int_{-\infty}^{+\infty} (x-\mu)^2 f(x)dx; \text{Si $X$ es \textbf{v.a.} Continua}
+\end{cases}
+$$
+\subsubsection{Propiedades}
+\begin{enumerate}
+\item $V(x)\geq 0$
+\item $V(a)=0$
+\item $V(ax)=aV(x)$
+\item $V(ax\pm b)=a^2 V(x)$
+\item $V(x)=E(x^2)-[E(x)]^2$
+\end{enumerate}
+\begin{multicols}{2}
+\begin{flushleft}
+\end{flushleft}
+\columnbreak
+\end{multicols}

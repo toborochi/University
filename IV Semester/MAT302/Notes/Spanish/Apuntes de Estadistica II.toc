@@ -14,3 +14,6 @@
 \contentsline {subsubsection}{Caso Discreto}{7}{section*.8}
 \contentsline {subsubsection}{Caso Continuo}{7}{section*.9}
 \contentsline {section}{\numberline {1.4}Esperanza Matem\IeC {\'a}tica}{7}{section.1.4}
+\contentsline {subsubsection}{Propiedades}{8}{section*.10}
+\contentsline {subsection}{\numberline {1.4.1}Varianza}{8}{subsection.1.4.1}
+\contentsline {subsubsection}{Propiedades}{8}{section*.11}
