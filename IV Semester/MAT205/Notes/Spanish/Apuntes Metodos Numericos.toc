@@ -1,3 +1,4 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Aproximaciones y Errores}{5}{chapter.1}
 \contentsline {section}{\numberline {1.1}Errores}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Exactitud y Precisi\IeC {\'o}n}{5}{section.1.2}

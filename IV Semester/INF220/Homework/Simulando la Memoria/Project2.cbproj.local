@@ -1,13 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2018/08/12 07:50:54.000.525,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
     <Transaction>2018/08/12 07:50:54.000.534,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
-    <Transaction>2018/08/12 07:51:18.000.956,C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\SimMem.cpp=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
+    <Transaction>2018/08/12 07:50:54.000.525,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/08/12 07:51:18.000.956,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\SimMem.cpp</Transaction>
     <Transaction>2018/08/12 07:57:26.000.198,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2018/08/12 07:57:37.000.554,C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\SMemoria.cpp=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2018/08/12 07:57:37.000.554,C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\SMemoria.h=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
-    <Transaction>2018/08/12 12:22:03.000.406,C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\Project2PCH1.h=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
-    <Transaction>2018/08/12 12:22:06.000.411,C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\Project2.cbproj=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2.cbproj</Transaction>
-  </Transactions>
+    <Transaction>2018/08/12 07:57:37.000.554,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\SMemoria.cpp</Transaction>
+    <Transaction>2018/08/12 07:57:37.000.554,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\SMemoria.h</Transaction>
+    <Transaction>2018/08/12 12:22:03.000.406,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\Project2PCH1.h</Transaction>
+    <Transaction>2018/08/12 12:22:06.000.411,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2.cbproj=C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\Project2.cbproj</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Project2PCH1.h"/>
+    <File Path="SimMem.cpp"/>
+    <File Path="SMemoria.cpp"/>
+    <File Path="SMemoria.cpp"/>
+    <File Path="SMemoria.h"/>
+  </ProjectSortOrder>
 </BorlandProject>
