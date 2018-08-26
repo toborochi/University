@@ -1,28 +1,29 @@
 //---------------------------------------------------------------------------
 
-#ifndef TDAListaVectorH
-#define TDAListaVectorH
+#include <SMemoria.h>
+#ifndef TDAListaMemoriaH
+#define TDAListaMemoriaH
 //---------------------------------------------------------------------------
 #endif
 
-#include <vector>
-
-static const int Max = 100;
-
-class TDAListaVector
+class TDAListaMemoria
 {
 	public:
-
-        std::vector<int> Elementos;
+	// Atributos
+		int PtrElementos;
 		int Longitud;
+        SMemoria m;
 
-		void crear();
+	// Metodos
+		TDAListaMemoria();   // Constructor
+
 		int fin();
 		int primero();
 		int siguiente(int direccion);
-		int anterior(int direccion);
+        int anterior(int direccion);
 		bool vacia();
         int recupera(int direccion);
 
-		int buscar(TDAListaVector L,int elemento);
+
+
 };

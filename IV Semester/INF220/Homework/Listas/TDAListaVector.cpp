@@ -3,11 +3,12 @@
 #pragma hdrstop
 
 #include "TDAListaVector.h"
+#include <iostream>
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 
 
-void TDAListaVector::crear()
+TDAListaVector::TDAListaVector()
 {
     Longitud = 0;
 }
@@ -96,20 +97,23 @@ void TDAListaVector::inserta(int direccion,int elemento)
 {
 	if(Longitud==Max)
 	{
-         // Excepcion Lista Llena
+
 	}else
-    if(!(direccion>=1 && direccion<=Longitud))
+	if(!(direccion>=1 && direccion<=Longitud+1))
 	{
-        // Excepcion Direccion
+		// Excepcion Direccion
 	}else
 	{
-		for(int i=Longitud+1;i>=direccion+1;--i)
+       	for(int i=Longitud+1;i>=direccion+1;--i)
 		{
-            Elementos[i]=Elementos[i-1];
+			Elementos[i]=Elementos[i-1];
 		}
 		Elementos[direccion]=elemento;
-        Longitud++;
+		Longitud++;
     }
+
+
+
 }
 
 void TDAListaVector::suprime(int direccion)
@@ -129,4 +133,31 @@ void TDAListaVector::suprime(int direccion)
 		}
         Longitud--;
     }
+}
+
+void TDAListaVector::modifica(int direccion,int elemento)
+{
+	if(Longitud==0)
+	{
+        // Excepcion Vacia
+	}else
+	if(!(direccion>=1 && direccion<=Longitud))
+	{
+	   // Excepcion Limite
+	}else
+	{
+        Elementos[direccion]=elemento;
+    }
+
+}
+
+void TDAListaVector::mostrar()
+{
+	std::cout<<"<";
+	for(int i=primero();i<=fin();++i)
+	{
+		std::cout<< recupera(i) << ((i<fin())?", ":"") ;
+	}
+    std::cout<<">";
+	std::cout<<std::endl;
 }

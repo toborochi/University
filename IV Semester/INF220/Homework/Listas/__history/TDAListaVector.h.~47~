@@ -27,7 +27,5 @@ class TDAListaVector
 		int longitud();
 		void inserta(int direccion,int elemento);
 		void suprime(int direccion);
-		void modifica(int direccion,int elemento);
-
-        void mostrar();
+        void modifica(int direccion,int elemento);
 };

@@ -22,14 +22,15 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	// Usando Vector
 	TDAListaVector  LV;
-
-    // Usando SMemoria
 	TDAListaMemoria LM;
-
-    // Simplemente SMemoria;
 	SMemoria M;
+
+	cout<< LM.primero() <<endl;
+
+	LM.inserta(LM.primero(),123);
+
+    cout<< LM.recupera(1) <<endl;
 
 	
 

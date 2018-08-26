@@ -13,7 +13,7 @@ class TDAListaVector
 {
 	public:
 
-        std::vector<int> Elementos;
+        int Elementos[Max];
 		int Longitud;
 
 		void crear();
@@ -22,7 +22,8 @@ class TDAListaVector
 		int siguiente(int direccion);
 		int anterior(int direccion);
 		bool vacia();
-        int recupera(int direccion);
-
-		int buscar(TDAListaVector L,int elemento);
+		int recupera(int direccion);
+		int longitud();
+		void inserta(int direccion,int elemento);
+        void suprime(int direccion);
 };

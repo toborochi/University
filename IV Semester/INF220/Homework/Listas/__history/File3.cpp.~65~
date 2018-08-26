@@ -27,8 +27,6 @@ int _tmain(int argc, _TCHAR* argv[])
 
     // Usando SMemoria
 	TDAListaMemoria LM;
-
-    // Simplemente SMemoria;
 	SMemoria M;
 
 	

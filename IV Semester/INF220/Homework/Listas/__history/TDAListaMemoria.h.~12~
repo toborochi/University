@@ -1,0 +1,31 @@
+//---------------------------------------------------------------------------
+
+#include <SMemoria.h>
+#ifndef TDAListaMemoriaH
+#define TDAListaMemoriaH
+//---------------------------------------------------------------------------
+#endif
+
+class TDAListaMemoria
+{
+	public:
+	// Atributos
+		int PtrElementos;
+		int Longitud;
+        SMemoria m;
+
+	// Metodos
+		TDAListaMemoria();   // Constructor
+
+		int fin();
+		int primero();
+		int siguiente(int direccion);
+        int anterior(int direccion);
+
+
+        bool vacia();
+
+
+
+
+};
