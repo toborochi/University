@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAListaPuntero.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+
+TDAListaPuntero::TDAListaPuntero()
+{
+	head=NULL;
+	tail=NULL;
+}
+

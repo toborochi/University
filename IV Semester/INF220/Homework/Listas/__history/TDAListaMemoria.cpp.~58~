@@ -156,7 +156,20 @@ void TDAListaMemoria::suprime(int direccion)
 	}else
 	{
 		int ant = anterior(direccion);
+		m.poner_dato(ant,2,siguiente(direccion));
+        m.delete_espacio(direccion);
 
-    }
+	}
+    Longitud--;
+
+}
+
+void TDAListaMemoria::modifica(int direccion,int elemento)
+{
+	if(vacia())
+	{
+        // Excepcion: Lista vacia..
+	}
+	m.poner_dato(direccion,1,elemento);
 
 }

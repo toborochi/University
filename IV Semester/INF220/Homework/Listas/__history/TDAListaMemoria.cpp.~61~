@@ -46,7 +46,7 @@ int TDAListaMemoria::primero()
         return PtrElementos;
 	}else
 	{
-        // Excepcion: Lista vacia...
+
     }
 
 }
@@ -150,7 +150,26 @@ void TDAListaMemoria::suprime(int direccion)
 	}
 	if(direccion==PtrElementos)
 	{
-        int x = PtrElementos;
-    }
+		int x = PtrElementos;
+		PtrElementos = m.obtener_dato(PtrElementos,2);
+        m.delete_espacio(x);
+	}else
+	{
+		int ant = anterior(direccion);
+		m.poner_dato(ant,2,siguiente(direccion));
+        m.delete_espacio(direccion);
+
+	}
+    Longitud--;
+
+}
+
+void TDAListaMemoria::modifica(int direccion,int elemento)
+{
+	if(vacia())
+	{
+        // Excepcion: Lista vacia..
+	}
+	m.poner_dato(direccion,1,elemento);
 
 }

@@ -16,6 +16,7 @@
 #include "SMemoria.h"
 #include "TDAListaVector.h"
 #include "TDAListaMemoria.h"
+#include "TDAListaPuntero.h"
 
 
 using namespace std;
@@ -25,8 +26,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	// Usando Vector
 	TDAListaVector  LV;
 
-    // Usando SMemoria
+	// Usando SMemoria
 	TDAListaMemoria LM;
+
+    // Usando Punteros
+    TDAListaPuntero LP;
 
     // Simplemente SMemoria;
 	SMemoria M;

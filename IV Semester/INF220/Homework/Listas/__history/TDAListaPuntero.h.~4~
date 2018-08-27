@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAListaPunteroH
+#define TDAListaPunteroH
+//---------------------------------------------------------------------------
+#endif
+
+
+class TDAListaPuntero
+{
+    TDAListaPuntero();
+
+};

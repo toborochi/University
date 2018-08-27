@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAListaPunteroH
+#define TDAListaPunteroH
+//---------------------------------------------------------------------------
+#endif
+
+ struct node
+  {
+    int data;
+    node *next;
+  };
+
+
+class TDAListaPuntero
+{
+
+	public:
+
+};

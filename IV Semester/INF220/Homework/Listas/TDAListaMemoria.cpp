@@ -46,7 +46,7 @@ int TDAListaMemoria::primero()
         return PtrElementos;
 	}else
 	{
-        // Excepcion: Lista vacia...
+
     }
 
 }
