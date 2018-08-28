@@ -133,6 +133,7 @@ void TDAListaMemoria::inserta(int direccion, int elemento)
 				m.poner_dato(x,2,direccion);
 			}
 		}
+		std::cout<<"Hola";
 	}
 
 }

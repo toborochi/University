@@ -29,8 +29,5 @@ class TDAListaMemoria
 		int fin();
 		void inserta(int direccion,int elemento);
 
-		void modifica(int direccion,int elemento);
-
-        void mostrar();
 
 };

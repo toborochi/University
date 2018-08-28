@@ -18,6 +18,7 @@ SMemoria::SMemoria()
 
 int SMemoria::new_espacio(int cantidad)
 {
+	int dir = Libre;
 	int x = Libre;
 	for(int i=1;i<=cantidad-1;++i)
 	{
@@ -27,6 +28,7 @@ int SMemoria::new_espacio(int cantidad)
 	Libre = mem[x].Link;
 	mem[x].Link = NULO;
     return x;
+
 }
 
 void SMemoria::delete_espacio(int dir)

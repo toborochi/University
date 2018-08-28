@@ -18,6 +18,7 @@ SMemoria::SMemoria()
 
 int SMemoria::new_espacio(int cantidad)
 {
+	int dir = Libre;
 	int x = Libre;
 	for(int i=1;i<=cantidad-1;++i)
 	{
@@ -27,6 +28,7 @@ int SMemoria::new_espacio(int cantidad)
 	Libre = mem[x].Link;
 	mem[x].Link = NULO;
     return x;
+
 }
 
 void SMemoria::delete_espacio(int dir)
@@ -82,13 +84,13 @@ void SMemoria::mostrar()
 	for(int i=1;i<=MAX;++i)
 	{
 
-		//if(direccion_libre(i))
-		//{
+		if(direccion_libre(i))
+		{
 			std::cout<<"|";
 			espacios(i); std::cout<<i<<"|";
 			espacios(mem[i].Dato); std::cout<<mem[i].Dato<<"|";
 			espacios(mem[i].Link); std::cout<<mem[i].Link<<"|\n";
-		//}
+		}
 
 	}
 	std::cout<<"+--------------------------------------+"<<std::endl;

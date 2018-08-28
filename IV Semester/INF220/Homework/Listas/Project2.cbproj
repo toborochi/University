@@ -91,7 +91,7 @@
         </CppCompile>
         <CppCompile Include="TDAListaMemoria.cpp">
             <DependentOn>TDAListaMemoria.h</DependentOn>
-            <BuildOrder>4</BuildOrder>
+            <BuildOrder>5</BuildOrder>
         </CppCompile>
         <CppCompile Include="TDAListaPuntero.cpp">
             <DependentOn>TDAListaPuntero.h</DependentOn>

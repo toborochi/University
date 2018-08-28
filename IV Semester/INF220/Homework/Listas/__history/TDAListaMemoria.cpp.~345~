@@ -111,11 +111,10 @@ void TDAListaMemoria::inserta(int direccion, int elemento)
 	int x = m.new_espacio(2);
 	if(x!=NULO)
 	{
+		m.poner_dato(x,1,elemento);
+		m.poner_dato(x,2,NULO);
 
-		m.poner_dato(x-1,1,elemento);
-		m.poner_dato(x-1,2,NULO);
-
-		if(vacia())
+		/*if(vacia())
 		{
 			PtrElementos = x;
 			Longitud = 1;
@@ -132,7 +131,7 @@ void TDAListaMemoria::inserta(int direccion, int elemento)
 				m.poner_dato(ant,2,x);
 				m.poner_dato(x,2,direccion);
 			}
-		}
+		} */
 	}
 
 }
@@ -158,10 +157,10 @@ int TDAListaMemoria::siguiente(int direccion)
 void TDAListaMemoria::mostrar()
 {
     m.mostrar();
-	/*for(int i=1;i<=Longitud;++i)
+	for(int i=1;i<=Longitud;++i)
 	{
 		std::cout<< recupera(i)<<" ";
 	}
-	std::cout<<::std::endl;*/
+	std::cout<<::std::endl;
 
 }

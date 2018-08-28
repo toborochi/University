@@ -18,10 +18,24 @@
     <Transaction>2018/08/26 12:28:47.000.157,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.h</Transaction>
     <Transaction>2018/08/26 12:28:47.000.157,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.cpp</Transaction>
     <Transaction>2018/08/26 14:02:15.000.938,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
-    <Transaction>2018/08/26 14:02:25.000.436,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.cpp</Transaction>
     <Transaction>2018/08/26 14:02:25.000.436,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.h</Transaction>
+    <Transaction>2018/08/26 14:02:25.000.436,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.cpp</Transaction>
     <Transaction>2018/08/26 14:02:54.000.078,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPuntero.h</Transaction>
     <Transaction>2018/08/26 14:02:54.000.078,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPuntero.cpp</Transaction>
+    <Transaction>2018/08/28 08:02:11.213,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.cpp=</Transaction>
+    <Transaction>2018/08/28 08:02:38.062,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.cpp</Transaction>
+    <Transaction>2018/08/28 08:02:38.067,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.h</Transaction>
+    <Transaction>2018/08/28 08:02:49.632,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.cpp=</Transaction>
+    <Transaction>2018/08/28 08:02:49.654,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.h=</Transaction>
+    <Transaction>2018/08/28 08:02:57.718,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.h</Transaction>
+    <Transaction>2018/08/28 08:03:04.929,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.h=</Transaction>
+    <Transaction>2018/08/28 08:03:18.465,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.h</Transaction>
+    <Transaction>2018/08/28 08:03:40.893,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.cpp</Transaction>
+    <Transaction>2018/08/28 08:06:22.959,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.cpp=</Transaction>
+    <Transaction>2018/08/28 08:06:22.974,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.h=</Transaction>
+    <Transaction>2018/08/28 08:07:00.841,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
+    <Transaction>2018/08/28 08:07:09.003,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h</Transaction>
+    <Transaction>2018/08/28 08:07:09.003,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="File3.cpp"/>
@@ -29,14 +43,14 @@
     <File Path="SMemoria.cpp"/>
     <File Path="SMemoria.cpp"/>
     <File Path="SMemoria.h"/>
-    <File Path="TDAListaMemoria.cpp"/>
-    <File Path="TDAListaMemoria.cpp"/>
-    <File Path="TDAListaMemoria.h"/>
     <File Path="TDAListaPuntero.cpp"/>
     <File Path="TDAListaPuntero.cpp"/>
     <File Path="TDAListaPuntero.h"/>
     <File Path="TDAListaVector.cpp"/>
     <File Path="TDAListaVector.cpp"/>
     <File Path="TDAListaVector.h"/>
+    <File Path="TDAListaMemoria.cpp"/>
+    <File Path="TDAListaMemoria.cpp"/>
+    <File Path="TDAListaMemoria.h"/>
   </ProjectSortOrder>
 </BorlandProject>

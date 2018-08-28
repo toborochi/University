@@ -21,16 +21,12 @@ class TDAListaMemoria
 		int longitud();
 
 		int anterior(int direccion);
-        int siguiente(int direccion);
+        int siguiente();
 
-        int recupera(int direccion);
 
 		int primero();
 		int fin();
 		void inserta(int direccion,int elemento);
 
-		void modifica(int direccion,int elemento);
-
-        void mostrar();
 
 };

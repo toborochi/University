@@ -33,8 +33,6 @@ int main()
 
 
 	LM.inserta(1,45);
-	LM.inserta(2,73);
-    LM.inserta(3,77);
 
 
 
