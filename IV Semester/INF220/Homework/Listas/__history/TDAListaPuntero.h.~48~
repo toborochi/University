@@ -1,0 +1,39 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAListaPunteroH
+#define TDAListaPunteroH
+//---------------------------------------------------------------------------
+#endif
+
+ struct NodoP
+  {
+	int Dato;
+    NodoP *Sig;
+  };
+
+
+class TDAListaPuntero
+{
+
+	private:
+		int Longitud;
+
+	public:
+		// Atributos
+		NodoP *PtrElementos;
+
+		// Metodos
+		TDAListaPuntero();
+		bool vacia();
+		NodoP *primero();
+		NodoP *anterior(NodoP *direccion);
+        NodoP *siguiente(NodoP *direccion);
+        NodoP *fin();
+
+		int recupera(NodoP *direccion);
+        void insertar(NodoP *posicion,int elemento);
+		int longitud();
+
+
+};
+

@@ -1,0 +1,195 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAListaMemoria.h"
+#include <iostream>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+extern ListaEnlazada *TDAListaE;
+
+// ---------------------------------------------------------------------------
+ListaEnlazada::Crear() {
+	Longitud = 0;
+	PtrElementos.Sig = -1;   // o null
+}
+
+// ---------------------------------------------------------------------------
+int ListaEnlazada::Fin() {
+	int PtrFin = 0;
+	if (Vacia()) {
+		throw ("Error");
+	}
+	else {
+		int x = PtrElementos.Elemento;
+		while (x != -1) {
+			PtrFin = x;
+			x = TDAMemoria->ObtenerDato(x, 2);
+		}
+		return PtrFin;
+	}
+}
+
+// ---------------------------------------------------------------------------
+int ListaEnlazada::Primero() {
+	if (!Vacia()) {
+		return PtrElementos.Sig;
+	}
+	else {
+		 throw("Error Lista Vacia");
+	}
+}
+
+// ---------------------------------------------------------------------------
+int ListaEnlazada::Siguiente(int p) {
+	if (Vacia()) {
+		throw ("Lista Vacia");
+	}
+	else {
+		if (p == Fin()) {
+			throw ("Direccion error");
+		}
+		else {
+			return TDAMemoria->ObtenerDato(p, 2);
+		}
+	}
+}
+
+// ---------------------------------------------------------------------------
+int ListaEnlazada::Anterior(int p) {
+	if (Vacia()) {
+		throw ("Lista Vacia");
+	}
+	else {
+		if (p == Primero()) {
+			throw ("Direccion Primero");
+		}
+		else {
+			int x = PtrElementos.Elemento;
+			int ant = -1;
+			while (x != -1) {
+				if (x == p)
+					return ant;
+				ant = x;
+				x = TDAMemoria->ObtenerDato(x, 2);
+			}
+		}
+	}
+}
+
+// ---------------------------------------------------------------------------
+bool ListaEnlazada::Vacia() {
+	return PtrElementos.Elemento = -1;
+}
+
+// ---------------------------------------------------------------------------
+int ListaEnlazada::Recupera(int p) {
+	if (Vacia())
+		throw ("Lista Vacia");
+	else
+		return TDAMemoria->ObtenerDato(p, 1);
+}
+
+// ---------------------------------------------------------------------------
+int ListaEnlazada::longitud() {
+	return Longitud;
+}
+
+// ---------------------------------------------------------------------------
+void ListaEnlazada::Inserta(int p, int e) {
+	TDAMemoria->PedirEspacio(2, p);
+	int x = p;
+	if (x != -1) {
+		TDAMemoria->PonerDato(x, 1, e);
+		TDAMemoria->PonerDato(x, 2, PtrElementos.Sig);
+		PtrElementos.Sig = x;
+		if (Vacia()) {
+			PtrElementos.Sig = x;
+			Longitud = 1;
+		}
+		else {
+			Longitud = Longitud + 1;
+			if (p = Primero()) {
+				TDAMemoria->PonerDato(x, 2, p);
+				PtrElementos.Sig = x;
+			}
+			else {
+				int ant = Anterior(p);
+				TDAMemoria->PonerDato(ant, 2, x);
+				TDAMemoria->PonerDato(x, 2, p);
+			}
+		}
+	}
+	else {
+		throw ("ExisteEspacioMemoria");
+	}
+}
+
+// ---------------------------------------------------------------------------
+void ListaEnlazada::Suprime(int p) {
+	if (Longitud == 0)
+		throw ("ListaVacia");
+	if (p == PtrElementos.Elemento) {
+		int x = PtrElementos.Elemento;
+		PtrElementos.Elemento =
+			TDAMemoria->ObtenerDato(PtrElementos.Elemento, 2);
+		TDAMemoria->LiberarEspacio(x);
+	}
+	else {
+		int ant = Anterior(p);
+		TDAMemoria->PonerDato(ant, 2, Siguiente(p));
+		TDAMemoria->LiberarEspacio(p);
+	}
+	Longitud = Longitud - 1;
+}
+
+// ---------------------------------------------------------------------------
+void ListaEnlazada::Modifica(int p, int e) {
+	if (Vacia()) {
+		throw ("ListaVacia");
+	}
+	else {
+		TDAMemoria->PonerDato(p, 1, e);
+	}
+}
+
+int ListaEnlazada::Localiza(int e) {
+	if (Vacia()) {
+		// ShowMessage("Error");
+		return -1;
+	}
+	else {
+		int x = PtrElementos.Elemento;
+		while (x != -1) {
+			int p = Recupera(x);
+			if (p == e) {
+				return x;
+			}
+			else {
+				x = Siguiente(x);
+			}
+		}
+	}
+}
+
+// ---------------------------------------------------------------------------
+void ListaEnlazada::EliminaDato(int e) {
+	if (Vacia()) {
+		throw new Exception("Error");
+	}
+	else {
+		while (Localiza(e) != -1) {
+			int x = Localiza(e);
+			Suprime(x);
+		}
+	}
+	// return;
+}
+
+// ---------------------------------------------------------------------------
+void ListaEnlazada::Anula() {
+	//Crear();
+}
+// ---------------------------------------------------------------------------
+

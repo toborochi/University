@@ -5,10 +5,10 @@
 //---------------------------------------------------------------------------
 #endif
 
- struct node
+ struct NodoP
   {
-    int data;
-    node *next;
+	int Dato;
+    NodoP *Sig;
   };
 
 
@@ -16,11 +16,34 @@ class TDAListaPuntero
 {
 
 	private:
-	node *head, *tail;
+		int Longitud;
 
 	public:
-	TDAListaPuntero();
-     void createnode(int value);
+		// Atributos
+		NodoP *PtrElementos;
+
+		// Metodos
+        // Constructor
+		TDAListaPuntero();
+
+
+		bool vacia();
+
+		NodoP *primero();
+		NodoP *anterior(NodoP *direccion);
+        NodoP *siguiente(NodoP *direccion);
+        NodoP *fin();
+
+		int recupera(NodoP *direccion);
+		int longitud();
+
+		void insertar(NodoP *posicion,int elemento);
+		void modifica(NodoP *direccion, int elemento);
+
+        // Metodos Propios
+        void mostrar();
+
+
 
 };
 

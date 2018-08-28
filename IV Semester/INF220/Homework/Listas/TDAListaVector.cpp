@@ -17,7 +17,7 @@ int TDAListaVector::fin()
 {
 	if(vacia())
 	{
-
+        throw("Lista Vacia...");
 	}else
 	{
         return Longitud;
@@ -32,7 +32,7 @@ int TDAListaVector::primero()
 		return 1;
 	}else
 	{
-
+        throw("Lista Vacia...");
     }
 }
 
@@ -40,11 +40,11 @@ int TDAListaVector::siguiente(int direccion)
 {
 	if(vacia())
 	{
-
+		 throw("Lista Vacia...");
 	}else
 	if(direccion==Longitud)
 	{
-
+        throw("Lista Llena...");
 	}else
 	{
         return direccion+1;
@@ -55,11 +55,11 @@ int TDAListaVector::anterior(int direccion)
 {
 	if(vacia())
 	{
-
+		throw("Lista Vacia...");
 	}else
 	if(direccion==1)
 	{
-
+        throw("Lista Error Direccion Inicial...");
 	}else
 	{
         return direccion-1;
@@ -75,7 +75,7 @@ int TDAListaVector::recupera(int direccion)
 {
 	if(vacia())
 	{
-
+       throw("Lista Vacia...");
 	}else
 	{
 		if(!(direccion>=1 && direccion<=Longitud))
@@ -97,7 +97,7 @@ void TDAListaVector::inserta(int direccion,int elemento)
 {
 	if(Longitud==Max)
 	{
-
+       throw("Lista Llena Error Direccion...");
 	}else
 	if(!(direccion>=1 && direccion<=Longitud+1))
 	{
@@ -120,11 +120,11 @@ void TDAListaVector::suprime(int direccion)
 {
 	if(Longitud==0)
 	{
-        // Excepcion Lista Vacia
+		throw("Lista Vacia...");
 	}else
 	if(!(direccion>=1 && direccion<=Longitud))
 	{
-       // Excepcion Limite
+       throw("Lista Limite...");
 	}else
 	{
 		for(int i=direccion;i<=Longitud-1;++i)
@@ -139,11 +139,11 @@ void TDAListaVector::modifica(int direccion,int elemento)
 {
 	if(Longitud==0)
 	{
-        // Excepcion Vacia
+	   throw("Lista Vacia...");
 	}else
 	if(!(direccion>=1 && direccion<=Longitud))
 	{
-	   // Excepcion Limite
+	   throw("Lista Limite...");
 	}else
 	{
         Elementos[direccion]=elemento;
@@ -154,7 +154,7 @@ void TDAListaVector::modifica(int direccion,int elemento)
 void TDAListaVector::mostrar()
 {
 	std::cout<<"<";
-	for(int i=primero();i<=fin();++i)
+	for(int i=1;i<=Longitud;++i)
 	{
 		std::cout<< recupera(i) << ((i<fin())?", ":"") ;
 	}

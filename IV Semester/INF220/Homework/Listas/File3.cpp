@@ -21,22 +21,26 @@
 
 using namespace std;
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
-	// Usando Vector
-	TDAListaVector  LV;
+	SMemoria 		 M;  // OK
+	TDAListaVector  LV;  // OK
+	TDAListaPuntero LP;
 
-	// Usando SMemoria
-	TDAListaMemoria LM;
+	NodoP *p = new NodoP;
+	p = LP.primero();
 
-    // Usando Punteros
-    TDAListaPuntero LP;
+	LP.insertar(p,45);
+	LP.insertar(LP.primero(),13);
 
-    // Simplemente SMemoria;
-	SMemoria M;
+	cout<< LP.longitud() <<endl;
+	cout<< LP.recupera( LP.primero()->Sig ) <<endl;
 
-	
+	LP.modifica(LP.primero(),33);
 
+    cout<< LP.recupera(LP.primero()) <<endl;
+
+    LP.mostrar();
 
 	getch();
 

@@ -1,26 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2018/08/26 07:44:54.000.860,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
     <Transaction>2018/08/26 07:44:54.000.849,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
-    <Transaction>2018/08/26 07:45:58.000.019,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\File3.cpp</Transaction>
+    <Transaction>2018/08/26 07:44:54.000.860,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
+    <Transaction>2018/08/26 07:45:58.000.019,C:\GitHub\University\IV Semester\INF220\Homework\Listas\File3.cpp=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
     <Transaction>2018/08/26 07:49:01.000.203,=C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\SMemoria.cpp</Transaction>
     <Transaction>2018/08/26 07:51:48.000.990,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2018/08/26 07:54:17.000.584,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h</Transaction>
-    <Transaction>2018/08/26 07:54:17.000.584,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
-    <Transaction>2018/08/26 07:55:44.000.494,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaVector.cpp</Transaction>
-    <Transaction>2018/08/26 07:55:44.000.494,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaVector.h</Transaction>
-    <Transaction>2018/08/26 08:13:22.000.300,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Project2PCH1.h</Transaction>
-    <Transaction>2018/08/26 08:13:26.000.148,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2.cbproj=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Project2.cbproj</Transaction>
-    <Transaction>2018/08/26 08:47:31.580,C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\SMemoria.cpp=</Transaction>
-    <Transaction>2018/08/26 08:47:46.894,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\SMemoria.cpp</Transaction>
-    <Transaction>2018/08/26 12:28:36.041,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
-    <Transaction>2018/08/26 12:28:47.157,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h</Transaction>
-    <Transaction>2018/08/26 12:28:47.157,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
-    <Transaction>2018/08/26 14:02:15.938,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
-    <Transaction>2018/08/26 14:02:25.436,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
-    <Transaction>2018/08/26 14:02:25.436,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h</Transaction>
-    <Transaction>2018/08/26 14:02:54.078,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPuntero.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.cpp</Transaction>
-    <Transaction>2018/08/26 14:02:54.078,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPuntero.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.h</Transaction>
+    <Transaction>2018/08/26 07:54:17.000.584,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2018/08/26 07:54:17.000.584,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/08/26 07:55:44.000.494,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaVector.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h</Transaction>
+    <Transaction>2018/08/26 07:55:44.000.494,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaVector.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
+    <Transaction>2018/08/26 08:13:22.000.300,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Project2PCH1.h=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/08/26 08:13:26.000.148,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Project2.cbproj=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2.cbproj</Transaction>
+    <Transaction>2018/08/26 08:47:31.000.580,C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\SMemoria.cpp=</Transaction>
+    <Transaction>2018/08/26 08:47:46.000.894,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\SMemoria.cpp</Transaction>
+    <Transaction>2018/08/26 12:28:36.000.041,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
+    <Transaction>2018/08/26 12:28:47.000.157,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.h</Transaction>
+    <Transaction>2018/08/26 12:28:47.000.157,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaMemoria.cpp</Transaction>
+    <Transaction>2018/08/26 14:02:15.000.938,=C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp</Transaction>
+    <Transaction>2018/08/26 14:02:25.000.436,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.cpp</Transaction>
+    <Transaction>2018/08/26 14:02:25.000.436,C:\GitHub\University\IV Semester\INF220\Homework\Listas\Unit1.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.h</Transaction>
+    <Transaction>2018/08/26 14:02:54.000.078,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.h=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPuntero.h</Transaction>
+    <Transaction>2018/08/26 14:02:54.000.078,C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPunteros.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Listas\TDAListaPuntero.cpp</Transaction>
   </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="File3.cpp"/>
+    <File Path="Project2PCH1.h"/>
+    <File Path="SMemoria.cpp"/>
+    <File Path="SMemoria.cpp"/>
+    <File Path="SMemoria.h"/>
+    <File Path="TDAListaMemoria.cpp"/>
+    <File Path="TDAListaMemoria.cpp"/>
+    <File Path="TDAListaMemoria.h"/>
+    <File Path="TDAListaPuntero.cpp"/>
+    <File Path="TDAListaPuntero.cpp"/>
+    <File Path="TDAListaPuntero.h"/>
+    <File Path="TDAListaVector.cpp"/>
+    <File Path="TDAListaVector.cpp"/>
+    <File Path="TDAListaVector.h"/>
+  </ProjectSortOrder>
 </BorlandProject>

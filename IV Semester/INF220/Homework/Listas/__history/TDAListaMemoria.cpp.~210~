@@ -1,0 +1,190 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAListaMemoria.h"
+#include <iostream>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+TDAListaMemoria *ListaMemoria;
+
+TDAListaMemoria::TDAListaMemoria()
+{
+	Longitud = 0;
+    PtrElementos.Sig = NULO;
+}
+
+bool TDAListaMemoria::vacia()
+{
+    return (Longitud==0);
+}
+
+
+int TDAListaMemoria::fin()
+{
+    int PtrFin = 0;
+	if(vacia())
+	{
+
+	}else
+	{
+		int x = PtrElementos.Elemento;
+		while(x!=NULO)
+		{
+			PtrFin = x;
+			x = TDAMemoria->obtener_dato(x,2);
+		}
+
+        return PtrFin;
+	}
+
+}
+
+int TDAListaMemoria::primero()
+{
+	if(!vacia())
+	{
+        return PtrElementos.Sig;
+	}else
+	{
+
+    }
+
+}
+
+int TDAListaMemoria::siguiente(int direccion)
+{
+	if(vacia())
+	{
+        return 0;
+	}else
+	{
+        if(direccion==fin())
+		{
+		   return 0;
+		}else
+		{
+			return TDAMemoria->obtener_dato(direccion,2);
+		}
+    }
+
+
+}
+
+int TDAListaMemoria::anterior(int direccion)
+{
+	if (vacia()) {
+		throw ("Lista Vacia");
+	}
+	else {
+		if (direccion == primero()) {
+			throw ("Direccion Primero");
+		}
+		else {
+			int x = PtrElementos.Elemento;
+			int ant = -1;
+			while (x != -1) {
+				if (x == direccion)
+					return ant;
+				ant = x;
+				x = TDAMemoria->obtener_dato(x, 2);
+			}
+		}
+	}
+}
+
+int TDAListaMemoria::recupera(int direccion)
+{
+	if(vacia())
+	{
+        throw("KHE");
+	}else
+	{
+		return TDAMemoria->obtener_dato(direccion,1);
+    }
+
+}
+
+int TDAListaMemoria::longitud()
+{
+	return Longitud;
+}
+
+void TDAListaMemoria::inserta(int direccion,int elemento)
+{
+	int x = TDAMemoria->new_espacio(2);
+	if(x!=NULO)
+	{
+	   //TDAMemoria->poner_dato(x,1,elemento);
+	   //TDAMemoria->poner_dato(x,2,NULO);
+       PtrElementos.Sig = x;
+	   if(vacia())
+	   {
+		   PtrElementos.Sig = x;
+           Longitud = 1;
+	   }else
+	   {
+		   Longitud++;
+		   if(direccion==primero())
+		   {
+			   TDAMemoria->poner_dato(x,2,direccion);
+			   PtrElementos.Sig = x;
+		   }else
+		   {
+			   int ant = anterior(direccion);
+			   //TDAMemoria->poner_dato(ant,2,x);
+			   //TDAMemoria->poner_dato(x,2,direccion);
+           }
+       }
+	}else
+	{
+
+    }
+
+}
+
+void TDAListaMemoria::suprime(int direccion)
+{
+	if(Longitud==0)
+	{
+        // Excepcion: Lista Vacia...
+	}
+	if(direccion==PtrElementos.Elemento)
+	{
+		int x = PtrElementos.Elemento;
+		PtrElementos.Elemento = TDAMemoria->obtener_dato(PtrElementos.Elemento,2);
+        TDAMemoria->delete_espacio(x);
+	}else
+	{
+		int ant = anterior(direccion);
+		TDAMemoria->poner_dato(ant,2,siguiente(direccion));
+        TDAMemoria->delete_espacio(direccion);
+
+	}
+    Longitud--;
+
+}
+
+void TDAListaMemoria::modifica(int direccion,int elemento)
+{
+	if(vacia())
+	{
+        // Excepcion: Lista vacia..
+	}
+	TDAMemoria->poner_dato(direccion,1,elemento);
+
+}
+
+void TDAListaMemoria::mostrar()
+{
+	std::cout<<"<";
+    int j = primero();
+	for(int i=1;i<=Longitud;++i)
+	{
+		std::cout<< recupera(j) << ((i<=Longitud)?", ":"") ;
+        j = siguiente(j);
+	}
+	std::cout<<">";
+	std::cout<<std::endl;
+}

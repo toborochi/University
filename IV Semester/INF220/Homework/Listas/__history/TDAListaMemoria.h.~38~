@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------
+
+
+#ifndef TDAListaMemoriaH
+#define TDAListaMemoriaH
+#include "SMemoria.h"
+//---------------------------------------------------------------------------
+#endif
+
+struct Nodo{
+	int Elemento;
+	int Sig;
+};
+
+class TDAListaMemoria
+{
+};

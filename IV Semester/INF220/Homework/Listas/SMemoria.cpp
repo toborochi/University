@@ -4,7 +4,6 @@
 #include <string>
 #include <cstdlib>
 
-
 // Constructor de la Clase "Simulacion Memoria"
 SMemoria::SMemoria()
 {
@@ -19,6 +18,7 @@ SMemoria::SMemoria()
 
 int SMemoria::new_espacio(int cantidad)
 {
+	int dir = Libre;
 	int x = Libre;
 	for(int i=1;i<=cantidad-1;++i)
 	{
@@ -41,7 +41,7 @@ void SMemoria::delete_espacio(int dir)
 		//mem[x].Dato = NULO;
 	}
 	mem[x].Link = Libre;
-    Libre = dir;
+	Libre = dir;
 }
 
 
