@@ -7,30 +7,29 @@
 
 #include "SMemoria.h"
 
-SMemoria m;
+
 
 class TDAListaMemoria
 {
-	private:
+    private:
 		int Longitud;
-        int PtrElementos;
 
 	public:
+		SMemoria m;
+
+		int PtrElemento;
+
 		TDAListaMemoria();
-		bool vacia();
-		int longitud();
-
-		int anterior(int direccion);
-        int siguiente(int direccion);
-
-        int recupera(int direccion);
-
 		int primero();
+		bool vacia();
+		int siguiente(int direccion);
+		int anterior(int direccion);
 		int fin();
+		int recupera(int direccion);
+		int longitud();
 		void inserta(int direccion,int elemento);
-
 		void modifica(int direccion,int elemento);
-
-        void mostrar();
+		void suprime(int direccion);        // Falta
+        void imprimir();
 
 };

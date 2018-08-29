@@ -9,7 +9,7 @@ SMemoria::SMemoria()
 {
 	for(int i=1;i<=MAX;++i)
 	{
-		mem[i].Dato = NULO;
+		mem[i].Dato = 0x45;;
         mem[i].Link = i+1;
 	}
 	mem[MAX].Link = NULO;
@@ -18,15 +18,15 @@ SMemoria::SMemoria()
 
 int SMemoria::new_espacio(int cantidad)
 {
-	int x = Libre;
+	int dir = Libre;
+    int d = Libre;
 	for(int i=1;i<=cantidad-1;++i)
 	{
-        x = mem[x].Link;
+        d = mem[d].Link;
 	}
-    int z = Libre;
-	Libre = mem[x].Link;
-	mem[x].Link = NULO;
-    return x;
+	Libre = mem[d].Link;
+	mem[d].Link = NULO;
+    return dir;
 }
 
 void SMemoria::delete_espacio(int dir)

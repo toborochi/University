@@ -1,0 +1,51 @@
+/*////////////////////////////////////////////////////////////////////////////
+	Tarea #2
+	Docente: Mario Lopez Winnipeg
+	U.A.G.R.M.
+	Facultad  de Ingenieria en Ciencias de la Computacion y Telecomunicaciones
+	Leonardo Anez Vladimirovna
+*/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream.h>
+#include <conio.h>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <cstdlib>
+
+#include "SMemoria.h"
+#include "TDAListaVector.h"
+#include "TDAListaMemoria.h"
+#include "TDAListaPuntero.h"
+
+
+using namespace std;
+
+
+void MostrarOpciones()
+{
+	cout<<"Menu Proyecto 1:\n";
+	cout<<"[1] Crear Memoria\n";
+	cout<<"[2] Pedir Espacio\n";
+	cout<<"[3] Liberar Espacio\n";
+	cout<<"[4] Crear Lista\n";
+	cout<<"[5] Poner en Direccion Inicial\n";
+	cout<<"[6] Poner en Direccion Fin\n";
+	cout<<"[7] Mostrar Memoria\n";
+	cout<<"[8] Mostrar Lista\n";
+	cout<<"[9] Salir\n";
+	cout<<"Opcion: ";
+}
+
+int main()
+{
+
+	TDAListaMemoria LM;
+
+	LM.inserta(1,45);
+    LM.inserta(LM.fin(),123);
+
+	getch();
+	return 0;
+}
+
