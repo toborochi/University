@@ -34,6 +34,19 @@ or al,0xc3
 ;XOR
 mov al,[DATO]
 xor al,0xc3
+
+mov al,'a'	 ; a = 0x61
+xor al, 0x34 ; Enctriptamos    al = 0x55   
+xor al, 0x34 ; Desencriptamos  al = 0x61
+;NOT
+mov al, [DATO] ;Movemos el dato
+not al		   ;Negamos el dato
+mov eax,0      ;Llenamos de cero ax
+not eax 	   ;Negamos todo, es decir FFFFFFFF		
+;NEG
+mov al,[DATO]
+neg al
+neg al
  
 
 ret

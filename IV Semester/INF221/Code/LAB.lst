@@ -1,0 +1,54 @@
+     1                                  
+     2                                  ;%%%%%%%%%%%%%%%%%%%%%%%
+     3                                  ;assemble and link with 
+     4                                  ;nasm -f win32 -o P1.o P1.asm -l P1.lst
+     5                                  ;gcc -o P1.exe P1.o
+     6                                  ;%%%%%%%%%%%%%%%%%%%%%%%
+     7                                  ;---------------------------------------
+     8                                  
+     9                                  ;file: LAB.asm
+    10                                  
+    11                                  extern _printf, _scanf		
+    12                                  
+    13                                  segment .data
+    14                                  ;aqui se declaran variables inicializadas
+    15                                  		
+    16 00000000 A7                      DATO  DB -89
+    17 00000001 25                      DATO1 DB +37		
+    18                                  		
+    19                                  segment .bss
+    20                                  ;aqui van las variables declaradas pero sin inicializar
+    21                                  
+    22                                  segment .text 
+    23                                  
+    24                                  global _main 					
+    25                                  _main:
+    26                                  ;---------------------------------------	
+    27                                  ;AND
+    28 00000000 A0[00000000]            mov al,[DATO]
+    29 00000005 24C3                    and al, 0xC3
+    30 00000007 8025[01000000]7A        and byte[DATO1],0x7a
+    31                                  ;OR
+    32 0000000E A0[00000000]            mov al,[DATO]
+    33 00000013 0CC3                    or al,0xc3
+    34                                  ;XOR
+    35 00000015 A0[00000000]            mov al,[DATO]
+    36 0000001A 34C3                    xor al,0xc3
+    37                                  
+    38 0000001C B061                    mov al,'a'	 ; a = 0x61
+    39 0000001E 3434                    xor al, 0x34 ; Enctriptamos    al = 0x55   
+    40 00000020 3434                    xor al, 0x34 ; Desencriptamos  al = 0x61
+    41                                  ;NOT
+    42 00000022 A0[00000000]            mov al, [DATO] ;Movemos el dato
+    43 00000027 F6D0                    not al		   ;Negamos el dato
+    44 00000029 B800000000              mov eax,0      ;Llenamos de cero ax
+    45 0000002E F7D0                    not eax 	   ;Negamos todo, es decir FFFFFFFF		
+    46                                  ;NEG
+    47 00000030 A0[00000000]            mov al,[DATO]
+    48 00000035 F6D8                    neg al
+    49 00000037 F6D8                    neg al
+    50                                   
+    51                                  
+    52 00000039 C3                      ret
+    53                                  ;---------------------------------------
+    54                                  ;..........subrutina....................	
