@@ -9,7 +9,7 @@ SMemoria::SMemoria()
 {
 	for(int i=1;i<=MAX;++i)
 	{
-		mem[i].Dato = 0x45;;
+		mem[i].Dato = -1;
         mem[i].Link = i+1;
 	}
 	mem[MAX].Link = NULO;

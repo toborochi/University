@@ -14,9 +14,9 @@
 #include <cstdlib>
 
 #include "SMemoria.h"
-#include "TDAListaVector.h"
+//#include "TDAListaVector.h"
 #include "TDAListaMemoria.h"
-#include "TDAListaPuntero.h"
+//#include "TDAListaPuntero.h"
 
 
 using namespace std;
@@ -24,7 +24,11 @@ using namespace std;
 
 void MostrarOpciones()
 {
+	cout<<"*********************************\n";
+	cout<<" Lista con Simulacion de Memoria \n";
+	cout<<"*********************************\n";
 	cout<<"Menu Proyecto 1:\n";
+	cout<<"\n";
 	cout<<"[1] Crear Memoria\n";
 	cout<<"[2] Pedir Espacio\n";
 	cout<<"[3] Liberar Espacio\n";
@@ -40,9 +44,10 @@ void MostrarOpciones()
 int main()
 {
 
-	int opcion;
-	int direccion,lugar,valor,cantidad,dato;
+    // Declaracion de la Lista (Basada en SMemoria)
 	TDAListaMemoria LM;
+
+	int opcion,elemento,cantidad,direccion;
 
     do
 	{
@@ -57,63 +62,82 @@ int main()
 
 		switch(opcion)
 		{
-            // Crear
 			case 1:
-                    LM.m = SMemoria(); // Rellamada del Constructor
-					break;
-			// Pedir
+				// Constructor de la Memoria...
+				LM.m = SMemoria();
+				break;
 			case 2:
-					cout<<"Digite la Cantidad de Espacio:\n";
-					cin>>cantidad;
+				// Pedir espacio en Memoria...
+				cout<<"Digite la Cantidad de Memoria: ";
 
-					if(LM.m.espacio_disponible()>=cantidad)
-					{
-						cout<<LM.m.new_espacio(cantidad)<<endl;
-					}else
-					{
-                        cout<<"No hay Suficiente Espacio\n";
-                    }
-					break;
-			// Liberar
+				cin>>cantidad;
+
+				LM.m.new_espacio(cantidad);
+				break;
 			case 3:
-					cout<<"Digite el Espacio a Liberar:\n";
-					cin>>direccion;
-					LM.m.delete_espacio(direccion);
-					break;
-            // Poner Dato
+                // Liberar espacio en Memoria...
+                cout<<"Digite la Direccion de Memoria: ";
+
+				cin>>direccion;
+
+				LM.m.delete_espacio(direccion);
+				break;
 			case 4:
-
-                    LM = TDAListaMemoria();
-					break;
-			// Obtener Dato
+                // Creacion de la Lista...
+                LM.crear();
+				break;
 			case 5:
-					cin>>cantidad;
-					LM.inserta(LM.primero(),cantidad);
+				// Agregacion de elemento en la cabeza de la lista
+				cout<<"Ingrese el Elemento a Insertar: ";
 
-					break;
-			 // Mostrar
+				cin>> elemento;
+
+				if(LM.vacia())    // Pequena Excepcion
+				{
+					LM.inserta(1,elemento);
+				}else
+				{
+                    LM.inserta(LM.primero(),elemento);
+				}
+				break;
 			case 6:
-					cin>>cantidad;
-					LM.inserta(LM.primero(),cantidad);
-					break;
-			// Salir
+				// Agregacion de elemento en la cola de la lista
+				cout<<"Ingrese el Elemento a Insertar: ";
 
+				cin>>elemento;
+                if(LM.vacia())
+				 {
+					 LM.inserta(1,elemento);
+				 }else
+				 {
+					LM.inserta(LM.fin(),elemento);
+				 }
+				break;
 			case 7:
-					LM.m.mostrar();
-					break;
+                // Mostramos la Memoria
+				LM.m.mostrar();
+				getch();
+				break;
 			case 8:
-                    LM.mostrar();
-
-			default:
-					break;
+                 // Mostramos la Lista
+				 if(LM.vacia())
+				 {
+					 cout<< "Lista Vacia"<<endl;
+				 }else
+				 {
+                     LM.imprimir();
+                 }
+				 getch();
+				 break;
+			default :
+				break;
 		}
-		getch();
 
 	}while(opcion!=9);
 
+    cout<< "Gracias por usar el programa..." <<endl;
 
 	getch();
-
 	return 0;
 }
 

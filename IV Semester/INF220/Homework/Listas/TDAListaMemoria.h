@@ -8,7 +8,6 @@
 #include "SMemoria.h"
 
 
-
 class TDAListaMemoria
 {
     private:
@@ -16,10 +15,9 @@ class TDAListaMemoria
 
 	public:
 		SMemoria m;
-
 		int PtrElemento;
-
-		TDAListaMemoria();
+		// Constructor
+		void crear();
 		int primero();
 		bool vacia();
 		int siguiente(int direccion);
@@ -29,7 +27,6 @@ class TDAListaMemoria
 		int longitud();
 		void inserta(int direccion,int elemento);
 		void modifica(int direccion,int elemento);
-		void suprime(int direccion);        // Falta
-        void imprimir();
-
+		void suprime(int direccion);
+		void imprimir();
 };

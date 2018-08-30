@@ -9,12 +9,10 @@
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 
-TDAListaMemoria::TDAListaMemoria()
+void TDAListaMemoria::crear()
 {
 	Longitud = 0;
 	PtrElemento = NULO;
-
-    std::cout << PtrElemento << std::endl;
 }
 
 bool TDAListaMemoria::vacia()
@@ -116,6 +114,7 @@ int TDAListaMemoria::longitud()
 void TDAListaMemoria::inserta(int direccion,int elemento)
 {
 	int x = m.new_espacio(2);
+
 	if(x!=NULO)
 	{
 		m.poner_dato(x,1,elemento);
@@ -179,4 +178,24 @@ void TDAListaMemoria::imprimir()
 		std::cout<<">"<<std::endl;
 
 	}
+}
+
+
+void TDAListaMemoria::suprime(int direccion)
+{
+	if(Longitud==0)
+	{
+        throw("Lista Vacia...");
+	}
+	if(direccion==PtrElemento)
+	{
+		int x = PtrElemento;
+		PtrElemento = m.obtener_dato(PtrElemento,2);
+		m.poner_dato(direccion,PtrElemento,NULO);
+	}else
+	{
+		int ant = anterior(direccion);
+		m.poner_dato(ant,2,siguiente(direccion));
+        m.poner_dato(direccion,ant,NULO);
+    }
 }

@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
+\usepackage[ascii]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -35,7 +35,7 @@
     breaklines=true,                 
     captionpos=b,                    
     keepspaces=true,                 
-    numbers=left,                    
+    numbers=none, %poner left para restaurar                   
     numbersep=5pt,                  
     showspaces=false,                
     showstringspaces=false,
@@ -43,27 +43,41 @@
     tabsize=2
 }
  
-\lstset{style=mystyle}
+\lstset{style=mystyle,basicstyle = \small\ttfamily}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \graphicspath{ {./Imagenes/} }
+
+\pagenumbering{none}
+
 \begin{document}
 
-\noindent\textbf{Header:} TDAListaMemoria 
+\section*{Links a los Codigos: }
+\noindent
+
+\begin{itemize}
+
+\item \textbf{Header: }\\
+https://hastebin.com/cuqerorupu.cpp
+\item\textbf{Implementacion: }\\
+https://hastebin.com/ajejetoqon.cpp
+\item\textbf{Main: }\\
+https://hastebin.com/osiyipomux.cpp
+\item \textbf{Proyecto:} \\ https://drive.google.com/file/d/1bTVyDwMdI53IjqDn9kHoSeS8ZLcCHJLa/view?usp=sharing
+
+\end{itemize}
+
+
+\subsection*{Header: TDAListaMemoria} 
 \lstinputlisting[language=C++]{Codigos/TDAListaMemoria.h}
 \pagebreak
-\noindent\textbf{Implementacion:} TDAListaMemoria
+\subsection*{Implementacion: TDAListaMemoria} 
 \lstinputlisting[language=C++]{Codigos/TDAListaMemoria.cpp}
 \pagebreak
-\noindent\textbf{Main de Proyecto 1}
+\subsection*{Implementacion: Main del Proyecto 1}
 \lstinputlisting[language=C++]{Codigos/main.cpp}
 
-\\${ }$\\
 
-\textbf{Links a los Codigos:}\\
-\noindent
-https://hastebin.com/pelanuhasu.cpp \\
-https://hastebin.com/uxarozixas.cpp \\
-https://hastebin.com/sawajibuvu.cpp
+
 %\subfile{Archivos/Introduccion}
 %\subfile{Archivos/Secciones/Algoritmia}
 \end{document}
