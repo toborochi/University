@@ -6,6 +6,15 @@
 \item \textbf{Cifras Significativas:} Se refiere a la confiabilidad de un valor numérico. Es el número de dígitos mas un dígito estimado que se puede usar con confianza.\\${ }$\\
 $\blacklozenge$ Los ceros no siempre son cifras significativas ya que pueden usarse solo para ubicar el punto decimal. 
 \end{itemize}
+\subsubsection{Ejemplo:}
+Los siguientes números tienen cuatro cifras significativas y en notación científica se escriben de la siguiente forma:
+\begin{align*}
+0.00001845 &= 1.845 \times 10^{-5} \\
+0.0001845  &= 1.845 \times 10^{-4} \\
+0.001845   &= 1.845 \times 10^{-3}
+\end{align*}
+Las cifras significativas, se cuentan de \textit{izquierda a derecha} a partir del primer dígito distinto de cero.
+
 \section{Exactitud y Precisión}
 \begin{itemize}
 \item \textbf{Exactitud:} Se refiere a la aproximación de un número o medida al valor verdadero que se supone presenta.
@@ -15,3 +24,15 @@ $\blacklozenge$ Los ceros no siempre son cifras significativas ya que pueden usa
 \item La extensión en las lecturas repetidas, de un instrumento que mide alguna propiedad física.
 \end{itemize}
 \end{itemize}
+\section{Definición de Error}
+\subsection{Error Verdadero $(E_v)$}
+Es la diferencia simple entre el valor Verdadero $(V_v)$ y el Valor Aproximado $(V_a)$:
+$$E_v=V_v - V_a$$
+Esta definición de error no toma en consideración la magnitud del valor que se está evaluando.
+\subsection{Error Relativo Verdaderos}
+Para introducir la magnitud del valor que ese está midiendo se normaliza el error $(E_r)$ al valor verdadero $V_v$:
+$$E_r = \dfrac{E_v}{V_v}\cdot 100\% = \dfrac{V_v-V_a}{V_v}\cdot 100\% $$
+En aplicaciones reales el valor verdadero $(V_v)$ únicamente se conocerá cuando se trate de funciones que tienen solución analítica. En general, el valor verdadero no se lo conoce. Se utiliza para ello la mejor estimación posible.
+\\${ }$\\
+Los métodos numéricos que utilizan sistemas iterativos, el error se normaliza, respecto de los valores aproximados. De esta manera, el error relativo aproximado se calcula por:
+$$E_a = \dfrac{V_{actual}-V_{anterior}}{V_{actual}}\cdot 100\% $$
