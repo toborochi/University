@@ -59,3 +59,13 @@ Donde:
 Es un caso particular de la serie de Taylor para $a=0$.
 $$f(x)=\displaystyle\sum_{n=0}^{\infty} \dfrac{ f^{(n)}(0) \cdot (x)^n}{n!} $$
 \section{Reglas de Redondeo}
+\begin{enumerate}
+\item En el redondeo se conservan las cifras significativas ,y el resto se descarta. El último dígito que se conserva se aumenta en una si el primer dígito descartado \textit{es mayor de 5}. De otra manera se deja igual. Si el primer dígito descartado \textit{es 5} o es \textit{5 seguido de ceros}, entonces el último dígito retenido se incrementa en uno solo si es impar.
+\item En la suma y en la resta, el redondeo se lleva a cabo de forma tal que el último dígito retenido en la respuesta corresponda con el último dígito mas significativo de los números que se están sumando o restando.\\ Observar que un dígito en la columna de las centésimas es mas significativo que un número en la columna de las milésimas.
+\item Para la multiplicación y para la división el redondeo es tal que la cantidad de cifras significativas del resultado es igual al número mas pequeño de cifras significativas que contiene la cantidad de la operación.
+\item Para combinaciones de operaciones aritméticas, existen dos cosas generales. Se puede sumar o restar el resultado de las multiplicaciones o de las divisiones.
+$$\binom{\textrm{Multiplicación o}}{\textrm{División}}\pm \binom{\textrm{Multiplicación o}}{\textrm{División}}$$
+o también se pueden multiplicar o dividir los resultados de las sumas y restas.
+$$\binom{\textrm{Suma o}}{\textrm{Resta}} \times / \div \binom{\textrm{Suma o}}{\textrm{Resta}}$$
+en ambos casos se ejecutan las operaciones entre paréntesis y el resultado es redondeado antes de proceder con otra operación.
+\end{enumerate}
