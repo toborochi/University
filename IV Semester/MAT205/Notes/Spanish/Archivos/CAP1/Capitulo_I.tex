@@ -36,3 +36,26 @@ En aplicaciones reales el valor verdadero $(V_v)$ únicamente se conocerá cuand
 \\${ }$\\
 Los métodos numéricos que utilizan sistemas iterativos, el error se normaliza, respecto de los valores aproximados. De esta manera, el error relativo aproximado se calcula por:
 $$E_a = \dfrac{V_{actual}-V_{anterior}}{V_{actual}}\cdot 100\% $$
+donde el $V_{actual}$ representa el último valor calculado y $V_{anterior}$ es el valor anterior en dos iteraciones sucesivas.
+\\${ }$\\
+El signo del error en general, no es significativo, siendo de mayor importancia acotar el valor absoluto del error $|E_a|$ menor a una cierta tolerancia. $E_s$, que en términos de la cantidad $n$ de cifras significativas utilizadas en el cálculo del error es:
+$$E_s =0.5 \cdot 10^{2-n} \%$$
+Donde:
+\begin{itemize}
+\item $n:$ Número de Cifras Significativas
+\end{itemize}
+Esta formula garantiza que el valor calculado tendrá $n$ cifras significativas iguales al valor verdadero.
+\section{Series}
+Las series son sucesiones de términos (en general infinitos) que se utilizan para representar funciones. El uso de series facilita el tratamiento de aquellas expresiones que son muy complicadas.
+\subsubsection{Serie de Taylor}
+$$f(x)=\displaystyle\sum_{n=0}^{\infty} \dfrac{ f^{(n)}(a) \cdot (x-a)^n}{n!} $$
+Donde:
+\begin{itemize}
+\item $f^{(n)}(a):$ Derivada $n$-ésima de $f(x)$ evaluada en $a$.
+\item $n!:$ Factorial de $n$.
+\item $a:$ Entorno reducido de $x$.
+\end{itemize}
+\subsubsection{Serie de MacLaurin}
+Es un caso particular de la serie de Taylor para $a=0$.
+$$f(x)=\displaystyle\sum_{n=0}^{\infty} \dfrac{ f^{(n)}(0) \cdot (x)^n}{n!} $$
+\section{Reglas de Redondeo}
