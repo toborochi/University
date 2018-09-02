@@ -90,6 +90,92 @@ Por relación de Triángulos:
  \caption{Método de la Regla Falsa}
 \end{algorithm}
 \subsection{Método de Regla Falsa Mejorada}
+El \textit{Método de la Regla Falsa} tiene el defecto que se aproxima a la raíz $\xi$ por uno de los lados del intervalo $(a,b)$  dejando el otro lado sin información.
+\salto
+Para superar este defecto, lo que se hace es introducir un nuevo condicional dentro de los anteriores:
+\salto
+Si $f(x)\cdot f(x_{i+1})>0$, entonces se divide a la mitad el valor de $f(a_i)$ o $f(b_i)$ según corresponda.
+\salto
+Este simple artificio hace que el método se aproxime a la raíz por ambos lados del intervalo $(a,b)$.
+\subsubsection{Método de la Regla Falsa Mejorada}
+\begin{algorithm}[ht]
+  Con: 
+  $a_0=a$ ,
+  $b_0=b$ , 
+  $F=f(a)$,
+  $G=f(b)$,
+  $x_0=a$ 
+  \\
+  \For{$i=0,1,\ldots$, hasta que se satisfaga}{
+  \vspace{0.2cm}  
+  Calcular: 
+  \fbox{$x_{i+1}=\dfrac{a_i\cdot G - b_i \cdot F}{G-F}$}\\
+  \vspace{0.2cm} 
+  
+  \uIf{$f(a_i)\cdot f(x_{i+1})<0$}{
+   \vspace{0.2cm}
+   $a_{i+1}=a_i$\\
+   $b_{i+1}=x_{i+1}$ \\
+   $G=f(x_{i+1})$\\
+   \If{$f(x_i)\cdot f(x_{i+1})>0$}{
+	$F = F \div 2$\\   
+   } 
+   
+   }
+   \uElseIf{$f(a_i)\cdot f(x_{i+1})>0$}{
+   \vspace{0.2cm}
+   $a_{i+1}=x_{i+1}$\\
+   $b_{i+1}=b_i$ \\
+   $F=f(x_{i+1})$\\
+   \If{$f(x_i)\cdot f(x_{i+1})>0$}{
+	$G = G \div 2$\\   
+   } 
+  }
+ }
+ \caption{Método de la Regla Falsa Mejorada}
+\end{algorithm}
 \section{Métodos Abiertos}
+Estos métodos no precisan de intervalo $(a,b)$ inicial que incluya a la raíz $\xi$ de $f(x)$, solo valores iniciales cercanos a la raíz. Los métodos abiertos tienen mayor velocidad de convergencia y sus algoritmos son más simples presentan la desventaja de que no siempre son convergentes.
 \subsection{Método de la Secante}
+Este método se inicia con dos puntos $x_{-1}$ y $x_0$, cercanos a la raíz $\xi$, pero no necesariamente la incluyen. Utiliza la misma formula que la \textit{Regla Falsa} de manera directa sin averiguar de que lado queda la raíz en cada iteración.
+\subsubsection{Método de la Secante}
+\begin{algorithm}[ht]
+  \For{$i=0,1,\ldots$, hasta que se satisfaga}{
+  \vspace{0.2cm}  
+  Calcular: 
+  \fbox{$x_{i+1}=\dfrac{x_{i+1}\cdot f(x_i)-x_i \cdot f(x_{i-1})}{f(x_i)-f(x_{i-1})}$}\\
+  \vspace{0.2cm} 
+  
+  
+ }
+ \caption{Método de la Secante}
+\end{algorithm}
 \subsection{Método de Newton-Raphson}
+Este método nos permite resolver problemas del tipo $f(x)=P$ sin la necesidad de transformar la ecuación $f(x)$. Se necesita un punto de partida $x_0$ y las aproximaciones se realizan trazando tangentes a $f(x)$.
+%GRAFICA PENDIENTE
+La primera aproximación, consiste en trazar una tangente a $f(x)$ en $x=x_0$ hasta intersectar $P$. Proyectando este punto sobre el eje de las $x$ se obtiene:
+$$x_1 = x_0 + \triangle_{0x}$$
+El incremento $\triangle_{0x}$ se obtiene por:
+$$\tan(\alpha_0)=\dfrac{P-f(x_0)}{\triangle_{0x}}$$
+Por definición de derivada; $\tan(\alpha_0)=f'(x_0)$
+$$\triangle_{0x}=\dfrac{P-f(x_0)}{f'(x_0)}$$
+$$x_1 = x_0 + \dfrac{P-f(x_0)}{f'(x_0)}$$
+En la segunda aproximación se traza nuevamente una tangente a $f(x)$ ahora en $x=x$, hasta intersectar $P$, obteniendo de manera análoga:
+$$x_2 = x_1 + \dfrac{P-f(x_1)}{f'(x_1)}$$
+Generalizando este proceso:
+$$x_{i+1} = x_i + \dfrac{P-f(x_i)}{f'(x_i)}$$
+En el caso de que $P=0$ se recae en problemas del tipo $f(x)=0$ y la formula se transforma a:
+$$x_{i+1} = x_i - \dfrac{f(x_i)}{f'(x_i)}$$
+y se denomina \textit{Formula de Newton} únicamente.
+\subsubsection{Método de Newton-Raphson}
+\begin{algorithm}[ht]
+  \For{$i=0,1,\ldots$, hasta que se satisfaga}{
+  \vspace{0.2cm}  
+  Calcular: 
+  \fbox{$x_{i+1}=x_i + \dfrac{P-f(x_i)}{f'(x_i)}$}\\
+  \vspace{0.2cm} 
+  
+  
+ }
+ \caption{Método de Newton-Raphson}
+\end{algorithm} 
