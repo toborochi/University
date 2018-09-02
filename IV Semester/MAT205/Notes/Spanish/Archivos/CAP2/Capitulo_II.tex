@@ -18,8 +18,77 @@ Para polinomios de mayor grado no  existen fórmulas sencillas tampoco para las 
 Por ello se recurre a los métodos numéricos donde se verán algoritmos generales para resolver este tipo de problemas.
 \section{Métodos de Intervalo}
 \subsection{Método Gráfico}
+Este método nos da una aproximación inicial a la de las raíces de $f(x)$, consiste en representar la función en una gráfica en el plano cartesiano. Para ello se generan pares ordenados $(x,f(x))$ que representan puntos en el plano y que al unirlos con una curva apropiada se obtiene el gráfico de $f(x)$.
+\subsubsection{Teorema de Bolzano}
+Se dice que $f(x)$ tiene por lo menos una raíz $\xi$ en el intervalo $(a,b)$ si se cumple que:
+$$f(a)\cdot f(b) < 0$$
 \subsection{Método de Bisección}
+Consiste en dividir en dos partes un intervalo. Para una función $f(x)$ conocida, y el intervalo $(a,b)$ que cumple con el \textit{Teorema de Bolzano.}
+\\${ }$\\
+El método consiste en aproximarse a la raíz $\xi$ subdividiendo el intervalo $(a,b)$ en dos.
+\subsubsection{Método de Bisección}
+\begin{algorithm}[H]
+  Con: 
+  $a_0=a$ ,
+  $b_0=b$\\
+  \For{$i=0,1,\ldots$, hasta que se satisfaga}{
+  \vspace{0.2cm}  
+  Calcular: 
+  \fbox{$x_{i+1}=\dfrac{a_i + b_i}{2}$}\\
+  \vspace{0.2cm} 
+  
+  \uIf{$f(a_i)\cdot f(x_{i+1})<0$}{
+   \vspace{0.2cm}
+   $a_{i+1}=a_i$\\
+   $b_{i+1}=x_{i+1}$
+   }
+   \uElseIf{$f(a_i)\cdot f(x_{i+1})>0$}{
+   \vspace{0.2cm}
+   $a_{i+1}=x_{i+1}$\\
+   $b_{i+1}=b_i$
+  }
+ }
+ \caption{Método de Bisección}
+\end{algorithm}
+
 \subsection{Método de Regla Falsa}
+Este método parte del supuesto que la raíz $\xi$ está mas próxima del extremo del intervalo $(a,b)$ donde $|f(a)|$ o $|f(b)|$ es menor.
+\\${ }$\\
+Por ello en vez de calcular el valor medio de $a$ y $b$ como aproximación a la raíz $\xi$ se calculará la media ponderada. Se debe entonces incorporar los valores $f(a)$ y $f(b)$ en la ecuación de iteración.
+\salto
+Para deducir la ecuación del método de la Regla Falsa, se traza inicialmente una recta uniendo los  extremos de $f(a)$ y $f(b)$. Donde esta recta intersecta al eje $x$ (falsa posición) será la primera aproximación a la raíz $x_1$:
+$$x_1 = a + \triangle_{0x}$$
+Por relación de Triángulos:
+\begin{align*}
+\dfrac{\triangle_{0x}}{-f(a)} &= \dfrac{b-a}{f(b)+[-f(a)]}
+\end{align*}
+
+\subsubsection{Método de la Regla Falsa}
+\begin{algorithm}[ht]
+  Con: 
+  $a_0=a$ ,
+  $b_0=b$\\
+  \For{$i=0,1,\ldots$, hasta que se satisfaga}{
+  \vspace{0.2cm}  
+  Calcular: 
+  \fbox{$x_{i+1}=\dfrac{a_i\cdot f(b_i) - b_i \cdot f(a_i)}{f(b_i)-f(a_i)}$}\\
+  \vspace{0.2cm} 
+  
+  \uIf{$f(a_i)\cdot f(x_{i+1})<0$}{
+   \vspace{0.2cm}
+   $a_{i+1}=a_i$\\
+   $b_{i+1}=x_{i+1}$ \\
+   $f(b_{i+1})=f(x_{i+1})$
+   }
+   \uElseIf{$f(a_i)\cdot f(x_{i+1})>0$}{
+   \vspace{0.2cm}
+   $a_{i+1}=x_{i+1}$\\
+   $b_{i+1}=b_i$ \\
+   $f(a_{i+1})=f(x_{i+1})$
+  }
+ }
+ \caption{Método de la Regla Falsa}
+\end{algorithm}
 \subsection{Método de Regla Falsa Mejorada}
 \section{Métodos Abiertos}
 \subsection{Método de la Secante}

@@ -13,9 +13,12 @@
 \contentsline {chapter}{\numberline {2}Ra\IeC {\'\i }ces de Ecuaciones}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}M\IeC {\'e}todos de Intervalo}{9}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}M\IeC {\'e}todo Gr\IeC {\'a}fico}{9}{subsection.2.1.1}
+\contentsline {subsubsection}{Teorema de Bolzano}{9}{section*.6}
 \contentsline {subsection}{\numberline {2.1.2}M\IeC {\'e}todo de Bisecci\IeC {\'o}n}{9}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}M\IeC {\'e}todo de Regla Falsa}{9}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}M\IeC {\'e}todo de Regla Falsa Mejorada}{9}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}M\IeC {\'e}todos Abiertos}{9}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}M\IeC {\'e}todo de la Secante}{9}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}M\IeC {\'e}todo de Newton-Raphson}{9}{subsection.2.2.2}
+\contentsline {subsubsection}{M\IeC {\'e}todo de Bisecci\IeC {\'o}n}{10}{section*.7}
+\contentsline {subsection}{\numberline {2.1.3}M\IeC {\'e}todo de Regla Falsa}{10}{subsection.2.1.3}
+\contentsline {subsubsection}{M\IeC {\'e}todo de la Regla Falsa}{10}{section*.8}
+\contentsline {subsection}{\numberline {2.1.4}M\IeC {\'e}todo de Regla Falsa Mejorada}{11}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}M\IeC {\'e}todos Abiertos}{11}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}M\IeC {\'e}todo de la Secante}{11}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}M\IeC {\'e}todo de Newton-Raphson}{11}{subsection.2.2.2}
