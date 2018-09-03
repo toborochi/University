@@ -10,6 +10,7 @@ static const int Max = 100;
 
 class TDAListaVector
 {
+    private:
 	public:
 
         int Elementos[Max];

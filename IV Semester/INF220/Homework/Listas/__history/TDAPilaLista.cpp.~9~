@@ -1,0 +1,19 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAPilaLista.h"
+#include "TDAListaPuntero.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+void TDAPilaLista::crear()
+{
+    L =
+}
+
+void TDAPilaLista::meter(int elemento)
+{
+    L.insertar(L.primero(),elemento);
+}

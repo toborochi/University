@@ -19,7 +19,7 @@
 #include "TDAListaPuntero.h"
 #include "TDAPilaVector.h"
 #include "TDAPilaPuntero.h"
-#inclide "TDAPilaMemoria.h"
+#include "TDAPilaMemoria.h"
 
 using namespace std;
 
@@ -28,6 +28,8 @@ int main()
 
 	TDAPilaVector PV;
 	TDAPilaPuntero PP;
+	TDAPilaMemoria PM;
+
 
 
 

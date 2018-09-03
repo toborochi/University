@@ -5,23 +5,30 @@
 //---------------------------------------------------------------------------
 #endif
 
-#include <vector>
 
 static const int Max = 100;
 
 class TDAListaVector
 {
+	private:
+		 static const int Max = 100;
 	public:
 
         int Elementos[Max];
 		int Longitud;
 
-		void crear();
+		//void crear();
+        TDAListaVector();
 		int fin();
 		int primero();
 		int siguiente(int direccion);
 		int anterior(int direccion);
 		bool vacia();
 		int recupera(int direccion);
-        int Longitud();
+		int longitud();
+		void inserta(int direccion,int elemento);
+		void suprime(int direccion);
+		void modifica(int direccion,int elemento);
+
+        void mostrar();
 };

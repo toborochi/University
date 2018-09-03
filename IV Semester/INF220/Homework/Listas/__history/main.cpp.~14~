@@ -30,7 +30,9 @@ int main()
 	TDAPilaVector PV;
 	TDAPilaPuntero PP;
 	TDAPilaMemoria PM;
+	TDAPilaLista PL;
 
+    PL.crear();
 
 
 

@@ -41,7 +41,7 @@
         <IncludePath>..\Simulando la Memoria\;C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\;C:\GitHub\University\IV Semester\INF220\Homework\Listas\;$(IncludePath)</IncludePath>
         <_TCHARMapping>char</_TCHARMapping>
         <ILINK_LibraryPath>..\Simulando la Memoria\;C:\GitHub\University\IV Semester\INF220\Homework\Simulando la Memoria\;C:\GitHub\University\IV Semester\INF220\Homework\Listas\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
-        <SanitizedProjectName>Project2</SanitizedProjectName>
+        <SanitizedProjectName>Estructuras</SanitizedProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <PackageImports>appanalytics;bcbsmp;bindcomp;bindcompfmx;bindcompvcl;bindengine;dbrtl;dsnap;fmx;fmxase;fmxdae;fmxobj;IndyCore;IndyProtocols;IndySystem;rtl;svn;tethering;vcl;vclactnband;vcldb;vcldsnap;vclimg;VclSmp;vcltouch;vclwinx;vclx;xmlrtl;$(PackageImports)</PackageImports>
@@ -78,28 +78,51 @@
         <TASM_Debugging>None</TASM_Debugging>
     </PropertyGroup>
     <ItemGroup>
-        <CppCompile Include="File3.cpp">
-            <BuildOrder>1</BuildOrder>
-        </CppCompile>
-        <PCHCompile Include="Project2PCH1.h">
+        <PCHCompile Include="EstructurasPCH1.h">
             <BuildOrder>0</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
+        <CppCompile Include="main.cpp">
+            <BuildOrder>1</BuildOrder>
+        </CppCompile>
         <CppCompile Include="SMemoria.cpp">
             <DependentOn>SMemoria.h</DependentOn>
             <BuildOrder>3</BuildOrder>
         </CppCompile>
         <CppCompile Include="TDAListaMemoria.cpp">
+            <VirtualFolder>{7242499F-4DB5-4E17-BB34-009128FFD899}</VirtualFolder>
             <DependentOn>TDAListaMemoria.h</DependentOn>
             <BuildOrder>5</BuildOrder>
         </CppCompile>
         <CppCompile Include="TDAListaPuntero.cpp">
+            <VirtualFolder>{7242499F-4DB5-4E17-BB34-009128FFD899}</VirtualFolder>
             <DependentOn>TDAListaPuntero.h</DependentOn>
             <BuildOrder>5</BuildOrder>
         </CppCompile>
         <CppCompile Include="TDAListaVector.cpp">
+            <VirtualFolder>{7242499F-4DB5-4E17-BB34-009128FFD899}</VirtualFolder>
             <DependentOn>TDAListaVector.h</DependentOn>
             <BuildOrder>3</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="TDAPilaLista.cpp">
+            <VirtualFolder>{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}</VirtualFolder>
+            <DependentOn>TDAPilaLista.h</DependentOn>
+            <BuildOrder>9</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="TDAPilaMemoria.cpp">
+            <VirtualFolder>{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}</VirtualFolder>
+            <DependentOn>TDAPilaMemoria.h</DependentOn>
+            <BuildOrder>8</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="TDAPilaPuntero.cpp">
+            <VirtualFolder>{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}</VirtualFolder>
+            <DependentOn>TDAPilaPuntero.h</DependentOn>
+            <BuildOrder>7</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="TDAPilaVector.cpp">
+            <VirtualFolder>{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}</VirtualFolder>
+            <DependentOn>TDAPilaVector.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
         </CppCompile>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
@@ -124,6 +147,10 @@
                     <ProjectProperties Name="VerifyPackages">True</ProjectProperties>
                     <ProjectProperties Name="IndexFiles">False</ProjectProperties>
                 </ProjectProperties>
+                <VFOLDERS>
+                    <VFOLDER ID="{7242499F-4DB5-4E17-BB34-009128FFD899}" name="Listas"/>
+                    <VFOLDER ID="{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}" name="Pilas"/>
+                </VFOLDERS>
             </CPlusPlusBuilder.Personality>
             <Platforms>
                 <Platform value="Win32">True</Platform>
