@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAPilaVectorH
+#define TDAPilaVectorH
+//---------------------------------------------------------------------------
+#endif
+
+
+
+class TDAPilaVector
+{
+
+	private:
+        static const int max = 100;
+
+	public:
+		int elementos[max];
+		int tope;
+
+		void Crear();
+};
