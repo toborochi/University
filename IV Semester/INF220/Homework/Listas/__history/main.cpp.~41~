@@ -20,10 +20,10 @@
  Listas--------------
 	Lista Puntero: OK
 	Lista Vector:  OK
-	Lista Memoria: OK
+	Lista Memoria: Revisar
  Pilas---------------
 	Pila Vector:   OK
-	Pila Puntero:  OK
+	Pila Puntero:  Revisar
 	Pila Memoria:  OK
 	Pila Lista:    OK
 */

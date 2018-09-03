@@ -13,12 +13,27 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAPilaVector.h"
+#include "TDAListaPuntero.h"
+
+
+/*
+ Listas--------------
+	Lista Puntero: OK
+	Lista Vector:  OK
+	Lista Memoria: Revisar
+ Pilas---------------
+	Pila Vector:   OK
+	Pila Puntero:  Revisar
+	Pila Memoria:  OK
+	Pila Lista:    OK
+*/
 
 using namespace std;
 
 int main()
 {
+	TDAListaPuntero LP;
+
 	getch();
 	return 0;
 }

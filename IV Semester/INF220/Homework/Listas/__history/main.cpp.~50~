@@ -13,21 +13,33 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAPilaVector.h"
+#include "TDAListaPuntero.h"
 
 
 /*
  Listas--------------
 	Lista Puntero: OK
 	Lista Vector:  OK
-	Lista Memoria: OK
-
+	Lista Memoria: Revisar
+ Pilas---------------
+	Pila Vector:   OK
+	Pila Puntero:  Revisar
+	Pila Memoria:  OK
+	Pila Lista:    OK
 */
 
 using namespace std;
 
 int main()
 {
+	TDAListaPuntero LP;
+	LP.crear();
+	LP.insertar(LP.primero(),45);
+	LP.insertar(LP.primero(),123);
+    LP.insertar(LP.fin(),555);
+
+    LP.mostrar();
+
 	getch();
 	return 0;
 }

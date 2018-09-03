@@ -13,7 +13,7 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAPilaVector.h"
+#include "TDAListaPuntero.h"
 
 
 /*

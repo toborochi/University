@@ -9,7 +9,7 @@
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 
-TDAListaPuntero::TDAListaPuntero()
+void TDAListaPuntero::crear()
 {
 	Longitud = 0;
     PtrElementos = NULL;

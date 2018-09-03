@@ -13,7 +13,7 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAPilaVector.h"
+#include "TDAListaPuntero.h"
 
 
 /*
@@ -23,7 +23,7 @@
 	Lista Memoria: Revisar
  Pilas---------------
 	Pila Vector:   OK
-	Pila Puntero:  OK
+	Pila Puntero:  Revisar
 	Pila Memoria:  OK
 	Pila Lista:    OK
 */
@@ -32,6 +32,11 @@ using namespace std;
 
 int main()
 {
+	TDAListaPuntero LP;
+	LP.crear();
+	LP.insertar(LP.primero(),45);
+    cout<< LP.recupera(LP.primero()) <<endl;
+
 	getch();
 	return 0;
 }

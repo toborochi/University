@@ -24,7 +24,7 @@ class TDAListaPuntero
 
 		// Metodos
         // Constructor
-		TDAListaPuntero();
+		void crear();
 
 
 		bool vacia();
