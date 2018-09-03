@@ -29,8 +29,6 @@ int main()
 	int x;
 	PL.sacar(x);
 
-	cout<< PL.cima()<<endl;
-	PL.sacar(x);
     cout<< PL.cima()<<endl;
 
 	getch();

@@ -1,0 +1,34 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAListaVectorH
+#define TDAListaVectorH
+//---------------------------------------------------------------------------
+#endif
+
+
+
+
+class TDAListaVector
+{
+	private:
+        const int Max;
+	public:
+
+        int Elementos[Max];
+		int Longitud;
+
+		//void crear();
+        TDAListaVector();
+		int fin();
+		int primero();
+		int siguiente(int direccion);
+		int anterior(int direccion);
+		bool vacia();
+		int recupera(int direccion);
+		int longitud();
+		void inserta(int direccion,int elemento);
+		void suprime(int direccion);
+		void modifica(int direccion,int elemento);
+
+        void mostrar();
+};

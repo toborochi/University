@@ -39,7 +39,6 @@ class TDAListaPuntero
 
 		void insertar(NodoP *posicion,int elemento);
 		void modifica(NodoP *direccion, int elemento);
-        void suprime(NodoP *direccion);
 
         // Metodos Propios
         void mostrar();

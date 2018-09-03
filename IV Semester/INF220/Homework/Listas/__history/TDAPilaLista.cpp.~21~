@@ -23,12 +23,3 @@ void TDAPilaLista::sacar(int &elemento)
     L.suprime(L.primero());
 }
 
-bool TDAPilaLista::vacia()
-{
-    return (L.vacia());
-}
-
-int TDAPilaLista::cima()
-{
-    return L.recupera(L.primero());
-}

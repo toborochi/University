@@ -18,8 +18,7 @@ class TDAPilaLista
         void crear();
 		void meter(int elemento);
 		void sacar(int &elemento);
-		bool vacia();
-        int cima();
+        bool vacia();
 
 };
 

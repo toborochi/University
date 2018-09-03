@@ -30,5 +30,5 @@ bool TDAPilaLista::vacia()
 
 int TDAPilaLista::cima()
 {
-    return L.recupera(L.primero());
+    return L.recupera(L.fin())
 }

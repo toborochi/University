@@ -19,19 +19,17 @@ using namespace std;
 
 int main()
 {
+
+	TDAPilaVector PV;
+	TDAPilaPuntero PP;
+	TDAPilaMemoria PM;
     TDAPilaLista PL;
 
-	PL.crear();
-	PL.meter(5), PL.meter(45), PL.meter(123);
 
-	cout<< PL.cima() <<endl;
 
-	int x;
-	PL.sacar(x);
 
-	cout<< PL.cima()<<endl;
-	PL.sacar(x);
-    cout<< PL.cima()<<endl;
+
+
 
 	getch();
 	return 0;

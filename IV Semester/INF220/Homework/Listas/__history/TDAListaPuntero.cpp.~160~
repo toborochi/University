@@ -169,8 +169,6 @@ void TDAListaPuntero::suprime(NodoP *direccion)
 	}else
 	{
 		NodoP *ant = anterior(direccion);
-		ant->Sig = siguiente(direccion);
-		delete[] direccion;
-	}
-    Longitud--;
+        ant->Sig = siguiente(direccion);
+    }
 }

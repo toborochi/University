@@ -19,8 +19,8 @@ void TDAPilaLista::meter(int elemento)
 
 void TDAPilaLista::sacar(int &elemento)
 {
-	elemento = L.recupera(L.primero());
-    L.suprime(L.primero());
+	L.recupera(L.primero());
+    L.suprime(elemento);
 }
 
 bool TDAPilaLista::vacia()
