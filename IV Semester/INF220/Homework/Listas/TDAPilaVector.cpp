@@ -2,12 +2,13 @@
 
 #pragma hdrstop
 
+#include <iostream>
 #include "TDAPilaVector.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 
 
-void TDAPilaVector::Crear()
+void TDAPilaVector::crear()
 {
 	tope = 0;
 }
@@ -37,4 +38,12 @@ void TDAPilaVector::sacar(int &elemento)
         throw("Si seras mamon...");
     }
 
+}
+
+void TDAPilaVector::imprimir()
+{
+	for(int i=tope;i>=1;i--)
+	{
+        std::cout<< elementos[i] << std::endl;
+    }
 }

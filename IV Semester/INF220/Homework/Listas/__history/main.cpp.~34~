@@ -1,0 +1,25 @@
+/*////////////////////////////////////////////////////////////////////////////
+	Tarea #3
+	Docente: Mario Lopez Winnipeg
+	U.A.G.R.M.
+	Facultad  de Ingenieria en Ciencias de la Computacion y Telecomunicaciones
+	Leonardo Anez Vladimirovna
+*/////////////////////////////////////////////////////////////////////////////
+
+#include <iostream.h>
+#include <conio.h>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <cstdlib>
+
+#include "TDAPilaVector.h"
+
+using namespace std;
+
+int main()
+{
+	getch();
+	return 0;
+}
+

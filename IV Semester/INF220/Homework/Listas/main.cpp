@@ -13,26 +13,25 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAPilaLista.h"
+#include "TDAPilaVector.h"
+
+
+/*
+ Listas--------------
+	Lista Puntero: OK
+	Lista Vector:  OK
+	Lista Memoria: Revisar
+ Pilas---------------
+	Pila Vector:   OK
+	Pila Puntero:  Revisar
+	Pila Memoria:  OK
+	Pila Lista:    OK
+*/
 
 using namespace std;
 
 int main()
 {
-    TDAPilaLista PL;
-
-	PL.crear();
-	PL.meter(5), PL.meter(45), PL.meter(123);
-
-	cout<< PL.cima() <<endl;
-
-	int x;
-	PL.sacar(x);
-
-	cout<< PL.cima()<<endl;
-	PL.sacar(x);
-    cout<< PL.cima()<<endl;
-
 	getch();
 	return 0;
 }

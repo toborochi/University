@@ -18,8 +18,11 @@ class TDAPilaLista
         void crear();
 		void meter(int elemento);
 		void sacar(int &elemento);
+		void imprimir(TDAPilaLista &Pila);
+
 		bool vacia();
-        int cima();
+
+		int cima();
 
 };
 

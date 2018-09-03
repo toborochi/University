@@ -15,8 +15,9 @@ class TDAPilaVector
          int elementos[TDAPilaVector::max];
 		 int tope;
 	public:
-		void Crear();
+		void crear();
 		bool vacia();
 		void meter(int elemento);
-        void sacar(int &elemento);
+		void sacar(int &elemento);
+        void imprimir();
 };
