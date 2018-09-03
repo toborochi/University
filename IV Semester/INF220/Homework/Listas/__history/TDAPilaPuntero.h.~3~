@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAPilaPunteroH
+#define TDAPilaPunteroH
+//---------------------------------------------------------------------------
+#endif
+
+ struct Nodo
+  {
+	int Dato;
+    NodoP *Sig;
+  };
+
+class TDAPilaPuntero
+{
+
+
+};

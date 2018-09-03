@@ -46,8 +46,6 @@ int main()
 {
 
 	TDAPilaVector PV;
-	TDAPilaPuntero PP;
-
 
 
 

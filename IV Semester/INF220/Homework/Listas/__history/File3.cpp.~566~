@@ -48,6 +48,10 @@ int main()
 	TDAPilaVector PV;
 	TDAPilaPuntero PP;
 
+    PP.crear();
+	cout<<PP.vacia()<<endl;
+    PP.meter(45);
+
 
 
 

@@ -46,11 +46,6 @@ int main()
 
 	TDAPilaVector PV;
 
-	PV.Crear();
-	PV.meter(5);
-
-	int x;
-    PV.sacar(x);
 
 
 	getch();

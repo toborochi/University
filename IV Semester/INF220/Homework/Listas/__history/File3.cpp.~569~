@@ -18,6 +18,7 @@
 #include "TDAListaMemoria.h"
 #include "TDAListaPuntero.h"
 #include "TDAPilaVector.h"
+#include "TDAPilaPuntero.h"
 
 using namespace std;
 
@@ -45,11 +46,16 @@ int main()
 {
 
 	TDAPilaVector PV;
+	TDAPilaPuntero PP;
 
-	PV.Crear();
-	PV.meter(5);
+    PP.crear();
+	cout<<PP.vacia()<<endl;
+	PP.meter(45);
+	cout<<PP.cima()<<endl;
+	PP.meter(33);
+    cout<<PP.cima()<<endl;
 
-	int x;
+
 
 
 	getch();
