@@ -3,6 +3,10 @@
 #pragma hdrstop
 
 #include <iostream>
+#include <math.h>
+#include <string>
+#include <cstdlib>
+
 #include "TDAPilaLista.h"
 
 //---------------------------------------------------------------------------
@@ -34,21 +38,43 @@ int TDAPilaLista::cima()
     return L.recupera(L.primero());
 }
 
+
+void espaciosP(int n)
+{
+	int top = 4;
+	int digitos = log10(float(abs(n)))+1;
+
+    if(n<=0)digitos++;
+
+	for(int i=0;i<top-digitos;++i)std::cout<<" ";
+}
+
 void TDAPilaLista::imprimir(TDAPilaLista &Pila)
 {
-    int e;
-	 TDAPilaLista aux;
-	 while(!Pila.vacia())
-	 {
-		Pila.sacar(e);
-		aux.meter(e);
-        std::cout<< e << std::endl;
-	 }
 
-	 while(!aux.vacia())
-	 {
-		 aux.sacar(e);
-         Pila.meter(e);
-     }
+    TDAPilaLista aux;
+    int i = 0;
+
+	std::cout << "+----+" << std::endl;
+	while(!Pila.vacia())
+	{
+		int x;
+		Pila.sacar(x);
+
+		std::cout <<"|";
+        espaciosP(x);
+		std::cout<< x << "|" << std::endl;
+		std::cout << "+----+"  << std::endl;
+		aux.meter(x);
+        ++i;
+	}
+
+	while(i>0)
+	{
+		int x;
+		aux.sacar(x);
+		Pila.meter(x);
+		i--;
+	}
 }
 

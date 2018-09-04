@@ -62,11 +62,12 @@ int main()
                 PL.crear();
 			break;
 			case 2:
-				cout<< "Ingrese el Elemento a Insertar: ";
+				cout<< "Poner en la Pila: ";
 				cin>>dato;
                 PL.meter(dato);
 			break;
 			case 3:
+				cout<< "Sacar: ";
 				int x;
 				PL.sacar(x);
 				cout<<"Elemento: "<<x<<endl;

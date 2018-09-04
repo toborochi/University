@@ -67,6 +67,7 @@ int main()
                 PL.meter(dato);
 			break;
 			case 3:
+				cout<< "Elemento del Tope: ";
 				int x;
 				PL.sacar(x);
 				cout<<"Elemento: "<<x<<endl;

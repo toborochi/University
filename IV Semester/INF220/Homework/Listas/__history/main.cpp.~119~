@@ -15,12 +15,11 @@
 
 #include "TDAPilaLista.h"
 
-
 /*
  Listas--------------
 	Lista Puntero: OK
 	Lista Vector:  OK
-	Lista Memoria: Revisar
+	Lista Memoria: OK
  Pilas---------------
 	Pila Vector:   OK
 	Pila Puntero:  OK
@@ -30,14 +29,53 @@
 
 using namespace std;
 
+void MostrarOpciones()
+{
+	cout<<"[1] Crear\n";
+	cout<<"[2] Meter\n";
+	cout<<"[3] Cima\n";
+	cout<<"[4] Sacar\n";
+    cout<<"Opcion: ";
+}
+
 int main()
 {
+	int opcion,dato;
+
 	TDAPilaLista PL;
-	PL.crear();
-	PL.meter(123);
-    cout << PL.cima() <<endl;
 
+	do
+	{
+		// Refresh de la Consola
+		system("cls");
 
+		// Menu de Opciones
+		MostrarOpciones();
+
+		// Opcion del Menu
+		cin>>opcion;
+
+		switch(opcion)
+		{
+			case 1:
+                PL.crear();
+			break;
+			case 2:
+				cout<< "Poner en la Pila: ";
+				cin>>dato;
+			break;
+			case 3:
+				cout<< "Sacar: ";
+			break;
+            case 4:
+				cout<< "Imprimir: ";
+			break;
+			default:
+			break;
+		}
+        getch();
+
+	}while(opcion!=5);
 	getch();
 	return 0;
 }

@@ -33,9 +33,8 @@ void MostrarOpciones()
 {
 	cout<<"[1] Crear\n";
 	cout<<"[2] Meter\n";
-	cout<<"[3] Sacar\n";
-	cout<<"[4] Imprimir\n";
-    cout<<"[5] Salir\n";
+	cout<<"[3] Cima\n";
+	cout<<"[4] Sacar\n";
     cout<<"Opcion: ";
 }
 
@@ -62,17 +61,18 @@ int main()
                 PL.crear();
 			break;
 			case 2:
-				cout<< "Ingrese el Elemento a Insertar: ";
+				cout<< "Poner en la Pila: ";
 				cin>>dato;
                 PL.meter(dato);
 			break;
 			case 3:
+				cout<< "Sacar: ";
 				int x;
 				PL.sacar(x);
-				cout<<"Elemento: "<<x<<endl;
-
+                cout<<"Elemento: "<<x<<endl;
 			break;
             case 4:
+				cout<< "Imprimir: ";
                 PL.imprimir(PL);
 			break;
 			default:
