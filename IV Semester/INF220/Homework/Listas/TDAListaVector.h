@@ -17,7 +17,7 @@ class TDAListaVector
 		int Longitud;
 
 		//void crear();
-        TDAListaVector();
+        void crear();
 		int fin();
 		int primero();
 		int siguiente(int direccion);

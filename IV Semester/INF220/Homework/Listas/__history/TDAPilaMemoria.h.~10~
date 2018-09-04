@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAPilaMemoriaH
+#define TDAPilaMemoriaH
+//---------------------------------------------------------------------------
+#endif
+
+#include "SMemoria.h"
+
+SMemoria m;
+
+class TDAPilaMemoria
+{
+	private:
+		int Tope;
+	public:
+		void crear();
+		bool vacia();
+		int cima();
+		void meter(int elemento);
+        void imprimir();
+};

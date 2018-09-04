@@ -20,6 +20,7 @@ class TDAPilaPuntero
         bool vacia();
 		int cima();
 		void meter(int elemento);
-        void sacar();
+		int sacar();
+        void imprimir(TDAPilaPuntero &Pila);
 
 };

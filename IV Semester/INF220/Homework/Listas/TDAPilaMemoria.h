@@ -17,5 +17,7 @@ class TDAPilaMemoria
 		void crear();
 		bool vacia();
 		int cima();
-        void meter(int elemento);
+		void meter(int elemento);
+		void sacar();
+        void imprimir();
 };

@@ -13,17 +13,14 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAListaPuntero.h"
-
-
 /*
  Listas--------------
 	Lista Puntero: OK
 	Lista Vector:  OK
-	Lista Memoria: Revisar
+	Lista Memoria: OK
  Pilas---------------
 	Pila Vector:   OK
-	Pila Puntero:  Revisar
+	Pila Puntero:  OK
 	Pila Memoria:  OK
 	Pila Lista:    OK
 */

@@ -8,7 +8,7 @@
 #pragma package(smart_init)
 
 
-TDAListaVector::TDAListaVector()
+void TDAListaVector::crear()
 {
     Longitud = 0;
 }

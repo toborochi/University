@@ -46,3 +46,40 @@ void TDAPilaPuntero::meter(int elemento)
 
 }
 
+
+int TDAPilaPuntero::sacar()
+{
+	if(vacia())
+	{
+		throw("Error...");
+	}else
+	{
+		Nodo *aux = Tope;
+		Tope = Tope->sig;
+		int x = aux->elemento;
+		delete aux;
+		return x;
+    }
+}
+
+void TDAPilaPuntero::imprimir(TDAPilaPuntero &Pila)
+{
+	TDAPilaPuntero aux;
+    int i = 0;
+
+	std::cout << "*" << std::endl;
+	while(!Pila.vacia())
+	{
+		int x = Pila.sacar();
+		std::cout << x << std::endl;
+		aux.meter(x);
+        ++i;
+	}
+    std::cout << "*" << std::endl;
+	while(i>0)
+	{
+        Pila.meter(aux.sacar());
+		i--;
+    }
+
+}

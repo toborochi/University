@@ -40,3 +40,14 @@ void TDAPilaMemoria::meter(int elemento)
         throw("Error...");
     }
 }
+
+void TDAPilaMemoria::sacar()
+{
+	if(vacia())
+	{
+        throw("Error...");
+	}else
+	{
+        // Implementar
+    }
+}
