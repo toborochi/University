@@ -76,20 +76,20 @@ _main:
 
 ;-----------------------saltos3
 
-		mov ecx,10
-		xor al,al
-		mov ebx,arreglo ;Copia la direccion del primer elemento al que apunta el arreglo [>1,2,3,4,5,...,10]
-ciclo:		add al,[ebx]
-			inc ebx
-			dec ecx
-			jnz ciclo
-		mov [suma],al
+;		mov ecx,10
+;		xor al,al
+;		mov ebx,arreglo ;Copia la direccion del primer elemento al que apunta el arreglo [>1,2,3,4,5,...,10]
+;ciclo:		add al,[ebx]
+;			inc ebx
+;			dec ecx
+;			jnz ciclo
+;		mov [suma],al
 ;-----------------------saltos3 (BASE+INDICE)
 		mov ecx,10
 		xor al,al
 		mov ebx,arreglo
 		mov edx,0
-ciclo1:		add al,[ebx+edx]
+ciclo1:		add al,[ebx+edx*1]
 			inc edx
 			dec ecx
 		jnz ciclo1
