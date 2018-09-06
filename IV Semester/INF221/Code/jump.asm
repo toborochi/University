@@ -14,11 +14,15 @@ segment .data
 ;aqui se declaran variables inicializadas
 
 arreglo DB 1,2,3,4,5,6,7,8,9,10
-		
+	
+a dw 1
+b dw 1
+	
 segment .bss
 ;aqui van las variables declaradas pero sin inicializar
 
 suma resw 1
+c resw 1 
 
 segment .text 
 global _main 					
@@ -84,17 +88,29 @@ _main:
 ;			dec ecx
 ;			jnz ciclo
 ;		mov [suma],al
-;-----------------------saltos3 (BASE+INDICE)
-		mov ecx,10
-		xor al,al
-		mov ebx,arreglo
-		mov edx,0
-ciclo1:		add al,[ebx+edx*1]
-			inc edx
-			dec ecx
-		jnz ciclo1
-	mov[suma],al
+;-----------------------saltos4 (BASE+INDICE)
+;		mov ecx,10
+;		xor al,al
+;		mov ebx,arreglo
+;		mov edx,0
+;ciclo1:		add al,[ebx+edx*1]
+;			inc edx
+;			dec ecx
+;		jnz ciclo1
+;	mov[suma],al
+;-----------------------saltos5
 
+	mov eax,[a]
+	mov ebx,[b]
+	sub eax,ebx
+	jnz noigual ;jne=jnz
+		mov dword[c],1
+		jmp fin
+noigual:
+		mov dword[c],2
+fin:
+	
+	
 		
 ret
 ;---------------------------------------
