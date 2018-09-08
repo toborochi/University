@@ -1,0 +1,151 @@
+\section{Definición Clásica de Probabilidad}
+$$P(A)=\dfrac{n(A)}{n(S)}=\dfrac{\textrm{\# de casos favorables del Evento $A$}}{\textrm{\# total de casos posibles}}$$
+\subsection{Probabilidad Condicionada}
+Sean $A$ y $B$ eventos tal que $P(B)>0$ la probabilidad condicional de que ocurra $A$ dado que ha ocurrido el evento $B$ se denota por: $P(A/B)$. Se define como:
+$$P(A/B)=\dfrac{P(A\cap B)}{P(B)}$$
+Si $B$ es un evento tal que $P(B)>0$, entonces $P(\bullet/B)$ satisface los siguientes axiomas:
+\begin{enumerate}[label=(\roman*)]
+\item $0\leq P(A/B)\leq 1$
+\item $P(S/B)=1$
+\item $P\left( \bigcup\limits_{i=1}^{n} A_i/B\right)=
+\displaystyle\sum_{i=1}^{n}P(A_i/B) \hspace{1cm}A_i \textrm{son eventos mutuamente excluyentes}$
+\end{enumerate}
+\subsubsection{Propiedades}
+Si $B$ es un evento tal que $P(B)>0$, entonces $P(\bullet/B)$ tiene las siguientes propiedades:\blfootnote{En $P(\bullet/B)$ el símbolo $\bullet$ significa \textit{cualesquiera}}
+\begin{enumerate}
+\item $P(\phi/B)=0$
+\item $P(A^c/B)=1-P(A/B)\hspace{0.5cm} \vee \hspace{0.5cm} P(A/B)=1-P(A^c/B) $
+\item $P((A\cup C)/B)=P(A/B)+P(C/B)-P((A\cap C)/B)$
+\item $A\in C \Rightarrow P(A/B)\leq P(C/B)$
+\end{enumerate}
+\subsection{Eventos Dependientes}
+Se dice que los eventos $A$ y $B$ son estadísticamente dependientes, si:
+
+\begin{equation*}
+\begin{rcases}
+  P(A\cap B)=P(B)\cdot P(A/B)\\
+  P(A\cap B)=P(A)\cdot P(B/A)
+\end{rcases}
+\text{Regla General de la Multiplicación}
+\end{equation*}
+\subsection{Eventos Independientes}
+Se dice que los eventos $A$ y $B$ son estadísticamente independientes, si:
+$$P(A\cap B)=P(A)\cdot P(B)$$
+\subsubsection{Observaciones}
+\begin{enumerate}
+\item $\begin{rcases}
+  P(A)\\
+  P(B)
+\end{rcases} \text{Probabilidades Marginales}$
+\item $\begin{rcases}
+  P(A/B)\\
+  P(B/A)
+\end{rcases} \text{Probabilidades Condicionales}$
+\item $P(A/B)\neq P(B/A)$
+\item $P(A \cap B) \hspace{0.5cm} \text{Probabilidades Condicionales}$
+\item Decir \textit{'Eventos Independientes'} no es lo mismo que decir \textit{'Evento Mutuamente Excluyente'}.
+\end{enumerate}
+\subsubsection{Teorema}
+Si $A$ y $B$ son eventos mutuamente independientes, entonces:
+\begin{enumerate}
+\item $P(A/B)=P(A)$
+\item $P(B/A)=P(B)$
+\item $A^c$ y $B$ son independientes.
+\item $A$ y $B^c$ son independientes.
+\item $A^c$ y $B^c$ son independientes.
+\end{enumerate}
+\subsubsection{Demostración de los Teoremas}
+\begin{itemize}
+\item Demostración de $1.$ :
+\begin{align*}
+P(A/B) &\varstackrel{1}{=} \dfrac{P(A\cap B)}{P(B)} \\
+&\varstackrel{2}{=} \dfrac{P(A)\cdot P(B)}{P(B)} \\
+&\varstackrel{3}{=} P(A)
+\end{align*}
+\item Demostración de $2.$ :
+\begin{align*}
+P(B/A) &\varstackrel{1}{=} \dfrac{P(B\cap A)}{P(A)} \\
+&\varstackrel{2}{=} \dfrac{P(A)\cdot P(B)}{P(A)}  \\
+&\varstackrel{3}{=} P(B)
+\end{align*}
+\item Demostración de $3.$ :
+$$P(A^c \cap B) = P(A^c)\cdot P(B)$$
+Formamos el siguiente sistema:
+$$
+\begin{cases} 
+B = (A\cap B) \cup (A^c \cap B)\\
+\phi = (A\cap B) \cap (A^c \cap B)
+\end{cases}
+$$
+Ya que son excluyentes:
+$$P(B)=P(A\cap B)+P(A^c \cap B)$$
+Despejamos $P(A^c \cap B)$ ya que es lo que nos interesa demostrar:
+$$P(A^c \cap B)=P(B)-P(A\cap B)$$
+Como $A$ y $B$ son independientes, según la hipótesis, tenemos que $P(A\cap B)=P(A)P(B)$\\
+Reemplazando en el anterior paso:
+\begin{align*}
+P(A^c \cap B) &\varstackrel{1}{=} P(B)-P(A)P(B) \\
+&\varstackrel{2}{=} P(B)\cdot [1-P(A)]  \\
+&\varstackrel{3}{=} P(B)\cdot P(A^c)
+\end{align*}
+Con esto que demostrado $3$.
+\item Demostración de $4.$ :
+$$P(A \cap B^c) = P(A)\cdot P(B^c)$$
+Formamos el siguiente sistema:
+$$
+\begin{cases} 
+A = (A\cap B) \cup (A \cap B^c)\\
+\phi = (A\cap B) \cap (A\cap B^c)
+\end{cases}
+$$
+Ya que son excluyentes:
+$$P(A)=P(A\cap B^c)+P(A \cap B)$$
+Despejamos $P(A \cap B^c)$ ya que es lo que nos interesa demostrar:
+$$P(A \cap B^c)=P(A)-P(A\cap B)$$
+Como $A$ y $B$ son independientes, según la hipótesis, tenemos que $P(A\cap B)=P(A)P(B)$\\
+Reemplazando en el anterior paso:
+\begin{align*}
+P(A \cap B^c) &\varstackrel{1}{=} P(A)-P(A)P(B) \\
+&\varstackrel{2}{=} P(A)\cdot [1-P(B)]  \\
+&\varstackrel{3}{=} P(A)\cdot P(B^c)
+\end{align*}
+Con esto queda demostrado $4$.
+\item Demostración de $5.$ :
+En este punto, lo que tratamos de demostrar es: 
+$$P(A^c \cap B^c)=P(A^c)P(B^c)$$
+Comenzamos aplicando D'Morgan:
+\begin{align*}
+P(A^c \cap B^c) &\varstackrel{1}{=} P[(A\cup B)^c] \\
+&\varstackrel{2}{=} 1-P(A\cup B) \\
+&\varstackrel{3}{=} 1-[P(A)+P(B)-P(A\cap B)]\\
+&\varstackrel{4}{=} 1-P(A)-P(B)+P(A\cap B) \\
+&\varstackrel{5}{=} [1-P(A)]-[P(B)-P(A\cap B)]\\ 
+&\varstackrel{6}{=} [1-P(A)]-[P(B)-P(A)P(B)]\\
+&\varstackrel{7}{=} [1-P(A)]-P(B)[1-P(A)]\\
+&\varstackrel{8}{=} [1-P(A)][1-P(B)]\\
+&\varstackrel{9}{=} P(A^c)P(B^c)
+\end{align*}
+Con esto queda demostrado $5$.
+\end{itemize}
+%$\mathscr{L}$
+\subsection{Teorema de la Probabilidad Total}
+También llamada \textit{Regla de Eliminación}. Si los eventos mutuamente excluyentes:
+$$B_1,B_2,B_3,\ldots,B_n$$
+Constituyen una partición del espacio muestral $S$, de tal manera que $\forall i\in I,P(B_i)>0$. Entonces para cualquier evento $A$ de $S$ se cumple:
+$$P(A)=\displaystyle\sum_{i=1}^{n} P(B_i)P(A/B_i)$$
+\subsubsection{Demostración}
+\begin{align*}
+P(A) &\varstackrel{1}{=} [(B_1\cap A)\cup (B_2\cap A)\cup \ldots \cup (B_n\cap A)] \\
+&\varstackrel{2}{=} P(B_1\cap A)+P(B_2\cap A)+ \ldots + P(B_n\cap A) \\
+&\varstackrel{3}{=} \displaystyle\sum_{i=1}^{n}(B_i \cap A) \\
+&\varstackrel{4}{=} \displaystyle\sum_{i=1}^{n} P(B_i)\cdot P(A/B_i) 
+\end{align*}
+\subsection{Teorema de Bayes}
+Si los eventos: $B_1,B_2,B_3,\ldots,B_n$ , constituyen una partición del espacio muestral $S$, de tal modo que; $\forall i\in I,P(B_i)>0$, entonces para cualquier evento $A$ de $S$, tal que $P(A)>0$ se cumple:
+$$P(A)=\dfrac{P(B_r)P(A/B_r)}{\displaystyle\sum_{i=1}^{n} P(B_i)P(A/B_i)}$$
+\subsubsection{Demostración}
+\begin{align*}
+P(B_r/A) &\varstackrel{1}{=} \dfrac{P(B_r\cap A)}{P(A)} \\
+&\varstackrel{2}{=} \dfrac{P(B_r)P(A/B_r)}{P(A)}  \\
+&\varstackrel{3}{=} \dfrac{P(B_r)P(A/B_r)}{\displaystyle\sum_{i=1}^{n} P(B_i)P(A/B_i)}
+\end{align*}

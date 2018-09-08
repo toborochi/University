@@ -1,0 +1,102 @@
+\section{Distribución Bivariante}
+Cuando se observan 2 características conjuntamente surgen las estadísticas de 2 variables, entonces los resultados numéricos de las observaciones vienen dado por parejas, es decir de forma conjunta e inseparable. Las veces que se repite cada pareja de valores es la frecuencia absoluta conjunta.\\${ }$\\
+Paralelamente a los conceptos de frecuencia acumulada y relativa para distribuciones de una sola variable podrían también definirse los correspondientes o frecuencias acumuladas conjuntas y frecuencias relativas conjuntas.
+\subsection{Distribución de Frecuencias Absolutas Conjuntas}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+  \hline
+   & $y_{j-1}'-y_j'$ & $y_{0}'-y_1'$ & $y_{1}'-y_2'$ & $y_{2}'-y_3'$& $\dots$& $y_{q-1}'-y_q'$ & Totales \\[0.25cm] \hline
+  $x_{i-1}'-x_i'$ &\diagbox[innerwidth=2cm,height=1.2cm]{$x_i$}{$y_i$} & $y_1$   & $y_2$ & $y_3$ & $\ldots$ & $y_q$ & $\displaystyle\sum_{j=1}^{q}f_{ij}=f_{i.}$ \\ \hline
+  $x_{0}'-x_1'$ &$x_1$ & $f_{11}$& $f_{12}$ & $f_{13}$ & $\ldots$& $f_{1q}$ & $f_{1.}$\\ [0.25cm]\hline
+  $x_{1}'-x_2'$ &$x_2$ & $f_{21}$& $f_{22}$ & $f_{23}$ & $\ldots$& $f_{2q}$ & $f_{2.}$\\ [0.25cm]\hline
+  $x_{2}'-x_3'$ &$x_3$ & $f_{31}$& $f_{32}$ & $f_{33}$ & $\ldots$& $f_{3q}$ & $f_{3.}$\\ [0.25cm]\hline
+  $\vdots$ &$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$ & $\vdots$& $\vdots$ \\ [0.25cm]\hline
+  $x_{p-1}'-x_p'$ &$x_p$ & $f_{p1}$ & $f_{p2}$  & $f_{p3}$  & $\ldots$  & $f_{pq}$ & $f_{p.}$\\ [0.25cm] \hline
+  Totales &$\displaystyle\sum_{j=1}^{p}f_{ij}=f_{.j}$ & $f_{\textrm{.} 1}$ & $f_{\textrm{.} 2}$  & $f_{\textrm{.} 3}$  & $\ldots$  & $f_{.q}$ & $n=\displaystyle{\sum_{j=1}^{p}\sum_{i=1}^{q}} f_{ij}$\\ 
+  \hline
+\end{tabular}
+\end{center}
+\subsection{Distribución de Frecuencias Relativas Conjuntas}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+  \hline
+   & $y_{j-1}'-y_j'$ & $y_{0}'-y_1'$ & $y_{1}'-y_2'$ & $y_{2}'-y_3'$& $\dots$& $y_{q-1}'-y_q'$ & Totales \\[0.25cm] \hline
+  $x_{i-1}'-x_i'$ &\diagbox[innerwidth=2cm,height=1.2cm]{$x_i$}{$y_i$} & $y_1$   & $y_2$ & $y_3$ & $\ldots$ & $y_q$ & $\displaystyle\sum_{j=1}^{q}h_{ij}=h_{i.}$ \\ \hline
+  $x_{0}'-x_1'$ &$x_1$ & $h_{11}$& $h_{12}$ & $h_{13}$ & $\ldots$& $h_{1q}$ & $h_{1.}$\\ [0.25cm]\hline
+  $x_{1}'-x_2'$ &$x_2$ & $h_{21}$& $h_{22}$ & $h_{23}$ & $\ldots$& $h_{2q}$ & $h_{2.}$\\ [0.25cm]\hline
+  $x_{2}'-x_3'$ &$x_3$ & $h_{31}$& $h_{32}$ & $h_{33}$ & $\ldots$& $h_{3q}$ & $h_{3.}$\\ [0.25cm]\hline
+  $\vdots$ &$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$ & $\vdots$& $\vdots$ \\ [0.25cm]\hline
+  $x_{p-1}'-x_p'$ &$x_p$ & $h_{p1}$ & $h_{p2}$  & $h_{p3}$  & $\ldots$  & $h_{pq}$ & $h_{p.}$\\ [0.25cm] \hline
+  Totales &$\displaystyle\sum_{j=1}^{p}h_{ij}=h_{.j}$ & $h_{\textrm{.} 1}$ & $h_{\textrm{.} 2}$  & $h_{\textrm{.} 3}$  & $\ldots$  & $h_{.q}$ & $\displaystyle{\sum_{j=1}^{p}\sum_{i=1}^{q}} h_{ij}=1$\\ 
+  \hline
+\end{tabular}
+\end{center}
+\subsection{Distribución de Frecuencias Absolutas Acumuladas Conjuntas}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+   & $y_{j-1}'-y_j'$ & $y_{0}'-y_1'$ & $y_{1}'-y_2'$ & $y_{2}'-y_3'$& $\dots$& $y_{q-1}'-y_q'$ \\[0.25cm] \hline
+  $x_{i-1}'-x_i'$ &\diagbox[innerwidth=2cm,height=1.2cm]{$x_i$}{$y_i$} & $y_1$   & $y_2$ & $y_3$ & $\ldots$ & $y_q$ \\ \hline
+  $x_{0}'-x_1'$ &$x_1$ & $F_{11}$& $F_{12}$ & $F_{13}$ & $\ldots$& $F_{1q}$ \\ [0.25cm]\hline
+  $x_{1}'-x_2'$ &$x_2$ & $F_{21}$& $F_{22}$ & $F_{23}$ & $\ldots$& $F_{2q}$ \\ [0.25cm]\hline
+  $x_{2}'-x_3'$ &$x_3$ & $F_{31}$& $F_{32}$ & $F_{33}$ & $\ldots$& $F_{3q}$ \\ [0.25cm]\hline
+  $\vdots$ &$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$ & $\vdots$\\ [0.25cm]\hline
+  $x_{p-1}'-x_p'$ &$x_p$ & $F_{p1}$ & $F_{p2}$  & $F_{p3}$  & $\ldots$  & $F_{pq}=n$ \\ [0.25cm] 
+  \hline
+\end{tabular}
+\end{center}
+\subsection{Distribución de Frecuencias Relativa Acumuladas Conjuntas}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+   & $y_{j-1}'-y_j'$ & $y_{0}'-y_1'$ & $y_{1}'-y_2'$ & $y_{2}'-y_3'$& $\dots$& $y_{q-1}'-y_q'$ \\[0.25cm] \hline
+  $x_{i-1}'-x_i'$ &\diagbox[innerwidth=2cm,height=1.2cm]{$x_i$}{$y_i$} & $y_1$   & $y_2$ & $y_3$ & $\ldots$ & $y_q$ \\ \hline
+  $x_{0}'-x_1'$ &$x_1$ & $H_{11}$& $H_{12}$ & $H_{13}$ & $\ldots$& $H_{1q}$ \\ [0.25cm]\hline
+  $x_{1}'-x_2'$ &$x_2$ & $H_{21}$& $H_{22}$ & $H_{23}$ & $\ldots$& $H_{2q}$ \\ [0.25cm]\hline
+  $x_{2}'-x_3'$ &$x_3$ & $H_{31}$& $H_{32}$ & $H_{33}$ & $\ldots$& $H_{3q}$ \\ [0.25cm]\hline
+  $\vdots$ &$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$ & $\vdots$\\ [0.25cm]\hline
+  $x_{p-1}'-x_p'$ &$x_p$ & $H_{p1}$ & $H_{p2}$  & $H_{p3}$  & $\ldots$  & $H_{pq}=1$ \\ [0.25cm] 
+  \hline
+\end{tabular}
+\end{center}
+\subsection{Distribuciones Marginales}
+\begin{multicols}{2}
+\subsubsection{Distribución Marginal de $X$}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+$X$ & $f_{i.}$ & $h_{i.}$ \\ 
+\hline 
+$x_1$ & $f_{1.}$ & $h_{1.}$ \\ 
+\hline 
+$x_2$ & $f_{2.}$ & $h_{2.}$ \\ 
+\hline 
+$x_3$ & $f_{3.}$ & $h_{3.}$ \\ 
+\hline 
+$\vdots$ & $\vdots$ & $\vdots$ \\ 
+\hline 
+$x_p$ & $f_{p.}$ & $h_{p.}$ \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\columnbreak
+\subsubsection{Distribución Marginal de $Y$}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+$Y$ & $f_{.j}$ & $h_{\textrm{.} j}$ \\ 
+\hline 
+$y_1$ & $f_{\textrm{.} 1}$ & $h_{\textrm{.} 1}$ \\ 
+\hline 
+$y_2$ & $f_{\textrm{.} 2}$ & $h_{\textrm{.} 2}$ \\ 
+\hline 
+$y_3$ & $f_{\textrm{.} 3}$ & $h_{\textrm{.} 3}$ \\ 
+\hline 
+$\vdots$ & $\vdots$ & $\vdots$ \\ 
+\hline 
+$y_p$ & $f_{.p}$ & $h_{\textrm{.} q}$ \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{multicols}
+Son las distribuciones correspondientes a cada una de las filas o columnas de la tabla de doble entrada, si la variable $x$ toma $p$ valores y $y$ toma $q$ valores, entonces existen: $p+q$ distribuciones condicionadas.

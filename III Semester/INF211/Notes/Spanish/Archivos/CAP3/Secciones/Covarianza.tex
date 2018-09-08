@@ -1,0 +1,20 @@
+\section{Covarianza $(S_{xy})$}
+La Covarianza de la estadística de 2 variables se define como: La media aritmética de los productos de las desviaciones de cada una de las variables respecto a su media aritmética.
+\subsection{Cálculo}
+\subsubsection{Para datos Originales}
+$$S_{xy}=\dfrac{\displaystyle{\sum_{j=1}^{p}\sum_{i=1}^{q}}(x_i-\overline{x})(y_j-\overline{y}) }{n}$$
+\subsubsection{Para datos Agrupados}
+$$S_{xy}=\dfrac{\displaystyle{\sum_{j=1}^{p}\sum_{i=1}^{q}}(x_i-\overline{x})(y_j-\overline{y})f_{ij} }{n}$$
+\subsection{Propiedades}
+\begin{enumerate}
+\item $Cov(ax+b,cy+d)=ac Cov(x,y)$
+\item $V(x\pm y)=V(x)+[V(y)\pm 2Cov(x,y)]$
+\item $V(ax\pm by)=a^2V(x)+b^2V(y)\pm 2abCov(x,y)$
+\end{enumerate}
+\subsection{Interpretación}
+\begin{itemize}
+\item Si $S_{xy}>0$, entonces existe relación directa entre $x$ y $y$.
+\item Si $S_{xy}<0$, entonces existe relación inversa entre $x$ y $y$.
+\item Si $S_{xy}=0$, \textbf{no} existe relación entre $x$ y $y$ (no necesariamente independientes).
+\item $x$ y $y$ son independientes entonces $S_{xy}=0$
+\end{itemize}

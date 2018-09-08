@@ -1,0 +1,2 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Algebra de Boole}{5}{chapter.1}

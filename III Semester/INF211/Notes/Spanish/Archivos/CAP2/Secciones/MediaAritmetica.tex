@@ -1,0 +1,73 @@
+\section{Media Aritmetica Simple $(\overline{X})$} 
+\subsection{Cálculo}
+\subsubsection{Para Datos no Agrupados (Originales)}
+Sean $x_1,x_2,x_3,\ldots ,x_n$ valores de la variable $X$. La media Arítmetica simple se denota por $M(x),\theta$ o $\bar{X}$ está dada por:
+$$M(x)=\bar{X}=\dfrac{\displaystyle\sum_{i=1}^{n}x_i}{n}$$
+\subsubsection{Para Agrupados}
+$$M(y)=\bar{Y}=\dfrac{\displaystyle\sum_{i=1}^{n}y_i\cdot f_i}{n}$$
+\subsection{Propiedades}
+\begin{enumerate}
+\item En todas las distribuciones de frecuencias, la sumatoria simple de las desviaciones de los valores de la variable respecto a la media aritmética es 0.
+\begin{multicols}{2}
+\textbf{Datos Originales} 
+\begin{center}
+$\displaystyle\sum_{i=1}^{n}(x_i-\bar{x})=0$
+\end{center}
+\columnbreak
+\textbf{Datos Agrupados}
+$$\displaystyle\sum_{i=1}^{n}(y_i-\bar{y})f_i=0$$
+\end{multicols}
+\item En toda distribución, la sumatoria de los cuadrados de las desviaciones de los valores de las variables, respecto de la media es mínima
+\begin{multicols}{2}
+\textbf{Datos Originales}
+\begin{center}
+$\displaystyle\sum_{i=1}^{n}(x_i-\bar{x})^2 \leq \displaystyle\sum_{i=1}^{n}(x_i-B)^2 $
+\end{center}
+\columnbreak
+\textbf{Datos Agrupados}
+$$\displaystyle\sum_{i=1}^{n}(y_i-\bar{y})^2 \leq \displaystyle\sum_{i=1}^{n}(y_i-B)^2\cdot f_i $$ 
+\end{multicols}
+Para cualquier constante $B$.
+\item $M(a x_i)=\bar{ax_i} = a\cdot M(x_i) = a\bar{x}$, $a$ constante
+\item $M(a \pm x_i)=\overline{{a \pm x_i}} = a\pm M(x_i) = a\pm\bar{x}$, $a$ constante
+\item $M(a)=\bar{a}=a$, $a$ constante
+\end{enumerate}
+\subsection{Métodos Abreviados para el Cálculo de la Media}
+\subsubsection{Primer Método Abreviado}
+$$\bar{y}=O_t + \dfrac{\displaystyle\sum_{i=1}^{n}z_i'\cdot f_i}{n}$$
+Donde: $z_i'=y_i - O_t$
+\subsubsection{Segundo Método Abreviado}
+$$\bar{y}=O_t + C\cdot \dfrac{\displaystyle\sum_{i=1}^{n}z_i''\cdot f_i}{n}$$
+Donde: $z_i''=\dfrac{y_i - O_t}{C}=\dfrac{z_i'}{C}$\\${ }$\\
+Y para ambos métodos: $O_t$ es el origen del trabajo (cualquier valor de la marca de clase).
+\subsubsection{Media Aritmética en Distribuciones Simétricas}
+\begin{multicols}{2}
+Si $k$ es impar
+\begin{center}
+$\bar{y}=y_{\frac{k+1}{2}}$
+\end{center}
+\columnbreak
+Si $k$ es par
+\begin{center}
+$\bar{y}=y_{\frac{k}{2}}'$
+\end{center}
+\end{multicols}
+\subsection{Ventajas y Desventajas}
+\begin{multicols}{2}
+\textbf{Ventajas}
+\begin{itemize}
+\item Es la medida de tendencia central mas usada.
+\item El promedio es estable en el muestreo.
+\item Puede ser usado como un detector de variación en los datos.
+\item Se emplea en cálculos estadísticos posteriores.
+\end{itemize}
+\columnbreak
+\textbf{Desventajas}
+\begin{itemize}
+\item Es sensible a los valores extremos.
+\item Si el conjunto de datos es muy grande puede ser tedioso su cálculo.
+\item No se puede calcular para datos cualitativos.
+\item No se puede calcular para datos que tengan clases de extremos abiertos, tanto inferior o superior.
+\end{itemize}
+\end{multicols}
+\subsection{Ejemplos}

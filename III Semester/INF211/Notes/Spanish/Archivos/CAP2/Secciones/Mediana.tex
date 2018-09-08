@@ -1,0 +1,33 @@
+\section{Mediana $(M_e)$}
+Es el valor de la variable que supera a no mas de la mitad de las observaciones y es superado por no mas de la mitad de las observaciones.
+\subsection{Cálculo}
+\subsubsection{Datos no Agrupados}
+En el cálculo de la mediana para datos no agrupados hay que distinguir 2 observaciones:
+\begin{itemize}
+\item \textbf{Número de Observaciones Impares:} \\${ }$\\ Si 
+$$x_1,x_2,x_3,\ldots,x_n$$
+Son los valores de las variables ordenados creciente o decreciente entonces la mediana es el valor de la variable situado en el centro del conjunto de variables, esto es:
+$$Me=x_{\frac{n+1}{2}}$$
+\item \textbf{Número de Observaciones Par:} En este caso esta definido por:
+$$Me=\dfrac{x_{\frac{n}{2}}+x_{\frac{n}{2}+1}}{2}$$
+\end{itemize}
+\subsubsection{Datos Agrupados}
+\begin{itemize}
+\item \textbf{Agrupados no en Intervalo de Clase:}
+En este caso bastará con identificar la frecuencia absoluta acumulada inmediatamente mayor a la mitad de las observaciones. La \textit{Mediana} es aquel valor de la variable que corresponde a dicha frecuencia acumulada.
+\item \textbf{Agrupados en Intervalo de Clase:}
+$$Me=y_{j-1}'+C_j\cdot \dfrac{\frac{n}{2}-F_{j-1}}{f_j}$$
+\end{itemize}
+\subsubsection{Mediana en Distribuciones Simétricas}
+\begin{multicols}{2}
+Si $k$ es impar
+\begin{center}
+$M_e=y_{\frac{k+1}{2}}$
+\end{center}
+\columnbreak
+Si $k$ es par
+\begin{center}
+$M_e=y_{\frac{k}{2}}'$
+\end{center}
+\end{multicols}
+\subsection{Ejemplos}

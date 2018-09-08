@@ -1,0 +1,35 @@
+\section{Media Geométrica $(M_g)$}
+\subsection{Cálculo}
+\subsubsection{Para datos no Agrupados}
+$$M_g=\sqrt[n]{x_1\cdot x_2 \cdot x_3 \cdot \ldots \cdot x_n}$$
+En notación:
+$$M_g = \sqrt[n]{\prod_{i=1}^{n}x_i}$$
+Usando logarítmos:
+$$\log(M_g)=\log\Bigg(\sqrt[n]{\prod_{i=1}^{n}x_i}\Bigg)$$
+$$\log(M_g)=\dfrac{1}{n}\log\Bigg(\prod_{i=1}^{n}x_i\Bigg)$$
+Aplicando propiedades de logaritmos:
+$$M_g=antilog\Bigg[\dfrac{1}{n}\sum_{i=1}^{n}\log(x_i)\Bigg]$$
+\subsubsection{Para datos Agrupados}
+$$M_g=\sqrt[n]{y_1^{f_1}\cdot y_2^{f_2} \cdot y_3^{f_3} \cdot \ldots \cdot y_n^{f_k}}$$
+En notación:
+$$M_g = \sqrt[n]{\prod_{i=1}^{k}y_i^{f_i}}$$
+Usando logaritmos\footnote{El procedimiento es el mismo que para datos Originales}
+$$M_g=antilog\Bigg[\dfrac{1}{n}\sum_{i=1}^{k}f_i \log(y_i)\Bigg]$$
+
+\subsection{Propiedades y Usos}
+\begin{enumerate}
+\item Los promedios geométricos dan menos importancia a las desviaciones extremas que los promedios aritméticos.
+\item No se puede deducir, cuando la serie presenta un valor $0$ o valores negativos.
+\item Es apropiado cuando hay que promediar razones y proporciones.
+\item La aplicación mas útil es para promediar tazas de cambio.
+\end{enumerate}
+Cuando el cálculo de la taza media de cambio abarca un número considerable de años se lo hace usando la siguiente formula:
+$$P_n=P_o(1+i)^n$$
+Donde:
+\begin{itemize}
+\item $P_o$: Cantidad al Principio del periodo.
+\item $P_n$: Cantidad al final del periodo.
+\item $i$: Tasa de cambio expresada en tanto por uno.
+\item $n$: Número de periodos.
+\end{itemize}
+\subsection{Ejemplos}

@@ -1,0 +1,62 @@
+\section{Varianza $(S^2,\hat{S})$}
+\subsection{Cálculo}
+\subsubsection{Datos Originales}
+\begin{itemize}
+\item \textbf{Muestras Grandes:}
+$$\hat{S}=\dfrac{\displaystyle\sum_{i=1}^{n}(x_i-\overline{x})^2}{n} \hspace{1cm} n\geq 30$$
+\item \textbf{Muestras Pequeñas:}
+$$\hat{S}=\dfrac{\displaystyle\sum_{i=1}^{n}(x_i-\overline{x})^2}{n-1} \hspace{1cm} n< 30$$
+\end{itemize}
+\subsection{Propiedades}
+\begin{enumerate}
+\item $\hat{S}\geq 0$
+\item $V(a)=0$ , $a$ constante.
+\item $V(x \pm a) = V(x)$
+\item $V(ax)=a^2V(x)$
+\item $V(ax+b)=a^2V(x)$, $b$ constante.
+\end{enumerate}
+\subsection*{Observaciones}
+\begin{itemize}
+\item La diferencia entre $S^2$ y $\hat{S}$ es grande para muestras pequeñas y es mínima para muestras grandes, casi son iguales.
+\item La Varianza siempre viene expresada en unidades al cuadrado.
+\end{itemize}
+\subsection{Componentes de la Varianza}
+Si un conjunto de datos se divide en subconjuntos por categoría o estratos, es posible descomponer la Varianza en dos componentes.
+\subsubsection{Intervarianza}
+Es un estadígrafo que representa la variabilidad entre los estratos y se define como la varianza de la media de los estratos:
+$$S_b^2=V(\overline{y}_h)=\dfrac{\displaystyle\sum_{h=1}^{L}(\overline{y}_h-\overline{y})^2 \cdot f_h}{n}$$
+Donde:
+\begin{itemize}
+\item $\overline{y}_h$: Media de los estratos
+\item $\overline{y}$: Media General 
+\item $f_h$: Frecuencia
+\item $L$: Número de Estratos
+\end{itemize}
+\subsubsection{Intravarianza}
+Presenta la variabilidad dentro de los estratos definida como la media de la varianza de los estratos:
+$$S_w^2=M(S_h^2)=\dfrac{\displaystyle\sum_{h=1}^{L}S_h^2 \cdot f_h}{n}$$
+\begin{itemize}
+\item $S_h^2$: Varianza de los estratos.
+\end{itemize}
+Como ambos componen la Varianza, se cumple la siguiente igualdad:
+$$S^2=S_b^2+S_w^2$$
+\subsection{Métodos Abreviados para el Cálculo de la Varianza}
+\subsubsection{Primer Método Abreviado}
+\noindent Se sabe que:
+$$\hat{S}=\dfrac{\displaystyle\sum_{i=1}^{n}(x_i-\overline{x})^2}{n}$$
+Si desarrollamos el Binomio y distribuimos la sumatoria:
+$$\hat{S}=\dfrac{\displaystyle\sum_{i=1}^{n}(x_i^2-2x_i\overline{x}+\overline{x}^2)}{n}=
+\dfrac{\displaystyle\sum_{i=1}^{n}x_i^2 - 2\overline{x}\displaystyle\sum_{i=1}^{n}x_i+n\overline{x}^2}{n}
+$$
+Separamos el denominador:
+$$\hat{S}=\dfrac{\displaystyle\sum_{i=1}^{n}x_i^2}{n}-2\overline{x}\cdot\dfrac{\displaystyle\sum_{i=1}^{n}x_i}{n}+\dfrac{n\overline{x}^2}{n} \hspace{1cm} \textrm{Recordemos que: } \dfrac{\displaystyle\sum_{i=1}^{n}x_i}{n}=\overline{x}$$
+Reemplazamos y simplificamos:
+$$\hat{S}=\dfrac{\displaystyle\sum_{i=1}^{n}x_i^2}{n}-2\overline{x}\cdot\overline{x}+\overline{x}^2=\dfrac{\displaystyle\sum_{i=1}^{n}x_i^2}{n}-2\overline{x}^2+\overline{x}^2$$
+Finalmente tendremos:
+$$\hat{S}=\dfrac{\displaystyle\sum_{i=1}^{n}x_i^2}{n}-\overline{x}^2$$
+\subsubsection{Segundo Método Abreviado}
+$$\hat{S}=\dfrac{\displaystyle\sum_{i=1}^{k}z_i'^2 f_i }{n}-\dfrac{\left(\displaystyle\sum_{i=1}^{k}z_i' f_i \right)^2}{n^2}$$
+\subsubsection{Tercer Método Abreviado}
+$$\hat{S}=C^2 
+\begin{bmatrix}\dfrac{\displaystyle\sum_{i=1}^{k}z_i''^2 f_i }{n}-\dfrac{\left(\displaystyle\sum_{i=1}^{k}z_i'' f_i \right)^2}{n^2} \end{bmatrix}$$
+\subsection{Ejemplos}
