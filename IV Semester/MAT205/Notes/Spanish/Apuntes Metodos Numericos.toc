@@ -7,9 +7,9 @@
 \contentsline {subsection}{\numberline {1.3.1}Error Verdadero $(E_v)$}{5}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Error Relativo Verdaderos}{6}{subsection.1.3.2}
 \contentsline {section}{\numberline {1.4}Series}{6}{section.1.4}
-\contentsline {subsubsection}{Serie de Taylor}{6}{section*.4}
-\contentsline {subsubsection}{Serie de MacLaurin}{6}{section*.5}
-\contentsline {section}{\numberline {1.5}Reglas de Redondeo}{6}{section.1.5}
+\contentsline {subsubsection}{Serie de Taylor}{7}{section*.4}
+\contentsline {subsubsection}{Serie de MacLaurin}{7}{section*.5}
+\contentsline {section}{\numberline {1.5}Reglas de Redondeo}{7}{section.1.5}
 \contentsline {chapter}{\numberline {2}Ra\IeC {\'\i }ces de Ecuaciones}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}M\IeC {\'e}todos de Intervalo}{9}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}M\IeC {\'e}todo Gr\IeC {\'a}fico}{9}{subsection.2.1.1}
@@ -25,3 +25,6 @@
 \contentsline {subsubsection}{M\IeC {\'e}todo de la Secante}{11}{section*.10}
 \contentsline {subsection}{\numberline {2.2.2}M\IeC {\'e}todo de Newton-Raphson}{11}{subsection.2.2.2}
 \contentsline {subsubsection}{M\IeC {\'e}todo de Newton-Raphson}{12}{section*.11}
+\contentsline {chapter}{\numberline {3}Sistemas de Ecuaciones}{13}{chapter.3}
+\contentsline {chapter}{\numberline {4}Interpolaci\IeC {\'o}n Polinomial}{15}{chapter.4}
+\contentsline {chapter}{\numberline {5}Derivaci\IeC {\'o}n e Integraci\IeC {\'o}n Num\IeC {\'e}rica}{17}{chapter.5}

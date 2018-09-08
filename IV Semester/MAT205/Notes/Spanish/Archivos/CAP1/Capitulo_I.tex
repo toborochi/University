@@ -24,6 +24,47 @@ Las cifras significativas, se cuentan de \textit{izquierda a derecha} a partir d
 \item La extensión en las lecturas repetidas, de un instrumento que mide alguna propiedad física.
 \end{itemize}
 \end{itemize}
+
+\begin{figure}
+\centering
+\documentclass[tikz,border=3.14mm]{standalone}
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+\draw[latex-latex,thick](0,-9) -- node[midway,sloped,above] {Incremento de Precisión}
+(0,0) -- node[midway,sloped,above] {Incremento Exactitud} (9,0);
+%
+\begin{scope}[shift={(2.5,-2.5)}]
+ \foreach \X in {0.25,0.75,1.25,1.75}
+ {\draw (0,0) circle (\X);}
+ \foreach \X in {1,...,12}
+  \fill (-1,1) + (rand*360:rand*1) circle(2pt);
+\end{scope}
+%
+\begin{scope}[shift={(7.5,-2.5)}]
+ \foreach \X in {0.25,0.75,1.25,1.75}
+ {\draw (0,0) circle (\X);}
+ \foreach \X in {1,...,12}
+  \fill  (rand*360:rand*1) circle(2pt);
+\end{scope}
+%
+\begin{scope}[shift={(2.5,-7.5)}]
+ \foreach \X in {0.25,0.75,1.25,1.75}
+ {\draw (0,0) circle (\X);}
+ \foreach \X in {1,...,12}
+  \fill (-1,1) + (rand*360:rand*0.5) circle(2pt);
+\end{scope}
+%
+\begin{scope}[shift={(7.5,-7.5)}]
+ \foreach \X in {0.25,0.75,1.25,1.75}
+ {\draw (0,0) circle (\X);}
+ \foreach \X in {1,...,12}
+  \fill  (rand*360:rand*0.5) circle(2pt);
+\end{scope}
+\end{tikzpicture}
+\end{document}
+\caption{Relación entre Exactitud y Precisión.}
+\end{figure}
+
 \section{Definición de Error}
 \subsection{Error Verdadero $(E_v)$}
 Es la diferencia simple entre el valor Verdadero $(V_v)$ y el Valor Aproximado $(V_a)$:
