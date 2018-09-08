@@ -21,4 +21,4 @@ Here you find my notes in Probability and Statistic I, course:
 ## Bibliography
   * Miller & Freund's, _Probability and Statistics for Engineers, Ninth Edition,_ 2017. [Amazon](https://www.amazon.com/Miller-Freunds-Probability-Statistics-Engineers/dp/0321986245)
   * Fadil H. Zuwaylif, _General Applied Statistics_, 1979. [Amazon](https://www.amazon.com/General-Applied-Statistics-Fadil-Zuwaylif/dp/0840386362), [AbeBooks](https://www.abebooks.com/9780840386366/General-Applied-Statistics-Fadil-Zuwaylif-0840386362/plp), [Archive (1932)](https://archive.org/details/generalappliedst00zuwa)
-  * Manuel Córdova Zamora, _Estadistica Descriptiva e Inferencial_, Quinta Edicion, 2003.
+  * Manuel Córdova Zamora, _Estadistica Descriptiva e Inferencial_, Quinta Edicion, 2003. [Archive](https://archive.org/details/204984482CordovaZamoraManuelEstadisticaDescriptivaEInferencialAplicaciones5Ed)
