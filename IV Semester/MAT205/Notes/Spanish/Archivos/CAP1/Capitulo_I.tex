@@ -31,7 +31,7 @@ Las cifras significativas, se cuentan de \textit{izquierda a derecha} a partir d
 \begin{document}
 \begin{tikzpicture}[font=\sffamily]
 \draw[latex-latex,thick](0,-9) -- node[midway,sloped,above] {Incremento de Precisión}
-(0,0) -- node[midway,sloped,above] {Incremento Exactitud} (9,0);
+(0,0) -- node[midway,sloped,above] {Incremento de Exactitud} (9,0);
 %
 \begin{scope}[shift={(2.5,-2.5)}]
  \foreach \X in {0.25,0.75,1.25,1.75}
@@ -80,7 +80,7 @@ $$E_a = \dfrac{V_{actual}-V_{anterior}}{V_{actual}}\cdot 100\% $$
 donde el $V_{actual}$ representa el último valor calculado y $V_{anterior}$ es el valor anterior en dos iteraciones sucesivas.
 \\${ }$\\
 El signo del error en general, no es significativo, siendo de mayor importancia acotar el valor absoluto del error $|E_a|$ menor a una cierta tolerancia. $E_s$, que en términos de la cantidad $n$ de cifras significativas utilizadas en el cálculo del error es:
-$$E_s =0.5 \cdot 10^{2-n} \%$$
+$$E_s =(0.5 \cdot 10^{2-n}) \%$$
 Donde:
 \begin{itemize}
 \item $n:$ Número de Cifras Significativas
