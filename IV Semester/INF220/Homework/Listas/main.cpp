@@ -13,7 +13,7 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAPilaLista.h"
+#include "TDAConjuntoVector.h"
 
 /*
  Listas--------------
@@ -25,6 +25,7 @@
 	Pila Puntero:  OK
 	Pila Memoria:  OK
 	Pila Lista:    OK
+ Conjuntos-----------
 */
 
 using namespace std;
@@ -41,6 +42,9 @@ void MostrarOpciones()
 
 int main()
 {
+
+	TDAConjuntoVector CV;
+	/*
 	int opcion,dato;
 
 	TDAPilaLista PL;
@@ -81,6 +85,7 @@ int main()
         getch();
 
 	}while(opcion!=5);
+    */
 	getch();
 	return 0;
 }

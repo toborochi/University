@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAConjuntoVectorH
+#define TDAConjuntoVectorH
+//---------------------------------------------------------------------------
+#endif
+
+
+const int max = 100;
+
+class TDAConjuntoVector
+{
+	private:
+		bool v[max];
+		int cant;
+	public:
+        void crear();
+		bool vacio();
+		int cardinal();
+        int ordinal(int elemento);
+        bool pertenece(int e);
+		void inserta(int e);
+        void suprime(int e);
+};
