@@ -13,7 +13,7 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAPilaLista.h"
+#include "TDAConjuntoPuntero.h"
 
 /*
  Listas--------------
@@ -25,6 +25,7 @@
 	Pila Puntero:  OK
 	Pila Memoria:  OK
 	Pila Lista:    OK
+ Conjuntos-----------
 */
 
 using namespace std;
@@ -41,6 +42,15 @@ void MostrarOpciones()
 
 int main()
 {
+
+	TDAConjuntoPuntero CP;
+	CP.crear();
+	CP.inserta(5);
+	CP.inserta(15);
+
+    cout<<CP.pertenece(5)<<endl;
+
+	/*
 	int opcion,dato;
 
 	TDAPilaLista PL;
@@ -67,7 +77,6 @@ int main()
                 PL.meter(dato);
 			break;
 			case 3:
-				cout<< "Elemento del Tope: ";
 				int x;
 				PL.sacar(x);
 				cout<<"Elemento: "<<x<<endl;
@@ -82,6 +91,7 @@ int main()
         getch();
 
 	}while(opcion!=5);
+    */
 	getch();
 	return 0;
 }

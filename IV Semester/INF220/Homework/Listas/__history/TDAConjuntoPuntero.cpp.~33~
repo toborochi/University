@@ -64,8 +64,5 @@ void TDAConjuntoPuntero::inserta(int e)
 	   {
            throw("No existe espacio en Memoria...");
        }
-	}else
-	{
-        throw("Elemento ya existente...");
-    }
+	}
 }

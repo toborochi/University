@@ -13,7 +13,7 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAPilaLista.h"
+#include "TDAConjuntoPuntero.h"
 
 /*
  Listas--------------
@@ -42,6 +42,11 @@ void MostrarOpciones()
 
 int main()
 {
+
+	TDAConjuntoPuntero CP;
+	CP.crear();
+
+
 
 	/*
 	int opcion,dato;

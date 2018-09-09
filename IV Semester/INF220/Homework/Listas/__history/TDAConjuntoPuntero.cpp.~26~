@@ -28,5 +28,32 @@ int TDAConjuntoPuntero::cardinal()
 int TDAConjuntoPuntero::ordinal(int e)
 {
 	int resp = 0;
-    Nodo *pc = PtrConj;
+	Nodo *pc = PtrConj;
+	while(pc!=NULL)
+	{
+		resp++;
+		if(pc->dato==e)
+		{
+			return resp;
+            pc = NULL;
+		}else
+		{
+            pc=pc->sig;
+        }
+
+    }
+}
+
+bool TDAConjuntoPuntero::pertenece(int e)
+{
+    return (ordinal(e)>=1);
+}
+
+void TDAConjuntoPuntero::inserta(int e)
+{
+	if(!pertenece(e))
+	{
+	   Nodo *dir = new Nodo;
+	   if(dir!=NULL)
+	}
 }

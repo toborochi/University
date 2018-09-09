@@ -34,11 +34,25 @@ int TDAConjuntoPuntero::ordinal(int e)
 		resp++;
 		if(pc->dato==e)
 		{
-            return resp;
+			return resp;
+            pc = NULL;
 		}else
 		{
             pc=pc->sig;
         }
 
     }
+}
+
+bool TDAConjuntoPuntero::pertenece(int e)
+{
+    return (ordinal(e)>=1);
+}
+
+void TDAConjuntoPuntero::inserta(int e)
+{
+	if(!pertenece(e))
+	{
+       Nodo *dir = new Nodo;
+	}
 }

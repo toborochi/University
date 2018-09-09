@@ -13,7 +13,7 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAConjuntoVector.h"
+#include "TDAConjuntoPuntero.h"
 
 /*
  Listas--------------
@@ -43,7 +43,9 @@ void MostrarOpciones()
 int main()
 {
 
-	TDAConjuntoVector CV;
+	TDAConjuntoPuntero CP;
+	CP.crear();
+
 	/*
 	int opcion,dato;
 
@@ -63,7 +65,7 @@ int main()
 		switch(opcion)
 		{
 			case 1:
-                PL.crear();
+				PL.crear();
 			break;
 			case 2:
 				cout<< "Ingrese el Elemento a Insertar: ";

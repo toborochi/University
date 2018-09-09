@@ -60,12 +60,6 @@ void TDAConjuntoPuntero::inserta(int e)
 		   dir->sig = PtrConj;
 		   PtrConj = dir;
            cant++;
-	   }else
-	   {
-           throw("No existe espacio en Memoria...");
        }
-	}else
-	{
-        throw("Elemento ya existente...");
-    }
+	}
 }
