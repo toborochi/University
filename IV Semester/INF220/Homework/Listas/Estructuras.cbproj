@@ -89,6 +89,16 @@
             <DependentOn>SMemoria.h</DependentOn>
             <BuildOrder>3</BuildOrder>
         </CppCompile>
+        <CppCompile Include="TDAConjuntoPuntero.cpp">
+            <VirtualFolder>{09A538F3-5774-4BB9-9505-2070827C5121}</VirtualFolder>
+            <DependentOn>TDAConjuntoPuntero.h</DependentOn>
+            <BuildOrder>11</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="TDAConjuntoVector.cpp">
+            <VirtualFolder>{09A538F3-5774-4BB9-9505-2070827C5121}</VirtualFolder>
+            <DependentOn>TDAConjuntoVector.h</DependentOn>
+            <BuildOrder>10</BuildOrder>
+        </CppCompile>
         <CppCompile Include="TDAListaMemoria.cpp">
             <VirtualFolder>{7242499F-4DB5-4E17-BB34-009128FFD899}</VirtualFolder>
             <DependentOn>TDAListaMemoria.h</DependentOn>
@@ -150,6 +160,7 @@
                 <VFOLDERS>
                     <VFOLDER ID="{7242499F-4DB5-4E17-BB34-009128FFD899}" name="Listas"/>
                     <VFOLDER ID="{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}" name="Pilas"/>
+                    <VFOLDER ID="{09A538F3-5774-4BB9-9505-2070827C5121}" name="Conjuntos"/>
                 </VFOLDERS>
             </CPlusPlusBuilder.Personality>
             <Platforms>

@@ -1,0 +1,19 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAConjuntoPunteroH
+#define TDAConjuntoPunteroH
+//---------------------------------------------------------------------------
+#endif
+
+struct Nodo
+{
+	int dato;
+    Nodo *sig;
+};
+
+class TDAConjuntoPuntero
+{
+	private:
+		int cant;
+        Nodo *PtrConj;
+};

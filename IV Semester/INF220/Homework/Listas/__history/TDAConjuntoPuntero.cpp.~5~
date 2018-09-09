@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAConjuntoPuntero.h"
+// Define el NULL
+#include <stddef.h>
+#include <iostream>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+void TDAConjuntoPuntero::crear()
+{
+	PtrConj = NULL;
+    cant = 0;
+}
+
+bool TDAConjuntoPuntero::vacio()
+{
+    return (cant==0);
+}
