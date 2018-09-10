@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAConjuntoEntero.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+void TDAConjuntoEntero::crear()
+{
+    elem = 0;
+}
+
+bool TDAConjuntoEntero::vacio()
+{
+    return(elem==0);
+}
+
+int TDAConjuntoEntero::cardinal()
+{
+
+
+}

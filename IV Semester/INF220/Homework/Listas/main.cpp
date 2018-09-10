@@ -13,19 +13,24 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAConjuntoPuntero.h"
+#include "TDAConjuntoLista.h"
 
 /*
- Listas--------------
-	Lista Puntero: OK
-	Lista Vector:  OK
-	Lista Memoria: OK
- Pilas---------------
-	Pila Vector:   OK
-	Pila Puntero:  OK
-	Pila Memoria:  OK
-	Pila Lista:    OK
- Conjuntos-----------
+ Listas-----------------
+	Lista Puntero:    OK
+	Lista Vector:     OK
+	Lista Memoria:    OK
+ Pilas------------------
+	Pila Vector:      OK
+	Pila Puntero:     OK
+	Pila Memoria:     OK
+	Pila Lista:       OK
+ Conjuntos--------------
+	Conjunto Vector:  OK
+	Conjunto Puntero: OK
+	Conjunto Memoria: OK
+	Conjunto Lista:   OK
+    Conjunto Entero:  OK
 */
 
 using namespace std;
@@ -42,9 +47,6 @@ void MostrarOpciones()
 
 int main()
 {
-
-	TDAConjuntoPuntero CP;
-	CP.crear();
 
 	/*
 	int opcion,dato;

@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAConjuntoEnteroH
+#define TDAConjuntoEnteroH
+//---------------------------------------------------------------------------
+#endif
+
+class TDAConjuntoEntero
+{
+	private:
+        int elem;
+
+};

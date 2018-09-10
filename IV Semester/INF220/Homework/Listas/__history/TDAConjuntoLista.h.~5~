@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAConjuntoListaH
+#define TDAConjuntoListaH
+//---------------------------------------------------------------------------
+#endif
+
+#include "TDAListaPuntero.h"
+
+class TDAConjuntoLista
+{
+	private:
+		TDAListaPuntero L;
+	public:
+		void crear();
+        bool vacia();
+
+};

@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAConjuntoEnteroH
+#define TDAConjuntoEnteroH
+//---------------------------------------------------------------------------
+#endif
+#include <cmath>
+
+
+class TDAConjuntoEntero
+{
+	private:
+		int elem;
+	public:
+		void crear();
+		bool vacio();
+		int cardinal();
+        void insertar();
+
+};

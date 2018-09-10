@@ -1,0 +1,14 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAConjuntoListaH
+#define TDAConjuntoListaH
+//---------------------------------------------------------------------------
+#endif
+
+#include "TDAListaPuntero.h"
+
+class TDAConjuntoLista
+{
+
+
+};

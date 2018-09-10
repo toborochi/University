@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAConjuntoEnteroH
+#define TDAConjuntoEnteroH
+//---------------------------------------------------------------------------
+#endif
+
+class TDAConjuntoEntero
+{
+	private:
+		int elem;
+	public:
+		void crear();
+        bool vacio();
+
+};

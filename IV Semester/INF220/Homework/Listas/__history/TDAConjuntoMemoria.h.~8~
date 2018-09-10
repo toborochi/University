@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAConjuntoMemoriaH
+#define TDAConjuntoMemoriaH
+//---------------------------------------------------------------------------
+#endif
+
+#include "SMemoria.h"
+
+class TDAConjuntoMemoria
+{
+	private:
+		SMemoria m;
+		int cant;
+		int PtrConj;
+	public:
+        void crear();
+};

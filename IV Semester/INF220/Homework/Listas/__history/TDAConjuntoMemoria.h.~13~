@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAConjuntoMemoriaH
+#define TDAConjuntoMemoriaH
+//---------------------------------------------------------------------------
+#endif
+
+#include "SMemoria.h"
+
+class TDAConjuntoMemoria
+{
+	private:
+		SMemoria m;
+		int cant;
+		int PtrConj;
+	public:
+		void crear();
+		bool vacio();
+		int cardinal();
+		int ordinal(int e);
+        void inserta(int e);
+};
