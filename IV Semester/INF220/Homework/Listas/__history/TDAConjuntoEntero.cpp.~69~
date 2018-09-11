@@ -52,33 +52,37 @@ void TDAConjuntoEntero::insertar(int e)
 	}
 }
 
+
 int inverso(int x)
 {
-	int aux = 0;
+	int ans = 0;
 	while(x>0)
 	{
-        aux = aux*10 + x%10;
-		x/=10;
-    }
+       ans = ans*10 + x%10;
+	   x/=10;
+	}
+    return ans;
 
 }
-
 
 void TDAConjuntoEntero::suprime(int e)
 {
 	int aux = elem;
-	int inv = 0;
-	if(pertenece(e))
+    int inv = 0;
+	while(aux%10!=e && aux>0)
 	{
-		while(aux>0)
-		{
-			if(aux%10==e)break;
-			inv = inv * 10 + aux%10;
-			aux/=10;
-        }
+       inv = inv * 10 + aux%10;
+       aux/=10;
 	}
-    elem = aux + inverso(inv);
+	aux/=10;
 
+	int pot = 1;
+	for(int i=0;i<log10(double(inv));++i)
+	{
+        pot*=10;
+    }
 
-    std::cout<< elem << std::endl;
+	elem = aux*pot + inverso(inv);
+
+	std::cout<< wlwm << std::endl;
 }
