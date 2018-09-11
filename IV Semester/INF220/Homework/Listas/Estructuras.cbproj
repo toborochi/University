@@ -89,6 +89,21 @@
             <DependentOn>SMemoria.h</DependentOn>
             <BuildOrder>3</BuildOrder>
         </CppCompile>
+        <CppCompile Include="TDAConjuntoEntero.cpp">
+            <VirtualFolder>{09A538F3-5774-4BB9-9505-2070827C5121}</VirtualFolder>
+            <DependentOn>TDAConjuntoEntero.h</DependentOn>
+            <BuildOrder>14</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="TDAConjuntoLista.cpp">
+            <VirtualFolder>{09A538F3-5774-4BB9-9505-2070827C5121}</VirtualFolder>
+            <DependentOn>TDAConjuntoLista.h</DependentOn>
+            <BuildOrder>13</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="TDAConjuntoMemoria.cpp">
+            <VirtualFolder>{09A538F3-5774-4BB9-9505-2070827C5121}</VirtualFolder>
+            <DependentOn>TDAConjuntoMemoria.h</DependentOn>
+            <BuildOrder>12</BuildOrder>
+        </CppCompile>
         <CppCompile Include="TDAConjuntoPuntero.cpp">
             <VirtualFolder>{09A538F3-5774-4BB9-9505-2070827C5121}</VirtualFolder>
             <DependentOn>TDAConjuntoPuntero.h</DependentOn>

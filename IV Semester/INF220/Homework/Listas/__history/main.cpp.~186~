@@ -13,7 +13,7 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAConjuntoMemoria.h"
+#include "TDAConjuntoPuntero.h"
 
 /*
  Listas-----------------
@@ -29,7 +29,7 @@
 	Conjunto Vector:  OK
 	Conjunto Puntero: OK
 	Conjunto Memoria: OK
-	Conjunto Lista:   **
+	Conjunto Lista:   OK
     Conjunto Entero:  OK
 */
 
@@ -47,14 +47,19 @@ void MostrarOpciones()
 
 int main()
 {
+	TDAConjuntoPuntero CP;
+	CP.crear();
+	for(int i=1;i<=5;++i)
+	{
+		CP.inserta(i);
+	}
+    CP.suprime(4);
 
-	TDAConjuntoMemoria CM;
-	CM.crear();
-	CM.inserta(45);
-	CM.inserta(123);
+	for(int i=1;i<=5;++i)
+	{
+		cout<<CP.pertenece(i)<<endl;
+	}
 
-	cout<< CM.pertenece(45) <<endl;
-	cout<< CM.pertenece(121) <<endl;
 
 
 	/*

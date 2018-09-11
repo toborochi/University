@@ -13,7 +13,7 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAConjuntoLista.h"
+#include "TDAConjuntoPuntero.h"
 
 /*
  Listas-----------------
@@ -47,12 +47,20 @@ void MostrarOpciones()
 
 int main()
 {
-	TDAConjuntoLista CL;
+	TDAConjuntoPuntero CP;
+	CP.crear();
+	for(int i=1;i<=5;++i)
+	{
+		CP.inserta(i);
+	}
+    CP.suprime(1);
 
-	CL.crear();
+	for(int i=1;i<=5;++i)
+	{
+		cout<<CP.pertenece(i)<<endl;
+	}
 
-	CL.inserta(45);
-    CL.inserta(123);
+
 
 	/*
 	int opcion,dato;

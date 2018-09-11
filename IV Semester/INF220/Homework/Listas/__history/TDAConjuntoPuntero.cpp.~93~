@@ -60,6 +60,29 @@ void TDAConjuntoPuntero::inserta(int e)
 		   dir->sig = PtrConj;
 		   PtrConj = dir;
            cant++;
+	   }else
+	   {
+           throw("No existe espacio en Memoria...");
        }
-	}
+	}else
+	{
+        throw("Elemento ya existente...");
+    }
+}
+
+void TDAConjuntoPuntero::suprime(int e)
+{
+	Nodo *pc = PtrConj;
+    Nodo *x = NULL;
+	while(pc!=NULL)
+	{
+
+
+				pc=pc->sig;
+		      	x = pc;
+
+
+
+
+    }
 }
