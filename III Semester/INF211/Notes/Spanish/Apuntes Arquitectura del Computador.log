@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  7 SEP 2018 22:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  11 SEP 2018 10:16
 entering extended mode
 **"./Apuntes Arquitectura del Computador.tex"
 ("Apuntes Arquitectura del Computador.tex"
@@ -1476,20 +1476,69 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 28.
 "
 Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 )
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\circuitikz\circuiti
+kz.sty"
+Package: circuitikz 2017/05/28{} The CircuiTikz circuit drawing package version
+ 0.8.3
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen319
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+c.defines.tex"
+\pgf@circ@res@up=\dimen320
+\pgf@circ@res@down=\dimen321
+\pgf@circ@res@zero=\dimen322
+\pgf@circ@res@left=\dimen323
+\pgf@circ@res@right=\dimen324
+\pgf@circ@res@other=\dimen325
+\pgf@circ@res@step=\dimen326
+\pgf@circ@res@temp=\dimen327
+\pgfstartlinewidth=\dimen328
+\pgf@circ@Rlen=\dimen329
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cutils.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cshapes.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cmonopoles.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cbipoles.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+ctripoles.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cquadpoles.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+clabel.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cvoltage.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+ccurrent.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cflow.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cpath.tex"))
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
 ty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count273
 \Gm@cntv=\count274
 \c@Gm@tempcnt=\count275
-\Gm@bindingoffset=\dimen319
-\Gm@wd@mp=\dimen320
-\Gm@odd@mp=\dimen321
-\Gm@even@mp=\dimen322
-\Gm@layoutwidth=\dimen323
-\Gm@layoutheight=\dimen324
-\Gm@layouthoffset=\dimen325
-\Gm@layoutvoffset=\dimen326
+\Gm@bindingoffset=\dimen330
+\Gm@wd@mp=\dimen331
+\Gm@odd@mp=\dimen332
+\Gm@even@mp=\dimen333
+\Gm@layoutwidth=\dimen334
+\Gm@layoutheight=\dimen335
+\Gm@layouthoffset=\dimen336
+\Gm@layoutvoffset=\dimen337
 \Gm@dimlist=\toks53
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
@@ -1499,34 +1548,34 @@ LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `"Apuntes Arquitectura del Computador.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Info: Redefining \. on input line 53.
-LaTeX Info: Redefining \% on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count276
-\scratchdimen=\dimen327
+\scratchdimen=\dimen338
 \scratchbox=\box78
 \nofMPsegments=\count277
 \nofMParguments=\count278
 \everyMPshowfont=\toks54
 \MPscratchCnt=\count279
-\MPscratchDim=\dimen328
+\MPscratchDim=\dimen339
 \MPnumerator=\count280
 \makeMPintoPDFobject=\count281
 \everyMPtoPDFconversion=\toks55
@@ -1550,7 +1599,7 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
 \AtBeginShipoutBox=\box79
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 54.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
 y"
@@ -1562,9 +1611,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count282
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
  ("Apuntes Arquitectura del Computador.out")
 ("Apuntes Arquitectura del Computador.out")
 \@outlinefile=\write4
@@ -1766,43 +1815,30 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.5 $$\fbox{\overline{\overline{A}}=A}
-                                      $$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Extra }, or forgotten $.
-\fbox ...ox {\color@begingroup \kern \fboxsep {#1}
-                                                  \kern \fboxsep \color@endg...
-l.5 $$\fbox{\overline{\overline{A}}=A}
-                                      $$
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.5 $$\fbox{\overline{\overline{A}}=A}
-                                      $$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \end{circuitikz}
+                     
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.5 $$\fbox{\overline{\overline{A}}=A}
-                                      $$
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+! Undefined control sequence.
+<argument> \pgf@baseline 
+                         
+l.13 \end{circuitikz}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 ) (Archivos/Bibliografia.tex
 Package babel Info: Redefining spanish shorthand <<
@@ -1860,49 +1896,49 @@ Package babel Info: Redefining spanish shorthand "?
 
 ])
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
  [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
 
 ("Apuntes Arquitectura del Computador.aux"
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `"Apuntes Arquitectura del Computador".out' h
 as not changed.
 (rerunfilecheck)             Checksum: 559842F2FC4BC94DEA4F44C8E921E49F;52.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 32050 strings out of 493305
- 734723 string characters out of 3130237
- 962174 words of memory out of 3000000
- 34937 multiletter control sequences out of 15000+200000
+ 38964 strings out of 493305
+ 945015 string characters out of 3130237
+ 1259329 words of memory out of 3000000
+ 41804 multiletter control sequences out of 15000+200000
  16488 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,7n,127p,753b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1923,7 +1959,7 @@ rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Asus/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users
 /Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pf
 b>
-Output written on "Apuntes Arquitectura del Computador.pdf" (7 pages, 178964 by
+Output written on "Apuntes Arquitectura del Computador.pdf" (7 pages, 179142 by
 tes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)

@@ -47,12 +47,7 @@ void MostrarOpciones()
 
 int main()
 {
-	TDAConjuntoMemoria cm;
-	cm.crear();
-	cm.inserta(45);
-	cout<<cm.pertenece(45)<<endl;
-	cm.suprime(45);
-    cout<<cm.pertenece(45)<<endl;
+	
 
 
 	/*
