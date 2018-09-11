@@ -25,5 +25,3 @@ void TDAConjuntoLista::inserta(int e)
 {
     L.insertar(L.primero(),e);
 }
-
-

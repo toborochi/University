@@ -1,23 +1,27 @@
 //---------------------------------------------------------------------------
 
-#ifndef TDAConjuntoListaH
-#define TDAConjuntoListaH
+#ifndef TDAConjuntoEnteroH
+#define TDAConjuntoEnteroH
 //---------------------------------------------------------------------------
 #endif
+#include <iostream>
+#include <math.h>
+#include <string>
+#include <cstdlib>
 
-#include "TDAListaPuntero.h"
 
-class TDAConjuntoLista
+class TDAConjuntoEntero
 {
 	private:
-		TDAListaPuntero L;
+		int elem;
 	public:
 		void crear();
-		void inserta(int e);
+		void insertar(int e);
 
 		bool vacio();
-
 		int cardinal();
+
+		bool pertenece(int e);
 
 
 };

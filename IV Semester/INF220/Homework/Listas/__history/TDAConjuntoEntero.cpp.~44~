@@ -53,7 +53,17 @@ void TDAConjuntoEntero::insertar(int e)
 }
 
 
+
+int num(int pos)
+{
+     int tam = elem;
+}
+
+
 void TDAConjuntoEntero::suprime(int e)
 {
+
+
+
     std::cout<< elem << std::endl;
 }

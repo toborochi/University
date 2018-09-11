@@ -14,6 +14,7 @@ class TDAConjuntoLista
 	public:
 		void crear();
 		void inserta(int e);
+        void suprime(int e);
 
 		bool vacio();
 

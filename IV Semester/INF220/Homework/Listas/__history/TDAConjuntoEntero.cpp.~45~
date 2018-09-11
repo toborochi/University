@@ -30,18 +30,34 @@ int TDAConjuntoEntero::cardinal()
 bool TDAConjuntoEntero::pertenece(int e)
 {
     int aux = elem;
-	while(e>0)
+	while(aux>0)
 	{
-		if()
-		e/=10;
-    }
+		if(aux%10==e)
+		{
+			return true;
+		}
+		aux/=10;
+	}
+    return false;
 }
 
-void TDAConjuntoEntero::insertar()
+void TDAConjuntoEntero::insertar(int e)
 {
-	if(!pertenece())
+	if(!pertenece(e))
 	{
+        elem = elem*10 + e;
+	}else
+	{
+        throw("Elemento Existente...");
+	}
+}
 
-    }
 
+
+
+
+void TDAConjuntoEntero::suprime(int e)
+{
+    int x = elem;
+    std::cout<< elem << std::endl;
 }

@@ -27,8 +27,43 @@ int TDAConjuntoEntero::cardinal()
 
 }
 
-void TDAConjuntoEntero::insertar()
+bool TDAConjuntoEntero::pertenece(int e)
+{
+    int aux = elem;
+	while(aux>0)
+	{
+		if(aux%10==e)
+		{
+			return true;
+		}
+		aux/=10;
+	}
+    return false;
+}
+
+void TDAConjuntoEntero::insertar(int e)
+{
+	if(!pertenece(e))
+	{
+        elem = elem*10 + e;
+	}else
+	{
+        throw("Elemento Existente...");
+	}
+}
+
+
+
+int num(int pos)
+{
+     int tam = int(log10(float(elem)));
+}
+
+
+void TDAConjuntoEntero::suprime(int e)
 {
 
 
+
+    std::cout<< elem << std::endl;
 }

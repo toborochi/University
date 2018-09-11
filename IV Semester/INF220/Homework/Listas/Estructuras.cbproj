@@ -173,9 +173,9 @@
                     <ProjectProperties Name="IndexFiles">False</ProjectProperties>
                 </ProjectProperties>
                 <VFOLDERS>
+                    <VFOLDER ID="{09A538F3-5774-4BB9-9505-2070827C5121}" name="Conjuntos"/>
                     <VFOLDER ID="{7242499F-4DB5-4E17-BB34-009128FFD899}" name="Listas"/>
                     <VFOLDER ID="{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}" name="Pilas"/>
-                    <VFOLDER ID="{09A538F3-5774-4BB9-9505-2070827C5121}" name="Conjuntos"/>
                 </VFOLDERS>
             </CPlusPlusBuilder.Personality>
             <Platforms>

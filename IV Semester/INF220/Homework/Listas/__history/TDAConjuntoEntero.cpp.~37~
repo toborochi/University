@@ -41,11 +41,44 @@ bool TDAConjuntoEntero::pertenece(int e)
     return false;
 }
 
-void TDAConjuntoEntero::insertar()
+void TDAConjuntoEntero::insertar(int e)
 {
-	if(!pertenece())
+	if(!pertenece(e))
 	{
+        elem = elem*10 + e;
+	}else
+	{
+        throw("Elemento Existente...");
+	}
+}
 
+int inverso(int x)
+{
+	int aux = 0;
+	while(x>0)
+	{
+        aux = aux*10 + x%10;
+		x/=10;
     }
 
+}
+
+
+void TDAConjuntoEntero::suprime(int e)
+{
+	int aux = elem;
+	int inv = 0;
+	if(pertenece(e))
+	{
+		while(aux>0 && aux%10!=e)
+		{
+            if(aux%10==e)break;
+            inv = inv * 10 + aux%10;
+			aux/=10;
+        }
+	}
+    elem = aux + inverso(inv);
+
+
+    std::cout<< elem << std::endl;
 }

@@ -4,9 +4,21 @@
 #define TDAConjuntoEnteroH
 //---------------------------------------------------------------------------
 #endif
+#include <iostream>
+#include <math.h>
+#include <string>
+#include <cstdlib>
+
 
 class TDAConjuntoEntero
 {
-
+	private:
+		int elem;
+	public:
+		void crear();
+		bool vacio();
+		int cardinal();
+		void insertar(int e);
+        bool pertenece(int e);
 
 };

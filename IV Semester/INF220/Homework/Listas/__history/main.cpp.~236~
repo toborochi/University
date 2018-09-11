@@ -13,7 +13,7 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAConjuntoMemoria.h"
+#include "TDAConjuntoEntero.h"
 
 /*
  Listas-----------------
@@ -47,7 +47,11 @@ void MostrarOpciones()
 
 int main()
 {
-	TDAConjuntoPuntero cp;
+	TDAConjuntoEntero CE;
+	CE.crear();
+	CE.insertar(4);
+	CE.insertar(5);
+    CE.suprime(5);
 
 
 	/*

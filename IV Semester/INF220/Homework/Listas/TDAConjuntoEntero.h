@@ -16,9 +16,11 @@ class TDAConjuntoEntero
 		int elem;
 	public:
 		void crear();
-		bool vacio();
-		int cardinal();
 		void insertar(int e);
-        bool pertenece(int e);
+        void suprime(int e);
 
+		bool vacio();
+		bool pertenece(int e);
+
+		int cardinal();
 };

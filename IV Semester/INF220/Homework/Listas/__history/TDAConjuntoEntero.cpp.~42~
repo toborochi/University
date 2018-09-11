@@ -46,6 +46,24 @@ void TDAConjuntoEntero::insertar(int e)
 	if(!pertenece(e))
 	{
         elem = elem*10 + e;
-    }
+	}else
+	{
+        throw("Elemento Existente...");
+	}
+}
 
+
+
+int num(int pos)
+{
+     int tam = int(log10(float(cant)));
+}
+
+
+void TDAConjuntoEntero::suprime(int e)
+{
+
+
+
+    std::cout<< elem << std::endl;
 }
