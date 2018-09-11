@@ -18,10 +18,14 @@ class TDAConjuntoPuntero
 		Nodo *PtrConj;
 	public:
 		void crear();
-		bool vacio();
+        void inserta(int e);
+		void suprime(int e);
+		void imprime();     	//Funcion Extra
+
 		int cardinal();
 		int ordinal(int e);
+
+		bool vacio();
 		bool pertenece(int e);
-		void inserta(int e);
-        void suprime(int e);
+
 };

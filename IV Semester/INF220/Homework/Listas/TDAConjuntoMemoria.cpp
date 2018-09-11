@@ -60,3 +60,31 @@ void TDAConjuntoMemoria::inserta(int e)
     }
 
 }
+
+void TDAConjuntoMemoria::suprime(int e)
+{
+	int pc = PtrConj;
+	int x = NULO;
+
+	while(pc!=NULO)
+	{
+		if(m.obtener_dato(pc,1)==e)
+		{
+			if(pc==PtrConj)
+			{
+                m.poner_dato(pc,1,NULO);
+				PtrConj = m.obtener_dato(pc,2);
+                m.delete_espacio(pc);
+			}else
+			{
+				m.poner_dato(pc,1,NULO);
+			}
+            return;
+		}else
+		{
+			pc = m.obtener_dato(pc,2);
+            x = pc;
+        }
+    }
+
+}

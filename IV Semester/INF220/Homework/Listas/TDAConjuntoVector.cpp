@@ -9,6 +9,7 @@
 
 void TDAConjuntoVector::crear()
 {
+    cant = 0;
 	  for(int i=1;i<=maxi;++i)
 	  {
           v[i]=false;
@@ -55,7 +56,12 @@ int TDAConjuntoVector::ordinal(int e)
 
 void TDAConjuntoVector::suprime(int e)
 {
-    v[e]=false;
+	if(pertenece(e))
+	{
+		v[e]=false;
+		cant--;
+	}
+
 }
 
 int TDAConjuntoVector::muestrea()
@@ -71,5 +77,19 @@ int TDAConjuntoVector::muestrea()
     }
 
 	return v[r];
+}
+
+void TDAConjuntoVector::imprime()
+{
+    int t = 0;
+	std::cout<<"[";
+	for(int i=1;i<=maxi;++i)
+	{
+		if(v[i])
+		{
+            t++;
+			std::cout<< (i) <<((t<cant)?", ":"") ;
+		}
+	}std::cout<<"]"<<std::endl;
 }
 

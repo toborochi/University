@@ -10,7 +10,7 @@
 
 
 
-static const int maxi  = 100;
+static const int maxi  = 1000000;
 
 class TDAConjuntoVector
 {
@@ -18,12 +18,18 @@ class TDAConjuntoVector
 		bool v[maxi+1];
 		int cant;
 	public:
-        void crear();
-		bool vacio();
-		int cardinal();
-        int ordinal(int elemento);
-        bool pertenece(int e);
-		void inserta(int e);
+		void crear();
+        void inserta(int e);
 		void suprime(int e);
-        int muestrea();
+
+        int cardinal();
+        int ordinal(int elemento);
+
+		bool vacio();
+        bool pertenece(int e);
+
+		int muestrea();
+
+        // Funcion anadida
+        void imprime();
 };

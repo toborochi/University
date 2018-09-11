@@ -15,9 +15,13 @@ class TDAConjuntoMemoria
 		int PtrConj;
 	public:
 		void crear();
-		bool vacio();
+		void inserta(int e);
+        void suprime(int e);
+
 		int cardinal();
 		int ordinal(int e);
-        bool pertenece(int e);
-        void inserta(int e);
+
+		bool pertenece(int e);
+		bool vacio();
+
 };

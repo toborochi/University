@@ -84,11 +84,13 @@ void TDAConjuntoPuntero::suprime(int e)
 			{
 				pc->dato = NULL;
 				PtrConj = pc->sig;
+                delete[] pc;
 
 			}else
 			{
 			    pc->dato = NULL;
 				x->sig = pc->sig;
+                delete[] pc;
 			}
 			return;
 		}else
@@ -97,7 +99,19 @@ void TDAConjuntoPuntero::suprime(int e)
 		      	x = pc;
 		}
 
-
-
     }
+}
+
+void TDAConjuntoPuntero::imprime()
+{
+	Nodo *pc = PtrConj;
+	int t = 0;
+	std::cout<<"[";
+	while(t<cant)
+	{
+		std::cout<< pc->dato << ((pc->sig!=NULL)?", ":"") ;
+        pc=pc->sig;
+        t++;
+	}
+	std::cout<<"]"<<std::endl;
 }
