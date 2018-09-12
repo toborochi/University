@@ -83,6 +83,20 @@ void TDAConjuntoEntero::suprime(int e)
     }
 
 	elem = aux*pot + inverso(inv);
+}
 
-	std::cout<< inverso(inv) << std::endl;
+void TDAConjuntoEntero::imprimir()
+{
+	std::cout<<"[";
+
+	int dig = int(log10(double(elem))) + 2;
+
+	for(int i=1;i<=dig;++i)
+	{
+		if(pertenece(i))
+		{
+            std::cout<< i << ((i<dig)?", ":"");
+        }
+	}
+	std::cout<<"]"<<std::endl;
 }

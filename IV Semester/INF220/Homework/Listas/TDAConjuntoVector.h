@@ -21,6 +21,8 @@ class TDAConjuntoVector
 		void crear();
         void inserta(int e);
 		void suprime(int e);
+		// Funcion anadida
+		void imprime();
 
         int cardinal();
         int ordinal(int elemento);
@@ -30,6 +32,5 @@ class TDAConjuntoVector
 
 		int muestrea();
 
-        // Funcion anadida
-        void imprime();
+
 };

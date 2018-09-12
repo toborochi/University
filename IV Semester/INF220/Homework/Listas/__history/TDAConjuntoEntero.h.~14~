@@ -17,12 +17,10 @@ class TDAConjuntoEntero
 	public:
 		void crear();
 		void insertar(int e);
-		void suprime(int e);
-        void imprimir();
+        void suprime(int e);
 
 		bool vacio();
 		bool pertenece(int e);
 
 		int cardinal();
-
 };

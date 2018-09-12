@@ -47,16 +47,6 @@ void MostrarOpciones()
 
 int main()
 {
-	TDAConjuntoEntero CE;
-	CE.crear();
-	CE.insertar(1);
-	CE.insertar(2);
-	CE.insertar(3);
-	CE.insertar(4);
-    CE.insertar(5);
-    CE.suprime(3);
-
-
 	/*
 	int opcion,dato;
 
