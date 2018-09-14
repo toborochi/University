@@ -89,7 +89,7 @@ void TDAConjuntoEntero::imprimir()
 {
 	std::cout<<"[";
 
-	int dig = int(log10(double(elem))) + 1;
+	int dig = int(log10(double(elem))) + 2;
 
 	for(int i=1;i<=dig;++i)
 	{

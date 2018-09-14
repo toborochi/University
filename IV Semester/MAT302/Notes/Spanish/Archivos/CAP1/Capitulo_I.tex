@@ -153,3 +153,68 @@ $$
 \end{flushleft}
 \columnbreak
 \end{multicols}
+\section{Función de Probabilidad Conjunta}
+\subsection{Función de Cuantía Conjunta}
+$$P(X=x,Y=y)=f(x,y)=p(x,y)$$
+es el valor de una función de cuantía conjunta de la \textbf{v.a.'s} $X$ y $Y$ si:
+\begin{enumerate}[label=(\roman*)]
+\item $f(x,y)=p(x,y)\geq 0$ \hspace{2cm} Para cualquier $(x,y)$ de su dominio.
+\item $\displaystyle\sum_{x}\displaystyle\sum_{y} f(x,y)=1$
+\item $P((x,y)\in A)=\displaystyle\sum _A\displaystyle\sum f(x,y)$ \hspace{2cm} Para cualquier región $A$ del plano $XY$.
+\end{enumerate}
+\subsection{Función de Densidad Conjunta}
+$$P(X=x,Y=y)=f(x,y)=p(x,y)$$
+es el valor de una función de cuantía conjunta de la \textbf{v.a.'s} $X$ y $Y$ si:
+\begin{enumerate}[label=(\roman*)]
+\item $f(x,y)=p(x,y)\geq 0$ \hspace{2cm} Para cualquier $(x,y)$ de su dominio.
+\item $\int\limits_{-\infty}^{+\infty} \int\limits_{-\infty}^{+\infty} f(x,y) \,dx \,dy=1$
+\item $P((x,y)\in A)=\iint_A f(x,y) \,dx \,dy$ \hspace{2cm} Para cualquier región $A$ del plano $XY$.
+\end{enumerate}
+\section{Distribuciones Marginales}
+Sean $X$ y $Y$ \textbf{v.a.} con función de probabilidad conjunta definida por $f(x,y)$. La distribución marginal está dada por:
+$$
+\text{Caso Discreto:}
+\begin{cases}
+\text{Distribución Marginal X: } g(x)=\displaystyle\sum_{y}f(x,y)  \\ \vspace{0.1cm} \\
+\text{Distribución Marginal Y: } h(y)=\displaystyle\sum_{x}f(x,y)
+\end{cases}
+$$
+$$
+\text{Caso Continuo:}
+\begin{cases}
+\text{Distribución Marginal X: } g(x)=\displaystyle\int_{-\infty}^{+\infty} f(x,y) \,dy \\ \vspace{0.1cm} \\
+\text{Distribución Marginal Y: } h(y)=\displaystyle\int_{-\infty}^{+\infty} f(x,y) \,dx
+\end{cases}
+$$
+\subsection{Independencia Estadística de las v.a. $X$ y $Y$}
+Sean $X$ y $Y$ \textbf{v.a.} discretas o contínuas con función de probabilidad conjunta definida por $f(x,y)$ y distribuciones marginales $g(x)$ y $h(y)$, respectivamente. Se dice que las \textbf{v.a.} $X$ y $Y$ serán estadísticamente independientes ssi:
+
+$$f(x,y)=g(x)h(y)$$
+Para cualquier $(x,y)$ dentro de sus recorridos.
+\subsection{Esperanza Matemática}
+Sean $X$ y $Y$ \textbf{v.a.} con función de probabilidad definida por $f(x,y)$. La media o esperanza matemática de $g(x,y)$ está dada por:
+$$
+\text{Caso Discreto: }
+E(g(x,y))=\mu_{g(x,y)}=\displaystyle\sum_{x}\displaystyle\sum_{y} g(x,y)\cdot f(x,y)
+$$
+
+$$
+\text{Caso Contínuo: }
+E(g(x,y))=\mu_{g(x,y)}=\displaystyle\int_{-\infty}^{+\infty}\displaystyle\int_{-\infty}^{+\infty} g(x,y)\cdot f(x,y) \,dx \,dy
+$$
+\subsection{Covarianza}
+Mide el grado de relación o asociación de dos variables.
+\subsection{Resultado Importantes}
+\begin{enumerate}
+\item $E(x\pm y)=E(x)\pm E(y)$
+\item $Cov(x,y)=E(x\cdot y) - E(x)E(y)$
+\item $V(x\pm y)=V(x)+V(y)\pm 2Cov(x,y)$
+\item $V(ax\pm by)=a^2 V(x)+b^2V(y)\pm 2abCov(x,y)$
+\item Si $X$ y $Y$ son estadísticamente independientes entonces:
+\begin{enumerate}
+\item $E(x,y)=E(x)E(y)$
+\item $Cov(x,y)=0$
+\item $V(x\pm y)=V(x)+V(y)$
+\item $V(ax\pm by)=a^2V(x)+b^2V(y)$
+\end{enumerate}
+\end{enumerate}
