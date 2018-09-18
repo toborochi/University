@@ -5,6 +5,7 @@
 //---------------------------------------------------------------------------
 #endif
 
+#include <iostream>
 #include "SMemoria.h"
 
 class TDAConjuntoMemoria
@@ -16,7 +17,8 @@ class TDAConjuntoMemoria
 	public:
 		void crear();
 		void inserta(int e);
-        void suprime(int e);
+		void suprime(int e);
+        void imprime();
 
 		int cardinal();
 		int ordinal(int e);

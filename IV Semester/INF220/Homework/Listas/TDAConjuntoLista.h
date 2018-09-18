@@ -5,6 +5,8 @@
 //---------------------------------------------------------------------------
 #endif
 
+// Define el NULL
+#include <stddef.h>
 #include "TDAListaPuntero.h"
 
 class TDAConjuntoLista
@@ -14,6 +16,8 @@ class TDAConjuntoLista
 	public:
 		void crear();
 		void inserta(int e);
+		void suprime(int e);
+        void imprimir();
 
 		bool vacio();
 

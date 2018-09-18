@@ -79,6 +79,7 @@ void TDAConjuntoMemoria::suprime(int e)
 			{
 				m.poner_dato(pc,1,NULO);
 			}
+			cant--;
             return;
 		}else
 		{
@@ -86,5 +87,20 @@ void TDAConjuntoMemoria::suprime(int e)
             x = pc;
         }
     }
+
+}
+
+void TDAConjuntoMemoria::imprime()
+{
+	int pc = PtrConj;
+	int t = 0;
+	std::cout<<"[";
+	while(t<cant)
+	{
+		std::cout<< m.obtener_dato(pc,1) << ((t<cant-1)?", ":"") ;
+        pc = m.obtener_dato(pc,2);
+        t++;
+	}
+	std::cout<<"]"<<std::endl;
 
 }
