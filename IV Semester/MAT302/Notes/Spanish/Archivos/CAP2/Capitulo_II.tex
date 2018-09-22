@@ -1,1 +1,41 @@
 \chapter{Modelos de Distribución de Probabilidad}
+\section{Distribución de Bernoulli}
+Si la probabilidad de que ocurra un evento $p$ y la probabilidad de que no ocurra es $q(q=1-p)$, entonces se dice que la \textbf{v.a.} discreta $X$ se distribuye según Bernoulli, cuya función de cuantía está dada por:
+$$p(x)=f(x)=P(X=x)=
+\begin{cases}
+p^x\cdot (1-p)^{1-x} &; x=0;1 \\
+0 &; \text{otro caso}
+\end{cases}
+$$
+Y cuya función de distribución acumulada es:
+$$
+F(X)=P(X=x)=
+\begin{cases}
+0 &; x<0\\
+q=1-p &; 0\leq x < 1\\
+1 &; x\geq 1
+\end{cases}
+$$
+
+$$
+X \sim Ber(x;p)\Rightarrow 
+\begin{cases}
+E(x)=\mu = p \\
+V(x)=\sigma^2 = p\cdot q \\
+D(x) = \sigma = \sqrt{p\cdot q}
+\end{cases}
+$$
+Conocida como prueba o ensayo de Bernoulli, es un experimento que solo tiene 2 resultados posibles, a los cuales se los llama:
+\begin{itemize}
+\item Éxito $(p)$
+\item Fracaso $(q)$
+\end{itemize}
+\section{Distribución Binomial}
+Una \textbf{v.a.} discreta $X$ tiene distribución lineal si su función de cuantía está dada por:
+$$
+f(x)=
+\begin{cases}
+\displaystyle\binom{n}{x} p^x \cdot q^{n-x} &; x=0,1,2,\ldots,n \\
+0 &; \text{otro caso}
+\end{cases}
+$$

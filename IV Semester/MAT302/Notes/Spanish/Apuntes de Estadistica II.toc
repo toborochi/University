@@ -26,3 +26,5 @@
 \contentsline {subsection}{\numberline {1.6.3}Covarianza}{9}{subsection.1.6.3}
 \contentsline {subsection}{\numberline {1.6.4}Resultado Importantes}{9}{subsection.1.6.4}
 \contentsline {chapter}{\numberline {2}Modelos de Distribuci\IeC {\'o}n de Probabilidad}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Distribuci\IeC {\'o}n de Bernoulli}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Distribuci\IeC {\'o}n Binomial}{11}{section.2.2}
