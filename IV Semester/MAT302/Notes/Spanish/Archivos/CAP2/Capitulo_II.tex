@@ -39,3 +39,74 @@ f(x)=
 0 &; \text{otro caso}
 \end{cases}
 $$
+Donde:
+\begin{itemize}
+\item $p:$ Probabilidad de éxito.
+\item $n:$ Número de ensayo.
+\item $x:$ Número de éxitos.
+\end{itemize}
+Las Funciones de Distribución Acumulada Binomialmente está definida por:
+$$
+F(x)=P(X\leq x)=
+\begin{cases}
+0 &; x<0 \\
+\displaystyle\sum_{k=0}^{[\![ x ]\!]}\displaystyle\binom{n}{k} p^k q^{n-k} &; 0\leq x < n \\
+1 &; x\geq n
+\end{cases}
+$$
+$$
+X \sim b(x;n,p)\Rightarrow 
+\begin{cases}
+E(x)=\mu = n\cdot p \\
+V(x)=\sigma^2 = n\cdot p \cdot q \\
+D(x)=\sigma=\sqrt{n\cdot p\cdot q}
+\end{cases}
+$$
+
+\subsection{Características de la Distribución Binomial}
+\begin{enumerate}
+\item Se realiza $n$ pruebas , cada una independiente.
+\item $p$ es la probabilidad de éxito en cada prueba que ocurra en un evento y se mantiene constante a travez de las $n$ pruebas.
+\item El experimento es con reposición (sustitución por reemplazo).
+\item Se da el valor de la \textbf{v.a.} $X$. La variación de $x$ es desde 0 hasta $n$.
+
+\end{enumerate}
+
+\subsubsection{Observaciones}
+$$f(x)=b(x;n,p) \hspace{1cm} n \text{ y } p \text{ son parámetros.}$$
+\subsection{Manejo de la Tabla Binomial}
+\begin{enumerate}
+\item $\displaystyle\binom{p\leq 0.50}{n\leq 20}\Rightarrow
+b(x;n,p)=B(x;n,p)-B(x-1;n,p)
+$
+\item $\displaystyle\binom{p>0.50}{n\geq 20}\Rightarrow 
+\begin{cases}
+\textbf{(i.) }b(x;n,p)= B(n-x;n,1-p)-B(n-x-1;n,1-p) \\
+\textbf{(ii.) }b(x;n,p)=b(n-x;n,1-p) \text{ luego de usar \textbf{(i.)}} \\
+\textbf{(iii.) } B(x;n,p) = 1 - B(n-x-1;n,1-p)
+\end{cases}
+$
+\end{enumerate}
+\section{Distribución de Poisson}
+Una \textbf{v.a.} discreta $X$ tiene distribución de Poisson, si su función de cuantía está dada por:
+$$
+p(x)=f(x)=
+\begin{cases}
+\dfrac{e^{-\lambda}\cdot \lambda^x}{x!};& x=0,1,2,\ldots \\
+0 ;& \text{otro caso}
+\end{cases}
+$$
+Parámetro: $\lambda > 0$  \\$ { } $\\
+La distribución de Poisson se obtiene de 2 maneras:
+\begin{enumerate}
+\item $\lim_{\substack{ n\to \infty \\ p\to 0 }} \displaystyle\binom{n}{x}\cdot p^x \cdot q^{n-x}\backsimeq \dfrac{e^{-\lambda}\cdot \lambda^x}{x!} \hspace{1cm} x=0,1,2,\ldots$
+\item $p(x)=f(x)=\dfrac{e^{-\lambda\cdot t}(\lambda\cdot t)^x}{x!} \hspace{1cm} x=0,1,2,\ldots$
+\end{enumerate}
+donde $t$ es la cantidad de medida (intervalo de tiempo, longitud, área, etc...) La \textbf{F.D.A.} de Poisson está dada por:
+$$
+F(x)=
+\begin{cases}
+0 &; x<0 \\
+\displaystyle\sum_{k=0}^{[\![ x ]\!]} \dfrac{e^{-\lambda}\cdot \lambda^x}{x!} &; x\geq 0
+\end{cases}
+$$
