@@ -20,6 +20,7 @@ class TDAConjuntoLista
         void imprimir();
 
 		bool vacio();
+        bool pertenece(int e);
 
 		int cardinal();
 

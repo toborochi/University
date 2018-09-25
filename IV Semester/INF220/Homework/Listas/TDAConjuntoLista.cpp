@@ -26,6 +26,21 @@ void TDAConjuntoLista::inserta(int e)
     L.insertar(L.primero(),e);
 }
 
+bool TDAConjuntoLista::pertenece(int e)
+{
+	NodoP *x = L.primero();
+	while(x!=NULL)
+	{
+		if(x->Dato==e)
+		{
+			return true;
+		}
+		x = x->Sig;
+	}
+    return false;
+}
+
+
 void TDAConjuntoLista::suprime(int e)
 {
 	NodoP *x = L.primero();
