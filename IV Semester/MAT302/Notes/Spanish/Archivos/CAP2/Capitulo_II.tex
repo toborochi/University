@@ -110,3 +110,44 @@ F(x)=
 \displaystyle\sum_{k=0}^{[\![ x ]\!]} \dfrac{e^{-\lambda}\cdot \lambda^x}{x!} &; x\geq 0
 \end{cases}
 $$
+$$
+X \sim Poisson(x;\lambda)\Rightarrow
+\begin{cases}
+E(x) = \mu = \lambda = n\cdot p \\
+V(x) = \sigma^2 = n\cdot p \\
+D(x) = \sigma = \sqrt{\lambda}
+
+\end{cases}
+$$
+\section{Distribuciones Continuas}
+\subsection{Distribución Uniforme o Rectangular}
+Se dice que una \textbf{v.a.} continua $X$ tiene distribución uniforme en el intervalo $[a,b]$, si su función de densidad está dada por:
+$$
+f(x) = 
+\begin{cases}
+\dfrac{1}{b-a} ;& a\leq x \leq b \\
+0 ;& \text{en otro caso.}
+\end{cases}
+$$
+Parámetros: $a,b$ \\$ { } $\\
+La gráfica de esta función se muestra en la siguiente figura:
+%PENDIENTE
+La \textbf{F.D.A.} de $X$, distribuida uniformemente, está dada por:
+$$
+F(x)=P(X\leq x)=
+\begin{cases}
+0 ;& x<a \\
+\displaystyle\int_{-\infty}^{x} \dfrac{1}{b-a} dx=\dfrac{x-a}{b-a} ;& a\leq x < b \\
+1 ;& x\geq b
+\end{cases}
+$$ 
+La gráfica de $F$ es:
+%PENDIENTE
+$$
+X \sim U(x;a,b)\Rightarrow 
+\begin{cases}
+E(x)=\mu = \dfrac{a+b}{2} \\
+V(x)=\sigma^2 = \dfrac{(b-a)^2}{12} \\
+D(x)=\sigma = \dfrac{(b-a)\sqrt{3}}{6}
+\end{cases}
+$$

@@ -32,3 +32,5 @@
 \contentsline {subsubsection}{Observaciones}{12}{section*.12}
 \contentsline {subsection}{\numberline {2.2.2}Manejo de la Tabla Binomial}{12}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Distribuci\IeC {\'o}n de Poisson}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Distribuciones Continuas}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Distribuci\IeC {\'o}n Uniforme o Rectangular}{13}{subsection.2.4.1}
