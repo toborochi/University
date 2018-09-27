@@ -1,0 +1,3 @@
+path C:\Ensamblador\Ensamblador NUEVO\MinGWok\bin\
+nasm -f win32 -o 217002498.o 217002498.asm -l 217002498.lst
+gcc -o 217002498.exe 217002498.o
