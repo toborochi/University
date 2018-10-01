@@ -151,3 +151,35 @@ V(x)=\sigma^2 = \dfrac{(b-a)^2}{12} \\
 D(x)=\sigma = \dfrac{(b-a)\sqrt{3}}{6}
 \end{cases}
 $$
+\subsection{Distribución Exponencial}
+Sea $X$ una \textbf{v.a.} continua. Se dice que $X$ tiene distribución exponencial con el parámetro real $\lambda$, si su función de densidad está dada por:
+$$
+f(x)=
+\begin{cases}
+\lambda\cdot e^{-\lambda\cdot x} ,& x\geq 0 \\
+0 ,& \text{en otro caso}
+\end{cases}
+$$
+Parámetro: $\lambda>0$ \\${ }$\\
+La gráfica de $f$, se muestra en la siguiente figura:
+%
+La \textbf{F.D.A.} de $X$, distribuida exponencialmente está dada por:
+$$
+F(x)=P(X\leq x)=
+\begin{cases}
+0, & x<0 \\
+\displaystyle\int_{-\infty}^{x} \lambda\cdot e^{-\lambda\cdot x} dx ,& x\geq 0
+\end{cases}
+$$
+La gráfica de $F$, es la siguiente:
+%PENDIENTE
+$$
+X\sim exp(x;\lambda)\Rightarrow
+\begin{cases}
+E(x) = \mu = \frac{1}{\lambda} \\
+V(x) = \sigma^2 = \frac{1}{\lambda^2} \\
+D(x) = \sigma = \frac{1}{\lambda}
+\end{cases}
+$$
+\subsubsection{Propiedad Amnésica}
+$$P(X>5+t / x> s)=P(X>t)$$
