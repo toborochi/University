@@ -5,6 +5,7 @@
      * [More about](http://lh3.github.io/2018/04/02/minimap2-and-the-future-of-bwa)
   * [Introduction to Parallel Computing](https://computing.llnl.gov/tutorials/parallel_comp/)
   * [Write your own OS](http://mikeos.sourceforge.net/write-your-own-os.html)
+  * [ **Assembly Instructions** (University of California San Diego)](http://eceweb.ucsd.edu/~gert/ece30/CN2.pdf)
 ## Bibliography
   * Paul A. Carter, _Lenguaje Ensamblador para PC_ 2007. 
 ## Papers
