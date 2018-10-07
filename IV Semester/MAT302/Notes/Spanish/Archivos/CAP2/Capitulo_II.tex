@@ -1,5 +1,6 @@
 \chapter{Modelos de Distribución de Probabilidad}
-\section{Distribución de Bernoulli}
+\section{Distribuciones Discretas}
+\subsection{Distribución de Bernoulli}
 Si la probabilidad de que ocurra un evento $p$ y la probabilidad de que no ocurra es $q(q=1-p)$, entonces se dice que la \textbf{v.a.} discreta $X$ se distribuye según Bernoulli, cuya función de cuantía está dada por:
 $$p(x)=f(x)=P(X=x)=
 \begin{cases}
@@ -30,7 +31,7 @@ Conocida como prueba o ensayo de Bernoulli, es un experimento que solo tiene 2 r
 \item Éxito $(p)$
 \item Fracaso $(q)$
 \end{itemize}
-\section{Distribución Binomial}
+\subsection{Distribución Binomial}
 Una \textbf{v.a.} discreta $X$ tiene distribución lineal si su función de cuantía está dada por:
 $$
 f(x)=
@@ -63,7 +64,7 @@ D(x)=\sigma=\sqrt{n\cdot p\cdot q}
 \end{cases}
 $$
 
-\subsection{Características de la Distribución Binomial}
+\subsubsection{Características de la Distribución Binomial}
 \begin{enumerate}
 \item Se realiza $n$ pruebas , cada una independiente.
 \item $p$ es la probabilidad de éxito en cada prueba que ocurra en un evento y se mantiene constante a travez de las $n$ pruebas.
@@ -74,7 +75,7 @@ $$
 
 \subsubsection{Observaciones}
 $$f(x)=b(x;n,p) \hspace{1cm} n \text{ y } p \text{ son parámetros.}$$
-\subsection{Manejo de la Tabla Binomial}
+\subsubsection{Manejo de la Tabla Binomial}
 \begin{enumerate}
 \item $\displaystyle\binom{p\leq 0.50}{n\leq 20}\Rightarrow
 b(x;n,p)=B(x;n,p)-B(x-1;n,p)
@@ -87,7 +88,7 @@ $
 \end{cases}
 $
 \end{enumerate}
-\section{Distribución de Poisson}
+\subsection{Distribución de Poisson}
 Una \textbf{v.a.} discreta $X$ tiene distribución de Poisson, si su función de cuantía está dada por:
 $$
 p(x)=f(x)=
@@ -183,3 +184,5 @@ D(x) = \sigma = \frac{1}{\lambda}
 $$
 \subsubsection{Propiedad Amnésica}
 $$P(X>5+t / x> s)=P(X>t)$$
+
+%REALIZAR TABLA DE DATOS DE LAS DISTRIBUCIONES, NO OLVIDAR

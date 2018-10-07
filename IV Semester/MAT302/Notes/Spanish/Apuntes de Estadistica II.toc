@@ -26,13 +26,14 @@
 \contentsline {subsection}{\numberline {1.6.3}Covarianza}{9}{subsection.1.6.3}
 \contentsline {subsection}{\numberline {1.6.4}Resultado Importantes}{9}{subsection.1.6.4}
 \contentsline {chapter}{\numberline {2}Modelos de Distribuci\IeC {\'o}n de Probabilidad}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}Distribuci\IeC {\'o}n de Bernoulli}{11}{section.2.1}
-\contentsline {section}{\numberline {2.2}Distribuci\IeC {\'o}n Binomial}{11}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Caracter\IeC {\'\i }sticas de la Distribuci\IeC {\'o}n Binomial}{12}{subsection.2.2.1}
-\contentsline {subsubsection}{Observaciones}{12}{section*.12}
-\contentsline {subsection}{\numberline {2.2.2}Manejo de la Tabla Binomial}{12}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Distribuci\IeC {\'o}n de Poisson}{12}{section.2.3}
-\contentsline {section}{\numberline {2.4}Distribuciones Continuas}{13}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Distribuci\IeC {\'o}n Uniforme o Rectangular}{13}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Distribuci\IeC {\'o}n Exponencial}{13}{subsection.2.4.2}
-\contentsline {subsubsection}{Propiedad Amn\IeC {\'e}sica}{13}{section*.13}
+\contentsline {section}{\numberline {2.1}Distribuciones Discretas}{11}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Distribuci\IeC {\'o}n de Bernoulli}{11}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Distribuci\IeC {\'o}n Binomial}{11}{subsection.2.1.2}
+\contentsline {subsubsection}{Caracter\IeC {\'\i }sticas de la Distribuci\IeC {\'o}n Binomial}{12}{section*.12}
+\contentsline {subsubsection}{Observaciones}{12}{section*.13}
+\contentsline {subsubsection}{Manejo de la Tabla Binomial}{12}{section*.14}
+\contentsline {subsection}{\numberline {2.1.3}Distribuci\IeC {\'o}n de Poisson}{12}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Distribuciones Continuas}{13}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Distribuci\IeC {\'o}n Uniforme o Rectangular}{13}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Distribuci\IeC {\'o}n Exponencial}{13}{subsection.2.2.2}
+\contentsline {subsubsection}{Propiedad Amn\IeC {\'e}sica}{13}{section*.15}
