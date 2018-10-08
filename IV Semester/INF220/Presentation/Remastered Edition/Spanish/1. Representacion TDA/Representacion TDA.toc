@@ -1,1 +1,12 @@
 \babel@toc {spanish}{}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Problemas, Programas, Algoritmos y Estructuras de Datos}{4}{0}{1}
+\beamer@sectionintoc {2}{Abstracci\IeC {\'o}n}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Abstracci\IeC {\'o}n de Datos}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Usos de la Abstracci\IeC {\'o}n}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{Conclusiones}{15}{0}{2}
+\beamer@sectionintoc {3}{Estructuras de Datos}{18}{0}{3}
+\beamer@subsectionintoc {3}{1}{Clasificaci\IeC {\'o}n}{20}{0}{3}
+\beamer@sectionintoc {4}{Tipos de Datos Abstractos}{20}{0}{4}
+\beamer@sectionintoc {5}{Formas de Implementaci\IeC {\'o}n}{21}{0}{5}
+\beamer@subsectionintoc {5}{1}{Modelo Est\IeC {\'a}tico}{22}{0}{5}
