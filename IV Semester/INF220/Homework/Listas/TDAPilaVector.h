@@ -7,17 +7,20 @@
 
 
 
-class TDAPilaVector
+class TDAPila
 {
 
 	private:
         static const int max = 100;
-         int elementos[TDAPilaVector::max];
+		 int elementos[100];
 		 int tope;
 	public:
 		void crear();
 		bool vacia();
 		void meter(int elemento);
 		void sacar(int &elemento);
-        void imprimir();
+		void imprimir();
+		int cima();
+		void sacar();
+
 };

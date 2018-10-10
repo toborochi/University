@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAConjuntoPilaH
+#define TDAConjuntoPilaH
+//---------------------------------------------------------------------------
+#endif
+
+class TDAConjuntoPila
+{
+	private:
+		TDAListaPuntero L;
+	public:
+		void crear();
+		void inserta(int e);
+		void suprime(int e);
+        void imprimir();
+
+		bool vacio();
+        bool pertenece(int e);
+
+		int cardinal();
+
+
+};

@@ -57,7 +57,7 @@ int TDAPilaPuntero::sacar()
 		Nodo *aux = Tope;
 		Tope = Tope->sig;
 		int x = aux->elemento;
-		delete aux;
+		delete[] aux;
 		return x;
     }
 }

@@ -104,6 +104,11 @@
             <DependentOn>TDAConjuntoMemoria.h</DependentOn>
             <BuildOrder>12</BuildOrder>
         </CppCompile>
+        <CppCompile Include="TDAConjuntoPila.cpp">
+            <VirtualFolder>{09A538F3-5774-4BB9-9505-2070827C5121}</VirtualFolder>
+            <DependentOn>TDAConjuntoPila.h</DependentOn>
+            <BuildOrder>15</BuildOrder>
+        </CppCompile>
         <CppCompile Include="TDAConjuntoPuntero.cpp">
             <VirtualFolder>{09A538F3-5774-4BB9-9505-2070827C5121}</VirtualFolder>
             <DependentOn>TDAConjuntoPuntero.h</DependentOn>

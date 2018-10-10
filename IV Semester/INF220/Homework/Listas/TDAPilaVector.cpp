@@ -8,17 +8,17 @@
 #pragma package(smart_init)
 
 
-void TDAPilaVector::crear()
+void TDAPila::crear()
 {
 	tope = 0;
 }
 
-bool TDAPilaVector::vacia()
+bool TDAPila::vacia()
 {
     return (tope==0);
 }
 
-void TDAPilaVector::meter(int elemento)
+void TDAPila::meter(int elemento)
 {
 	if(tope<max)
 	{
@@ -27,7 +27,7 @@ void TDAPilaVector::meter(int elemento)
     }
 }
 
-void TDAPilaVector::sacar(int &elemento)
+void TDAPila::sacar(int &elemento)
 {
 	if(!vacia())
 	{
@@ -40,10 +40,22 @@ void TDAPilaVector::sacar(int &elemento)
 
 }
 
-void TDAPilaVector::imprimir()
+void TDAPila::imprimir()
 {
 	for(int i=tope;i>=1;i--)
 	{
         std::cout<< elementos[i] << std::endl;
     }
 }
+
+int TDAPila::cima()
+{
+    return elementos[tope];
+}
+
+
+void TDAPila::sacar()
+{
+    tope--;
+}
+
