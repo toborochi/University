@@ -105,12 +105,10 @@ int main()
 					{
 					    if(A.pertenece(i) && !B.pertenece(i))
 						{
-                            cout<<i<<endl;
                             C.inserta(i);
 						}else
 						if(!A.pertenece(i) && B.pertenece(i))
 						{
-                            cout<<i<<endl;
                             C.inserta(i);
 						}
                     }
@@ -120,7 +118,7 @@ int main()
 
 			break;
 			case 7:
-				C.imprimir();
+				A.imprimir();
 			break;
             default : break;
 		}

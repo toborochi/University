@@ -123,11 +123,65 @@ $$
 \subsection{Distribución Geométrica}
 También llamada Distribución de Pascal, es un modelo útil para aquellos procesos en los que se repiten pruebas hasta llegar al éxito o a un resultado deseado y tiene interesantes aplicaciones en los muestreos realizados de esta manera. Su función de cuantía está dada por:
 $$
-p(x)=f(x)=q^{n-1}\cdot p
+p(x)=f(x)=(1-p)^x\cdot p \hspace{1cm}x=0,1,2,\ldots \hspace{0.5cm};\hspace{0.5cm} (0<p<1)
 $$
 También implica la existencia de una dicotomía de posibles resultados y la independencia de las pruebas entre sí.
+\subsubsection{Características de la Distribución Geométrica}
+\begin{enumerate}
+\item El proceso consta de un número no definido de pruebas o experimentos separados o separables. El proceso concluirá cuando se obtenga por primera vez el resultado deseado (éxito).
+
+\item Cada prueba puede dar dos resultados mutuamente excluyentes : $A$ y no $A$
+
+\item La probabilidad de obtener un resultado A en cada prueba es p y la de obtener un resultado no $A$ es $q$
+siendo $(p + q = 1)$.
+\end{enumerate}
+La \textbf{F.D.A.} de esta distribución es:
+$$
+F(x)=
+\begin{cases}
+0 &;x<0 \\
+\displaystyle\sum_{k=0}^{[\![ x ]\!]} (1-p)^k p  &; x\geq 0
+\end{cases}
+$$
+Y se notará de la siguiente manera:
+$$
+X\sim G(p)\Rightarrow
+\begin{cases}
+E(x)=\mu= \dfrac{1}{p} \\ \vspace{0.01cm} \\
+V(x)=\sigma^2 = \dfrac{1-p}{p^2}\\ \vspace{0.01cm} \\
+D(x)=\sigma= \dfrac{\sqrt{1-p}}{p}
+\end{cases}
+$$
+
 \subsection{Distribución Hipergeométrica}
 \subsection{Distribución Binomial Negativa}
+Consideremos ahora un experimento aleatorio consistente en repeticiones independientes de
+ensayos de Bernoulli con probabilidad de éxito constante, hasta que aparezca el éxito k-ésimo.
+Es decir, en lugar de fijar el número de ensayos y observar el número de éxitos en esas n
+realizaciones, se repiten las realizaciones hasta obtener un número determinado de éxitos y con-
+tabilizamos los fracasos. Definimos la variable aleatoria con
+distribución binomial negativa
+como aquella que modeliza el número de fracasos antes de que aparezca el éxito k-ésimo.
+$$
+p(x)=f(x)=\binom{x+\lambda-1}{x} (1-p)^x p^\lambda
+$$
+Su \textbf{F.D.A.} está dada por:
+$$
+F(x)=
+\begin{cases}
+0 &; x<0 \\
+\displaystyle\sum_{k=0}^{[\![ x ]\!]} \binom{k+\lambda-1}{x} (1-p)^k p^\lambda &; x\geq 0
+\end{cases}
+$$
+Denotada por:
+$$
+X\sim BN(\lambda,p)\Rightarrow
+\begin{cases}
+E(x)=\mu= \dfrac{\lambda(1-p)}{p} \\ \vspace{0.01cm} \\
+V(x)=\sigma^2 = \dfrac{\lambda (1-p)}{p^2}\\ \vspace{0.01cm} \\
+D(x)=\sigma= \dfrac{\sqrt{\lambda (1-p)}}{p}
+\end{cases}
+$$
 \subsection{Distribución Multinomial}
 \section{Distribuciones Continuas}
 \subsection{Distribución Uniforme o Rectangular}

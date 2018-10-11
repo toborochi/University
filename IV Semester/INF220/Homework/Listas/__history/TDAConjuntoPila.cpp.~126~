@@ -32,7 +32,6 @@ bool TDAConjuntoPila::pertenece(int e)
 	{
 		int x;
 		P.sacar(x);
-        aux.meter(x);
 		if(x==e)
 		{
             ans=true;

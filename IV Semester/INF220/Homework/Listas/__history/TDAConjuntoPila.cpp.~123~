@@ -32,12 +32,8 @@ bool TDAConjuntoPila::pertenece(int e)
 	{
 		int x;
 		P.sacar(x);
-        aux.meter(x);
 		if(x==e)
-		{
             ans=true;
-        }
-
 	}
 
 	while(!aux.vacia())
@@ -46,6 +42,7 @@ bool TDAConjuntoPila::pertenece(int e)
 		aux.sacar(x);
         P.meter(x);
     }
+
 
     return ans;
 
@@ -76,7 +73,7 @@ void TDAConjuntoPila::suprime(int e)
 
 void TDAConjuntoPila::imprimir()
 {
-    P.imprimir();
+    P.imprimir(P);
 }
 
 bool TDAConjuntoPila::vacio()

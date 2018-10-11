@@ -22,9 +22,13 @@ bool TDAPilaPuntero::vacia()
 
 int TDAPilaPuntero::cima()
 {
-
-	return Tope->elemento;
-
+   if(vacia())
+   {
+       throw("Error...");
+   }else
+   {
+       return Tope->elemento;
+   }
 }
 
 void TDAPilaPuntero::meter(int elemento)
@@ -45,13 +49,24 @@ void TDAPilaPuntero::sacar(int &dato)
 
 }
 
-void TDAPilaPuntero::imprimir()
+void TDAPilaPuntero::imprimir(TDAPilaPuntero &Pila)
 {
-    Nodo *aux = Tope;
-     while (aux != NULL) {
-			int dato = aux->elemento;
-			std::cout<<dato<<std::endl;
-			aux = aux->sig;
-		}
+	TDAPilaPuntero aux;
+    int i = 0;
+
+	std::cout << "*" << std::endl;
+	while(!Pila.vacia())
+	{
+		int x = Pila.sacar();
+		std::cout << x << std::endl;
+		aux.meter(x);
+        ++i;
+	}
+    std::cout << "*" << std::endl;
+	while(i>0)
+	{
+        Pila.meter(aux.sacar());
+		i--;
+    }
 
 }

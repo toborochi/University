@@ -45,13 +45,27 @@ void TDAPilaPuntero::sacar(int &dato)
 
 }
 
-void TDAPilaPuntero::imprimir()
+void TDAPilaPuntero::imprimir(TDAPilaPuntero &Pila)
 {
-    Nodo *aux = Tope;
-     while (aux != NULL) {
-			int dato = aux->elemento;
-			std::cout<<dato<<std::endl;
-			aux = aux->sig;
-		}
+	TDAPilaPuntero aux;
+    int i = 0;
+
+	std::cout << "*" << std::endl;
+	while(!Pila.vacia())
+	{
+		int x;
+		Pila.sacar(x);
+		std::cout << x << std::endl;
+		aux.meter(x);
+        ++i;
+	}
+    std::cout << "*" << std::endl;
+	while(i>0)
+	{
+		int x;
+		aux.sacar(x);
+        Pila.meter(x);
+		i--;
+    }
 
 }

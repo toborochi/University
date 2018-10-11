@@ -103,14 +103,13 @@ int main()
 				{
 					if(!A.vacio() && !B.vacio())
 					{
+
 					    if(A.pertenece(i) && !B.pertenece(i))
 						{
-                            cout<<i<<endl;
                             C.inserta(i);
 						}else
 						if(!A.pertenece(i) && B.pertenece(i))
 						{
-                            cout<<i<<endl;
                             C.inserta(i);
 						}
                     }

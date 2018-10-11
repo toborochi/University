@@ -47,10 +47,10 @@ void TDAPilaPuntero::sacar(int &dato)
 
 void TDAPilaPuntero::imprimir()
 {
-    Nodo *aux = Tope;
      while (aux != NULL) {
-			int dato = aux->elemento;
-			std::cout<<dato<<std::endl;
+			int dato = aux->ele;
+			std::string dato_string = boost::lexical_cast<std::string>(dato);
+			S = S + dato_string + " -> ";
 			aux = aux->sig;
 		}
 

@@ -26,26 +26,15 @@ void TDAConjuntoPila::inserta(int e)
 bool TDAConjuntoPila::pertenece(int e)
 {
 	bool ans = false;
-	TDAPilaPuntero aux;
-    aux.crear();
+    TDAPilaPuntero aux = P;
 	while(!P.vacia())
 	{
 		int x;
 		P.sacar(x);
-        aux.meter(x);
 		if(x==e)
-		{
             ans=true;
-        }
-
 	}
 
-	while(!aux.vacia())
-	{
-		int x;
-		aux.sacar(x);
-        P.meter(x);
-    }
 
     return ans;
 
@@ -76,7 +65,7 @@ void TDAConjuntoPila::suprime(int e)
 
 void TDAConjuntoPila::imprimir()
 {
-    P.imprimir();
+    P.imprimir(P);
 }
 
 bool TDAConjuntoPila::vacio()

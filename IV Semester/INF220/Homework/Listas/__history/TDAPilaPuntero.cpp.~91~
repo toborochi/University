@@ -51,6 +51,7 @@ void TDAPilaPuntero::imprimir()
      while (aux != NULL) {
 			int dato = aux->elemento;
 			std::cout<<dato<<std::endl;
+			S = S + dato_string + " -> ";
 			aux = aux->sig;
 		}
 
