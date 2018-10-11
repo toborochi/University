@@ -7,6 +7,7 @@
 \beamer@subsectionintoc {2}{3}{Conclusiones}{15}{0}{2}
 \beamer@sectionintoc {3}{Estructuras de Datos}{18}{0}{3}
 \beamer@subsectionintoc {3}{1}{Clasificaci\IeC {\'o}n}{20}{0}{3}
-\beamer@sectionintoc {4}{Tipos de Datos Abstractos}{20}{0}{4}
-\beamer@sectionintoc {5}{Formas de Implementaci\IeC {\'o}n}{21}{0}{5}
-\beamer@subsectionintoc {5}{1}{Modelo Est\IeC {\'a}tico}{22}{0}{5}
+\beamer@sectionintoc {4}{Tipos de Datos Abstractos}{24}{0}{4}
+\beamer@subsectionintoc {4}{1}{Tipos}{24}{0}{4}
+\beamer@sectionintoc {5}{Formas de Implementaci\IeC {\'o}n}{26}{0}{5}
+\beamer@subsectionintoc {5}{1}{Modelo Est\IeC {\'a}tico}{27}{0}{5}
