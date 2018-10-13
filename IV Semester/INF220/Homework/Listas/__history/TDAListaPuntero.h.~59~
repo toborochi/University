@@ -27,11 +27,12 @@ class TDAListaPuntero
 
 	private:
 		int Longitud;
-		NodoP *PtrElementos;
 
 	public:
+		// Atributos
+		NodoP *PtrElementos;
 
-
+		// Metodos
         // Constructor
 		void crear();
 

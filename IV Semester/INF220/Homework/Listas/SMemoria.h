@@ -19,6 +19,7 @@
 static const int NULO = -1;
 static const int MAX  = 20;
 
+// Estructura Nodo, con Dato y Link (Siguiente direccion a la que apunta el elemento)
 struct NodoM
 {
 	int Dato;
@@ -36,27 +37,27 @@ class SMemoria
 	   SMemoria();
 
        // Funcion que devuelve la "direccion" del espacio libre solicitado
-	   int  	new_espacio(int cantidad);
+	   int new_espacio(int cantidad);
 
 	   // Metodo que libera "espacio" de memora
-	   void 	delete_espacio(int dir);
+	   void delete_espacio(int dir);
 
        // Metodo que coloca un dato en una posicion, a partir de una "direccion" en "memoria"
-	   void 	poner_dato(int dir,int lugar,int valor);
+	   void poner_dato(int dir,int lugar,int valor);
 
        // Funcion para obtener un dato basado en la "direccion" y a partir de este, un lugar
-	   int  	obtener_dato(int dir,int lugar);
+	   int obtener_dato(int dir,int lugar);
 
 	   // Metodo para mostrar el estado de 'mem'
-	   void 	mostrar();
+	   void mostrar();
 
 	   // Funcion que devuelve el espacio libre
-	   int 		espacio_disponible();
+	   int espacio_disponible();
 
 	   // Funcion que devuelve el espacio ocupado
-	   int 		espacio_ocupado();
+	   int espacio_ocupado();
 
        // Funcion que pregunta por una direccion, y si esta esta libre u ocupada
-	   bool 	direccion_libre(int direccion);
+	   bool direccion_libre(int direccion);
 };
 

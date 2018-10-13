@@ -15,10 +15,10 @@
 #include <vector>
 #include <cstdlib>
 
-#include "TDAConjuntoPila.h"
-
 #pragma package(smart_init)
+#pragma package(smart_init, weak)
 
+#include "TDAConjuntoPila.h"
 
 
 /*
@@ -38,6 +38,8 @@
 	Conjunto Lista:   OK
 	Conjunto Entero:  OK
 */
+
+
 
 using namespace std;
 
@@ -103,7 +105,6 @@ int main()
 				{
 					if(!A.vacio() && !B.vacio())
 					{
-
 					    if(A.pertenece(i) && !B.pertenece(i))
 						{
                             cout<<i<<endl;
@@ -111,6 +112,7 @@ int main()
 						}else
 						if(!A.pertenece(i) && B.pertenece(i))
 						{
+                            cout<<i<<endl;
                             C.inserta(i);
 						}
                     }
