@@ -1,14 +1,13 @@
 /*////////////////////////////////////////////////////////////////////////////
-    U.A.G.R.M.
-	Facultad  de Ingenieria en Ciencias de la Computacion y Telecomunicaciones
+	CLASE: Lista utilizando Arreglos
 
     Materia: Estructura de Datos I
 	Docente: Mario Lopez Winnipeg
+	U.A.G.R.M.
+	Facultad  de Ingenieria en Ciencias de la Computacion y Telecomunicaciones
 
 	Autor: Leonardo H. Anez Vladimirovna
-	Correo: toborochi@outlook.com
-
-	Resumen: Implementacion de la Clase 'Lista' usando un arreglo
+    Correo: toborochi@outlook.com
 */////////////////////////////////////////////////////////////////////////////
 
 #ifndef TDAListaVectorH

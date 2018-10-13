@@ -8,7 +8,10 @@
 	Autor: Leonardo H. Anez Vladimirovna
 	Correo: toborochi@outlook.com
 
-	Resumen: Implementacion de la Clase 'Lista' usando un arreglo
+	Resumen: Lista utilizando Arreglos
+
+
+
 */////////////////////////////////////////////////////////////////////////////
 
 #ifndef TDAListaVectorH
