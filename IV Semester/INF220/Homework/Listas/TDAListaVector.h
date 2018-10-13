@@ -35,7 +35,7 @@ class TDAListaVector
 		// Posicion del primer elemento (1)
 		int primero();
 
-        // Funcion que devuelve la siguiente posicion a un posicion dada
+	    // Funcion que devuelve la siguiente posicion a un posicion dada
 		int siguiente(int direccion);
 
 		// Funcion que devuelve la anterior posicion a un posicion dada

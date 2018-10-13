@@ -23,16 +23,27 @@ class TDAListaPuntero
 		NodoP *PtrElementos;
 
 		// Metodos
-		TDAListaPuntero();
+        // Constructor
+		void crear();
+
+
 		bool vacia();
+
 		NodoP *primero();
 		NodoP *anterior(NodoP *direccion);
         NodoP *siguiente(NodoP *direccion);
         NodoP *fin();
 
 		int recupera(NodoP *direccion);
-        void insertar(NodoP *posicion,int elemento);
 		int longitud();
+
+		void insertar(NodoP *posicion,int elemento);
+		void modifica(NodoP *direccion, int elemento);
+        void suprime(NodoP *direccion);
+
+        // Metodos Propios
+        void mostrar();
+
 
 
 };

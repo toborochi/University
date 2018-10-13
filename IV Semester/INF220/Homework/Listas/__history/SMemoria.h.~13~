@@ -1,8 +1,20 @@
-//---------------------------------------------------------------------------
+/*////////////////////////////////////////////////////////////////////////////
+    U.A.G.R.M.
+	Facultad  de Ingenieria en Ciencias de la Computacion y Telecomunicaciones
+
+    Materia: Estructura de Datos I
+	Docente: Mario Lopez Winnipeg
+
+	Autor: Leonardo H. Anez Vladimirovna
+	Correo: toborochi@outlook.com
+
+	Resumen: Implementacion de la Simulacion de la Memori
+*/////////////////////////////////////////////////////////////////////////////
 
 #ifndef SMemoriaH
 #define SMemoriaH
-//---------------------------------------------------------------------------
+#endif
+
 
 static const int NULO = -1;
 static const int MAX  = 20;
@@ -23,6 +35,7 @@ class SMemoria
 	   // Constructor
 	   SMemoria();
 
+       // Funcion que devuelve la direccion del espacio libre solicitado
 	   int  	new_espacio(int cantidad);
 	   void 	delete_espacio(int dir);
 	   void 	poner_dato(int dir,int lugar,int valor);

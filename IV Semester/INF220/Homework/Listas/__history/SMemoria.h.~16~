@@ -8,7 +8,7 @@
 	Autor: Leonardo H. Anez Vladimirovna
 	Correo: toborochi@outlook.com
 
-	Resumen: Implementacion de la Simulacion de la Memoria
+	Resumen: Implementacion de la Simulacion de la Memori
 */////////////////////////////////////////////////////////////////////////////
 
 #ifndef SMemoriaH
@@ -44,19 +44,13 @@ class SMemoria
        // Metodo que coloca un dato en una posicion, a partir de una "direccion" en "memoria"
 	   void 	poner_dato(int dir,int lugar,int valor);
 
-       // Funcion para obtener un dato basado en la "direccion" y a partir de este, un lugar
+       // Metodo para obtener un dato basado en la "direccion" y a partir de este, un lugar
 	   int  	obtener_dato(int dir,int lugar);
-
-	   // Metodo para mostrar el estado de 'mem'
 	   void 	mostrar();
-
-	   // Funcion que devuelve el espacio libre
 	   int 		espacio_disponible();
-
-	   // Funcion que devuelve el espacio ocupado
 	   int 		espacio_ocupado();
-
-       // Funcion que pregunta por una direccion, y si esta esta libre u ocupada
-	   bool 	direccion_libre(int direccion);
+       bool 	direccion_libre(int direccion);
 };
 
+
+#endif

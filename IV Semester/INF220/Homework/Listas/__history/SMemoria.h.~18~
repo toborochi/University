@@ -8,7 +8,7 @@
 	Autor: Leonardo H. Anez Vladimirovna
 	Correo: toborochi@outlook.com
 
-	Resumen: Implementacion de la Simulacion de la Memoria
+	Resumen: Implementacion de la Simulacion de la Memori
 */////////////////////////////////////////////////////////////////////////////
 
 #ifndef SMemoriaH
@@ -49,14 +49,10 @@ class SMemoria
 
 	   // Metodo para mostrar el estado de 'mem'
 	   void 	mostrar();
-
-	   // Funcion que devuelve el espacio libre
 	   int 		espacio_disponible();
-
-	   // Funcion que devuelve el espacio ocupado
 	   int 		espacio_ocupado();
-
-       // Funcion que pregunta por una direccion, y si esta esta libre u ocupada
-	   bool 	direccion_libre(int direccion);
+       bool 	direccion_libre(int direccion);
 };
 
+
+#endif
