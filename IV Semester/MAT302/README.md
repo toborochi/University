@@ -3,6 +3,7 @@
 Well... Here are all my useful things.
 
 ## Useful Links
+  * [Probability and Cumulative Distribution Functions, The Department of Mathematics at Virginia Tech](https://www.math.vt.edu/people/qlfang/class_home/Lesson2021.pdf)
   * [**Modelos de Probabilidad, Universitat de Valencia**](https://www.uv.es/ceaces/base/modelos%20de%20probabilidad/simple.htm)
       * [Distribución Geometrica](https://www.ugr.es/~proman/Probabilidad/PDF/P_T05_TablaGeometrica.pdf)
       * [**Patricia Roman, Cursos en Estadistica**](https://www.ugr.es/~proman/)
