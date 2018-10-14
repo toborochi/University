@@ -10,29 +10,37 @@
 
 	Resumen: Implementacion de la Clase 'Lista' usando un arreglo
 */////////////////////////////////////////////////////////////////////////////
-#ifndef TDAConjuntoEnteroH
-#define TDAConjuntoEnteroH
-#endif
 
+#ifndef TDAConjuntoVectorH
+#define TDAConjuntoVectorH
+#endif
 #include <iostream>
-#include <math.h>
-#include <string>
+#include <ctime>
 #include <cstdlib>
 
 
-class TDAConjuntoEntero
+
+static const int maxi  = 1000000;
+
+class TDAConjuntoVector
 {
 	private:
-		int elem;
+		bool v[maxi+1];
+		int cant;
 	public:
 		void crear();
-		void insertar(int e);
+        void inserta(int e);
 		void suprime(int e);
-        void imprimir();
+		// Funcion anadida
+		void imprime();
+
+        int cardinal();
+        int ordinal(int elemento);
 
 		bool vacio();
-		bool pertenece(int e);
+        bool pertenece(int e);
 
-		int cardinal();
+		int muestrea();
+
 
 };

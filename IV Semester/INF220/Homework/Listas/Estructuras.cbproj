@@ -82,6 +82,10 @@
             <BuildOrder>0</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
+        <CppCompile Include="HUEVIS.cpp">
+            <DependentOn>HUEVIS.h</DependentOn>
+            <BuildOrder>16</BuildOrder>
+        </CppCompile>
         <CppCompile Include="main.cpp">
             <BuildOrder>1</BuildOrder>
         </CppCompile>
@@ -182,6 +186,9 @@
                     <VFOLDER ID="{7242499F-4DB5-4E17-BB34-009128FFD899}" name="Listas"/>
                     <VFOLDER ID="{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}" name="Pilas"/>
                 </VFOLDERS>
+                <Folders>
+                    <Folder Path="Lista" Masks="*.*" ShowSubdirectories="true"/>
+                </Folders>
             </CPlusPlusBuilder.Personality>
             <Platforms>
                 <Platform value="Win32">True</Platform>

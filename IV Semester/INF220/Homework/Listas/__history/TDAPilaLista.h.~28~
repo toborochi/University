@@ -8,31 +8,30 @@
 	Autor: Leonardo H. Anez Vladimirovna
 	Correo: toborochi@outlook.com
 
-	Resumen: Implementacion de la Clase 'Lista' usando un arreglo
+	Resumen: Implementacion de la Clase 'Pila' usando la clase 'Lista'
 */////////////////////////////////////////////////////////////////////////////
-#ifndef TDAConjuntoEnteroH
-#define TDAConjuntoEnteroH
+
+#ifndef TDAPilaListaH
+#define TDAPilaListaH
 #endif
 
-#include <iostream>
-#include <math.h>
-#include <string>
-#include <cstdlib>
+#include "TDAListaPuntero.h"
 
-
-class TDAConjuntoEntero
+class TDAPilaLista
 {
 	private:
-		int elem;
+        TDAListaPuntero L;
+
 	public:
-		void crear();
-		void insertar(int e);
-		void suprime(int e);
-        void imprimir();
+        void crear();
+		void meter(int elemento);
+		void sacar(int &elemento);
+		void imprimir(TDAPilaLista &Pila);
 
-		bool vacio();
-		bool pertenece(int e);
+		bool vacia();
 
-		int cardinal();
+		int cima();
 
 };
+
+

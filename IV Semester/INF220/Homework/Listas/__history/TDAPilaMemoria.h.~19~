@@ -8,31 +8,26 @@
 	Autor: Leonardo H. Anez Vladimirovna
 	Correo: toborochi@outlook.com
 
-	Resumen: Implementacion de la Clase 'Lista' usando un arreglo
+	Resumen: Implementacion de la Clase 'Lista' usando la clase 'SMemoria'
 */////////////////////////////////////////////////////////////////////////////
-#ifndef TDAConjuntoEnteroH
-#define TDAConjuntoEnteroH
+
+#ifndef TDAPilaMemoriaH
+#define TDAPilaMemoriaH
 #endif
 
-#include <iostream>
-#include <math.h>
-#include <string>
-#include <cstdlib>
+#include "SMemoria.h"
 
+SMemoria m;
 
-class TDAConjuntoEntero
+class TDAPilaMemoria
 {
 	private:
-		int elem;
+		int Tope;
 	public:
 		void crear();
-		void insertar(int e);
-		void suprime(int e);
+		bool vacia();
+		int cima();
+		void meter(int elemento);
+		void sacar();
         void imprimir();
-
-		bool vacio();
-		bool pertenece(int e);
-
-		int cardinal();
-
 };

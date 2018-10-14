@@ -10,29 +10,32 @@
 
 	Resumen: Implementacion de la Clase 'Lista' usando un arreglo
 */////////////////////////////////////////////////////////////////////////////
-#ifndef TDAConjuntoEnteroH
-#define TDAConjuntoEnteroH
+
+#ifndef TDAConjuntoPunteroH
+#define TDAConjuntoPunteroH
 #endif
 
-#include <iostream>
-#include <math.h>
-#include <string>
-#include <cstdlib>
+struct Nodo
+{
+	int dato;
+    Nodo *sig;
+};
 
-
-class TDAConjuntoEntero
+class TDAConjuntoPuntero
 {
 	private:
-		int elem;
+		int cant;
+		Nodo *PtrConj;
 	public:
 		void crear();
-		void insertar(int e);
+        void inserta(int e);
 		void suprime(int e);
-        void imprimir();
+		void imprime();     	//Funcion Extra
+
+		int cardinal();
+		int ordinal(int e);
 
 		bool vacio();
 		bool pertenece(int e);
-
-		int cardinal();
 
 };
