@@ -82,10 +82,6 @@
             <BuildOrder>0</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
-        <CppCompile Include="HUEVIS.cpp">
-            <DependentOn>HUEVIS.h</DependentOn>
-            <BuildOrder>16</BuildOrder>
-        </CppCompile>
         <CppCompile Include="main.cpp">
             <BuildOrder>1</BuildOrder>
         </CppCompile>
@@ -158,6 +154,11 @@
             <DependentOn>TDAPilaVector.h</DependentOn>
             <BuildOrder>6</BuildOrder>
         </CppCompile>
+        <CppCompile Include="TDAPolinomioVector.cpp">
+            <VirtualFolder>{6FA0F84B-98BA-4783-B14D-6FEAB093A550}</VirtualFolder>
+            <DependentOn>TDAPolinomioVector.h</DependentOn>
+            <BuildOrder>16</BuildOrder>
+        </CppCompile>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -185,10 +186,9 @@
                     <VFOLDER ID="{09A538F3-5774-4BB9-9505-2070827C5121}" name="Conjuntos"/>
                     <VFOLDER ID="{7242499F-4DB5-4E17-BB34-009128FFD899}" name="Listas"/>
                     <VFOLDER ID="{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}" name="Pilas"/>
+                    <VFOLDER ID="{6FA0F84B-98BA-4783-B14D-6FEAB093A550}" name="Polinomio"/>
                 </VFOLDERS>
-                <Folders>
-                    <Folder Path="Lista" Masks="*.*" ShowSubdirectories="true"/>
-                </Folders>
+                <Folders/>
             </CPlusPlusBuilder.Personality>
             <Platforms>
                 <Platform value="Win32">True</Platform>

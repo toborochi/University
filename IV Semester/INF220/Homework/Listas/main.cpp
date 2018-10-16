@@ -40,7 +40,7 @@
 
 #pragma package(smart_init)
 
-#include "TDAConjuntoPila.h"
+#include "TDAPolinomioVector.h"
 
 using namespace std;
 
@@ -61,75 +61,24 @@ void MostrarOpciones()
 #pragma region MAIN
 int main()
 {
-	 TDAConjuntoPila A,B,C;
+    TDAPolinomioVector A,B,C;
 
+    A.crear(), B.crear(), C.crear();
 
+    A.poner_termino(3,1);
+    A.poner_termino(2,2);
+    A.poner_termino(7,3);
+    A.poner_termino(45,4);
+    A.expresion();
 
+    B.poner_termino(-3,1);
+    B.poner_termino(2,2);
+    B.poner_termino(7,3);
+    B.expresion();
 
-	int opcion,dato;
+    C.suma(A,B);
+    C.expresion();
 
-	do
-	{
-		// Refresh de la Consola
-		system("cls");
-
-		// Menu de Opciones
-		MostrarOpciones();
-
-		// Opcion del Menu
-		cin>>opcion;
-
-		switch(opcion)
-		{
-			case 1:
-				A.crear();
-			break;
-			case 2:
-				B.crear();
-			break;
-			case 3:
-				C.crear();
-			break;
-			case 4:
-				cout<<"Inserte dato: ";
-				cin>>dato;
-				A.inserta(dato);
-			break;
-			case 5:
-                cout<<"Inserte dato: ";
-				cin>>dato;
-                B.inserta(dato);
-			break;
-			case 6:
-				C.crear();
-				for(int i=0;i<=1000000;++i)
-				{
-					if(!A.vacio() && !B.vacio())
-					{
-					    if(A.pertenece(i) && !B.pertenece(i))
-						{
-                            cout<<i<<endl;
-                            C.inserta(i);
-						}else
-						if(!A.pertenece(i) && B.pertenece(i))
-						{
-                            cout<<i<<endl;
-                            C.inserta(i);
-						}
-                    }
-				}
-
-				
-
-			break;
-			case 7:
-				C.imprimir();
-			break;
-            default : break;
-		}
-        getch();
-
-	}while(opcion!=8);
 
 	getch();
 

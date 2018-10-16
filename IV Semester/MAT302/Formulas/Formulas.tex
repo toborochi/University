@@ -1,0 +1,56 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage[affil-it]{authblk}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{slashbox}
+\usepackage{diagbox}
+\usepackage{slashbox,multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{pstricks}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
+\usepackage{empheq}
+\usepackage{svg}
+\usepackage{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Leonardo H. Añez Vladimirovna}
+\title{Formulas de Estadística Inferencial}
+\begin{document}
+\maketitle
+
+\section{Variables Aleatorias}
+\begin{multicols}{2}
+\begin{flushleft}
+\subsection{Variables Aleatorias Discretas}
+Notación:  $P(A),P(X=x),f(x)$.
+\begin{enumerate}
+\item $p(x)\geq 0 ; \forall x \in \mathbb{R}$
+\item $\displaystyle\sum_{x_i\in Rec_x} p(x_i)=1$
+\item $\displaystyle\sum_{i=1}^{n} p(x_i)=1$
+\item $\displaystyle\sum_{i=1}^{\infty} p(x_i)=1$
+\end{enumerate}
+\end{flushleft}
+\columnbreak
+\subsection{Variables Aleatorias Continuas}
+Notación:  $F(x),P(X\leq x)$.
+\begin{enumerate}
+\item $f(x)\geq 0;\forall x \in \mathbb{R}$
+\item $\displaystyle\int_{-\infty}^{+\infty} f(x)dx = 1$
+\item $P(a\leq x \leq b) = \displaystyle\int_{a}^{b} f(x)dx=1$
+\end{enumerate}
+\end{multicols}
+
+\end{document}

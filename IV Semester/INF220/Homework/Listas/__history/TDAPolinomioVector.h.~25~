@@ -1,0 +1,27 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAPolinomioVectorH
+#define TDAPolinomioVectorH
+//---------------------------------------------------------------------------
+#endif
+
+#define TDAPolinomioVector Polinomio
+
+
+class TDAPolinomioVector
+{
+    private:
+            int VC[10],VE[10];
+            int nt;
+    public:
+           void crear();
+           bool escero();
+           void poner_termino(int coe,int exp);
+           int coeficiente(int exp);
+           int exponente(int nro_termino);
+           int grado();
+           int numero_terminos();
+           Polinomio suma(Polinomio a,Polinomio b);
+           Polinomio resta(Polinomio a,Polinomio b);
+
+};

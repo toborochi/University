@@ -8,7 +8,7 @@
 	Autor: Leonardo H. Anez Vladimirovna
 	Correo: toborochi@outlook.com
 
-	Resumen: Implementacion de la Clase 'Lista' usando un arreglo
+	Resumen: Implementacion de la Clase 'Conjunto' para el particular caso de elemento del conjunto {1,2,3,...,9}
 */////////////////////////////////////////////////////////////////////////////
 #ifndef TDAConjuntoEnteroH
 #define TDAConjuntoEnteroH
