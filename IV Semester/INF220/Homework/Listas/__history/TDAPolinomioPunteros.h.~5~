@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAPolinomioPunterosH
+#define TDAPolinomioPunterosH
+//---------------------------------------------------------------------------
+#endif
+
+
+struct Nodo
+{
+    int Coef;
+    int Exp;
+    Nodo *Sig;
+
+};
+
+class Nodo
+{
+    private:
+            int nt;
+            Nodo* PtrPoli;
+
+};

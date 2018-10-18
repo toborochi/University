@@ -40,20 +40,20 @@
 
 #pragma package(smart_init)
 
-#include "TDAPolinomioVector.h"
+#include "TDAPolinomioLista.h"
 
 using namespace std;
 
 #pragma region Menu
 void MostrarOpciones()
 {
-	cout<<"[1] Crear A\n";
-	cout<<"[2] Crear B\n";
-	cout<<"[3] Crear C\n";
-	cout<<"[4] Poner en A\n";
-	cout<<"[5] Poner en B\n";
-	cout<<"[6] Complemento AB\n";
-	cout<<"[7] Mostrar C\n";
+	cout<<"[1] Crear \n";
+	cout<<"[2] Poner Termino \n";
+	cout<<"[3] Mostrar Polinomio\n";
+	cout<<"[4] Derivar\n";
+	cout<<"[5] Mostrar Coordenadas\n";
+	cout<<"[6] Mostrar Area\n";
+	cout<<"[7] Salir\n";
 	cout<<"Opcion: ";
 }
 #pragma end_region
@@ -61,29 +61,17 @@ void MostrarOpciones()
 #pragma region MAIN
 int main()
 {
-    TDAPolinomioVector A,B,C;
+    TDAPolinomioLista P;
+    P.crear();
+    P.poner_termino(4,1);
+    P.poner_termino(5,2);
 
-    A.crear(), B.crear(), C.crear();
 
-    A.poner_termino(3,1);
-    A.poner_termino(2,2);
-    A.poner_termino(7,3);
-    A.poner_termino(45,4);
-    A.expresion();
-
-    B.poner_termino(-3,1);
-    B.poner_termino(2,2);
-    B.poner_termino(7,3);
-    B.expresion();
-
-    C.suma(A,B);
-    C.expresion();
+    P.mostrar();
 
 
 	getch();
-
 	return 0;
-
 }
 #pragma end_region
 

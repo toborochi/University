@@ -1,0 +1,19 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAPolinomioListaH
+#define TDAPolinomioListaH
+//---------------------------------------------------------------------------
+#endif
+
+#include "TDAListaPuntero.h"
+#define TDAPolinomioLista Polinomio
+
+class TDAPolinomioLista
+{
+    private:
+            TDAListaPuntero L;
+    public:
+           void crear();
+           bool escero();
+           void poner_termino(int coe,int exp);
+};

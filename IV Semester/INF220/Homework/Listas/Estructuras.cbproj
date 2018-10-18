@@ -154,6 +154,11 @@
             <DependentOn>TDAPilaVector.h</DependentOn>
             <BuildOrder>6</BuildOrder>
         </CppCompile>
+        <CppCompile Include="TDAPolinomioPuntero.cpp">
+            <VirtualFolder>{6FA0F84B-98BA-4783-B14D-6FEAB093A550}</VirtualFolder>
+            <DependentOn>TDAPolinomioPuntero.h</DependentOn>
+            <BuildOrder>17</BuildOrder>
+        </CppCompile>
         <CppCompile Include="TDAPolinomioVector.cpp">
             <VirtualFolder>{6FA0F84B-98BA-4783-B14D-6FEAB093A550}</VirtualFolder>
             <DependentOn>TDAPolinomioVector.h</DependentOn>

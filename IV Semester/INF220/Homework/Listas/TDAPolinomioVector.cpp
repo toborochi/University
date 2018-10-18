@@ -58,26 +58,37 @@ int Polinomio::coeficiente(int exp)
 
 void Polinomio::poner_termino(int coe,int exp)
 {
+
     int lug=-1,i=1;
-    while(lug<=100 && VE[i]!=exp)
+    while(i<=nt)
     {
-       if(VE[i]==exp)lug=i;
-       i++;
+        if(VE[i]==exp)
+        {
+            lug = i;
+            break;
+        }
+        i++;
     }
 
-    if(lug==-1)
+    if(lug!=-1)
+    {
+         VC[lug]+=coe;
+         if(VC[lug]==0)
+         {
+            /*for(int i=lug;i<=nt;++i)
+            {
+                VE[i]=VE[i+1];
+                VC[i]=VC[i+1];
+            } */
+
+            nt--;
+         }
+    }else
     {
          nt++;
          VC[nt]=coe;
          VE[nt]=exp;
 
-    }else
-    {
-        VC[lug]+=coe;
-        if(VC[lug]==0)
-        {
-            nt--;
-        }
     }
 }
 
@@ -97,8 +108,71 @@ void Polinomio::suma(Polinomio a,Polinomio b)
      }
      for(int i=1;i<=b.numero_terminos();++i)
      {
-            poner_termino(a.coeficiente(b.exponente(i)),b.exponente(i));
+             int exp = b.exponente(i);
+             int coe = b.coeficiente(exp);
+             poner_termino(coe,exp);
      }
+
+}
+
+void Polinomio::resta(Polinomio a, Polinomio b)
+{
+    for(int i=1;i<=a.numero_terminos();++i)
+     {
+            int exp = a.exponente(i);
+            int coe = a.coeficiente(exp);
+            poner_termino(coe,exp);
+     }
+     for(int i=1;i<=b.numero_terminos();++i)
+     {
+             int exp = b.exponente(i);
+             int coe = b.coeficiente(exp);
+             poner_termino(-coe,exp);
+     }
+}
+
+
+void Polinomio::derivar()
+{
+    for(int i=1;i<=numero_terminos();++i)
+    {
+         VC[i]*=VE[i];
+         VE[i]--;
+    }
+}
+
+
+
+double mypow( double base, double power)
+{
+   double r = 1;
+   for(int i=1;i<=int(power);++i)
+   {
+       r*=base;
+   }
+   return r;
+}
+
+double Polinomio::evaluar(double x)
+{
+    double y = 0;
+    for(int i=1;i<=nt;++i)
+    {
+        y+= double(VC[i]) * mypow(x,double(VE[i]));
+    }
+    return y;
+}
+
+double Polinomio::area(double a,double b, double dx)
+{
+    double area = 0;
+    while(a<=b)
+    {
+        double y = evaluar(a);
+        area+=y*dx;
+        a+=dx;
+    }
+    return area;
 }
 
 
@@ -109,26 +183,8 @@ int Polinomio::exponente(int nro)
 
 void Polinomio::expresion()
 {
-     int VEA[100] = VE;
-     int VCA[100] = VC;
-     memcpy(VEA, VE, sizeof VE + 1);
-     memcpy(VCA, VC, sizeof VC + 1);
+    for(int i=1;i<=numero_terminos();++i)
+    {
 
-     for(int i=1;i<=nt;++i)
-     {
-
-         if(VCA[i]!=0)
-         {
-            if(VCA[i]>0 && i>1)std::cout<<"+";
-
-            if(VCA[i]!=1)std::cout<<VCA[i];
-
-
-            if(VEA[i]>1)std::cout<<"x^"<<VEA[i]; else std::cout<<"x";
-
-         }
-     }
-
-     std::cout<<"\n";
-
+    }
 }

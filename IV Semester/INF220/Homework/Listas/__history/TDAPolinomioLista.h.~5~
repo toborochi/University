@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAPolinomioListaH
+#define TDAPolinomioListaH
+//---------------------------------------------------------------------------
+#endif
+
+#include "TDAListaVector.h"
+#define TDAPolinomioLista Polinomio
+
+class TDAPolinomioLista
+{
+    private:
+            TDAListaVector L;
+    public:
+           void crear();
+           bool escero();
+};
