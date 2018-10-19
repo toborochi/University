@@ -27,14 +27,15 @@
 \usepackage{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Leonardo H. Añez Vladimirovna}
-\title{Formulas de Estadística Inferencial}
+\title{Formulas de Estadística Inferencial \texttt{(MAT302)}}
 \begin{document}
 \maketitle
 
 \section{Variables Aleatorias}
+\subsection{Básicos}
 \begin{multicols}{2}
+\subsubsection{Discretas}
 \begin{flushleft}
-\subsection{Variables Aleatorias Discretas}
 Notación:  $P(A),P(X=x),f(x)$.
 \begin{enumerate}
 \item $p(x)\geq 0 ; \forall x \in \mathbb{R}$
@@ -44,13 +45,48 @@ Notación:  $P(A),P(X=x),f(x)$.
 \end{enumerate}
 \end{flushleft}
 \columnbreak
-\subsection{Variables Aleatorias Continuas}
+\subsubsection{Continuas}
+\begin{flushleft}
 Notación:  $F(x),P(X\leq x)$.
 \begin{enumerate}
 \item $f(x)\geq 0;\forall x \in \mathbb{R}$
 \item $\displaystyle\int_{-\infty}^{+\infty} f(x)dx = 1$
 \item $P(a\leq x \leq b) = \displaystyle\int_{a}^{b} f(x)dx=1$
 \end{enumerate}
+\end{flushleft}
 \end{multicols}
+\subsection{Propiedades}
+\begin{multicols}{2}
+\subsubsection{Discreta}
+\begin{enumerate}
+\item $0\leq F(x) \leq 1, \forall x\in \mathbb{R}$
+\item $F(-\infty)=0$
+\item $F(+\infty)=1$
+\item $P(X\leq a)=F(a)$
+\item $P(X>a)=1-P(X\leq a)=1-F(a)$
+\item $P(X<a)=
+\begin{cases}
+F(a-1); a\in\mathbb{Z} \\
+F( [\![ x ]\!] ) ; a \notin \mathbb{Z}
+\end{cases}$
+\item $P(X\leq -a)=1-P(x\leq a)=1-F(a)$
+\item $P(a<x\leq b)=F(b)-F(a)$
+\item $P(X\leq x\leq)=F(b)-F(a)+P(X=a)$
+\item $P(a<x<b)=F(b)-F(a)-P(X=b)$
+\item $P(X=x_i)=F(x_i)-F(x_{i-1})$
+\end{enumerate}
+\columnbreak
+\subsubsection{Continua}
+\begin{enumerate}
+\item $0\leq F(x) \leq 1, \forall x\in \mathbb{R}$
+\end{enumerate}
+\end{multicols}
+\subsection{Esperanza}
+\subsection{Varianza}
+\subsection{Función de Probabilidad Conjunta}
+\subsection{Distribuciones Marginales}
+\subsection{Covarianza}
+\subsection{Resultados Importantes}
 
+\section{Distribuciones}
 \end{document}
