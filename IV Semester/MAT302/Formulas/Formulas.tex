@@ -28,11 +28,12 @@
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Leonardo H. Añez Vladimirovna}
 \title{Formulas de Estadística Inferencial \texttt{(MAT302)}}
+ \pgfplotsset{compat=1.16}
 \begin{document}
 \maketitle
 
 \section{Variables Aleatorias}
-\subsection{Básicos}
+\subsection{Definiciones}
 \begin{multicols}{2}
 \subsubsection{Discretas}
 \begin{flushleft}
@@ -79,11 +80,75 @@ F( [\![ x ]\!] ) ; a \notin \mathbb{Z}
 \subsubsection{Continua}
 \begin{enumerate}
 \item $0\leq F(x) \leq 1, \forall x\in \mathbb{R}$
+\item $F(-\infty)=0$
+\item $F(+\infty)=1$
+\item $P(X\leq a)=P(X<a)=F(a)$
+\item $P(X>a)=1-P(X\leq a)=1-F(a)$
+\item $P(X\geq a)=1-P(X<a)=1-F(a)$
+\item $P(X\leq -a)=1-P(X\leq a)=1-F(a)$
+\item $P(a<X\leq b)=P(a\leq X\leq b)=P(a<X<b)=F(b)-F(a)$
+\item $f(x)=\dfrac{dF(x)}{dx}$
 \end{enumerate}
 \end{multicols}
 \subsection{Esperanza}
+\begin{multicols}{3}
+\subsubsection{V.A.s Discretas}
+$E(x)=\mu=\mu_x=\displaystyle\sum_x x\cdot p(x)$ \\ \vspace{0.05cm} \\
+$X$ v.a. con función $f$: \\ \vspace{0.05cm} \\
+$E(g(x))=\mu_{g(x)}=\displaystyle\sum_x g(x)\cdot f(x)$
+\columnbreak
+\subsubsection{V.A.s Continua}
+$E(x)=\displaystyle\int_{-\infty}^{+\infty} xf(x) dx$\\ \vspace{0.05cm} \\
+$X$ v.a. con función $f$: \\ \vspace{0.05cm} \\
+$E(x)=\displaystyle\int_{-\infty}^{+\infty} g(x)\cdot f(x) dx$
+\columnbreak
+\subsubsection{Propiedades}
+$\bigstar$ {\scriptsize $a$ y $b$ constantes.}
+\begin{enumerate}
+\item $E(a)=a$
+\item $E(x\pm a)=E(x)\pm a$
+\item $E(ax)=aE(x)$
+\item $E(ax\pm b)=aE(x)\pm b$
+\end{enumerate}
+\end{multicols}
+
+
+
 \subsection{Varianza}
+\begin{multicols}{3}
+\subsubsection{V.A.s Discretas}
+\begin{align*}
+V(x)=\sigma^2 &=  E(x-\mu)^2 \\
+& = \displaystyle\sum_x (x-\mu)^2 f(x) 
+\end{align*}
+\columnbreak
+\subsubsection{V.A.s Continua}
+\begin{align*}
+V(x)=\sigma^2 &=  E(x-\mu)^2 \\
+& = \displaystyle\int_{-\infty}^{+\infty} (x-\mu)^2 f(x) dx
+\end{align*}
+\columnbreak
+\subsubsection{Propiedades}
+\begin{enumerate}
+\item $V(x)\geq 0$
+\item $V(a)=0$
+\item $V(ax)=aV(x)$
+\item $V(ax\pm b)=a^2 V(x)\pm b$
+\item $V(x)=E(x^2)-[E(x)]^2$
+\end{enumerate}
+\end{multicols}
 \subsection{Función de Probabilidad Conjunta}
+\begin{multicols}{2}
+\subsubsection{Función de Cuantía Conjunta}
+\begin{enumerate}
+\item $P(x,y)=P(X=x,Y=y)\geq 0$
+\item $\displaystyle\sum_x \displaystyle\sum_y P(x,y)=1$
+\item $P((x,y)\in A) = \sum_A \sum P(x,y)$
+\end{enumerate}
+\columnbreak
+\subsubsection{Función de Densidad Conjunta}
+\end{multicols}
+
 \subsection{Distribuciones Marginales}
 \subsection{Covarianza}
 \subsection{Resultados Importantes}
