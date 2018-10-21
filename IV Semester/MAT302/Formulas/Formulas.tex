@@ -90,6 +90,7 @@ F( [\![ x ]\!] ) ; a \notin \mathbb{Z}
 \item $f(x)=\dfrac{dF(x)}{dx}$
 \end{enumerate}
 \end{multicols}
+\pagebreak
 \subsection{Esperanza}
 \begin{multicols}{3}
 \subsubsection{V.A.s Discretas}
@@ -139,19 +140,263 @@ V(x)=\sigma^2 &=  E(x-\mu)^2 \\
 \end{multicols}
 \subsection{Función de Probabilidad Conjunta}
 \begin{multicols}{2}
-\subsubsection{Función de Cuantía Conjunta}
+\subsubsection{Función de Cuantía Conjunta (Discreta)}
 \begin{enumerate}
 \item $P(x,y)=P(X=x,Y=y)\geq 0$
 \item $\displaystyle\sum_x \displaystyle\sum_y P(x,y)=1$
 \item $P((x,y)\in A) = \sum_A \sum P(x,y)$
 \end{enumerate}
 \columnbreak
-\subsubsection{Función de Densidad Conjunta}
+\subsubsection{Función de Densidad Conjunta (Continua)}
+\begin{enumerate}
+\item $f(x,y)\geq 0$
+\item $\displaystyle\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} f(x,y) dxdy = 1$
+\item $P((x,y)\in A)=\displaystyle\int_A \int f(x,y) dxdy$
+\end{enumerate}
 \end{multicols}
 
 \subsection{Distribuciones Marginales}
+\begin{multicols}{2}
+\subsubsection{Caso Discreto}
+\begin{itemize}
+\item \textbf{Distribución Marginal de }$X$:\\ \vspace{0.05cm} \\
+$g(x)=\displaystyle\sum_y f(x,y)$
+\item \textbf{Distribución Marginal de }$Y$:\\ \vspace{0.05cm} \\
+$h(y)=\displaystyle\sum_x f(x,y)$
+\end{itemize}
+\columnbreak
+\subsubsection{Caso Continuo}
+\begin{itemize}
+\item \textbf{Distribución Marginal de }$X$:\\ \vspace{0.05cm} \\
+$g(x)=\displaystyle\int_{-\infty}^{+\infty} f(x,y)dy$
+\item \textbf{Distribución Marginal de }$Y$:\\ \vspace{0.05cm} \\
+$h(y)=\displaystyle\int_{-\infty}^{+\infty} f(x,y)dx$
+\end{itemize}
+\end{multicols}
+\pagebreak
 \subsection{Covarianza}
+
+\begin{multicols}{2}
+\subsubsection{Caso Discreto}
+\begin{align*}
+Cov(x,y)=\sigma_{xy}&=E((x-\mu_x)(y-\mu_y)) \\
+&=\displaystyle\sum_x\sum_y (x-\mu_x)(y-\mu_y)f(x,y)
+\end{align*}
+\columnbreak
+\subsubsection{Caso Continuo}
+\begin{align*}
+Cov(x,y)=\sigma_{xy}&=E((x-\mu_x)(y-\mu_y)) \\
+&=\displaystyle\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} (x-\mu_x)(y-\mu_y)f(x,y)dxdy
+\end{align*}
+\end{multicols}
 \subsection{Resultados Importantes}
+\begin{enumerate}
+\item $E(x\pm y)=E(x)\pm E(y)$
+\item $Cov(x,y)=E(x\cdot y)-E(x)\cdot E(y)$
+\item $V(x\pm y)=V(x)+V(y)\pm 2Cov(x,y)$
+\item $V(ax\pm by)=a^2V(x)+b^2V(y) \pm 2ab\cdot Cov(x,y)$
+\item Si $x$ y $y$ son estadísticamente independientes:
+\begin{enumerate}
+\item $E(x,y)=E(x)\cdot E(y)$
+\item $Cov(x,y)=0$
+\item $V(x\pm y)=V(x)+V(y)$
+\item $V(ax\pm by)=a^2V(x)+b^2V(y)$
+\end{enumerate}
+\item Si $x1,x2,x4,\ldots$ son variables aleatorias independientes 2 a 2:\\ \vspace{0.025cm} \\
+$V\Bigg( \displaystyle\sum_{i=1}^{m} x_i \Bigg) = \displaystyle\sum_{i=1}^{m} V(x_i)$
+\end{enumerate}
 
 \section{Distribuciones}
+\subsection{Distribuciones Discretas}
+\subsubsection{Distribución de Bernoulli $(Ber)$}
+\begin{multicols}{2}
+\begin{itemize}
+\item Función de Cuantía \\ \vspace{0.025cm} \\
+$f(x)=p(x)=
+\begin{cases}
+p^x(1-p)^{1-x} &; x=0,1 \\
+0 &; \text{otro caso}
+\end{cases}$
+\end{itemize}
+\columnbreak
+\begin{itemize}
+\item Función Acumulada \\
+$F(x)=P(X=x)=
+\begin{cases}
+0 &; x<0 \\
+q=1-p &; 0 \leq x <1 \\
+1 &; x\geq 1
+\end{cases}$
+\end{itemize}
+\end{multicols}
+$$
+X\sim Ber(x;p)\Rightarrow 
+\begin{cases}
+E(x)=\mu = p \\
+V(x)=\sigma^2 = p\cdot q \\
+D(x)=\sigma=\sqrt{p\cdot q}
+\end{cases}
+$$
+\subsubsection{Distribución Binomial $(b)$}
+\begin{multicols}{2}
+\begin{itemize}
+\item Función de Cuantía \\ \vspace{0.025cm} \\
+$f(x)=p(x)=
+\begin{cases}
+\binom{n}{x} p^x \cdot q^{n-x} &; x=0,1,2,\ldots ,n \\
+0 &; \text{otro caso}
+\end{cases}$
+\end{itemize}
+\columnbreak
+\begin{itemize}
+\item Función Acumulada \\
+$F(x)=P(X=x)=
+\begin{cases}
+0 &; x<0 \\
+\displaystyle\sum_{k=0}^{[\![ x ]\!]} \binom{n}{k}p^k q^{n-k} &; 0 \leq x <n \\
+1 &; x\geq 1
+\end{cases}$
+\end{itemize}
+\end{multicols}
+$$
+X\sim b(x;n,p)\Rightarrow 
+\begin{cases}
+E(x)=\mu = p \\
+V(x)=\sigma^2 = npq\\
+D(x)=\sigma=\sqrt{npq}
+\end{cases}
+$$
+$\bigstar$ Manejo de la Tabla:
+\begin{enumerate}
+\item $\displaystyle\binom{p\leq 0.50}{n\leq 20} \Rightarrow b(x;n,p) = B(x;n,p)-B(x-1;n,p)$
+\item $\displaystyle\binom{p> 0.50}{n\leq 20}\Rightarrow
+\begin{cases}
+\text{\textbf{(i) }} b(x;n,p) = B(n-x;n,1-p)-B(n-x-1;n,1-p) \\
+\text{\textbf{(ii) }} b(x;n,p) = b(n-x,n,1-p) \text{ luego (i)}\\
+\text{\textbf{(iii) }} B(x;n,p) = 1-B(n-x;n,1-p) 
+\end{cases}$
+\end{enumerate}
+\subsubsection{Distribución de Poisson $(Poisson)$}
+\begin{multicols}{2}
+\begin{itemize}
+\item Función de Cuantía \\ \vspace{0.025cm} \\
+$f(x)=p(x)=
+\begin{cases}
+\dfrac{e^{-\lambda} \cdot \lambda^x}{x!} &; x=0,1,2,\ldots \\
+0 &; \text{otro caso}
+\end{cases}$
+\end{itemize}
+\columnbreak
+\begin{itemize}
+\item Función Acumulada \\
+$F(x)=P(X=x)=
+\begin{cases}
+0 &; x<0 \\
+\displaystyle\sum_{x=0}^{[\![ x ]\!]} \dfrac{e^{-\lambda} \cdot \lambda^x}{x!} &; x \geq 0
+\end{cases}$
+\end{itemize}
+\end{multicols}
+$$
+X\sim Poisson(x;\lambda)\Rightarrow 
+\begin{cases}
+E(x)=\mu = \lambda = np \\
+V(x)=\sigma^2 = \lambda = np\\
+D(x)=\sigma=\sqrt{np}
+\end{cases}
+$$
+\subsection{Distribuciones Continuas}
+\subsubsection{Distribución Uniforme o Regular $(U)$}
+\begin{multicols}{2}
+\begin{itemize}
+\item Función de Cuantía \\ \vspace{0.025cm} \\
+$f(x)=p(x)=
+\begin{cases}
+\dfrac{1}{b-a} &; a\leq x \leq b \\
+0 &; \text{otro caso}
+\end{cases}$
+\end{itemize}
+\columnbreak
+\begin{itemize}
+\item Función Acumulada \\ \vspace{0.05cm} \\
+$F(x)=
+\begin{cases}
+0 &; x<a \\
+\displaystyle\int_{-\infty}^{x} \dfrac{1}{b-a} dx = \dfrac{x-a}{b-a} &;a \leq x < b \\
+1 &; x\geq b
+\end{cases}$
+\end{itemize}
+\end{multicols}
+$$
+X\sim U(x;a,b)\Rightarrow 
+\begin{cases}
+E(x)=\mu = \dfrac{a+b}{2} \\ \vspace{0.005cm} \\
+V(x)=\sigma^2 = \dfrac{(b-a)^2}{12}\\ \vspace{0.005cm} \\
+D(x)=\sigma= \dfrac{(b-a)\sqrt{3}}{6}
+\end{cases}
+$$
+\subsubsection{Distribución Exponencial $(exp)$}
+\begin{multicols}{2}
+\begin{itemize}
+\item Función de Cuantía \\ \vspace{0.025cm} \\
+$f(x)=p(x)=
+\begin{cases}
+\lambda\cdot e^{-\lambda x} &; x\geq 0 \\
+0 &; \text{otro caso}
+\end{cases}$
+\end{itemize}
+\columnbreak
+\begin{itemize}
+\item Función Acumulada \\ \vspace{0.05cm} \\
+$F(x)=
+\begin{cases}
+0 &; x<0 \\
+\displaystyle\int_{-\infty}^{x} \lambda\cdot e^{-\lambda x} dt = 1-e^{-\lambda x} &; x \geq 0
+\end{cases}$
+\end{itemize}
+\end{multicols}
+$$
+X\sim exp(x;\lambda)\Rightarrow 
+\begin{cases}
+E(x)=\mu = \dfrac{1}{\lambda} \\ \vspace{0.05cm} \\
+V(x)=\sigma^2 = \dfrac{1}{\lambda^2}\\ \vspace{0.05cm} \\
+D(x)=\sigma= \dfrac{1}{\lambda}
+\end{cases}
+$$
+$\bigstar$ Propiedad Amnésica 
+$$P(X>s+t / x>s) = P(X>t)$$
+\subsubsection{Distribución Normal $(N)$}
+\begin{multicols}{2}
+\begin{itemize}
+\item Función de Cuantía \\ \vspace{0.025cm} \\
+$f(x)=N(x;\mu,\sigma^2)=\dfrac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2} (\frac{x-\mu}{\sigma})^2 } ;x\in\mathbb{R}$
+\end{itemize}
+\columnbreak
+\begin{itemize}
+\item Función Acumulada \\ \vspace{0.05cm} \\
+$F(x)=
+\displaystyle\int_{-\infty}^{x} \dfrac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2} (\frac{t-\mu}{\sigma})^2 } dt
+$
+\end{itemize}
+\end{multicols}
+\subsubsection{Distribución Chi-Cuadrado $(\chi^2)$}
+
+\section{Misceláneo}
+\subsection{Interpolación}
+$$
+\begin{tabular}{|c|c|}
+\hline 
+$\phi (z0)$ & $z$ \\ 
+\hline 
+$a$ & $x$ \\ 
+\hline 
+$b$ & $y$ \\ 
+\hline 
+$C$ & $x$ \\ 
+\hline 
+\end{tabular} 
+\hspace{0.5cm}
+\rightarrow 
+\hspace{0.5cm}
+\dfrac{a-c}{b-a}=\dfrac{x-z}{y-z}
+$$
 \end{document}
