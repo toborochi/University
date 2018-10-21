@@ -92,14 +92,10 @@ void TDAPolinomioMemoria::poner_termino(int coe,int exp)
 
 void TDAPolinomioMemoria::mostrar()
 {
-    int x = PtrPoli;
-    int i=1;
-    while(x!=NULO)
+    for(int i=1;i<=numero_terminos();++i)
     {
-        
-
-        int exp = m.obtener_dato(x,2);
-        int coe = m.obtener_dato(x,1);
+        int exp = exponente(i);
+        int coe = coeficiente(exp);
 
         if(coe>0 && i>1)
         {
@@ -117,15 +113,15 @@ void TDAPolinomioMemoria::mostrar()
         if(exp>1)
         {
             std::cout<<"x^"<<exp;
+        }else
+        if(exp==1)
+        {
+            std::cout<<"x";
         }
 
 
+    }     std::cout<<std::endl;
 
-
-
-        x = m.obtener_dato(x,3);
-    }
-     std::cout<<std::endl;
 }
 
 int TDAPolinomioMemoria::coeficiente(int exp)

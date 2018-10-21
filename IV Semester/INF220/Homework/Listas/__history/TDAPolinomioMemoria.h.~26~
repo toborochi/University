@@ -5,7 +5,13 @@
 
 //---------------------------------------------------------------------------
 #endif
-
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <iterator>
+#include <stdlib.h>
+#include <math.h>
+#include <stddef.h>
 #include "SMemoria.h"
 
 class TDAPolinomioMemoria
@@ -21,4 +27,11 @@ class TDAPolinomioMemoria
            int numero_terminos();
 
            void mostrar();
+           int coeficiente(int nro);
+           int exponente(int nro);
+           int grado();
+           bool escero();
+           double evaluar(double x);
+           double area(double a,double b,double dx);
+           void derivar();
 };

@@ -191,3 +191,21 @@ double TDAPolinomioMemoria::area(double a,double b,double dx)
     }
     return area;
 }
+
+void TDAPolinomioMemoria::derivar()
+{
+    int aux = PtrPoli;
+    while(aux!=NULO)
+    {
+        int coe = m.obtener_dato(aux,1);
+
+
+        int exp = m.obtener_dato(aux,2); exp--;
+        coe*=exp;
+        m.poner_dato(aux,1,coe);
+        m.poner_dato(aux,2,exp);
+
+
+        aux=m.obtener_dato(aux,3);
+    }
+}

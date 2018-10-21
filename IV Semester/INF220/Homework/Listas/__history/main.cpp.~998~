@@ -42,17 +42,7 @@ using namespace std;
 int main()
 {
 
-   TDAPolinomioMemoria PP;
-   PP.crear();
-
-   PP.poner_termino(4,6);
-   PP.poner_termino(45,2);
-
-   cout<<PP.grado()<<endl;
-
-   cout<<PP.area(0,1,0.01)<<endl;
-
-   PP.mostrar();
+  
 
 
 

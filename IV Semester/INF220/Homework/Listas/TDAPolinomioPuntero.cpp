@@ -59,6 +59,10 @@ void TDAPolinomioPuntero::mostrar()
         if(exp>1)
         {
             std::cout<<"x^"<<exp;
+        }else
+        if(exp==1)
+        {
+            std::cout<<"x";
         }
 
 

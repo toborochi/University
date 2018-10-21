@@ -45,12 +45,17 @@ int main()
    TDAPolinomioMemoria PP;
    PP.crear();
 
-   PP.poner_termino(4,6);
-   PP.poner_termino(45,2);
 
+   PP.poner_termino(-45,3);
 
+   PP.derivar();
 
    PP.mostrar();
+
+
+   cout<<PP.area(0,1,0.01)<<endl;
+
+
 
 
 

@@ -22,15 +22,18 @@ class TDAPolinomioMemoria
             SMemoria m;
     public:
            void crear();
-
            void poner_termino(int coe,int exp);
-           int numero_terminos();
-
            void mostrar();
+            void derivar();
+
+           int numero_terminos();
            int coeficiente(int nro);
            int exponente(int nro);
            int grado();
+
            bool escero();
+
            double evaluar(double x);
            double area(double a,double b,double dx);
+
 };

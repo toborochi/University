@@ -41,23 +41,6 @@ using namespace std;
 
 int main()
 {
-
-   TDAPolinomioMemoria PP;
-   PP.crear();
-
-   PP.poner_termino(1,1);
-   PP.poner_termino(-45,3);
-
-   PP.mostrar();
-
-
-   cout<<PP.area(0,1,0.01)<<endl;
-
-
-
-
-
-
 	getch();
 	return 0;
 }
