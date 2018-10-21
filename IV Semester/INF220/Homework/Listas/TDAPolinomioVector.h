@@ -2,10 +2,6 @@
 
 #ifndef TDAPolinomioVectorH
 #define TDAPolinomioVectorH
-//---------------------------------------------------------------------------
-#endif
-
-#define TDAPolinomioVector Polinomio
 
 #include <iostream>
 #include <string>
@@ -13,6 +9,11 @@
 #include <iterator>
 #include <stdlib.h>
 #include <math.h>
+//---------------------------------------------------------------------------
+#endif
+
+#define TDAPolinomioVector Polinomio
+
 
 class TDAPolinomioVector
 {

@@ -14,7 +14,6 @@
 #include <math.h>
 #include <stddef.h>
 
-#define TDAPolinomioLista Polinomio
 
 class TDAPolinomioLista
 {

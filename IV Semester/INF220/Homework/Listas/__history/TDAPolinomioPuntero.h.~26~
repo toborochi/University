@@ -1,0 +1,54 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAListaVector.h"
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <iterator>
+#include <stdlib.h>
+#include <math.h>
+#include <stddef.h>
+//---------------------------------------------------------------------------
+
+
+
+#ifndef TDAPolinomioPunteroH
+#define TDAPolinomioPunteroH
+#endif
+
+
+   struct Nodo
+{
+    int Coef;
+    int Exp;
+    Nodo *Sig;
+
+};
+
+class TDAPolinomioPuntero
+{
+    private:
+            int nt;
+            Nodo* PtrPoli;
+    public:
+
+           void crear();
+           bool escero();
+           int numero_terminos();
+
+
+           int coeficiente(int exp);
+           int exponente(int nro);
+
+           int grado();
+           void mostrar();
+           void poner_termino(int coe,int exp);
+           void suma(TDAPolinomioPuntero a,TDAPolinomioPuntero b);
+           void resta(TDAPolinomioPuntero a,TDAPolinomioPuntero b);
+           void derivar();
+
+};
+
+

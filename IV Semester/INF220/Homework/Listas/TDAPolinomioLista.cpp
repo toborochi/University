@@ -8,28 +8,28 @@
 #pragma package(smart_init)
 
 
-void Polinomio::crear()
+void TDAPolinomioLista::crear()
 {
     L.crear();
 }
 
-bool Polinomio::escero()
+bool TDAPolinomioLista::escero()
 {
     return L.vacia();
 }
 
-int Polinomio::numero_terminos()
+int TDAPolinomioLista::numero_terminos()
 {
     return L.longitud()/2;
 }
 
-void Polinomio::poner_termino(int coe,int exp)
+void TDAPolinomioLista::poner_termino(int coe,int exp)
 {
     L.insertar(L.primero(),exp);
     L.insertar(L.primero(),coe);
 }
 
-void Polinomio::mostrar()
+void TDAPolinomioLista::mostrar()
 {
     TDAListaPuntero aux;
     aux.crear();
@@ -50,7 +50,7 @@ void Polinomio::mostrar()
     }
 }
 
-int Polinomio::exponente(int nro)
+int TDAPolinomioLista::exponente(int nro)
 {
     TDAListaPuntero aux;
     aux.crear();
@@ -88,7 +88,7 @@ int Polinomio::exponente(int nro)
 
 }
 
-int Polinomio::coeficiente(int exp)
+int TDAPolinomioLista::coeficiente(int exp)
 {
 
     int ans;

@@ -1,0 +1,26 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAPolinomioMemoriaH
+#define TDAPolinomioMemoriaH
+
+//---------------------------------------------------------------------------
+#endif
+#include <iostream>
+#include "SMemoria.h"
+
+class TDAPolinomioMemoria
+{
+    private:
+            int PtrPoli;
+            int nt;
+            SMemoria m;
+    public:
+           void crear();
+
+           void poner_termino(int coe,int exp);
+           int numero_terminos();
+
+           void mostrar();
+           int coeficiente(int nro);
+           int exponente(int nro);
+};

@@ -1,0 +1,196 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAPolinomioMemoria.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+void TDAPolinomioMemoria::crear()
+{
+    PtrPoli = NULO;
+    nt = 0;
+}
+
+int TDAPolinomioMemoria::numero_terminos()
+{
+    return nt;
+}
+
+int TDAPolinomioMemoria::grado()
+{
+    int grad=0;
+    int aux = PtrPoli;
+    while(aux!=NULO)
+    {
+        grad = std::max(grad,m.obtener_dato(aux,2));
+        aux=m.obtener_dato(aux,3);
+    }
+    return grad;
+}
+
+bool  TDAPolinomioMemoria::escero()
+{
+    return nt==0;
+}
+
+void TDAPolinomioMemoria::poner_termino(int coe,int exp)
+{
+    int x = PtrPoli;
+    int prev;
+    bool existe = false;
+    while(x!=NULO)
+    {
+        if(m.obtener_dato(x,2)==exp)
+        {
+
+        }
+        prev = x;
+        x = m.obtener_dato(x,3);
+    }
+
+    if(!existe)
+    {
+        int aux = m.new_espacio(3);
+        if(aux!=NULO)
+        {
+            m.poner_dato(aux,1,coe);
+            m.poner_dato(aux,2,exp);
+            m.poner_dato(aux,3,PtrPoli);
+            PtrPoli = aux;
+            nt++;
+        }
+    }else
+    {
+         int tmp = m.obtener_dato(x,1) + coe;
+         m.poner_dato(x,1,tmp);
+
+         if(m.obtener_dato(x,1)==0)
+         {
+
+             if(x==PtrPoli)
+              {
+                PtrPoli = m.obtener_dato(x,3);
+                m.delete_espacio(x);
+             }else
+             if(m.obtener_dato(x,3)==NULO)
+             {
+                m.poner_dato(prev,3,NULO);
+                m.delete_espacio(x);
+             }else
+             {
+                 m.poner_dato(prev,3,m.obtener_dato(x,3));
+                 m.delete_espacio(x);
+             }
+
+         }
+
+
+
+    }
+}
+
+void TDAPolinomioMemoria::mostrar()
+{
+    int x = PtrPoli;
+    while(x!=NULO)
+    {
+        
+
+        int exp = m.obtener_dato(x,2);
+        int coe = m.obtener_dato(x,1);
+
+        if(coe>0 && i>1)
+        {
+             std::cout<<"+";
+        }
+        if(coe==-1)
+        {
+             std::cout<<"-";
+        }else
+        if(coe!=1)
+        {
+            std::cout<<coe;
+        }
+
+        if(exp>1)
+        {
+            std::cout<<"x^"<<exp;
+        }
+
+
+
+
+
+        x = m.obtener_dato(x,3);
+    }
+     std::cout<<std::endl;
+}
+
+int TDAPolinomioMemoria::coeficiente(int exp)
+{
+    int aux = PtrPoli;
+    while(aux!=NULO)
+    {
+        if(m.obtener_dato(aux,2)==exp)
+        {
+            return m.obtener_dato(aux,1);
+        }
+        aux = m.obtener_dato(aux,3);
+    }
+    return -1;
+}
+
+int TDAPolinomioMemoria::exponente(int nro)
+{
+   int aux = PtrPoli;
+   int i = 1;
+
+    while(aux!=NULO && i<=nro)
+    {
+        if(i==nro)
+        {
+            return m.obtener_dato(aux,2);
+        }
+        aux=m.obtener_dato(aux,3);
+        ++i;
+    }
+    return -1;
+}
+
+double pot(double base, int exponente)
+{
+   double ans = 1;
+
+    for(int i=1;i<=exponente;++i)
+    {
+        ans*=base;
+    }
+
+    return ans;
+}
+
+double TDAPolinomioMemoria::evaluar(double x)
+{
+    double fx = 0;
+      for(int i=1;i<=numero_terminos();++i)
+    {
+        int exp = exponente(i);
+        int coe = coeficiente(exp);
+
+        fx+=double(coe)*pot(x,exp);
+    }
+    return fx;
+}
+
+double TDAPolinomioMemoria::area(double a,double b,double dx)
+{
+    double area = 0;
+    while(a<=b)
+    {
+       double y =evaluar(a);
+       area += y*dx;
+       a+=dx;
+    }
+    return area;
+}
