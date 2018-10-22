@@ -24,9 +24,7 @@ class TDAPolinomioMemoria
            void crear();
            void poner_termino(int coe,int exp);
            void mostrar();
-           void derivar();
-           void suma(TDAPolinomioMemoria a,TDAPolinomioMemoria b);
-           void resta(TDAPolinomioMemoria a,TDAPolinomioMemoria b);
+            void derivar();
 
            int numero_terminos();
            int coeficiente(int nro);

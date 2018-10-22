@@ -42,30 +42,12 @@ void TDAPolinomioLista::poner_termino(int coe,int exp)
         L.insertar(L.primero(),coe);
     }else
     {
-        TDAListaPuntero aux; aux.crear();
-        while(L.longitud()>0)
-        {
-            int coet = L.recupera(L.primero()); L.suprime(L.primero());
-            int expt = L.recupera(L.primero()); L.suprime(L.primero());
-            if(expt==exp)
-            {
-                coet+=coe;
-            }
-            if(coet!=0)
-            {
-                                   aux.insertar(aux.primero(),expt);
-                                    aux.insertar(aux.primero(),coet);
-            }
+        crear();
+        for(int i=1;i<=numero_terminos();++i)
+    {
+        int expt = exponente(i);
 
-        }
-
-        while(aux.longitud()>0)
-        {
-            int coet = aux.recupera(aux.primero()); aux.suprime(aux.primero());
-            int expt = aux.recupera(aux.primero()); aux.suprime(aux.primero());
-            L.insertar(L.primero(),expt);
-            L.insertar(L.primero(),coet);
-        }
+    }
 
     }
 

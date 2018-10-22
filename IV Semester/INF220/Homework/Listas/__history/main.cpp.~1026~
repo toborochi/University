@@ -40,19 +40,29 @@
 #include <vector>
 #include <cstdlib>
 
-#include <TDAPolinomioLista.h>
+#include <TDAPolinomioVector.h>
 
 using namespace std;
 
 int main()
 {
-    TDAPolinomioLista PP;
-    PP.crear();
-    PP.poner_termino(45,4);
-    PP.poner_termino(-45,4);
-    PP.poner_termino(2,3);
+    TDAPolinomioVector a;
+    a.crear();
+    a.poner_termino(45,2);
+    a.poner_termino(3,1);
+    a.poner_termino(-3,1);
+    a.poner_termino(3,1);
+    a.poner_termino(45,33);
 
-    PP.mostrar();
+
+    a.expresion();
+
+    a.derivar();
+
+    a.poner_termino(777,12);
+    a.poner_termino(-13,13);
+
+    a.expresion();
 
 	getch();
 	return 0;

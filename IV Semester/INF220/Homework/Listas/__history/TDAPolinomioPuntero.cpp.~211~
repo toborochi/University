@@ -106,7 +106,7 @@ void TDAPolinomioPuntero::poner_termino(int coe,int exp)
 
          if(x->Coef==0)
          {
-             nt--;
+
              if(x==PtrPoli)
               {
                 PtrPoli = x->Sig;

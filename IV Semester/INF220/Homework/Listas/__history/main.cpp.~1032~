@@ -49,7 +49,6 @@ int main()
     TDAPolinomioLista PP;
     PP.crear();
     PP.poner_termino(45,4);
-    PP.poner_termino(-45,4);
     PP.poner_termino(2,3);
 
     PP.mostrar();

@@ -67,7 +67,7 @@ void TDAPolinomioMemoria::poner_termino(int coe,int exp)
 
          if(m.obtener_dato(x,1)==0)
          {
-             nt--;
+
              if(x==PtrPoli)
               {
                 PtrPoli = m.obtener_dato(x,3);
@@ -208,36 +208,4 @@ void TDAPolinomioMemoria::derivar()
 
         aux=m.obtener_dato(aux,3);
     }
-}
-
-void TDAPolinomioMemoria::suma(TDAPolinomioMemoria a,TDAPolinomioMemoria b)
-{
-   for(int i=1;i<=a.numero_terminos();++i)
-   {
-       int exp = a.exponente(i);
-       int coe = a.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-   for(int i=1;i<=b.numero_terminos();++i)
-   {
-       int exp = b.exponente(i);
-       int coe = b.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-}
-
-void TDAPolinomioMemoria::resta(TDAPolinomioMemoria a,TDAPolinomioMemoria b)
-{
-   for(int i=1;i<=a.numero_terminos();++i)
-   {
-       int exp = a.exponente(i);
-       int coe = a.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-   for(int i=1;i<=b.numero_terminos();++i)
-   {
-       int exp = b.exponente(i);
-       int coe = b.coeficiente(exp);
-       poner_termino(-coe,exp);
-   }
 }

@@ -51,20 +51,16 @@ void TDAPolinomioLista::poner_termino(int coe,int exp)
             {
                 coet+=coe;
             }
-            if(coet!=0)
-            {
-                                   aux.insertar(aux.primero(),expt);
-                                    aux.insertar(aux.primero(),coet);
-            }
-
+            aux.insertar(aux.primero(),expt);
+            aux.insertar(aux.primero(),coet);
         }
 
-        while(aux.longitud()>0)
+        while(L.longitud()>0)
         {
-            int coet = aux.recupera(aux.primero()); aux.suprime(aux.primero());
-            int expt = aux.recupera(aux.primero()); aux.suprime(aux.primero());
-            L.insertar(L.primero(),expt);
-            L.insertar(L.primero(),coet);
+            int coet = L.recupera(L.primero()); L.suprime(L.primero());
+            int expt = L.recupera(L.primero()); L.suprime(L.primero());
+            aux.insertar(aux.primero(),expt);
+            aux.insertar(aux.primero(),coet);
         }
 
     }

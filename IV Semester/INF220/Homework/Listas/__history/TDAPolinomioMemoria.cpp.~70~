@@ -212,32 +212,5 @@ void TDAPolinomioMemoria::derivar()
 
 void TDAPolinomioMemoria::suma(TDAPolinomioMemoria a,TDAPolinomioMemoria b)
 {
-   for(int i=1;i<=a.numero_terminos();++i)
-   {
-       int exp = a.exponente(i);
-       int coe = a.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-   for(int i=1;i<=b.numero_terminos();++i)
-   {
-       int exp = b.exponente(i);
-       int coe = b.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-}
 
-void TDAPolinomioMemoria::resta(TDAPolinomioMemoria a,TDAPolinomioMemoria b)
-{
-   for(int i=1;i<=a.numero_terminos();++i)
-   {
-       int exp = a.exponente(i);
-       int coe = a.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-   for(int i=1;i<=b.numero_terminos();++i)
-   {
-       int exp = b.exponente(i);
-       int coe = b.coeficiente(exp);
-       poner_termino(-coe,exp);
-   }
 }

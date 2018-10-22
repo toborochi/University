@@ -187,7 +187,7 @@ void Polinomio::expresion()
     {
          int exp = exponente(i);
          int coe = coeficiente(exp);
-        if(coe>0 && i>1)
+i        f(coe>0 && i>1)
         {
              std::cout<<"+";
         }
