@@ -44,7 +44,6 @@ void TDAPolinomioMemoria::poner_termino(int coe,int exp)
         if(m.obtener_dato(x,2)==exp)
         {
            existe = true;
-           break;
         }
         prev = x;
         x = m.obtener_dato(x,3);

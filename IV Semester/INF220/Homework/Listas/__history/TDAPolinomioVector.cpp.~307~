@@ -75,11 +75,11 @@ void Polinomio::poner_termino(int coe,int exp)
          VC[lug]+=coe;
          if(VC[lug]==0)
          {
-            for(int i=lug;i<=nt;++i)
+            /*for(int i=lug;i<=nt;++i)
             {
                 VE[i]=VE[i+1];
                 VC[i]=VC[i+1];
-            }
+            } */
 
             nt--;
          }
@@ -181,7 +181,7 @@ int Polinomio::exponente(int nro)
     return VE[nro];
 }
 
-void Polinomio::mostrar()
+void Polinomio::expresion()
 {
     for(int i=1;i<=numero_terminos();++i)
     {

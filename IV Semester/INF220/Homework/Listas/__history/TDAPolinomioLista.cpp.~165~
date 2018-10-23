@@ -172,7 +172,7 @@ void  TDAPolinomioLista::resta(TDAPolinomioLista a, TDAPolinomioLista b)
        poner_termino(-coe,exp);
    }
 }
-
+}
 
 void TDAPolinomioLista::derivar()
 {

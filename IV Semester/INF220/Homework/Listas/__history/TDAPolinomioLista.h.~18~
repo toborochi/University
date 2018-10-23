@@ -14,19 +14,16 @@
 #include <math.h>
 #include <stddef.h>
 
-#define Lista TDAListaPuntero
 
 class TDAPolinomioLista
 {
     private:
-            Lista L;
+            TDAListaPuntero L;
     public:
            void crear();
            void poner_termino(int coe,int exp);
            void mostrar();
            void derivar();
-           void sumar(TDAPolinomioLista a,TDAPolinomioLista b);
-           void resta(TDAPolinomioLista a,TDAPolinomioLista b);
 
            bool escero();
 

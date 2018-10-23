@@ -128,7 +128,7 @@ int main()
                     area = 0;
                     while(a<=b)
                     {
-                        if(a<b) //Ya que se suma una vez, preguntamos antes de anadirlo al resutlado :P
+                        if(a<b)
                         {
                           area+= abs(dx*P.evaluar(a));
                         }

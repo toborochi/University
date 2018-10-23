@@ -143,36 +143,13 @@ int TDAPolinomioLista::exponente(int nro)
 
 void  TDAPolinomioLista::sumar(TDAPolinomioLista a, TDAPolinomioLista b)
 {
-   for(int i=1;i<=a.numero_terminos();++i)
-   {
-       int exp = a.exponente(i);
-       int coe = a.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-   for(int i=1;i<=b.numero_terminos();++i)
-   {
-       int exp = b.exponente(i);
-       int coe = b.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
+
 }
 
 void  TDAPolinomioLista::resta(TDAPolinomioLista a, TDAPolinomioLista b)
 {
-    for(int i=1;i<=a.numero_terminos();++i)
-   {
-       int exp = a.exponente(i);
-       int coe = a.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-   for(int i=1;i<=b.numero_terminos();++i)
-   {
-       int exp = b.exponente(i);
-       int coe = b.coeficiente(exp);
-       poner_termino(-coe,exp);
-   }
-}
 
+}
 
 void TDAPolinomioLista::derivar()
 {

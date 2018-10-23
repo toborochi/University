@@ -141,39 +141,6 @@ int TDAPolinomioLista::exponente(int nro)
 
 }
 
-void  TDAPolinomioLista::sumar(TDAPolinomioLista a, TDAPolinomioLista b)
-{
-   for(int i=1;i<=a.numero_terminos();++i)
-   {
-       int exp = a.exponente(i);
-       int coe = a.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-   for(int i=1;i<=b.numero_terminos();++i)
-   {
-       int exp = b.exponente(i);
-       int coe = b.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-}
-
-void  TDAPolinomioLista::resta(TDAPolinomioLista a, TDAPolinomioLista b)
-{
-    for(int i=1;i<=a.numero_terminos();++i)
-   {
-       int exp = a.exponente(i);
-       int coe = a.coeficiente(exp);
-       poner_termino(coe,exp);
-   }
-   for(int i=1;i<=b.numero_terminos();++i)
-   {
-       int exp = b.exponente(i);
-       int coe = b.coeficiente(exp);
-       poner_termino(-coe,exp);
-   }
-}
-
-
 void TDAPolinomioLista::derivar()
 {
     Lista aux;
@@ -186,21 +153,10 @@ void TDAPolinomioLista::derivar()
         int exp = L.recupera(L.primero());
         L.suprime(L.primero());
 
-        aux.insertar(aux.primero(),exp-1);
-        aux.insertar(aux.primero(),exp*coe);
+        //aux.insertar(L.primero(),exp-1);
+        //aux.insertar(L.primero(),exp*coe);
     }
 
-    while(aux.longitud()>0)
-    {
-        int coe = aux.recupera(aux.primero());
-        aux.suprime(aux.primero());
-
-        int exp = aux.recupera(aux.primero());
-        aux.suprime(aux.primero());
-
-        L.insertar(L.primero(),exp);
-        L.insertar(L.primero(),coe);
-    }
 
 }
 

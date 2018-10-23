@@ -29,7 +29,7 @@ class TDAPolinomioVector
            int exponente(int nro_termino);
            int grado();
            int numero_terminos();
-           void mostrar();
+           void expresion();
            void suma(Polinomio a,Polinomio b);
            void resta(Polinomio a,Polinomio b);
            void derivar();
