@@ -41,7 +41,7 @@
 #include <cstdlib>
 #include <iomanip>
 
-#include <TDAPolinomioMemoria.h>
+#include <TDAPolinomioLista.h>
 
 using namespace std;
 
@@ -60,9 +60,9 @@ void MostrarOpciones()
 
 int main()
 {
-    TDAPolinomioMemoria P;
+    TDAPolinomioLista P;
     double a,b,dx,area;
-    int opcion;
+    int opcion,i;
     do
 	{
 		// Refresh de la Consola
@@ -106,11 +106,11 @@ int main()
                     cout<<"dx:";
                     cin>>dx;
 
-                    int i=1;
+                    i=1;
                     cout<<fixed<<setprecision(3);
                     while(a<=b)
                     {
-                        cout<<"x_"<<i<<a<<" - fx_"<<i<<P.evaluar(a)<<endl;
+                        cout<<"x"<<i<<": "<<a<<" - fx"<<i<<": "<<P.evaluar(a)<<endl;
                         a+=dx;
                         ++i;
                     }
@@ -126,12 +126,14 @@ int main()
                     cin>>dx;
 
                     area = 0;
-                    while(a<=b)
+                    while(a<b)
                     {
-                        area+= abs(dx*P.evaluar(a));
+
+                          area+= abs(dx*P.evaluar(a));
+
                         a+=dx;
                     }
-                    cout<<area<<endl;
+                    cout<<"Area: "<<area<<endl;
 					break;
 			// Salir
 			default:

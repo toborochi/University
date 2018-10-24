@@ -135,22 +135,22 @@
     <File Path="TDAPilaVector.cpp"/>
     <File Path="TDAPilaVector.h"/>
     <VirtualFolder ID="{6FA0F84B-98BA-4783-B14D-6FEAB093A550}"/>
-    <File Path="TDAPolinomioVector.cpp"/>
-    <File Path="TDAPolinomioVector.cpp"/>
-    <File Path="TDAPolinomioVector.h"/>
-    <File Path="TDAPolinomioPuntero.cpp"/>
-    <File Path="TDAPolinomioPuntero.cpp"/>
-    <File Path="TDAPolinomioPuntero.h"/>
     <File Path="TDAPolinomioLista.cpp"/>
     <File Path="TDAPolinomioLista.cpp"/>
     <File Path="TDAPolinomioLista.h"/>
     <File Path="TDAPolinomioMemoria.cpp"/>
     <File Path="TDAPolinomioMemoria.cpp"/>
     <File Path="TDAPolinomioMemoria.h"/>
-    <File Path="EstructurasPCH1.h"/>
+    <File Path="TDAPolinomioPuntero.cpp"/>
+    <File Path="TDAPolinomioPuntero.cpp"/>
+    <File Path="TDAPolinomioPuntero.h"/>
+    <File Path="TDAPolinomioVector.cpp"/>
+    <File Path="TDAPolinomioVector.cpp"/>
+    <File Path="TDAPolinomioVector.h"/>
     <File Path="SMemoria.cpp"/>
     <File Path="SMemoria.cpp"/>
     <File Path="SMemoria.h"/>
     <File Path="main.cpp"/>
+    <File Path="EstructurasPCH1.h"/>
   </ProjectSortOrder>
 </BorlandProject>

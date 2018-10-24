@@ -126,12 +126,9 @@ int main()
                     cin>>dx;
 
                     area = 0;
-                    while(a<=b)
+                    while(a<b)
                     {
-                        if(a<b) //Ya que se suma una vez, preguntamos antes de anadirlo al resutlado :P
-                        {
-                          area+= abs(dx*P.evaluar(a));
-                        }
+                        area+= abs(dx*P.evaluar(a));
                         a+=dx;
                     }
                     cout<<"Area: "<<area<<endl;

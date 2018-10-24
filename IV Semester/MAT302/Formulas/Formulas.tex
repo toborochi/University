@@ -26,8 +26,10 @@
 \usepackage{svg}
 \usepackage{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-\author{Leonardo H. Añez Vladimirovna}
-\title{Formulas de Estadística Inferencial \texttt{(MAT302)}}
+\author{Leonardo H. Añez Vladimirovna\\
+\texttt{toborochi98@outlook.com}
+}
+\title{Fórmulas de Probabilidad y Estadística II \texttt{(MAT302)}}
  \pgfplotsset{compat=1.16}
 \begin{document}
 \maketitle
@@ -378,6 +380,50 @@ $F(x)=
 $
 \end{itemize}
 \end{multicols}
+\subsubsection*{Distribución Normal Estándar}
+\begin{itemize}
+\item Función de Cuantía \\
+$$
+f(z)=N(z;0,1)=N(0,1)=\dfrac{1}{\sqrt{2\pi}}\cdot e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2} dx \hspace{0.5cm} z\in\mathbb{R}
+$$
+\item Función Acumulada \\
+$$
+F(z)=P(Z\leq z)=\phi (z)=\displaystyle\int_{-\infty}^{z} \dfrac{1}{\sqrt{2\pi}}\cdot e^{-\frac{1}{2}r} dr
+$$
+\end{itemize}
+
+\noindent$\bigstar$ Manejo de la Tabla:
+\begin{enumerate}
+\item $P(X<a)=P(X\leq a) = P \Bigg( \dfrac{x-\mu}{\sigma}\leq\dfrac{a-\mu}{\sigma}\Bigg) 
+= P\Bigg( z\leq \dfrac{a-\mu}{\sigma}\Bigg) 
+=\phi\Bigg( \dfrac{a-\mu}{\sigma} \Bigg)$
+\item 
+$
+P(X>a) =1-P(X\leq a) 
+	 =1-\phi\Bigg(\dfrac{a-\mu}{\sigma}\Bigg)
+$
+\item 
+$
+P(a\leq X\leq b)= P(X\leq b)-P(X\leq a) 
+                = P\Bigg(z\leq \dfrac{b-\mu}{\sigma}\Bigg)-\Bigg(z\leq \dfrac{a-\mu}{\sigma}\Bigg) 
+                =\phi\Bigg(\dfrac{b-\mu}{\sigma}\Bigg)-\phi\Bigg(\dfrac{a-\mu}{\sigma}\Bigg)
+$
+\item 
+$
+P(x\leq -a) = 1-P(X\leq a)
+            = 1-\phi\Bigg( \dfrac{a-\mu}{\sigma}\Bigg)
+$
+\item 
+$P(|X|<a) = P(|X|\leq a) 
+         = P(-a\leq X \leq a) 
+         = \phi\Bigg(\dfrac{a-\mu}{\sigma}\Bigg)-\phi\Bigg(\dfrac{-a-\mu}{\sigma}\Bigg)$
+\item $
+P(|x|>a) = 1-P(|x|\leq a) 
+	   = 1-P(-a \leq x \leq a) 
+	   = 1 - \phi\Bigg(\dfrac{a-\mu}{\sigma}\Bigg)+\phi\Bigg(\dfrac{-a-\mu}{\sigma}\Bigg)$
+
+
+\end{enumerate}
 \subsubsection{Distribución Chi-Cuadrado $(\chi^2)$}
 
 \section{Misceláneo}
