@@ -33,8 +33,10 @@
 \headcommand {\beamer@framepages {18}{19}}
 \headcommand {\beamer@subsectionpages {18}{19}}
 \headcommand {\beamer@subsectionentry {0}{3}{1}{20}{Clasificaci\IeC {\'o}n}}
-\headcommand {\slideentry {3}{1}{1}{20/23}{Clasificaci\IeC {\'o}n}{0}}
-\headcommand {\beamer@framepages {20}{23}}
+\headcommand {\slideentry {3}{1}{1}{20/20}{Clasificaci\IeC {\'o}n}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {3}{1}{2}{21/23}{Clasificaci\IeC {\'o}n}{0}}
+\headcommand {\beamer@framepages {21}{23}}
 \headcommand {\beamer@sectionpages {18}{23}}
 \headcommand {\beamer@subsectionpages {20}{23}}
 \headcommand {\sectionentry {4}{Tipos de Datos Abstractos}{24}{Tipos de Datos Abstractos}{0}}
@@ -55,4 +57,4 @@
 \headcommand {\beamer@subsectionpages {28}{27}}
 \headcommand {\beamer@sectionpages {26}{27}}
 \headcommand {\beamer@documentpages {27}}
-\headcommand {\gdef \inserttotalframenumber {12}}
+\headcommand {\gdef \inserttotalframenumber {13}}

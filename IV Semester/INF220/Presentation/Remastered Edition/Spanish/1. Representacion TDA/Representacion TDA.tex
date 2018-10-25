@@ -109,10 +109,11 @@ eficientemente. \\
 \end{frame}
 \subsection{Clasificación}
 \begin{frame}{Clasificación de Estructuras de Datos}
-\begin{itemize}
-\item Estructuras de Datos \alert{Primitivas}: son los tipos de datos fundamentales que son compatibles con una programación. Algunos tipos de datos básicos son enteros, reales, caracteres y booleanos.
-\pause
-\item Estructuras de Datos \alert{no Primitivas}: son aquellas
+Estructuras de Datos \alert{Primitivas}: son los tipos de datos fundamentales que son compatibles con una programación. Algunos tipos de datos básicos son enteros, reales, caracteres y booleanos.
+\end{frame}
+
+\begin{frame}{Clasificación de Estructuras de Datos}
+Estructuras de Datos \alert{no Primitivas}: son aquellas
 estructuras de datos que se crean utilizando datos primitivos.
 \pause
 \begin{itemize}
@@ -123,7 +124,7 @@ un orden lineal o secuencial, entonces pertenece a la categoría lineal.
 almacenan en un orden secuencial, entonces es una estructura de
 datos no lineal.
 \end{itemize}
-\end{itemize}
+
 \end{frame}
 
 \section{Tipos de Datos Abstractos}
@@ -137,13 +138,22 @@ Es la representación de una entidad u objeto para facilitar su programación. S
 \end{itemize}
 \end{frame}
 \section{Formas de Implementación}
-\begin{frame}
-
+\begin{frame}{Formas de Implementación}
+Un Tipo de dato abstracto (en adelante TDA) es un conjunto
+de datos u objetos al cual se le asocian operaciones.
+El TDA provee de una interfaz con la cual es posible realizar
+las operaciones permitidas, \alert{abstrayéndose de la manera en
+como estén implementadas} dichas operaciones. Esto
+quiere decir que \alert{un mismo TDA puede ser implementado
+utilizando distintas estructuras de datos} y proveer la
+misma funcionalidad.
 \end{frame}
 
 \subsection{Modelo Estático}
-\begin{frame}
-
+\begin{frame}{Modelo Estático}
+\begin{block}{Arreglo}
+Los arreglos son una colección de variables del mismo tipo que se referencian utilizando un numbre común. Un arreglo consta de posiciones de memoria contigua. La dirección mas baja corresponde al primer elemento y la mas alta al último. Un arreglo puedo tener una o varias dimensiones. Para acceder a un elemento en particular de un arreglo se usa un índice.
+\end{block}
 \end{frame}
 \subsection{Modelo Dinámico}
 \subsection{Modelo Persistente}
