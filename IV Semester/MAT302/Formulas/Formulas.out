@@ -33,6 +33,12 @@
 \BOOKMARK [3][-]{subsubsection.2.2.2}{Distribuci\363n Exponencial \(exp\)}{subsection.2.2}% 33
 \BOOKMARK [3][-]{subsubsection.2.2.3}{Distribuci\363n Normal \(N\)}{subsection.2.2}% 34
 \BOOKMARK [3][-]{subsubsection.2.2.4}{Distribuci\363n Chi-Cuadrado \(2\)}{subsection.2.2}% 35
-\BOOKMARK [1][-]{section.3}{Muestreo}{}% 36
-\BOOKMARK [1][-]{section.4}{Miscel\341neo}{}% 37
-\BOOKMARK [2][-]{subsection.4.1}{Interpolaci\363n}{section.4}% 38
+\BOOKMARK [3][-]{subsubsection.2.2.5}{Distribuci\363n Fisher-Snedecor \(F\)}{subsection.2.2}% 36
+\BOOKMARK [3][-]{subsubsection.2.2.6}{Distribuci\363n T-Student \(t\)}{subsection.2.2}% 37
+\BOOKMARK [1][-]{section.3}{Muestreo}{}% 38
+\BOOKMARK [2][-]{subsection.3.1}{Distribuciones de Muestreo}{section.3}% 39
+\BOOKMARK [2][-]{subsection.3.2}{Estad\355stico}{section.3}% 40
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Desigualdad de Chebyshev}{subsection.3.2}% 41
+\BOOKMARK [1][-]{section.4}{Miscel\341neo}{}% 42
+\BOOKMARK [2][-]{subsection.4.1}{Interpolaci\363n}{section.4}% 43
+\BOOKMARK [2][-]{subsection.4.2}{Desigualdades}{section.4}% 44

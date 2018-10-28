@@ -26,10 +26,10 @@
 \usepackage{svg}
 \usepackage{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-\author{Leonardo H. Añez Vladimirovna\\
+\author{Leonardo H. Añez Vladimirovna$^\ast$\\
 \texttt{toborochi98@outlook.com}
 }
-\title{Fórmulas de Probabilidad y Estadística II \texttt{(MAT302)}}
+\title{Fórmulas de Probabilidad y Estadística II \texttt{(MAT302)}\\{\normalsize Universidad Autónoma Gabriel René Moreno}\\{\normalsize $^\ast$Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones}}
  \pgfplotsset{compat=1.16}
 \begin{document}
 \maketitle
@@ -204,7 +204,7 @@ Cov(x,y)=\sigma_{xy}&=E((x-\mu_x)(y-\mu_y)) \\
 \item $V(x\pm y)=V(x)+V(y)$
 \item $V(ax\pm by)=a^2V(x)+b^2V(y)$
 \end{enumerate}
-\item Si $x1,x2,x4,\ldots$ son variables aleatorias independientes 2 a 2:\\ \vspace{0.025cm} \\
+\item Si $x1,x2,x3,\ldots$ son variables aleatorias independientes 2 a 2:\\ \vspace{0.025cm} \\
 $V\Bigg( \displaystyle\sum_{i=1}^{m} x_i \Bigg) = \displaystyle\sum_{i=1}^{m} V(x_i)$
 \end{enumerate}
 
@@ -391,7 +391,8 @@ $$
 F(z)=P(Z\leq z)=\phi (z)=\displaystyle\int_{-\infty}^{z} \dfrac{1}{\sqrt{2\pi}}\cdot e^{-\frac{1}{2}r} dr
 $$
 \end{itemize}
-
+\subsubsection*{Transformación}
+$$X\sim N(x;\mu,\sigma^2) \Rightarrow z = \dfrac{x-\mu}{\sigma} \sim N(z;0,1) \text{ ó } N(0,1)$$
 \noindent$\bigstar$ Manejo de la Tabla:
 \begin{enumerate}
 \item $P(X<a)=P(X\leq a) = P \Bigg( \dfrac{x-\mu}{\sigma}\leq\dfrac{a-\mu}{\sigma}\Bigg) 
@@ -424,9 +425,61 @@ P(|x|>a) = 1-P(|x|\leq a)
 
 
 \end{enumerate}
+\subsubsection*{Distribución Normal como aproximación Binomial}
+$$\lim_{n\rightarrow\infty} b(x;n,p)\approx N(x;np,npq)\approx N(x;\mu,\sigma^2)$$
+$$
+P(x_1\leq X\leq x_2)=\displaystyle\sum_{x=x_1}^{x_2} b(x;n,p)\simeq\displaystyle\int_{x_1-\frac{1}{2}}^{x_2+\frac{1}{2}} N(x;np,npq) dx = \displaystyle\int_{z_1}^{z_2} N(z;0,1) dz
+$$
+Donde:
+\begin{itemize}
+\item $z_1=\dfrac{(x_1-\frac{1}{2})-np}{\sqrt{npq}}$
+\item $z_2=\dfrac{(x_2+\frac{1}{2})-np}{\sqrt{npq}}$
+\end{itemize}
 \subsubsection{Distribución Chi-Cuadrado $(\chi^2)$}
+\subsubsection{Distribución Fisher-Snedecor $(F)$}
+\begin{itemize}
+\item Función de Densidad \\
+$$
+f(z)=
+\begin{cases}
+\dfrac{\Big(\dfrac{r_1}{r_2}\Big)^{\frac{r_1}{2}}\Gamma\Big(\dfrac{r_1+r_2}{2}\Big) }{\Gamma\Big(\dfrac{r_1}{2}\Big)\Gamma\Big(\dfrac{r_2}{2}\Big)}\cdot \dfrac{x^{\frac{r_1}{2}-1}}{\Big(1+\dfrac{r_1}{r_2}x\Big)^{\frac{r_1+r_2}{2}}} &;x>0 \\
+0 &;\text{otro caso}
+\end{cases}
+$$
+\end{itemize}
+\subsubsection*{Corolario}
+$$
+X\sim F(r_1,r_2)\Rightarrow
+\begin{cases}
+E(x)=\mu=\dfrac{r_2}{r_2-2} & \forall r_2>2 \\\vspace{0.05cm} \\
+V(x)=\sigma^2=\dfrac{2r^2(r_1+r_2-2)}{r_2(r_2-2)^2(r_2-4)}
+\end{cases}
+$$
+\noindent$\bigstar$ Manejo de la Tabla:
+$$P(X\leq c) = 1-\alpha \text{ ó } P(X\leq F_{1-\alpha}(r_1,r_2))=1-\alpha$$
+\subsubsection{Distribución T-Student $(t)$}
 
 \section{Muestreo}
+\subsection{Distribuciones de Muestreo}
+Algunas distribuciones de Muestreo:
+\begin{multicols}{3}
+\begin{itemize}
+\item $\widehat{\theta}=\dfrac{\displaystyle\sum_{i=1}^{n} x_i}{n}=\overline{x}$
+\end{itemize}
+\columnbreak
+\begin{itemize}
+\item $\widehat{\theta}=\dfrac{\displaystyle\sum_{i=1}^{n} (x_i-\overline{x})^2}{n}=S^2$
+\end{itemize}
+\columnbreak
+\begin{itemize}
+\item $\widehat{\theta}=\dfrac{\displaystyle\sum_{i=1}^{n} (x_i-\overline{x})^2}{n-1}=\widehat{S}^2$
+\end{itemize}
+\end{multicols}
+\subsection{Estadístico}
+\subsubsection{Desigualdad de Chebyshev}
+$$
+P(|x-\mu|<k\sigma) \geq 1-\dfrac{1}{k^2} \hspace{0.5cm};k\in \mathbb{R^+}
+$$
 \section{Misceláneo}
 \subsection{Interpolación}
 $$
@@ -436,7 +489,7 @@ $\phi (z)$ & $z$ \\
 \hline 
 $a$ & $x$ \\ 
 \hline 
-$b$ & $?$ \\ 
+$b$ & $\lambda$ \\ 
 \hline 
 $c$ & $y$ \\ 
 \hline 
@@ -444,6 +497,7 @@ $c$ & $y$ \\
 \hspace{0.5cm}
 \rightarrow 
 \hspace{0.5cm}
-\dfrac{a-c}{b-c}=\dfrac{x-y}{?-y}
+\dfrac{a-c}{b-c}=\dfrac{x-y}{\lambda-y}
 $$
+\subsection{Desigualdades}
 \end{document}
