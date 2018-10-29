@@ -42,8 +42,15 @@ INSERT INTO PERSONA VALUES(10,'Carlos Camacho Chumacero','M',5,9);
 
 
 /*Consulta 1: Mostrar todos los hijos de Joaquin Chumacero Yupanqui*/ 
+-- Primera Manera
 SELECT HIJOS.ID,HIJOS.NOMBRE,HIJOS.SEXO
 FROM PERSONA PADRE ,PERSONA HIJOS
 WHERE PADRE.ID = HIJOS.IDPADRE AND 
-	  PADRE.NOMBRE = 'Joaquin Chumacero Yupanqui'
-
+	  PADRE.NOMBRE = 'Joaquin Chumacero Yupanqui';
+	  
+-- Segunda Manera	  
+SELECT ID,NOMBRE,SEXO FROM PERSONA
+WHERE IDPADRE IN (
+	SELECT ID
+	FROM PERSONA
+	WHERE NOMBRE = 'Joaquin Chumacero Yupanqui');
