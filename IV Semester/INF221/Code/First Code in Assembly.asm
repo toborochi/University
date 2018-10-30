@@ -4,7 +4,7 @@
 ;gcc -o P1.exe P1.o
 ;%%%%%%%%%%%%%%%%%%%%%%%
 ;---------------------------------------
-
+; My very first code made in Assembly
 ;file: P1.asm
 
 extern _printf, _scanf		

@@ -49,19 +49,21 @@ void MostrarOpciones()
 {
  	cout<<"POLINOMIO:\n";
 	cout<<"[1] Crear\n";
-	cout<<"[2] Poner Termino\n";
-	cout<<"[3] Mostrar Polinomio\n";
-	cout<<"[4] Derivar\n";
-	cout<<"[5] Mostrar Coordenadas\n";
-	cout<<"[6] Area\n";
-	cout<<"[7] Salir\n";
+	cout<<"[2] Poner Termino Polinomio (P1)\n";
+	cout<<"[3] Poner Termino Polinomio (P2)\n";
+	cout<<"[4] Mostrar Polinomio (P1)\n";
+	cout<<"[5] Mostrar Polinomio (P2)\n";
+	cout<<"[6] Sumar Polinomio (P1,P2)\n";
+	cout<<"[7] Mostrar P3\n";
+    cout<<"[8] Salir\n";
     cout<<"Opcion: ";
 }
 
 int main()
 {
-    TDAPolinomioLista P;
+    TDAPolinomioLista P1,P2,P3;
     double a,b,dx,area;
+    int coe,exp;
     int opcion,i;
     do
 	{
@@ -78,27 +80,36 @@ int main()
 		{
             // Crear
 			case 1:
-                    P.crear();
+                    P1.crear();
+                    P2.crear();
+                    P3.crear();
 					break;
-			// Poner Terminos
+			// Poner en P1
 			case 2:
-					int coe,exp;
+
                     cout<<"Coeficiente:";
                     cin>>coe;
                     cout<<"Exponente:";
                     cin>>exp;
-                    P.poner_termino(coe,exp);
+                    P1.poner_termino(coe,exp);
 					break;
-			// Mostrar
+			// Poner en P2
 			case 3:
-					P.mostrar();
+
+                    cout<<"Coeficiente:";
+                    cin>>coe;
+                    cout<<"Exponente:";
+                    cin>>exp;
+                    P2.poner_termino(coe,exp);
 					break;
             // Derivar
 			case 4:
-                    P.derivar();
+                    P1.mostrar();
 					break;
 			// Coordenadas
 			case 5:
+                    P2.mostrar();
+                    /*
                     cout<<"Inicio:";
                     cin>>a;
                     cout<<"Fin:";
@@ -114,10 +125,12 @@ int main()
                         a+=dx;
                         ++i;
                     }
-
+                      */
 					break;
 			 // Area
 			case 6:
+                    P3.sumar(P1,P2);
+                    /*
                     cout<<"Inicio:";
                     cin>>a;
                     cout<<"Fin:";
@@ -131,15 +144,19 @@ int main()
                         area+= abs(dx*P.evaluar(a));
                         a+=dx;
                     }
-                    cout<<area<<endl;
+                    cout<<"Area: "<<area<<endl;
+                    */
 					break;
 			// Salir
+            case 7:
+                   P3.mostrar();
+                   break;
 			default:
 					break;
 		}
 		getch();
 
-	}while(opcion!=7);
+	}while(opcion!=8);
     
 
 	getch();

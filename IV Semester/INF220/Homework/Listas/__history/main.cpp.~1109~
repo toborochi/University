@@ -49,18 +49,18 @@ void MostrarOpciones()
 {
  	cout<<"POLINOMIO:\n";
 	cout<<"[1] Crear\n";
-	cout<<"[2] Poner Termino\n";
-	cout<<"[3] Mostrar Polinomio\n";
-	cout<<"[4] Derivar\n";
-	cout<<"[5] Mostrar Coordenadas\n";
-	cout<<"[6] Area\n";
-	cout<<"[7] Salir\n";
+	cout<<"[2] Poner Termino Polinomio (P1)\n";
+	cout<<"[3] Poner Termino Polinomio (P2)\n";
+	cout<<"[4] Mostrar Polinomio (P1)\n";
+	cout<<"[5] Mostrar Polinomio (P2)\n";
+	cout<<"[6] Sumar Polinomio (P1,P2)\n";
+	cout<<"[7] Mostrar P3\n";
     cout<<"Opcion: ";
 }
 
 int main()
 {
-    TDAPolinomioLista P;
+    TDAPolinomioLista P1,P2,P3;
     double a,b,dx,area;
     int opcion,i;
     do
@@ -78,7 +78,9 @@ int main()
 		{
             // Crear
 			case 1:
-                    P.crear();
+                    P1.crear();
+                    P2.crear();
+                    P3.crear();
 					break;
 			// Poner Terminos
 			case 2:
@@ -126,12 +128,9 @@ int main()
                     cin>>dx;
 
                     area = 0;
-                    while(a<=b)
+                    while(a<b)
                     {
-                        if(a<b) //Ya que se suma una vez, preguntamos antes de anadirlo al resutlado :P
-                        {
-                          area+= abs(dx*P.evaluar(a));
-                        }
+                        area+= abs(dx*P.evaluar(a));
                         a+=dx;
                     }
                     cout<<"Area: "<<area<<endl;

@@ -26,10 +26,10 @@
 \usepackage{svg}
 \usepackage{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-\author{Leonardo H. Añez Vladimirovna$^\ast$\\
+\author{Leonardo H. Añez Vladimirovna\\
 \texttt{toborochi98@outlook.com}
 }
-\title{Fórmulas de Probabilidad y Estadística II \texttt{(MAT302)}\\{\normalsize Universidad Autónoma Gabriel René Moreno}\\{\normalsize $^\ast$Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones}}
+\title{Fórmulas de Probabilidad y Estadística II \texttt{(MAT302)}\\{\normalsize Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones}\\{\normalsize Universidad Autónoma Gabriel René Moreno}}
  \pgfplotsset{compat=1.16}
 \begin{document}
 \maketitle
@@ -436,6 +436,25 @@ Donde:
 \item $z_2=\dfrac{(x_2+\frac{1}{2})-np}{\sqrt{npq}}$
 \end{itemize}
 \subsubsection{Distribución Chi-Cuadrado $(\chi^2)$}
+\begin{itemize}
+\item Función de Densidad \\
+$$
+f(x)=
+\begin{cases}
+\dfrac{1}{2^{\frac{r}{2}}\Gamma\Big( \dfrac{r}{2} \Big)}\cdot x^{\frac{r}{2}-1} \cdot e^{-\frac{1}{2}x} &; x>0 \\
+0 &; \text{otro caso}
+\end{cases}
+$$
+\end{itemize}
+$$
+X\sim\chi^2(r)\Rightarrow
+\begin{cases}
+E(x)=\mu=r \\
+V(x)=\sigma^2 = 2r \\
+D(x)=\sigma=\sqrt{2r}
+\end{cases}
+$$
+
 \subsubsection{Distribución Fisher-Snedecor $(F)$}
 \begin{itemize}
 \item Función de Densidad \\
