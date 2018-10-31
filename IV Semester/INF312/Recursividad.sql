@@ -88,4 +88,44 @@ FROM PERSONA
 WHERE ID IN (
 	SELECT IDPADRE
 	FROM PERSONA
-	WHERE NOMBRE='Joaquin Chumacero Yupanqui');
+WHERE NOMBRE='Joaquin Chumacero Yupanqui');
+
+-- Mostrar el ID y el NOMBRE del abuelo de Joaquin Chumacero Yupanqui
+
+SELECT ID,NOMBRE
+FROM PERSONA
+WHERE ID IN
+( 
+	SELECT IDPADRE
+	FROM PERSONA
+	WHERE NOMBRE = 'Joaquin Chumacero Yupanqui' 
+);
+
+SELECT ABUELO.ID,ABUELO.NOMBRE
+FROM PERSONA HIJO,PERSONA PADRE,PERSONA ABUELO
+WHERE HIJO.IDPADRE = PADRE.ID AND
+	  PADRE.IDPADRE = ABUELO.ID AND
+	  HIJO.NOMBRE = 'Joaquin Chumacero Yupanqui'
+
+--Pendiente, Hacer la busqueda anidada
+
+--Hallar las mujeres con las que Joaquin Chumacero tuvo Hijos
+
+SELECT DISTINCT MUJER.ID,MUJER.NOMBRE
+FROM PERSONA HIJO,PERSONA PADRE,PERSONA MUJER
+WHERE HIJO.IDPADRE = PADRE.ID AND
+	  HIJO.IDMADRE = MUJER.ID AND
+	  PADRE.NOMBRE = 'Joaquin Chumacero Yupanqui'
+
+SELECT ID,NOMBRE
+FROM PERSONA
+WHERE ID IN (
+	SELECT IDMADRE
+	FROM PERSONA
+	WHERE IDPADRE IN (
+						SELECT ID
+						FROM PERSONA
+						WHERE NOMBRE = 'Joaquin Chumacero Yupanqui'
+					 )
+		     )
+SELECT * FROM PERSONA
