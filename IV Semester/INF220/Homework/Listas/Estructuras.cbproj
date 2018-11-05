@@ -134,6 +134,16 @@
             <DependentOn>TDAListaVector.h</DependentOn>
             <BuildOrder>3</BuildOrder>
         </CppCompile>
+        <CppCompile Include="TDAMatrizDispersaPuntero.cpp">
+            <VirtualFolder>{A72162FB-D4CF-4DFF-80E9-5E0BAEA87172}</VirtualFolder>
+            <DependentOn>TDAMatrizDispersaPuntero.h</DependentOn>
+            <BuildOrder>21</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="TDAMatrizDispersaVector.cpp">
+            <VirtualFolder>{A72162FB-D4CF-4DFF-80E9-5E0BAEA87172}</VirtualFolder>
+            <DependentOn>TDAMatrizDispersaVector.h</DependentOn>
+            <BuildOrder>20</BuildOrder>
+        </CppCompile>
         <CppCompile Include="TDAPilaLista.cpp">
             <VirtualFolder>{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}</VirtualFolder>
             <DependentOn>TDAPilaLista.h</DependentOn>
@@ -202,6 +212,7 @@
                     <VFOLDER ID="{7242499F-4DB5-4E17-BB34-009128FFD899}" name="Listas"/>
                     <VFOLDER ID="{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}" name="Pilas"/>
                     <VFOLDER ID="{6FA0F84B-98BA-4783-B14D-6FEAB093A550}" name="Polinomio"/>
+                    <VFOLDER ID="{A72162FB-D4CF-4DFF-80E9-5E0BAEA87172}" name="Matriz Dispersa"/>
                 </VFOLDERS>
                 <Folders/>
             </CPlusPlusBuilder.Personality>

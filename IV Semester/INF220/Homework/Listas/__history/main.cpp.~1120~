@@ -65,8 +65,7 @@ void MostrarOpciones()
 
 int main()
 {
-     TDAMatrizDispersaVector MD;
-    
+
 
 	getch();
 	return 0;

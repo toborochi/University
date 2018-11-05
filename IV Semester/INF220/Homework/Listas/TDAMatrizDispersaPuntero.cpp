@@ -2,14 +2,6 @@
 
 #pragma hdrstop
 
-#include "TDAMatrizDispersaVector.h"
+#include "TDAMatrizDispersaPuntero.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
-
-
-void TDAMatrizDispersaVector::crear()
-{
-    df = 0;
-    dc = 0;
-    repe = 0;
-}

@@ -11,35 +11,14 @@ void TDAMatrizDispersaVector::crear()
 {
     df = 0;
     dc = 0;
+    nt = 0;
     repe = 0;
-    nt=0;
-}
-
-void TDAMatrizDispersaVector::definir_valor_repetido(int e)
-{
-    if(nt==0)
-    {
-        repe = e;
-    }else
-    {
-        bool x = false;
-        for(int i=1;i<=nt;++i)
-        {
-            if(vd[i]==e)
-             x=true;
-             break;
-        }
-        if(x==false)
-        {
-            repe = e;
-        }
-    }
 }
 
 void TDAMatrizDispersaVector::poner(int f,int c,int e)
 {
     int lug=0;
-    for(int i=1;i<=nt;++i)
+    for(int i=1;i<nt;++i)
     {
          if(vf[i]==f && vc[i]==c)
          {
@@ -67,15 +46,16 @@ void   TDAMatrizDispersaVector::dimensionar(int f,int c)
 {
     df = f;
     dc = c;
+    nt=f*c;
 }
 
 
 int TDAMatrizDispersaVector::elemento(int f,int  c)
 {
-    if((f>=1 && f<= df) && ( c>=1 && c<=dc))
+    if((f>=1 y f<= df) y ( c>=1 y c<=dc))
     {
        int lug=0;
-    for(int i=1;i<=nt;++i)
+    for(int i=1;i<nt;++i)
     {
          if(vf[i]==f && vc[i]==c)
          {

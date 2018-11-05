@@ -5,13 +5,13 @@
 //---------------------------------------------------------------------------
 #endif
 
-static const int max = 100;
+const int max = 100;
 
 class TDAMatrizDispersaVector
 {
     private:
-           int vf[100],vc[100],df,dc,repe,nt;
-           int vd[100];
+           int vf[max],vc[max],df,dc,repe,nt;
+           int vd[max];
     public:
            void crear();
            void dimensionar(int df,int dc);

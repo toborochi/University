@@ -21,6 +21,7 @@ void TDAMatrizDispersaVector::definir_valor_repetido(int e)
     {
         repe = e;
     }else
+    if()
     {
         bool x = false;
         for(int i=1;i<=nt;++i)

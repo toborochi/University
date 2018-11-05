@@ -15,31 +15,10 @@ void TDAMatrizDispersaVector::crear()
     nt=0;
 }
 
-void TDAMatrizDispersaVector::definir_valor_repetido(int e)
-{
-    if(nt==0)
-    {
-        repe = e;
-    }else
-    {
-        bool x = false;
-        for(int i=1;i<=nt;++i)
-        {
-            if(vd[i]==e)
-             x=true;
-             break;
-        }
-        if(x==false)
-        {
-            repe = e;
-        }
-    }
-}
-
 void TDAMatrizDispersaVector::poner(int f,int c,int e)
 {
     int lug=0;
-    for(int i=1;i<=nt;++i)
+    for(int i=1;i<nt;++i)
     {
          if(vf[i]==f && vc[i]==c)
          {

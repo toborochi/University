@@ -1,7 +1,6 @@
 //---------------------------------------------------------------------------
 
-#pragma hdrstop
-
-#include "TDAMatrizDispersaVector.h"
+#ifndef TDAMatrizDispersaPunteroH
+#define TDAMatrizDispersaPunteroH
 //---------------------------------------------------------------------------
-#pragma package(smart_init)
+#endif

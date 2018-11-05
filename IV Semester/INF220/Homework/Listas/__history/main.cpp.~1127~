@@ -66,7 +66,19 @@ void MostrarOpciones()
 int main()
 {
      TDAMatrizDispersaVector MD;
-    
+     MD.crear();
+     MD.dimensionar(4,4);
+     MD.poner(1,1,2);
+     MD.poner(4,4,2);
+     MD.poner(3,2,6);
+
+     for(int i=1;i<=4;++i)
+     {
+         for(int j=1;j<=4;++j)
+         {
+             cout<<MD.elemento(i,j);
+         }                          cout<<endl;
+     }
 
 	getch();
 	return 0;
