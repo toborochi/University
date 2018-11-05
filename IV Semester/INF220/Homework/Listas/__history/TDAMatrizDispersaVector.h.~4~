@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAMatrizDispersaVectorH
+#define TDAMatrizDispersaVectorH
+//---------------------------------------------------------------------------
+#endif
+
+const int max = 100;
+
+class TDAMatrizDispersaVector
+{
+    private:
+           int vf[max],vc[max],df,dc,repe;
+           int vd[max];
+    public:
+           void crear();
+           void dimensionar(int df,int dc);
+           int dimension_fila();
+           int dimension_columna();
+           void poner(int f,int c,int elemento);
+           int elemento(int f,int c);
+           void definir_valor_repetido(int valor);
+
+};
