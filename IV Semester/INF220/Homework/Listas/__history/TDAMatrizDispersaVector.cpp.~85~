@@ -99,7 +99,7 @@ int TDAMatrizDispersaVector::elementoComprimido(int f,int c)
    int i = vf[f];
    int top = i + vf[f+1]-vf[f] ;
 
-   while(i<top)
+   while(i<=top)
    {
        if(vc[i]==c)
        {
@@ -111,7 +111,6 @@ int TDAMatrizDispersaVector::elementoComprimido(int f,int c)
 
    if(existe)
    {
-
        return vd[i];
    }else
    {

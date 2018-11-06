@@ -28,11 +28,4 @@ class TDAMatrizDispersaPuntero
               int rep,dimf,dimc;
       public:
              void crear();
-             void dimensionar(int df,int dc);
-             int dimension_fila();
-             int dimension_columna();
-             void poner(int f,int c,int elemento);
-             int elemento(int f,int c);
-             void definir_valor_repetido(int valor);
-
 };

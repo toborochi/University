@@ -21,7 +21,6 @@ void TDAMatrizDispersaVector::definir_valor_repetido(int e)
     {
         repe = e;
     }else
-    if()
     {
         bool x = false;
         for(int i=1;i<=nt;++i)
@@ -35,6 +34,90 @@ void TDAMatrizDispersaVector::definir_valor_repetido(int e)
             repe = e;
         }
     }
+}
+
+void Actualizar(int v[],int i,int n)
+{
+    i++;
+    while(i<=n+1)
+    {
+       v[i]++;
+       ++i;
+    }
+}
+
+
+void TDAMatrizDispersaVector::ponerComprimido(int f,int c,int e)
+{
+   if(e!=repe)
+   {
+   // No hay nada y queremos insertar
+   if(nt==0)
+   {
+       for(int i=1;i<=df+1;++i)vf[i]=1;
+       vc[1]=c;
+       vd[1]=e;
+       Actualizar(vf,f,df);
+       nt++;
+   }else
+   {
+       int i = vf[f];
+       int j = nt+1;
+       while(j>i)
+       {
+           vc[j]=vc[j-1];
+           vd[j]=vd[j-1];
+           j--;
+       }
+       vc[i]=c;
+       vd[i]=e;
+       Actualizar(vf,f,df);
+       nt++;
+   }
+
+   for(int i=1;i<=nt;++i)
+   {
+       std::cout<<vd[i]<<" ";
+   }std::cout<<std::endl;
+      for(int i=1;i<=nt;++i)
+   {
+       std::cout<<vc[i]<<" ";
+   }std::cout<<std::endl;
+      for(int i=1;i<=df+1;++i)
+   {
+       std::cout<<vf[i]<<" ";
+   }std::cout<<std::endl;
+
+
+   }
+}
+
+
+int TDAMatrizDispersaVector::elementoComprimido(int f,int c)
+{
+   bool existe = false;
+   int i = vf[f];
+   int top = i + vf[f+1]-vf[f] ;
+
+   while(i<top)
+   {
+       if(vc[i]==c)
+       {
+          existe = true;
+          break;
+       }
+       i++;
+   }
+
+   if(existe)
+   {
+       std::cout<<top<<std::endl;
+       return vd[i];
+   }else
+   {
+       return repe;
+   }
+
 }
 
 void TDAMatrizDispersaVector::poner(int f,int c,int e)

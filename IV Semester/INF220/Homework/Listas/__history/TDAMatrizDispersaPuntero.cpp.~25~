@@ -34,26 +34,7 @@ int TDAMatrizDispersaPuntero::dimension_fila()
 
 void  TDAMatrizDispersaPuntero::definir_valor_repetido(int e)
 {
-    if(nt==0)
-    {
-        rep = e;
-    }else
-    {
-        bool x = false;
-        Nodo *aux = PtrMatD;
-        while(aux!=NULL)
-        {
-            if(aux->dato==e)
-            {
-                x = true;
-            }
-            aux = aux->Sig;
-        }
-        if(x==false)
-        {
-            rep = e;
-        }
-    }
+
 }
 
 int TDAMatrizDispersaPuntero::elemento(int f,int c)

@@ -51,7 +51,7 @@ void  TDAMatrizDispersaPuntero::definir_valor_repetido(int e)
         }
         if(x==false)
         {
-            rep = e;
+            repe = e;
         }
     }
 }

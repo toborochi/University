@@ -2,13 +2,6 @@
 
 #ifndef TDAMatrizDispersaVectorH
 #define TDAMatrizDispersaVectorH
-#include <iostream>
-#include <string>
-#include <algorithm>
-#include <iterator>
-#include <stdlib.h>
-#include <math.h>
-#include <stddef.h>
 //---------------------------------------------------------------------------
 #endif
 
@@ -27,7 +20,6 @@ class TDAMatrizDispersaVector
            void poner(int f,int c,int elemento);
            void ponerComprimido(int f,int c,int elemento);
            int elemento(int f,int c);
-           int elementoComprimido(int f,int c);
            void definir_valor_repetido(int valor);
 
 };

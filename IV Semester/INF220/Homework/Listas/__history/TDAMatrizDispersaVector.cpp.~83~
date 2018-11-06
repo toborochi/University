@@ -102,16 +102,13 @@ int TDAMatrizDispersaVector::elementoComprimido(int f,int c)
    while(i<top)
    {
        if(vc[i]==c)
-       {
-          existe = true;
-          break;
-       }
+        existe = true;
+        break;
        i++;
    }
 
    if(existe)
    {
-
        return vd[i];
    }else
    {

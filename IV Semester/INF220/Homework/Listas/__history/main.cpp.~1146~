@@ -45,7 +45,7 @@
 #include <cstdlib>
 #include <iomanip>
 
-#include <TDAPolinomioLista.h>
+#include <TDAMatrizDispersaVector.h>
 
 using namespace std;
 
@@ -65,6 +65,8 @@ void MostrarOpciones()
 
 int main()
 {
+     TDAMatrizDispersaVector MD;
+     
 
 
 	getch();

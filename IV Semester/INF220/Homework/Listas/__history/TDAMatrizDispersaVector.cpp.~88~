@@ -111,7 +111,7 @@ int TDAMatrizDispersaVector::elementoComprimido(int f,int c)
 
    if(existe)
    {
-
+       std::cout<<top<<"*"<<std::endl;
        return vd[i];
    }else
    {

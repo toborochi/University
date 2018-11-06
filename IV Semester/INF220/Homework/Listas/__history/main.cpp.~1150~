@@ -53,31 +53,48 @@ void MostrarOpciones()
 {
  	cout<<"POLINOMIO:\n";
 	cout<<"[1] Crear\n";
-	cout<<"[2] Poner Termino Polinomio (P1)\n";
-	cout<<"[3] Poner Termino Polinomio (P2)\n";
-	cout<<"[4] Mostrar Polinomio (P1)\n";
-	cout<<"[5] Mostrar Polinomio (P2)\n";
-	cout<<"[6] Sumar Polinomio (P1,P2)\n";
-	cout<<"[7] Mostrar P3\n";
-    cout<<"[8] Salir\n";
+    cout<<"[2] Dimensionar\n";
+	cout<<"[3] Poner\n";
+	cout<<"[4] Elemento\n";
+	cout<<"[5] Mostrar\n";
+	cout<<"[6] Repetido\n";
+    cout<<"[7] Salir\n";
     cout<<"Opcion: ";
 }
 
 int main()
 {
      TDAMatrizDispersaVector MD;
-     MD.crear();
-     MD.dimensionar(4,4);
-     MD.poner(1,1,2);
-     MD.poner(1,2,3);
+     int opcion;
 
-     for(int i=1;i<=4;++i)
-     {
-         for(int j=1;j<=4;++j)
-         {
-             cout<<MD.elemento(i,j);
-         }                          cout<<endl;
-     }
+     do
+	{
+		// Refresh de la Consola
+		system("cls");
+
+        // Menu de Opciones
+		MostrarOpciones();
+
+		// Opcion del Menu
+		cin>>opcion;
+
+		switch(opcion)
+		{
+            case 1:
+                 MD.crear();
+                 break;
+
+            case 2:
+                 MD.dimensionar(fil,col);
+			default:
+					break;
+		}
+		getch();
+
+	}while(opcion!=6);
+
+
+
 
 	getch();
 	return 0;

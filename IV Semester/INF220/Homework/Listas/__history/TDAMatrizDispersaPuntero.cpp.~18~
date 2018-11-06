@@ -31,44 +31,19 @@ int TDAMatrizDispersaPuntero::dimension_fila()
     return dimf;
 }
 
-
-void  TDAMatrizDispersaPuntero::definir_valor_repetido(int e)
-{
-    if(nt==0)
-    {
-        rep = e;
-    }else
-    {
-        bool x = false;
-        Nodo *aux = PtrMatD;
-        while(aux!=NULL)
-        {
-            if(aux->dato==e)
-            {
-                x = true;
-            }
-            aux = aux->Sig;
-        }
-        if(x==false)
-        {
-            rep = e;
-        }
-    }
-}
-
 int TDAMatrizDispersaPuntero::elemento(int f,int c)
 {
-     Nodo *x = PtrMatD;
+   Nodo *x = PtrMatD;
+    bool existe = false;
     while(x!=NULL)
     {
        if(x->fila==f && x->columna==c)
        {
-           return x->dato;
+           existe = true;
+           break;
        }
        x=x->Sig;
     }
-    return rep;
-
 }
 
 
