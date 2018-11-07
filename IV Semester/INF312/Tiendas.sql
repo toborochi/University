@@ -106,3 +106,16 @@ where CI = CiC and
 	  Cliente.Nombre = 'Patricia Aguilera';
 
 
+select Codigo,nombre
+from Producto
+where codigo in
+(
+select CodigoP
+from vende
+where nron in (
+				select nro
+				from NotaVenta
+				where CiC in (
+						select CI
+						from Cliente
+						where Nombre = 'Patricia Aguilera')));
