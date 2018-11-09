@@ -17,17 +17,22 @@ segment .data
 m1 db "Ingresar a: ",0
 m2 db "Ingresar b: ",0
 m3 db "Ingresar c: ",0
-m4 db "a=%d b=%d c=%d",10,0
-m5 db "d=%d",10,0
+m4 db "suma=%d producto=%d",10,0
+m5 db "Cociente=%d Residuo=%d",10,0
 forma db "%d";
 
 segment .bss
 ;Variables sin Inicializar
-
+; Calcular (suma a+b producto a*b)
 a resd 1
 b resd 1
 c resd 1
 d resd 1
+cociente resd 1
+residuo resd 1
+
+suma resd 1 
+producto resd 1
 
 segment .text 
 
@@ -53,47 +58,75 @@ _main:
 	call _scanf
 	add esp,8
 	; Pedir y leer a
-	push m3
-	call _printf
-	add esp,4
+	;push m3
+	;call _printf
+	;add esp,4
 	
-	push c
-	push forma
-	call _scanf
-	add esp,8
+	;push c
+	;push forma
+	;call _scanf
+	;add esp,8
 	
-	push dword[c]
+	;push residuo
+	;push cociente
+	;push dword[c]
+	push producto
+	push suma
 	push dword[b]
 	push dword[a]
-	call f
-	add esp,12
-	mov [d],eax
+	call sumpro
+	add esp,16
+
 	
-	push dword[c]
-	push dword[b]
-	push dword[a]
+	push dword[producto]
+	push dword[suma]
 	push m4
 	call _printf
-	add esp,16
+	add esp,12
 	
-	push dword[d]
-	push m5
-	call _printf
-	add esp,8
+	;push dword[residuo]
+	;push dword[cociente]
+	;push m5
+	;call _printf
+	;add esp,12
 	
 ret
 ;----------------------------------------------------------------------------
 ;...............................subrutina....................................	
 
-
+	
 	f: 
 		push ebp
 		mov ebp,esp
-		
+			
 			mov eax,[ebp+8]
 			add eax,[ebp+12]
-			imul eax,[ebp+16]
+			cdq
+			idiv dword[ebp+16]			
+			mov [ebp+20],eax
+			mov [ebp+24],ebx
 			
+		mov esp,ebp
+		pop ebp
+	ret
+	
+	sumpro: 
+		push ebp
+		mov ebp,esp
+				
+		mov eax,[ebp+8]
+		mov ebx,[ebp+8]
+	
+		add eax,[ebp+12]
+		imul ebx,[ebp+12]
+		
+		mov ecx,[ebp+16]
+		mov edx,[ebp+20]
+		
+		mov [ecx],eax
+		mov [edx],ebx
+		
+		
 		mov esp,ebp
 		pop ebp
 	ret
