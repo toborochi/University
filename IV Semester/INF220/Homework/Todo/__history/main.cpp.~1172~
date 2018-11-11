@@ -34,7 +34,11 @@
             Matriz Dispersa:
                    Vector
                    Puntero
+                   Puntero Doble Enlace
                    Comprimido
+            Colas:
+                   Puntero
+
 */////////////////////////////////////////////////////////////////////////////
 
 #include <iostream.h>
@@ -45,7 +49,8 @@
 #include <cstdlib>
 #include <iomanip>
 
-#include <TDAMatrizDispersaVector.h>
+#include "TDAMatrizDispersaPunteroDoble.h"
+
 
 using namespace std;
 
@@ -53,44 +58,33 @@ void MostrarOpciones()
 {
  	cout<<"POLINOMIO:\n";
 	cout<<"[1] Crear\n";
-	cout<<"[2] Poner Termino Polinomio (P1)\n";
-	cout<<"[3] Poner Termino Polinomio (P2)\n";
-	cout<<"[4] Mostrar Polinomio (P1)\n";
-	cout<<"[5] Mostrar Polinomio (P2)\n";
-	cout<<"[6] Sumar Polinomio (P1,P2)\n";
-	cout<<"[7] Mostrar P3\n";
-    cout<<"[8] Salir\n";
+    cout<<"[2] Dimensionar\n";
+	cout<<"[3] Poner\n";
+	cout<<"[4] Elemento\n";
+	cout<<"[5] Mostrar\n";
+	cout<<"[6] Repetido\n";
+    cout<<"[7] Salir\n";
     cout<<"Opcion: ";
 }
 
 int main()
 {
-     TDAMatrizDispersaVector MD;
+    TDAMatrizDispersaPunteroDoble MD;
+    MD.crear();
+    MD.dimensionar(3,4);
 
-     int opcion;
+    MD.poner(1,1,13);
+    MD.poner(2,4,5);
+    MD.poner(1,1,4);
 
-     do
-	{
-		// Refresh de la Consola
-		system("cls");
-
-        // Menu de Opciones
-		MostrarOpciones();
-
-		// Opcion del Menu
-		cin>>opcion;
-
-		switch(opcion)
-		{
-			default:
-					break;
-		}
-		getch();
-
-	}while(opcion!=7);
-
-
-
+    for(int i=1;i<=MD.dimension_fila();++i)
+    {
+        for(int j=1;j<=MD.dimension_columna();++j)
+        {
+            cout<<MD.elemento(i,j)<<" ";
+        }
+        cout<<endl;
+    }
 
 	getch();
 	return 0;

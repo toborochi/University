@@ -34,7 +34,11 @@
             Matriz Dispersa:
                    Vector
                    Puntero
+                   Puntero Doble Enlace
                    Comprimido
+            Colas:
+                   Puntero
+
 */////////////////////////////////////////////////////////////////////////////
 
 #include <iostream.h>
@@ -45,7 +49,8 @@
 #include <cstdlib>
 #include <iomanip>
 
-#include <TDAMatrizDispersaVector.h>
+#include "TDAMatrizDispersaPunteroDoble.h"
+
 
 using namespace std;
 
@@ -64,37 +69,6 @@ void MostrarOpciones()
 
 int main()
 {
-     TDAMatrizDispersaVector MD;
-     int opcion;
-
-     do
-	{
-		// Refresh de la Consola
-		system("cls");
-
-        // Menu de Opciones
-		MostrarOpciones();
-
-		// Opcion del Menu
-		cin>>opcion;
-
-		switch(opcion)
-		{
-            case 1:
-                 MD.crear();
-                 break;
-
-            case 2:
-                 MD.dimensionar(fil,col);
-			default:
-					break;
-		}
-		getch();
-
-	}while(opcion!=6);
-
-
-
 
 	getch();
 	return 0;

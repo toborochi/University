@@ -1,0 +1,33 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAMatrizDispersaPunteroDobleH
+#define TDAMatrizDispersaPunteroDobleH
+//---------------------------------------------------------------------------
+#endif
+
+struct NodoC
+{
+    int Col;
+    int Dato;
+    NodoC * SigCol;
+};
+
+
+struct NodoF
+{
+    int Fil;
+    NodoF * SigF;
+    NodoF * AntF;
+    NodoC * PtrCol;
+};
+
+
+
+class TDAMatrizDispersaPunteroDoble
+{
+      private:
+              NodoF *PtrFil;
+              int vrep,nf,nc,nt;
+      public:
+
+};

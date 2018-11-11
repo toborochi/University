@@ -139,6 +139,11 @@
             <DependentOn>TDAMatrizDispersaPuntero.h</DependentOn>
             <BuildOrder>21</BuildOrder>
         </CppCompile>
+        <CppCompile Include="TDAMatrizDispersaPunteroDoble.cpp">
+            <VirtualFolder>{A72162FB-D4CF-4DFF-80E9-5E0BAEA87172}</VirtualFolder>
+            <DependentOn>TDAMatrizDispersaPunteroDoble.h</DependentOn>
+            <BuildOrder>22</BuildOrder>
+        </CppCompile>
         <CppCompile Include="TDAMatrizDispersaVector.cpp">
             <VirtualFolder>{A72162FB-D4CF-4DFF-80E9-5E0BAEA87172}</VirtualFolder>
             <DependentOn>TDAMatrizDispersaVector.h</DependentOn>
