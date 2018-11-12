@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAColaPunteroH
+#define TDAColaPunteroH
+//---------------------------------------------------------------------------
+#endif
+
+struct Nodo
+{
+    int elemento;
+    Nodo *Sig;
+};
+
+class TDAColaPuntero
+{
+    public:
+           void crear();
+           bool vacia();
+           int primero();
+           void poner();
+           void sacar();
+};

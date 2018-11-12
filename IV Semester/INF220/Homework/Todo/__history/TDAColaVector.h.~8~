@@ -1,0 +1,14 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAColaVectorH
+#define TDAColaVectorH
+//---------------------------------------------------------------------------
+#endif
+
+static const int maximoo = 100;
+class TDAColaVector
+{
+    private:
+            int arreglo[max];
+
+};

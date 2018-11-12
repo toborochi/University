@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAColaPunteroH
+#define TDAColaPunteroH
+//---------------------------------------------------------------------------
+#endif
+
+class TDAColaPuntero
+{
+    public:
+           void crear();
+           bool vacia();
+           int primero();
+           void poner();
+           void sacar();
+};

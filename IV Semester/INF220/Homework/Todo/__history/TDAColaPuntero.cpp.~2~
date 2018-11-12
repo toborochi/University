@@ -1,0 +1,14 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAColaPuntero.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+void TDAColaPuntero::crear()
+{
+    ini = NULL;
+    fin = NULL;
+}

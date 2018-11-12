@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAColaListaH
+#define TDAColaListaH
+#include "TDAlistaPuntero.h"
+//---------------------------------------------------------------------------
+#endif
+
+class TDAColaLista
+{
+
+
+};

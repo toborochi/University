@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAColaListaH
+#define TDAColaListaH
+#include "TDAListaPuntero.h"
+//---------------------------------------------------------------------------
+#endif
+#define Lista TDAListaPuntero
+
+class TDAColaLista
+{
+      private:
+              Lista L;
+      public:
+             void crear();
+             bool vacia();
+             void poner(int e);
+             void sacar();
+             int primero();
+
+};

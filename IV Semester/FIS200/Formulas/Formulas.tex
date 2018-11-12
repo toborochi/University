@@ -1,0 +1,78 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage[affil-it]{authblk}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{slashbox}
+\usepackage{diagbox}
+\usepackage{slashbox,multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{pstricks}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
+\usepackage{empheq}
+\usepackage{svg}
+\usepackage{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Leonardo H. Añez Vladimirovna\\
+\texttt{toborochi98@outlook.com}
+}
+\title{Fórmulas de Física III \texttt{(FIS200)}\\{\normalsize Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones}\\{\normalsize Universidad Autónoma Gabriel René Moreno}}
+ \pgfplotsset{compat=1.16}
+\begin{document}
+\maketitle
+\section{Interacción Electrostática}
+\subsection{Carga y Campo Eléctrico}
+
+\begin{multicols}{3}
+\subsubsection{Ley de Coulomb}
+$$
+F_e = k_e \dfrac{|q_1\cdot q_2|}{r^2}
+$$
+\columnbreak
+\subsubsection{Lineas de Campo}
+\begin{align*}
+F=ma & \Leftrightarrow  F=q_0 \overrightarrow{E}\\
+ma &=q_0 \overrightarrow{E} \\ \vspace{0.01cm}\\
+\Aboxed{a&=\dfrac{q_0}{m}\overrightarrow{E}}
+\end{align*}
+\columnbreak
+\subsubsection{Campo Eléctrico}
+$$
+\overrightarrow{E}=\dfrac{\overrightarrow{F_0}}{q_0}\widehat{r}=\dfrac{k\dfrac{q\cdot q_0}{r^2}}{q_0}\widehat{r}=\dfrac{kq\widehat{r}}{r^2}
+$$
+\end{multicols}
+\subsection{Dipolos}
+$$
+\overrightarrow{\tau}=\overrightarrow{d} \times \overrightarrow{F}=dF\sin(\theta)=dqE\sin(\theta)
+$$
+\begin{multicols}{2}
+\subsubsection{Fuerza y Torsión}
+\begin{align*}
+\tau &= q\cdot d\cdot E\cdot\sin(\theta) \\
+\tau &= p\cdot E\cdot\sin(\theta)
+\end{align*}
+
+\columnbreak
+\subsubsection{Energía Potencial}
+\end{multicols}
+
+\begin{multicols}{2}
+\subsubsection{Momento Dipolar}
+\columnbreak
+\subsubsection{Energía Potencial Dipolar}
+\end{multicols}
+\subsection{Potencial Eléctrico}
+\end{document}

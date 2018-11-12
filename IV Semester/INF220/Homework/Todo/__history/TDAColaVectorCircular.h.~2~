@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAColaVectorCircularH
+#define TDAColaVectorCircularH
+//---------------------------------------------------------------------------
+#endif
+
+
+class TDAColaVectorCircular
+{
+
+
+};
