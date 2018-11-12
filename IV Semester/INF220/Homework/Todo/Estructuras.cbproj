@@ -94,6 +94,11 @@
             <DependentOn>TDAColaLista.h</DependentOn>
             <BuildOrder>25</BuildOrder>
         </CppCompile>
+        <CppCompile Include="TDAColaPrioridadVector.cpp">
+            <VirtualFolder>{591A9891-3D27-4D65-A66E-9C9D93C74809}</VirtualFolder>
+            <DependentOn>TDAColaPrioridadVector.h</DependentOn>
+            <BuildOrder>29</BuildOrder>
+        </CppCompile>
         <CppCompile Include="TDAColaPuntero.cpp">
             <VirtualFolder>{591A9891-3D27-4D65-A66E-9C9D93C74809}</VirtualFolder>
             <DependentOn>TDAColaPuntero.h</DependentOn>
@@ -143,6 +148,11 @@
             <VirtualFolder>{09A538F3-5774-4BB9-9505-2070827C5121}</VirtualFolder>
             <DependentOn>TDAConjuntoVector.h</DependentOn>
             <BuildOrder>10</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="TDADicola.cpp">
+            <VirtualFolder>{591A9891-3D27-4D65-A66E-9C9D93C74809}</VirtualFolder>
+            <DependentOn>TDADicola.h</DependentOn>
+            <BuildOrder>28</BuildOrder>
         </CppCompile>
         <CppCompile Include="TDAListaMemoria.cpp">
             <VirtualFolder>{7242499F-4DB5-4E17-BB34-009128FFD899}</VirtualFolder>

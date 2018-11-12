@@ -1,0 +1,14 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAColaPrioridadVectorH
+#define TDAColaPrioridadVectorH
+#include "TDAColaPuntero.h"
+//---------------------------------------------------------------------------
+#endif
+
+
+class TDAColaPrioridadVector
+{
+
+
+};

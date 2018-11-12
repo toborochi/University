@@ -23,5 +23,5 @@ class TDAColaPuntero
            bool vacia();
            int primero();
            void poner(int e);
-           void sacar();
+           void sacar(int &e);
 };

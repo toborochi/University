@@ -53,7 +53,7 @@
 #include <cstdlib>
 #include <iomanip>
 
-#include "TDAColaVector2.h"
+#include "TDAColaPrioridadVector.h"
 
 
 using namespace std;
@@ -73,6 +73,8 @@ void MostrarOpciones()
 
 int main()
 {
+
+
 
 	getch();
 	return 0;

@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAColaPrioridadVectorH
+#define TDAColaPrioridadVectorH
+#include "TDAColaPuntero.h"
+//---------------------------------------------------------------------------
+#endif
+
+
+const int MAX = 100;
+
+class TDAColaPrioridadVector
+{
+      private:
+              TDAColaPuntero VC[MAX];
+              int VF[MAX];
+              int colaAct;
+              int cant;
+      public:
+              void crear();
+              void poner(int e);
+
+
+};
