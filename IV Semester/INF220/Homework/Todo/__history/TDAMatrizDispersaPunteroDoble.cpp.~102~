@@ -63,7 +63,16 @@ void TDAMatrizDispersaPunteroDoble::poner(int f,int c,int e)
 
              }else
              {
-
+                 NodoC *cp = new NodoC;
+                 NodoC *colp = filp->PtrCol;
+                 while(colp->SigCol!=NULL)
+                 {
+                     colp=colp->SigCol;
+                 }
+                 colp->SigCol=cp;
+                 cp->Col=c;
+                 cp->Dato=e;
+                 cp->SigCol=NULL;
              }
 
          }else
@@ -117,6 +126,11 @@ int TDAMatrizDispersaPunteroDoble::elemento(int f,int c)
 }
 
 void TDAMatrizDispersaPunteroDoble::definir_valor_repetido(int v)
+{
+    vrep = 0;
+}
+
+void TDAMatrizDispersaPunteroDoble::mostrar()
 {
 
 }

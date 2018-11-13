@@ -34,7 +34,7 @@ class TDAMatrizDispersaPunteroDoble
 {
       private:
               NodoF *PtrFil;
-              int vrep,nf,nc;
+              int vrep,nf,nc,nt;
       public:
              void crear();
              void dimensionar(int df,int dc);
@@ -43,5 +43,4 @@ class TDAMatrizDispersaPunteroDoble
              void poner(int f,int c,int elemento);
              int elemento(int f,int c);
              void definir_valor_repetido(int valor);
-             void mostrar();
 };

@@ -34,7 +34,7 @@ class TDAMatrizDispersaPunteroDoble
 {
       private:
               NodoF *PtrFil;
-              int vrep,nf,nc;
+              int vrep,nf,nc,nt;
       public:
              void crear();
              void dimensionar(int df,int dc);

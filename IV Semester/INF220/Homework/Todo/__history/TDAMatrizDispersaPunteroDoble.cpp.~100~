@@ -65,6 +65,14 @@ void TDAMatrizDispersaPunteroDoble::poner(int f,int c,int e)
              {
                  NodoC *cp = new NodoC;
                  NodoC *colp = filp->PtrCol;
+                 while(colp->SigCol!=NULL)
+                 {
+                     colp=colp->SigCol;
+                 }
+                 colp->SigCol=cp;
+                 cp->Col=c;
+                 cp->Dato=e;
+                 cp->SigCol=NULL;
              }
 
          }else
