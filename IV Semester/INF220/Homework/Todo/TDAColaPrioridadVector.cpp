@@ -9,15 +9,25 @@
 
 void TDAColaPrioridadVector::crear()
 {
-    for(int i=0;i<MAX;++i)
+    for(int i=1;i<=MAX;++i)
     {
         VC[i].crear();
+        VF[i]=0;
     }
+
+    colaAct=1;
+    cant = 0;
+}
+
+int TDAColaPrioridadVector::primero()
+{
+   return VC[colaAct].primero();
 }
 
 void TDAColaPrioridadVector::poner(int e,int pri)
 {
     VC[pri].poner(e);
+    VF[pri]++;
 }
 
 void TDAColaPrioridadVector::sacar(int &e)
@@ -35,4 +45,13 @@ void TDAColaPrioridadVector::sacar(int &e)
             }
         }
     }
+    else {
+        colaAct++;
+		cant = 0;
+	}
+}
+
+void TDAColaPrioridadVector::frecuencia_prioridad(int frec,int pri)
+{
+    VF[pri]=frec;
 }

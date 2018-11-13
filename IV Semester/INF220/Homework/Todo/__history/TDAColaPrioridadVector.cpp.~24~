@@ -1,0 +1,53 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAColaPrioridadVector.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+void TDAColaPrioridadVector::crear()
+{
+    for(int i=1;i<=MAX;++i)
+    {
+        VC[i].crear();
+    }
+    colaAct=1;
+    cant = 0;
+}
+
+void TDAColaPrioridadVector::poner(int e,int pri)
+{
+    VC[pri].poner(e);}
+    if(pri>colaAct)
+    {
+        colaAct = pri;
+    }
+
+void TDAColaPrioridadVector::sacar(int &e)
+{
+    if(!VC[colaAct].vacia())
+    {
+        if(cant<VF[colaAct])
+        {
+            cant++;
+            VC[colaAct].sacar(e);
+            if(cant==VF[colaAct])
+            {
+               //colaAct++;
+               colaAct = colaAct % (MAX - 1) + 1;
+               cant = 0;
+            }
+        }
+    }
+    else {
+		colaAct = colaAct % (MAX - 1) + 1;
+		cant = 0;
+	}
+}
+
+void TDAColaPrioridadVector::frecuencia_prioridad(int frec,int pri)
+{
+    VF[pri]=frec;
+}

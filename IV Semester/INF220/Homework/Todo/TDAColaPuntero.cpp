@@ -44,3 +44,12 @@ void TDAColaPuntero::poner(int e)
         }
     }
 }
+
+void TDAColaPuntero::sacar(int &e)
+{
+    Nodo *aux = ini;
+    e = aux->elemento;
+    ini = ini->Sig;
+    delete(aux);
+
+}

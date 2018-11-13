@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDABicolaH
+#define TDABicolaH
+//---------------------------------------------------------------------------
+#endif
+     const int MAX =100;
+class TDABicola
+{
+     private:
+            int v[MAX];
+            int ini,fin;
+    public:
+           void crear();
+           bool vacia();
+           void poner(int e);
+           void sacar(int &E);
+           int primero();
+           int ultimo();
+};
