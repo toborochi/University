@@ -23,22 +23,6 @@ void TDABicola::poner(int e)
     }
 }
 
-void TDABicola::sacar_final(int &e)
-{
-    e = v[fin];
-    fin--;
-}
-
-void TDABicola::poner_frente(int e)
-{
-   fin++;
-   for(int i=fin;i>ini;--i)
-   {
-       v[i]=v[i-1];
-   }
-   v[ini]=e;
-}
-
 int TDABicola::ultimo()
 {
     return v[fin];

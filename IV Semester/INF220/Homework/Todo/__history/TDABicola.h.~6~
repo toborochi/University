@@ -17,7 +17,7 @@ class TDABicola
            void poner(int e);
            void poner_frente(int e);
 
-           void sacar(int &e);
+           void sacar(int &int);
            void sacar_final(int &e);
 
            int primero();

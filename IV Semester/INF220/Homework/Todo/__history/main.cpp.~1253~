@@ -55,7 +55,7 @@
 #include <cstdlib>
 #include <iomanip>
 
-#include "TDAColaPuntero.h"
+#include "TDABicola.h"
 
 
 using namespace std;
@@ -75,7 +75,15 @@ void MostrarOpciones()
 
 int main()
 {
+     TDABicola BC;
+     BC.crear();
+     BC.poner(23);
+     BC.poner(12);
+     cout<<BC.primero()<<endl;
+     BC.poner_frente(15);
+     cout<BC.primero()<<endl;
 
+  ;
 
 	getch();
 	return 0;

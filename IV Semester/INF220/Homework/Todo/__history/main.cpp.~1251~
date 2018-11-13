@@ -55,7 +55,7 @@
 #include <cstdlib>
 #include <iomanip>
 
-#include "TDAColaDicola.h"
+#include "TDABicola.h"
 
 
 using namespace std;
@@ -75,11 +75,13 @@ void MostrarOpciones()
 
 int main()
 {
-     TDAColaPrioridadVector PV;
-     PV.crear();
-     PV.poner(13,1);
-     PV.poner(45,1);
-     cout<<PV.primero()<<endl;
+     TDABicola BC;
+     BC.crear();
+     BC.poner(23);
+     BC.poner(12);
+     BC.poner_frente(15);
+
+     cout<<BC.ultimo()<<endl;
 
 	getch();
 	return 0;

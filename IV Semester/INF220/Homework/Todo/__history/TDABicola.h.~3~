@@ -13,13 +13,9 @@ class TDABicola
     public:
            void crear();
            bool vacia();
-
            void poner(int e);
            void poner_frente(int e);
-
-           void sacar(int &e);
-           void sacar_final(int &e);
-
+           void sacar(int &E);
            int primero();
            int ultimo();
 };

@@ -75,12 +75,7 @@ void MostrarOpciones()
 
 int main()
 {
-     TDABicola BC;
-     BC.crear();
-     BC.poner(23);
-     BC.poner(12);
 
-     cout<<BC.ultimo()<<endl;
 
 	getch();
 	return 0;

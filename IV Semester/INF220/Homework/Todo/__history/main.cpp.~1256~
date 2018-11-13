@@ -55,7 +55,7 @@
 #include <cstdlib>
 #include <iomanip>
 
-#include "TDADicola.h"
+#include "TDABicola.h"
 
 
 using namespace std;
@@ -77,9 +77,15 @@ int main()
 {
      TDABicola BC;
      BC.crear();
+     int x;
      BC.poner(23);
+     BC.sacar_final(x);
+     BC.poner(12);
+     cout<<BC.primero()<<endl;
+     BC.poner_frente(15);
+     cout<<BC.primero()<<endl;
 
-     cout<<BC.ultimo()<<endl;
+  ;
 
 	getch();
 	return 0;
