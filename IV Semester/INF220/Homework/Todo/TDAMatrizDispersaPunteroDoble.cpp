@@ -8,7 +8,6 @@
 
 void TDAMatrizDispersaPunteroDoble::crear()
 {
-    nt = 0;
     PtrFil = NULL;
     vrep = 0;
 }

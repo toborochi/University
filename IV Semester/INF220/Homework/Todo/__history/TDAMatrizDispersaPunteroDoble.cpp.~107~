@@ -35,6 +35,8 @@ void TDAMatrizDispersaPunteroDoble::poner(int f,int c,int e)
     {
          if(elemento(f,c)==vrep)
          {
+             // Si el elemento no existe buscamos si ya
+             // hay una fila donde se quiere insertar
              NodoF *filp = PtrFil;
              while(filp!=NULL)
              {
@@ -69,6 +71,10 @@ void TDAMatrizDispersaPunteroDoble::poner(int f,int c,int e)
                  {
                      colp=colp->SigCol;
                  }
+                 colp->SigCol=cp;
+                 cp->Col=c;
+                 cp->Dato=e;
+                 cp->SigCol=NULL;
              }
 
          }else
@@ -123,5 +129,16 @@ int TDAMatrizDispersaPunteroDoble::elemento(int f,int c)
 
 void TDAMatrizDispersaPunteroDoble::definir_valor_repetido(int v)
 {
+    vrep = v;
+}
 
+void TDAMatrizDispersaPunteroDoble::mostrar()
+{
+    for(int i=1;i<=dimension_fila();++i)
+    {
+        for(int j=1;j<=dimension_columna();++j)
+        {
+            std::cout<<elemento(i,j)<<" ";
+        }std::cout<<std::endl;
+    }
 }

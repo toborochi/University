@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  29 JUN 2018 10:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  14 NOV 2018 00:16
 entering extended mode
 **"./Apuntes Ecuaciones Diferenciales.tex"
 ("Apuntes Ecuaciones Diferenciales.tex"
@@ -1552,8 +1552,8 @@ Cap\'{\i }tulo 2.
 [7
 
 ]
-LaTeX Info: Redefining \. on input line 90.
-LaTeX Info: Redefining \% on input line 90.
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
  [8]) (Archivos/CAP3/Capitulo_III.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1595,10 +1595,10 @@ LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 28726 strings out of 493305
+ 28729 strings out of 493305
  684580 string characters out of 3130237
- 897600 words of memory out of 3000000
- 31629 multiletter control sequences out of 15000+200000
+ 897598 words of memory out of 3000000
+ 31632 multiletter control sequences out of 15000+200000
  18543 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,12n,127p,750b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1629,7 +1629,7 @@ sers/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
 10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmtt9.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/rsfs/rsfs10.pfb>
-Output written on "Apuntes Ecuaciones Diferenciales.pdf" (19 pages, 300632 byte
+Output written on "Apuntes Ecuaciones Diferenciales.pdf" (19 pages, 301330 byte
 s).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)

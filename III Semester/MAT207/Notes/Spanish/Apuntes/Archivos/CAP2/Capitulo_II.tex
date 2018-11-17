@@ -47,9 +47,22 @@ e^{\int P(x) dx} \cdot y & = \int e^{\int P(x) dx} \cdot Q(x) dx
 $$ \boxed{y  = e^{-\int P(x) dx} \int e^{\int P(x) dx} \cdot Q(x) dx}$$
 \section{Ecuación de Bernoulli}
 Tiene la siguiente forma:
-$$\dfrac{dy}{dx}+P(x)\cdot y =Q(x)\cdot y^n $$
+\begin{align}
+\dfrac{dy}{dx}+P(x)\cdot y =Q(x)\cdot y^n 
+\end{align}
 Para poder tratar la ecuación, dividimos entre $y^n$:
 $$y^{-n}\cdot\dfrac{dy}{dx}+P(x)\cdot y^{1-n} =Q(x)$$
+Seguido, procedemos a realizar las siguientes operaciones para llevarla a la forma Lineal de 1er Orden:
+\begin{align*}
+u &= y^{1-n} \\
+\dfrac{du}{dx} &= (1-n)y^{-n} \dfrac{dy}{dx}\\
+y^{-n}\dfrac{dy}{dx} &= \dfrac{1}{1-n}\dfrac{du}{dx}
+\end{align*}
+Con esto reemplazamos en $(2.4)$:
+\begin{align}
+\dfrac{1}{1-n}\dfrac{du}{dx}+P(x)\cdot u = Q(x)
+\end{align}
+Obteniendo así una Ecuación Lineal de Orden 1 en $u$.
 \section{Ecuaciones Diferenciales Exactas}
 La ecuación:
 \begin{equation}
