@@ -1,2 +1,2 @@
 # Physics 3
-* [Lab Template](https://www.overleaf.com/latex/templates/project-report/jpzczmpsdzwm)
+* [Laboratory Template by Frits Wenneker](https://www.overleaf.com/latex/templates/project-report/jpzczmpsdzwm)
