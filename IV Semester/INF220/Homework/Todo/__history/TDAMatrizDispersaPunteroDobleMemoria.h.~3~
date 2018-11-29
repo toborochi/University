@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAMatrizDispersaPunteroDobleMemoriaH
+#define TDAMatrizDispersaPunteroDobleMemoriaH
+#include "SMemoria.h"
+//---------------------------------------------------------------------------
+#endif
+
+
+class TDAMatrizDispersaPunteroDobleMemoria
+{
+
+};

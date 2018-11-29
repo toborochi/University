@@ -44,4 +44,5 @@ class TDAMatrizDispersaPunteroDoble
              int elemento(int f,int c);
              void definir_valor_repetido(int valor);
              void mostrar();
+
 };

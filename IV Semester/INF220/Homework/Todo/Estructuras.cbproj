@@ -179,6 +179,11 @@
             <DependentOn>TDAMatrizDispersaPunteroDoble.h</DependentOn>
             <BuildOrder>22</BuildOrder>
         </CppCompile>
+        <CppCompile Include="TDAMatrizDispersaPunteroDobleMemoria.cpp">
+            <VirtualFolder>{A72162FB-D4CF-4DFF-80E9-5E0BAEA87172}</VirtualFolder>
+            <DependentOn>TDAMatrizDispersaPunteroDobleMemoria.h</DependentOn>
+            <BuildOrder>30</BuildOrder>
+        </CppCompile>
         <CppCompile Include="TDAMatrizDispersaVector.cpp">
             <VirtualFolder>{A72162FB-D4CF-4DFF-80E9-5E0BAEA87172}</VirtualFolder>
             <DependentOn>TDAMatrizDispersaVector.h</DependentOn>
@@ -250,8 +255,8 @@
                 <VFOLDERS>
                     <VFOLDER ID="{591A9891-3D27-4D65-A66E-9C9D93C74809}" name="Colas"/>
                     <VFOLDER ID="{09A538F3-5774-4BB9-9505-2070827C5121}" name="Conjuntos"/>
-                    <VFOLDER ID="{A72162FB-D4CF-4DFF-80E9-5E0BAEA87172}" name="Matriz Dispersa"/>
                     <VFOLDER ID="{7242499F-4DB5-4E17-BB34-009128FFD899}" name="Listas"/>
+                    <VFOLDER ID="{A72162FB-D4CF-4DFF-80E9-5E0BAEA87172}" name="Matriz Dispersa"/>
                     <VFOLDER ID="{C63A61B1-FAD9-4AF4-B15A-10C1BD9F482D}" name="Pilas"/>
                     <VFOLDER ID="{6FA0F84B-98BA-4783-B14D-6FEAB093A550}" name="Polinomio"/>
                 </VFOLDERS>

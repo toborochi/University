@@ -17,7 +17,7 @@
 
 
 static const int NULO = -1;
-static const int MAX  = 20;
+static const int MAX  = 40;
 
 // Estructura Nodo, con Dato y Link (Siguiente direccion a la que apunta el elemento)
 struct NodoM

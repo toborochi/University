@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAMatrizDispersaPunteroDobleMemoriaH
+#define TDAMatrizDispersaPunteroDobleMemoriaH
+#include "SMemoria.h"
+//---------------------------------------------------------------------------
+#endif
+
+
+class TDAMatrizDispersaPunteroDobleMemoria
+{
+
+      public:
+             void crear();
+             void dimensionar(int df,int dc);
+};

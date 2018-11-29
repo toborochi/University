@@ -55,7 +55,7 @@
 #include <cstdlib>
 #include <iomanip>
 
-#include "TDAMatrizDispersaPunteroDoble.h"
+#include "TDAMatrizDispersaPunteroDobleMemoria.h"
 
 
 using namespace std;
@@ -65,17 +65,18 @@ void MostrarOpciones()
  	cout<<"Matriz Dispersa:\n";
 	cout<<"[1] Crear\n";
     cout<<"[2] Dimensionar\n";
-	cout<<"[3] Poner\n";
-	cout<<"[4] Elemento\n";
-	cout<<"[5] Mostrar\n";
-    cout<<"[6] Salir\n";
+	cout<<"[3] Valor por Defecto\n";
+	cout<<"[4] Poner\n";
+	cout<<"[5] Mostrar Memoria\n";
+    cout<<"[6] Mostrar Matriz\n";
+    cout<<"[7] Salir\n";
     cout<<"Opcion: ";
 }
 
 int main()
 {
     int opcion,f,c,e;
-    TDAMatrizDispersaPunteroDoble MDP;
+    TDAMatrizDispersaPunteroDobleMemoria MDP;
 
 
     do{
@@ -91,6 +92,10 @@ int main()
                      MDP.dimensionar(f,c);
                      break;
             case 3:
+                     cin>>f;
+                     MDP.definir_valor_repetido(f);
+                     break;
+            case 4:
                      cout<<"Ingrese fila: ";
                      cin>>f;
                      cout<<"Ingrese columna: ";
@@ -98,21 +103,18 @@ int main()
                      cout<<"Ingrese elemento: ";
                      cin>>e;
                      MDP.poner(f,c,e);
-                     break;
-            case 4:
-                     cout<<"Ingrese fila: ";
-                     cin>>f;
-                     cout<<"Ingrese columna: ";
-                     cin>>c;
-                     cout<<MDP.elemento(f,c);
                      getch();
                      break;
-            case 5:  MDP.mostrar();
+            case 5:  MDP.mostrarMemoria();
+                     getch();
+                     break;
+            case 6:
+                     MDP.mostrar();
                      getch();
                      break;
 
         }
-    }while(opcion!=6);
+    }while(opcion!=7);
 
 
     /*

@@ -1,0 +1,158 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAMatrizDispersaPunteroDobleMemoria.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+void TDAMatrizDispersaPunteroDobleMemoria::crear()
+{
+    PtrFil = NULO;
+    vrep = 0;
+}
+
+void TDAMatrizDispersaPunteroDobleMemoria::dimensionar(int df,int dc)
+{
+    nf = df;
+    nc = dc;
+}
+
+int TDAMatrizDispersaPunteroDobleMemoria::elemento(int f,int c)
+{
+   if(f>=1 && f<=nf && c>=1 && c<=nc)
+    {
+        int filp = PtrFil;
+        while(filp!=NULO)
+        {
+
+            if(m.obtener_dato(filp,1)==f)
+            {
+                int colp = m.obtener_dato(filp,4);
+                while(colp!=NULO)
+                {
+                    if(m.obtener_dato(colp,1)==c)
+                    {
+                        return m.obtener_dato(colp,2);
+                    }
+                    colp=m.obtener_dato(colp,3);
+                }
+            }
+            filp=m.obtener_dato(filp,2);
+        }
+        return vrep;
+    }
+
+}
+
+void   TDAMatrizDispersaPunteroDobleMemoria::poner(int f,int c,int e)
+{
+      if(f>=1 && f<=nf && c>=1 && c<=nc)
+    {
+         if(elemento(f,c)==vrep)
+         {
+             // Si el elemento no existe buscamos si ya
+             // hay una fila donde se quiere insertar
+             int filp = PtrFil;
+             while(filp!=NULO)
+             {
+                 if(m.obtener_dato(filp,1)==f)
+                 {
+                    break;
+                 }
+                 filp=m.obtener_dato(filp,2);
+             }
+
+             if(filp==NULO)
+             {
+                int fp = m.new_espacio(4);
+                int cp = m.new_espacio(3);
+
+                m.poner_dato(fp,1,f);
+                m.poner_dato(fp,4,cp);
+                m.poner_dato(fp,3,NULO);
+                m.poner_dato(fp,2,PtrFil);
+                PtrFil = fp;
+                m.poner_dato(cp,1,c);
+                m.poner_dato(cp,2,e);
+                m.poner_dato(cp,3,NULO);
+
+                /*
+                fp->Fil = f;
+                fp->PtrCol=cp;
+                fp->AntF=NULL;
+                fp->SigF=PtrFil;
+
+                PtrFil = fp;
+                PtrFil->AntF = fp;
+
+                cp->Col = c;
+                cp->Dato=e;
+                cp->SigCol=NULL;  */
+
+             }else
+             {
+                 int cp = m.new_espacio(3);
+                 int colp = m.obtener_dato(filp,4);
+                 while(m.obtener_dato(colp,3)!=NULO)
+                 {
+                     colp = m.obtener_dato(colp,3);
+                 }
+                 m.poner_dato(colp,3,cp);
+                 m.poner_dato(cp,1,c);
+                 m.poner_dato(cp,2,e);
+                 m.poner_dato(cp,3,NULO);
+                                         /*
+                 colp->SigCol=cp;
+                 cp->Col=c;
+                 cp->Dato=e;
+                 cp->SigCol=NULL;          */
+             }
+
+         }else
+         {
+             int filp = PtrFil;
+             while(filp!=NULO)
+             {
+                 if(m.obtener_dato(filp,1)==f)
+                 {
+                     int colp = m.obtener_dato(filp,4);// filp->PtrCol;
+                     while(colp!=NULO)
+                     {
+                         if(m.obtener_dato(colp,1)==c)
+                         {
+                             m.poner_dato(colp,2,e);
+                             break;
+                         }
+
+                         colp=m.obtener_dato(colp,3);
+                     }
+                 }
+                 filp=m.obtener_dato(filp,2);
+             }
+         }
+    }
+}
+
+void TDAMatrizDispersaPunteroDobleMemoria::mostrarMemoria()
+{
+    m.mostrar();
+}
+
+void TDAMatrizDispersaPunteroDobleMemoria::definir_valor_repetido(int r)
+{
+    vrep = r;
+}
+
+
+void TDAMatrizDispersaPunteroDobleMemoria::mostrar()
+{
+    for(int i=1;i<=nf;++i)
+    {
+        for(int j=1;j<=nc;++j)
+        {
+            std::cout<<elemento(i,j)<<" ";
+        }std::cout<<std::endl;
+    }
+}
+

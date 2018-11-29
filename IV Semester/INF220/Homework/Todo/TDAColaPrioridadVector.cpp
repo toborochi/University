@@ -43,12 +43,12 @@ void TDAColaPrioridadVector::sacar(int &e)
                colaAct++;
                cant = 0;
             }
+            if(colaAct>MAX)
+            {
+                colaAct=1;
+            }
         }
     }
-    else {
-        colaAct++;
-		cant = 0;
-	}
 }
 
 void TDAColaPrioridadVector::frecuencia_prioridad(int frec,int pri)
