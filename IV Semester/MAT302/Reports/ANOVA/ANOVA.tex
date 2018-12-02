@@ -1,0 +1,116 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[skins]{tcolorbox}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Leonardo H. Añez Vladimirovna\footnote{\textbf{correo:} \texttt{toborochi98@outlook.com}} \\ \vspace{0.1cm} \\
+Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones\\
+Universidad Autónoma Gabriél René Moreno}
+\title{Análisis de Varianza}
+\renewcommand{\theenumi}{\Alph{enumi}}
+\begin{document}
+\maketitle
+\section{ANOVA}
+\subsection{Analisis Multivariante}
+El Análisis  Multivariante comprende  un  conjunto  de  técnicas  o  métodos  estadísticos  cuya finalidad es analizar simultáneamente información relativa a varias variables para cada  individuo  o  elemento  estudiado.  Algunos  de  estos  métodos  son  puramente descriptivos de los datos muestrales, mientras que otros utilizan dichos datos muestrales para realizar inferencias acerca de parámetros poblacionales.  
+\\ ${ }$ \\
+Propositos:
+\begin{itemize}
+\item Describir información de forma resumida. 
+\item Agrupar observaciones o variables en subconjuntos homogéneos. 
+\item Explorar la existencia de as
+ociaciones entre variables. 
+\item Explicar (o probar) comportamientos.
+\end{itemize}
+Existen diferentes 
+clasificaciones de los métodos
+ de Análisis Multivariante
+. Una de las 
+más  usuales  distingue  dos  grandes  grupos,  según  el  objetivo  del  análisis:  métodos  de  
+dependencia  y  métodos  de  interdependencia
+.  Además,  dentro  de  cada  uno  de  estos  
+grupos, la naturaleza de las 
+variables juega un papel importa
+nte en la definición de los 
+diversos  métodos. 
+\subsection{Analisis de Varianza}
+El Análisis de Varianza \textit{(ANOVA)} es un método estadístico utilizado para probar diferencias
+entre dos o más medias. Puede parecer extraño que la técnica se llame \textit{Análisis de varianza} en lugar de \textit{Análisis de medias}. Como verá, el nombre es apropiado porque las inferencias sobre las medias se hacen analizando la varianza. Así, el Analisis de Varianza se puede describir de la siguiente manera:\\
+\begin{tcolorbox}[enhanced,width=7in,center upper,size=fbox,
+    fontupper=\large,drop shadow southwest,sharp corners]
+\textit{El análisis de varianza (ANOVA) es una herramienta estadística utilizada para detectar diferencias entre las medias de los grupos experimentales.}
+\end{tcolorbox}
+En múltiples ocasiones el analista o investigador se enfrenta al problema de determinar 
+si  dos  o  más  grupos son iguales, si dos o más cursos de acción arrojan resultados similares o 
+si dos o más conjuntos de observaciones son parecidos. Es por esto que ANOVA se utiliza para probar diferencias generales más que específicas entre los medios. 
+\subsubsection{Comparación Simultanea}
+Necesitamos poder comparar simultaneamente todas la
+medias. El test que lo permite es el test
+ANOVA.Como su nombre indica, compara varianzas aunque lo quecontrastamos sean medias. Para ello parte de 3 requisitos previos:
+\begin{itemize}
+\item \textbf{Independencia:} Las $k$ muestras son independientes
+\item \textbf{Normalidad:} $X_i\sim N(\mu_i,\sigma_{i}^2), i = 1,...,k$
+\item \textbf{Homocedasticidad:} $\sigma_{1}^2=\sigma_{2}^2= \ldots =\sigma_{k}^2=\sigma^2$
+\end{itemize}
+\subsubsection{Fundamentos}\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline 
+• & • & • & • & • & • & • \\ 
+\hline 
+• & • & • & • & • & • & • \\ 
+\hline 
+• & • & • & • & • & • & • \\ 
+\hline 
+• & • & • & • & • & • & • \\ 
+\hline 
+• & • & • & • & • & • & • \\ 
+\hline 
+Medias & $\overline{x_1}$ & $\overline{x_2}$ & $\ldots$ & $\overline{x_i}$ & $\ldots$ & $\overline{x_k}$ \\ 
+\hline 
+Varianzas & • & • & • & • & • & • \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\subsection{ANOVA de un factor}
+ANOVA de un factor (también llamada ANOVA unifactorial o one-way ANOVA en inglés) es una técnica estadística que señala si dos variables (una independiente y otra dependiente) están relacionadas en base a si las medias de la variable dependiente son diferentes en las categorías o grupos de la variable independiente. Es decir, señala si las medias entre dos o más grupos son similares o diferentes.
+\subsubsection{Cuando usar ANOVA de un factor}
+Usamos ANOVA de un factor cuando queremos saber si las medias de una variable son diferentes entre los niveles o grupos de otra variable. Por ejemplo, si comparamos el número de hijos entre los grupos o niveles de clase social: los que son clase baja, clase trabajadora, clase media-baja, clase media-alta y clase alta. Es decir, vamos a comprobar mediante ANOVA si la variable “número de hijos” está relacionada con la variable “clase social”. Concretamente, se analizará si la media del número de hijos varía según el nivel de clase social a la que pertenece la persona.
+\subsubsection*{Condiciones}
+\begin{itemize}
+\item    En ANOVA de un factor solo se relacionan dos variables: una variable dependiente (o a explicar) y una variable independiente (que en esta técnica se suele llamar factor)
+\item    La variable dependiente es cuantitativa (escalar) y la variable independiente es categórica (nominal u ordinal).
+\item    Se pide que las variables sigan la distribución normal, aunque como siempre esto es difícil de cumplir en investigaciones sociales. 
+\item    También que las varianzas (es decir, las desviaciones típicas al cuadrado) de cada grupo de la variable independiente sean similiares (fenómeno que se conoce como homocedasticidad). Aunque esto es lo ideal, en la realidad cuesta de cumplir, e igualmente se puede aplicar ANOVA
+\end{itemize}
+\subsubsection{Bases de ANOVA de un factor}
+ANOVA de un factor compara las medias de la variable dependiente entre los grupos o categorías de la variable independiente. Por ejemplo, comparamos las medias de la variable “Número de hijos” según los grupos o categorías de la variable “Clase social”.
+
+Si las medias de la variable dependiente son iguales en cada grupo o categoría de la variable independiente, los grupos no difieren en la variable dependiente, y por tanto no hay relación entre las variables. En cambio, y siguiendo con el ejemplo, si las medias del número de hijos son diferentes entre los niveles de la clase social es que las variables están relacionadas. 
+\subsubsection{Estadísticos calculados en ANOVA}
+Al aplicar ANOVA de un factor se calcula un estadístico o test denominado F y su significación. El estadístico F o F-test (se llama F en honor al estadístico Ronald Fisher) se obtiene al estimar la variación de las medias entre los grupos de la variable independiente y dividirla por la estimación de la variación de las medias dentro de los grupos. En \textbf{conclusión}, cuanto más difieren las medias de la variable dependiente entre los grupos de la variable independiente, más alto será el valor de F. Si hacemos varios análisis de ANOVA de un factor, aquel con F más alto indicará que hay más diferencias y por tanto una relación más fuerte entre las variables.
+\subsubsection{Interpretación}
+\begin{itemize}
+\item    \textbf{Significación:} si es menor de 0,05 es que las dos variables están relacionadas y por tanto que hay diferencias significativas entre los grupos
+\item    \textbf{Valor de F:} cuanto más alto sea F, más están relacionadas las variables, lo que significa que las medias de la variable dependiente difieren o varían mucho entre los grupos de la variable independiente.
+\end{itemize}
+\subsubsection{Ejemplo}
+En  un  experimento  se  compararon  tres  métodos  de  enseñar  un  idioma  extranjero;  para  evaluar  la 
+instrucción, se administró una prueba de vocabulario de 50 preguntas a los 24 estudiantes del experimento  repartidos de a ocho por grupo. 
+
+\begin{enumerate}[label=\Alph*)]
+\item \textit{¿Cuál es la variable respuesta y la explicativa en este estudio?}\\ ${ }$\\
+La variable respuesta es el puntaje en la prueba de vo
+cabulario 
+La variable explicativa son los métodos de enseñanza (au
+ditivo, traducción y combinado). Es un 
+factor con 3 niveles. 
+\item \textit{Complete la tabla de ANOVA}
+\end{enumerate}
+\subsection{ANOVA de dos factores}
+\end{document}
