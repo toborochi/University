@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/12/09 09:34:04.000.196,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/12/09 09:34:04.000.217,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/09 09:34:23.000.699,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/12/09 09:34:23.000.711,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
+    <Transaction>2018/12/09 09:34:45.000.170,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Final\8\T8.cpp</Transaction>
+    <Transaction>2018/12/09 09:35:39.000.134,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=C:\GitHub\University\IV Semester\INF220\Homework\Final\8\t8.h</Transaction>
+    <Transaction>2018/12/09 09:35:44.000.743,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2.cbproj=C:\GitHub\University\IV Semester\INF220\Homework\Final\8\t8.cbproj</Transaction>
+    <Transaction>2018/12/09 09:39:48.809,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\SMemoria.cpp</Transaction>
+    <Transaction>2018/12/09 09:39:48.821,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAColaLista.cpp</Transaction>
+    <Transaction>2018/12/09 09:39:48.831,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAColaPuntero.cpp</Transaction>
+    <Transaction>2018/12/09 09:39:48.843,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAColaVector.cpp</Transaction>
+    <Transaction>2018/12/09 09:39:48.853,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaMemoria.cpp</Transaction>
+    <Transaction>2018/12/09 09:39:48.864,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaPuntero.cpp</Transaction>
+    <Transaction>2018/12/09 09:39:48.870,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaVector.cpp</Transaction>
+    <Transaction>2018/12/09 09:39:48.885,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaLista.cpp</Transaction>
+    <Transaction>2018/12/09 09:39:48.890,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaMemoria.cpp</Transaction>
+    <Transaction>2018/12/09 09:39:48.894,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaPuntero.cpp</Transaction>
+    <Transaction>2018/12/09 09:39:48.899,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaVector.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

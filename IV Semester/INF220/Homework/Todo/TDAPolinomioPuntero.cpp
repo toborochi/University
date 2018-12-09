@@ -36,8 +36,10 @@ int TDAPolinomioPuntero::grado()
     return grad;
 }
 
-void TDAPolinomioPuntero::mostrar()
+std::string TDAPolinomioPuntero::mostrar()
 {
+     std::string x="";
+     std::stringstream ss;
      for(int i=1;i<=numero_terminos();++i)
     {
         int exp = exponente(i);
@@ -45,30 +47,37 @@ void TDAPolinomioPuntero::mostrar()
 
         if(coe>0 && i>1)
         {
-             std::cout<<"+";
+             x+="+";
         }
         if(coe==-1)
         {
-             std::cout<<"-";
+             x+="-";
         }else
         if(coe!=1)
         {
-            std::cout<<coe;
+           ss<<coe;
+           std::string aux ;
+           ss>>aux;
+           x+=aux;
+            //std::cout<<coe;
         }
 
         if(exp>1)
-        {
-            std::cout<<"x^"<<exp;
+        {            ss<<exp;
+                     std::string aux ;
+                     ss>>aux;
+                  x+="x^"+aux;
+            ///td::cout<<"x^"<<exp;
         }else
         if(exp==1)
         {
-            std::cout<<"x";
+             x+="x";
         }
 
 
-    }     std::cout<<std::endl;
+    }     //std::cout<<std::endl;
 
-
+     return x;
 }
 
 
@@ -232,12 +241,16 @@ double TDAPolinomioPuntero::evaluar(double x)
 
 double TDAPolinomioPuntero::area(double a,double b,double dx)
 {
+    float aux = (b-a)/dx;
+    int intervalos = aux;
+
     double area = 0;
-    while(a<=b)
+    for(int i=0;i<intervalos;++i)
     {
-       double y =evaluar(a);
-       area += y*dx;
-       a+=dx;
+            double y =evaluar(a);
+            area += abs(y*dx);
+             a+=dx;
     }
+
     return area;
 }

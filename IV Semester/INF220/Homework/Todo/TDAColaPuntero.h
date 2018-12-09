@@ -7,17 +7,17 @@
 //---------------------------------------------------------------------------
 #endif
 
-struct Nodo
+struct NodoC
 {
     int elemento;
-    Nodo *Sig;
+    NodoC *Sig;
 };
 
 class TDAColaPuntero
 {
     private:
-            Nodo *ini;
-            Nodo *fin;
+            NodoC *ini;
+            NodoC *fin;
     public:
            void crear();
            bool vacia();

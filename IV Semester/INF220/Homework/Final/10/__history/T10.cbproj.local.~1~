@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2018/12/08 07:35:06.597,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/12/08 07:35:06.601,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
+    <Transaction>2018/12/08 07:35:59.151,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\T10.cpp=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
+    <Transaction>2018/12/08 07:36:08.926,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/08 07:37:12.491,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\TDAPilaPuntero.h=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2018/12/08 07:37:12.491,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\TDAPilaPuntero.cpp=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/08 07:50:53.460,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/08 07:51:17.616,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\TDAPilaVector.cpp=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/08 07:51:17.616,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\TDAPilaVector.h=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2018/12/08 07:54:28.024,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/08 07:54:51.922,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\SMemoria.cpp=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/08 07:54:51.922,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\SMemoria.h=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2018/12/08 07:55:20.818,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/08 07:55:37.662,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\TDAPilaMemoria.h=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2018/12/08 07:55:37.662,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\TDAPilaMemoria.cpp=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/08 08:09:09.066,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaMemoria.cpp</Transaction>
+    <Transaction>2018/12/08 08:09:09.072,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaPuntero.cpp</Transaction>
+    <Transaction>2018/12/08 08:09:09.079,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaVector.cpp</Transaction>
+    <Transaction>2018/12/08 08:09:36.324,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaLista.cpp</Transaction>
+    <Transaction>2018/12/08 08:10:55.759,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\t10.h=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/12/08 08:10:58.243,C:\GitHub\University\IV Semester\INF220\Homework\Final\10\T10.cbproj=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

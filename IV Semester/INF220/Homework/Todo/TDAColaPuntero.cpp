@@ -28,7 +28,7 @@ int TDAColaPuntero::primero()
 
 void TDAColaPuntero::poner(int e)
 {
-    Nodo *aux = new Nodo;
+    NodoC *aux = new NodoC;
     if(aux!=NULL)
     {
         aux->elemento = e;
@@ -47,7 +47,7 @@ void TDAColaPuntero::poner(int e)
 
 void TDAColaPuntero::sacar(int &e)
 {
-    Nodo *aux = ini;
+    NodoC *aux = ini;
     e = aux->elemento;
     ini = ini->Sig;
     delete(aux);

@@ -57,7 +57,7 @@
 
 #include "TDAMatrizDispersaPunteroDobleMemoria.h"
 
-
+                            #include "TDAPolinomioVector.h"
 using namespace std;
 
 void MostrarOpciones()
@@ -77,8 +77,14 @@ int main()
 {
     int opcion,f,c,e;
     TDAMatrizDispersaPunteroDobleMemoria MDP;
-
-
+    TDAPolinomioVector Poli;
+    Poli.crear();
+    Poli.poner_termino(2,4);
+    for(float i=-2;i<=2;i+=0.25)
+    {
+        cout<<i<<" "<<Poli.evaluar(i)<<endl;
+    }
+               /*
     do{
 		system("cls");
 		MostrarOpciones();
@@ -135,7 +141,7 @@ int main()
 
 
     MDP.mostrar();
-    */
+      */
 
 
 	getch();

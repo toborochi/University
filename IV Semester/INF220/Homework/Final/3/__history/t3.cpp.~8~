@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "t3.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+    : TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::PaintBox1Click(TObject *Sender)
+{
+     Canvas->MoveTo(0,0);
+     Canvas->LineTo(ClientWidth,ClientHeight);
+     Canvas->MoveTo(0,ClientHeight);
+     Canvas->LineTo(ClientWidth,0);
+}
+//---------------------------------------------------------------------------

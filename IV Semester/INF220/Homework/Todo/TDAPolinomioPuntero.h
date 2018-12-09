@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <iterator>
 #include <stdlib.h>
+#include <sstream>
 #include <math.h>
 #include <stddef.h>
 //---------------------------------------------------------------------------
@@ -35,7 +36,7 @@ class TDAPolinomioPuntero
     public:
 
            void crear();
-           void mostrar();
+           std::string mostrar();
            void poner_termino(int coe,int exp);
            void suma(TDAPolinomioPuntero a,TDAPolinomioPuntero b);
            void resta(TDAPolinomioPuntero a,TDAPolinomioPuntero b);
