@@ -1,0 +1,114 @@
+#include <iostream.h>
+#include <conio.h>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <algorithm>
+#include <iomanip>
+
+#include "TDAPilaPuntero.h"
+
+using namespace std;
+
+int main()
+{
+    TDAPilaPuntero A;
+    TDAPilaPuntero B;
+    TDAPilaPuntero R;
+
+    A.crear();
+    B.crear();
+    R.crear();
+
+    vector<string> v;
+    v.push_back("123");
+    v.push_back("1111");
+    v.push_back("45");
+
+    for(int i=0;i<v.size();++i)
+    {
+        if(A.vacia())
+        {
+           for(int j=0;j<v[i].size();++j)
+            {
+              int x = v[i][j] - 48;
+              A.meter(x);
+            }
+        }else
+        {
+           string aux = v[i];
+           int p = aux.size()-1;
+
+               int carry=0;
+
+           while(!A.vacia())
+           {
+               int x;
+               A.sacar(x);
+
+               int tmp = 0;
+               if(p>=0)
+               {
+                 tmp = aux[p]-48;
+                 p--;
+               }
+
+
+               int s = tmp+x+carry;
+
+               if(s>=10)
+               {
+                   carry=1;
+               }else
+               {
+                   carry=0;
+               }
+
+
+               B.meter(s%10);
+           }
+           if(carry!=0&&p<0)B.meter(1);
+           while(p>=0)
+           {
+               int x = aux[p] +48;
+               int s = tmp+x+carry;
+
+               if(s>=10)
+               {
+                   carry=1;
+               }else
+               {
+                   carry=0;
+               }
+               p--;
+           }
+
+           while(!B.vacia())
+           {
+               int x;
+               B.sacar(x);
+               A.meter(x);
+           }
+
+        }
+
+
+    }
+
+    string ans = "";
+    while(!A.vacia())
+    {
+        int x;
+        A.sacar(x);
+        ans+=char(x+48);
+    }
+
+    reverse(ans.begin(),ans.end());
+    cout<<ans<<endl;
+
+	getch();
+	return 0;
+}
+
+

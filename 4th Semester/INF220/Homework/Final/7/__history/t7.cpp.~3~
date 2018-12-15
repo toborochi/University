@@ -1,0 +1,21 @@
+#include <iostream.h>
+#include <conio.h>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <iomanip>
+
+#include "TDAMatrizDispersaPunteroDobleMemoria.h"
+
+                            #include "TDAPolinomioVector.h"
+using namespace std;
+
+int main()
+{
+
+	getch();
+	return 0;
+}
+
+

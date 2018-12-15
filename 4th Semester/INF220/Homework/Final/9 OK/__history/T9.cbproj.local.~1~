@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/12/09 09:34:04.000.217,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/09 09:34:04.000.196,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/12/10 16:15:51.572,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/12/10 16:15:51.576,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
+    <Transaction>2018/12/10 16:16:23.040,C:\GitHub\University\IV Semester\INF220\Homework\Final\9\t9.cpp=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.286,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\SMemoria.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.293,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaMemoria.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.301,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaPuntero.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.306,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaVector.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.319,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaLista.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.324,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaMemoria.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.336,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaPuntero.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.341,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaVector.cpp</Transaction>
+    <Transaction>2018/12/10 16:26:49.147,C:\GitHub\University\IV Semester\INF220\Homework\Final\9\T9.h=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/12/10 16:26:52.402,C:\GitHub\University\IV Semester\INF220\Homework\Final\9\T9.cbproj=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,32 @@
+//---------------------------------------------------------------------------
+
+#ifndef TDAListaStringH
+#define TDAListaStringH
+#include <string>
+//---------------------------------------------------------------------------
+#endif
+
+ using namespace std;
+
+class TDAListaString
+{
+    private:
+            string  s;
+    public:
+           void crear();
+           int longitud();
+	    	bool vacia();
+            int fin();
+           /*
+		NodoP *primero();
+		NodoP *anterior(NodoP *direccion);
+        NodoP *siguiente(NodoP *direccion);
+        NodoP *fin();   */
+
+		int recupera(NodoP *direccion);
+
+
+		void insertar(int elemento);
+		void modifica(NodoP *direccion, int elemento);
+        void suprime(NodoP *direccion);
+};

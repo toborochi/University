@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/12/08 08:35:24.000.973,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/08 08:35:24.000.952,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/12/08 08:35:50.000.015,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\GitHub\University\IV Semester\INF220\Homework\Final\3\Polinomio.h</Transaction>
+    <Transaction>2018/12/08 08:35:50.000.015,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Final\3\Polinomio.cpp</Transaction>
+    <Transaction>2018/12/08 08:35:50.000.015,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\GitHub\University\IV Semester\INF220\Homework\Final\3\Polinomio.dfm</Transaction>
+    <Transaction>2018/12/08 08:40:28.000.291,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=C:\GitHub\University\IV Semester\INF220\Homework\Final\3\T3.h</Transaction>
+    <Transaction>2018/12/08 08:40:34.000.593,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2.cbproj=C:\GitHub\University\IV Semester\INF220\Homework\Final\3\Graficadora Polinomio.cbproj</Transaction>
+    <Transaction>2018/12/08 13:52:37.000.746,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaMemoria.cpp</Transaction>
+    <Transaction>2018/12/08 13:52:37.000.805,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPolinomioLista.cpp</Transaction>
+    <Transaction>2018/12/08 13:52:37.000.784,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaVector.cpp</Transaction>
+    <Transaction>2018/12/08 13:52:37.000.854,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPolinomioVector.cpp</Transaction>
+    <Transaction>2018/12/08 13:52:37.000.846,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPolinomioPuntero.cpp</Transaction>
+    <Transaction>2018/12/08 13:52:37.000.825,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPolinomioMemoria.cpp</Transaction>
+    <Transaction>2018/12/08 13:52:37.000.723,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\SMemoria.cpp</Transaction>
+    <Transaction>2018/12/08 13:52:37.000.767,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaPuntero.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

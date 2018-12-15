@@ -1,0 +1,61 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TDAListaString.h"
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+void TDAListaString::crear()
+{
+    s = "";
+}
+
+int TDAListaString::longitud()
+{
+    return s.size();
+}
+
+bool  TDAListaString::vacia()
+{
+    return (longitud()==0);
+}
+
+int TDAListaString::fin()
+{
+    return s.size()-1;
+}
+
+int TDAListaString::primero()
+{
+    return 0;
+}
+
+int TDAListaString::siguiente(int d)
+{
+    if(d<s.size()-1)
+    {
+        return d+1;
+    }else
+    {
+        throw("Error");
+    }
+}
+
+int TDAListaString::anterior(int d)
+{
+    if(d>0)
+    {    return d-1;
+
+    }else
+    {
+        throw("Error");
+    }
+}
+
+void TDAListaString::inserta(int dir,char ele)
+{
+
+}

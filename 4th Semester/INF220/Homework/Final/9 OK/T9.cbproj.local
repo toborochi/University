@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/12/09 09:34:04.000.217,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2018/12/09 09:34:04.000.196,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/12/10 16:15:51.000.572,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/12/10 16:15:51.000.576,=C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp</Transaction>
+    <Transaction>2018/12/10 16:16:23.000.040,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\File3.cpp=C:\GitHub\University\IV Semester\INF220\Homework\Final\9\t9.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.000.301,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaPuntero.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.000.293,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaMemoria.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.000.341,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaVector.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.000.286,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\SMemoria.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.000.319,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaLista.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.000.336,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaPuntero.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.000.306,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAListaVector.cpp</Transaction>
+    <Transaction>2018/12/10 16:20:27.000.324,=C:\GitHub\University\IV Semester\INF220\Homework\Todo\TDAPilaMemoria.cpp</Transaction>
+    <Transaction>2018/12/10 16:26:49.000.147,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=C:\GitHub\University\IV Semester\INF220\Homework\Final\9\T9.h</Transaction>
+    <Transaction>2018/12/10 16:26:52.000.402,C:\Users\Asus\Documents\Embarcadero\Studio\Projects\Project2.cbproj=C:\GitHub\University\IV Semester\INF220\Homework\Final\9\T9.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
