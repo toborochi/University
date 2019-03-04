@@ -39,6 +39,14 @@
 \BOOKMARK [2][-]{subsection.3.1}{Distribuciones de Muestreo}{section.3}% 39
 \BOOKMARK [2][-]{subsection.3.2}{Estad\355stico}{section.3}% 40
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Desigualdad de Chebyshev}{subsection.3.2}% 41
-\BOOKMARK [1][-]{section.4}{Miscel\341neo}{}% 42
-\BOOKMARK [2][-]{subsection.4.1}{Interpolaci\363n}{section.4}% 43
-\BOOKMARK [2][-]{subsection.4.2}{Desigualdades}{section.4}% 44
+\BOOKMARK [1][-]{section.4}{Estimaci\363n Estad\355stica}{}% 42
+\BOOKMARK [2][-]{subsection.4.1}{Estimaci\363n Puntual}{section.4}% 43
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Propiedades}{subsection.4.1}% 44
+\BOOKMARK [2][-]{subsection.4.2}{Sesgo y Error Cuadr\341tico Medio de un Estimador \(ECM\)}{section.4}% 45
+\BOOKMARK [2][-]{subsection.4.3}{Estimaci\363n por Intervalo}{section.4}% 46
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Estimaci\363n por Intervalo de la Media Poblacional}{subsection.4.3}% 47
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Estimaci\363n por Intervalo de la diferencia o suma de Medias}{subsection.4.3}% 48
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Estimaci\363n por Intervalo para Proporciones}{subsection.4.3}% 49
+\BOOKMARK [1][-]{section.5}{Miscel\341neo}{}% 50
+\BOOKMARK [2][-]{subsection.5.1}{Interpolaci\363n}{section.5}% 51
+\BOOKMARK [2][-]{subsection.5.2}{Desigualdades}{section.5}% 52

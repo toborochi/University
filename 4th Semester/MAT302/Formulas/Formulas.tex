@@ -499,6 +499,54 @@ Algunas distribuciones de Muestreo:
 $$
 P(|x-\mu|<k\sigma) \geq 1-\dfrac{1}{k^2} \hspace{0.5cm};k\in \mathbb{R^+}
 $$
+\section{Estimación Estadística}
+\begin{center}
+ \begin{tabular}{|c|c|}
+\hline 
+Parámetros & Estadígrafos \\ 
+\hline 
+$\mu$ & $\bar{x}$ \\ 
+$\sigma^2$ & $S^2$ ó $\hat{S}^2$ \\
+$p,\pi$ & $\hat{p},\hat{\pi}$\\
+\hline 
+\end{tabular}
+ \end{center} 
+\subsection{Estimación Puntual}
+\subsubsection{Propiedades}
+\begin{itemize}
+\item Estimador Insesgado: $E(\hat{\theta}) = \Theta$
+\item Estimador Eficiente: 
+$$\hat{\theta}_1 \text{ es mas eficiente que } \hat{\theta}_2 \Leftrightarrow V(\hat{\theta}_1) < V(\hat{\theta}_2)$$
+\item Estimador Consistente: 
+$$
+\begin{cases}
+\text{\textbf{(i) }} \displaystyle\lim_{n\to\infty} E(\hat{\theta})=0 \\
+\text{\textbf{(ii) }} \displaystyle\lim_{n\to\infty} V(\hat{\theta})=0 \\
+\end{cases}
+$$
+\item Estimador Suficiente: $\hat{\theta}$ es un suficiente de $\Theta$ ssi: Aporta tanta información acerca de los parámetros que se estiman a partir de una muestra de $\Theta$.
+\end{itemize}
+\subsection{Sesgo y Error Cuadrático Medio de un Estimador (ECM)}
+\begin{multicols}{2}
+\subsubsection*{Sesgo}
+\begin{center}
+$Sesgo(\hat{\theta})= E(\hat{\theta}) - \theta$\footnote{$Sesgo(\widehat{\theta})=0$, entonces $\widehat{\theta}$ es un estimador incesgado.}
+\end{center}
+\columnbreak
+\subsubsection*{ECM}
+\begin{center}
+$ECM(\hat{\theta}) = E\big[ (\hat{\theta}-\theta)^2 \big]=V(\hat{\theta}) + \Big[ Sesgo(\hat{\theta})\Big]^2$
+\end{center}
+\end{multicols}
+\subsection{Estimación por Intervalo}
+\subsubsection{Estimación por Intervalo de la Media Poblacional}
+\begin{enumerate}[label=(\roman*)]
+  \item $P\left(\bar{x} - z_{1-\dfrac{\alpha}{2}}\cdot \dfrac{\sigma}{\sqrt{n}}\leq \mu \leq \bar{x} + z_{1-\dfrac{\alpha}{2}}\cdot \dfrac{\sigma}{\sqrt{n}} \right)=1-\alpha$
+  \item $P\left(\bar{x} - t_{1-\dfrac{\alpha}{2}}(r)\cdot \dfrac{\widehat{S}}{\sqrt{n}}\leq \mu \leq \bar{x} + t_{1-\dfrac{\alpha}{2}}(r)\cdot \dfrac{\widehat{S}}{\sqrt{n}} \right)=1-\alpha$
+\end{enumerate}
+\vspace{1cm}
+\subsubsection{Estimación por Intervalo de la diferencia o suma de Medias}
+\subsubsection{Estimación por Intervalo para Proporciones}
 \section{Misceláneo}
 \subsection{Interpolación}
 $$
