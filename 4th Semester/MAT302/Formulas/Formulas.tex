@@ -544,9 +544,31 @@ $ECM(\hat{\theta}) = E\big[ (\hat{\theta}-\theta)^2 \big]=V(\hat{\theta}) + \Big
   \item $P\left(\bar{x} - z_{1-\dfrac{\alpha}{2}}\cdot \dfrac{\sigma}{\sqrt{n}}\leq \mu \leq \bar{x} + z_{1-\dfrac{\alpha}{2}}\cdot \dfrac{\sigma}{\sqrt{n}} \right)=1-\alpha$
   \item $P\left(\bar{x} - t_{1-\dfrac{\alpha}{2}}(r)\cdot \dfrac{\widehat{S}}{\sqrt{n}}\leq \mu \leq \bar{x} + t_{1-\dfrac{\alpha}{2}}(r)\cdot \dfrac{\widehat{S}}{\sqrt{n}} \right)=1-\alpha$
 \end{enumerate}
-\vspace{1cm}
+  Donde:
+\begin{itemize}
+\item $r=n-1$ \textbf{g.l.}
+\end{itemize}
 \subsubsection{Estimación por Intervalo de la diferencia o suma de Medias}
+\begin{enumerate}[label=(\roman*)]
+  \item $P\left( (\bar{x}\pm\bar{y}) - z_{1-\dfrac{\alpha}{2}}\cdot \sqrt{\dfrac{\sigma_{x}^2}{n_1}+\dfrac{\sigma_{y}^2}{n_2}} \leq \mu_x\pm\mu_y \leq (\bar{x}\pm\bar{y}) + z_{1-\dfrac{\alpha}{2}}\cdot \sqrt{\dfrac{\sigma_{x}^2}{n_1}+\dfrac{\sigma_{y}^2}{n_2}} \right)=1-\alpha$ 
+  \item $P\left( (\bar{x}\pm\bar{y})-t_{1-\dfrac{\alpha
+  }{2}}(r)\cdot\beta\leq \mu_x\pm\mu_y \leq (\bar{x}\pm\bar{y})+t_{1-\dfrac{\alpha
+  }{2}}(r)\cdot\beta\right)=1-\alpha$\vspace{0.5cm}\\
+  Donde:
+  \begin{itemize}
+  \item $\beta = \sqrt{\dfrac{(n_1-1)\hat{S_x}^2+(n_2-1)\hat{S_y}^2}{n_1+n_2-2}\cdot\left(\dfrac{1}{n_1}+\dfrac{1}{n_2}\right)}$
+  \item $r=n_1+n_2-2$ \textbf{g.l.}
+   \end{itemize}
+\end{enumerate}
 \subsubsection{Estimación por Intervalo para Proporciones}
+\begin{enumerate}[label=(\roman*)]
+\item $P\left(\hat{p}-z_{1-\dfrac{\alpha}{2}}\cdot\sqrt{\dfrac{\hat{p}(1-\hat{p})}{n}}\leq p \leq \hat{p}+z_{1-\dfrac{\alpha}{2}}\cdot\sqrt{\dfrac{\hat{p}(1-\hat{p})}{n}}  \right)=1-\alpha$
+\item $P\left((\widehat{p_1}\pm\widehat{p_2})-z_{1-\dfrac{\alpha}{2}}\cdot\beta\leq p_1\pm p_2\leq (\widehat{p_1}\pm\widehat{p_2})+z_{1-\dfrac{\alpha}{2}}\cdot\beta\right)=1-\alpha$\\
+ Donde:
+  \begin{itemize}
+  \item $\beta = \sqrt{\dfrac{\hat{p_1}(1-\hat{p_1})}{n_1}+\dfrac{\hat{p_2}(1-\hat{p_2})}{n_2}} $
+   \end{itemize}
+\end{enumerate}
 \section{Misceláneo}
 \subsection{Interpolación}
 $$
