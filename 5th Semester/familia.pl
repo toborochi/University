@@ -1,7 +1,7 @@
 hombre(jose).
 hombre(eduardo).
 hombre(jorge).
-hombre(raul).
+hombre(raul). 
 hombre(esteban).
 hombre(cesar).
 hombre(jorge).
