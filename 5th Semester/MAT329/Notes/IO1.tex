@@ -21,7 +21,9 @@
 \usepackage{babel}
 \usepackage{tikz}
 \usetikzlibrary{babel}
-\usetikzlibrary{positioning}
+\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,%
+    decorations.pathreplacing,decorations.pathmorphing,shapes,%
+    matrix,shapes.symbols}
 \usepackage{calc}
 \usepackage{ifthen}
 \usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
@@ -51,27 +53,53 @@
 
 \newcommand{\varstackrel}[3][T]{\stackrel{\raisebox{0.5ex}{\clap{\scriptsize#2}}}{#3}}
 
+\tikzset{
+>=stealth',
+  punktchain/.style={
+    rectangle, 
+    rounded corners, 
+    % fill=black!10,
+    draw=black, very thick,
+    text width=10em, 
+    minimum height=3em, 
+    text centered, 
+    on chain},
+  line/.style={draw, thick, <-},
+  element/.style={
+    tape,
+    top color=white,
+    bottom color=blue!50!black!60!,
+    minimum width=8em,
+    draw=blue!40!black!90, very thick,
+    text width=10em, 
+    minimum height=3.5em, 
+    text centered, 
+    on chain},
+  every join/.style={->, thick,shorten >=1pt},
+  decoration={brace},
+  tuborg/.style={decorate},
+  tubnode/.style={midway, right=2pt},
+}
+
 \begin{document}
 \subfile{Archivos/Introduccion}
 \chapter{Programación Lineal}
 En Investigación Operativa se sigue el siguiente cuadro a la hora de trabajar:
 \begin{center}
+\scalebox{0.6}{
 \begin{tikzpicture}
-\matrix [column sep=7mm, row sep=5mm] {
-  \node (p1) [draw, shape=rectangle,align=center] {Definición \\ del Problema}; & \\
-  \node (p2) [draw, shape=rectangle,align=center] {Acopio de \\ Datos}; \\
-  \node (p3) [draw, shape=rectangle,align=center] {Formulación de un \\ Modelo Matemático}; \\
-  \node (p4) [draw, shape=rectangle,align=center] {Resolución del \\ Modelo Matemático}; \\
-  \node (p5) [draw, shape=rectangle,align=center] {Interpretación de \\ Resultados}; \\
-  \node (p6) [draw, shape=rectangle,align=center] {Ejecución}; \\
-};
-\draw[->, thick] (p1) -- (p2);
-\draw[->, thick] (p2) -- (p3);
-\draw[->, thick] (p3) -- (p4);
-\draw[->, thick] (p4) -- (p5);
-\draw[->, thick] (p5) -- (p6);
-\end{tikzpicture}
+  [node distance=.5cm,
+  start chain=going right,]
+     \node[punktchain, join] (intro) {Definición \\ del Problema};
+     \node[punktchain, join] (probf)      {Acopio de \\ Datos};
+     \node[punktchain, join] (investeringer)      {Formulación de un \\ Modelo Matemático};
+     \node[punktchain, join] (perfekt) {Resolución del \\ Modelo Matemático};
+     \node[punktchain, join] (emperi) {Interpretación de \\ los resultados};
+     \node[punktchain, join] (asym) [punktchain ]  {Ejecución};
+  \end{tikzpicture}
+  }
 \end{center}
+
 \section{Modelo Matemático}
 Compuesto por:
 \begin{itemize}
