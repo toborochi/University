@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage[affil-it]{authblk}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{slashbox}
+\usepackage{diagbox}
+\usepackage{slashbox,multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{pstricks}
+\usepackage{pgfplots}
+\usepackage{babel}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+\usetikzlibrary{positioning}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
+\usepackage{empheq}
+\usepackage{svg}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=gray}
+\usepackage{hypcap}
+\DeclarePairedDelimiter{\Ex}{[}{]}
+\newcommand{\E}{\Ex}
+
+\pgfplotsset{compat=1.16}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\newcommand{\varstackrel}[3][T]{\stackrel{\raisebox{0.5ex}{\clap{\scriptsize#2}}}{#3}}
+
+\begin{document}
+\subfile{Archivos/Introduccion}
+\begin{tikzpicture}
+\matrix [column sep=7mm, row sep=5mm] {
+  \node (p1) [draw, shape=rectangle,align=center] {Definición \\ del Problema}; & \\
+  \node (p2) [draw, shape=rectangle] {Acopio de Datos}; \\
+  \node (p3) [draw, shape=rectangle] {Formulación de un Mod
+  elo Matemático}; \\
+  \node (p4) [draw, shape=rectangle] {Resolución del Modelo Matemático}; \\
+  \node (p5) [draw, shape=rectangle] {Interpretación de Resultados}; \\
+  \node (p6) [draw, shape=rectangle] {Ejecución}; \\
+};
+\draw[->, thick] (p1) -- (p2);
+\draw[->, thick] (p2) -- (p3);
+\draw[->, thick] (p3) -- (p4);
+\draw[->, thick] (p4) -- (p5);
+\draw[->, thick] (p5) -- (p6);
+\end{tikzpicture}
+\chapter{Programación Lineal}
+\section{Modelo Matemático}
+Compuesto por:
+\begin{itemize}
+\item \textbf{Variables:} $x_1,x_2,\ldots ,x_n$.
+\item \textbf{Función Objetivo:} Es aquella que buscamos \textit{maximizar} o \textit{minimizar}\footnote{$c_{ij}=$ costos (si minimizamos) ó ganancias (si maximizamos)}. 
+$$z = c_1 x_1 + c_2 x_2 + \cdots +c_n x_n$$
+\item \textbf{Restricciones:}
+\begin{align*}
+a_1 x_1 + a_2 x_2 + \cdots + a_n x_n \geq o \leq A\\
+b_1 x_1 + b_2 x_2 + \cdots + b_n x_n \geq o \leq B
+\end{align*}
+\end{itemize}
+\subsection{Métodos de Solución}
+\subsubsection{Método Gráfico}
+Es mas didáctico, solo lo usamos con dos variables y cuando ambos valores son positivos solo usamos el primer cuadrante del plano cartesiano.
+\subsubsection{Método SIMPLEX}
+\end{document}
