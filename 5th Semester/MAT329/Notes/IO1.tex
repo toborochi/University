@@ -53,15 +53,17 @@
 
 \begin{document}
 \subfile{Archivos/Introduccion}
+\chapter{Programación Lineal}
+En Investigación Operativa se sigue el siguiente cuadro a la hora de trabajar:
+\begin{center}
 \begin{tikzpicture}
 \matrix [column sep=7mm, row sep=5mm] {
   \node (p1) [draw, shape=rectangle,align=center] {Definición \\ del Problema}; & \\
-  \node (p2) [draw, shape=rectangle] {Acopio de Datos}; \\
-  \node (p3) [draw, shape=rectangle] {Formulación de un Mod
-  elo Matemático}; \\
-  \node (p4) [draw, shape=rectangle] {Resolución del Modelo Matemático}; \\
-  \node (p5) [draw, shape=rectangle] {Interpretación de Resultados}; \\
-  \node (p6) [draw, shape=rectangle] {Ejecución}; \\
+  \node (p2) [draw, shape=rectangle,align=center] {Acopio de \\ Datos}; \\
+  \node (p3) [draw, shape=rectangle,align=center] {Formulación de un \\ Modelo Matemático}; \\
+  \node (p4) [draw, shape=rectangle,align=center] {Resolución del \\ Modelo Matemático}; \\
+  \node (p5) [draw, shape=rectangle,align=center] {Interpretación de \\ Resultados}; \\
+  \node (p6) [draw, shape=rectangle,align=center] {Ejecución}; \\
 };
 \draw[->, thick] (p1) -- (p2);
 \draw[->, thick] (p2) -- (p3);
@@ -69,7 +71,7 @@
 \draw[->, thick] (p4) -- (p5);
 \draw[->, thick] (p5) -- (p6);
 \end{tikzpicture}
-\chapter{Programación Lineal}
+\end{center}
 \section{Modelo Matemático}
 Compuesto por:
 \begin{itemize}
