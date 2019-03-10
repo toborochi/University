@@ -1,0 +1,7 @@
+C:\Users\Asus\source\repos\Prueba GP\Prueba GP\bin\Debug\Prueba GP.exe.config
+C:\Users\Asus\source\repos\Prueba GP\Prueba GP\bin\Debug\Prueba GP.exe
+C:\Users\Asus\source\repos\Prueba GP\Prueba GP\bin\Debug\Prueba GP.pdb
+C:\Users\Asus\source\repos\Prueba GP\Prueba GP\obj\Debug\Prueba GP.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\Prueba GP\Prueba GP\obj\Debug\Prueba GP.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\Prueba GP\Prueba GP\obj\Debug\Prueba GP.exe
+C:\Users\Asus\source\repos\Prueba GP\Prueba GP\obj\Debug\Prueba GP.pdb
