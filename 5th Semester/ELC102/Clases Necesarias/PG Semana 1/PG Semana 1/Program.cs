@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Herramienta.Basico;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Herramientas.Clases;
 
 namespace ProgramacionGrafica
 {
@@ -11,10 +11,13 @@ namespace ProgramacionGrafica
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hola como estas!");
+            vec3 a = new vec3(1,1,0);
+            vec3 b = new vec3(4,9,2);
 
-            Punto Punto = new Punto();
-            Console.WriteLine(Punto.x);
+            a = b.Normalized;
+
+            Console.WriteLine(a.y);
+
 
             Console.ReadKey();
         }
