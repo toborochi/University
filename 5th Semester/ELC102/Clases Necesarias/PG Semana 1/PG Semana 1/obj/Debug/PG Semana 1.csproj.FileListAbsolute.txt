@@ -1,7 +1,0 @@
-C:\GitHub\University\5th Semester\ELC102\Clases Necesarias\PG Semana 1\PG Semana 1\bin\Debug\PG Semana 1.exe.config
-C:\GitHub\University\5th Semester\ELC102\Clases Necesarias\PG Semana 1\PG Semana 1\bin\Debug\PG Semana 1.exe
-C:\GitHub\University\5th Semester\ELC102\Clases Necesarias\PG Semana 1\PG Semana 1\bin\Debug\PG Semana 1.pdb
-C:\GitHub\University\5th Semester\ELC102\Clases Necesarias\PG Semana 1\PG Semana 1\obj\Debug\PG Semana 1.csprojAssemblyReference.cache
-C:\GitHub\University\5th Semester\ELC102\Clases Necesarias\PG Semana 1\PG Semana 1\obj\Debug\PG Semana 1.csproj.CoreCompileInputs.cache
-C:\GitHub\University\5th Semester\ELC102\Clases Necesarias\PG Semana 1\PG Semana 1\obj\Debug\PG Semana 1.exe
-C:\GitHub\University\5th Semester\ELC102\Clases Necesarias\PG Semana 1\PG Semana 1\obj\Debug\PG Semana 1.pdb

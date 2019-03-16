@@ -1,0 +1,13 @@
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\bin\Debug\Program.exe.config
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\bin\Debug\Program.exe
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\bin\Debug\Program.pdb
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\obj\Debug\Program.csprojAssemblyReference.cache
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\obj\Debug\Program.exe
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\obj\Debug\Program.pdb
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\bin\Debug\OpenTK.dll
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\bin\Debug\OpenTK.pdb
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\bin\Debug\OpenTK.xml
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\obj\Debug\Program.csproj.CopyComplete
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\obj\Debug\Program.Program.resources
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 1\Program\Program\obj\Debug\Program.csproj.GenerateResource.cache
