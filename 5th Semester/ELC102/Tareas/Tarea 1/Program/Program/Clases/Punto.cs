@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Program.Clases
 {
-    [Serializable]
+    [Serializable] 
     public class Punto
     {
         public float x, y, z;
@@ -17,7 +17,7 @@ namespace Program.Clases
         }
 
         public Punto(float x,float y,float z)
-        {
+         {
             this.x = x;
             this.y = y;
             this.z = z;
