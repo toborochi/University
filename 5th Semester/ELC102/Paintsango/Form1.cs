@@ -143,21 +143,38 @@ namespace Paintsango
             AreaTrabajo.Enabled = true;
         }
 
-        void GuardarObjeto(Objeto obj)
+        void GuardarObjeto(Objeto obj,string nombre)
         {
-            File.WriteAllText("objeto.dat", new JavaScriptSerializer().Serialize(obj));
+            File.WriteAllText(nombre, new JavaScriptSerializer().Serialize(obj));
         }
 
         private void guardarObjetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GuardarObjeto(Objeto);
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Title = "Guardar un Objeto";
+            saveFileDialog1.Filter = "Dato|*.dat";
+            saveFileDialog1.ShowDialog();
+
+            // Ya se guarda con la extension
+            if(saveFileDialog1.FileName!="")
+            {
+                GuardarObjeto(Objeto, saveFileDialog1.FileName);
+
+            }
+
         }
 
         private Objeto cargarObjeto()
         {
-            if (File.Exists("objeto.dat"))
+            OpenFileDialog OpenFileDialog = new OpenFileDialog();
+            
+            OpenFileDialog.ShowDialog();
+
+            
+
+            if (OpenFileDialog.FileName!="")
             {
-                return new JavaScriptSerializer().Deserialize<Objeto>(File.ReadAllText("objeto.dat"));
+                return new JavaScriptSerializer().Deserialize<Objeto>(File.ReadAllText(OpenFileDialog.FileName));
             }
             else
             {
