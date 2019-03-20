@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  29 AUG 2018 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  18 MAR 2019 18:43
 entering extended mode
 **"./Apuntes Analisis de Algoritmos.tex"
 ("Apuntes Analisis de Algoritmos.tex"
@@ -464,6 +464,96 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+(Archivos/Secciones/Algoritmia.tex
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ...Un algoritmo tiene las siguientes caracter√
+                                                  ≠sticas:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ...n algoritmo tiene las siguientes caracter√≠
+                                                  sticas:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 12.
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 12.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \subsection{Tiempo de Ejecuci√≥n}
+                                      
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \subsection{Tiempo de Ejecuci√≥n}
+                                      
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...lgoritmo $A$ procesar una entrada de tama√
+                                                  ±o $n$. Para determinar es...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...goritmo $A$ procesar una entrada de tama√±
+                                                  o $n$. Para determinar est...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.s
 ty"
@@ -476,12 +566,335 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.st
 y"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-) (Codigos/TDAListaMemoria.h)
+) (Codigos/codigo_intro.cpp)
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...forman dos operaciones la tercera operaci√
+                                                  ≥n es todo eso asignado a ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...orman dos operaciones la tercera operaci√≥
+                                                  n es todo eso asignado a \...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 Para el m√
+               ≠smo ejemplo anterior:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 Para el m√≠
+                smo ejemplo anterior:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+(Codigos/codigo_intro.cpp)
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \subsection{C√°lculo de $T(n)$}
+                                    
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \subsection{C√°lculo de $T(n)$}
+                                    
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 Para el c√
+               °lculo de tiempo tendremos dos clasificaciones:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 Para el c√°
+                lculo de tiempo tendremos dos clasificaciones:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 ...de Algoritmos por su Grado de Complejidad}
+                                                  
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 ...de Algoritmos por su Grado de Complejidad}
+                                                  
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \item Algoritmos Logar√
+                            ≠tmicos
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \item Algoritmos Logar√≠
+                             tmicos
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \item Algoritmos Cuadr√
+                            °ticos
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \item Algoritmos Cuadr√°
+                             ticos
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \item Algoritmos $n$-logar√
+                                ≠tmicos
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \item Algoritmos $n$-logar√≠
+                                 tmicos
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \item Algoritmos C√
+                        ∫bicos
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \item Algoritmos C√∫
+                         bicos
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+<./Imagenes/BigO.png, id=1, 2064.71375pt x 1440.38126pt>
+File: ./Imagenes/BigO.png Graphic file (type png)
+<use ./Imagenes/BigO.png>
+Package pdftex.def Info: ./Imagenes/BigO.png  used on input line 54.
+(pdftex.def)             Requested size: 412.93544pt x 288.07115pt.
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...ente:} \texttt{http://bigocheatsheet.com}}
+                                                  
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...ente:} \texttt{http://bigocheatsheet.com}}
+                                                  
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...ente:} \texttt{http://bigocheatsheet.com}}
+                                                  
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...ente:} \texttt{http://bigocheatsheet.com}}
+                                                  
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \section{C√°lculo de Tiempo}
+                                 
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \section{C√°lculo de Tiempo}
+                                 
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
 ! Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.73 \subsection
-                *{Implementacion: TDAListaMemoria}
+l.63 \subsubsection
+                   {Ejemplos}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -489,96 +902,412 @@ look up `weird error' in the index to The TeXbook.)
 [1
 
 {C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(Codigos/TDAListaMemoria.cpp
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \item Funci√
+                 ≥n que Intercambia dos variables por referencia:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \item Funci√≥
+                  n que Intercambia dos variables por referencia:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+(Codigos/intercambiar.cpp)
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 Podemos ver que las √
+                          ∫nicas l√≠neas que contienen instrucciones son las...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 Podemos ver que las √∫
+                           nicas l√≠neas que contienen instrucciones son las...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 Podemos ver que las √∫nicas l√
+                                   ≠neas que contienen instrucciones son las...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 Podemos ver que las √∫nicas l√≠
+                                    neas que contienen instrucciones son las...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...eas que contienen instrucciones son las l√
+                                                  ≠neas \texttt{3,4} y \text...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...as que contienen instrucciones son las l√≠
+                                                  neas \texttt{3,4} y \textt...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...tt{3,4} y \texttt{5}. Y estas siempre ser√
+                                                  °n las instrucciones que s...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...t{3,4} y \texttt{5}. Y estas siempre ser√°
+                                                  n las instrucciones que se...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...taran, sin importar los datos de la funci√
+                                                  ≥n. Por lo tanto:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...aran, sin importar los datos de la funci√≥
+                                                  n. Por lo tanto:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \item Funci√
+                 ≥n que devuelve el mayor de los datos de un vector ordenado:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \item Funci√≥
+                  n que devuelve el mayor de los datos de un vector ordenado:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+(Codigos/mayor.cpp)
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 En esta funci√
+                   ≥n no hay mucho misterio, si vemos la l√≠nea \texttt{3} s...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 En esta funci√≥
+                    n no hay mucho misterio, si vemos la l√≠nea \texttt{3} s...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...i√≥n no hay mucho misterio, si vemos la l√
+                                                  ≠nea \texttt{3} sabemos que:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...√≥n no hay mucho misterio, si vemos la l√≠
+                                                  nea \texttt{3} sabemos que:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
 ! Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.66  
-                 return m.obtener_dato(direccion,2);
+l.76 $$T(n)=An+B$$
+                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-[2]
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.132  
-                      PtrElemento = x;
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
+[2 <./Imagenes/BigO.png>]
 
-[3]
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.198 	
-       	m.poner_dato(ant,2,siguiente(direccion));
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
 
-[4])
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.76 \subsection
-                *{Implementacion: Main del Proyecto 1}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \item Funci√
+                 ≥n que devuelva la suma de los elementos de un arreglo:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
 
-[5] (Codigos/main.cpp
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.66 	
-      			// Constructor de la Memoria...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
 
-[6]
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.132 	
-       		default :
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
 
-[7])
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \item Funci√≥
+                  n que devuelva la suma de los elementos de un arreglo:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+(Codigos/suma_elementos.cpp)
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 Realizamos una tabla de conteo para cada l√
+                                                ≠nea que contenga instruccio...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 Realizamos una tabla de conteo para cada l√≠
+                                                 nea que contenga instruccio...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 ... es la suma de los tiempos de todas las l√
+                                                  ≠neas, esto es:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 ...es la suma de los tiempos de todas las l√≠
+                                                  neas, esto es:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...lementos, el tiempo de este algoritmo ser√
+                                                  ≠a:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `ascii'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...ementos, el tiempo de este algoritmo ser√≠
+                                                  a:
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+)
 ! Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.83 \end{document}
+l.56 \end{document}
                    
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-[8] ("Apuntes Analisis de Algoritmos.aux"
+[3] ("Apuntes Analisis de Algoritmos.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 7212 strings out of 493305
- 105458 string characters out of 3130237
- 377394 words of memory out of 3000000
- 10658 multiletter control sequences out of 15000+200000
- 5624 words of font info for 21 fonts, out of 3000000 for 9000
+ 7204 strings out of 493305
+ 105867 string characters out of 3130237
+ 213328 words of memory out of 3000000
+ 10612 multiletter control sequences out of 15000+200000
+ 12661 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,61p,301b,1663s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,62p,316b,1262s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Asus/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on "Apuntes Analisis de Algoritmos.pdf" (8 pages, 82288 bytes).
+ts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Asus/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Asus/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Asus/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Us
+ers/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Asus/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Asus/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Asus/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Us
+ers/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9
+.pfb>
+Output written on "Apuntes Analisis de Algoritmos.pdf" (3 pages, 268315 bytes).
+
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

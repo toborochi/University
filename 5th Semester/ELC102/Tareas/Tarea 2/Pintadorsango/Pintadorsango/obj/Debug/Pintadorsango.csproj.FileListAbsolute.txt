@@ -1,0 +1,10 @@
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 2\Pintadorsango\Pintadorsango\bin\Debug\Pintadorsango.exe.config
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 2\Pintadorsango\Pintadorsango\bin\Debug\Pintadorsango.exe
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 2\Pintadorsango\Pintadorsango\bin\Debug\Pintadorsango.pdb
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 2\Pintadorsango\Pintadorsango\obj\Debug\Pintadorsango.csprojAssemblyReference.cache
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 2\Pintadorsango\Pintadorsango\obj\Debug\Pintadorsango.Properties.Resources.resources
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 2\Pintadorsango\Pintadorsango\obj\Debug\Pintadorsango.csproj.GenerateResource.cache
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 2\Pintadorsango\Pintadorsango\obj\Debug\Pintadorsango.csproj.CoreCompileInputs.cache
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 2\Pintadorsango\Pintadorsango\obj\Debug\Pintadorsango.exe
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 2\Pintadorsango\Pintadorsango\obj\Debug\Pintadorsango.pdb
+C:\GitHub\University\5th Semester\ELC102\Tareas\Tarea 2\Pintadorsango\Pintadorsango\obj\Debug\Pintadorsango.Pintadorsango.resources
