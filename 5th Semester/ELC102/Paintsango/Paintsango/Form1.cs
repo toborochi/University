@@ -16,13 +16,13 @@ namespace Paintsango
     public partial class VentanaPrincipal : Form
     {
         // Bandera que indica cuando dibujar
-        bool dibujar = false;
+        bool Dibujar = false;
 
         // Objeto que se quiere crear
         Objeto Objeto;
 
         // Poligono temporal que se usa cada vez que se comienza un poligono
-        Poligono P;
+        Poligono PoligonoTemporal;
 
         // Lista de Segmentos temporales que se usan para dibujar en la aplicacion
         List<Segmento> SegmentosTemporales;
@@ -43,42 +43,42 @@ namespace Paintsango
         {
             InitializeComponent();
         }
-        
+
         private void pictureBox1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (!dibujar)
+            if (!Dibujar)
             {
                 PrimerPunto = new Punto(e.X, e.Y);
-                P = new Poligono();
+                PoligonoTemporal = new Poligono();
             }
             else
             {
                 if (CerrarPoligono.Checked == true)
                 {
                     SegmentosTemporales.Add(new Segmento(UltimoPunto, PrimerPunto));
-                    P.Segmentos.Add(new Segmento(new Punto(PrimerPunto.x, PrimerPunto.y), new Punto(UltimoPunto.x, UltimoPunto.y)));
+                    PoligonoTemporal.Segmentos.Add(new Segmento(PantallaCoordenada(PrimerPunto), PantallaCoordenada(UltimoPunto)));
                     G.DrawLine(new Pen(Color.Black), PrimerPunto.x, PrimerPunto.y, UltimoPunto.x, UltimoPunto.y);
 
                 }
-                Objeto.Poligonos.Add(P);
+                Objeto.Poligonos.Add(PoligonoTemporal);
                 //label1.Text = Objeto.Poligonos[Objeto.Poligonos.Count - 1].Segmentos.Count.ToString();
             }
-            
+
             UltimoPunto = new Punto(e.X, e.Y);
             PuntoPrevio = new Punto(e.X, e.Y);
-            
-            dibujar = !dibujar;
+
+            Dibujar = !Dibujar;
         }
 
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (dibujar)
+            if (Dibujar)
             {
                 UltimoPunto = new Punto(e.X, e.Y);
 
                 SegmentosTemporales.Add(new Segmento(PuntoPrevio, UltimoPunto));
-                P.Segmentos.Add(new Segmento(new Punto(PuntoPrevio.x, PuntoPrevio.y), new Punto(UltimoPunto.x, UltimoPunto.y)));
+                PoligonoTemporal.Segmentos.Add(new Segmento(PantallaCoordenada(PuntoPrevio),PantallaCoordenada(UltimoPunto)));
 
                 PuntoPrevio = UltimoPunto;
             }
@@ -87,7 +87,7 @@ namespace Paintsango
         void DibujarEje()
         {
             GG.DrawLine(new Pen(Color.Red), 0, AreaTrabajo.Height / 2, AreaTrabajo.Width, AreaTrabajo.Height / 2);
-            GG.DrawLine(new Pen(Color.Red),AreaTrabajo.Width/2,0, AreaTrabajo.Width/2, AreaTrabajo.Height);
+            GG.DrawLine(new Pen(Color.Red), AreaTrabajo.Width / 2, 0, AreaTrabajo.Width / 2, AreaTrabajo.Height);
         }
 
 
@@ -97,7 +97,7 @@ namespace Paintsango
             BM = new Bitmap(AreaTrabajo.Width, AreaTrabajo.Height);
             AreaTrabajo.Image = BM;
             GG = Graphics.FromImage(AreaTrabajo.Image);
-            
+
         }
 
 
@@ -105,47 +105,47 @@ namespace Paintsango
         private void AreaTrabajo_MouseMove(object sender, MouseEventArgs e)
         {
 
-            Punto PP = new Punto(e.X,e.Y);
-            Punto CP = new Punto(e.X,e.Y);
+            Punto PP = new Punto(e.X, e.Y);
+            Punto CP = new Punto(e.X, e.Y);
             PP = PantallaCoordenada(PP);
-            
 
-            PosicionX.Text = "x: " +   PP.x.ToString();
-            PosicionY.Text = "y: " +   PP.y.ToString();
+
+            PosicionX.Text = "x: " + PP.x.ToString();
+            PosicionY.Text = "y: " + PP.y.ToString();
 
             CP = CoordenadaPantalla(PP);
 
-            PosicionX2.Text = "x: " +  CP.x.ToString();
-            PosicionY2.Text = "y: " +  CP.y.ToString();
+            PosicionX2.Text = "x: " + CP.x.ToString();
+            PosicionY2.Text = "y: " + CP.y.ToString();
 
-            if (dibujar)
+            if (Dibujar)
             {
                 AreaTrabajo.Refresh();
                 BM = new Bitmap(AreaTrabajo.Width, AreaTrabajo.Height);
                 AreaTrabajo.Image = BM;
                 GG = Graphics.FromImage(AreaTrabajo.Image);
-                
+
             }
             DibujarEje();
 
             base.OnMouseMove(e);
 
-            if (dibujar)
+            if (Dibujar)
             {
                 Pen p = new Pen(Color.Red);
-                GG.DrawLine(p, UltimoPunto.x,UltimoPunto.y, e.X, e.Y);
+                GG.DrawLine(p, UltimoPunto.x, UltimoPunto.y, e.X, e.Y);
                 for (int i = 0; i < SegmentosTemporales.Count; ++i)
                 {
                     GG.DrawLine(LAP, SegmentosTemporales[i].a.x, SegmentosTemporales[i].a.y, SegmentosTemporales[i].b.x, SegmentosTemporales[i].b.y);
                 }
             }
-            
+
         }
         Pen LAP = new Pen(Color.Black);
 
         private void AreaTrabajo_Paint(object sender, PaintEventArgs e)
         {
-            
+
 
         }
 
@@ -159,10 +159,10 @@ namespace Paintsango
             GG = Graphics.FromImage(AreaTrabajo.Image);
             DibujarEje();
             AreaTrabajo.Enabled = true;
-           
+
         }
 
-        void GuardarObjeto(Objeto obj,string nombre)
+        void GuardarObjeto(Objeto obj, string nombre)
         {
             File.WriteAllText(nombre, new JavaScriptSerializer().Serialize(obj));
         }
@@ -175,7 +175,7 @@ namespace Paintsango
             saveFileDialog1.ShowDialog();
 
             // Ya se guarda con la extension
-            if(saveFileDialog1.FileName!="")
+            if (saveFileDialog1.FileName != "")
             {
                 GuardarObjeto(Objeto, saveFileDialog1.FileName);
 
@@ -186,12 +186,12 @@ namespace Paintsango
         private Objeto cargarObjeto()
         {
             OpenFileDialog OpenFileDialog = new OpenFileDialog();
-            
+
             OpenFileDialog.ShowDialog();
 
-            
 
-            if (OpenFileDialog.FileName!="")
+
+            if (OpenFileDialog.FileName != "")
             {
                 return new JavaScriptSerializer().Deserialize<Objeto>(File.ReadAllText(OpenFileDialog.FileName));
             }
@@ -202,28 +202,30 @@ namespace Paintsango
         }
 
         #region Metodos para convertir Pantalla-Coordenada
-        Punto PantallaCoordenada(Punto p)
+        Punto PantallaCoordenada(Punto a)
         {
-            p.x = p.x - AreaTrabajo.Width / 2;
-            p.y = AreaTrabajo.Height / 2 - p.y;
-            return p;            
+            Punto b = new Punto();
+            b.x = a.x - AreaTrabajo.Width / 2;
+            b.y = AreaTrabajo.Height / 2 - a.y;
+            return b;
         }
 
-        Punto CoordenadaPantalla(Punto p)
+        Punto CoordenadaPantalla(Punto a)
         {
-            p.x = p.x + AreaTrabajo.Width / 2;
-            p.y = - p.y + AreaTrabajo.Height/2;
-            return p;
+            Punto b = new Punto();
+            b.x = a.x + AreaTrabajo.Width / 2;
+            b.y = -a.y + AreaTrabajo.Height / 2;
+            return b;
         }
         #endregion
 
         private void cargarObjetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
 
             SegmentosTemporales = new List<Segmento>();
             Objeto = cargarObjeto();
-            
+
             AreaTrabajo.Enabled = true;
 
             AreaTrabajo.Refresh();
@@ -231,20 +233,26 @@ namespace Paintsango
             AreaTrabajo.Image = bmap;
             GG = Graphics.FromImage(AreaTrabajo.Image);
 
-            for (int j=0;j<Objeto.Poligonos.Count;++j)
+            for (int j = 0; j < Objeto.Poligonos.Count; ++j)
             {
                 for (int i = 0; i < Objeto.Poligonos[j].Segmentos.Count; ++i)
                 {
-                    int x = (int)Objeto.Poligonos[j].Segmentos[i].a.x;
-                    int y = (int)Objeto.Poligonos[j].Segmentos[i].a.y;
-                    int xx = (int)Objeto.Poligonos[j].Segmentos[i].b.x;
-                    int yy = (int)Objeto.Poligonos[j].Segmentos[i].b.y;
-                    SegmentosTemporales.Add(new Segmento(new Punto(x,y),new Punto(xx,yy)));
+                    Punto a = Objeto.Poligonos[j].Segmentos[i].a;
+                    Punto b = Objeto.Poligonos[j].Segmentos[i].b;
+
+                    a = CoordenadaPantalla(a);
+                    b = CoordenadaPantalla(b);
+
+                    int x = (int)a.x;
+                    int y = (int)a.y;
+                    int xx = (int)b.x;
+                    int yy = (int)b.y;
+                    SegmentosTemporales.Add(new Segmento(new Punto(x, y), new Punto(xx, yy)));
                     GG.DrawLine(LAP, new Point(x, y), new Point(xx, yy));
                 }
             }
             DibujarEje();
-            
+
         }
     }
 }
