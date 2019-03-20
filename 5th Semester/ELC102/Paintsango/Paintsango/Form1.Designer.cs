@@ -42,7 +42,6 @@
             this.guardarObjetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarObjetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CerrarPoligono = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.PosicionY2 = new System.Windows.Forms.Label();
             this.PosicionX2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AreaTrabajo)).BeginInit();
@@ -70,25 +69,26 @@
             this.CajaTexto.AutoSize = true;
             this.CajaTexto.Location = new System.Drawing.Point(12, 595);
             this.CajaTexto.Name = "CajaTexto";
-            this.CajaTexto.Size = new System.Drawing.Size(145, 32);
+            this.CajaTexto.Size = new System.Drawing.Size(0, 32);
             this.CajaTexto.TabIndex = 1;
-            this.CajaTexto.Text = "CajaTexto";
             // 
             // PosicionX
             // 
             this.PosicionX.AutoSize = true;
-            this.PosicionX.Location = new System.Drawing.Point(798, 583);
+            this.PosicionX.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PosicionX.Location = new System.Drawing.Point(846, 583);
             this.PosicionX.Name = "PosicionX";
-            this.PosicionX.Size = new System.Drawing.Size(60, 32);
+            this.PosicionX.Size = new System.Drawing.Size(44, 25);
             this.PosicionX.TabIndex = 3;
             this.PosicionX.Text = "x: 0";
             // 
             // PosicionY
             // 
             this.PosicionY.AutoSize = true;
-            this.PosicionY.Location = new System.Drawing.Point(887, 583);
+            this.PosicionY.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PosicionY.Location = new System.Drawing.Point(924, 583);
             this.PosicionY.Name = "PosicionY";
-            this.PosicionY.Size = new System.Drawing.Size(60, 32);
+            this.PosicionY.Size = new System.Drawing.Size(44, 25);
             this.PosicionY.TabIndex = 4;
             this.PosicionY.Text = "y: 0";
             // 
@@ -158,30 +158,23 @@
             this.CerrarPoligono.Text = "Cerra Poligono";
             this.CerrarPoligono.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(179, 595);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 32);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
-            // 
             // PosicionY2
             // 
             this.PosicionY2.AutoSize = true;
-            this.PosicionY2.Location = new System.Drawing.Point(887, 630);
+            this.PosicionY2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PosicionY2.Location = new System.Drawing.Point(924, 630);
             this.PosicionY2.Name = "PosicionY2";
-            this.PosicionY2.Size = new System.Drawing.Size(60, 32);
+            this.PosicionY2.Size = new System.Drawing.Size(44, 25);
             this.PosicionY2.TabIndex = 9;
             this.PosicionY2.Text = "y: 0";
             // 
             // PosicionX2
             // 
             this.PosicionX2.AutoSize = true;
-            this.PosicionX2.Location = new System.Drawing.Point(798, 630);
+            this.PosicionX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PosicionX2.Location = new System.Drawing.Point(846, 630);
             this.PosicionX2.Name = "PosicionX2";
-            this.PosicionX2.Size = new System.Drawing.Size(60, 32);
+            this.PosicionX2.Size = new System.Drawing.Size(44, 25);
             this.PosicionX2.TabIndex = 8;
             this.PosicionX2.Text = "x: 0";
             // 
@@ -196,7 +189,6 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.PosicionY);
             this.Controls.Add(this.PosicionX);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.CajaTexto);
             this.Controls.Add(this.AreaTrabajo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -227,7 +219,6 @@
         private System.Windows.Forms.ToolStripMenuItem guardarObjetoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cargarObjetoToolStripMenuItem;
         private System.Windows.Forms.CheckBox CerrarPoligono;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label PosicionY2;
         private System.Windows.Forms.Label PosicionX2;
     }
