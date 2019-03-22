@@ -44,6 +44,8 @@
             this.CerrarPoligono = new System.Windows.Forms.CheckBox();
             this.PosicionY2 = new System.Windows.Forms.Label();
             this.PosicionX2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AreaTrabajo)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -76,7 +78,7 @@
             // 
             this.PosicionX.AutoSize = true;
             this.PosicionX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PosicionX.Location = new System.Drawing.Point(789, 737);
+            this.PosicionX.Location = new System.Drawing.Point(276, 739);
             this.PosicionX.Name = "PosicionX";
             this.PosicionX.Size = new System.Drawing.Size(57, 31);
             this.PosicionX.TabIndex = 3;
@@ -86,7 +88,7 @@
             // 
             this.PosicionY.AutoSize = true;
             this.PosicionY.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PosicionY.Location = new System.Drawing.Point(890, 737);
+            this.PosicionY.Location = new System.Drawing.Point(377, 739);
             this.PosicionY.Name = "PosicionY";
             this.PosicionY.Size = new System.Drawing.Size(58, 31);
             this.PosicionY.TabIndex = 4;
@@ -151,7 +153,7 @@
             // CerrarPoligono
             // 
             this.CerrarPoligono.AutoSize = true;
-            this.CerrarPoligono.Location = new System.Drawing.Point(737, 12);
+            this.CerrarPoligono.Location = new System.Drawing.Point(737, 13);
             this.CerrarPoligono.Name = "CerrarPoligono";
             this.CerrarPoligono.Size = new System.Drawing.Size(243, 36);
             this.CerrarPoligono.TabIndex = 7;
@@ -162,7 +164,7 @@
             // 
             this.PosicionY2.AutoSize = true;
             this.PosicionY2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PosicionY2.Location = new System.Drawing.Point(890, 784);
+            this.PosicionY2.Location = new System.Drawing.Point(833, 738);
             this.PosicionY2.Name = "PosicionY2";
             this.PosicionY2.Size = new System.Drawing.Size(58, 31);
             this.PosicionY2.TabIndex = 9;
@@ -172,17 +174,37 @@
             // 
             this.PosicionX2.AutoSize = true;
             this.PosicionX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PosicionX2.Location = new System.Drawing.Point(789, 784);
+            this.PosicionX2.Location = new System.Drawing.Point(732, 738);
             this.PosicionX2.Name = "PosicionX2";
             this.PosicionX2.Size = new System.Drawing.Size(57, 31);
             this.PosicionX2.TabIndex = 8;
             this.PosicionX2.Text = "x: 0";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(59, 738);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(211, 32);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Coord. Relativa";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(515, 738);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(212, 32);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Coord. Pantalla";
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 839);
+            this.ClientSize = new System.Drawing.Size(992, 788);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.PosicionY2);
             this.Controls.Add(this.PosicionX2);
             this.Controls.Add(this.CerrarPoligono);
@@ -221,6 +243,8 @@
         private System.Windows.Forms.CheckBox CerrarPoligono;
         private System.Windows.Forms.Label PosicionY2;
         private System.Windows.Forms.Label PosicionX2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
