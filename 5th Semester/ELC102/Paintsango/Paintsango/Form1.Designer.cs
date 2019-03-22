@@ -61,7 +61,6 @@
             this.AreaTrabajo.Size = new System.Drawing.Size(968, 656);
             this.AreaTrabajo.TabIndex = 0;
             this.AreaTrabajo.TabStop = false;
-            this.AreaTrabajo.Paint += new System.Windows.Forms.PaintEventHandler(this.AreaTrabajo_Paint);
             this.AreaTrabajo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             this.AreaTrabajo.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDoubleClick);
             this.AreaTrabajo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AreaTrabajo_MouseMove);

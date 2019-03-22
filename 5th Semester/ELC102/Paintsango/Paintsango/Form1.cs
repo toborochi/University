@@ -37,7 +37,8 @@ namespace Paintsango
 
         Graphics G;
         Graphics GG;
-        Bitmap BM;
+        Bitmap BitMap;
+        Pen Lapiz = new Pen(Color.Black);
 
         public VentanaPrincipal()
         {
@@ -95,8 +96,8 @@ namespace Paintsango
         private void VentanaPrincipal_Load(object sender, EventArgs e)
         {
             G = AreaTrabajo.CreateGraphics();
-            BM = new Bitmap(AreaTrabajo.Width, AreaTrabajo.Height);
-            AreaTrabajo.Image = BM;
+            BitMap = new Bitmap(AreaTrabajo.Width, AreaTrabajo.Height);
+            AreaTrabajo.Image = BitMap;
             GG = Graphics.FromImage(AreaTrabajo.Image);
 
         }
@@ -122,34 +123,25 @@ namespace Paintsango
             if (Dibujar)
             {
                 AreaTrabajo.Refresh();
-                BM = new Bitmap(AreaTrabajo.Width, AreaTrabajo.Height);
-                AreaTrabajo.Image = BM;
+                BitMap = new Bitmap(AreaTrabajo.Width, AreaTrabajo.Height);
+                AreaTrabajo.Image = BitMap;
                 GG = Graphics.FromImage(AreaTrabajo.Image);
 
-            }
-            DibujarEje();
+                DibujarEje();
 
-            base.OnMouseMove(e);
+                Pen LapizRojo = new Pen(Color.Red);
+                // La linea que se esta dibujando del ultimo punto al mouse
+                GG.DrawLine(LapizRojo, UltimoPunto.x, UltimoPunto.y, e.X, e.Y);
 
-            if (Dibujar)
-            {
-                Pen p = new Pen(Color.Red);
-                GG.DrawLine(p, UltimoPunto.x, UltimoPunto.y, e.X, e.Y);
+                // Redibujamos la figura
                 for (int i = 0; i < SegmentosTemporales.Count; ++i)
                 {
-                    GG.DrawLine(LAP, SegmentosTemporales[i].a.x, SegmentosTemporales[i].a.y, SegmentosTemporales[i].b.x, SegmentosTemporales[i].b.y);
+                    GG.DrawLine(Lapiz, SegmentosTemporales[i].a.x, SegmentosTemporales[i].a.y, SegmentosTemporales[i].b.x, SegmentosTemporales[i].b.y);
                 }
             }
-
+            base.OnMouseMove(e);
         }
-        Pen LAP = new Pen(Color.Black);
-
-        private void AreaTrabajo_Paint(object sender, PaintEventArgs e)
-        {
-
-
-        }
-
+        
         // Crear Objeto
         private void crearObjetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -163,11 +155,15 @@ namespace Paintsango
 
         }
 
+        #region Guardar & Cargar
+
+        // Metodo para guardar un archivo serializable
         void GuardarObjeto(Objeto obj, string nombre)
         {
             File.WriteAllText(nombre, new JavaScriptSerializer().Serialize(obj));
         }
 
+        // Al hacer click guardar
         private void guardarObjetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -184,14 +180,11 @@ namespace Paintsango
 
         }
 
+        // Metodo para cargar objeto
         private Objeto cargarObjeto()
         {
             OpenFileDialog OpenFileDialog = new OpenFileDialog();
-
             OpenFileDialog.ShowDialog();
-
-
-
             if (OpenFileDialog.FileName != "")
             {
                 return new JavaScriptSerializer().Deserialize<Objeto>(File.ReadAllText(OpenFileDialog.FileName));
@@ -202,28 +195,9 @@ namespace Paintsango
             }
         }
 
-        #region Metodos para convertir Pantalla-Coordenada
-        Punto PantallaCoordenada(Punto a)
-        {
-            Punto b = new Punto();
-            b.x = a.x - AreaTrabajo.Width / 2;
-            b.y = AreaTrabajo.Height / 2 - a.y;
-            return b;
-        }
-
-        Punto CoordenadaPantalla(Punto a)
-        {
-            Punto b = new Punto();
-            b.x = a.x + AreaTrabajo.Width / 2;
-            b.y = -a.y + AreaTrabajo.Height / 2;
-            return b;
-        }
-        #endregion
-
+        // Al hacer click carga el objeto.
         private void cargarObjetoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-
             SegmentosTemporales = new List<Segmento>();
             Objeto = cargarObjeto();
 
@@ -249,12 +223,33 @@ namespace Paintsango
                     int xx = (int)b.x;
                     int yy = (int)b.y;
                     SegmentosTemporales.Add(new Segmento(new Punto(x, y), new Punto(xx, yy)));
-                    GG.DrawLine(LAP, new Point(x, y), new Point(xx, yy));
+                    GG.DrawLine(Lapiz, new Point(x, y), new Point(xx, yy));
                 }
             }
             DibujarEje();
 
         }
+        #endregion
+
+        #region Metodos para convertir Pantalla-Coordenada
+        Punto PantallaCoordenada(Punto a)
+        {
+            Punto b = new Punto();
+            b.x = a.x - AreaTrabajo.Width / 2;
+            b.y = AreaTrabajo.Height / 2 - a.y;
+            return b;
+        }
+
+        Punto CoordenadaPantalla(Punto a)
+        {
+            Punto b = new Punto();
+            b.x = a.x + AreaTrabajo.Width / 2;
+            b.y = -a.y + AreaTrabajo.Height / 2;
+            return b;
+        }
+        #endregion
+
+        
 
         
     }
