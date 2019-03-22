@@ -53,15 +53,16 @@ namespace Paintsango
             }
             else
             {
-                if (CerrarPoligono.Checked == true)
+                // Si esta marcado anade el ultimo punto con el primer punto captado al comenzar el poligono
+                if (CerrarPoligono.Checked)
                 {
                     SegmentosTemporales.Add(new Segmento(UltimoPunto, PrimerPunto));
                     PoligonoTemporal.Segmentos.Add(new Segmento(PantallaCoordenada(PrimerPunto), PantallaCoordenada(UltimoPunto)));
                     G.DrawLine(new Pen(Color.Black), PrimerPunto.x, PrimerPunto.y, UltimoPunto.x, UltimoPunto.y);
 
                 }
+                // Finalmente, como cerramos el poligono lo anadimos a la lista de poligonos del objeto
                 Objeto.Poligonos.Add(PoligonoTemporal);
-                //label1.Text = Objeto.Poligonos[Objeto.Poligonos.Count - 1].Segmentos.Count.ToString();
             }
 
             UltimoPunto = new Punto(e.X, e.Y);
@@ -254,6 +255,8 @@ namespace Paintsango
             DibujarEje();
 
         }
+
+        
     }
 }
 
