@@ -1,0 +1,116 @@
+\chapter{Preliminares Formales}
+\section{Conjuntos}
+\subsection{Conjunto Finito e Infinito}
+\subsubsection{Equivalencia} Dado $A$ y $B$ (conjuntos) los llamamos \textit{equivalentes} si existe una biyección: $f:A\rightarrow B$
+\subsubsection{Conjunto Finito}
+Un conjunto $A$ es finito si es equivalente a $\{1,2,3,\ldots ,n\}$ para algún $n\in\mathbb{N}$.
+\subsubsection{Conjunto Infinito}
+Un conjunto es infinito si no es finito. Si no es equivalente a $\{1,2,3,\ldots , n\}$ es decir no hay biyección. Sin embargo no todos los conjuntos finitos son equivalentes.
+\begin{itemize}
+\item \textbf{Conjunto Contablemente Infinito:}  Se dice que un conjunto es contablemente infinito si es equivalente con $\mathbb{N}$.
+\item \textbf{Conjunto Contable:} Es contable si es finito o contablemente infinito.
+\item \textbf{Conjunto Incontable:} Se dice que es incontable si no es contable.  
+\end{itemize}
+
+\subsubsection{Principio de las Casillas}
+Si $A$ y $B$ son conjuntos finitos no vacíos y $|A|>|B|$ entonces no existe una función inyectiva de: $A\rightarrow B$.
+\section{Preliminares}
+\subsection{Alfabeto}
+Un alfabeto $\Sigma$ es cualquier conjunto finito no vacío. 
+\subsubsection{Ejemplo(s)}
+\begin{align*}
+\Sigma_1 =& \{ Leo, Martha \} \\
+\Sigma_2 =& \{0,1,2,3,\ldots , 13\} \\
+\Sigma_3 =& \{ a,b \} \\
+\Sigma_4 =& \{ R,G,B,A\}
+\end{align*}
+\subsection{Palabra}
+Una palabra sobre $\Sigma$ es una sucesión finita de símbolos de $\Sigma$. Es decir:
+$$(\sigma_1,\sigma_2,\ldots,\sigma_n);\sigma \in \Sigma \text{\hspace{0.5cm}  ó  \hspace{0.5cm}} \sigma_1\sigma_2\sigma_3\ldots\sigma_n ; \sigma\in\Sigma$$
+\subsubsection{Ejemplo(s)}
+\noindent
+\begin{multicols}{4}
+\noindent
+\begin{align*}
+\textbf{Sobre } \Sigma_1& \\
+w_1 =& LeoLeo \\
+w_2 =& MarthaLeoMartha
+\end{align*} 
+\columnbreak
+\begin{align*}
+\textbf{Sobre } \Sigma_2& \\
+w_1 =& 1111110 \\
+w_2 =& 11235813
+\end{align*}
+\columnbreak
+\begin{align*}
+\textbf{Sobre } \Sigma_3& \\
+w_1 =& bababababa \\
+w_2 =& abba
+\end{align*}
+\columnbreak
+\begin{align*}
+\textbf{Sobre } \Sigma_4& \\
+w_1 =& ABGR \\
+w_2 =& RRRA
+\end{align*}
+\end{multicols}
+Denotamos por $\Sigma^*$ el conjunto de todas las palabras sobre $\Sigma$.
+\subsubsection{Longitud de una Palabra}
+Sea $w$ una palabra sobre $\Sigma$, es decir $w=\sigma_1\sigma_2\ldots\sigma_n ; \sigma\in\Sigma$. La longitud de $w$ es $n$ y se denota por: $|w|=n$.
+\subsubsection{Palabra vacía}
+Es la sucesión vacía de símbolos de $\Sigma$ y se denota por: $\lambda$.
+\subsection{Notaciones}
+\begin{itemize}
+\item $\Sigma^+ = \{ w\in\Sigma^* / |w|>0\}$
+\item $\Sigma^k = \{ w\in\Sigma^* / |w|=k\}$
+\item $\Sigma^0 = \{ w\in\Sigma^* / |w|=0\}=\{\lambda\}$
+\item $\Sigma^1 = \{ w\in\Sigma^* / |w|=1\}=\Sigma$
+\item $\Sigma^* = \Sigma^+ \cup \{\lambda\}$
+\item $\Sigma^+ = \Sigma^* - \{\lambda\}$
+\end{itemize}
+\subsubsection{Cantidad de Ocurrencias}
+Sea $w\in\Sigma^*$, denotamos por $|w|_\sigma$ al número de ocurrencias del símbolo $\sigma$ en la palabra $w$.
+\subsubsection{Ejemplo(s)}
+$$\Sigma = \{ a,b \} $$
+
+\begin{itemize}
+\item $\Sigma^{*}= \{\lambda, a,b,aa,bb,ab,ba,aaa,\ldots\}$
+\item $\Sigma^0=\{\lambda\}$
+\item $\Sigma_1 =\Sigma = \{a,b\}$
+\item $\Sigma^2 = \{ ab,aa,ba,bb \}$
+\end{itemize}
+\subsubsection{Concatenación}
+Sea $u,v\in\Sigma^*$ tal que $u=\sigma_1\sigma_2\ldots\sigma_n, v=\epsilon_1\epsilon_2\ldots\epsilon_n$. La concatenación de $u$ y $v$ se define por:
+$$uv=\sigma_1\sigma_2\ldots\sigma_n \epsilon_1\epsilon_2\ldots\epsilon_n$$
+\subsubsection{Definición de Recurrencia}
+$$|\text{ }|:\Sigma^*\rightarrow\mathbb{N}$$
+$$
+\begin{cases}
+|\lambda |=0 \\
+|wa| = |w| + 1
+\end{cases}
+$$
+\subsubsection{Ejemplo(s)}
+\begin{align*}
+u=abab & uv=ababbba \\
+v=bba  & vu=bbaabab
+\end{align*}
+\subsubsection{Definiciones}
+\begin{itemize}
+\item $uv\neq vu$
+\item $(uv)w=u(vw)$
+\item $u\lambda=\lambda u=u$
+\item $|uv|=|u|+|v|$
+\item $|uv|_a = |u|_a + |v|_a$
+\end{itemize}
+\subsection{Principio de Inducción para $\Sigma^*$}
+Sea $L$ un conjunto de palabras sobre $\Sigma$ con las propiedades:
+\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\theenumi}{\textbf{\roman{enumi}.)}}%
+\begin{enumerate}
+\item $\lambda \in L$
+\item $w\in L \wedge a\in\Sigma \Rightarrow wa \in L$
+\end{enumerate}
+\subsubsection{Entonces}
+$L=\Sigma^*$, es decir, todas las palabras sobre $\Sigma$ están en $L$.

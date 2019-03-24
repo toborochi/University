@@ -1,0 +1,24 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Preliminares Formales}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Conjuntos}{5}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Conjunto Finito e Infinito}{5}{subsection.1.1.1}
+\contentsline {subsubsection}{Equivalencia}{5}{section*.3}
+\contentsline {subsubsection}{Conjunto Finito}{5}{section*.4}
+\contentsline {subsubsection}{Conjunto Infinito}{5}{section*.5}
+\contentsline {subsubsection}{Principio de las Casillas}{5}{section*.6}
+\contentsline {section}{\numberline {1.2}Preliminares}{5}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Alfabeto}{5}{subsection.1.2.1}
+\contentsline {subsubsection}{Ejemplo(s)}{5}{section*.7}
+\contentsline {subsection}{\numberline {1.2.2}Palabra}{5}{subsection.1.2.2}
+\contentsline {subsubsection}{Ejemplo(s)}{6}{section*.8}
+\contentsline {subsubsection}{Longitud de una Palabra}{6}{section*.9}
+\contentsline {subsubsection}{Palabra vac\IeC {\'\i }a}{6}{section*.10}
+\contentsline {subsection}{\numberline {1.2.3}Notaciones}{6}{subsection.1.2.3}
+\contentsline {subsubsection}{Cantidad de Ocurrencias}{6}{section*.11}
+\contentsline {subsubsection}{Ejemplo(s)}{6}{section*.12}
+\contentsline {subsubsection}{Concatenaci\IeC {\'o}n}{6}{section*.13}
+\contentsline {subsubsection}{Definici\IeC {\'o}n de Recurrencia}{6}{section*.14}
+\contentsline {subsubsection}{Ejemplo(s)}{7}{section*.15}
+\contentsline {subsubsection}{Definiciones}{7}{section*.16}
+\contentsline {subsection}{\numberline {1.2.4}Principio de Inducci\IeC {\'o}n para $\Sigma ^*$}{7}{subsection.1.2.4}
+\contentsline {subsubsection}{Entonces}{7}{section*.17}
