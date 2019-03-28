@@ -28,6 +28,7 @@ var22 resw 1
 var33 resd 1
 var44 resd 1
 var55 resd 1
+arreglo3 resb 6
 
 segment .text 
 global _main 					
@@ -83,6 +84,15 @@ _main:
 	mov [var11],dl
 	
 	mov [var5],al
+	
+; direccionamiento indirecto por registro (base)
+	xor eax,eax
+	mov ecx,arreglo2
+	mov al,[ecx]
+	mov ax,[ecx]
+	
+	mov ecx,arreglo3
+	mov [ecx],byte 0x22
 	
 ret
 ;---------------------------------------
