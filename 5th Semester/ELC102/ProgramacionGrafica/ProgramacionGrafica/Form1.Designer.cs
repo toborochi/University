@@ -151,6 +151,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
             this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDoubleClick);

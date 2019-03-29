@@ -78,10 +78,17 @@ namespace ProgramacionGrafica
                 if(Dibujar)
                 {
                     Punto tmpPunto = new Punto(e.X, e.Y);
+                    
                     tmpPunto = Matematicas.PantallaCoordenada(tmpPunto, Width, Height);
                     tmpPunto = Matematicas.CoordenadaProporcional(tmpPunto, Width, Height);
 
                     objeto.Poligonos[objeto.Poligonos.Count - 1].Puntos.Add(tmpPunto);
+
+                    Refresh();
+                    graphics = CreateGraphics();
+                    ControladorDibujo.DibujarObjeto(graphics, objeto, Width, Height);
+                    ControladorDibujo.DibujarEje(graphics, Width, Height);
+
                     label1.Text = objeto.Poligonos[objeto.Poligonos.Count - 1].Puntos.Count.ToString();
                 }
             }
@@ -95,24 +102,15 @@ namespace ProgramacionGrafica
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
         {
-            Width = Convert.ToInt32(textBox1.Text);
-            Height = Convert.ToInt32(textBox2.Text);
-            if (objeto != null)
-            {
-                Refresh();
-                graphics = CreateGraphics();
-                ControladorDibujo.DibujarObjeto(graphics, objeto, Width, Height);
-                ControladorDibujo.DibujarEje(graphics, Width, Height);
-            }
+            
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
-            
-            if(objeto!=null)
+
+            if (objeto!=null)
             {
-                textBox1.Text = Width.ToString();
-                textBox2.Text = Height.ToString();
+               
                 Refresh();
                 graphics = CreateGraphics();
                 ControladorDibujo.DibujarObjeto(graphics, objeto, Width, Height);
@@ -132,6 +130,12 @@ namespace ProgramacionGrafica
                 ControladorDibujo.DibujarObjeto(graphics, objeto, Width, Height);
                 ControladorDibujo.DibujarEje(graphics, Width, Height);
             }
+        }
+
+        private void Form1_ResizeEnd(object sender, EventArgs e)
+        {
+            textBox1.Text = Width.ToString();
+            textBox2.Text = Height.ToString();
         }
     }
 }
