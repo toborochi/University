@@ -1,0 +1,10 @@
+C:\Users\Asus\source\repos\ProgramacionGrafica\ProgramacionGrafica\bin\Debug\ProgramacionGrafica.exe.config
+C:\Users\Asus\source\repos\ProgramacionGrafica\ProgramacionGrafica\bin\Debug\ProgramacionGrafica.exe
+C:\Users\Asus\source\repos\ProgramacionGrafica\ProgramacionGrafica\bin\Debug\ProgramacionGrafica.pdb
+C:\Users\Asus\source\repos\ProgramacionGrafica\ProgramacionGrafica\obj\Debug\ProgramacionGrafica.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\ProgramacionGrafica\ProgramacionGrafica\obj\Debug\ProgramacionGrafica.Form1.resources
+C:\Users\Asus\source\repos\ProgramacionGrafica\ProgramacionGrafica\obj\Debug\ProgramacionGrafica.Properties.Resources.resources
+C:\Users\Asus\source\repos\ProgramacionGrafica\ProgramacionGrafica\obj\Debug\ProgramacionGrafica.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\ProgramacionGrafica\ProgramacionGrafica\obj\Debug\ProgramacionGrafica.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\ProgramacionGrafica\ProgramacionGrafica\obj\Debug\ProgramacionGrafica.exe
+C:\Users\Asus\source\repos\ProgramacionGrafica\ProgramacionGrafica\obj\Debug\ProgramacionGrafica.pdb
