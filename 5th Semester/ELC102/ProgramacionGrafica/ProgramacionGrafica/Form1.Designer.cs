@@ -49,7 +49,7 @@
             this.objetoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1221, 49);
+            this.menuStrip1.Size = new System.Drawing.Size(1221, 52);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -60,27 +60,29 @@
             this.guardarToolStripMenuItem,
             this.cargarToolStripMenuItem});
             this.objetoToolStripMenuItem.Name = "objetoToolStripMenuItem";
-            this.objetoToolStripMenuItem.Size = new System.Drawing.Size(122, 45);
+            this.objetoToolStripMenuItem.Size = new System.Drawing.Size(122, 48);
             this.objetoToolStripMenuItem.Text = "Objeto";
             // 
             // crearToolStripMenuItem
             // 
             this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(238, 46);
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(396, 46);
             this.crearToolStripMenuItem.Text = "Crear";
             this.crearToolStripMenuItem.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
             // 
             // guardarToolStripMenuItem
             // 
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(238, 46);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(396, 46);
             this.guardarToolStripMenuItem.Text = "Guardar";
+            this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarToolStripMenuItem_Click);
             // 
             // cargarToolStripMenuItem
             // 
             this.cargarToolStripMenuItem.Name = "cargarToolStripMenuItem";
-            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(238, 46);
+            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(396, 46);
             this.cargarToolStripMenuItem.Text = "Cargar";
+            this.cargarToolStripMenuItem.Click += new System.EventHandler(this.cargarToolStripMenuItem_Click);
             // 
             // label1
             // 

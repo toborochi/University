@@ -16,7 +16,20 @@ namespace ProgramacionGrafica.Herramientas
             Puntos = new List<Punto>();
         }
 
-        
+        public void AñadirPunto(Punto a)
+        {
+            Puntos.Add(a);
+        }
+
+        public Punto PrimerPunto()
+        {
+            return Puntos[0];
+        }
+
+        public Punto UltimoPunto()
+        {
+            return Puntos[Puntos.Count-1];
+        }
 
     }
 }
