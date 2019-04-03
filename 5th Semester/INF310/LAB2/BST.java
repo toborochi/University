@@ -23,10 +23,26 @@ public class Arbol {
         if(Raiz==null){ 
             Raiz = new Nodo(x);
             n = 1; 
-        }else
+        }else // Caso general de la insercion
         {
-            
+            Nodo ant = null;
+            Nodo p   = Raiz;
+            while(p!=null)
+            {
+                ant = p;
+                if(x<p.Data)
+                {
+                    p = p.HI;
+                }else
+                if(x>p.Data)
+                {
+                    p = p.HD;
+                }else
+                {
+                    // Si es igual, ya existe y se sale de la insercion
+                    return;
+                }                  
+            }
         }
     }
-    
 }
