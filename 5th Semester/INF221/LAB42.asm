@@ -75,6 +75,11 @@ _main:
 	idiv cl
 
 	
+	mov eax,-514732
+	cdq
+	mov ecx,3000
+	idiv ecx
+	
 	; cbw byte a word
 	; cwd word a double
 	; cdq double a quad
