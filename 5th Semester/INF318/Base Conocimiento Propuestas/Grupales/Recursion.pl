@@ -4,12 +4,13 @@ mostrarDivisoresDesc:- read(N),divisores(N,1).
 		   
 divisores(N,I):- I>N,!.
 divisores(N,I):-
-		N mod I =:= 0,
-		I1 is I+1,
-		divisores(N,I1),
-		write(I),nl.
+					N mod I =:= 0,
+					I1 is I+1,
+					divisores(N,I1),
+					write(I),nl.
 divisores(N,I):- I1 is I+1,
-		divisores(N,I1).			 
+				 divisores(N,I1).
+				 
 				
 % 2. mostrarDivisoresComunes(n, m) : Procedimiento que 
 % muestra los divisores comunes de los entero n y m.
@@ -24,6 +25,18 @@ divisores(N,I):- I1 is I+1,
 % muestra los divisores de n, comprendidos entre a y b inclusive.
 
 % 6. primo(n) : Función lógica que devuelve True, si el entero n es número primo.
+
+primo:-
+		read(N),
+		primo(N).
+		
+primo(N):- primo(N,2).
+
+primo(N,I):- I > N // 2.
+
+primo(N,I):- N mod I =\= 0,
+		     I1 is I+1,
+			 primo(N,I1).
 
 % 7. proximoPrimo(n) : Función que devuelve, el siguiente 
 % primo después de n. Si n es primo, devuelve n.
