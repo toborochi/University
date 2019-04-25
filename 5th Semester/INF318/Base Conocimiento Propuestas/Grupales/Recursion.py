@@ -25,3 +25,12 @@ def ite_primo(n):
 		i = i + 1
 	return True
 	
+def rec_primo(n):
+	primo(n,2)
+
+def primo(n,i):
+	if(i>n/2):
+		return True
+	if(n%i==0):
+		return False
+	return primo(n,i+1)
