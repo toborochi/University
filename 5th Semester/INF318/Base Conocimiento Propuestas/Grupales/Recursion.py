@@ -26,7 +26,20 @@ def ite_primo(n):
 			return False
 		i = i + 1
 	return True
+	
+# Es primo(Recursivo)
+def rec_primo(n):
+        return primo(n,2)
 
+def primo(n,i):
+	if(n==1):
+		return False
+	if(i>n/2):
+		return True
+	if(n%i==0):
+		return False
+	return primo(n,i+1)
+	
 # Mostrar Factorial hasta N (Iterativo)
 def ite_mostrarFactoriales(n):
 	i = 1
@@ -48,3 +61,9 @@ def ite_mostrarFib(n):
 		a = b
 		b = f
 		i = i + 1
+
+def f(n):
+	if(n>5):
+		return
+	return 1
+		
