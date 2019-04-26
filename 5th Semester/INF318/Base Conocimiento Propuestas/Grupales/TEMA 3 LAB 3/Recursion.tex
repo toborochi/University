@@ -1,0 +1,87 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref} 
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=2cm]{geometry}
+\title{ \texttt{\normalsize Tema\# 3} \\ Lab. 3: Más sobre ciclos básicos en Prolog \vspace{-1cm} }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.98,0.98,0.98}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle={\small\ttfamily},
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+\begin{document}
+\maketitle
+\subsection*{Integrantes}
+\begin{itemize}
+\item Leonardo Henry Añez Vladmirovna
+\item Gerson Oliva Rojas
+\item Pedro Luis Caricari Torrejón
+\item Erick Edwing Vidal Céspedes
+\end{itemize}
+\subsection*{Porcentaje Completado: 100\%}
+\subsection*{Comentario(s):}
+\subsection*{Source Code:}
+1. \texttt{mostrarDivisoresDesc(n)} : Procedimiento que muestra los divisores del entero n. Muestra desde el n a 1. \\
+
+\texttt{Python (Iterativo)}
+\lstinputlisting[language=Python]{p1a.py}
+
+\texttt{Python (Recursivo)}
+\lstinputlisting[language=Python]{p1b.py}
+
+\texttt{Prolog}
+\lstinputlisting[language=Prolog]{p1c.pl}
+${}$\\
+\pagebreak 
+
+2. \texttt{mostrarDivisoresComunes(n, m)} : Procedimiento que muestra los divisores comunes de los entero n y m. \\
+
+3. \texttt{mostrarDivisoresPares(n)} : Procedimiento que muestra los divisores pares de n. \\
+
+4. \texttt{mostrarDivisoresImpares(n)} :  Procedimiento que muestra los divisores impares de n. \\
+
+5. \texttt{mostrarDivisores(n, a, b)} :  Procedimiento que muestra los divisores de n, comprendidos entre a y b inclusive. \\
+
+6. \texttt{primo(n) } : Función lógica que devuelve True, si el entero n es número primo. \\
+
+\texttt{Python (Iterativo)}
+\lstinputlisting[language=Python]{p6a.py}
+
+\texttt{Python (Recursivo)}
+\lstinputlisting[language=Python]{p6b.py}
+
+\texttt{Prolog}
+\lstinputlisting[language=Prolog]{p6c.pl}
+
+7. \texttt{proximoPrimo(n)} : Función que devuelve, el siguiente primo después de n. Si n es primo, devuelve n. \\
+
+\end{document}
