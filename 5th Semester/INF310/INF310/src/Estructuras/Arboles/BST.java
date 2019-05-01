@@ -35,7 +35,7 @@ public class BST {
                     Actual = Actual.getHI();
                 else if (dato > Actual.getData())
                         Actual=Actual.getHD();
-                else return;  //Salir. x ya está en el árbol.
+                    else return;  //Salir. x ya está en el árbol.
             }
             
             Nodo Nuevo = new Nodo(dato);
@@ -50,18 +50,46 @@ public class BST {
     }  
     
     public void remove(int dato){
-        Nodo Actual = Raiz;
-            
-            while (Actual!=null){
-                if (dato < Actual.getData())  
-                    Actual = Actual.getHI();
-                else if (dato > Actual.getData())
-                        Actual=Actual.getHD();
-                else break;
+        Raiz = remNodo(Raiz, dato);
+    }
+    
+    private Nodo remNodo(Nodo root, int data) {
+ 
+        if(root == null) return root;
+ 
+        if(data < root.getData()) {
+            root.setHI(remNodo(root.getHI(), data));
+        } else if(data > root.getData()) {
+            root.setHD(remNodo(root.getHD(), data));
+        } else {
+            // Nodo Hoja
+            if(root.getHI() == null && root.getHD() == null) {
+                return null;
+            } else if(root.getHI() == null) {
+                // Nodo con una hoja  (Sin izquierda)
+                return root.getHD();
+            } else if(root.getHD() == null) {
+                // Nodo con una hoja  (Sin derecha)
+                return root.getHI();
+            } else {
+                // Nodo con dos hijos
+                // Uno a la derecha y pura izquierda
+                int minValue = ValorMinimo(root.getHD());
+                root.setData(minValue);
+                root.setHD(remNodo(root.getHD(), minValue));
             }
-            
-            
-           
+        }
+ 
+        return root;
+    }
+ 
+    
+       private int ValorMinimo(Nodo node) {
+ 
+        if(node.getHI() != null) {
+            return ValorMinimo(node.getHI());
+        }
+        return node.getData();
     }
     
     public void Inorder(){

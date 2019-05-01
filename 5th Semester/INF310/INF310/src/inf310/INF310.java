@@ -27,14 +27,23 @@ public class INF310 {
       
       BST ArbolBin = new BST();
       
-      ArbolBin.insertar(-45);
-     
+      ArbolBin.insertar(10);
+      ArbolBin.insertar(5);
+      ArbolBin.insertar(30);
+      ArbolBin.insertar(20);
+      ArbolBin.insertar(60);
+      ArbolBin.insertar(15);
+      ArbolBin.insertar(25);
+      ArbolBin.insertar(50);
+      ArbolBin.insertar(70);
+      ArbolBin.insertar(40);
+      
+      ArbolBin.remove(30);
+      
+      
       ArbolBin.Inorder();
-      
-      
-      
-      ArbolBin.Inorder();
-
+      ArbolBin.PostOrder();
+      ArbolBin.PreOrder();
       
     }
     
