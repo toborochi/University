@@ -5,6 +5,12 @@
  */
 package inf310;
 
+import Estructuras.Arboles.BST;
+import Estructuras.Listas.Lista;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 
 /**
  *
@@ -15,7 +21,20 @@ public class INF310 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+      BufferedReader reader =  
+                   new BufferedReader(new InputStreamReader(System.in));
+      
+      BST ArbolBin = new BST();
+      
+      ArbolBin.insertar(-45);
+     
+      ArbolBin.Inorder();
+      
+      
+      
+      ArbolBin.Inorder();
+
       
     }
     
