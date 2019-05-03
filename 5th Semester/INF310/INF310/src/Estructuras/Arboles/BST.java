@@ -150,6 +150,15 @@ public class BST {
         }
     }   
     
+    private boolean isHoja(Nodo p,int x){
+        if(p == null)
+            return false;
+        if(p.getData() == x){
+            return p.cantidadHijos()== 0;
+        }
+        return isHoja(p.getHI(), x) || isHoja(p.getHD(), x);
+    }
+    
     private boolean isHoja(Nodo u){
         return (u!=null && u.cantidadHijos()==0);
     }
@@ -202,6 +211,17 @@ public class BST {
         return x;
     }
     
+    public int cantGajos(int nodo){
+        return cantGajos(buscar(Raiz, nodo));
+    }
+    
+    private int cantGajos(Nodo p){
+        if(p == null)
+            return 0;
+        int c = p.cantidadHijos();
+        return cantGajos(p.getHI()) + cantGajos(p.getHD()) + c;
+    }
+    
     private Nodo buscar(Nodo u,int dato){
         if(u!=null){
             if(u.getData()>dato)
@@ -220,5 +240,13 @@ public class BST {
             return ((temp.getHD()!=null && temp.getHD().getData()==h)||(temp.getHI()!=null && temp.getHI().getData()==h));
         }
         return false;
+    }
+    
+    public void delHoja(int dato){
+        Nodo tmp = buscar(Raiz, dato);
+        if(isHoja(tmp)){
+            remove(dato);
+        }
+            
     }
 }

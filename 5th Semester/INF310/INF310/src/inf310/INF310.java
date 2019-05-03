@@ -34,9 +34,9 @@ public class INF310 {
           ArbolBin.insertar(x);
       }
       
-      
-        System.out.println(ArbolBin.isPadre(50,50));
-        System.out.println(ArbolBin.cantLadder());
+      ArbolBin.Inorder();
+      ArbolBin.delHoja(50);
+      ArbolBin.Inorder();
       
     }
     

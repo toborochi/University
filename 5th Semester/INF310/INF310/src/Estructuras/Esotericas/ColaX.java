@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Estructuras.Arboles;
+package Estructuras.Esotericas;
 
 /**
  *
  * @author Asus
  */
-public class Arbol {
+public class ColaX {
     
 }
