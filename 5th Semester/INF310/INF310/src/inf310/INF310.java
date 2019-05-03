@@ -6,6 +6,7 @@
 package inf310;
 
 import Estructuras.Arboles.BST;
+import Estructuras.Esotericas.ColaX;
 import Estructuras.Listas.Lista;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -25,18 +26,19 @@ public class INF310 {
       BufferedReader reader =  
                    new BufferedReader(new InputStreamReader(System.in));
       
-      BST ArbolBin = new BST();
+        ColaX c = new ColaX();
+        
+  
+        c.add(1);
+        c.add(2);
+        c.add(33);
+
+        c.add(2);
+        c.add(2);
+        c.mostrar();
       
-      int nodos = Integer.parseInt(reader.readLine());
+
       
-      for(int i=0;i<nodos;++i){
-          int x = Integer.parseInt(reader.readLine());
-          ArbolBin.insertar(x);
-      }
-      
-      ArbolBin.Inorder();
-      ArbolBin.delHoja(50);
-      ArbolBin.Inorder();
       
     }
     
