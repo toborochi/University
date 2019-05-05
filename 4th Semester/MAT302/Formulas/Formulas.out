@@ -39,14 +39,21 @@
 \BOOKMARK [2][-]{subsection.3.1}{Distribuciones de Muestreo}{section.3}% 39
 \BOOKMARK [2][-]{subsection.3.2}{Estad\355stico}{section.3}% 40
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Desigualdad de Chebyshev}{subsection.3.2}% 41
-\BOOKMARK [1][-]{section.4}{Estimaci\363n Estad\355stica}{}% 42
-\BOOKMARK [2][-]{subsection.4.1}{Estimaci\363n Puntual}{section.4}% 43
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Propiedades}{subsection.4.1}% 44
-\BOOKMARK [2][-]{subsection.4.2}{Sesgo y Error Cuadr\341tico Medio de un Estimador \(ECM\)}{section.4}% 45
-\BOOKMARK [2][-]{subsection.4.3}{Estimaci\363n por Intervalo}{section.4}% 46
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Estimaci\363n por Intervalo de la Media Poblacional}{subsection.4.3}% 47
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Estimaci\363n por Intervalo de la diferencia o suma de Medias}{subsection.4.3}% 48
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Estimaci\363n por Intervalo para Proporciones}{subsection.4.3}% 49
-\BOOKMARK [1][-]{section.5}{Miscel\341neo}{}% 50
-\BOOKMARK [2][-]{subsection.5.1}{Interpolaci\363n}{section.5}% 51
-\BOOKMARK [2][-]{subsection.5.2}{Desigualdades}{section.5}% 52
+\BOOKMARK [2][-]{subsection.3.3}{Distribuci\363n de Muestreo de la diferencia o suma de las medias}{section.3}% 42
+\BOOKMARK [2][-]{subsection.3.4}{Distribuci\363n de la proporci\363n muestral}{section.3}% 43
+\BOOKMARK [1][-]{section.4}{Estimaci\363n Estad\355stica}{}% 44
+\BOOKMARK [2][-]{subsection.4.1}{Estimaci\363n Puntual}{section.4}% 45
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Propiedades}{subsection.4.1}% 46
+\BOOKMARK [2][-]{subsection.4.2}{Sesgo y Error Cuadr\341tico Medio de un Estimador \(ECM\)}{section.4}% 47
+\BOOKMARK [2][-]{subsection.4.3}{Estimaci\363n por Intervalo}{section.4}% 48
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Estimaci\363n por Intervalo de la Media Poblacional}{subsection.4.3}% 49
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Estimaci\363n por Intervalo de la diferencia o suma de Medias}{subsection.4.3}% 50
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Estimaci\363n por Intervalo para Proporciones}{subsection.4.3}% 51
+\BOOKMARK [2][-]{subsection.4.4}{Relaci\363n entre el error de Estimaci\363n \(E\) y el riesgo de estimaci\363n \(\)}{section.4}% 52
+\BOOKMARK [2][-]{subsection.4.5}{Relaci\363n entre el error de estimaci\363n \(E\) y el tama\361o de la muestra \(n\)}{section.4}% 53
+\BOOKMARK [3][-]{subsubsection.4.5.1}{En la distribuci\363n de la media muestral}{subsection.4.5}% 54
+\BOOKMARK [3][-]{subsubsection.4.5.2}{En la distribuci\363n de la proporci\363n muestral}{subsection.4.5}% 55
+\BOOKMARK [1][-]{section.5}{Prueba de Hip\363tesis}{}% 56
+\BOOKMARK [1][-]{section.6}{Miscel\341neo}{}% 57
+\BOOKMARK [2][-]{subsection.6.1}{Tabla: Coeficientes de Confianza o valores cr\355ticos \(1-2\)}{section.6}% 58
+\BOOKMARK [2][-]{subsection.6.2}{Interpolaci\363n}{section.6}% 59

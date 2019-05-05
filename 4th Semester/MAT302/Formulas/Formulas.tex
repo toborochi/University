@@ -18,6 +18,7 @@
 \usepackage{mathtools}
 \usepackage{pstricks}
 \usepackage{pgfplots}
+\usepackage{enumitem}
 \usepackage{tikz}
 \usepackage{calc}
 \usepackage{ifthen}
@@ -499,6 +500,16 @@ Algunas distribuciones de Muestreo:
 $$
 P(|x-\mu|<k\sigma) \geq 1-\dfrac{1}{k^2} \hspace{0.5cm};k\in \mathbb{R^+}
 $$
+\subsection{Distribución de Muestreo de la diferencia o suma de las medias}
+\begin{enumerate}[label=\Roman*)]
+  \item $z=\dfrac{(\bar{x}\pm\bar{y})-(\mu_x\pm\mu_y)}{\sqrt{\dfrac{\sigma_{x}^2}{n_1}+\dfrac{\sigma_{y}^2}{n_2}}}$
+  \item $t=\dfrac{(\bar{x}\pm\bar{y})-(\mu_x\pm\mu_y)}{\sqrt{\dfrac{(n_1-1)\hat{S}_x^2+(n_2-1)\hat{S}_y^2}{n_1 + n_2 - 2}\left( \dfrac{1}{n_1}+\dfrac{1}{n_2} \right) }}$ \\
+  \begin{itemize}
+  \item $r = n_1 +n_2 -2$ \textbf{g.l.}
+  \end{itemize}
+  \item $\sigma_x^2 \simeq S_x^2 \wedge \sigma_y^2 \simeq S_y^2$
+\end{enumerate}
+\subsection{Distribución de la proporción muestral}
 \section{Estimación Estadística}
 \begin{center}
  \begin{tabular}{|c|c|}
@@ -569,7 +580,76 @@ $ECM(\hat{\theta}) = E\big[ (\hat{\theta}-\theta)^2 \big]=V(\hat{\theta}) + \Big
   \item $\beta = \sqrt{\dfrac{\hat{p_1}(1-\hat{p_1})}{n_1}+\dfrac{\hat{p_2}(1-\hat{p_2})}{n_2}} $
    \end{itemize}
 \end{enumerate}
+\subsection{Relación entre el error de Estimación $(E)$ y el riesgo de estimación $(\alpha)$}
+$$
+E = |\hat{\theta}-\theta| \hspace{1cm} z = \dfrac{\hat{\theta}-\theta}{\sigma_{\hat{\theta}}}
+$$
+$$
+-z_{1-\dfrac{\alpha}{2}} \leq z \leq z_{1-\dfrac{\alpha}{2}} \Leftrightarrow E < z_{1-\dfrac{\alpha}{2}} \cdot \sigma_{\hat{\theta}}
+$$
+\subsection{Relación entre el error de estimación $(E)$ y el tamaño de la muestra $(n)$}
+\subsubsection{En la distribución de la media muestral}
+$$
+E = |\bar{x}-\mu| \Rightarrow n \geq \left( \dfrac{z_{1-\dfrac{\alpha}{2}}\cdot\sigma}{E}\right)^2$$
+\subsubsection{En la distribución de la proporción muestral}
+\begin{multicols}{3}
+\begin{itemize}
+\item $n=\dfrac{z_{1-\dfrac{\alpha}{2}}^2\cdot p\cdot q}{E^2}$
+\end{itemize}
+Población Infinita
+\columnbreak
+\begin{itemize}
+\item $n=\dfrac{z_{1-\dfrac{\alpha}{2}}^2}{4E^2}$
+\end{itemize}
+$q = p = 0.5 $
+\columnbreak
+\begin{itemize}
+\item $n=\dfrac{N\cdot z_{1-\dfrac{\alpha}{2}}^2 \cdot p\cdot q}{(N-1)E^2 + z_{1-\dfrac{\alpha}{2}}^2 \cdot p\cdot q}$
+\end{itemize}
+Población Finita
+\end{multicols}
+\section{Prueba de Hipótesis}
+\begin{multicols}{3}
+\begin{itemize}
+\item $H_0\geq \\ H_1 <$
+\end{itemize}
+Cola Inferior
+\columnbreak
+\begin{itemize}
+\item $H_0\leq \\ H_1 >$
+\end{itemize}
+Cola Superior
+\columnbreak
+\begin{itemize}
+\item $H_0= \\ H_1 \neq $
+\end{itemize}
+Doble Cola
+\end{multicols}
+\subsubsection*{Valores Críticos}
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+$\alpha$ & 0.10 & 0.05 & 0.01 & 0.005 & 0.002 \\ 
+\hline 
+Una Cola & $\pm 1.28$ & $\pm 1.64$ & $\pm 2.33$ & $\pm 2.58$& $\pm 2.88$ \\ 
+\hline 
+Dos Colas & $\pm 1.64$ & $\pm 1.96$ & $\pm 2.58$ & $\pm 2.81$ & $\pm 3.08$\\ 
+\hline
+\end{tabular}
+ \end{center} 
 \section{Misceláneo}
+\subsection{Tabla: Coeficientes de Confianza o valores críticos $(1-\frac{\alpha}{2})$}
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline 
+$1-\alpha$ & 0.9973 & 0.99 & 0.98 & 0.96 & 0.9545 & 0.95 & 0.90 & 0.68 \\ 
+\hline 
+$100(1-\alpha)\%$ & 99.73 & 99 & 98 & 96 & 95.45 & 95 & 90 & 68 \\ 
+\hline 
+$z_{1-\frac{\alpha}{2}}$ & 3.00 & 2.58 & 2.33 & 2.05 & 2.00 & 1.96 & 1.64 & 1.00 \\ 
+\hline
+\end{tabular}
+ \end{center} 
 \subsection{Interpolación}
 $$
 \begin{tabular}{|c|c|}
@@ -588,5 +668,4 @@ $c$ & $y$ \\
 \hspace{0.5cm}
 \dfrac{a-c}{b-c}=\dfrac{x-y}{\lambda-y}
 $$
-\subsection{Desigualdades}
 \end{document}
