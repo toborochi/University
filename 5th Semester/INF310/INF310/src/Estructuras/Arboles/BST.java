@@ -81,9 +81,9 @@ public class BST {
             } else {
                 // Nodo con dos hijos
                 // Uno a la derecha y pura izquierda
-                int minValue = ValorMinimo(root.getHD());
-                root.setData(minValue);
-                root.setHD(remove(root.getHD(), minValue));
+                int valorMinimo = ValorMinimo(root.getHD());
+                root.setData(valorMinimo);
+                root.setHD(remove(root.getHD(), valorMinimo));
             } 
             n--;
         }
@@ -321,6 +321,23 @@ public class BST {
            res=p.getPeso()+CostoHoja(p.getHD(),u);
            
            return res;
+       }
+       
+       
+       public void descentientes(int dato){
+           descendientes(buscar(Raiz,dato), dato);
+           System.out.println();
+       }
+       
+       public void descendientes(Nodo u,int dato){
+           if(u==null)return; 
+           
+           
+           descendientes(u.getHI(),dato);
+           if(u.getData()!=dato){
+               System.out.print(u.getData()+" ");
+           }
+           descendientes(u.getHD(),dato);
        }
     
     
