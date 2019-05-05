@@ -2,7 +2,7 @@ Schedule
 
 | Subjects                      | Code   | Professor              |
 | ----------------------------- |:------:| ---------------------- |
-| Operation Research 1          | MAT302 | Jose Sanchez Hervaz    |
+| Operation Research 1          | MAT329 | Jose Sanchez Hervaz    |
 | Data Structures II            | INF310 | Gino Barroso           |
 | Graphics Programming          | INF312 | Miguel Peinado         |
 | Assembler                     | INF221 | Vallet Vallet Corrado  |
