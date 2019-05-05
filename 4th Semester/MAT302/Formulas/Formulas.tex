@@ -27,10 +27,8 @@
 \usepackage{svg}
 \usepackage{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-\author{Leonardo H. Añez Vladimirovna\\
-\texttt{toborochi98@outlook.com}
-}
-\title{Fórmulas de Probabilidad y Estadística II \texttt{(MAT302)}\\{\normalsize Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones}\\{\normalsize Universidad Autónoma Gabriel René Moreno}}
+\author{Leonardo H. Añez Vladimirovna \footnote{Para cualquier cambio, observación y/o sugerencia pueden enviarme un mensaje al siguiente correo: \texttt{toborochi98@outlook.com}}}
+\title{Fórmulas de Probabilidad y Estadística II \texttt{(MAT302)}\footnote{Esta es una recopilación de las formulas utilizadas en la materia, sin teoría.}\\{\normalsize Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones}\\ \vspace{-0.025cm}\normalsize Universidad Autónoma Gabriel René Moreno}}
  \pgfplotsset{compat=1.16}
 \begin{document}
 \maketitle
@@ -478,7 +476,20 @@ $$
 \noindent$\bigstar$ Manejo de la Tabla:
 $$P(X\leq c) = 1-\alpha \text{ ó } P(X\leq F_{1-\alpha}(r_1,r_2))=1-\alpha$$
 \subsubsection{Distribución T-Student $(t)$}
-
+$$
+f(t)=\dfrac{\Gamma\left( \dfrac{r+1}{2}\right)}{\Gamma\left(\dfrac{r}{2}\right)\sqrt{\pi r}}\left(1+ \dfrac{t^2}{r}\right)^{-\dfrac{r+1}{2}}, t\in \mathbb{R}
+$$
+\subsubsection*{Propiedades}
+\begin{itemize}
+\item $X \sim t(r) \Rightarrow
+\begin{cases}
+E(x)=0&,\forall r>1 \\
+V(x)=\dfrac{r}{r-2}&,\forall r>2 \\
+D(x) = \sqrt{\dfrac{r}{r-2}}&,\forall r>2
+\end{cases}
+$
+\item $P(T\leq c)=1-\alpha$ (Tabla)
+\end{itemize}
 \section{Muestreo}
 \subsection{Distribuciones de Muestreo}
 Algunas distribuciones de Muestreo:
@@ -512,6 +523,20 @@ $$
   \item $\sigma_x^2 \simeq S_x^2 \wedge \sigma_y^2 \simeq S_y^2$
 \end{enumerate}
 \subsection{Distribución de la proporción muestral}
+\begin{enumerate}[label=\Roman*)]
+  \begin{multicols}{2}
+  \item $z=\dfrac{\hat{p}-p}{\sqrt{\dfrac{p(1-p)}{n}}}$ \\ \vspace{0.5cm} \\
+  $z=\dfrac{\hat{p}-p}{\sqrt{\dfrac{p(1-p)}{n}}\left(\dfrac{N-n}{N-1}\right)}$
+  \begin{itemize}
+  \item $\hat{p}=\dfrac{x}{n}$
+  \item $E(\hat{p})=\mu_{\hat{p}}=p$
+  \item $V(\hat{p})=\sigma_{\hat{p}}^2=\dfrac{p(1-p)}{n}$
+  \end{itemize}
+  \columnbreak
+  \item $z=\dfrac{(\hat{p_1}-\hat{p_2})-(p_1-p_2)}{\sqrt{\dfrac{p_1(1-p_1)}{n_1}+\dfrac{p_2(1-p_2)}{n_2}}}$ \\ \vspace{0.5cm} \\
+  $z=\dfrac{(\hat{p_1}-\hat{p_2})-(p_1-p_2)}{\sqrt{\dfrac{p_1(1-p_1)}{n_1}\left( \dfrac{N_1-n_1}{N_1-1}\right) +\dfrac{p_2(1-p_2)}{n_2}\left( \dfrac{N_2-n_2}{N_2-1}\right) }}$
+  \end{multicols}
+\end{enumerate}
 \section{Estimación Estadística}
 \begin{center}
  \begin{tabular}{|c|c|}
