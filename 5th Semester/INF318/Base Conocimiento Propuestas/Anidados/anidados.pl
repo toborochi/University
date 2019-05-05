@@ -64,6 +64,24 @@ cicloJ4(N,I,J):- mostrar(I,J),
 % 5. tablaFactoresPrimos(n): Procedimiento que muestra la
 % tabla de multiplicar de n con factores primos.
 
+primo(N):- primo(N,2).
+primo(N,I):- I > N // 2.
+primo(N,I):- N mod I =\= 0,
+I1 is I+1,
+primo(N,I1).
+				
+tablaFactoresPrimos:- read(N),cicloI5(N,2).
+
+cicloI5(N,I):- I>N,!.
+cicloI5(N,I):- cicloJ5(N,I,2),
+				I1 is I+1,
+				cicloI5(N,I1).
+				
+cicloJ5(N,_,J):- J>N,!.
+cicloJ5(_,I,J):- primo(I),primo(J),mostrar(I,J).
+cicloJ5(N,I,J):-
+				J1 is J+1,
+				cicloJ5(N,I,J1).
 
 % 6. tablaIguales(n) : Procedimiento que muestra la tabla de 
 % multiplicar de n con factores iguales. Implementar 2 algoritmos con T(n) = n2 y T(n) = n.
@@ -79,6 +97,21 @@ cicloJ6(N,_,J):- J>N,!.
 cicloJ6(_,J,J):- mostrar(J,J).
 cicloJ6(N,I,J):- J1 is J+1,
 				cicloJ6(N,I,J1).
+				
+% 7. tablaResultadoPrimo(n) : Procedimiento que muestra la tabla de 
+% multiplicar de n, tales que el resultado de la multiplicación sea un primo.
+			
+tablaResultadoPrimo:- read(N),cicloI7(N,2).
+
+cicloI7(N,I):- I>N,!.
+cicloI7(N,I):- cicloJ7(N,I,1),
+				I1 is I+1,
+				cicloI7(N,I1).
+				
+cicloJ7(N,_,J):- J>N,!.
+cicloJ7(_,I,J):- P is I*J , primo(P), mostrar(I,J).
+cicloJ7(N,I,J):- J1 is J+1,
+				cicloJ7(N,I,J1).
 				
 % 8. tablaSinRepetición(n) : Procedimiento que muestra la tabla de multiplicar de 
 % n, tales que no se repitan la permutación o conmutatividad de factores.
