@@ -5,6 +5,9 @@
  */
 package Estructuras.Arboles;
 
+import Estructuras.Listas.Lista;
+import java.nio.file.Files;
+
 /**
  *
  * @author Asus
@@ -23,8 +26,12 @@ public class BST {
     }
     
     public void insertar(int dato){
+        insertar(dato,0);
+    }
+    
+    public void insertar(int dato,int peso){
         if(Raiz==null){
-            Raiz = new Nodo(dato);
+            Raiz = new Nodo(dato,0);
         }else{
             Nodo Anterior = null;
             Nodo Actual   = Raiz;
@@ -38,7 +45,7 @@ public class BST {
                     else return;  //Salir. x ya está en el árbol.
             }
             
-            Nodo Nuevo = new Nodo(dato);
+            Nodo Nuevo = new Nodo(dato,peso);
             
             if (dato < Anterior.getData()) 
                 Anterior.setHI(Nuevo);
@@ -249,4 +256,72 @@ public class BST {
         }
             
     }
+    
+    public int getNodoPeso(int peso){
+        return getNodoPesoRec(Raiz,peso,0);
+    }
+    
+    private int getNodoPesoRec(Nodo u,int peso,int cur){
+        // Caso Base
+        if(u==null || cur>peso)return 0;
+        // Si encontramos el nodo, con un peso actual de 'cur' lo devolvemos
+        if(cur==peso)return u.getData(); else
+        {
+            int a,b; a=b=0;
+            if(u.getHI()!=null){
+                a = getNodoPesoRec(u.getHI(),peso,cur+u.getHI().getPeso());
+            }
+            if(u.getHD()!=null){
+                b = getNodoPesoRec(u.getHD(),peso,cur+u.getHD().getPeso());
+            }
+            if(a>0)return a;
+            if(b>0)return b;
+            
+        }
+        return 0;
+    }
+    
+    
+    public int getHoja(int costo){
+        return getHoja(Raiz,costo);
+    }
+    public int getHoja(Nodo p,int costo){
+        if(p==null)
+            return 0;
+        if(costo==CostoHoja(p.getData()))
+            return p.getData();
+        else{
+            
+            int HI=getHoja(p.getHI(),costo);
+            int HD=getHoja(p.getHD(),costo);
+          
+            if(HI>0)
+                return HI;
+              if(HD>0)
+                return HD;
+        }
+        return 0;
+    }
+    public int CostoHoja(int x){
+        return CostoHoja(Raiz,x);
+    
+    }
+       public int CostoHoja(Nodo p,int u){
+           int res=0;
+           if(buscar(Raiz, u)==null)
+               return -1;
+           
+           if(u==p.getData()){
+               res=p.getPeso();
+               return res;
+           }
+           if(u<p.getData())
+           res=p.getPeso()+CostoHoja(p.getHI(),u);
+            else
+           res=p.getPeso()+CostoHoja(p.getHD(),u);
+           
+           return res;
+       }
+    
+    
 }

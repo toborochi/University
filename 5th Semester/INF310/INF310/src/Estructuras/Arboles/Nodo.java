@@ -11,6 +11,7 @@ package Estructuras.Arboles;
  */
 public class Nodo {
     private int Data;
+    private int Peso;
     private Nodo HI;
     private Nodo HD;
     
@@ -19,8 +20,23 @@ public class Nodo {
     }
     
     public Nodo(int Data){
+        Peso =0;
         this.Data = Data;
         HI = HD = null;
+    }
+    
+    public Nodo(int Data,int Peso){
+        this.Data = Data;
+        HI = HD = null;
+        this.Peso = Peso;
+    }
+    
+    public void setPeso(int Peso){
+        this.Peso = Peso;
+    }
+    
+    public int getPeso(){
+        return Peso;
     }
     
     public void setData(int Data){
