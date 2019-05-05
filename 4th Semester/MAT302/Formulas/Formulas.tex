@@ -502,7 +502,9 @@ P(|x-\mu|<k\sigma) \geq 1-\dfrac{1}{k^2} \hspace{0.5cm};k\in \mathbb{R^+}
 $$
 \subsection{Distribución de Muestreo de la diferencia o suma de las medias}
 \begin{enumerate}[label=\Roman*)]
-  \item $z=\dfrac{(\bar{x}\pm\bar{y})-(\mu_x\pm\mu_y)}{\sqrt{\dfrac{\sigma_{x}^2}{n_1}+\dfrac{\sigma_{y}^2}{n_2}}}$
+  \item $z=\dfrac{(\bar{x}\pm\bar{y})-(\mu_x\pm\mu_y)}{\sqrt{\dfrac{\sigma_{x}^2}{n_1}+\dfrac{\sigma_{y}^2}{n_2}}}\hspace{1cm}
+  z=\dfrac{(\bar{x}\pm\bar{y})-(\mu_x\pm\mu_y)}{\sqrt{\dfrac{\sigma_{x}^2}{n_1}\left(\dfrac{N_1-n_1}{N_1 - 1}\right)  +\dfrac{\sigma_{y}^2}{n_2}}\left(\dfrac{N_2-n_2}{N_2 - 1}\right)}  
+  $
   \item $t=\dfrac{(\bar{x}\pm\bar{y})-(\mu_x\pm\mu_y)}{\sqrt{\dfrac{(n_1-1)\hat{S}_x^2+(n_2-1)\hat{S}_y^2}{n_1 + n_2 - 2}\left( \dfrac{1}{n_1}+\dfrac{1}{n_2} \right) }}$ \\
   \begin{itemize}
   \item $r = n_1 +n_2 -2$ \textbf{g.l.}
