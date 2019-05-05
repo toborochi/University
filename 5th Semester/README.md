@@ -2,9 +2,9 @@ Schedule
 
 | Subjects                      | Code   | Professor              |
 | ----------------------------- |:------:| ---------------------- |
-| Operation Research            | MAT302 | Cáceres Chacón Braulio |
-| Data Structures II            | INF220 | Mario Winnipeg         |
-| Graphics Programming          | INF312 | Obed Hinojosa          |
+| Operation Research 1          | MAT329 | Jose Sanchez Hervaz    |
+| Data Structures II            | INF310 | Gino Barroso           |
+| Graphics Programming          | INF312 | Miguel Peinado         |
 | Assembler                     | INF221 | Vallet Vallet Corrado  |
-| Logic and Fun. Programming    | MAT205 | Antonio Gianella       |
+| Logic and Fun. Programming    | INF318 | Edwin Vargas Yapura    |
 | Formal Languages & Automatas  | FIS200 | Carlos Miranda         |
