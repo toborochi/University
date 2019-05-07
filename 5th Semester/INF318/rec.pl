@@ -40,3 +40,10 @@ pell(N,R):- N1 is N-2,
 			pell(N2,R2),
 			R is (R1+R2).
 			
+rev(N,R,RR):- N < 10, RR is (R*10+N),!.
+rev(N,R,RR):- 
+				N1 is (N//10),
+				R1 is (R*10+(N mod 10)),
+				rev(N1,R1,RR).
+			  
+			
