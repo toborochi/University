@@ -1,3 +1,11 @@
 # University
 
-I'm a student at [Gabriel René Moreno Autonomous University](https://en.wikipedia.org/wiki/Universidad_Aut%C3%B3noma_Gabriel_Ren%C3%A9_Moreno) in the [Faculty of Computer Science and Telecomunications](https://es.wikipedia.org/wiki/Facultad_de_Ingenier%C3%ADa_en_Ciencias_de_la_Computaci%C3%B3n_y_Telecomunicaciones_(UAGRM)). I will try to upload most of my Projects, Codes and some doped Things.:godmode:
+I'm a student at [Gabriel René Moreno Autonomous University](https://en.wikipedia.org/wiki/Universidad_Aut%C3%B3noma_Gabriel_Ren%C3%A9_Moreno) in the [Faculty of Computer Science and Telecomunications](https://es.wikipedia.org/wiki/Facultad_de_Ingenier%C3%ADa_en_Ciencias_de_la_Computaci%C3%B3n_y_Telecomunicaciones_(UAGRM)).Currently studying Informatic Engineering. I will try to upload most of my Projects, Codes and some doped Things.:godmode:
+
+If you are interested, this is my study plan:
+
+| Physics I   | Calculus I            | Discrete Structures    | Informatic introduction | Technical English I   |
+|-------------|-----------------------|------------------------|-------------------------|-----------------------|
+| Physics II  | Calculus II           | Linear Algebra         | Programming I           |  Technical English II |
+| Physics III | Diferential Equations | Computers Architecture |                         |                       |
+|             |                       |                        |                         |                       |
