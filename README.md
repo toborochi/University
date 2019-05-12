@@ -4,8 +4,8 @@ I'm a student at [Gabriel René Moreno Autonomous University](https://en.wikiped
 
 If you are interested, this is my study plan:
 
-| Physics I   | Calculus I            | Discrete Structures    | Informatic introduction | Technical English I   |
-|-------------|-----------------------|------------------------|-------------------------|-----------------------|
-| Physics II  | Calculus II           | Linear Algebra         | Programming I           |  Technical English II |
-| Physics III | Diferential Equations | Computers Architecture |                         |                       |
-|             |                       |                        |                         |                       |
+|           I           |           II           |           III          | IV | V | VI | VII | VIII | IX | X |
+|:---------------------:|:----------------------:|:----------------------:|:--:|:-:|:--:|:---:|:----:|:--:|:-:|
+|       Physics I       |       Physics II       |       Physics III      |    |   |    |     |      |    |   |
+|       Calculus I      |       Calculus II      |  Diferential Equations |    |   |    |     |      |    |   |
+|  Technicall English I |  Technicall English II |                        |    |   |    |     |      |    |   |
