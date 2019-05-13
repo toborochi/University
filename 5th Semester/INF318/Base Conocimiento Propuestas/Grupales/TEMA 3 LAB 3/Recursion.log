@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  28 APR 2019 09:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  12 MAY 2019 20:17
 entering extended mode
 **./Recursion.tex
 (Recursion.tex
@@ -1009,47 +1009,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--131
  []
 
 (p14a.py) (p14b.py) (p14c.pl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
+Overfull \hbox (38.62796pt too wide) in paragraph at lines 142--188
+[][] [] []
+ []
+
+
+Overfull \hbox (11.24821pt too wide) in paragraph at lines 142--188
+[] [] \OT1/cmr/m/n/10 'x1': 50.0, 'x2': 50.0, 'max':
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 142.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
+(babel)             in language  on input line 190.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
  (Recursion.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
 Package rerunfilecheck Info: File `Recursion.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
  ) 
 Here is how much of TeX's memory you used:
  10292 strings out of 493305
  145239 string characters out of 3130237
- 407447 words of memory out of 3000000
+ 407446 words of memory out of 3000000
  13451 multiletter control sequences out of 15000+200000
  12639 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1063,7 +1072,7 @@ grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Asus/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/
 Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb
 >
-Output written on Recursion.pdf (5 pages, 132727 bytes).
+Output written on Recursion.pdf (5 pages, 133957 bytes).
 PDF statistics:
  289 PDF objects out of 1000 (max. 8388607)
  200 named destinations out of 1000 (max. 500000)
