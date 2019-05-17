@@ -69,7 +69,7 @@ Es la sucesión vacía de símbolos de $\Sigma$ y se denota por: $\lambda$.
 \item $\Sigma^* = \Sigma^+ \cup \{\lambda\}$
 \item $\Sigma^+ = \Sigma^* - \{\lambda\}$
 \end{itemize}
-\subsubsection{Cantidad de Ocurrencias}
+\subsection{Cantidad de Ocurrencias}
 Sea $w\in\Sigma^*$, denotamos por $|w|_\sigma$ al número de ocurrencias del símbolo $\sigma$ en la palabra $w$.
 \subsubsection{Ejemplo(s)}
 $$\Sigma = \{ a,b \} $$
@@ -80,7 +80,7 @@ $$\Sigma = \{ a,b \} $$
 \item $\Sigma_1 =\Sigma = \{a,b\}$
 \item $\Sigma^2 = \{ ab,aa,ba,bb \}$
 \end{itemize}
-\subsubsection{Concatenación}
+\subsection{Concatenación}
 Sea $u,v\in\Sigma^*$ tal que $u=\sigma_1\sigma_2\ldots\sigma_n, v=\epsilon_1\epsilon_2\ldots\epsilon_n$. La concatenación de $u$ y $v$ se define por:
 $$uv=\sigma_1\sigma_2\ldots\sigma_n \epsilon_1\epsilon_2\ldots\epsilon_n$$
 \subsubsection{Definición de Recurrencia}
@@ -93,16 +93,43 @@ $$
 $$
 \subsubsection{Ejemplo(s)}
 \begin{align*}
-u=abab & uv=ababbba \\
-v=bba  & vu=bbaabab
+u=abab & \text{ } &uv=ababbba \\
+v=bba  & \text{ } & vu=bbaabab
 \end{align*}
-\subsubsection{Definiciones}
+\subsubsection{Propiedades}
 \begin{itemize}
 \item $uv\neq vu$
 \item $(uv)w=u(vw)$
 \item $u\lambda=\lambda u=u$
 \item $|uv|=|u|+|v|$
 \item $|uv|_a = |u|_a + |v|_a$
+\end{itemize}
+\subsection{Inversa}
+Si $w=\sigma_1,\sigma_2,\ldots ,\sigma_n \in\Sigma^n$ entonces $w'=\sigma_n,\sigma_{n-1},\ldots ,\sigma_1$ se llama inversa o transpuesta de $w$.
+\subsubsection*{Definición de Recurrencia}
+$$':\Sigma^*\rightarrow\Sigma^*$$
+$$
+\begin{cases}
+\lambda'=\lambda \\
+(wa)' = aw'
+\end{cases}
+$$
+\subsection{Potencia de una Palabra}
+$$w^n =  \underbrace{ww\ldots w}_{n-veces}$$
+\subsubsection*{Definición de Recurrencia}
+$$':\Sigma^*\rightarrow\Sigma^*$$
+$$
+\begin{cases}
+w^0=\lambda \\
+w^{n+1} = ww^{n}
+\end{cases}
+$$
+\subsubsection{Propiedades}
+\begin{itemize}
+\item $|w^n| = n|w|$
+\item $w^m w^n = w^{m+n}$
+\item $(w^n)^m = w^{mn}$
+\item $\lambda^n = \lambda$
 \end{itemize}
 \subsection{Principio de Inducción para $\Sigma^*$}
 Sea $L$ un conjunto de palabras sobre $\Sigma$ con las propiedades:
@@ -113,4 +140,32 @@ Sea $L$ un conjunto de palabras sobre $\Sigma$ con las propiedades:
 \item $w\in L \wedge a\in\Sigma \Rightarrow wa \in L$
 \end{enumerate}
 \subsubsection{Entonces}
-$L=\Sigma^*$, es decir, todas las palabras sobre $\Sigma$ están en $L$.
+$L=\Sigma^*$, (es decir, todas las palabras sobre $\Sigma$ están en $L$.)
+\subsection{Lenguajes}
+Un lenguaje sobre $\Sigma$ es un subconjunto de $\Sigma^*$
+\subsubsection{Operaciones}
+Recordemos que ya conocemos otras operaciones (Unión, Intersección, Diferencia y Complemento), para esta materia tenemos las siguientes:
+\begin{itemize}
+\item Concatenación \\ ${ }$ \\
+Sea $A,B \subseteq \Sigma^*$ \\
+$$AB =\{ w\in\Sigma^* / w=xy, x\in A, y\in B \}$$
+\item Transposición \\ ${ }$ \\
+Sea $A\subseteq \Sigma^*$ \\
+$$A'=\{ w'\in \Sigma^* /w\in A\} $$
+\item Estrella de Kleene \\ ${ }$ \\
+Sea $A\subseteq \Sigma^*$ \\
+$$A^* = \{w\in\Sigma^* / w=w_1 w_2 \ldots w_n \text{ para algún } k\in\mathbb{N} \text{ y para algunas }w_1,w_2,\ldots,w_k \in A\}$$
+\end{itemize}
+\subsection{Expresiones Regulares}
+Las expresiones regulares (ER) sobre un alfabeto ($\Sigma$) son las palabras sobre el alfabeto $\Sigma \cup {\color{red}\{ ), (, \emptyset, \cup,*\}}$ tal que cumple lo siguiente:
+\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\theenumi}{\textbf{\arabic {enumi}.)}}%
+\begin{enumerate}
+\item {\color{red}$\emptyset$} y cada símbolo de $\Sigma$ es una ER.
+\item Si $\alpha$ y $\beta$ son ER entonces {\color{red}(}$\alpha\beta${\color{red})} es una ER.
+\item Si $\alpha$ y $\beta$ son ER entonces {\color{red}(}$\alpha{\color{red}\cup}\beta${\color{red})} es una ER.
+\item Si $\alpha$ es una ER entonces $\alpha^{{\color{red}*}}$ es una ER.
+\item Nada mas es una ER a menos que provenga de \textbf{(1.)} a \textbf{(4.)}
+\end{enumerate}
+\subsection{Módulos}
+\subsection{Máquinas}
