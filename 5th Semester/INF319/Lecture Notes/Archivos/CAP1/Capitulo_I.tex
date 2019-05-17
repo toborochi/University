@@ -304,3 +304,26 @@ Una máquina se puede interpretar como un dispositivo que en determinados instan
 \caption{ssi: $f(s_i,\sigma)=s_j \wedge g(s_i,\sigma)=\delta$ }
 \end{figure}
 \end{itemize}
+\subsubsection{Comportamiento Dinámico}
+Sea $M=(k,\Sigma,\Delta,f,g)$ una máquina: \\
+\begin{center}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[] (s_0) {$s_0$};
+\node[] (s_1) at (2,0) {$s_1$};
+\node[] (s_2) at (4,0) {$s_2$};
+\node[] (sus) at (6,0) {$\cdots$};
+\node[] (s_k) at (8,0) {$s_k$};
+
+\node[] (t_0) at (0,1) {$t_0$};
+\node[] (t_1) at (2,1) {$t_1$};
+\node[] (t_2) at (4,1) {$t_2$};
+\node[] (tsus) at (6,1) {$\cdots$};
+\node[] (t_k) at (8,1) {$t_k$};
+
+\path[->,line width=0.25mm] (s_0) edge node[] {$\sigma_0/\delta_0$} (s_1);
+\path[->,line width=0.25mm] (s_1) edge node[] {$\sigma_1/\delta_1$} (s_2);
+\path[->,line width=0.25mm] (s_2) edge node[] {$\sigma_2/\delta_2$} (sus);
+\path[->,line width=0.25mm] (sus) edge node[] {$\sigma_{k-1}/\delta_{k-1}$} (s_k);
+%\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
+\end{tikzpicture}
+\end{center}

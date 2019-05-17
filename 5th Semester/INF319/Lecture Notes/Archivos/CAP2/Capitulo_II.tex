@@ -1,0 +1,39 @@
+\chapter{Autómatas}
+\section{Autómata Finito Determinístico (AFD)}
+\subsection{Definición}
+Un Autómata Finito Determinístico (AFD) es una quintupla $M=(k,\Sigma,f,s_0,F)$ donde:
+\begin{itemize}
+\item $k$ conjunto finito no vacio, \textit{conjunto de estados}
+\item $\Sigma$ conjunto finito no vacio, \textit{Alfabeto}
+\item $f:k\times\Sigma\rightarrow k$ , \textit{Funcion de transicion}
+\item $s_0\in k$, \textit{Estado inicial}
+\item $F\subseteq k$, \textit{Conjunto de estados finales}
+\end{itemize}
+\subsection{Intepretación}
+\subsection{Representación}
+\subsection{Configuración}
+Sea $M=(k,\Sigma,\delta,s_0,F)$ un AFD. \\ $ { } $ \\ 
+Una configuración de $M$ es un elemento de $k\times\Sigma^*$
+\subsection{Relación }
+\section{Autómata Finito no Determinístico (AFN)}
+\subsection{Definición}
+Un autómata Finito no Deterministico (AFN) es una quintupla $M=(k,\Sigma,\Delta,s,F)$ donde:
+\section{Equivalencia entre una AFD y un AFN}
+\subsubsection{Teorema}
+Para cada AFN existe un AFD equivalente.
+\subsubsection{$\bigstar$ Prueba}
+Sea $M=(k,\Sigma,\Delta,s,F)$ un AFN
+\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\theenumi}{\textbf{\roman{enumi}.)}}
+\begin{enumerate}
+\item Construimos $M' = (k',\Sigma,\Delta',s',F')$ eliminando todas las aristas de $M$ que:
+$$
+(q,u,q')\in \Delta \hspace{0.5cm}\wedge\hspace{0.5cm} |u|>1
+$$
+Si $u=\sigma_1\sigma_2\ldots\sigma_k, k>1$ entonces añadimos $p_1,p_2,\ldots,p_{k-1}$ estados y las nuevas transiciones:
+$$
+(q,\sigma_1,p_1),(p_1,\sigma_2,p_2),\ldots,(p_{k-1},\sigma_k,q')
+$$
+a $\Delta$ para $u$ tal que $|u|>1$.
+\item Construimos $M''=(k'',\Sigma,\delta'',s'',F'')$
+\end{enumerate}
