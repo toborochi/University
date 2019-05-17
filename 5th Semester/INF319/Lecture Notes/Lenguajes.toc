@@ -28,5 +28,10 @@
 \contentsline {subsection}{\numberline {1.2.9}Lenguajes}{8}{subsection.1.2.9}
 \contentsline {subsubsection}{Operaciones}{8}{section*.19}
 \contentsline {subsection}{\numberline {1.2.10}Expresiones Regulares}{8}{subsection.1.2.10}
-\contentsline {subsection}{\numberline {1.2.11}M\IeC {\'o}dulos}{8}{subsection.1.2.11}
-\contentsline {subsection}{\numberline {1.2.12}M\IeC {\'a}quinas}{8}{subsection.1.2.12}
+\contentsline {subsection}{\numberline {1.2.11}M\IeC {\'o}dulos}{9}{subsection.1.2.11}
+\contentsline {subsubsection}{Comportamiento Din\IeC {\'a}mico}{9}{section*.25}
+\contentsline {subsubsection}{Funci\IeC {\'o}n Estado Terminal}{9}{section*.26}
+\contentsline {subsubsection}{$\diamond $ Notas}{9}{section*.27}
+\contentsline {subsection}{\numberline {1.2.12}M\IeC {\'a}quinas}{10}{subsection.1.2.12}
+\contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{10}{section*.28}
+\contentsline {subsubsection}{Representaci\IeC {\'o}n}{10}{section*.29}

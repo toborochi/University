@@ -167,5 +167,140 @@ Las expresiones regulares (ER) sobre un alfabeto ($\Sigma$) son las palabras sob
 \item Si $\alpha$ es una ER entonces $\alpha^{{\color{red}*}}$ es una ER.
 \item Nada mas es una ER a menos que provenga de \textbf{(1.)} a \textbf{(4.)}
 \end{enumerate}
+\subsubsection*{Ejemplo(s)}
+Para $\Sigma = \{ a,b \}$ podemos formar:
+\begin{align*}
+{{\color{red}\emptyset}}\\
+a\\
+b\\
+{{\color{red}(}}ab{{\color{red})}}\\
+{{\color{red}(}}a{\color{red}\cup}b{{\color{red})}}\\
+{{\color{red}(}}{\color{red}(}ab{\color{red})}{\color{red}\cup}b{{\color{red})}}\\
+{{\color{red}(}}ba{{\color{red})^*}}\\
+{\color{red}((}ba{\color{red})^*\cup(}a{\color{red}\cup}b{\color{red}))^*}
+\end{align*}
+\subsubsection*{Lenguaje Regular}
+Un lenguaje es regular ssi es generado por una expresión regular.
 \subsection{Módulos}
+\subsubsection*{Definición}
+Un módulo es una tripleta $D=(k,\Sigma,f)$ donde:
+\begin{itemize}
+\item $k$ es un conjunto finito no vacío, \textit{llamado conjunto de estados}
+\item $\Sigma$ es un conjunto finito no vacío, \textit{llamado alfabeto}
+\item $f:k\times\Sigma\rightarrow k$, \textit{llamado función de transición}
+\end{itemize}
+\subsubsection*{Interpretación}
+Un módulo se puede interpretar como un dispositivo que en determinados instantes de tiempo recibe señales (símbolos del alfabeto), que producen cambios en su configuración interna.
+\begin{center}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[] (q_0) {${ }$};
+\node[state,rectangle] (q_1) at (2,0) {$s\in k$};
+
+\path[->,line width=0.25mm] (q_0) edge node[] {$\sigma\in\Sigma$} (q_1);
+%\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
+\end{tikzpicture}
+\end{center}
+\subsubsection*{Representación}
+\begin{itemize}
+\item \textbf{Tabla de Transición}
+\item \textbf{Grafo} \\
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[state] (q_0) {$s_i$};
+\node[state] (q_1) at (3,0) {$s_j$};
+
+\path[->,line width=0.25mm] (q_0) edge node[] {$\sigma$} (q_1);
+%\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
+\end{tikzpicture}
+\caption{ssi: $f(s_i,\sigma)=s_j$}
+\end{figure}
+\end{itemize}
+\subsubsection{Comportamiento Dinámico}
+Sea $D=(k,\sigma,f)$ un módulo: \\
+\begin{center}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[] (s_0) {$s_0$};
+\node[] (s_1) at (2,0) {$s_1$};
+\node[] (s_2) at (4,0) {$s_2$};
+\node[] (sus) at (6,0) {$\cdots$};
+\node[] (s_k) at (8,0) {$s_k$};
+
+\node[] (t_0) at (0,1) {$t_0$};
+\node[] (t_1) at (2,1) {$t_1$};
+\node[] (t_2) at (4,1) {$t_2$};
+\node[] (tsus) at (6,1) {$\cdots$};
+\node[] (t_k) at (8,1) {$t_k$};
+
+\path[->,line width=0.25mm] (s_0) edge node[] {$\sigma_0$} (s_1);
+\path[->,line width=0.25mm] (s_1) edge node[] {$\sigma_1$} (s_2);
+\path[->,line width=0.25mm] (s_2) edge node[] {$\sigma_2$} (sus);
+\path[->,line width=0.25mm] (sus) edge node[] {$\sigma_{k-1}$} (s_k);
+%\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
+\end{tikzpicture}
+\end{center}
+\subsubsection{Función Estado Terminal}
+Sea $D=(k,\sigma,f)$ un módulo: \\${ }$\\
+Una función de Estado Terminal del módulo $D$ es una única función:
+$$
+\widehat{f}:k\times\Sigma \rightarrow k \text{ tal que } \forall s\in k, w\in\Sigma^* , \sigma\in\Sigma
+$$
+$$
+\begin{cases}
+\widehat{f}(s,\lambda)=s \\
+\widehat{f}(s,\sigma w)= \widehat{f}\left[ f(s,\sigma),w\right]
+\end{cases}
+$$
+\subsubsection{$\diamond$ Notas}
+\begin{itemize}
+\item $w=\lambda$
+$$
+{\color{red}\widehat{f}(s,\sigma)}=\widehat{f}(s,\sigma\lambda)=\widehat{f}\left[ f(s,\sigma),\lambda\right]={\color{red}f(s,\sigma)}
+$$
+\item $\forall w\in\Sigma^*$
+$$
+f:k \rightarrow k \text{ tal que: } f_w(s)=\widehat{f}(s,w)
+s
+$$
+\end{itemize}
+
 \subsection{Máquinas}
+Una máquina es una quíntupla $M=(k,\Sigma,\Delta,f,g)$ donde:
+\begin{itemize}
+\item $k$ es un conjunto finito no vacío, \textit{llamado conjunto de estados}
+\item $\Sigma$ es un conjunto finito no vacío, \textit{llamado alfabeto de entrada}
+\item $\Delta$ es un conjunto finito no vacío, \textit{llamado alfabeto de salida}
+\item $f:k\times\Sigma\rightarrow k$, \textit{llamado función de transición}
+\item $g:k\times\Sigma\rightarrow \Delta$, \textit{llamado función de salida}
+\end{itemize}
+\subsubsection{Interpretación}
+Una máquina se puede interpretar como un dispositivo que en determinados instantes de tiempo recibe señales (símbolos de entrada) que producen cambios en su configuración interna y emiten señales (símbolos de salida).
+\begin{center}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[] (q_0) {${ }$};
+\node[state,rectangle] (q_1) at (2,0) {$s\in k$};
+\node[] (q_2) at (4,0) {${ }$};
+
+\path[->,line width=0.25mm] (q_0) edge node[] {$\sigma\in\Sigma$} (q_1);
+\path[->,line width=0.25mm] (q_1) edge node[] {$\delta\in\Delta$} (q_2);
+%\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
+\end{tikzpicture}
+\end{center}
+\subsubsection{Representación}
+\begin{itemize}
+\item \textbf{Tabla de Transición}
+\item \textbf{Grafo} \\
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[state] (q_0) {$s_i$};
+\node[state] (q_1) at (3,0) {$s_j$};
+
+\path[->,line width=0.25mm] (q_0) edge node[] {$\sigma/\delta$} (q_1);
+%\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
+\end{tikzpicture}
+\caption{ssi: $f(s_i,\sigma)=s_j \wedge g(s_i,\sigma)=\delta$ }
+\end{figure}
+\end{itemize}
