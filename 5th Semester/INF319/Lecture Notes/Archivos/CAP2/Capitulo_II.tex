@@ -14,10 +14,26 @@ Un Autómata Finito Determinístico (AFD) es una quintupla $M=(k,\Sigma,f,s_0,F)
 \subsection{Configuración}
 Sea $M=(k,\Sigma,\delta,s_0,F)$ un AFD. \\ $ { } $ \\ 
 Una configuración de $M$ es un elemento de $k\times\Sigma^*$
-\subsection{Relación }
+\subsubsection{Relación $\sststile{M}{\hspace{0.25cm}  \hspace{0.25cm}}$}
+Sea $(q,w)$ y $(q',w')$ dos configuraciones\footnote{$\sststile{M}{\hspace{0.25cm} \hspace{0.25cm}}$ se lee \textit{''conduce a''} en un paso.}:
+$$
+(q,w)\sststile{M}{\hspace{0.25cm} \hspace{0.25cm}} (q',w')\Leftrightarrow w = \sigma w' \text{ para algun } \sigma\in\Sigma \text{ y } \delta(q,\sigma)=q'
+$$
+\subsubsection{Lenguaje Aceptado por M}
+\begin{align*}
+L(M) = & \{ w\in\Sigma^* / M \text{ acepta } w\} \\
+L(M) = & \{ w\in\Sigma^* / (s,w) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q,\lambda) \wedge q\in F\}
+\end{align*}
 \section{Autómata Finito no Determinístico (AFN)}
 \subsection{Definición}
 Un autómata Finito no Deterministico (AFN) es una quintupla $M=(k,\Sigma,\Delta,s,F)$ donde:
+\begin{itemize}
+\item $k:$ conjunto finito no vacio
+\item $\Sigma:$ conjunto finito no vacio
+\item $\Delta:$ es un subconjunto finito de $k\times\Sigma^* \times k$
+\item $s\in k$
+\item $F\subseteq k$
+\end{itemize}
 \section{Equivalencia entre una AFD y un AFN}
 \subsubsection{Teorema}
 Para cada AFN existe un AFD equivalente.
@@ -35,5 +51,41 @@ $$
 (q,\sigma_1,p_1),(p_1,\sigma_2,p_2),\ldots,(p_{k-1},\sigma_k,q')
 $$
 a $\Delta$ para $u$ tal que $|u|>1$.
-\item Construimos $M''=(k'',\Sigma,\delta'',s'',F'')$
+\item Construimos $M''=(k'',\Sigma,\delta'',s'',F'')$\\
+La idea clave es considerar que un AFN en un determinando instante se encuentra en un conjunto de estados:
+\begin{itemize}
+\item $k'' = \Sigma^{k'}$
+\item $F''=\{ Q \subseteq k' / Q \cap F' \neq \emptyset \}$
+\end{itemize}
 \end{enumerate}
+Formalmente:
+$$
+E(q)=\{p\in k' / (q,\lambda)\sststile{M'}{\hspace{0.25cm} * \hspace{0.25cm}} (p,\lambda) \}
+$$
+Equivalentemente:
+$$
+E(q)=\{p\in k' / (q,w)\sststile{M'}{\hspace{0.25cm} * \hspace{0.25cm}} (p,w) \}
+$$
+Donde:
+\begin{itemize}
+\item $s'' = E(s')$
+\item $\forall Q\subseteq k' \wedge \text{ para cada símbolo }\sigma \in \Sigma$
+\end{itemize}
+Ademas:
+$$
+\delta''(Q,\sigma)=\cup \{ E(p): p\in k' \wedge (q,\sigma,p)\in\Delta', \exists q\in Q \}
+$$
+Afirmamos que $\forall w\in\Sigma^*$ y $\forall p,q\in k'$:
+$$
+(q,w)\sststile{M'}{\hspace{0.25cm} * \hspace{0.25cm}}(p,\lambda)\Leftrightarrow (E(q),w) \sststile{M''}{\hspace{0.25cm} * \hspace{0.25cm}} (P,\lambda)
+$$
+\textbf{p.d.} $M'\approx M''$ \\
+\textbf{p.d.} $L(M')=L(M'')$
+
+\begin{align*}
+w \in L(M') & \Leftrightarrow (s',w) \sststile{M'}{\hspace{0.25cm} * \hspace{0.25cm}} (q,\lambda), q\in F' \\
+& \Leftrightarrow	(E(s'),w) \sststile{M''}{\hspace{0.25cm} * \hspace{0.25cm}} (Q,\lambda)\\
+& \Leftrightarrow (s'',w) \sststile{M''}{\hspace{0.25cm} * \hspace{0.25cm}} (Q,\lambda), Q\in F'' \\
+& \Leftrightarrow  w\in L(M'')
+\end{align*}
+$\therefore L(M')=L(M'')$
