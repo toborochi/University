@@ -202,7 +202,22 @@ Un módulo se puede interpretar como un dispositivo que en determinados instante
 \end{center}
 \subsubsection*{Representación}
 \begin{itemize}
-\item \textbf{Tabla de Transición}
+\item \textbf{Tabla de Transición} \\
+
+\begin{figure}[h]
+\centering
+\begin{tabular}{|c|cccccc|}
+    \hline
+    \backslashbox{$k$}{\vspace{0.1pt}\\$\Sigma$} & $\sigma_1$ & $\sigma_1$ & $\cdots$ & $\sigma_j$ & $\cdots$ & $\sigma_m$\\ \hline
+                $s_1$             &      &  &   &$\vdots$&&\\ 
+                $s_2$             &      &  &  &$\vdots$&& \\ 
+                $\vdots$             &      & &  & $\vdots$ &&\\ 
+                $s_i$             &   $\cdots$   & $\cdots$  &$\cdots$  &$s_k$&&\\ 
+                $\vdots$             &      &  &  &&& \\ 
+                $s_n$             &      &  &  && &\\ \hline
+\end{tabular} 
+\caption{$s_k = f(s_i,\sigma_j)$}
+\end{figure}
 \item \textbf{Grafo} \\
 
 \begin{figure}[h]
@@ -266,6 +281,7 @@ $$
 \end{itemize}
 
 \subsection{Máquinas}
+\subsubsection{Definición}
 Una máquina es una quíntupla $M=(k,\Sigma,\Delta,f,g)$ donde:
 \begin{itemize}
 \item $k$ es un conjunto finito no vacío, \textit{llamado conjunto de estados}
@@ -289,7 +305,21 @@ Una máquina se puede interpretar como un dispositivo que en determinados instan
 \end{center}
 \subsubsection{Representación}
 \begin{itemize}
-\item \textbf{Tabla de Transición}
+\item \textbf{Tabla de Transición} \\
+\begin{figure}[h]
+\centering
+\begin{tabular}{|c|cccccc|}
+    \hline
+    \backslashbox{$k$}{\vspace{0.1pt}\\$\Sigma$} & $\sigma_1$ & $\sigma_1$ & $\cdots$ & $\sigma_j$ & $\cdots$ & $\sigma_m$\\ \hline
+                $s_1$             &      &  &   &$\vdots$&&\\ 
+                $s_2$             &      &  &  &$\vdots$&& \\ 
+                $\vdots$             &      & &  & $\vdots$ &&\\ 
+                $s_i$             &   $\cdots$   & $\cdots$  &$\cdots$  &$s_k/\delta_k$&&\\ 
+                $\vdots$             &      &  &  &&& \\ 
+                $s_n$             &      &  &  && &\\ \hline
+\end{tabular} 
+\caption{$s_k = f(s_i,\sigma_j)\hspace{0.5cm}g(s_1,\sigma_j)=\delta_k$}
+\end{figure}
 \item \textbf{Grafo} \\
 
 \begin{figure}[h]
@@ -301,7 +331,7 @@ Una máquina se puede interpretar como un dispositivo que en determinados instan
 \path[->,line width=0.25mm] (q_0) edge node[] {$\sigma/\delta$} (q_1);
 %\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
 \end{tikzpicture}
-\caption{ssi: $f(s_i,\sigma)=s_j \wedge g(s_i,\sigma)=\delta$ }
+\caption{ssi: $f(s_i,\sigma)=s_j \hspace{0.5cm} g(s_i,\sigma)=\delta$ }
 \end{figure}
 \end{itemize}
 \subsubsection{Comportamiento Dinámico}
@@ -327,3 +357,35 @@ Sea $M=(k,\Sigma,\Delta,f,g)$ una máquina: \\
 %\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
 \end{tikzpicture}
 \end{center}
+\subsubsection{Función Estado Terminal}
+Sea $M=(k,,\Sigma,\Delta,f,g)$ una máquina.
+\begin{enumerate}
+\item Una función de Estado Terminal de $M$ es la función de estado terminal:
+$$
+\widehat{f}: k\times\Sigma^* \rightarrow k \text{ del módulo } (k,\Sigma,f)
+$$
+\item Una función palabra de salida de $M$ es una única función:
+$$
+\overline{g}:k\times\Sigma^*\rightarrow\Delta^* \text{ tal que }\forall s\in k,\sigma\in\Sigma, w\in\Sigma^*
+$$
+$$
+\begin{cases}
+\overline{g}(s,\lambda)&=\lambda \\
+\overline{g}(s,\sigma w)&= g(s,\sigma)\overline{g} \big[ f(s,\sigma),w \big]
+\end{cases}
+$$
+\end{enumerate}
+\subsubsection{$\diamond$ Notas}
+\begin{itemize}
+\item $w=\lambda$
+$$
+{\color{red}\overline{g}(s,\sigma)}=
+\overline{g}(s,\sigma\lambda)=
+g(s,\sigma)\underbrace{\overline{g} \big[ f(s,\sigma),\lambda \big]}_{\lambda}=g(s,\sigma)\lambda =
+{\color{red}g(s,\sigma)}
+$$
+\item $\forall s\in k$
+$$
+g_s:\Sigma^*\rightarrow\Delta^* \text{ tal que } g_s(w)=\overline{g}(s,w)
+$$
+\end{itemize}
