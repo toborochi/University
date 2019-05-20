@@ -52,3 +52,5 @@
 \contentsline {section}{\numberline {2.3}Equivalencia entre una AFD y un AFN}{14}{section.2.3}
 \contentsline {subsubsection}{Teorema}{14}{section*.36}
 \contentsline {subsubsection}{$\bigstar $ Prueba}{14}{section*.37}
+\contentsline {section}{\numberline {2.4}Propiedades de los Lenguajes Aceptados por AF's}{15}{section.2.4}
+\contentsline {subsubsection}{Prueba}{15}{section*.39}

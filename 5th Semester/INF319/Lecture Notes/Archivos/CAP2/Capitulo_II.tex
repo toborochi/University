@@ -89,3 +89,63 @@ w \in L(M') & \Leftrightarrow (s',w) \sststile{M'}{\hspace{0.25cm} * \hspace{0.2
 & \Leftrightarrow  w\in L(M'')
 \end{align*}
 $\therefore L(M')=L(M'')$
+\section{Propiedades de los Lenguajes Aceptados por AF's}
+\subsubsection*{Teorema}
+La clase de Lenguajes aceptados por AF's es cerrada bajo la:
+\begin{itemize}
+\item Unión
+\item Concatenación
+\item Estrella de Kleene
+\item Complementación
+\item Intersección
+\end{itemize}
+\subsubsection{Prueba}
+Sean $L(M_1)$ y $L(M_2)$ lenguajes aceptados por $M_1=(k_1,\Sigma,\Delta_1,s_1,F_1)$ y $M_1=(k_2,\Sigma,\Delta_2,s_2,F_2)$:
+\begin{enumerate}[label=\textbf{\alph*)}]
+
+\item \textbf{Unión} \\ ${ }$\\
+Construimos $M=(k,\Sigma,\Delta,s,F)$ tal que: $L(M)=L(M_1)\cup L(M_2)$ \\
+Donde:
+\begin{itemize}
+\item $k=k_1 \cup k_2 \cup \{ s\}$ \\
+	donde $s$ es un nuevo estado (inicial).
+\item $\Delta=\Delta_1 \cup \Delta_2 \cup \{ (s,\lambda,s_1),(s,\lambda,s_2)\}$
+\item $s:$ nuevo estado añadido
+\item $F=F_1 \cup F_2$
+\end{itemize}
+
+\item \textbf{Concatenación} \\ ${ }$\\
+Construimos $M=(k,\Sigma,\Delta,s,F)$ tal que: $L(M)=L(M_1)L(M_2)$ \\
+Donde:
+
+\begin{itemize}
+\item $k=k_1 \cup k_2$ 
+\item $\Delta=\Delta_1 \cup \Delta_2 \cup (F_1\times\{ \lambda \}\times \{ s_2\})$
+\item $s=s_1$
+\item $F=F_2$
+\end{itemize}
+\item \textbf{Estrella de Kleene} \\ ${ }$\\
+Construimos $M=(k,\Sigma,\Delta,s,F)$ tal que: $L(M)=L(M_1)^* $\\
+Donde:
+\begin{itemize}
+\item $k=k_1 \cup \{ s_1' \}$ \\
+donde $s_1'$ es un nuevo estado (\textit{inicial y terminal}).
+\item $\Delta=\Delta_1 \cup (F \times\{ \lambda \}\times \{ s_1\})$
+\item $s=s_1'$
+\item $F=F_1\cup\{ s_1' \}$
+\end{itemize}
+\item \textbf{Complementación} \\ ${ }$\\
+Sea $M=(k,\Sigma,\delta,s,F)$ un \textbf{AFD}. \\
+Donde:
+$$
+\Sigma^* - L(M) \text{ es aceptado por } \overline{M}=(k,\Sigma,\delta,s,k-F)
+$$
+\item \textbf{Intersección} \\ ${ }$\\
+Sea:
+\begin{align*}
+L_1 \cap L_2 =& \overline{\overline{L_1 \cap L_2}} \\
+		 =& \overline{\overline{L_1}\cup\overline{L_2}} \\
+		 =& \underbrace{\Sigma^* - \underbrace{[ \underbrace{(\Sigma^* - L_1)}_{1}\cup \underbrace{(\Sigma^* -L_2)}_{2} ]}_{3}}_{4}
+\end{align*}
+Notese que en $1,2,3,4$ se puede ver que en cada operación al aplicarla se obtiene otro AF que puede ser nuevamente usada en la siguiente operación y así sucesivamente.
+\end{enumerate}
