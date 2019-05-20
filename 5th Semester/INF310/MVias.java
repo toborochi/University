@@ -36,4 +36,40 @@ public void add(int x)
 	}
 }
 
+public int cantNodos(){
+	return cantNodos(Raiz);
+}
 
+
+private int cantNodos(Nodo T){
+	if(T==null)
+		return 0;
+	else if (Hoja(T)){
+		return 1;
+	}else{
+		int ac=0;
+		for(int i=1;i<=NodoM.M;++i){
+			int h = cantNodos(T.getHijo(i)));
+			ac = ac+h;
+		}
+		return ac+1;
+		// ac = cantidad +1(padre)
+	}
+}
+
+
+private int cantHojas(Nodo T){
+	if(T==null)
+		return 0;
+	else if (Hoja(T)){
+		return 1;
+	}else{
+		int ac=0;
+		for(int i=1;i<=NodoM.M;++i){
+			int h = cantHojas(T.getHijo(i)));
+			ac = ac+h;
+		}
+		return ac;
+		// ac = cantidad +1(padre)
+	}
+}
