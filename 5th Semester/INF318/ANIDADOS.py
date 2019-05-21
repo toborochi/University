@@ -64,6 +64,28 @@ def tablaIguales(n):
 				if (i==j and j==k):
 					mostrar3(i, j, k)
 					
+def igual(a,b,c):
+	if(a==b and b==c and c==a):
+		return True
+	else:
+		return False
+
+def tablaIguales(n, i):
+	if (i <= n):
+		cj5(n, i, 1)
+		tablaIguales(n, i+1)
+
+def cj5(n, i, j):
+	if (j <= n):
+		ck5(n, i, j, 1)
+		cj5(n, i, j+1)
+
+def ck5(n, i, j, k):
+	if (k <= n):
+		if (igual(i, j, k)):
+			mostrar3(i, j, k)
+		ck5(n, i, j, k+1)
+					
 # tabla sin repeticion de permutacion ixjxk
 def tablaSinRepeticion(n):
         for i in range(1,n+1):
