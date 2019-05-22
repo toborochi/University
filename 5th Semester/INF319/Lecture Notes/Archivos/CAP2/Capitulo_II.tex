@@ -107,12 +107,35 @@ Sean $L(M_1)$ y $L(M_2)$ lenguajes aceptados por $M_1=(k_1,\Sigma,\Delta_1,s_1,F
 Construimos $M=(k,\Sigma,\Delta,s,F)$ tal que: $L(M)=L(M_1)\cup L(M_2)$ 
 
 \begin{center}
-\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
 \node[state,initial,initial text=] (q_0) at (2,3) {$s_1$};
-\node[] (q_0) at (3,2.25) {$F_1$};
-\node[state,accepting] (q_0) at (1.25,1.25) {};
-\node[state,accepting] (q_0) at (2.75,1.25) {};
-\draw [rounded corners=0.5cm] (0.5,0.5) rectangle ++(3,1.5) node [midway]{};
+\node[] (q_0) at (1,1.75) {$F_1$};
+\node[] (q_0) at (0,4.25) {$M_1$};
+\node[state,accepting] (q_0) at (1.25,1) {};
+\node[state,accepting] (q_0) at (2.75,1) {};
+\draw [rounded corners=0.5cm] (0.5,0.5) rectangle ++(3,1) node [midway]{};
+\draw [rounded corners=0.1cm] (0,0) rectangle ++(4,4) node [midway]{};
+\end{tikzpicture}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (2,3) {$s_2$};
+\node[] (q_0) at (1,1.75) {$F_2$};
+\node[] (q_0) at (0,4.25) {$M_2$};
+\node[state,accepting] (q_0) at (2,1) {};
+\draw [rounded corners=0.5cm] (0.5,0.5) rectangle ++(3,1) node [midway]{};
+\draw [rounded corners=0.1cm] (0,0) rectangle ++(4,4) node [midway]{};
+\end{tikzpicture}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (1,2.75) {$s$};
+\node[state] (q_1) at (3.25,3.25) {$s_1$};
+\node[state] (q_2) at (3.25,2.25) {$s_2$};
+\path[->,line width=0.25mm] (q_0) edge node[] {$\lambda$} (q_1);
+\path[->,line width=0.25mm] (q_0) edge node[] {$\lambda$} (q_2);
+\node[] (f) at (1,1.75) {$F$};
+\node[] (f1) at (0,4.25) {$M$};
+\node[state,accepting] (q_0) at (2,1) {};
+\node[state,accepting] (q_0) at (3,1) {};
+\node[state,accepting] (q_0) at (1,1) {};
+\draw [rounded corners=0.5cm] (0.5,0.5) rectangle ++(3,1) node [midway]{};
 \draw [rounded corners=0.1cm] (0,0) rectangle ++(4,4) node [midway]{};
 \end{tikzpicture}
 \end{center}
