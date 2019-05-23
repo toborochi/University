@@ -149,9 +149,45 @@ Donde:
 \end{itemize}
 
 \item \textbf{Concatenación} \\ ${ }$\\
-Construimos $M=(k,\Sigma,\Delta,s,F)$ tal que: $L(M)=L(M_1)L(M_2)$ \\
+Construimos $M=(k,\Sigma,\Delta,s,F)$ tal que: $L(M)=L(M_1)L(M_2)$ 
+\begin{center}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (1.5,2) {$s_1$};
+\node[] (q_0) at (2.25,3.5) {$F_1$};
+\node[] (q_0) at (0,4.25) {$M_1$};
+\node[state,accepting] (q_0) at (3,2) {};
+\node[state,accepting] (q_0) at (3,1) {};
+\node[state,accepting] (q_0) at (3,3) {};
+\draw [rounded corners=0.5cm] (2.5,0.5) rectangle ++(1,3) node [midway]{};
+\draw [rounded corners=0.1cm] (0,0) rectangle ++(4,4) node [midway]{};
+\end{tikzpicture}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (1.5,2) {$s_2$};
+\node[] (q_0) at (2.25,3.5) {$F_2$};
+\node[] (q_0) at (0,4.25) {$M_2$};
+\node[state,accepting] (q_0) at (3,2.5) {};
+\node[state,accepting] (q_0) at (3,1.5) {};
+\draw [rounded corners=0.5cm] (2.5,0.5) rectangle ++(1,3) node [midway]{};
+\draw [rounded corners=0.1cm] (0,0) rectangle ++(4,4) node [midway]{};
+\end{tikzpicture}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (1,2) {$s_1$};
+\node[] (q_0) at (4.25,3.5) {$F$};
+\node[] (q_0) at (0,4.25) {$M$};
+\node[state,accepting] (q_0) at (5,2.5) {};
+\node[state,accepting] (q_0) at (5,1.5) {};
+\node[state] (f_0) at (2,2) {};
+\node[state] (f_1) at (2,1) {};
+\node[state] (f_2) at (2,3) {};
+\node[state] (s_2) at (3.5,2) {$s_2$};
+\path[->,line width=0.25mm] (f_0) edge node[] {$\lambda$} (s_2);
+\path[->,line width=0.25mm] (f_1) edge node[] {$\lambda$} (s_2);
+\path[->,line width=0.25mm] (f_2) edge node[] {$\lambda$} (s_2);
+\draw [rounded corners=0.5cm] (4.5,0.5) rectangle ++(1,3) node [midway]{};
+\draw [rounded corners=0.1cm] (0,0) rectangle ++(6,4) node [midway]{};
+\end{tikzpicture}
+\end{center}
 Donde:
-
 \begin{itemize}
 \item $k=k_1 \cup k_2$ 
 \item $\Delta=\Delta_1 \cup \Delta_2 \cup (F_1\times\{ \lambda \}\times \{ s_2\})$
@@ -159,7 +195,35 @@ Donde:
 \item $F=F_2$
 \end{itemize}
 \item \textbf{Estrella de Kleene} \\ ${ }$\\
-Construimos $M=(k,\Sigma,\Delta,s,F)$ tal que: $L(M)=L(M_1)^* $\\
+Construimos $M=(k,\Sigma,\Delta,s,F)$ tal que: $L(M)=L(M_1)^* $
+\begin{center}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (2,2) {$s_1$};
+\node[] (q_0) at (4.25,3.5) {$F_1$};
+\node[] (q_0) at (0,4.25) {$M_1$};
+\node[state,accepting] (q_0) at (5,3) {};
+\node[state,accepting] (q_0) at (5,2) {};
+\node[state,accepting] (q_0) at (5,1) {};
+\draw [rounded corners=0.5cm] (4.5,0.5) rectangle ++(1,3) node [midway]{};
+\draw [rounded corners=0.1cm] (0,0) rectangle ++(6,4) node [midway]{};
+\end{tikzpicture}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state] (xx) at (3,0.5) {$s_1$};
+\node[] (q_0) at (0.75,3.5) {$F$};
+\node[] (q_0) at (0,4.25) {$M$};
+\node[state,accepting,initial,initial text=] (s_0) at (1.5,3) {$s_1'$};
+\node[state,accepting] (s_1) at (2.5,3) {};
+\node[state,accepting] (s_2) at (3.5,3) {};
+\node[state,accepting] (s_3) at (4.5,3) {};
+\path[->,line width=0.25mm] (s_0) edge node[swap] {$\lambda$} (xx);
+\path[->,line width=0.25mm] (s_1) edge node[swap] {} (xx);
+\path[->,line width=0.25mm] (s_2) edge node[swap] {$\lambda\hspace{0.4cm}\lambda$} (xx);
+\path[->,line width=0.25mm] (s_3) edge node[swap] {$\lambda$} (xx);
+\draw [rounded corners=0.5cm] (1,2.5) rectangle ++(4,1) node [midway]{};
+\draw [rounded corners=0.1cm] (0,0) rectangle ++(6,4) node [midway]{};
+\end{tikzpicture}
+\end{center}
+
 Donde:
 \begin{itemize}
 \item $k=k_1 \cup \{ s_1' \}$ \\
