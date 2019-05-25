@@ -1,0 +1,11 @@
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\bin\Debug\Tetris3D.exe.config
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\bin\Debug\Tetris3D.exe
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\bin\Debug\Tetris3D.pdb
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\bin\Debug\OpenTK.dll
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\bin\Debug\OpenTK.pdb
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\bin\Debug\OpenTK.xml
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\obj\Debug\Tetris3D.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\obj\Debug\Tetris3D.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\obj\Debug\Tetris3D.csproj.CopyComplete
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\obj\Debug\Tetris3D.exe
+C:\Users\Asus\source\repos\Tetris3D\Tetris3D\obj\Debug\Tetris3D.pdb

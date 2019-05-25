@@ -1,0 +1,12 @@
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\bin\Debug\Tetris3D Prograf.exe.config
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\bin\Debug\Tetris3D Prograf.exe
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\bin\Debug\Tetris3D Prograf.pdb
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\bin\Debug\OpenTK.dll
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\bin\Debug\OpenTK.pdb
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\bin\Debug\OpenTK.xml
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\obj\Debug\Tetris3D Prograf.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\obj\Debug\Tetris3D Prograf.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\obj\Debug\Tetris3D Prograf.csproj.CopyComplete
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\obj\Debug\Tetris3D Prograf.exe
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\obj\Debug\Tetris3D Prograf.pdb
+C:\Users\Asus\source\repos\Tetris3D Prograf\Tetris3D Prograf\bin\Debug\geometry3Sharp.dll
