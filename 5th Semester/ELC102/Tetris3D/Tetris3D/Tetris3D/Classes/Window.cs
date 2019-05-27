@@ -42,6 +42,7 @@ namespace Tetris3D.Classes
 
         void UpdateFrame(object o,EventArgs e)
         {
+            
             if (Keyboard.GetState().IsKeyDown(Key.Right))
             {
                 theta += 1;
