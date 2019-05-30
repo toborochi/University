@@ -247,3 +247,47 @@ L_1 \cap L_2 =& \overline{\overline{L_1 \cap L_2}} \\
 \end{align*}
 Notese que en $1,2,3,4$ se puede ver que en cada operación al aplicarla se obtiene otro AF que puede ser nuevamente usada en la siguiente operación y así sucesivamente.
 \end{enumerate}
+\subsection*{Teorema}
+Existen algoritmos para responder las siguientes preguntas acerca de Automatas Finitos:
+\begin{enumerate}[label=\textbf{\alph*)}]
+\item Dado un AF $M$ y una palabra $w$, ¿$w\in L(M)$?
+\item Dado un AF $M$, es ¿$L(M)=\emptyset$?
+\item Dado un AF $M$, es ¿$L(M)=\Sigma^*$?
+\item Dado 2 AF's $M_1$ y $M_2$ ,es ¿$L(M_1)\subseteq L(M_2)$?
+\item Dado 2 AF's $M_1$ y $M_2$ ,es ¿$L(M_1)= L(M_2)$?
+\end{enumerate}
+\subsection*{Prueba}
+\begin{enumerate}[label=\textbf{\alph*)}]
+\item Esto es lo que ya hemos ido haciendo.
+\item Simplemente nos basta analizar si el automata no acepta ninguna palabra.
+\item $M \rightarrow L(\bar{M})=\emptyset$ (Basta realizar el complemento del AF y ver que el lenguaje aceptado sea $\emptyset$). \textbf{(b)}
+\item $A\subseteq B \Leftrightarrow A \cap B ^C = \emptyset$
+\begin{center}
+\def\firstcircle{(0,0) circle (1.5cm)}
+\def\secondcircle{(0,0) circle (0.5cm)}
+\colorlet{circle edge}{black!100}
+\colorlet{circle area}{black!0}
+\tikzset{filled/.style={fill=circle area, draw=circle edge, thick}, outline/.style={draw=circle edge, thick}}
+
+
+\begin{tikzpicture}
+\draw [rounded corners=0.5cm] (-2,-2) rectangle ++(5,4) node [midway]{};
+    \draw[outline] \firstcircle node {$A$};
+    \draw[outline] \secondcircle node {};
+    \node at (0,-1) (nodeA) {$B$};
+     \node at (2,-1) (nodeA) {$B^C$};
+\end{tikzpicture}
+\end{center}
+$$
+L(M_1)\subseteq L(M_2) \Leftrightarrow L(M_1) \cap [\Sigma^* - L(M_2)] = \emptyset
+$$
+\item Realizamos la doble inclusión:
+$$
+L(M_1)\subseteq L(M_2) \wedge L(M_2)\subseteq L(M_1) \text{  \textbf{(d)}}
+$$
+\end{enumerate}
+
+
+\section{Automatas Finitos y Expresiones Regulares}
+\subsection*{Teorema}
+Un Lenguaje es regular ssi es aceptado por un Automata Finito.
