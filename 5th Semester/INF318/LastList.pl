@@ -1,86 +1,68 @@
-%1 insertPrim
-insertPrim([],X,[X]).
-insertPrim([X|L],E,[E,X|L]).
-%2 insertUlt
-insertUlt([],X,[X]).
-insertUlt([X|L],E,[X|L2]):- insertUlt(L,E,L2).
-%3 insertAsc
-insertAsc([],X,[X]).
-insertAsc([X|L],Y,[Y,X|L]):- Y<X, !.
-insertAsc([X|L],Y,[X|L2]):- insertAsc(L,Y,L2).
-%4 insertDesc
-insertDesc([],X,[X]).
-insertDesc([X|L],Y,[Y,X|L]):-Y>X, !.
-insertDesc([X|L],Y,[X|L2]):- insertDesc(L,Y,L2).
-%5 insertarIesimo
-insertIndex([],X,1,[X]):-!.
-insertIndex([X|L],Y,1,[Y,X|L]):-!.
-insertIndex([X|L],Y,P,[X|L2]):- P1 is P-1,
-insertIndex(L,Y,P1,L2).
-%6 eliminarPrim
-elimPrim([],[]).
-elimPrim([_|L],L).
-%7 eliminarUlt
-elimUlt([],[]).
-elimUlt([_],[]):-!.
-elimUlt([X|L],[X|L2]):- elimUlt(L,L2).
-%8 eliminarTodoX
-elimX([],_,[]):-!.
-elimX([X|L],X,L2):- elimX(L,X,L2).
-elimX([E|L],X,[E|L2]):- elimX(L,X,L2).
-%9 eliminarIesimo
-elimIndex([],_,[]).
-elimIndex([_|L],1,L):-!.
-elimIndex([X|L],P,[X|L2]):- P1 is P-1,
-elimIndex(L,P1,L2).
-%10 intercalar
-intercalar([],[],[]):-!.
-intercalar([],L,L):-!.
-intercalar(L,[],L):-!.
-intercalar([X|L1],[Y|L2],[X,Y|L]):- intercalar(L1,L2,L).
-%11 fusionar
-fusionar([],[],[]):-!.
-fusionar([],L,L):-!.
-fusionar(L,[],L):-!.
-fusionar([X|L1],L2,[X|L]):- fusionar(L1,L2,L).
-%12 separarParImpar
-par(A):- A mod 2 =:= 0.
-impar(A):- A mod 2 =:= 1.
-separarPi([],[],[]):-!.
-separarPi([],L,L):-!.
-separarPi(L,[],L):-!.
-separarPi([X|L1],[Y|L2],[X,Y|L]):- par(X), impar(Y),
-separarPi(L1,L2,L).
-separarPi([X|L1],[Y|L2],[Y,X|L]):- impar(X), par(Y),
-separarPi(L1,L2,L).
-separarPi([_|L1],[_|L2],L):- separarPi(L1,L2,L).
-%13 separarMenorMayor
-sepMenMayX([],_,[],[]):-!.
-sepMenMayX([],_,L,L):-!.
-sepMenMayX(L,_,[],L):-!.
-sepMenMayX([A|L1],X,[B|L2],[A,B|L]):- A=<X, X=<B,
-sepMenMayX(L1,X,L2,L).
-sepMenMayX([A|L1],X,[B|L2],[B,A|L]):- B=<X, X=<A,
-sepMenMayX(L1,X,L2,L).
-sepMenMayX([A|L1],X,[B|L2],[A,B|L]):- sepMenMayX(L1,X,L2,L).
-%14 reemplazar
-reemplazar([],_,_,[]):-!.
-reemplazar([X|L],X,Y,[Y|L2]):- reemplazar(L,X,Y,L2).
-reemplazar([E|L],X,Y,[E|L2]):- reemplazar(L,X,Y,L2).
-%15 interseccion
+% Distancia entre un conjunto de datos
+distancia(punto(X,Y),punto(X1,Y1),D):- D is sqrt((X-X1)*(X-X1)+(Y-Y1)*(Y-Y1)).
+
+distancia([P1,P2],Dist):- distancia(P1,P2,Dist).
+distancia([P1,P2|L1],Dist):- distancia(P1,P2,D1),	
+						     distancia([P2|L1],D2),
+							 Dist is D1+D2.
+% Menor distancia
+menor(A,B,A):- A<B,!.
+menor(_,B,B).
+							 
+menorDist([P1,P2],Dist):- distancia(P1,P2,Dist).
+menorDist([P1,P2|L1],Dist):- distancia(P1,P2,D1),
+						  distancia([P2|L1],D2),
+						  menor(D1,D2,Dist). 
+% Equidistantes
+
+equidistantes([]):-true.
+equidistantes([_,_]):-true.
+equidistantes([P1,P2,P3|L1]):- distancia(P1,P2,D1),
+							   distancia(P2,P3,D2),
+							   D1 =:= D2,
+							   equidistantes([P2,P3|L1]).
+							   
+equi([P1,P2],D):- distancia(P1,P2,D).
+
+totalViaje([],0).
+totalViaje([P],TV):- tiempo(P,TV).
+totalViaje([V1,V2|L],TV):- tiempo(V1,V2,T1),
+						   totalViaje(L,T2),	
+						   TV is T1+T2.
+
+tiempo(viaje(X,Y),T):- X < Y,T is Y-X.
+tiempo(viaje(X,Y),viaje(X1,Y1),T):- T is (Y-X)+(Y1-X1)+(X1-Y).
+
+validoE(viaje(X,Y)):- X < Y.
+validoE(viaje(X,Y),viaje(X1,Y1)):- X < Y, X1 < Y1 ,Y < X1.
+
+valido([]).
+valido([V]):- validoE(V).
+valido([V1,V2|L]):- validoE(V1,V2),
+					valido([V2|L]).
+
+tiempoViaje([],0).
+tiempoViaje([P],TV):- tiempo(P,TV).					
+tiempoViaje([V1|L],TV):- tiempoViaje([V1],T1),
+						 tiempoViaje(L,T2),
+						 TV is T1+T2.
+						 
+tiempoEspera([],0).
+tiempoEspera([_],0).
+tiempoEspera(L,T):- tiempoViaje(L,A),
+					totalViaje(L,B),
+					T is B-A.
+					
 pertenece([],_):-false.
 pertenece([X|_],X):-!.
 pertenece([_|L],E):- pertenece(L,E).
+
 interseccion([],[],[]):-!.
 interseccion([],_,[]):-!.
 interseccion(_,[],[]):-!.
 interseccion([X|L1],L2,[X|L]):- pertenece(L2,X),
 interseccion(L1,L2,L).
 interseccion([_|L1],L2,L):- interseccion(L1,L2,L).
-%16 index of
-index([],_,-1).
-index([X|_],X,1):-!.
-index([_|L],E,P):- index(L,E,P1),
-P1 > -1,
-P is P1+1.
-index(_,_,-1).
+
+esvacio([]).
+mismosPuntos(L1,L2):- interseccion(L1,L2,L),esvacio(L).
