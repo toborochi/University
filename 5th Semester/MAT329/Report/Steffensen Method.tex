@@ -1,0 +1,69 @@
+\documentclass[10pt,letterpaper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{empheq}
+\usepackage{svg}
+\usepackage{hyperref}
+\usepackage{hypcap}
+\usepackage[spanish,onelanguage,linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{titling}
+\pretitle{%
+  \begin{flushright}
+  \vspace{-9.5cm}
+%  \includegraphics[width=5cm,natwidth=472,natheight=531]{logo} \\[7cm]
+  \includegraphics[width=5cm]{logo} \\[6cm]
+  \end{flushright}
+  \begin{center}
+  \LARGE
+}
+\posttitle{\end{center}}
+\usepackage[left=4cm,right=2.5cm,top=3cm,bottom=4cm,includehead,includefoot,headheight=15pt]{geometry}
+\usepackage{setspace}
+\setstretch{0.99}
+\usepackage{fancyhdr}
+%\date{27 de Noviembre 2018}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % optional
+%\fancyhead[L]{\nouppercase{\leftmark} \hfill Section \nouppercase{\rightmark}}
+\fancyhead[L]{Método Simplex}
+\cfoot{\thepage}
+\pagestyle{fancy}
+\author{
+Leonardo Henry Añez Vladimirovna\\
+\texttt{Reg: 217002498}
+\and
+Sebastián Durán\\
+\texttt{Reg: 217050662}
+}
+\title{
+Investigación Operativa I (MAT329)\\ ${ }$\\
+\textbf{Aplicación del Método Simplex en la Panadería: ''Barrio Lindo''}
+\\ ${ }$\\
+\small Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones\\}
+
+\begin{document}
+\maketitle
+\section*{Problema}
+En este trabajo se plantea utilizar el Método Simplex en la resolución de un problema de Programación Lineal. Para realizar el analisis de producción de panes.
+\section*{Información Técnica}
+\section*{Modelo Matemático}
+El modelo matemático tendra el siguiente esquema:
+\subsection*{Variables}
+Las variables del trabajo serán las cantidades por tipos de pan que se venden y estarán representados por:
+$$
+x_1,x_2,x_3,x_4,\ldots,x_n
+$$
+\subsection*{Función Objetivo}
+La función objetivo estará dada de la  siguiente manera:
+$$
+z = Ax_1 + Bx_2 + Cx_3 + Dx_4 + Ex_5 + \cdot + Xx_n
+$$
+\subsection*{Restricciones}
+Las restricciones al problema serán las siguientes:
+\section*{Resultados}
+\section*{Conclusión}
+\end{document}

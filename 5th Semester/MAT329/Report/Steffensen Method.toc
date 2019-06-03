@@ -1,0 +1,2 @@
+\babel@toc {spanish}{}
+\contentsline {subsubsection}{Teorema}{\es@scroman {i}}{section*.6}
