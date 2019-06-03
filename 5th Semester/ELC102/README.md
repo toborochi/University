@@ -1,1 +1,5 @@
-![](https://raw.githubusercontent.com/toborochi/University/master/5th%20Semester/ELC102/Tetris3D/Ortho.png?token=AF3742VZKBHF2J2AKDIJH4S45L5QE)
+# Graphics Programming Course
+References:
+  * http://headerphile.com/uncategorized/opengl-matrix-operations/
+  * http://www.songho.ca/opengl/gl_anglestoaxes.html
+  * https://tetris.fandom.com/wiki/SRS
