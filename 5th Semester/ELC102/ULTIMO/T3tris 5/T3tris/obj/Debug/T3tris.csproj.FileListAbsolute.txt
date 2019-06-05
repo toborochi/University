@@ -1,0 +1,11 @@
+C:\Users\Asus\source\repos\T3tris\T3tris\bin\Debug\T3tris.exe.config
+C:\Users\Asus\source\repos\T3tris\T3tris\bin\Debug\T3tris.exe
+C:\Users\Asus\source\repos\T3tris\T3tris\bin\Debug\T3tris.pdb
+C:\Users\Asus\source\repos\T3tris\T3tris\bin\Debug\OpenTK.dll
+C:\Users\Asus\source\repos\T3tris\T3tris\bin\Debug\OpenTK.pdb
+C:\Users\Asus\source\repos\T3tris\T3tris\bin\Debug\OpenTK.xml
+C:\Users\Asus\source\repos\T3tris\T3tris\obj\Debug\T3tris.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\T3tris\T3tris\obj\Debug\T3tris.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\T3tris\T3tris\obj\Debug\T3tris.csproj.CopyComplete
+C:\Users\Asus\source\repos\T3tris\T3tris\obj\Debug\T3tris.exe
+C:\Users\Asus\source\repos\T3tris\T3tris\obj\Debug\T3tris.pdb
