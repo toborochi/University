@@ -291,3 +291,29 @@ $$
 \section{Automatas Finitos y Expresiones Regulares}
 \subsection*{Teorema}
 Un Lenguaje es regular ssi es aceptado por un Automata Finito.
+\subsubsection*{Prueba}
+\begin{enumerate}
+\item Supongamos que la propiedad se cumple para $\gamma$ tal que $|\gamma| < n$
+\end{enumerate}
+\section{Lenguajes no Regulares}
+\section{Gramáticas}
+\subsection{Definición}
+Una gramática Libre de Contexto es una cuádrupla $G=(V,\Sigma,E,S)$ donde:
+\begin{itemize}
+\item $G$ es un alfabeto.
+\item  $\Sigma$ es un subconjunto de $V$ (Conjunto de Símbolos Terminales)
+\item $S\in (V-\Sigma)$ (Símbolo Inicial)
+\item $R$ es un conjunto finito de $(V-\Sigma)\times V^*$ (Reglas)
+\end{itemize}
+\subsubsection{Notación}
+Para cada $A\in V-\Sigma \text{ , } w\in\Sigma^*$
+\subsubsection{Derivación}
+\subsubsection{Lenguaje Generado por $G$}
+\subsection{Gramáticas Regulares}
+\subsubsection{Definición}
+Una Gramática Libre de Contexto $G=(V,\Sigma,R,S)$ es regular ssi:
+$$
+R \subseteq (V-\Sigma)\times \Sigma^*((V-\Sigma)\cup \{ \lambda \} )
+$$
+\subsubsection{Teorema}
+Un lenguaje es Regular ssi es generada por una Gramática Regular:
