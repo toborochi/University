@@ -1,8 +1,5 @@
 # Third Semester
 
-This semester there are 6 subjetcs:
-
-:es:
 
 | Subjects                      | Code   | Professor              |
 | ----------------------------- |:------:| ---------------------- |
