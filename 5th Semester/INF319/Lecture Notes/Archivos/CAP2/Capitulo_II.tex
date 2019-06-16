@@ -293,12 +293,61 @@ $$
 Un Lenguaje es regular ssi es aceptado por un Automata Finito.
 \subsubsection*{Prueba}
 \begin{enumerate}
-\item Supongamos que la propiedad se cumple para $\gamma$ tal que $|\gamma| < n$
+\item Supongamos que la propiedad se cumple para $\gamma$ tal que $|\gamma| < n$.\\${ }$\\ Para $|\gamma|=n$
+\begin{itemize}
+\item $\gamma=\alpha\cup\beta$
+\begin{align*}
+L(\gamma) = L(\alpha\cup\beta)&= L(\alpha)\cup L(\beta) & \\
+	                       &= L(M_1)\cup L(M_2)      =L(M)
+\end{align*}
+\item $\gamma=\alpha\beta$
+\begin{align*}
+L(\gamma) = L(\alpha\beta)&= L(\alpha) L(\beta) & \\
+	                       &= L(M_1) L(M_2)      =L(M)
+\end{align*}
+\item $\gamma=\alpha^*$
+\begin{align*}
+L(\gamma) = L(\alpha^*)&= L(\alpha)^* & \\
+	                       &= L(M_1)^*      =L(M)
+\end{align*}
+\end{itemize}
+\item Si un lenguaje es aceptado por un AF entonces es un lenguaje regular.
+\subsubsection*{Prueba}
+$R=L(M)$ \\
+Representaremos $L(M)$ como la unión de muchos (pero en número finito) lenguajes simples.
+\\${ }$\\
+Sea $k=\{q_1,q_2,q_3,\ldots,q_n \} , s =q_1$ para $i,j = 1,2,\ldots,n ; k = 1,2,\ldots,n+1$ \\ ${ }$\\
+Definimos $R(i,j,k)$ como el conjunto de todas las palabras que nos llevan de $q_i$ a $q_j$ sin pasar por estados con subíndice $k$ o mayores.
+\subsubsection*{Formalmente}
+$$
+R(i,j,k)= \{ x\in\Sigma^* / (q_i,x)\sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_j,\lambda) \wedge (q_i,x) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_l,y) \text{ entonces } l<k \vee (y=\lambda \wedge l=j) \vee (y=x \wedge l=i) \}
+$$
+Si $k=n+1$:\footnote{Notese que no es posible llegar a $n+1$ ya que $k$ tiene $n$ estados}
+$$
+R(i,j,n+1)=\{ x\in\Sigma^* / (q_i,x) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_j,\lambda)\}
+$$
+Esto es:
+$$
+L(M) = \cup\{ R(1,j,n+1),q_j \in F \}
+$$
+\textbf{p.d.} $R(i,j,k)$ son regulares (inducción) $k=1$
+$$
+R(i,j,1) =
+\begin{cases}
+\{ \sigma\in\Sigma / \delta(q_i,\sigma)=q_j \},  i\neq j \\ \\
+\{\lambda \} \cup \{ \sigma\in\Sigma / \delta(q_i,\sigma)=q_j \} , i\neq j
+\end{cases}
+$$
+Son regulares ya que $R(i,j,1)$ son \textbf{finitos}. \\${ }$\\
+\textbf{HI} \\
+Para $k=1,2,\ldots,n$ $R(i,j,k)$ son Regulares. \\${ }$\\
+\textbf{p.d.} Para $k+1$ es decir $R(i,j,k+1)$ es regular:
+% DIAGRAMA 
 \end{enumerate}
 \section{Lenguajes no Regulares}
 \section{Gramáticas}
 \subsection{Definición}
-Una gramática Libre de Contexto es una cuádrupla $G=(V,\Sigma,E,S)$ donde:
+Una gramática Libre de Contexto es una cuádrupla $G=(V,\Sigma,R,S)$ donde:
 \begin{itemize}
 \item $G$ es un alfabeto.
 \item  $\Sigma$ es un subconjunto de $V$ (Conjunto de Símbolos Terminales)
@@ -317,3 +366,80 @@ R \subseteq (V-\Sigma)\times \Sigma^*((V-\Sigma)\cup \{ \lambda \} )
 $$
 \subsubsection{Teorema}
 Un lenguaje es Regular ssi es generada por una Gramática Regular:
+\section{Autómata con Pila}
+\subsubsection{Definición}
+Un autómata con Pila es una sextupla:
+$$
+M = (K,\Sigma,\Gamma,\Delta,s,F)
+$$
+donde :
+\begin{itemize}
+\item $k:$ 
+\item $\Sigma:$ Símbolos de Entrada
+\item $\Gamma:$ es un conjunto finito no vacío \textit{(llamado alfabeto de la Pila).}
+\item $s\in K$
+\item $F \subseteq K$
+\item $\Delta$ es un subconjunto finito de $(K\times\Sigma^*\times\Gamma^* ) \times (K\times\Gamma^*)$ (Relación de Transición)  
+\end{itemize}
+\subsubsection*{Significado de una Transición}
+$$
+((p,u,\beta),(q,\gamma)) \in \Delta
+$$
+\textit{''Estando en $p$ leyendo $w$ pasa al estado $q$ y reemplaza $\beta$ por $\gamma$.''}
+\subsubsection*{Empujar a}
+$$
+((p,u,\lambda),(q,\alpha))\in\Delta
+$$
+\subsubsection*{Sacar de}
+$$
+((p,u,\alpha),(q,\lambda))\in\Delta
+$$
+\subsection{Configuración}
+Una configuración es un elemento de:
+$$
+K\times\Sigma^* \times \Gamma^*
+$$
+\subsubsection*{La relación $\sststile{M}{\hspace{0.25cm}  \hspace{0.25cm}}$}
+Para cada $((p,u,\beta),(q,\gamma))\in\Delta$ y para cada $x\in\Sigma^*, \alpha\in\Gamma^*$ definimos:
+$$
+(p,ux,\beta \alpha) \sststile{M}{\hspace{0.25cm} \hspace{0.25cm}} (q,x,\gamma\alpha)
+$$
+Para ilustrar un poco mejor la idea tenemos la siguiente gráfica:
+\begin{center}
+\begin{tikzpicture}[stack/.style={rectangle split, rectangle split parts=#1,draw, anchor=center}]
+\node[stack=3] at (0,0) {
+\nodepart{two}{$\beta$}
+\nodepart{three}{$\alpha$}
+};
+\node at (1.5,0) (rel){$\sststile{M}{\hspace{0.25cm} \hspace{0.25cm}}$};
+\node at (0,-1.25) (rel2){$(p,ux,\beta\alpha)$};
+\node at (3,-1.25) (rel2){$(q,x,\gamma\alpha)$};
+\node[stack=3] at (3,0) {
+\nodepart{two}{$\gamma$}
+\nodepart{three}{$\alpha$}
+};
+\node at (-0.75,1.5) (p){$p:$};
+\node at (2.25,1.5) (q){$q:$};
+\tikzstyle{bplus}=[rectangle split,rectangle split horizontal, rectangle split parts = 2, rectangle split empty part width=0.01mm, rectangle split every empty part={\hspace{0.25cm}}, draw]
+\tikzstyle{every node}=[bplus]
+\node at (0,1.5){u\nodepart{two}$x$};
+\node at (3,1.5){\nodepart{two}$x$};
+\end{tikzpicture}
+\end{center}
+\subsubsection*{Palabra aceptada por M}
+Sea $w\in\Sigma^*$: \\ ${ }$ \\
+$$
+M \text{ acepta }w \Leftrightarrow (s,w,\lambda) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q,\lambda,\lambda) ; q\in F
+$$
+\subsubsection*{Lenguaje aceptado por M}
+$$
+L(M) =\{ w\in\Sigma^* / (s,w,\lambda) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q,\lambda,\lambda) ; q\in F \}
+$$
+\subsection{Autómatas con Pila y Gramáticas Libre de Contexto}
+\subsubsection*{Definición}
+La clase de lenguajes aceptados por autómatas con pila es exactamente la clase de lenguajes libres de contexto:
+\subsubsection*{Prueba}
+Sea $G=(V,\Sigma,R,S)$ construimos $M=(K,\Sigma,\Gamma,\Delta,s,F)$ tal que $L(M)=L(G)$ donde:
+$$
+M = (\{p,q\},\Sigma,V,\Delta,p,\{ q\})
+$$
