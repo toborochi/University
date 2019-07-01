@@ -1,0 +1,11 @@
+C:\Users\Asus\source\repos\T3D\T3D\bin\Debug\T3D.exe.config
+C:\Users\Asus\source\repos\T3D\T3D\bin\Debug\T3D.exe
+C:\Users\Asus\source\repos\T3D\T3D\bin\Debug\T3D.pdb
+C:\Users\Asus\source\repos\T3D\T3D\bin\Debug\OpenTK.dll
+C:\Users\Asus\source\repos\T3D\T3D\bin\Debug\OpenTK.pdb
+C:\Users\Asus\source\repos\T3D\T3D\bin\Debug\OpenTK.xml
+C:\Users\Asus\source\repos\T3D\T3D\obj\Debug\T3D.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\T3D\T3D\obj\Debug\T3D.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\T3D\T3D\obj\Debug\T3D.csproj.CopyComplete
+C:\Users\Asus\source\repos\T3D\T3D\obj\Debug\T3D.exe
+C:\Users\Asus\source\repos\T3D\T3D\obj\Debug\T3D.pdb
