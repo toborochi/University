@@ -366,6 +366,14 @@ R \subseteq (V-\Sigma)\times \Sigma^*((V-\Sigma)\cup \{ \lambda \} )
 $$
 \subsubsection{Teorema}
 Un lenguaje es Regular ssi es generada por una Gramática Regular:
+\subsubsection*{Prueba $\Rightarrow$}
+Sea $M=(K,\Sigma,\sigma,s,F)$ construimos $G=(V,\Sigma , R,S)$ donde:
+\begin{itemize}
+\item $V= K \cup \Sigma$
+\item $S = s$
+\item $R = \{ q \rightarrow ap : \delta(p,a)=p \} \cup \{ q \rightarrow \lambda : q\in F \}$
+\end{itemize}
+
 \section{Autómata con Pila}
 \subsubsection{Definición}
 Un autómata con Pila es una sextupla:
@@ -443,3 +451,33 @@ Sea $G=(V,\Sigma,R,S)$ construimos $M=(K,\Sigma,\Gamma,\Delta,s,F)$ tal que $L(M
 $$
 M = (\{p,q\},\Sigma,V,\Delta,p,\{ q\})
 $$
+
+\section{Máquinas de Turing}
+\subsubsection*{Definición}
+Una máquina de Turing es una cuadrupla $M=(K,\Sigma,\delta,s)$ donde:
+\begin{itemize}
+\item $K:$ Conjunto Finito no Vacío , $h\notin K$
+\item $\Sigma:$ Conjunto Finito no Vacío , $\#\in\Sigma , L,R\notin\Sigma$
+\item $s\in K$
+\item $\sigma: K\times\Sigma \rightarrow (K\cup\{h\}) \times (\Sigma\cup\{L,R\})$
+\end{itemize}
+
+\begin{enumerate}
+\item {\color{red} Si $b\in\Sigma$ } la máquina reescribe $b$ por $a$.
+\item {\color{red} Si $b=L$ } la cabeza lectora se mueve a la izquierda.
+\item {\color{red} Si $b=R$ } la cabeza lectora se mueve a la derecha.
+\end{enumerate}
+\begin{center}
+{\color{red}  Si la máquina esta en $h$} se dice que la máquina se \textit{detiene}.
+\end{center}
+\subsubsection*{Teorema}
+Los siguientes modelos de máquinas de Turing son igualmente poderosos:
+\begin{itemize}
+\item La Máquina de Turing Estándar.
+\item La Máquina de Turing de varias cabezas.
+\item La Máquina de Turing de varias pistas.
+\item La Máquina de Turing de varias cintas.
+\item La Máquina de Turing Bidimensional.
+\item Automata con Pila con 2 Pilas
+\item IBM Mainframe
+\end{itemize}

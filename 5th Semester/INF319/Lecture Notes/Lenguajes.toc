@@ -65,6 +65,7 @@
 \contentsline {subsubsection}{Definici\IeC {\'o}n}{18}{section*.49}
 \contentsline {subsubsection}{Teorema}{18}{section*.50}
 \contentsline {section}{\numberline {2.8}Aut\IeC {\'o}mata con Pila}{19}{section.2.8}
-\contentsline {subsubsection}{Definici\IeC {\'o}n}{19}{section*.51}
+\contentsline {subsubsection}{Definici\IeC {\'o}n}{19}{section*.52}
 \contentsline {subsection}{\numberline {2.8.1}Configuraci\IeC {\'o}n}{19}{subsection.2.8.1}
 \contentsline {subsection}{\numberline {2.8.2}Aut\IeC {\'o}matas con Pila y Gram\IeC {\'a}ticas Libre de Contexto}{20}{subsection.2.8.2}
+\contentsline {section}{\numberline {2.9}M\IeC {\'a}quinas de Turing}{20}{section.2.9}
