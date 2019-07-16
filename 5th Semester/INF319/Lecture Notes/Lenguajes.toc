@@ -61,11 +61,13 @@
 \contentsline {subsubsection}{Notaci\IeC {\'o}n}{18}{section*.46}
 \contentsline {subsubsection}{Derivaci\IeC {\'o}n}{18}{section*.47}
 \contentsline {subsubsection}{Lenguaje Generado por $G$}{18}{section*.48}
-\contentsline {subsection}{\numberline {2.7.2}Gram\IeC {\'a}ticas Regulares}{18}{subsection.2.7.2}
-\contentsline {subsubsection}{Definici\IeC {\'o}n}{18}{section*.49}
-\contentsline {subsubsection}{Teorema}{18}{section*.50}
+\contentsline {subsection}{\numberline {2.7.2}Gram\IeC {\'a}ticas Regulares}{19}{subsection.2.7.2}
+\contentsline {subsubsection}{Definici\IeC {\'o}n}{19}{section*.49}
+\contentsline {subsubsection}{Teorema}{19}{section*.50}
 \contentsline {section}{\numberline {2.8}Aut\IeC {\'o}mata con Pila}{19}{section.2.8}
-\contentsline {subsubsection}{Definici\IeC {\'o}n}{19}{section*.52}
-\contentsline {subsection}{\numberline {2.8.1}Configuraci\IeC {\'o}n}{19}{subsection.2.8.1}
+\contentsline {subsubsection}{Definici\IeC {\'o}n}{19}{section*.54}
+\contentsline {subsection}{\numberline {2.8.1}Configuraci\IeC {\'o}n}{20}{subsection.2.8.1}
 \contentsline {subsection}{\numberline {2.8.2}Aut\IeC {\'o}matas con Pila y Gram\IeC {\'a}ticas Libre de Contexto}{20}{subsection.2.8.2}
-\contentsline {section}{\numberline {2.9}M\IeC {\'a}quinas de Turing}{20}{section.2.9}
+\contentsline {subsection}{\numberline {2.8.3}Propiedades de los Lenguajes Libres de Contexto}{20}{subsection.2.8.3}
+\contentsline {subsubsection}{Teorema de Pumping}{21}{section*.70}
+\contentsline {section}{\numberline {2.9}M\IeC {\'a}quinas de Turing}{21}{section.2.9}

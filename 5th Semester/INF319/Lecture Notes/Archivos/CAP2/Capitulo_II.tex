@@ -356,8 +356,21 @@ Una gramática Libre de Contexto es una cuádrupla $G=(V,\Sigma,R,S)$ donde:
 \end{itemize}
 \subsubsection{Notación}
 Para cada $A\in V-\Sigma \text{ , } w\in\Sigma^*$
+$$
+(A,w)\in R \Leftrightarrow A \xrightarrow[G]{} w
+$$
+Donde $G$ se refiere a la gramática.
 \subsubsection{Derivación}
+Para cada par de palabras $u,v \in V^*$ escribimos $u \xRightarrow[G]{} v$ ssi existen palabras $x,y,v' \in V^*,A\in(V-\Sigma)$ tales que:
+$$
+u = xAy ,\hspace{0.2cm} v = xv' y ,\hspace{0.2cm} A \xrightarrow[G]{} v'
+$$
+Se denota por $u \xRightarrow[G]{*} v$ la clausura reflexiva transitiva de $\xRightarrow[G]{}$
 \subsubsection{Lenguaje Generado por $G$}
+$$
+L(G) = \Big\{ w\in \Sigma^* / S \xRightarrow[G]{*} w \Big\} 
+$$
+Un lenguaje es libre de contexto ssi existe una gramatica libre de contexto que genera el Lenguaje.
 \subsection{Gramáticas Regulares}
 \subsubsection{Definición}
 Una Gramática Libre de Contexto $G=(V,\Sigma,R,S)$ es regular ssi:
@@ -366,14 +379,22 @@ R \subseteq (V-\Sigma)\times \Sigma^*((V-\Sigma)\cup \{ \lambda \} )
 $$
 \subsubsection{Teorema}
 Un lenguaje es Regular ssi es generada por una Gramática Regular:
-\subsubsection*{Prueba $\Rightarrow$}
+\subsubsection*{Prueba}
+\subsubsection*{ $\Rightarrow$}
 Sea $M=(K,\Sigma,\sigma,s,F)$ construimos $G=(V,\Sigma , R,S)$ donde:
 \begin{itemize}
 \item $V= K \cup \Sigma$
 \item $S = s$
 \item $R = \{ q \rightarrow ap : \delta(p,a)=p \} \cup \{ q \rightarrow \lambda : q\in F \}$
 \end{itemize}
-
+\subsubsection*{$\Leftarrow$}
+Sea $G = (V,\Sigma,R,S)$ construimos $M=(K,\Sigma,\Delta,s,F)$ donde:
+\begin{itemize}
+\item $K = (V-\Sigma) \cup \{f\}$ donde $f$ es un nuevo elemento.
+\item $s=S$
+\item $F=\{f\}$
+\item $\Delta = \big\{ (A,w,B);A\rightarrow wB, A,B \in (V-\Sigma) ,w \in \Sigma^* \big\} \cup \big\{ (A,w,f);A\rightarrow w, A \in (V-\Sigma) ,w \in \Sigma^* \big\}$
+\end{itemize}
 \section{Autómata con Pila}
 \subsubsection{Definición}
 Un autómata con Pila es una sextupla:
@@ -446,12 +467,41 @@ $$
 \subsection{Autómatas con Pila y Gramáticas Libre de Contexto}
 \subsubsection*{Definición}
 La clase de lenguajes aceptados por autómatas con pila es exactamente la clase de lenguajes libres de contexto:
-\subsubsection*{Prueba}
+\subsubsection*{Prueba $\Leftarrow$}
 Sea $G=(V,\Sigma,R,S)$ construimos $M=(K,\Sigma,\Gamma,\Delta,s,F)$ tal que $L(M)=L(G)$ donde:
 $$
 M = (\{p,q\},\Sigma,V,\Delta,p,\{ q\})
 $$
-
+\subsubsection*{Transiciones}
+\begin{align}
+((p,\lambda,\lambda),(q,S))&  \\
+((q,\lambda,{\color{red}A}),(q,{\color{red}x}))&;\forall {\color{red}A}\rightarrow {\color{red}x} \in R \\
+((q,{\color{red}a},{\color{red}a}),(q,\lambda))&;\forall {\color{red}a} \in \Sigma
+\end{align}
+\subsection{Propiedades de los Lenguajes Libres de Contexto}
+\subsubsection*{Teorema}
+Los lenguajes libres de contexto son cerrados bajo la unión, concatenación y estrella de Kleene.
+\subsubsection*{Prueba}
+Sean $G_i=(V_i,\Sigma_i,R_i,S_i)\hspace{0.5cm}i=1,2$ las Gramáticas Libres de Contexto y sin perdida de generalidad asumimos que $(V_1-\Sigma_1)$ y $(V_2-\Sigma_2)$ son disjuntos. 
+\begin{itemize}
+\item \subsubsection*{Unión}
+$S$ es un nuevo símbolo
+$$
+G = (V_1\cup V_2 \cup \{ S\},\Sigma_1\cup\Sigma_2,R_1\cup R_2 \cup \{S\rightarrow S_1,S\rightarrow S_2 \},S )
+$$
+\item \subsubsection*{Concatenación}
+$$
+G=(V_1 \cup V_2 \cup \{ S\} ,\Sigma_1 \cup \Sigma_2,R_1 \cup R_2 \cup \{ S\rightarrow S_1 S_2 \},S )
+$$
+\item \subsubsection*{Estrella de Kleene}
+$$
+G = (V_1,\Sigma_1,R_1 \cup \{S_1\rightarrow\lambda, S_1 \rightarrow S_1 S_1 \} ,S_1)
+$$
+\end{itemize}
+\subsubsection*{Teorema}
+La intersección de un L.L.C con un lenguaje regular es un lenguaje libre de Contexto.
+\subsubsection{Teorema de Pumping}
+Sea $G$ una G.L.C. entonces existe un número $k$ que depende de $G$ tal que cualquier palabra $w\in L(G)$ de longitud $>k$, se puede reescribir $w=uvxyz$ de tal manera que ya sea $v$ o $y$ es no vacía y $uv^n xy^n z\in L(G)$. \textbf{Para cada} $n\geq 0$.
 \section{Máquinas de Turing}
 \subsubsection*{Definición}
 Una máquina de Turing es una cuadrupla $M=(K,\Sigma,\delta,s)$ donde:
