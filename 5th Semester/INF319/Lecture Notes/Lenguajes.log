@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  16 JUL 2019 09:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  18 JUL 2019 00:09
 entering extended mode
 **./Lenguajes.tex
 (Lenguajes.tex
@@ -2922,7 +2922,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
 Here is how much of TeX's memory you used:
  35352 strings out of 493305
  808818 string characters out of 3130237
- 1078395 words of memory out of 3000000
+ 1078393 words of memory out of 3000000
  38042 multiletter control sequences out of 15000+200000
  17766 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2959,7 +2959,7 @@ pe1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX
 ams/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Asus/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 
-Output written on Lenguajes.pdf (21 pages, 405388 bytes).
+Output written on Lenguajes.pdf (21 pages, 406134 bytes).
 PDF statistics:
  536 PDF objects out of 1000 (max. 8388607)
  170 named destinations out of 1000 (max. 500000)
