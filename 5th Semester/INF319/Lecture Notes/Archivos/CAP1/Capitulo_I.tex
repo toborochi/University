@@ -137,7 +137,9 @@ Sea $L$ un conjunto de palabras sobre $\Sigma$ con las propiedades:
 \renewcommand{\theenumi}{\textbf{\roman{enumi}.)}}%
 \begin{enumerate}
 \item $\lambda \in L$
-\item $w\in L \wedge a\in\Sigma \Rightarrow wa \in L$
+\item $w\in L \wedge a\in\Sigma \Rightarrow wa \in L$ \\${ }$\\
+\textbf{Crecimiento por Izquierda} \\${ }$\\
+\textbf{{\footnotesize ii')}} $w\in L \wedge a\in\Sigma \Rightarrow aw \in L$
 \end{enumerate}
 \subsubsection{Entonces}
 $L=\Sigma^*$, (es decir, todas las palabras sobre $\Sigma$ están en $L$.)
@@ -156,6 +158,49 @@ $$A'=\{ w'\in \Sigma^* /w\in A\} $$
 Sea $A\subseteq \Sigma^*$ \\
 $$A^* = \{w\in\Sigma^* / w=w_1 w_2 \ldots w_n \text{ para algún } k\in\mathbb{N} \text{ y para algunas }w_1,w_2,\ldots,w_k \in A\}$$
 \end{itemize}
+\subsection{Representación Finita de Lenguajes}
+Necesitamos tener dos consideraciones:
+\begin{itemize}
+\item Cualquier representación, debe ser en si misma una palabra. Es decir una sucesión finita de símbolos de un alfabeto $\Sigma$.
+\item Lenguajes diferentes deben tener representaciones diferentes.
+\end{itemize}
+\begin{center}
+
+\begin{figure}[!ht]
+  \centering
+  \begin{minipage}{0.3\textwidth}
+    \begin{tikzpicture}
+\node (start) [startstop] {Representación};
+\node (io1) [process,below=0.5 of start] {$\Sigma$};
+\node (box1) [process,below=0.5 of io1] {$ \Sigma^* $};
+\node (branch1) [process,below=0.5 of box1] {$f: \mathbb{N} \rightarrow \Sigma^*$};
+\node (box2) [align=center,process,below=0.7 of branch1] {\color{red} {$\Sigma^* $ es contablemente} \\ {\color{red} infinito} };
+\draw [arrow] (start) -- (io1);
+\draw [arrow] (io1) -- (box1);
+\draw [arrow] (box1) -- coordinate[midway](m1)(branch1);
+\draw [arrow] (branch1) -- coordinate[pos=0.4](m3)(box2);
+\end{tikzpicture}
+  \end{minipage}
+  ${ }$
+  \centering
+  \begin{minipage}{0.2\textwidth}
+    \begin{tikzpicture}
+\node (start) [startstop] {Lenguaje};
+\node (io1) [process,below=0.5 of start] {$L$};
+\node (box1) [process,below=0.5 of io1] {$ 2^{\Sigma^*}$};
+\node (branch1) [align=center,process,below=0.5 of box1] {{\color{red}$2^{\Sigma^*}$ es incontable} };
+\draw [arrow] (start) -- (io1);
+\draw [arrow] (io1) -- (box1);
+\draw [arrow] (box1) -- coordinate[midway](m1)(branch1);
+\end{tikzpicture}
+  \end{minipage}
+\end{figure}
+
+\end{center}
+
+
+\subsubsection{Primer resultado de la Teoría de la Computación}
+No importa cuán poderosos sean los métodos que conocemos para representar lenguajes, sólo pueden ser representados un número contable de ellos (mientras que las representaciones sean finitas), inevitablemente, un número incontable de ellos quedará sin representación bajo cualquier esquema de representación finita. 
 \subsection{Expresiones Regulares}
 Las expresiones regulares (ER) sobre un alfabeto ($\Sigma$) son las palabras sobre el alfabeto $\Sigma \cup {\color{red}\{ ), (, \emptyset, \cup,*\}}$ tal que cumple lo siguiente:
 \renewcommand{\labelenumi}{\theenumi}

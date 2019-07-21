@@ -19,8 +19,8 @@
 \usepackage{pstricks}
 \usepackage{pgfplots}
 \usepackage{tikz}
-\usetikzlibrary{automata, arrows,babel}
-\usetikzlibrary{arrows.meta}
+\usetikzlibrary{automata, arrows,babel,}
+\usetikzlibrary{arrows.meta,positioning,shapes}
 \usetikzlibrary{shapes.multipart}
 \usepackage{calc}
 \usepackage{ifthen}
@@ -58,6 +58,12 @@
 
 \newlist{legal}{enumerate}{10}
 \setlist[legal]{label*=\arabic*.}
+
+\tikzstyle{startstop} = [draw, rounded rectangle, text centered, draw=black,thick]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, text centered]
+\tikzstyle{process} = [rectangle, text centered, draw=black,thick]
+\tikzstyle{decision} = [diamond, text centered, draw=black,thick]
+\tikzstyle{arrow} = [-{Stealth[scale=1.2]},rounded corners,thick]
 
 \begin{document}
 
