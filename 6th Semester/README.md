@@ -5,4 +5,4 @@
 | Operative Systems I                    | INF312 | Gino Barroso Viruez |
 | Operation Research II                  | INF221 | Jose Sanchez Hervas |
 | Data Bases II                          | MAT205 | Ubaldo Perez        |
-| Preparation and evaluation of projects | FIS200 | Franklin Calderon   |
+| Computers Networks I                   | INF433 | Jorge Gonzales      |
