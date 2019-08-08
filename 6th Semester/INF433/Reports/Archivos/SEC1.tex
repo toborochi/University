@@ -1,0 +1,58 @@
+\section{Introducción}
+El Modelo OSI es una referencia mediante la cual se estandariza la forma en como debe llevarse a cabo la comunicación. Aborda todos los procesos necesarios para una comunicación efectiva y divide estos procesos en grupos lógicos llamados capas.
+Este modelo se basa en una propuesta desarrollada por la Organización Internacional de Normalización (ISO) como un primer paso hacia la estandarización internacional de los protocolos utilizados en las diversas capas.
+\\${ }$\\
+El modelo se denomina Modelo de referencia OSI (Open Systems Interconnection) porque trata de conectar sistemas abiertos, es decir, sistemas que están abiertos para la comunicación con otro sistema. 
+\\ ${ }$\\
+Los principios que se aplicaron para llegar a las siete capas se pueden resumir brevemente de la siguiente manera:
+\begin{itemize}
+\item Se debe crear una capa donde se necesita una abstracción diferente.
+\item Cada capa debe tener una función bien definida.
+\item La función de cada capa debe elegirse teniendo en cuenta la definición de protocolos estandarizados internacionalmente.
+\end{itemize}
+
+
+\begin{figure}[!ht]
+\centering
+\begin{tikzpicture}
+ 
+   \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt]
+(0.5,0) -- (0.5,2.25) node [black,midway,xshift=-0.8cm] 
+{\footnotesize Host};
+
+   \draw [decorate,decoration={brace,amplitude=10pt},xshift=-4pt,yshift=0pt]
+(0.5,2.5) -- (0.5,6) node [black,midway,xshift=-0.8cm] 
+{\footnotesize Media \hspace{0.5cm}};
+
+  \node at (2.5,5.5) (c1)  [wide]   []  {Application};
+  \node (c2)  [wide]   [below = 0.1cm of c1]  {Presentation};
+  \node (c3)  [wide]   [below = 0.1cm of c2]  {Session};
+  \node (c4)  [wide]   [below = 0.1cm of c3]  {Transport};
+  \node (c5)  [wide]   [below = 0.1cm of c4]  {Network};
+  \node (c6)  [wide]   [below = 0.1cm of c5]  {Data Link};
+  \node (c7)  [wide]   [below = 0.1cm of c6]  {Physical};
+  
+  \begin{pgfonlayer}{background}
+   
+  \end{pgfonlayer}
+  
+
+\end{tikzpicture}
+\caption{Diagrama que representa el Modelo OSI}
+\end{figure}
+
+\section{Capas del Modelo OSI}
+\subsection{Aplicación (Application)}
+\subsection{Presentación (Presentation)}
+\subsection{Sesión (Session)}
+\subsection{Transporte (Transport)}
+\subsection{Red (Network)}
+\subsection{Enlace (Data Link)}
+\subsection{Física (Physical)}
+
+\begin{thebibliography}{9}
+\bibitem{latexcompanion} 
+Tanenbaum, Andrew S., and D Wetherall. Computer networks. Boston: Pearson Prentice Hall, 2011. Print.
+
+\end{thebibliography}
+

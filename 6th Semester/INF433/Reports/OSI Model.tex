@@ -1,0 +1,103 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage[affil-it]{authblk}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{slashbox}
+\usepackage{diagbox}
+\usepackage{slashbox,multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{pstricks}
+\usepackage{pgfplots}
+\usepackage{babel}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+\usepackage{cite}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{shapes,arrows,positioning}
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,%
+    decorations.pathreplacing,decorations.pathmorphing,shapes,%
+    matrix,shapes.symbols}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
+\usepackage{empheq}
+\usepackage{svg}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=gray}
+\usepackage{hypcap}
+\DeclarePairedDelimiter{\Ex}{[}{]}
+\newcommand{\E}{\Ex}
+
+\pgfplotsset{compat=1.16}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\newcommand{\varstackrel}[3][T]{\stackrel{\raisebox{0.5ex}{\clap{\scriptsize#2}}}{#3}}
+
+\tikzset{
+>=stealth',
+  punktchain/.style={
+    rectangle, 
+    rounded corners, 
+    % fill=black!10,
+    draw=black, very thick,
+    text width=10em, 
+    minimum height=3em, 
+    text centered, 
+    on chain},
+  line/.style={draw, thick, <-},
+  element/.style={
+    tape,
+    top color=white,
+    bottom color=blue!50!black!60!,
+    minimum width=8em,
+    draw=blue!40!black!90, very thick,
+    text width=10em, 
+    minimum height=3.5em, 
+    text centered, 
+    on chain},
+  every join/.style={->, thick,shorten >=1pt},
+  decoration={brace},
+  tuborg/.style={decorate},
+  tubnode/.style={midway, right=2pt},
+}
+
+\tikzset{
+    narrow/.style={draw, fill=blue!20, text width=2cm, text centered, minimum height=1cm},
+    wide/.style={draw, fill=orange!20, text width=3cm, text centered, minimum height=0.75cm, rounded corners},
+    tall/.style={draw, fill=green!20, text width=1.75cm, text centered, minimum height=7cm, rounded corners},
+    squar/.style={draw, fill=yellow!10, text width=4.75cm, text centered, minimum height=3.75cm, rounded corners}
+}
+
+\def\blockdist{5}
+\def\edgedist{5}
+
+\begin{document}
+\subfile{Archivos/Introduccion}
+\subfile{Archivos/SEC1}
+\end{document}
