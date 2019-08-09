@@ -66,6 +66,11 @@ Sus funciones son convertir señales en bits, que pueden ser utilizados por otra
 \subsection{Funcionamiento de las 7 Capas}
 Para explicar como funciona este modelo necesitamos partir desde el momento que se interactúa con algun programa o sitio, digamos que queremos enviar un correo con mensaje y unos archivos, a esto se le conoce como la capa de Aplicación, al hacer click en enviar esta información se empaqueta, y se encripta esta sería la capa de Presentación; una vez empaquetado los datos, se ''abre'' una sesión, es decir, se establece un enlace entre dos computadoras, esta es la capa de Sesion, una vez establecidad la sesion, la capa de transporte verifica que hasta esta etapa no haya errores o que los datos no sean corruptos, y en caso de serlos puede eliminarlos o devolverlos de donde vienen. Una vez atravesada la capa de transporte viene la capa de Red, aqui la información se divide en partes mas pequeñas y se les coloca la fuente de los datos y el destino de estos (dirección IP), acto seguido viene la capa de enlace, esta capa finalmente es la que despacha los datos libres de errores tranformándolos en tramas, y estas van a la capa Física para convetirse en señales que viajan a travez de los cables hasta el destino, en el destino este procedimiento es ejecutado de manera inversa, convirtiendo las señales en tramas, reconstruyendo estas para formar lo paquetes, revisando que los paquetes no esten corruptos y sean seguros, estableciendo una sesión, desempaquetando lo datos, desencriptandolos para finalmente entregarlos a la aplicación del otro lado.
 
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.25]{OSI}
+\caption{Diagrama que muestra como es que se transmiten los datos}
+\end{figure}
 \pagebreak
 
 
