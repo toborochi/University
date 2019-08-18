@@ -1,0 +1,57 @@
+\begin{enumerate}
+\item Desarrolle las siguientes actividades
+\begin{enumerate}
+\item Explique por qué el Lenguaje \texttt{SQL} es un lenguaje no procedimental. \\
+Se le dice no procedimental ya que nosotros hacemos consultas sobre que datos queremos, no sobre como recobrarlos.\\
+\item Explique para qué sirve la clausula \texttt{SELECT} en una consulta.\\
+En una consulta esta clausula nos permite especificar que datos voy a seleccionar.\\
+\item Explique para qué sirve la clausula \texttt{FROM} en una consulta.\\
+Esta clausula especifica de donde (las tablas) se obtienen los datos que me interesan obtener.\\
+\item Explique para qué sirve la clausula \texttt{WHERE} en una consulta.\\
+Esta clausula nos permite, junto con las de \texttt{SELECT} y \texttt{FROM} especificar las tuplas (o filas) que vamos a consultar y puede ir acompañada de conectores lógicos y/o relacionales.\\
+
+
+\item Explique para qué sirve la clausula \texttt{GROUP BY} en una consulta.
+
+Esta clausula nos permite agrupar los datos por atributos.
+\\
+\item Explique para qué sirve la clausula \texttt{HAVING} en una consulta.
+
+Esta clausula va junto con la \texttt{GROUP BY} y sirve para aplicar cierto filtro en una consulta.\\
+
+\item Explique para qué sirve la clausula \texttt{ORDER BY} en una consulta.
+
+Se utiliza para  ordenar los datos obtenidos en forma ascendente o descendente de acuerdo con una o más columnas.\\
+
+\item Es posible escribir una consulta solamente con la clausula \texttt{SELECT}
+
+Falso \\
+\item La clausula \texttt{HAVING} solamente se usa con la clausula \texttt{SELECT}
+
+Falso \\
+\item Explique qué es una sub consulta.
+
+Es una consulta \texttt{SELECT} dentro de otra. A esta ultima se le llamaria consulta principal.\\
+\item Explique como funciona la clausula \texttt{IN}
+
+Al ser un operador le permite especificar múltiples valores en una cláusula \texttt{WHERE}. Lo utilizamos para hacer en una subconsulta para que la consulta utilice estos datos.
+\\
+\item Explique como funciona la clausula \texttt{EXISTS}
+
+Al ser un operador que se utiliza para probar la existencia de cualquier registro en una subconsulta. Funciona revisando cada fila de una tabla donde hacemos una referencia externa y nos devuelve el resultado TRUE siempre que algun criterio se cumpla sino FALSE.
+\\
+\item Explique qué es una referencia externa.
+
+Es cuando comparamos un campo de una subconsulta con su consulta padre.\\
+\item Explique para qué sirve cada una de la siguientes funciones agregadas del SQL:
+\begin{itemize}
+\item \texttt{AVG()}: función que devuelve el valor promedio de una columna numérica.
+\item \texttt{SUM()}: función que devuelve la suma total de una columna numérica.
+\item \texttt{COUNT()}: función que devuelve el número de filas que coinciden con un criterio especificado
+\item \texttt{COUNT(*)}: cuenta todas las filas en la tabla de destino, ya sea que incluyan o no NULL.
+\item \texttt{MIN()}: función que devuelve el valor más pequeño de la columna seleccionada.
+\item \texttt{MAX()}: función que devuelve el valor más grande de la columna seleccionada.
+\end{itemize}
+\end{enumerate}
+
+\end{enumerate}

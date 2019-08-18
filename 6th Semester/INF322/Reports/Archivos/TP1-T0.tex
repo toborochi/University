@@ -1,0 +1,75 @@
+\begin{enumerate}
+\item Después de revisar el vídeo explicativo de la Base de Datos \texttt{demo}, se debe responder las siguientes preguntas:
+\begin{enumerate}
+\item ¿Cuantas tablas tiene la Base de Datos \texttt{demo}? \\
+La BD \texttt{demo} contiene 4 Tablas. \\
+\item Liste los nombre de las tabla de la Base de Datos \texttt{demo} y describa que se almacena en cada tabla. \\
+Las tablas de esta BD son:
+\begin{itemize}
+\item \textbf{Producto} (\texttt{prod}): Esta tabla almacena un código de producto, el nombre del mismo y su color.
+\item \textbf{Almacén} (\texttt{alma}): Esta tabla tiene un código de almacen, el nombre del mismo y la ciudad donde se encuentra.
+\item \textbf{Proveedor} (\texttt{prov}): Esta tabla se refiere a los proveedores de productos, y contiene el codigo del proveedor, el nombre del proveedor y la ciudad del mismo.
+\item \textbf{Suministro} (\texttt{sumi}): Esta tabla contiene los códigos de productos, almacen y proveedor, con la fecha, la cantidad, el precio y el importe.\\{}
+\end{itemize} 
+
+\item Explique el esquema de cada una de las tablas de la BD \texttt{demo}.
+
+\begin{itemize}
+\item Tabla \texttt{prov}
+\begin{itemize}
+\item crpv: Código que Identifica a un proveedor.
+\item nomb: Nombre del Proveedor.
+\item ciud: Ciudad de donde proviene.
+\end{itemize}
+\item Tabla \texttt{alma}
+\begin{itemize}
+\item calm: Código que Identifica a un almacén.
+\item noma: Nombre del Almacén,
+\item ciud: Ciudad donde se encuentra el almacén.
+\end{itemize}
+\item Tabla \texttt{prod}
+\begin{itemize}
+\item cprd: Código que Identifica a un Producto.
+\item nomp: Nombre del Producto.
+\item colo: Color del Producto.
+\end{itemize}
+\item Tabla \texttt{sumi}
+\begin{itemize}
+\item crpv: Código que hace referencia al proveedor.
+\item calm: Código que hace referencia al almacén.
+\item cprd: Código que hace referencia al producto.
+\item ftra: Fecha de recepcion.
+\item cant: Cantidad del suministro.
+\item prec: Precio del suministro.
+\item impt: cant*prec (cantidad $\times$ precio).
+
+\end{itemize}
+\end{itemize}
+
+\item ¿ Cuales son las llaves primarias y foráneas de las tablas  de la BD \texttt{demo}?
+
+Las llaves primarias para cada tabla son:
+\begin{itemize}
+\item	Producto(prod): cprod
+\item	Almacen(alma): calm
+\item	Proveedor(prov): cprv
+\end{itemize}
+En este caso la unica clase que tiene llaves foráneas es:
+	Suministro, ya que contiene los atributos comunes hacia las otras tablas que son sus llaves primarias.
+\\
+\item ¿ Cual es el campo común entre las tablas \texttt{prov} y \texttt{sumi}? \\
+El campo común es el Código del Proveedor (cprv). \\
+
+\item ¿ Cual es el campo común entre las tablas \texttt{sumi} y \texttt{prod}?
+
+El campo común es el Código del Producto (cprd). \\
+\item ¿ Cual es el campo común entre las tablas \texttt{alma} y \texttt{sumi}?
+
+El campo común es el Código del Almacen (calm). \\
+\item ¿ Cual es el campo común entre las tablas \texttt{alma} y \texttt{prov}?
+
+Estas tablas no tienen campo en común. \\
+\item Crear en SQL Server el esquema fisico de la Base de Datos \texttt{demo}
+\lstinputlisting[language=SQL]{TP01.sql}
+\end{enumerate}
+\end{enumerate}
