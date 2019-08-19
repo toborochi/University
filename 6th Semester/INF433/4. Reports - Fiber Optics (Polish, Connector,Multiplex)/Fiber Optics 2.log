@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  18 AUG 2019 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  18 AUG 2019 23:07
 entering extended mode
 **"./Fiber Optics 2.tex"
 ("Fiber Optics 2.tex"
@@ -1786,12 +1786,12 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 8.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 8.
-<./Imagenes/flat.jpg, id=27, 365.365pt x 121.45375pt>
+<./Imagenes/flat.jpg, id=35, 365.365pt x 121.45375pt>
 File: ./Imagenes/flat.jpg Graphic file (type jpg)
 <use ./Imagenes/flat.jpg>
 Package pdftex.def Info: ./Imagenes/flat.jpg  used on input line 14.
 (pdftex.def)             Requested size: 182.68205pt x 60.72672pt.
-<./Imagenes/pc.jpg, id=28, 365.365pt x 121.45375pt>
+<./Imagenes/pc.jpg, id=36, 365.365pt x 121.45375pt>
 File: ./Imagenes/pc.jpg Graphic file (type jpg)
 <use ./Imagenes/pc.jpg>
 Package pdftex.def Info: ./Imagenes/pc.jpg  used on input line 19.
@@ -1838,12 +1838,12 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 {C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Imagenes/f
 lat.jpg>]
-<./Imagenes/upc.jpg, id=53, 365.365pt x 121.45375pt>
+<./Imagenes/upc.jpg, id=61, 365.365pt x 121.45375pt>
 File: ./Imagenes/upc.jpg Graphic file (type jpg)
 <use ./Imagenes/upc.jpg>
 Package pdftex.def Info: ./Imagenes/upc.jpg  used on input line 24.
 (pdftex.def)             Requested size: 182.68205pt x 60.72672pt.
-<./Imagenes/apc.jpg, id=54, 365.365pt x 121.45375pt>
+<./Imagenes/apc.jpg, id=62, 365.365pt x 121.45375pt>
 File: ./Imagenes/apc.jpg Graphic file (type jpg)
 <use ./Imagenes/apc.jpg>
 Package pdftex.def Info: ./Imagenes/apc.jpg  used on input line 29.
@@ -1860,12 +1860,12 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 31.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 31.
-<./Imagenes/SC_CON.png, id=55, 150.5625pt x 86.12175pt>
+<./Imagenes/SC_CON.png, id=63, 150.5625pt x 86.12175pt>
 File: ./Imagenes/SC_CON.png Graphic file (type png)
 <use ./Imagenes/SC_CON.png>
 Package pdftex.def Info: ./Imagenes/SC_CON.png  used on input line 36.
 (pdftex.def)             Requested size: 112.92159pt x 64.59114pt.
-<./Imagenes/LC_CON.png, id=57, 150.5625pt x 86.12175pt>
+<./Imagenes/LC_CON.png, id=65, 150.5625pt x 86.12175pt>
 File: ./Imagenes/LC_CON.png Graphic file (type png)
 <use ./Imagenes/LC_CON.png>
 Package pdftex.def Info: ./Imagenes/LC_CON.png  used on input line 41.
@@ -1896,22 +1896,22 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 45.
  [2 <./Imagenes/pc.jpg> <./Imagenes/upc.jpg> <./Imagenes/apc.jpg> <./Imagenes/S
 C_CON.png> <./Imagenes/LC_CON.png>]
-<./Imagenes/ST_CON.png, id=68, 150.5625pt x 86.12175pt>
+<./Imagenes/ST_CON.png, id=76, 150.5625pt x 86.12175pt>
 File: ./Imagenes/ST_CON.png Graphic file (type png)
 <use ./Imagenes/ST_CON.png>
 Package pdftex.def Info: ./Imagenes/ST_CON.png  used on input line 46.
 (pdftex.def)             Requested size: 112.92159pt x 64.59114pt.
-<./Imagenes/FC_CON.png, id=69, 150.5625pt x 86.12175pt>
+<./Imagenes/FC_CON.png, id=77, 150.5625pt x 86.12175pt>
 File: ./Imagenes/FC_CON.png Graphic file (type png)
 <use ./Imagenes/FC_CON.png>
 Package pdftex.def Info: ./Imagenes/FC_CON.png  used on input line 51.
 (pdftex.def)             Requested size: 112.92159pt x 64.59114pt.
-<./Imagenes/MTRJ_CON.png, id=70, 150.5625pt x 86.12175pt>
+<./Imagenes/MTRJ_CON.png, id=78, 150.5625pt x 86.12175pt>
 File: ./Imagenes/MTRJ_CON.png Graphic file (type png)
 <use ./Imagenes/MTRJ_CON.png>
 Package pdftex.def Info: ./Imagenes/MTRJ_CON.png  used on input line 57.
 (pdftex.def)             Requested size: 112.92159pt x 64.59114pt.
-<./Imagenes/MTP_CON.jpg, id=71, 438.63875pt x 320.19624pt>
+<./Imagenes/MTP_CON.jpg, id=79, 438.63875pt x 320.19624pt>
 File: ./Imagenes/MTP_CON.jpg Graphic file (type jpg)
 <use ./Imagenes/MTP_CON.jpg>
 Package pdftex.def Info: ./Imagenes/MTP_CON.jpg  used on input line 62.
@@ -1954,7 +1954,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 69.
  [3 <./Imagenes/ST_CON.png> <./Imagenes/FC_CON.png> <./Imagenes/MTRJ_CON.png> <
 ./Imagenes/MTP_CON.jpg>]
-<./Imagenes/WDM.png, id=84, 515.82712pt x 158.39175pt>
+<./Imagenes/WDM.png, id=92, 515.82712pt x 158.39175pt>
 File: ./Imagenes/WDM.png Graphic file (type png)
 <use ./Imagenes/WDM.png>
 Package pdftex.def Info: ./Imagenes/WDM.png  used on input line 70.
@@ -1971,18 +1971,28 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 72.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 72.
+<./Imagenes/CWDM.png, id=93, 120.45pt x 37.94176pt>
+File: ./Imagenes/CWDM.png Graphic file (type png)
+<use ./Imagenes/CWDM.png>
+Package pdftex.def Info: ./Imagenes/CWDM.png  used on input line 75.
+(pdftex.def)             Requested size: 192.72023pt x 60.70686pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 77.
+<./Imagenes/DWDM.png, id=94, 119.84775pt x 34.9305pt>
+File: ./Imagenes/DWDM.png Graphic file (type png)
+<use ./Imagenes/DWDM.png>
+Package pdftex.def Info: ./Imagenes/DWDM.png  used on input line 81.
+(pdftex.def)             Requested size: 191.75664pt x 55.88885pt.
 )
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 108.
@@ -2008,7 +2018,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 108.
- [4 <./Imagenes/WDM.png>]
+ [4 <./Imagenes/WDM.png> <./Imagenes/CWDM.png> <./Imagenes/DWDM.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  ("Fiber Optics 2.aux"
@@ -2017,22 +2027,15 @@ LaTeX Info: Redefining \% on input line 24.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
-
-
-Package rerunfilecheck Warning: File `"Fiber Optics 2".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Fiber Optics 2".out':
-(rerunfilecheck)             Before: D5365578299A25D7F8E8BBEED0EA1D49;352
-(rerunfilecheck)             After:  45451E3E51ECBC580B8F8859C10D8100;489.
+Package rerunfilecheck Info: File `"Fiber Optics 2".out' has not changed.
+(rerunfilecheck)             Checksum: 6931CC07848A42624C2E16E4A3D6C949;489.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 34829 strings out of 493305
- 814641 string characters out of 3130237
+ 34841 strings out of 493305
+ 814879 string characters out of 3130237
  1067580 words of memory out of 3000000
- 37641 multiletter control sequences out of 15000+200000
+ 37651 multiletter control sequences out of 15000+200000
  13353 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,8n,127p,733b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2055,9 +2058,9 @@ sus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmti12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmtt8.pfb>
-Output written on "Fiber Optics 2.pdf" (4 pages, 517165 bytes).
+Output written on "Fiber Optics 2.pdf" (4 pages, 545073 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
+ 158 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 
