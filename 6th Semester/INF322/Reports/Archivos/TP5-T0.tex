@@ -1,0 +1,295 @@
+\begin{enumerate}
+\item ¿Cual es la diferencia entre el Lenguaje SQL y el Lenguaje Transact SQL?
+
+La diferencia es que con Transact SQL podemos realizar todas las cosas que podriamos hacer en un lenguaje de programacion ordinario, como bucles, if's, etc
+
+\item ¿Que se puede programar con Transact SQL?
+
+Con T-SQL se pueden programar las unidades de programa dentro del \textit{SGBD}, como ser:
+\begin{itemize}
+\item Scripts
+\item Funciones
+\item Procedimientos Almacenados
+\item Triggers
+\end{itemize}
+
+
+\item Liste los tipos de datos que maneja Transact SQL
+
+\subsubsection*{Enteros}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Tipos} & \textbf{Desde} & \textbf{Hasta} \\ \hline
+\texttt{bigint}     & -9,223,372,036,854,775,808 & 9,223,372,036,854,775,807 \\ \hline
+\texttt{int}        & -2,147,483,648             & 2,147,483,647             \\ \hline
+\texttt{smallint}   & -32,768                    & 32,767                    \\ \hline
+\texttt{tinyint}    & 0                          & 255                       \\ \hline
+\texttt{bit}        & 0                          & 1                         \\ \hline
+\texttt{decimal}    & $-10^{38} +1$              & $10^{38} +1$              \\ \hline
+\texttt{numeric}    & $-10^{38} +1$              & $10^{38} +1$              \\ \hline
+\texttt{money}      & -922,337,203,685,477.5808  & +922,337,203,685,477.5807 \\ \hline
+\texttt{smallmoney} & -214,748.3648              & +214,748.3647             \\ \hline
+\end{tabular}
+\end{center}
+\vspace{-0.5cm}
+\subsubsection*{Flotantes}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Tipos} & \textbf{Desde} & \textbf{Hasta} \\ \hline
+\texttt{Float}     & -1.79E + 308 & 1.79E + 308 \\ \hline
+\texttt{Real}        & -3.40E + 38            & 3.40E + 38            \\ \hline
+\end{tabular}
+\end{center}
+\vspace{-0.5cm}
+\subsubsection*{Fechas}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Tipos} & \textbf{Desde} & \textbf{Hasta} \\ \hline
+\texttt{datetime}     & Jan 1, 1753& Dec 31, 9999 \\ \hline
+\texttt{smalldatetime}        & Jan 1, 1900            & Jun 6, 2079           \\ \hline
+\texttt{date}        & Jan 1, 0001           & Dec 31, 9999           \\ \hline
+\end{tabular}
+\end{center}
+\vspace{-0.5cm}
+\subsubsection*{Caracteres y Strings}
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Tipo}     & \textbf{Caracteres}  \\ \hline
+\texttt{char}     & 8000  \\ \hline
+\texttt{varchar}  & 8000  \\ \hline
+\texttt{text}     & 2,147,483,647  \\ \hline
+\end{tabular}
+\end{center}
+\vspace{-0.5cm}
+
+\subsubsection*{Otros}
+
+\begin{itemize}
+\item \texttt{timestamp}
+\item \texttt{xml}
+\item \texttt{cursos}
+\item \texttt{table}
+\end{itemize}
+
+\item ¿Como se declara una variable en Transact SQL? cite ejemplos:
+
+Se declara siguiendo el siguiente modelo:
+
+\begin{center}
+\texttt{DECLARE @<nombre>}
+\end{center}
+
+Algunos ejemplos son los siguientes:
+\begin{lstlisting}[language=SQL]
+-- Declarando un string
+DECLARE @nombre char(64)
+-- Declarando un entero
+DECLARE @x int
+-- Declarando un flotante
+DECLARE @pi float
+\end{lstlisting}
+
+\item ¿Como se asigna valor a una variable en Transact SQL? cite ejemplos:
+
+Se declara siguiendo el siguiente modelo:
+
+\begin{center}
+\texttt{SET @<nombre> = <valor>}
+\end{center}
+
+Algunos ejemplos son los siguientes:
+\begin{lstlisting}[language=SQL]
+-- Asignando un string
+SET @nombre = '8086'
+-- Asignando un entero
+SET @x = 256
+-- Asignando un flotante
+SET @pi = 3.14156
+\end{lstlisting}
+
+\item ¿Como asignar valores obtenidas de una consulta a una variable en Transact SQL? cite ejemplos:
+
+\begin{lstlisting}[language=SQL]
+DECLARE @codigo int,
+	@nombre char(40),
+	@ciudad char(2)
+
+SELECT @codigo = calm, @nombre =noma, @ciudad = ciud
+FROM alma
+WHERE calm = 1
+
+PRINT @codigo
+PRINT @nombre
+PRINT @ciudad
+\end{lstlisting}
+
+\item ¿Que es un \texttt{CURSOR} en Transact SQL?
+
+Un cursor es una variable.\\
+
+\item ¿Para que sirve el uso de \texttt{CURSOR} en Transact SQL?
+
+Nos permite recorrer con un conjunto de resultados obtenido a través de una sentencia \texttt{SELECT} fila a fila. \\
+
+\item ¿Como se declare un \texttt{CURSOR} en Transact SQL?
+
+Siguiendo el siguiente esquema:
+\begin{center}
+\texttt{DECLARE @<nombre>  CURSOR FOR <sentenciasql>}
+\end{center}
+
+\item ¿Como se abre un \texttt{CURSOR} en Transact SQL?
+
+\begin{center}
+\texttt{OPEN @<nombre>}
+\end{center}
+
+\item ¿Para que sirve la instrucción \texttt{FETCH} en Transact SQL?
+
+Recupera una fila específica de un cursor del servidor Transact-SQL.
+
+\item ¿Para que sirve la variable  \texttt{@@FECT\_STATUS}, que valores devuelve?
+
+Esta función devuelve el estado de la última instrucción \texttt{FETCH} del cursor emitida contra cualquier cursor abierto actualmente por la conexión.
+
+\item ¿Como se cierra un \texttt{CURSOR} en Transact SQL?
+
+\begin{flalign*}
+\texttt{CLOSE $<$nombre$>$}  \\
+\texttt{DEALLOCATE $<$nombre$>$} 
+\end{flalign*}
+
+\item Cite un ejemplo de como leer todas las filas de una tabla en Transact SQL
+
+\begin{lstlisting}[language=SQL]
+DECLARE @nombre CHAR(40)
+	@color VARCHAR(15)
+
+DECLARE CDATOS CURSOR
+FOR SELECT nomp,colo FROM prod
+OPEN CDATOS
+FETCH CDATOS INTO @nombre,@color
+
+WHILE (@@FETCH_STATUS=0)
+  BEGIN
+    PRINT @nombre + @color
+    FETCH CDATOS INTO @nombre,@color
+  END
+CLOSE CDATOS
+DEALLOCATE
+\end{lstlisting}
+
+\item Liste los principales operadores utilizados en Transact SQL
+
+\begin{itemize}
+\item \textbf{Asignación} $=$
+\item \textbf{Aritméticos} $+,-,*,/,**,\%$
+\item \textbf{Relacionales} $=,<>,!=,<,>,>=,<=,!>,!<$
+\item \textbf{Lógicos} $\texttt{AND},\texttt{NOT},\texttt{OR},\&,|$
+\item \textbf{Otros} \texttt{ALL, ANY,BETWEEN, EXISTS,IN,LIKE,NOT,SOME}
+\end{itemize}
+
+\item ¿Como funciona la estructura de control \texttt{IF THEN}? cite ejemplo:
+\begin{flalign*}
+\texttt{IF $<$expresion$>$}  \\
+\texttt{BEGIN \hspace{1cm}} \\
+\texttt{END \hspace{1.35cm}}    \\
+\texttt{ELSE IF $<$expresion$>$}  \\
+\texttt{BEGIN \hspace{1cm}} \\
+\texttt{END \hspace{1.35cm}}  
+\end{flalign*}
+
+\begin{lstlisting}[language=SQL]
+DECLARE @edad int = 5
+
+IF @edad>=18
+  BEGIN
+	 PRINT 'Mayor de Edad'
+  END
+ELSE
+  BEGIN
+    PRINT 'Menor de Edad'
+  END
+\end{lstlisting}
+
+\item ¿Como funciona la estructura de control \texttt{CASE}? cite ejemplo:
+
+Tiene la siguiente estructura, donde se analizan diferentes casos para un determinado dato, y en cada caso devuelve cierto valor, en caso de no ser ninguno devuelve un valor por defecto.
+\begin{flalign*}
+\texttt{CASE $<$expresion$>$ \hspace{6cm}}  \\
+\texttt{WHEN $<$ valor\_expresion $>$ THEN $<$ valor\_devuelto $>$} \\
+\texttt{WHEN $<$ valor\_expresion $>$ THEN $<$ valor\_devuelto $>$} \\
+\texttt{ELSE} \hspace{8.35cm} \\
+\texttt{END \hspace{8.5cm}}  
+\end{flalign*}
+Ejemplo:
+
+\begin{lstlisting}[language=SQL]
+DECLARE @dato int
+DECLARE @valor char(45)
+
+SET @dato = 2
+
+SET @valor =(
+CASE @dato
+	WHEN 1 THEN 'A'
+	WHEN 2 THEN 'B'
+	WHEN 3 THEN 'C'
+	ELSE 'NOPE'
+END)
+
+PRINT @valor
+\end{lstlisting}
+
+\item ¿Como funciona la estructura de control \texttt{WHILE}? cite ejemplo:
+
+Al igual que en otros lenguajes de programacion (C++,C,C\#,Java,etc), tiene la siguiente estructura:
+\begin{flalign*}
+\texttt{WHILE $<$expresion$>$}  \\
+\texttt{BEGIN \hspace{2cm}} \\
+\texttt{END \hspace{2.35cm}}   
+\end{flalign*}
+Ejemplo de un programa que itera hasta 10 e imprime el resultado:
+
+\begin{lstlisting}[language=SQL]
+DECLARE @i int
+SET @i = 0
+
+WHILE (@i < 10)
+  BEGIN
+    SET @i = @i + 1
+    PRINT @i
+  END
+\end{lstlisting}
+
+\item ¿Como se hace el control de errores en Transact SQL? cite ejemplo:
+
+Se hace utilizando la estructura de control \texttt{try-catch}
+
+\begin{lstlisting}[language=SQL]
+DECLARE @d float
+DECLARE @n float
+DECLARE @r float
+
+SET @d = 0
+SET @n = 255
+
+BEGIN TRY
+	SET @r = @n/@d
+END TRY
+BEGIN CATCH
+	PRINT 'Division entre 0 Imposible!'
+END CATCH
+\end{lstlisting}
+En este caso, como la division entre 0 es imposible, no ejecuta lo que esta dentro del try, y va al catch.
+\item ¿Para que sirve la variable \texttt{@@ERROR} y que valores devuelve?
+
+La variable global de sistema \texttt{@@ERROR} almacena el número de error producido por la última sentencia Transact SQL ejecutada
+
+\end{enumerate}
