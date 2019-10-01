@@ -1,0 +1,105 @@
+\begin{enumerate}
+\item Como crear una función:
+
+\begin{lstlisting}[language=SQL]
+CREATE FUNCTION esquema.nombreFuncion (@nombre1 tipo1,...)
+RETURNS tipo
+AS
+BEGIN
+/* 	Cuerpo de la Funcion */
+	RETURN dato
+END
+\end{lstlisting}
+\item Como borrar una función:
+
+\begin{lstlisting}[language=SQL]
+DROP FUNCTION esquema.nombreFuncion
+\end{lstlisting}
+
+\item Como editar una función existente:
+
+\begin{lstlisting}[language=SQL]
+ALTER FUNCTION esquema.nombreFuncion (@nombre1 tipo1,...)
+RETURNS tipo
+AS
+BEGIN
+/* 	Cuerpo de la Funcion */
+	RETURN dato
+END
+\end{lstlisting}
+
+\item Como compilar una función:
+
+Una vez utilizada queda precompilada en la base de datos. Es decir, se guardan en ellas. La primera vez que se ejecuta se almacena.
+
+\item ¿Que tipos de funciones se pueden crear?
+
+Funciones Escalares y Funciones con valores de tabla, retorna un conjunto de valores (filas y columnas).
+
+\item ¿Como recibir y devolver parámetros en una función?
+
+Para recibir datos en una funcion simplemente en la parte de argumentos se pasa como en una funcion cualquiera. Para devolver se puede emplear la palabra clave \texttt{exec} or \texttt{execute} seguido de la variable a la que se quiere asignar el valor. Ejemplo:
+
+\begin{lstlisting}[language=SQL]
+DECLARE @x int
+DECLARE @a int = 5
+DECLARE @b int = 15
+EXEC @x = dbo.suma(@a,@b)
+\end{lstlisting}
+
+\item ¿Que tipos de datos se pueden crear dentro de una función?
+
+Se pueden usar los datos que hemos usado hasta ahora.
+
+\item ¿Que tipo de instrucción se pueden ejecutar en una función?
+
+Se pueden realizar las instrucciones que ya hemos usando previamente, \texttt{SELECT,FROM,WHERE},etc...
+
+\item ¿Como crear un Procedimiento Almacenado?
+
+\begin{lstlisting}[language=SQL]
+CREATE PROCEDURE nombrePA (@nombre1 tipo1,...,@nombre1 tipo1 out)
+AS
+BEGIN
+/* 	Cuerpo del PA*/
+	RETURN
+END
+\end{lstlisting}
+
+\item ¿Como borrar un Procedimiento Almacenado?
+
+\begin{lstlisting}[language=SQL]
+DROP PROCEDURE nombrePA;  
+GO  
+\end{lstlisting}
+
+\item ¿Como editar un Procedimiento Almacenado existente?
+
+\begin{lstlisting}[language=SQL]
+ALTER PROCEDURE nombrePA (@nombre1 tipo1,...,@nombre1 tipo1 out)
+AS
+BEGIN
+/* 	Cuerpo del PA*/
+	RETURN
+END
+\end{lstlisting}
+
+\item ¿Como compilar un Procedimiento Almacenado?
+
+De igual manera que las funciones, la primera vez que se ejecutan los comandos, estos son precompilados y almacenados.
+
+\item ¿Como recibir y devolver parámetros en un Procedimiento Almacenado?
+
+Puede recibir datos de la misma manera que las funciones, no devuelve parametros, lo que si hace es tener \texttt{out} al final de la declaracion de un argumento, con esto logramos que el dato de argumento sea devuelto luego de realizarle modificaciones en el PA.
+
+\item ¿Que tipos de datos se pueden crear dentro de un Procedimiento Almacenado
+?
+
+Los mismos que las funciones.
+
+\item ¿Que tipo de instrucción se pueden ejecutar en un Procedimiento Almacenado?
+
+Los mismos que en funciones.
+
+\end{enumerate}
+
