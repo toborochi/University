@@ -1,0 +1,62 @@
+El precio medio ponderado (PMP) es un método de valoración en contabilidad que se obtiene al realizar un cálculo del valor medio de las existencias que había al inicio y de las entradas ponderadas según sus cantidades.
+
+\section*{Fórmula del precio promedio ponderado (PPP)}
+
+Para calcular el Precio Promedio Ponderado (PPP) es necesario conocer esta sencilla formula. Explicando los términos que la componen, tenemos:
+\begin{itemize}
+\item $\sum P_i$ = Suma del precio de cada bien.
+\item $Q_i$ = Cantidad de bienes comprados
+\item $\sum Q_i$ = Cantidad total de bienes
+\end{itemize}
+$$
+	PPP = \dfrac{\sum P_i \cdot Q_i}{\sum Q_i}
+$$
+\section*{¿Qué supone el uso del PPP?}
+
+Por las propias condiciones propias del modelo, la utilización del precio promedio ponderado supone un continuo control de las existencias para su correcto funcionamiento, debido a que es necesario tener los datos sobre las cantidades almacenadas y las diferentes entradas y salidas de forma totalmente controlada.
+
+Además, este criterio de valoración de existencias es bastante confiable en periodos de tiempo de estabilidad en los precios, ya que reduce los efectos producidos por las posibles oscilaciones de estos.
+
+\pagebreak
+\section*{Implementacion}
+\begin{lstlisting}[language=SQL]
+USE preventas;
+/*
+	Funcion que calcula el PPP(Precio Promedio Ponderado)
+*/
+GO
+CREATE FUNCTION PA_PPP(@cprd INT, @calm INT)
+RETURNS DECIMAL(12,2)
+AS
+BEGIN
+	DECLARE @suma_total DECIMAL(12,2)
+	DECLARE @cant_total DECIMAL(12,2)
+	DECLARE @cant DECIMAL(12,2)
+	DECLARE @prec DECIMAL(12,2)
+	DECLARE @prec_final DECIMAL(12,2)
+	SET @suma_total = 0
+	SET @cant_total = 0
+	
+	DECLARE c_cursor CURSOR FOR SELECT sumi.cant, sumi.prec
+		FROM sumi
+		WHERE sumi.calm = @calm AND sumi.cprd = @cprd
+	
+	OPEN c_cursor
+	FETCH c_cursor INTO @cant, @prec
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		SET @suma_total = @suma_total + (@cant * @prec)
+		SET @cant_total = @cant_total + @cant
+		FETCH c_cursor INTO @cant, @prec
+	END
+
+	CLOSE c_cursor
+	DEALLOCATE c_cursor
+	
+	SET @prec_final = @suma_total / @cant_total
+	
+	RETURN @prec_final
+END
+GO
+
+\end{lstlisting}

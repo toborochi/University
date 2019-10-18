@@ -1,0 +1,73 @@
+\begin{enumerate}
+\item ¿Qué es un Trigger y para qué sirve?
+
+Es un Procedimiento Almacenado asociado con una tabla, el cual se ejecuta automaticamente cuando se ejecuta instrucciones que modifica un dato de esa tabla.
+
+\item ¿Cuáles son los beneficios de usar Trigger?
+
+Mejor para las reglas complejas del negocio que no se pueden expresar como restricciones referenciales tales como actualizaciones o borrados en cascada
+
+\item ¿Donde se almacenan los Trigger?
+
+Los Trigger son almacenados para cada tabla asociada, en el SQL SERVER los trigger se los puede visualizar en el Explorador de Objetos dentro de la tabla.
+
+\item ¿Para qué tipo de instrucciones se pueden definir un Trigger?
+
+Se puede definir para las instrucciones \texttt{INSERT,UPDATE} y \texttt{DELETE}
+
+\item Indique los casos en que se deben usar  los Trigger's
+\begin{itemize}
+\item Hacer modificaciones en cascada sobre tablas relacionadas
+\item Deshacer cambios que violan la integridad de los datos
+\item Forzar restricciones que son muy complejas para reglas y restricciones
+\item Mantener datos duplicados
+\item Mantener columnas con datos derivados
+\item Hacer ajustes de registros
+\end{itemize}
+
+\item ¿Cuándo se activa un Trigger?
+
+\item ¿Cual es la funcion de la tabla \texttt{INSERTED}?
+
+Almacena cualquier fila que se vaya a añadir a la tabla
+
+\item ¿Cual es la funcion de la tabla \texttt{DELETED}?
+
+Almacena cualquier fila que se vaya a borrar de la tabla
+
+\item ¿Cómo crear un Trigger?
+
+\begin{lstlisting}[language=SQL]
+CREATE TRIGGER nombre_trigger
+ON nombre_tabla
+AFTER  {[INSERT],[UPDATE],[DELETE]}
+AS
+{sql_statements}
+\end{lstlisting}
+
+\item ¿Cómo borrar un Trigger?
+
+\begin{lstlisting}[language=SQL]
+DROP TRIGGER nombre_trigger
+\end{lstlisting}
+
+\item ¿Cómo ejecutar un Trigger?
+
+No pueden ser invocados directamente; al intentar modificar los datos de una tabla para la que se ha definido un disparador, el disparador se ejecuta automáticamente.
+
+
+\item ¿Cómo editar un Trigger?
+
+No se puede modificar un disparador, primero habria que hacerle \texttt{DROP}.
+
+\item Explique las diferencias entre Restricciones y Trigger en una Base de Datos.
+
+Las \textbf{restricciones} se comprueban ANTES de la ejecución de una instrucción "insert", "update" o "delete". 
+Las restricciones se comprueban primero, si se infringe alguna restricción, el desencadenador no llega a ejecutarse.
+
+Los \textbf{triggers} se ejecutan DESPUES de la ejecución de una instrucción "insert", "update" o "delete" en la tabla en la que fueron definidos.
+Los triggers puden hacer referencia a los atributos de otras tablas.
+
+
+
+\end{enumerate}

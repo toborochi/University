@@ -35,6 +35,7 @@
 \usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
 \usepackage{empheq}
 \usepackage{svg}
+\usepackage{booktabs}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,allcolors=gray}
 \usepackage{hypcap}
@@ -98,56 +99,10 @@
     squar/.style={draw, fill=yellow!10, text width=4.75cm, text centered, minimum height=3.75cm, rounded corners}
 }
 
-
-\usepackage{pifont}
-\newcommand{\cmark}{\ding{51}}%
-\newcommand{\xmark}{\ding{55}}%
-\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
-\hspace{-2.5pt}}
-\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
-
 \def\blockdist{5}
 \def\edgedist{5}
-
-\usepackage{xcolor,listings}
-\usepackage{textcomp}
-\usepackage{color}
-
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{HTML}{590abf}
-\definecolor{backcolour}{HTML}{F2F2F2}
-\definecolor{bookColor}{cmyk}{0,0,0,0.90}  
-\color{bookColor}
-
-\lstset{upquote=true}
-
-\lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{codepurple},
-    numberstyle=\numberstyle,
-    stringstyle=\color{codepurple},
-    basicstyle=\footnotesize\ttfamily,
-    breakatwhitespace=false,
-    breaklines=true,
-    captionpos=b,
-    keepspaces=true,
-    numbers=left,
-    numbersep=1pt,
-    showspaces=false,
-    showstringspaces=false,
-    showtabs=false,
-}
-\lstset{style=mystyle}
-
-\newcommand\numberstyle[1]{%
-    \footnotesize
-    \color{codegray}%
-    \ttfamily
-    \ifnum#1<10 0\fi#1 %
-}
+\graphicspath{ {./Imagenes/} }
 \begin{document}
 \subfile{Archivos/Introduccion}
-\subfile{Archivos/Lab2-T2}
+\subfile{Archivos/SEC1}
 \end{document}
