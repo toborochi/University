@@ -20,7 +20,19 @@
 \end{table}
 $\sum_{\text{IPs Necesarias}}=280$ \\
 Si calculamos las IPs que tiene esta red sería: $2^8=256$ y nuestro subneteo tiene 280 IPs Necesarias (solo contamos con 256) por lo que debemos cambiar la mascara de \texttt{/24} a \texttt{/23}.
+\\ ${ }$ \\
+Primeramente tenemos que hallar la red Base:
 
+\[
+\renewcommand\arraystretch{1.2}
+\begin{array}{c@{}c@{\,}c@{\,}c@{\,}c@{\,}ccl}
+& \makebox[0pt]{\raisebox{-.5\normalbaselineskip}[0pt][0pt]{\texttt{\& }}} & & \texttt{180.147} & \texttt{.00100111} & \texttt{.00000000}\\
+& & &  & \texttt{.11111110} & \texttt{.00000000} \\
+\cline{3-6}
+& & & \texttt{180.147} & \texttt{.00100110}  & \texttt{.00000000} &  \texttt{= 180.147.38.0} &  \\
+
+\end{array}
+\]
 
 \begin{center}
 
