@@ -4,6 +4,7 @@
 \item Red Base: \texttt{180.147.39.0/24}
 
 \begin{table}[ht]
+\centering
     \begin{tabular}{|r|c|c|c|}
         \hline
         ~           & IPs & IPs Solicitadas & IPs Necesarias \\ \hline
@@ -21,10 +22,148 @@ $\sum_{\text{IPs Necesarias}}=280$ \\
 Si calculamos las IPs que tiene esta red sería: $2^8=256$ y nuestro subneteo tiene 280 IPs Necesarias (solo contamos con 256) por lo que debemos cambiar la mascara de \texttt{/24} a \texttt{/23}.
 
 
+\begin{center}
+
+\Tree
+[.512
+    \edge node[auto=right] {{\color{red}0}};
+    [.256 
+       \edge node[auto=right] {{\color{red}0}};
+       [.128
+       	\edge node[auto=right] {{\color{red}0}};
+       	[.64 
+			\edge node[auto=right] {{\color{red}0}};
+       		[.32 
+				\edge node[auto=right] {{\color{red}0}};
+       			[.\fbox{16} ]
+       			\edge node[auto=left] {{\color{red}1}};
+       			[.\fbox{16} ]       		
+       		]
+       		\edge node[auto=left] {{\color{red}1}};
+       		[.\fbox{32} ]       	
+       	]
+       	\edge node[auto=left] {{\color{red}1}};
+       	[.\fbox{64} ]
+       ]
+       \edge node[auto=left] {{\color{red}1}};
+       [.\fbox{128} 
+       ]
+        ]
+    \edge node[auto=left] {{\color{red}1}};
+    [.256 
+        \edge node[auto=right] {0};
+        [.128
+        ]
+        \edge node[auto=left] {{\color{red}1}};
+        [.128 
+		\edge node[auto=left] {{\color{red}1}};
+       	[.64 
+			\edge node[auto=right] {{\color{red}0}};
+       		[.32 
+				\edge node[auto=right] {{\color{red}0}};
+       			[.\fbox{16} ]
+       			\edge node[auto=left] {{\color{red}1}};
+       			[.16 
+       			\edge node[auto=left] {{\color{red}0}};
+       			[.\fbox{8} ]   ]           		
+       		]       	
+       	]     
+        ]
+        ]
+]
+\end{center}
+
+
+\begin{center}
+\begin{tikzpicture}
+
+\draw(-1.5,-0.25) -- (1.5,-0.25);
+\node[text width=3cm] at (1.1,-0.4) 
+    {{\scriptsize \texttt{23 Bits}}};
+
+\draw[dotted] (1.5,0.25) -- (1.5,-7.75);
+\node[text width=3cm] at (0,0) 
+    {\texttt{180.147.0010011}};
+\node[text width=3cm] at (3.1,0) 
+    {\texttt{0.00000000}};
+    
+\node[text width=3cm] at (0,-1) 
+    {\texttt{180.147.0010011}};
+\node[text width=3cm] at (3.1,-1) 
+    {\texttt{{\color{red}0.0000}\fbox{0000}}=\texttt{.0}};
+\node[text width=3cm] at (3.1,-1.5) 
+    {\texttt{{\color{red}0.0000}\fbox{1111}}=\texttt{.15}};
+
+\node[text width=3cm] at (0,-2) 
+    {\texttt{180.147.0010011}};
+\node[text width=3cm] at (3.1,-2) 
+    {\texttt{{\color{red}0.0001}\fbox{0000}}=\texttt{.16}};
+\node[text width=3cm] at (3.1,-2.5) 
+    {\texttt{{\color{red}0.0001}\fbox{1111}}=\texttt{.33}};
+    
+\node[text width=3cm] at (0,-3) 
+    {\texttt{180.147.0010011}};
+\node[text width=3cm] at (3.1,-3) 
+    {\texttt{{\color{red}0.01}\fbox{000000}}=\texttt{.64}};
+\node[text width=3cm] at (3.1,-3.5) 
+    {\texttt{{\color{red}0.01}\fbox{111111}}=\texttt{.127}};
+    
+\node[text width=3cm] at (0,-4) 
+    {\texttt{180.147.0010011}};
+\node[text width=3cm] at (3.1,-4) 
+    {\texttt{{\color{red}0.1}\fbox{0000000}}=\texttt{.128}};
+\node[text width=3cm] at (3.1,-4.5) 
+    {\texttt{{\color{red}0.1}\fbox{1111111}}=\texttt{.255}};
+    
+\node[text width=3cm] at (0,-5) 
+    {\texttt{180.147.0010011}};
+\node[text width=3cm] at (3.1,-5) 
+    {\texttt{{\color{red}1.1100}\fbox{0000}}=\texttt{1.192}};
+\node[text width=3cm] at (3.1,-5.5) 
+    {\texttt{{\color{red}1.1100}\fbox{1111}}=\texttt{1.207}};
+
+\node[text width=3cm] at (0,-6) 
+    {\texttt{180.147.0010011}};
+\node[text width=3cm] at (3.1,-6) 
+    {\texttt{{\color{red}1.11010}\fbox{000}}=\texttt{1.208}};
+\node[text width=3cm] at (3.1,-6.5) 
+    {\texttt{{\color{red}1.11010}\fbox{111}}=\texttt{1.215}};
+
+\node[text width=3cm] at (0,-7) 
+    {\texttt{180.147.0010011}};
+\node[text width=3cm] at (3.1,-7) 
+    {\texttt{{\color{red}0.001}\fbox{00000}}=\texttt{.32}};
+\node[text width=3cm] at (3.1,-7.5) 
+    {\texttt{{\color{red}0.001}\fbox{11111}}=\texttt{.63}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-1.6) -- (5,-0.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/28}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-2.6) -- (5,-1.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/28}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-3.6) -- (5,-2.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/26}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-4.6) -- (5,-3.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/25}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-5.6) -- (5,-4.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/28}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-6.6) -- (5,-5.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/29}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-7.6) -- (5,-6.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/27}};
+
+\end{tikzpicture}
+\end{center}
 
 \item Red Base: \texttt{192.168.0.0/23}
 
 \begin{table}[ht]
+\centering
     \begin{tabular}{|r|c|c|c|}
         \hline
         ~           & IPs & IPs Solicitadas & IPs Necesarias \\ \hline
@@ -83,33 +222,72 @@ Si calculamos las IPs que tiene esta red sería: $2^8=512$ (esto es mas de las q
         ]
         ]
 ]
-\end{center}\begin{center}
+\end{center}
 
+\begin{center}
 \begin{tikzpicture}
-\draw[dotted] (1.5,0.25) -- (1.5,-5.25);
+
+\draw(-1.5,-0.25) -- (1.5,-0.25);
+\node[text width=3cm] at (1.1,-0.4) 
+    {{\scriptsize \texttt{23 Bits}}};
+
+\draw[dotted] (1.5,0.25) -- (1.5,-5.75);
 \node[text width=3cm] at (0,0) 
     {\texttt{192.168.0000000}};
-\node[text width=3cm] at (3.25,0) 
+\node[text width=3cm] at (3.1,0) 
     {\texttt{0.00000000}};
     
 \node[text width=3cm] at (0,-1) 
     {\texttt{192.168.0000000}};
-\node[text width=3cm] at (3.25,-1) 
+\node[text width=3cm] at (3.1,-1) 
     {\texttt{{\color{red}0.00}\fbox{000000}}=\texttt{.0}};
-\node[text width=3cm] at (3.25,-1.5) 
+\node[text width=3cm] at (3.1,-1.5) 
     {\texttt{{\color{red}0.00}\fbox{111111}}=\texttt{.63}};
 
 \node[text width=3cm] at (0,-2) 
     {\texttt{192.168.0000000}};
+\node[text width=3cm] at (3.1,-2) 
+    {\texttt{{\color{red}0.010}\fbox{00000}}=\texttt{.64}};
+\node[text width=3cm] at (3.1,-2.5) 
+    {\texttt{{\color{red}0.010}\fbox{11111}}=\texttt{.95}};
     
 \node[text width=3cm] at (0,-3) 
     {\texttt{192.168.0000000}};
+\node[text width=3cm] at (3.1,-3) 
+    {\texttt{{\color{red}0.011}\fbox{00000}}=\texttt{.96}};
+\node[text width=3cm] at (3.1,-3.5) 
+    {\texttt{{\color{red}0.011}\fbox{11111}}=\texttt{.127}};
     
 \node[text width=3cm] at (0,-4) 
     {\texttt{192.168.0000000}};
+\node[text width=3cm] at (3.1,-4) 
+    {\texttt{{\color{red}1.0000}\fbox{0000}}=\texttt{1.0}};
+\node[text width=3cm] at (3.1,-4.5) 
+    {\texttt{{\color{red}1.0000}\fbox{1111}}=\texttt{1.15}};
     
 \node[text width=3cm] at (0,-5) 
     {\texttt{192.168.0000000}};
+\node[text width=3cm] at (3.1,-5) 
+    {\texttt{{\color{red}1.0001}\fbox{0000}}=\texttt{1.16}};
+\node[text width=3cm] at (3.1,-5.5) 
+    {\texttt{{\color{red}1.0001}\fbox{1111}}=\texttt{1.31}};
+
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-1.6) -- (5,-0.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/26}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-2.6) -- (5,-1.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/27}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-3.6) -- (5,-2.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/27}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-4.6) -- (5,-3.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/28}};
+
+\draw [decorate,decoration={brace,amplitude=2pt,mirror,raise=4pt},yshift=0pt]
+(5,-5.6) -- (5,-4.9) node [black,midway,xshift=0.8cm] {\footnotesize \texttt{/28}};
+
 \end{tikzpicture}
 \end{center}
 
