@@ -38,7 +38,7 @@ Si calculamos las IPs que tiene esta red sería: $2^8=256$ y nuestro subneteo ti
     \end{tabular}
 \end{table}
 $\sum_{\text{IPs Necesarias}}=160$\\
-Si calculamos las IPs que tiene esta red sería: $2^8=512$ (esto es mas de las que tenemos $512>160$).
+Si calculamos las IPs que tiene esta red sería: $2^8=512$ (esto es mas de las que tenemos $512>160$ por lo que podemos proceder sin problemas).
 \begin{center}
 
 \Tree
@@ -83,6 +83,34 @@ Si calculamos las IPs que tiene esta red sería: $2^8=512$ (esto es mas de las q
         ]
         ]
 ]
+\end{center}\begin{center}
+
+\begin{tikzpicture}
+\draw[dotted] (1.5,0.25) -- (1.5,-5.25);
+\node[text width=3cm] at (0,0) 
+    {\texttt{192.168.0000000}};
+\node[text width=3cm] at (3.25,0) 
+    {\texttt{0.00000000}};
+    
+\node[text width=3cm] at (0,-1) 
+    {\texttt{192.168.0000000}};
+\node[text width=3cm] at (3.25,-1) 
+    {\texttt{{\color{red}0.00}\fbox{000000}}=\texttt{.0}};
+\node[text width=3cm] at (3.25,-1.5) 
+    {\texttt{{\color{red}0.00}\fbox{111111}}=\texttt{.63}};
+
+\node[text width=3cm] at (0,-2) 
+    {\texttt{192.168.0000000}};
+    
+\node[text width=3cm] at (0,-3) 
+    {\texttt{192.168.0000000}};
+    
+\node[text width=3cm] at (0,-4) 
+    {\texttt{192.168.0000000}};
+    
+\node[text width=3cm] at (0,-5) 
+    {\texttt{192.168.0000000}};
+\end{tikzpicture}
 \end{center}
 
 \end{itemize}
