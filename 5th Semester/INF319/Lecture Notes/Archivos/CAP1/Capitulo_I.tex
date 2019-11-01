@@ -143,6 +143,66 @@ Sea $L$ un conjunto de palabras sobre $\Sigma$ con las propiedades:
 \end{enumerate}
 \subsubsection{Entonces}
 $L=\Sigma^*$, (es decir, todas las palabras sobre $\Sigma$ están en $L$.)
+\subsection{Prefijos, Sufijos y Subpalabras}
+Sean $v,z \in \Sigma^*$:
+\begin{itemize}
+\item Se dice que $v$ es prefijo de $z$ \textbf{ssi} existe $w\in\Sigma^*$ tal que: $z=vw$. Y se escribe: ``$v \text{\textit{ pref }} z$'' .
+\item Se dice que $v$ es sufijo de $z$ \textbf{ssi} existe $u\in\Sigma^*$ tal que: $z=uv$. Y se escribe: ``$v \text{\textit{ suf }} z$'' .
+\item Se dice que $v$ es subpalabra de $z$ \textbf{ssi} existe $u_1,u_2\in\Sigma^*$ tal que: $z=u_1 \vee u_2$. Y se escribe: ``$v \text{\textit{ subp}} z$'' .
+\end{itemize}
+
+\begin{center}
+\fbox{\begin{minipage}{28em}
+Sean $x,w \in \Sigma^*$:
+\begin{itemize}
+\item $x$ es \textbf{prefijo} de $w$ si $w=xy$, si $\exists y \in \Sigma^* / w = xy$
+\item $x$ es \textbf{sufijo} de $w$ si $w=yx$, si $\exists y \in \Sigma^* / w = yx$
+\item $x$ es \textbf{subcadena} de $w$ si $w=yx$, si $\exists z,y \in \Sigma^* / w = zxy$
+\end{itemize}
+\end{minipage}}
+\end{center}
+
+\subsubsection*{Ejemplo(s)}
+\begin{itemize}
+\item $\Sigma = \{ a,b \}$ , $z = babaab$
+\end{itemize}
+
+\begin{multicols}{3}
+\centering
+\textbf{Prefijo}
+\begin{align*}
+& u_1 = ba      & {\color{red}w} & {\color{red}= baab} \\
+& u_2 = bab     & {\color{red}w} & {\color{red}= aab} \\
+& u_3 = baba    & {\color{red}w} & {\color{red}= ab} \\
+& u_4 = babaa   & {\color{red}w} & {\color{red}= b} \\
+& u_5 = babaab  & {\color{red}w} & {\color{red}= \lambda}
+\end{align*}
+
+\columnbreak
+\textbf{Sufijo}
+\begin{align*}
+& v_1 = aab   & {\color{red}u} & {\color{red}= bab} \\
+& v_2 = abaab & {\color{red}u} & {\color{red}= b} \\
+& v_3 = ab    & {\color{red}u} & {\color{red}= baba} \\
+& v_4 = baab  & {\color{red}u} & {\color{red}= ba} \\
+& v_5 = b     & {\color{red}u} & {\color{red}= babaa}
+\end{align*}
+
+\columnbreak
+
+\textbf{Subpalabra}
+\begin{align*}
+& s_1 = aa   & {\color{red}u_1} & {\color{red}= bab} & {\color{red}u_2=}&{\color{red}b} \\
+& s_2 = baa  & {\color{red}u_1} & {\color{red}= ba}  & {\color{red}u_2=}&{\color{red}b}\\
+& s_3 = abaa & {\color{red}u_1} & {\color{red}= b}   & {\color{red}u_2=}&{\color{red}b}\\
+& s_4 = ba   & {\color{red}u_1} & {\color{red}= ba}  & {\color{red}u_2=}&{\color{red}ab}\\
+& s_5 = b    & {\color{red}u_1} & {\color{red}= \lambda} & {\color{red}u_2=}&{\color{red}abaab}
+\end{align*}
+\end{multicols}
+
+
+
+
 \subsection{Lenguajes}
 Un lenguaje sobre $\Sigma$ es un subconjunto de $\Sigma^*$
 \subsubsection{Operaciones}
@@ -158,6 +218,56 @@ $$A'=\{ w'\in \Sigma^* /w\in A\} $$
 Sea $A\subseteq \Sigma^*$ \\
 $$A^* = \{w\in\Sigma^* / w=w_1 w_2 \ldots w_n \text{ para algún } k\in\mathbb{N} \text{ y para algunas }w_1,w_2,\ldots,w_k \in A\}$$
 \end{itemize}
+\subsection{Orden Lexicográfico}
+Cualquier lenguaje infinito puede ser ordenado lexicograficamente en consecuencia se puede poner en biyección con el conjunto $\mathbb{N}$.
+\begin{enumerate}
+\item Se presupone un orden en los símbolos del alfabeto.
+\item Entre dos palabras de distinta longitud la de menor longitud precede a la de mayor longitud.
+\item Entre 2 palabras de la misma longitud se factoriza ambas hasta el primer símbolo diferente exclusivo. La precedencia se decide comparando la segunda parte de ambas factorizaciones, en base al primer símbolo de la segunda parte.
+\end{enumerate}
+
+\subsubsection*{Ejemplo(s)}
+
+\begin{itemize}
+\item $\Sigma = \{ a,b,c \}$, $L=\{ a,b,ab,ac,acb,abc,c,aa,cba \}$
+\end{itemize}
+
+\begin{figure}[ht!]
+ \centering
+ \begin{tikzpicture}[ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=-2pt}]
+ 
+  \node[,label=center:$\mathbb{N}$] (a0) at (0,5.25) {};   
+  \node[,label=center:$1$] (a1) at (0,4) {};    
+  \node[,label=center:$2$] (a2) at (0,3.5) {};    
+  \node[,label=center:$3$] (a3) at (0,3) {};
+  \node[,label=center:$4$] (a4) at (0,2.5) {};
+  \node[,label=center:$5$] (a5) at (0,2) {};
+  \node[,label=center:$6$] (a6) at (0,1.5) {};
+  \node[,label=center:$7$] (a7) at (0,1) {};
+  \node[,label=center:$\vdots$] (a8) at (0,0.5) {};
+
+  \node[,label=center:$L$] (b0) at (3.5,5.25) {};   
+  \node[,,label=center:$\text{ }a$] (b1) at (3.5,4) {};
+  \node[,,label=center:$\text{ }b$] (b2) at (3.5,3.5) {};
+  \node[,,label=center:$\text{ }c$] (b3) at (3.5,3) {};
+  \node[,,label=center:$\text{ }aa$] (b4) at (3.5,2.5) {};
+  \node[,,label=center:$\text{ }ab$] (b5) at (3.5,2) {};
+  \node[,,label=center:$\text{ }ac$] (b6) at (3.5,1.5) {};
+  \node[,,label=center:$\text{ }abc$] (b7) at (3.5,1) {};
+  \node[,,label=center:$\text{  }\vdots$] (b8) at (3.5,0.5) {};  
+
+  \node[draw,fit= (a1) (a2) (a3) (a4) (a5) (a6) (a7) (a8),minimum width=2cm] {} ;
+  \node[draw,fit= (b1) (b2) (b3) (b4) (b5) (b6) (b7) (b8),minimum width=2cm] {} ;  
+  \draw[->,thick,shorten <=2pt,shorten >=2pt] (a1) -- (b1);
+  \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+  \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b3);
+  \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b4);
+  \draw[->,thick,shorten <=2pt,shorten >=2] (a5) -- (b5);
+  \draw[->,thick,shorten <=2pt,shorten >=2] (a6) -- (b6);
+  \draw[->,thick,shorten <=2pt,shorten >=2] (a7) -- (b7);
+ \end{tikzpicture}
+\end{figure}
+
 \subsection{Representación Finita de Lenguajes}
 Necesitamos tener dos consideraciones:
 \begin{itemize}
@@ -226,6 +336,7 @@ b\\
 \end{align*}
 \subsubsection*{Lenguaje Regular}
 Un lenguaje es regular ssi es generado por una expresión regular.
+\subsubsection*{Ejemplo(s)}
 \subsection{Módulos}
 \subsubsection*{Definición}
 Un módulo es una tripleta $D=(k,\Sigma,f)$ donde:
@@ -249,7 +360,7 @@ Un módulo se puede interpretar como un dispositivo que en determinados instante
 \begin{itemize}
 \item \textbf{Tabla de Transición} \\
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \begin{tabular}{|c|cccccc|}
     \hline
@@ -265,7 +376,7 @@ Un módulo se puede interpretar como un dispositivo que en determinados instante
 \end{figure}
 \item \textbf{Grafo} \\
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
 \node[state] (q_0) {$s_i$};
@@ -300,6 +411,12 @@ Sea $D=(k,\sigma,f)$ un módulo: \\
 %\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
 \end{tikzpicture}
 \end{center}
+
+\begin{align*}
+s_{i+1} &= f(s_i, \sigma_i ) \text{ Procesa Símbolo}\\
+s_{k  } &= \hat{f}(s_0, \sigma_0\sigma_1\sigma_2 \ldots \sigma_{k-1} ) \text{ Procesa Palabras}
+\end{align*}
+
 \subsubsection{Función Estado Terminal}
 Sea $D=(k,\sigma,f)$ un módulo: \\${ }$\\
 Una función de Estado Terminal del módulo $D$ es una única función:
@@ -324,7 +441,36 @@ f:k \rightarrow k \text{ tal que: } f_w(s)=\widehat{f}(s,w)
 s
 $$
 \end{itemize}
+\subsection{Alcanzabilidad}
+Sea $D =(k,\Sigma,f)$ un módulo y sean $s,t\in K$.
+\begin{itemize}
+\item Decimos que $t$ es alcanzable a partir de $s$ \textbf{ssi} existe $w\in\Sigma^*$ tal que:
+$$
+	\hat{f}(s,w)=t
+$$
+y se escribe 
 
+\begin{center}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[] (s_0) {$s$};
+\node[] (s_1) at (1,0) {$t$};
+
+\path[->,line width=0.25mm] (s_0) edge node[] {${}$} (s_1);
+
+\end{tikzpicture}
+\end{center}
+\item Sea $k\in\mathbb{N}$. Decimos que $t$ es $k$-Alcanzable a partir de $s$ \textbf{ssi} existe $w\in\Sigma^*$ tal que $$|w|=k \wedge \hat{f}(s,w)=t$$  y se escribe:
+\begin{center}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[] (s_0) {$s$};
+\node[] (s_1) at (1,0) {$t$};
+
+\path[->,line width=0.25mm] (s_0) edge node[] {${k}$} (s_1);
+
+\end{tikzpicture}
+\end{center}
+
+\end{itemize}
 \subsection{Máquinas}
 \subsubsection{Definición}
 Una máquina es una quíntupla $M=(k,\Sigma,\Delta,f,g)$ donde:
@@ -402,6 +548,13 @@ Sea $M=(k,\Sigma,\Delta,f,g)$ una máquina: \\
 %\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
 \end{tikzpicture}
 \end{center}
+
+\begin{align*}
+\hat{f}(s_0,\sigma_0\sigma_2\ldots\sigma_{k-1}) & =s_k \\
+      y(s_i,\sigma_i) & =\delta_i \\
+      \overline{y}(s_0,\sigma_0\sigma_1\ldots\sigma_k)&=\delta_0\delta_1\ldots\delta_{k-1}
+\end{align*}
+
 \subsubsection{Función Estado Terminal}
 Sea $M=(k,,\Sigma,\Delta,f,g)$ una máquina.
 \begin{enumerate}
@@ -434,3 +587,17 @@ $$
 g_s:\Sigma^*\rightarrow\Delta^* \text{ tal que } g_s(w)=\overline{g}(s,w)
 $$
 \end{itemize}
+\subsection{Síntesis, Análisis y Verificación}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+ & \texttt{I/O} & Máquina \\ 
+\hline 
+Síntesis & \checkmark & ? \\ 
+\hline 
+Análisis & ? & \checkmark \\ 
+\hline 
+Verificación & \checkmark & \checkmark \\ 
+\hline 
+\end{tabular} 
+\end{center}
