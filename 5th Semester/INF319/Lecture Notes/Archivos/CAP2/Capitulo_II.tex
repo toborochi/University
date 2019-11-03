@@ -10,7 +10,98 @@ Un Autómata Finito Determinístico (AFD) es una quintupla $M=(k,\Sigma,f,s_0,F)
 \item $F\subseteq k$, \textit{Conjunto de estados finales}
 \end{itemize}
 \subsection{Intepretación}
+Podemos verlo como una cinta que posee una \textbf{cabeza lectora}, esta se mueve hacia la derecha y con este movimiento los estados $q_i$ cambian.
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}
+
+\draw(-3,5) -- (3,5);
+\draw(-3,4) -- (3,4);
+
+\newcount\foo
+\foo=-3
+\loop
+  \message{\the\foo}
+  \draw(\foo,5) -- (\foo,4);
+  \advance \foo 1
+\ifnum \foo<4
+\repeat
+
+\node[] at (-2.5,4.5) 
+    {b};
+\node[] at (-1.5,4.5) 
+    {b};
+\node[] at (-0.5,4.5) 
+    {a};
+\node[] at (0.5,4.5) 
+    {b};
+\node[] at (1.5,4.5) 
+    {a};
+\node[] at (2.5,4.5) 
+    {b};
+
+\node[] at (-0.5,5.4) 
+    {{\color{red}``\texttt{{\scriptsize Cabeza Lectora}}''} };
+\draw[line width=0.4mm, red] (-1.1,3.9) -- (0.1,3.9) -- (0.1,5.1) -- (-1.1,5.1) -- (-1.1,3.9);
+
+\draw[line width=0.2mm](-2,1) -- (2,1) -- (2,3) -- (-2,3) -- (-2,1);
+\draw(-5,0.5) -- (5,0.5);
+
+\draw[line width=0.2mm] (-1.5,0.75) circle (7pt);
+\draw[line width=0.2mm] ( 1.5,0.75) circle (7pt);
+
+\draw [->,very thick](2,2) -- (3,2);
+
+\newcounter{cA} 
+\newcounter{mycounter}
+\newcommand\x{0}
+\forLoop[45]{0}{8}
+{%
+  \node[] at ({sin(\i)*0.75},{cos(\i)*0.75+2}) {$q_{\thecA}$};
+  \x = \the\numexpr\x+1 \relax;
+  \addtocounter{cA}{1};
+}
+\draw [->,very thick](0,2) -- ({sin(150)*0.5},{cos(150)*0.5+2});
+
+\end{tikzpicture}
+\caption{Es importante notar que un Autómata se mueve hacia \textit{adelante} al contrario de una máquina de Turing \texttt{2.9}}
+\end{figure}
+\pagebreak
 \subsection{Representación}
+\subsubsection*{Tabla}
+En esta representación, el estado inicial se apunta con una \textbf{flecha}($\rightarrow$), los estados finales se \textbf{subrayan}.
+\begin{figure}[ht!]
+\centering
+\begin{tabular}{|c|cccccc|}
+    \hline
+    \backslashbox{$k$}{\vspace{0.1pt}\\$\Sigma$} & $\sigma_0$ & $\sigma_1$ & $\cdots$ & $\sigma_j$ & $\cdots$ & $\sigma_m$\\ \hline
+                $\rightarrow s_0$ &      &  &   &$\vdots$&&\\ 
+                \underline{$s_1$}             &      &  &  &$\vdots$&& \\ 
+                $\vdots$             &      & &  & $\vdots$ &&\\ 
+                $s_i$             &   $\cdots$   & $\cdots$  &$\cdots$  &$s_k$&&\\ 
+                $\vdots$             &      &  &  &&& \\ 
+                $s_n$             &      &  &  && &\\ \hline
+\end{tabular} 
+\end{figure}
+
+\subsubsection*{Grafo}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[state,initial,initial text=] (q_2) at (0,-1.5) {$s_0$};
+\node[state,accepting] (q_3) at (0,-2.5) {$s$};
+\node[state] (q_0) {$s_i$};
+\node[state] (q_1) at (3,0) {$s_j$};
+
+\node[align=left] at (2.75,-1.5) {\textbf{ssi} $s_0$ es un estado inicial.};
+\node[align=left] at (1.5,-2.5) {\textbf{ssi} $s\in F$};
+
+\path[->,line width=0.25mm] (q_0) edge node[] {$\sigma$} (q_1);
+%\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
+\end{tikzpicture}
+\end{figure}
+
+
 \subsection{Configuración}
 Sea $M=(k,\Sigma,\delta,s_0,F)$ un AFD. \\ $ { } $ \\ 
 Una configuración de $M$ es un elemento de $k\times\Sigma^*$
@@ -18,6 +109,12 @@ Una configuración de $M$ es un elemento de $k\times\Sigma^*$
 Sea $(q,w)$ y $(q',w')$ dos configuraciones\footnote{$\sststile{M}{\hspace{0.25cm} \hspace{0.25cm}}$ se lee \textit{''conduce a''} en un paso.}:
 $$
 (q,w)\sststile{M}{\hspace{0.25cm} \hspace{0.25cm}} (q',w')\Leftrightarrow w = \sigma w' \text{ para algun } \sigma\in\Sigma \text{ y } \delta(q,\sigma)=q'
+$$
+
+Denotamos por $\sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}}$ a la clausura reflexiva transitiva de $\sststile{M}{\hspace{0.25cm}  \hspace{0.25cm}}$ y se lee ``Conduce a'' en cero o mas pasos (varios pasos). \\${ }$\\
+Sea $M=(k,\Sigma,\sigma,s,F)$ un AFD y sea $w\in\Sigma^*$. Se dice que $M$ acepta $w$ \textbf{ssi}:
+$$
+	(s,w) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q,\lambda) \wedge q\in F
 $$
 \subsubsection{Lenguaje Aceptado por M}
 \begin{align*}
@@ -34,6 +131,14 @@ Un autómata Finito no Deterministico (AFN) es una quintupla $M=(k,\Sigma,\Delta
 \item $s\in k$
 \item $F\subseteq k$
 \end{itemize}
+\subsection{Configuración}
+Una configuración es un elemento de $k\times \Sigma^*$.
+
+\subsubsection{Relación $\sststile{M}{\hspace{0.25cm}  \hspace{0.25cm}}$}
+Sean $(q,w)$ y $(q',w')$ dos configuraciones:
+
+
+
 \section{Equivalencia entre una AFD y un AFN}
 \subsubsection{Teorema}
 Para cada AFN existe un AFD equivalente.
@@ -502,7 +607,7 @@ $$
 La intersección de un L.L.C con un lenguaje regular es un lenguaje libre de Contexto.
 \subsubsection{Teorema de Pumping}
 Sea $G$ una G.L.C. entonces existe un número $k$ que depende de $G$ tal que cualquier palabra $w\in L(G)$ de longitud $>k$, se puede reescribir $w=uvxyz$ de tal manera que ya sea $v$ o $y$ es no vacía y $uv^n xy^n z\in L(G)$. \textbf{Para cada} $n\geq 0$.
-\section{Máquinas de Turing}
+\section{Máquinas de Turing }
 \subsubsection*{Definición}
 Una máquina de Turing es una cuadrupla $M=(K,\Sigma,\delta,s)$ donde:
 \begin{itemize}

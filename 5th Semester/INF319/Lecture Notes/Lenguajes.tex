@@ -35,6 +35,8 @@
 \usepackage[spanish,onelanguage,linesnumbered,ruled,vlined]{algorithm2e}
 \DeclarePairedDelimiter{\Ex}{[}{]}
 \newcommand{\E}{\Ex}
+\usepackage{multido}
+\newcommand{\forLoop}[4][1]{\multido{\i=#2+#1}{#3}{#4}}
 
 \pgfplotsset{compat=1.16}
 
