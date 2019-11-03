@@ -136,9 +136,18 @@ Una configuración es un elemento de $k\times \Sigma^*$.
 
 \subsubsection{Relación $\sststile{M}{\hspace{0.25cm}  \hspace{0.25cm}}$}
 Sean $(q,w)$ y $(q',w')$ dos configuraciones:
-
-
-
+$$
+	(q,w) \sststile{M}{\hspace{0.25cm}  \hspace{0.25cm}} (q',w') \Leftrightarrow w = uw' \text{ para algún } u \in\Sigma^* \text{ y } (q,u,q')\in\Delta
+$$
+Denotamos por $\sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}}$ la clausura reflexiva transitiva de $\sststile{M}{\hspace{0.25cm}  \hspace{0.25cm}}$ y se lee ``Conduce a'' en cero o mas pasos. Se dice que $M$ acepta $w$ \textbf{ssi}:
+$$
+	(s,w) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q,\lambda ); q\in F
+$$
+\subsubsection{Lenguaje Aceptado por M}
+\begin{align*}
+L(M) = & \{ w\in\Sigma^* / M \text{ acepta } w\} \\
+L(M) = & \{ w\in\Sigma^* / (s,w) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q,\lambda) \wedge q\in F\}
+\end{align*}
 \section{Equivalencia entre una AFD y un AFN}
 \subsubsection{Teorema}
 Para cada AFN existe un AFD equivalente.
@@ -447,9 +456,41 @@ Son regulares ya que $R(i,j,1)$ son \textbf{finitos}. \\${ }$\\
 \textbf{HI} \\
 Para $k=1,2,\ldots,n$ $R(i,j,k)$ son Regulares. \\${ }$\\
 \textbf{p.d.} Para $k+1$ es decir $R(i,j,k+1)$ es regular:
-% DIAGRAMA 
+
+\tikzset{every loop/.style={min distance=5mm,in=340,out=20,looseness=20}}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+
+\node[state] at ({sin(0+30)*2},{cos(0+30)*2}) (q_i) {$q_i$};
+\node[state] at ({sin(120+30)*2},{cos(120+30)*2}) (q_j) {$q_j$};
+\node[state] at ({sin(240+30)*2},{cos(240+30)*2}) (q_k) {$q_k$};
+%\node[align=left] at (2.75,-1.5) {\textbf{ssi} $s_0$ es un estado inicial.};
+
+ \path (q_k) edge [decorate,decoration={snake,amplitude=.6mm,segment length=2mm,post length=10mm,pre length=10mm},loop right,line width=0.25mm] node {} (q_k);
+ 
+ \path[->, line width=0.25mm,decoration={coil,segment length=4,amplitude=.6mm,
+  post=lineto,post length=8mm,pre length=8mm}] (q_i) edge[decorate] node[] {} (q_j);
+ 
+ \path[->,line width=0.25mm,decoration={coil,segment length=4,amplitude=.6mm,
+  post=lineto,post length=8mm,pre length=8mm}] (q_i) edge[decorate] node[] {} (q_k);
+ 
+ \path[->,line width=0.25mm,decoration={coil,segment length=4,amplitude=.6mm,
+  post=lineto,post length=8mm,pre length=8mm}] (q_k) edge[decorate] node[] {} (q_j);
+ 
+ \draw[line width=0.25mm] (0,0) circle (1.3cm);
+%\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
+\end{tikzpicture}
+\end{figure}
+
+$$
+R(i,j,k+1) = \underbrace{\underbrace{R(i,j,k)}_{Regular} \cup \underbrace{\underbrace{R(i,k,k)}_{Regular} \underbrace{R(k,k,k)^* }_{Regular}\underbrace{R(k,j,k)}_{Regular} }_{Regular}}_{Regular}
+$$
+$R(i,j,k)$ es regular por la clausura de lenguaje regular respecto a la unión, concatenación y Estrella de Kleene.
 \end{enumerate}
 \section{Lenguajes no Regulares}
+\subsection{Teoría}
+Sea $L$ un lenguaje regular infinito. Entonces existen palabras $x,y,z$ tales que $y\neq \lambda$ y $xy^n z\in L$. {\color{red} Para cada $n\geq 0$}.
 \section{Gramáticas}
 \subsection{Definición}
 Una gramática Libre de Contexto es una cuádrupla $G=(V,\Sigma,R,S)$ donde:
@@ -459,6 +500,19 @@ Una gramática Libre de Contexto es una cuádrupla $G=(V,\Sigma,R,S)$ donde:
 \item $S\in (V-\Sigma)$ (Símbolo Inicial)
 \item $R$ es un conjunto finito de $(V-\Sigma)\times V^*$ (Reglas)
 \end{itemize}
+
+\begin{center}
+\begin{tikzpicture}
+\draw [rounded corners=0.5cm] (-1,-1) rectangle ++(3,3) node [midway]{};
+
+ \node at (0.5,0.82) (a) {$\Sigma$};
+  \node at (-0.25,-0.5) (b) {$V-\Sigma$};
+  \node at ( 1.5,-0.5) (c) {{\color{red}$S$}};
+  \node at (2,2) (d) {$V$};
+\draw (0.5,0.75) circle (0.75cm);
+\end{tikzpicture}
+\end{center}
+A los elementos de $V-\Sigma$ se les llama \textit{símbolos no terminales}.
 \subsubsection{Notación}
 Para cada $A\in V-\Sigma \text{ , } w\in\Sigma^*$
 $$
@@ -475,7 +529,7 @@ Se denota por $u \xRightarrow[G]{*} v$ la clausura reflexiva transitiva de $\xRi
 $$
 L(G) = \Big\{ w\in \Sigma^* / S \xRightarrow[G]{*} w \Big\} 
 $$
-Un lenguaje es libre de contexto ssi existe una gramatica libre de contexto que genera el Lenguaje.
+Un lenguaje es libre de contexto \textbf{ssi} existe una gramatica libre de contexto que genera el Lenguaje.
 \subsection{Gramáticas Regulares}
 \subsubsection{Definición}
 Una Gramática Libre de Contexto $G=(V,\Sigma,R,S)$ es regular ssi:
@@ -607,6 +661,8 @@ $$
 La intersección de un L.L.C con un lenguaje regular es un lenguaje libre de Contexto.
 \subsubsection{Teorema de Pumping}
 Sea $G$ una G.L.C. entonces existe un número $k$ que depende de $G$ tal que cualquier palabra $w\in L(G)$ de longitud $>k$, se puede reescribir $w=uvxyz$ de tal manera que ya sea $v$ o $y$ es no vacía y $uv^n xy^n z\in L(G)$. \textbf{Para cada} $n\geq 0$.
+\subsubsection{Teorema}
+Los L.L.C. no son cerrados bajo la complementación e intersección.
 \section{Máquinas de Turing }
 \subsubsection*{Definición}
 Una máquina de Turing es una cuadrupla $M=(K,\Sigma,\delta,s)$ donde:
@@ -624,6 +680,73 @@ Una máquina de Turing es una cuadrupla $M=(K,\Sigma,\delta,s)$ donde:
 \end{enumerate}
 \begin{center}
 {\color{red}  Si la máquina esta en $h$} se dice que la máquina se \textit{detiene}.
+\end{center}
+\subsubsection{Interpretación}
+\begin{center}
+\begin{tikzpicture}
+
+\draw(-5,5) -- (5,5);
+\draw(-5,4) -- (5,4);
+
+\draw [decorate, decoration={zigzag}] (5,5) -- (5,4);
+
+\newcount\foo
+\foo=-5
+\loop
+  \message{\the\foo}
+  \draw(\foo,5) -- (\foo,4);
+  \advance \foo 1
+\ifnum \foo<5
+\repeat
+
+\node[] at (-4.5,4.5) 
+    {b};
+\node[] at (-3.5,4.5) 
+    {b};
+\node[] at (-2.5,4.5) 
+    {a};
+\node[] at (-1.5,4.5) 
+    {a};
+\node[] at (-0.5,4.5) 
+    {b};
+\node[] at (0.5,4.5) 
+    {b};
+\node[] at (1.5,4.5) 
+    {\#};    
+\node[] at (2.5,4.5) 
+    {\#};
+\node[] at (3.5,4.5) 
+    {\#};
+\node[] at (4.5,4.5) 
+    {\#};
+
+
+\draw[line width=0.4mm, red] (-1.1,3.9) -- (0.1,3.9) -- (0.1,5.1) -- (-1.1,5.1) -- (-1.1,3.9);
+
+\draw[line width=0.2mm](-2,1) -- (2,1) -- (2,3) -- (-2,3) -- (-2,1);
+\draw(-5,0.5) -- (5,0.5);
+
+\draw[line width=0.2mm] (-1.5,0.75) circle (7pt);
+\draw[line width=0.2mm] ( 1.5,0.75) circle (7pt);
+
+\draw [->,very thick](2,2) -- (3,2);
+\draw [->,very thick](-2,2) -- (-3,2);
+
+\newcounter{cB} 
+
+\newcommand\x{0}
+\forLoop[45]{0}{7}
+{%
+  \node[] at ({sin(\i)*0.75},{cos(\i)*0.75+2}) {$q_{\thecB}$};
+  \fi
+  \x = \the\numexpr\x+1 \relax;
+  \addtocounter{cB}{1};
+}
+\draw [->,very thick](0,2) -- ({sin(150)*0.5},{cos(150)*0.5+2});
+
+\end{tikzpicture}
+\\
+En una Máquina de Turing la \textit{cinta} es infinita a la derecha.
 \end{center}
 \subsubsection*{Teorema}
 Los siguientes modelos de máquinas de Turing son igualmente poderosos:

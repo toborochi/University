@@ -57,25 +57,29 @@
 \contentsline {subsection}{\numberline {2.2.1}Definici\IeC {\'o}n}{17}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Configuraci\IeC {\'o}n}{17}{subsection.2.2.2}
 \contentsline {subsubsection}{Relaci\IeC {\'o}n $\sststile {M}{\hspace {0.25cm} \hspace {0.25cm}}$}{17}{section*.42}
+\contentsline {subsubsection}{Lenguaje Aceptado por M}{17}{section*.43}
 \contentsline {section}{\numberline {2.3}Equivalencia entre una AFD y un AFN}{17}{section.2.3}
-\contentsline {subsubsection}{Teorema}{17}{section*.43}
-\contentsline {subsubsection}{$\bigstar $ Prueba}{17}{section*.44}
+\contentsline {subsubsection}{Teorema}{17}{section*.44}
+\contentsline {subsubsection}{$\bigstar $ Prueba}{17}{section*.45}
 \contentsline {section}{\numberline {2.4}Propiedades de los Lenguajes Aceptados por AF's}{18}{section.2.4}
-\contentsline {subsubsection}{Prueba}{18}{section*.46}
+\contentsline {subsubsection}{Prueba}{18}{section*.47}
 \contentsline {section}{\numberline {2.5}Automatas Finitos y Expresiones Regulares}{20}{section.2.5}
-\contentsline {section}{\numberline {2.6}Lenguajes no Regulares}{21}{section.2.6}
-\contentsline {section}{\numberline {2.7}Gram\IeC {\'a}ticas}{21}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Definici\IeC {\'o}n}{21}{subsection.2.7.1}
-\contentsline {subsubsection}{Notaci\IeC {\'o}n}{22}{section*.53}
-\contentsline {subsubsection}{Derivaci\IeC {\'o}n}{22}{section*.54}
-\contentsline {subsubsection}{Lenguaje Generado por $G$}{22}{section*.55}
-\contentsline {subsection}{\numberline {2.7.2}Gram\IeC {\'a}ticas Regulares}{22}{subsection.2.7.2}
-\contentsline {subsubsection}{Definici\IeC {\'o}n}{22}{section*.56}
-\contentsline {subsubsection}{Teorema}{22}{section*.57}
+\contentsline {section}{\numberline {2.6}Lenguajes no Regulares}{22}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Teor\IeC {\'\i }a}{22}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.7}Gram\IeC {\'a}ticas}{22}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Definici\IeC {\'o}n}{22}{subsection.2.7.1}
+\contentsline {subsubsection}{Notaci\IeC {\'o}n}{22}{section*.54}
+\contentsline {subsubsection}{Derivaci\IeC {\'o}n}{23}{section*.55}
+\contentsline {subsubsection}{Lenguaje Generado por $G$}{23}{section*.56}
+\contentsline {subsection}{\numberline {2.7.2}Gram\IeC {\'a}ticas Regulares}{23}{subsection.2.7.2}
+\contentsline {subsubsection}{Definici\IeC {\'o}n}{23}{section*.57}
+\contentsline {subsubsection}{Teorema}{23}{section*.58}
 \contentsline {section}{\numberline {2.8}Aut\IeC {\'o}mata con Pila}{23}{section.2.8}
-\contentsline {subsubsection}{Definici\IeC {\'o}n}{23}{section*.61}
-\contentsline {subsection}{\numberline {2.8.1}Configuraci\IeC {\'o}n}{23}{subsection.2.8.1}
+\contentsline {subsubsection}{Definici\IeC {\'o}n}{23}{section*.62}
+\contentsline {subsection}{\numberline {2.8.1}Configuraci\IeC {\'o}n}{24}{subsection.2.8.1}
 \contentsline {subsection}{\numberline {2.8.2}Aut\IeC {\'o}matas con Pila y Gram\IeC {\'a}ticas Libre de Contexto}{24}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Propiedades de los Lenguajes Libres de Contexto}{24}{subsection.2.8.3}
-\contentsline {subsubsection}{Teorema de Pumping}{24}{section*.77}
+\contentsline {subsection}{\numberline {2.8.3}Propiedades de los Lenguajes Libres de Contexto}{25}{subsection.2.8.3}
+\contentsline {subsubsection}{Teorema de Pumping}{25}{section*.78}
+\contentsline {subsubsection}{Teorema}{25}{section*.79}
 \contentsline {section}{\numberline {2.9}M\IeC {\'a}quinas de Turing }{25}{section.2.9}
+\contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{26}{section*.81}
