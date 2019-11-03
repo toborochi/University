@@ -738,10 +738,10 @@ Una máquina de Turing es una cuadrupla $M=(K,\Sigma,\delta,s)$ donde:
 \forLoop[45]{0}{7}
 {%
   \node[] at ({sin(\i)*0.75},{cos(\i)*0.75+2}) {$q_{\thecB}$};
-  \fi
   \x = \the\numexpr\x+1 \relax;
   \addtocounter{cB}{1};
 }
+\node[] at ({sin(315)*0.75},{cos(315)*0.75+2}) {$h$};
 \draw [->,very thick](0,2) -- ({sin(150)*0.5},{cos(150)*0.5+2});
 
 \end{tikzpicture}

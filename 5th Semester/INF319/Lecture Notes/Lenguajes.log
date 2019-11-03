@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  3 NOV 2019 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  3 NOV 2019 17:41
 entering extended mode
 **./Lenguajes.tex
 (Lenguajes.tex
@@ -1904,7 +1904,10 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 28.
  [2]
-(Lenguajes.toc)
+(Lenguajes.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
 \tf@toc=\write5
 \openout5 = `Lenguajes.toc'.
 
@@ -3271,86 +3274,36 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-
-! Extra \fi.
-<inserted text> ...*0.75+2}) {$q_{\thecB }$}; \fi 
-                                                  \x = \the \numexpr \x +1 \...
-l.744 }
-       
-I'm ignoring this; it doesn't match any \if.
-
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-! Extra \fi.
-<inserted text> ...*0.75+2}) {$q_{\thecB }$}; \fi 
-                                                  \x = \the \numexpr \x +1 \...
-l.744 }
-       
-I'm ignoring this; it doesn't match any \if.
-
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-! Extra \fi.
-<inserted text> ...*0.75+2}) {$q_{\thecB }$}; \fi 
-                                                  \x = \the \numexpr \x +1 \...
-l.744 }
-       
-I'm ignoring this; it doesn't match any \if.
-
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-! Extra \fi.
-<inserted text> ...*0.75+2}) {$q_{\thecB }$}; \fi 
-                                                  \x = \the \numexpr \x +1 \...
-l.744 }
-       
-I'm ignoring this; it doesn't match any \if.
-
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-! Extra \fi.
-<inserted text> ...*0.75+2}) {$q_{\thecB }$}; \fi 
-                                                  \x = \the \numexpr \x +1 \...
-l.744 }
-       
-I'm ignoring this; it doesn't match any \if.
-
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-! Extra \fi.
-<inserted text> ...*0.75+2}) {$q_{\thecB }$}; \fi 
-                                                  \x = \the \numexpr \x +1 \...
-l.744 }
-       
-I'm ignoring this; it doesn't match any \if.
-
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-! Extra \fi.
-\multido@ ...\z@ \else \multido@@ {#1}{#4}{#6}\fi 
-                                                  #3\ignorespaces 
-l.744 }
-       
-I'm ignoring this; it doesn't match any \if.
-
 )
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
@@ -3398,7 +3351,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
 Here is how much of TeX's memory you used:
  37455 strings out of 493305
  860819 string characters out of 3130237
- 1146919 words of memory out of 3000000
+ 1147919 words of memory out of 3000000
  40060 multiletter control sequences out of 15000+200000
  18941 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3437,9 +3390,9 @@ Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/As
 us/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10
 .pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on Lenguajes.pdf (26 pages, 443145 bytes).
+Output written on Lenguajes.pdf (26 pages, 452688 bytes).
 PDF statistics:
- 576 PDF objects out of 1000 (max. 8388607)
+ 619 PDF objects out of 1000 (max. 8388607)
  196 named destinations out of 1000 (max. 500000)
  357 words of extra memory for PDF output out of 10000 (max. 10000000)
 
