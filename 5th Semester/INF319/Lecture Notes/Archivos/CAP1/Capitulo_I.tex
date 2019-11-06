@@ -338,6 +338,41 @@ b\\
 \subsubsection*{Lenguaje Regular}
 Un lenguaje es regular ssi es generado por una expresión regular.
 \subsubsection*{Ejemplo(s)}
+
+\begin{itemize}
+\item Dado: $\Sigma = \{ a,b \}$. Escribir por comprensión los lenguajes generados por las \textit{ER}:
+\begin{enumerate}[label=\alph*)]
+\item $\alpha = ab^*$
+	\begin{align*}
+		L(\alpha ) & = L(ab^* )=L(a)L(b^*) = L(a)L(b)^* \\
+			     & = \{ a \} \{ b \}^* \\
+			     & = \{ a \} \{ \lambda, b,bb,bbb,\ldots \} \\
+			     & = \{ a,ab,abb,abb,\ldots\} \\
+		L(\alpha ) & = \{ w\in\Sigma^* / w=ab^n , n\geq 0  \}
+	\end{align*}
+\item $\alpha = ba^* b$
+	\begin{align*}
+		L(\alpha ) & = L(ba^*b)\\
+			     & = L(ba^* ) L(b) \\
+			     & = L(b )L(a^*) L(b) \\
+			     & = \{ b \} \{ \lambda ,a,aa,aaa,\ldots\} \{ b\} \\
+			     & = \{ b,bab,baab,baaab,\ldots \} \\
+		L(\alpha ) & = \{ w\in\Sigma^* / w=ba^n b, n\geq 0 \} 
+	\end{align*}
+\item $\alpha = (a \cup b )^* a$
+\item $\alpha = (a \cup b)^* a (a \cup b)^*$
+\item $\alpha = b^* a b^*$
+	\begin{align*}
+		L(\alpha ) & = L(b^* a b^*)\\
+			     & = L(b^*)L(a) L(b^*)\\
+			     & = \{b\}^* \{ a \} \{ b\}^* \\
+			     & = \{\lambda,b,bb,bbb,\ldots \} \{ a\} \{\lambda,b,bb,bbb,\ldots \} \\
+			     & = \{a,bab,bbabb,bbbabbb,\ldots \} \\
+		L(\alpha ) & = \{ w\in\Sigma^* / w = b^n a b^n ,n \geq 0 \}
+	\end{align*}
+\end{enumerate}
+\end{itemize}
+
 \subsection{Módulos}
 \subsubsection*{Definición}
 Un módulo es una tripleta $D=(k,\Sigma,f)$ donde:

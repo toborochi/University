@@ -491,6 +491,53 @@ $R(i,j,k)$ es regular por la clausura de lenguaje regular respecto a la unión, 
 \section{Lenguajes no Regulares}
 \subsection{Teoría}
 Sea $L$ un lenguaje regular infinito. Entonces existen palabras $x,y,z$ tales que $y\neq \lambda$ y $xy^n z\in L$. {\color{red} Para cada $n\geq 0$}.
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item Demostrar que:
+	$$
+	L =\{ a^n b^n : n\geq 0 \} \text{ es \textbf{no regular.}}
+	$$
+\textbf{Prueba (RAA)}	
+\begin{center}
+$L$ es regular infinito.
+\end{center}
+\begin{itemize}
+\item \textbf{Caso} 1: Si $y$ consta exclusivamente de ``a''s.
+$$
+	x=a^p , y=a^q , z=a^r b^s
+$$
+
+$$
+	s,q >0 \hspace{0.25cm} p,r\geq 0
+$$
+\begin{multicols}{2}
+\begin{align*}
+xy^n z & \in L \\
+a^p(q^q)a^r b^s & \in L \\
+a^{p+qn+r} b^s & \in L
+\end{align*}
+\columnbreak
+\begin{align*}
+n = 0 & \hspace{0.25cm} \underbrace{aa}_x \underbrace{abbbbbb}_z \\
+\fbox{n = 1} & \hspace{0.25cm} \underbrace{aa}_x \underbrace{aaa}_y \underbrace{abbbbbb}_z \\
+n = 2 & \hspace{0.25cm} \underbrace{aa}_x \underbrace{aaaaaa}_y \underbrace{abbbbbb}_z
+\end{align*}
+\end{multicols}
+
+Solo para $n=1$. Tenemos una contradicción. $\Rightarrow\Leftarrow$.
+
+
+
+\item \textbf{Caso} 2: Si $y$ consta exclusivamente de ``b's.
+\begin{center}
+Tendriamos crecimiento de ``b's.
+\end{center}
+\item \textbf{Caso} 3: Si $y$ consta de ``a''s y ``b''s.
+\begin{center}
+Tendriamos intercalado.
+\end{center}
+\end{itemize}
+\end{itemize}
 \section{Gramáticas}
 \subsection{Definición}
 Una gramática Libre de Contexto es una cuádrupla $G=(V,\Sigma,R,S)$ donde:
@@ -507,7 +554,7 @@ Una gramática Libre de Contexto es una cuádrupla $G=(V,\Sigma,R,S)$ donde:
 
  \node at (0.5,0.82) (a) {$\Sigma$};
   \node at (-0.25,-0.5) (b) {$V-\Sigma$};
-  \node at ( 1.5,-0.5) (c) {{\color{red}$S$}};
+  \node at ( 1.5,-0.5) (c) {{\color{red}$\cdot S$}};
   \node at (2,2) (d) {$V$};
 \draw (0.5,0.75) circle (0.75cm);
 \end{tikzpicture}
@@ -554,6 +601,17 @@ Sea $G = (V,\Sigma,R,S)$ construimos $M=(K,\Sigma,\Delta,s,F)$ donde:
 \item $F=\{f\}$
 \item $\Delta = \big\{ (A,w,B);A\rightarrow wB, A,B \in (V-\Sigma) ,w \in \Sigma^* \big\} \cup \big\{ (A,w,f);A\rightarrow w, A \in (V-\Sigma) ,w \in \Sigma^* \big\}$
 \end{itemize}
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item $G =(V,\Sigma,R,S)$ donde:
+$$
+	V = \{ S, A, B, a ,b \} \hspace{0.75cm} \Sigma = \{ a ,b \} 
+$$
+$$
+	R =\{ R\rightarrow bA,S\rightarrow aB,A\rightarrow abaS,B\rightarrow babS, S\rightarrow A \}
+$$
+Como un pequeño concejo, podemos decir que para que sea \textit{regular}, las mayúsculas deben estar al extremo derecho o estar compuesto de minúscula únicamente.
+\end{itemize}
 \section{Autómata con Pila}
 \subsubsection{Definición}
 Un autómata con Pila es una sextupla:
@@ -562,7 +620,7 @@ M = (K,\Sigma,\Gamma,\Delta,s,F)
 $$
 donde :
 \begin{itemize}
-\item $k:$ 
+\item $k:$ Conjunto Finito no vacío.
 \item $\Sigma:$ Símbolos de Entrada
 \item $\Gamma:$ es un conjunto finito no vacío \textit{(llamado alfabeto de la Pila).}
 \item $s\in K$
@@ -670,7 +728,7 @@ Una máquina de Turing es una cuadrupla $M=(K,\Sigma,\delta,s)$ donde:
 \item $K:$ Conjunto Finito no Vacío , $h\notin K$
 \item $\Sigma:$ Conjunto Finito no Vacío , $\#\in\Sigma , L,R\notin\Sigma$
 \item $s\in K$
-\item $\sigma: K\times\Sigma \rightarrow (K\cup\{h\}) \times (\Sigma\cup\{L,R\})$
+\item $\delta : K\times\Sigma \rightarrow (K\cup\{h\}) \times (\Sigma\cup\{L,R\})$
 \end{itemize}
 
 \begin{enumerate}

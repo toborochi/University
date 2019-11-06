@@ -32,19 +32,19 @@
 \contentsline {subsection}{\numberline {1.2.12}Representaci\IeC {\'o}n Finita de Lenguajes}{9}{subsection.1.2.12}
 \contentsline {subsubsection}{Primer resultado de la Teor\IeC {\'\i }a de la Computaci\IeC {\'o}n}{9}{section*.22}
 \contentsline {subsection}{\numberline {1.2.13}Expresiones Regulares}{10}{subsection.1.2.13}
-\contentsline {subsection}{\numberline {1.2.14}M\IeC {\'o}dulos}{10}{subsection.1.2.14}
+\contentsline {subsection}{\numberline {1.2.14}M\IeC {\'o}dulos}{11}{subsection.1.2.14}
 \contentsline {subsubsection}{Comportamiento Din\IeC {\'a}mico}{11}{section*.29}
-\contentsline {subsubsection}{Funci\IeC {\'o}n Estado Terminal}{11}{section*.30}
-\contentsline {subsubsection}{$\diamond $ Notas}{11}{section*.31}
-\contentsline {subsection}{\numberline {1.2.15}Alcanzabilidad}{11}{subsection.1.2.15}
+\contentsline {subsubsection}{Funci\IeC {\'o}n Estado Terminal}{12}{section*.30}
+\contentsline {subsubsection}{$\diamond $ Notas}{12}{section*.31}
+\contentsline {subsection}{\numberline {1.2.15}Alcanzabilidad}{12}{subsection.1.2.15}
 \contentsline {subsection}{\numberline {1.2.16}M\IeC {\'a}quinas}{12}{subsection.1.2.16}
 \contentsline {subsubsection}{Definici\IeC {\'o}n}{12}{section*.32}
 \contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{12}{section*.33}
-\contentsline {subsubsection}{Representaci\IeC {\'o}n}{12}{section*.34}
+\contentsline {subsubsection}{Representaci\IeC {\'o}n}{13}{section*.34}
 \contentsline {subsubsection}{Comportamiento Din\IeC {\'a}mico}{13}{section*.35}
 \contentsline {subsubsection}{Funci\IeC {\'o}n Estado Terminal}{13}{section*.36}
-\contentsline {subsubsection}{$\diamond $ Notas}{13}{section*.37}
-\contentsline {subsection}{\numberline {1.2.17}S\IeC {\'\i }ntesis, An\IeC {\'a}lisis y Verificaci\IeC {\'o}n}{13}{subsection.1.2.17}
+\contentsline {subsubsection}{$\diamond $ Notas}{14}{section*.37}
+\contentsline {subsection}{\numberline {1.2.17}S\IeC {\'\i }ntesis, An\IeC {\'a}lisis y Verificaci\IeC {\'o}n}{14}{subsection.1.2.17}
 \contentsline {chapter}{\numberline {2}Aut\IeC {\'o}matas}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}Aut\IeC {\'o}mata Finito Determin\IeC {\'\i }stico (AFD)}{15}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Definici\IeC {\'o}n}{15}{subsection.2.1.1}
@@ -66,20 +66,22 @@
 \contentsline {section}{\numberline {2.5}Automatas Finitos y Expresiones Regulares}{20}{section.2.5}
 \contentsline {section}{\numberline {2.6}Lenguajes no Regulares}{22}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Teor\IeC {\'\i }a}{22}{subsection.2.6.1}
-\contentsline {section}{\numberline {2.7}Gram\IeC {\'a}ticas}{22}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Definici\IeC {\'o}n}{22}{subsection.2.7.1}
-\contentsline {subsubsection}{Notaci\IeC {\'o}n}{22}{section*.54}
-\contentsline {subsubsection}{Derivaci\IeC {\'o}n}{23}{section*.55}
-\contentsline {subsubsection}{Lenguaje Generado por $G$}{23}{section*.56}
+\contentsline {subsubsection}{Ejemplo(s)}{22}{section*.54}
+\contentsline {section}{\numberline {2.7}Gram\IeC {\'a}ticas}{23}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Definici\IeC {\'o}n}{23}{subsection.2.7.1}
+\contentsline {subsubsection}{Notaci\IeC {\'o}n}{23}{section*.55}
+\contentsline {subsubsection}{Derivaci\IeC {\'o}n}{23}{section*.56}
+\contentsline {subsubsection}{Lenguaje Generado por $G$}{23}{section*.57}
 \contentsline {subsection}{\numberline {2.7.2}Gram\IeC {\'a}ticas Regulares}{23}{subsection.2.7.2}
-\contentsline {subsubsection}{Definici\IeC {\'o}n}{23}{section*.57}
-\contentsline {subsubsection}{Teorema}{23}{section*.58}
-\contentsline {section}{\numberline {2.8}Aut\IeC {\'o}mata con Pila}{23}{section.2.8}
-\contentsline {subsubsection}{Definici\IeC {\'o}n}{23}{section*.62}
+\contentsline {subsubsection}{Definici\IeC {\'o}n}{23}{section*.58}
+\contentsline {subsubsection}{Teorema}{23}{section*.59}
+\contentsline {subsubsection}{Ejemplo(s)}{24}{section*.63}
+\contentsline {section}{\numberline {2.8}Aut\IeC {\'o}mata con Pila}{24}{section.2.8}
+\contentsline {subsubsection}{Definici\IeC {\'o}n}{24}{section*.64}
 \contentsline {subsection}{\numberline {2.8.1}Configuraci\IeC {\'o}n}{24}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Aut\IeC {\'o}matas con Pila y Gram\IeC {\'a}ticas Libre de Contexto}{24}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.2}Aut\IeC {\'o}matas con Pila y Gram\IeC {\'a}ticas Libre de Contexto}{25}{subsection.2.8.2}
 \contentsline {subsection}{\numberline {2.8.3}Propiedades de los Lenguajes Libres de Contexto}{25}{subsection.2.8.3}
-\contentsline {subsubsection}{Teorema de Pumping}{25}{section*.78}
-\contentsline {subsubsection}{Teorema}{25}{section*.79}
-\contentsline {section}{\numberline {2.9}M\IeC {\'a}quinas de Turing }{25}{section.2.9}
-\contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{26}{section*.81}
+\contentsline {subsubsection}{Teorema de Pumping}{26}{section*.80}
+\contentsline {subsubsection}{Teorema}{26}{section*.81}
+\contentsline {section}{\numberline {2.9}M\IeC {\'a}quinas de Turing }{26}{section.2.9}
+\contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{26}{section*.83}
