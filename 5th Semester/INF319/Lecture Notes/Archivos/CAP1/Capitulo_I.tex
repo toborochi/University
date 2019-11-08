@@ -83,6 +83,18 @@ $$\Sigma = \{ a,b \} $$
 \subsection{Concatenación}
 Sea $u,v\in\Sigma^*$ tal que $u=\sigma_1\sigma_2\ldots\sigma_n, v=\epsilon_1\epsilon_2\ldots\epsilon_n$. La concatenación de $u$ y $v$ se define por:
 $$uv=\sigma_1\sigma_2\ldots\sigma_n \epsilon_1\epsilon_2\ldots\epsilon_n$$
+\subsubsection{Propiedades}
+\begin{itemize}
+\item $uv\neq vu$
+\item $(uv)w=u(vw)$
+\item $u\lambda=\lambda u=u$
+\end{itemize}
+\subsubsection{Ejemplo(s)}
+\begin{align*}
+u=abab & \text{ } &uv=ababbba \\
+v=bba  & \text{ } & vu=bbaabab
+\end{align*}
+\subsection{Cardinalidad}
 \subsubsection{Definición de Recurrencia}
 $$|\text{ }|:\Sigma^*\rightarrow\mathbb{N}$$
 $$
@@ -91,18 +103,15 @@ $$
 |wa| = |w| + 1
 \end{cases}
 $$
-\subsubsection{Ejemplo(s)}
-\begin{align*}
-u=abab & \text{ } &uv=ababbba \\
-v=bba  & \text{ } & vu=bbaabab
-\end{align*}
+
 \subsubsection{Propiedades}
 \begin{itemize}
-\item $uv\neq vu$
-\item $(uv)w=u(vw)$
-\item $u\lambda=\lambda u=u$
 \item $|uv|=|u|+|v|$
 \item $|uv|_a = |u|_a + |v|_a$
+\end{itemize}
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item $v = abab , |v| = 4$
 \end{itemize}
 \subsection{Inversa}
 Si $w=\sigma_1,\sigma_2,\ldots ,\sigma_n \in\Sigma^n$ entonces $w'=\sigma_n,\sigma_{n-1},\ldots ,\sigma_1$ se llama inversa o transpuesta de $w$.
@@ -114,6 +123,35 @@ $$
 (wa)' = aw'
 \end{cases}
 $$
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item Demostrar $|w| = |w'| ; \forall w\in\Sigma^*$ \\
+\textbf{Prueba}
+$$ L = \{ w\in\Sigma^* / |w|=|w'| \} $$
+\begin{enumerate}[label=\alph*)]
+\item ¿$\lambda \in L$?
+$$\lambda = \lambda' \Rightarrow {\color{red}|\lambda |} = 0 = {\color{red}| \lambda' |}$$
+\textbf{i)} $\therefore \lambda\in L$
+\item ¿$w \in L$? \\${ }$\\
+\textbf{p.d.} $w\in L \wedge a\in\Sigma\Rightarrow wa\in L$\\
+Sea 
+\begin{align*}
+w \in L & \wedge a\in\Sigma \\
+|w| = |w'| & \wedge a\in\Sigma \text{ \textbf{HI}}
+\end{align*}
+\textbf{p.d.} $wa\in L$ \\
+\textbf{p.d.} 
+\begin{align*}
+| (wa)' | & = | aw' | \\
+	    & = |a| + |w'| \\
+	    & = |a|+|w| \\
+	    & = |w| + |w| \\
+	    & = | wa|
+\end{align*}
+\textbf{ii)} $\therefore w\in L \wedge a \in\Sigma \Rightarrow wa\in L$ \\${ }$\\
+Entonces: $L=\Sigma^*$
+\end{enumerate}
+\end{itemize}
 \subsection{Potencia de una Palabra}
 $$w^n =  \underbrace{ww\ldots w}_{n-veces}$$
 \subsubsection*{Definición de Recurrencia}
@@ -206,18 +244,47 @@ Sean $x,w \in \Sigma^*$:
 
 \subsection{Lenguajes}
 Un lenguaje sobre $\Sigma$ es un subconjunto de $\Sigma^*$
-\subsubsection{Operaciones}
-Recordemos que ya conocemos otras operaciones (Unión, Intersección, Diferencia y Complemento), para esta materia tenemos las siguientes:
+\subsubsection{Ejemplo(s)}
 \begin{itemize}
-\item Concatenación \\ ${ }$ \\
+\item $\emptyset \subseteq A; \forall A$
+\item $A \subseteq A; \forall A$
+\item $\Sigma =\{ a,b \} , \Sigma^*= \{ \lambda, a,b,aa,ab,ba,bb,\ldots \}$
+Podemos tener los siguientes lenguajes:
+\begin{itemize}
+\item $L_1 = \{ baba,aba,abba,bb,babababababababababababa\}$
+\item $L_2 = \{ \lambda,a,b \}$
+\item $L_3 = \{ aaa,abb,bbb \}$
+\item $L_4 = \{ w\in\Sigma^* / |w|\leq 5 \wedge |w|_a - |w|_b = 1 \} $
+\item $L_5 = \{ aab, aaabb,ababa,\ldots,aba \}$
+\item $L_6 = \{ a,ab,abb,abbb,\ldots\}$
+\end{itemize}
+\end{itemize}
+\subsubsection{Operaciones}
+Recordemos que ya conocemos otras operaciones (Unión, Intersección, Diferencia y Complemento), para esta asignatura tenemos las siguientes:
+\begin{itemize}
+\item \textbf{Concatenación} \\ ${ }$ \\
 Sea $A,B \subseteq \Sigma^*$ \\
 $$AB =\{ w\in\Sigma^* / w=xy, x\in A, y\in B \}$$
-\item Transposición \\ ${ }$ \\
+\item \textbf{Transposición} \\ ${ }$ \\
 Sea $A\subseteq \Sigma^*$ \\
 $$A'=\{ w'\in \Sigma^* /w\in A\} $$
-\item Estrella de Kleene \\ ${ }$ \\
+\item \textbf{Estrella de Kleene} \\ ${ }$ \\
 Sea $A\subseteq \Sigma^*$ \\
 $$A^* = \{w\in\Sigma^* / w=w_1 w_2 \ldots w_n \text{ para algún } k\in\mathbb{N} \text{ y para algunas }w_1,w_2,\ldots,w_k \in A\}$$
+\end{itemize}
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item Sea $\Sigma =\{ a,b \}$ y sean $P=\{a,ab\}, Q=\{ \lambda, a,ba \}$ realizar:
+\begin{enumerate}[label = \alph*)]
+\item $P\cup Q= \{ a,ab,ba,\lambda \}$
+\item $P\cap Q= \{ a \}$
+\item $P - Q  =\{ ab \} $
+\item $Q - P  = \{ \lambda,ba \}$ 
+\item $P' = \{ a,ba \}$
+\item $Q' = \{ \lambda,a,ab \}$
+\item $PQ = \{ a,aa,aba,abba \}$
+\item $P^2=PP =\{ aa,aab,aba,abab \}$
+\end{enumerate}
 \end{itemize}
 \subsection{Orden Lexicográfico}
 Cualquier lenguaje infinito puede ser ordenado lexicograficamente en consecuencia se puede poner en biyección con el conjunto $\mathbb{N}$.
@@ -313,7 +380,8 @@ Necesitamos tener dos consideraciones:
 \subsubsection{Primer resultado de la Teoría de la Computación}
 No importa cuán poderosos sean los métodos que conocemos para representar lenguajes, sólo pueden ser representados un número contable de ellos (mientras que las representaciones sean finitas), inevitablemente, un número incontable de ellos quedará sin representación bajo cualquier esquema de representación finita. 
 \subsection{Expresiones Regulares}
-Las expresiones regulares (ER) sobre un alfabeto ($\Sigma$) son las palabras sobre el alfabeto $\Sigma \cup {\color{red}\{ ), (, \emptyset, \cup,*\}}$ tal que cumple lo siguiente:
+{\let\thefootnote\relax\footnote{{$\cup$ significa selección: $a\cup ab$ significa, ``escojo $a$ o escojo $ab$.''}}}
+Las expresiones regulares (ER) sobre un alfabeto ($\Sigma$) son las palabras sobre el alfabeto $\Sigma \cup \{{\color{red} ), (, \emptyset, \cup,*}\}$ tal que cumple lo siguiente:
 \renewcommand{\labelenumi}{\theenumi}
 \renewcommand{\theenumi}{\textbf{\arabic {enumi}.)}}%
 \begin{enumerate}
@@ -324,7 +392,8 @@ Las expresiones regulares (ER) sobre un alfabeto ($\Sigma$) son las palabras sob
 \item Nada mas es una ER a menos que provenga de \textbf{(1.)} a \textbf{(4.)}
 \end{enumerate}
 \subsubsection*{Ejemplo(s)}
-Para $\Sigma = \{ a,b \}$ podemos formar:
+\begin{itemize}
+\item Para $\Sigma = \{ a,b \}$ podemos formar:
 \begin{align*}
 {{\color{red}\emptyset}}\\
 a\\
@@ -335,6 +404,15 @@ b\\
 {{\color{red}(}}ba{{\color{red})^*}}\\
 {\color{red}((}ba{\color{red})^*\cup(}a{\color{red}\cup}b{\color{red}))^*}
 \end{align*}
+\item Escribir por comprensión el lenguaje generado por la expresión: $\alpha = a^*$.
+\begin{align*}
+L(\alpha )& = L(a^*) = L(a)^* \\
+	    & = \{ a\}^* \\
+	    & = \{ \lambda , a ,aa, aaa,\ldots \} \\
+	    & = \{ w \in\Sigma^* / w=a^n , n\geq 0\}
+\end{align*}
+\end{itemize}
+
 \subsubsection*{Lenguaje Regular}
 Un lenguaje es regular ssi es generado por una expresión regular.
 \subsubsection*{Ejemplo(s)}
@@ -360,7 +438,24 @@ Un lenguaje es regular ssi es generado por una expresión regular.
 		L(\alpha ) & = \{ w\in\Sigma^* / w=ba^n b, n\geq 0 \} 
 	\end{align*}
 \item $\alpha = (a \cup b )^* a$
+	\begin{align*}
+		L(\alpha ) & = L( (a\cup b)^* ) L(a)\\
+			     & = L( (a\cup b) )^* L(a)\\
+			     & = (L(a) \cup L(b))^* L(a)\\
+			     & = (\{ a \}\cup \{ b \})^* \{ a \} \\
+			     & = \{ a,b \}^* \{ a \} \\ 
+			 & = \underbrace{ \{ \lambda ,a,b,ab,aa,ba,bb,\ldots\}}_{\Sigma^*} \{ a\}\\
+		L(\alpha ) & = \{ w\in\Sigma^* / w=va \wedge v\in\Sigma^* \}
+	\end{align*}
 \item $\alpha = (a \cup b)^* a (a \cup b)^*$
+	\begin{align*}
+		L(\alpha ) & = L( (a\cup b )^* a (a\cup b )^* )\\
+			     & = L( (a\cup b) )^* L(a) L((a\cup b))^* \\
+			     & = (\{a\} \cup \{ b\})^* \{a\} (\{a\} \cup \{ b\})^*\\
+			     & = \{a,b\}^* \{a\} \{a,b\}^* \\
+			     & = \underbrace{\{ \lambda,a,b,aa,ab,bb,ba,\ldots \}}_{\Sigma^*} \{a\}  \underbrace{\{ \lambda,a,b,aa,ab,bb,ba,\ldots \}}_{\Sigma^*}\\
+		L(\alpha ) & = \{ w\in\Sigma^* / w=xax, x\in\Sigma^* \}
+	\end{align*}
 \item $\alpha = b^* a b^*$
 	\begin{align*}
 		L(\alpha ) & = L(b^* a b^*)\\
@@ -393,7 +488,9 @@ Un módulo se puede interpretar como un dispositivo que en determinados instante
 \end{tikzpicture}
 \end{center}
 \subsubsection*{Representación}
+\pagebreak
 \begin{itemize}
+
 \item \textbf{Tabla de Transición} \\
 
 \begin{figure}[ht]
