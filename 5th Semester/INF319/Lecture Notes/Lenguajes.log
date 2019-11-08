@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  8 NOV 2019 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  8 NOV 2019 15:04
 entering extended mode
 **./Lenguajes.tex
 (Lenguajes.tex
@@ -472,6 +472,9 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\import\import.sty"
+Package: import 2009/03/23  v 5.1
 )
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfiles\subfiles.s
 ty"
@@ -1276,6 +1279,68 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 libraryplotmarks.code.tex"
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 )))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\circuitikz\circuiti
+kz.sty"
+Package: circuitikz 2017/05/28{} The CircuiTikz circuit drawing package version
+ 0.8.3
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen306
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+c.defines.tex"
+\pgf@circ@res@up=\dimen307
+\pgf@circ@res@down=\dimen308
+\pgf@circ@res@zero=\dimen309
+\pgf@circ@res@left=\dimen310
+\pgf@circ@res@right=\dimen311
+\pgf@circ@res@other=\dimen312
+\pgf@circ@res@step=\dimen313
+\pgf@circ@res@temp=\dimen314
+\pgfstartlinewidth=\dimen315
+\pgf@circ@Rlen=\dimen316
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cutils.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cshapes.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cmonopoles.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cbipoles.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+ctripoles.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cquadpoles.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+clabel.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cvoltage.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+ccurrent.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cflow.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\circuitikz\pgfcir
+cpath.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryshapes.gates.logic.US.code.tex"
+File: tikzlibraryshapes.gates.logic.US.code.tex 2008/01/25 v3.0.1a (rcs-revisio
+n 1.1)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sha
+pes\circuits\pgflibraryshapes.gates.logic.US.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sha
+pes\circuits\pgflibraryshapes.gates.logic.code.tex")))
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
 \tikz\libraries\tikzlibraryautomata.code.tex"
 File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.1a (rcs-revision 1.3)
@@ -1311,25 +1376,16 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 \pgfnodepartfivebox=\box95
 )))
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
-\tikz\libraries\tikzlibraryarrows.code.tex"
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
-
-("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
-libraryarrows.code.tex"
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen306
-))
-("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
 \tikz\libraries\tikzlibrarybabel.code.tex"
 File: tikzlibrarybabel.code.tex 2013/06/24 v3.0.1a (rcs-revision 1.1)
 )
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
 libraryarrows.meta.code.tex"
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen307
-\pgfarrowlength=\dimen308
-\pgfarrowwidth=\dimen309
-\pgfarrowlinewidth=\dimen310
+\pgfarrowinset=\dimen317
+\pgfarrowlength=\dimen318
+\pgfarrowwidth=\dimen319
+\pgfarrowlinewidth=\dimen320
 )
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
 \tikz\libraries\tikzlibrarypositioning.code.tex"
@@ -1378,10 +1434,6 @@ File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sha
 pes\pgflibraryshapes.callouts.code.tex")))
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
-\tikz\libraries\tikzlibrarycalc.code.tex"
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
-)
-("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
 \tikz\libraries\tikzlibrarytrees.code.tex"
 File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
 )
@@ -1423,16 +1475,16 @@ y"
 Package: empheq 2017/03/31 v2.15 Emphasizing equations
 \l_EQ_equationtype_int=\count191
 \l_EQ_alignmentmode_int=\count192
-\l_EQ_totalwidth_dim=\dimen311
-\l_EQ_displaywidth_dim=\dimen312
-\l_EQ_temp_linewidth_dim=\dimen313
-\EmphEqdelimitershortfall=\dimen314
+\l_EQ_totalwidth_dim=\dimen321
+\l_EQ_displaywidth_dim=\dimen322
+\l_EQ_temp_linewidth_dim=\dimen323
+\EmphEqdelimitershortfall=\dimen324
 \EmphEqdelimiterfactor=\count193
-\g_EQ_toptag_height_dim=\dimen315
-\g_EQ_bottomtag_depth_dim=\dimen316
-\g_EQ_toprow_height_dim=\dimen317
-\g_EQ_bottomrow_depth_dim=\dimen318
-\g_EQ_widesttag_dim=\dimen319
+\g_EQ_toptag_height_dim=\dimen325
+\g_EQ_bottomtag_depth_dim=\dimen326
+\g_EQ_toprow_height_dim=\dimen327
+\g_EQ_bottomrow_depth_dim=\dimen328
+\g_EQ_widesttag_dim=\dimen329
 \EQ_mathdisplay_box=\box99
 \EQ_tag_box=\box100
 \g_EQ_temprow_int=\count194
@@ -1539,7 +1591,7 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen320
+\@linkdim=\dimen330
 \Hy@linkcounter=\count197
 \Hy@pagecounter=\count198
 
@@ -1568,10 +1620,10 @@ Package hyperref Info: Bookmarks ON on input line 4762.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen321
+\XeTeXLinkMargin=\dimen331
 \Fld@menulength=\count267
-\Field@Width=\dimen322
-\Fld@charsize=\dimen323
+\Field@Width=\dimen332
+\Fld@charsize=\dimen333
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -1601,7 +1653,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip73
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 33.
+Package hyperref Info: Option `colorlinks' set `true' on input line 38.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hypcap.sty
 "
@@ -1640,12 +1692,12 @@ Package: relsize 2003/07/04 ver 3.1
 \skiplength=\skip80
 \algomargin=\skip81
 \skipalgocfslide=\skip82
-\algowidth=\dimen324
-\inoutsize=\dimen325
-\inoutindent=\dimen326
-\interspacetitleruled=\dimen327
-\interspacealgoruled=\dimen328
-\interspacetitleboxruled=\dimen329
+\algowidth=\dimen334
+\inoutsize=\dimen335
+\inoutindent=\dimen336
+\interspacetitleruled=\dimen337
+\interspacealgoruled=\dimen338
+\interspacetitleboxruled=\dimen339
 \algocf@ruledwidth=\skip83
 \algocf@inoutbox=\box103
 \algocf@inputbox=\box104
@@ -1687,14 +1739,14 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count281
 \Gm@cntv=\count282
 \c@Gm@tempcnt=\count283
-\Gm@bindingoffset=\dimen330
-\Gm@wd@mp=\dimen331
-\Gm@odd@mp=\dimen332
-\Gm@even@mp=\dimen333
-\Gm@layoutwidth=\dimen334
-\Gm@layoutheight=\dimen335
-\Gm@layouthoffset=\dimen336
-\Gm@layoutvoffset=\dimen337
+\Gm@bindingoffset=\dimen340
+\Gm@wd@mp=\dimen341
+\Gm@odd@mp=\dimen342
+\Gm@even@mp=\dimen343
+\Gm@layoutwidth=\dimen344
+\Gm@layoutheight=\dimen345
+\Gm@layouthoffset=\dimen346
+\Gm@layoutvoffset=\dimen347
 \Gm@dimlist=\toks56
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
@@ -1716,34 +1768,34 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `Lenguajes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count295
-\scratchdimen=\dimen338
+\scratchdimen=\dimen348
 \scratchbox=\box111
 \nofMPsegments=\count296
 \nofMParguments=\count297
 \everyMPshowfont=\toks57
 \MPscratchCnt=\count298
-\MPscratchDim=\dimen339
+\MPscratchDim=\dimen349
 \MPnumerator=\count299
 \makeMPintoPDFobject=\count300
 \everyMPtoPDFconversion=\toks58
@@ -1767,7 +1819,7 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
 \AtBeginShipoutBox=\box112
-Package hyperref Info: Link coloring ON on input line 75.
+Package hyperref Info: Link coloring ON on input line 80.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
 y"
@@ -1779,9 +1831,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count301
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 80.
+LaTeX Info: Redefining \pageref on input line 80.
+LaTeX Info: Redefining \nameref on input line 80.
  (Lenguajes.out) (Lenguajes.out)
 \@outlinefile=\write4
 \openout4 = `Lenguajes.out'.
@@ -2451,32 +2503,35 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 471.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 471.
-LaTeX Info: Redefining \. on input line 492.
-LaTeX Info: Redefining \% on input line 492.
+
+Underfull \vbox (badness 1521) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 491.
+LaTeX Info: Redefining \% on input line 491.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 491.
  [12]
 Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
@@ -2504,59 +2559,110 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 577.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 577.
-LaTeX Info: Redefining \. on input line 586.
-LaTeX Info: Redefining \% on input line 586.
+LaTeX Info: Redefining \. on input line 583.
+LaTeX Info: Redefining \% on input line 583.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 583.
 [13pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
 }) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.586 \begin{center}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.1.2}) has been already used, duplicate ignored
+l.583 $$
+        pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.1.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.586 \begin{center}
-                    ]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 607.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 607.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 607.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 607.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 607.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 607.
+l.583 $$
+        ]
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--648
+LaTeX Warning: Command \textcircled invalid in math mode on input line 617.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 617.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 618.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 618.
+
+(images/neurona_1.pdf_tex
+<images/neurona_1.pdf, id=373, page=1, 324.46219pt x 150.5625pt>
+File: images/neurona_1.pdf Graphic file (type pdf)
+<use images/neurona_1.pdf, page 1>
+Package pdftex.def Info: images/neurona_1.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 324.46217pt x 150.5713pt.
+) (images/neurona_2.pdf_tex
+<images/neurona_2.pdf, id=374, page=1, 416.11711pt x 182.18062pt>
+File: images/neurona_2.pdf Graphic file (type pdf)
+<use images/neurona_2.pdf, page 1>
+Package pdftex.def Info: images/neurona_2.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 416.1171pt x 182.18849pt.
+)
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 671.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 671.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 671.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 671.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 671.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 671.
+LaTeX Info: Redefining \. on input line 676.
+LaTeX Info: Redefining \% on input line 676.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 676.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 676.
+ [14 <./images/neurona_1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 711--712
 
  []
 
@@ -2564,55 +2670,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 647--648
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--663
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
 
  []
 
-LaTeX Info: Redefining \. on input line 663.
-LaTeX Info: Redefining \% on input line 663.
+LaTeX Info: Redefining \. on input line 727.
+LaTeX Info: Redefining \% on input line 727.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 663.
+(babel)             in language  on input line 727.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 663.
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3
+(babel)             in language  on input line 727.
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3
 }) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.663 \begin{center}
-                    ]
+l.727 \begin{center}
+                     <./images/neurona_2.pdf>]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 723.
+(babel)             in language  on input line 787.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 723.
+(babel)             in language  on input line 787.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 723.
+(babel)             in language  on input line 787.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 723.
+(babel)             in language  on input line 787.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 723.
+(babel)             in language  on input line 787.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 723.
+(babel)             in language  on input line 787.
 ) (Archivos/CAP2/Capitulo_II.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2640,42 +2746,14 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-4}) has been already used, duplicate ignored
+
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
+}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.1 \chapter
             {Autómatas}]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1.
- [16
-
-]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
@@ -2796,8 +2874,10 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 70.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 70.
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-1}) has been already used, duplicate ignored
+ [17
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
@@ -3404,57 +3484,57 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 815.
  [28])
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 89.
  [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
  (Lenguajes.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
 Package rerunfilecheck Info: File `Lenguajes.out' has not changed.
 (rerunfilecheck)             Checksum: 53A5E82172BF14AE837EAD01185BCBFC;3267.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
  ) 
 Here is how much of TeX's memory you used:
- 37505 strings out of 493305
- 861474 string characters out of 3130237
- 1146006 words of memory out of 3000000
- 40080 multiletter control sequences out of 15000+200000
+ 44162 strings out of 493305
+ 1066176 string characters out of 3130237
+ 1445738 words of memory out of 3000000
+ 46671 multiletter control sequences out of 15000+200000
  18941 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,29n,127p,725b,1479s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,29n,127p,708b,1479s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/font
@@ -3489,9 +3569,9 @@ Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/As
 us/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10
 .pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on Lenguajes.pdf (29 pages, 470385 bytes).
+Output written on Lenguajes.pdf (29 pages, 479224 bytes).
 PDF statistics:
- 668 PDF objects out of 1000 (max. 8388607)
- 223 named destinations out of 1000 (max. 500000)
- 365 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 225 named destinations out of 1000 (max. 500000)
+ 375 words of extra memory for PDF output out of 10000 (max. 10000000)
 

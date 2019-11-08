@@ -487,8 +487,8 @@ Un módulo se puede interpretar como un dispositivo que en determinados instante
 %\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
 \end{tikzpicture}
 \end{center}
-\subsubsection*{Representación}
 \pagebreak
+\subsubsection*{Representación}
 \begin{itemize}
 
 \item \textbf{Tabla de Transición} \\
@@ -603,6 +603,70 @@ y se escribe
 \end{tikzpicture}
 \end{center}
 
+\end{itemize}
+\subsubsection*{$\diamond$ Nota}\noindent
+{\color{red}La alcanzabilidad no implica $k$ alcanzabilidad} \\ 
+{\color{red}La $k$ alcanzabilidad implica alcanzabilidad}
+
+\subsubsection{Ejemplo(s)}
+
+\begin{itemize}
+\item Tengamos el ejemplo de una \textit{neurona}. \\
+Donde:
+\begin{itemize}
+\item $\textcircled{{\scriptsize +}}$: Excitación
+\item $\textcircled{-}$: Inhibición
+\end{itemize}
+\begin{figure}[ht!]
+\centering
+\scalebox{.5}{
+\import{images/}{neurona_1.pdf_tex}
+}
+\end{figure}
+$$S(k+1)=
+\begin{cases}
+1 \text{ si } u_1(k) +u_3(k) - u_2(k) \geq 1 \\
+0 \text{ \textbf{e.o.c.} }
+\end{cases}
+$$
+\begin{figure}[ht]
+\centering
+\begin{tabular}{|c|cccccccc|}
+    \hline
+    \backslashbox{$k$}{\vspace{0.1pt}\\$\Sigma$} & $(0,0,0)$ & $(0,0,1)$ & $(0,1,0)$ & $(0,1,1)$ & $(1,0,0)$ & $(1,0,1)$ & $(1,1,0)$ & $(1,1,1)$\\ \hline
+                $1$ & $0$ & $1$  & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ \\ 
+                $0$ & $0$ & $1$  & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ \\ \hline
+\end{tabular} 
+\end{figure}
+\item Veamos con dos \textit{neuronas}: \\
+Denotaciones $s(i) \rightarrow M , t(i) \rightarrow N,e(i)$
+\begin{figure}[ht!]
+\centering
+\scalebox{.5}{
+\import{images/}{neurona_2.pdf_tex}
+}
+\end{figure}
+\begin{align*}
+S(k+1) &=  
+\begin{cases}
+1 & \text{ si } t(k) +s(k) - e(k) \geq 2 \\
+0 & \text{ \textbf{e.o.c.} }
+\end{cases} \\
+t(k+1) &=
+\begin{cases}
+1 & e(k)-s(k) \geq 1 \\
+0 & \text{ \textbf{e.o.c.} }
+\end{cases}
+\end{align*}
+\begin{figure}[ht]
+\centering
+\begin{tabular}{|c|cccc|}
+    \hline
+    \backslashbox{$k$}{\vspace{0.1pt}\\$\Sigma$} & $(0,0)$ & $(0,1)$ & $(1,0)$ & $(1,1)$ \\ \hline
+                $1$ & $(0,1)$ & $(0,1)$ & $(0,0)$  & $(0,0)$  \\ 
+                $0$ & $(0,0)$ & $(0,0)$ & $(0,0)$  & $(1,0)$  \\ \hline
+\end{tabular} 
+\end{figure}
 \end{itemize}
 \subsection{Máquinas}
 \subsubsection{Definición}
