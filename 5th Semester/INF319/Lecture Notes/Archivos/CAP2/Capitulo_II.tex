@@ -213,6 +213,50 @@ w \in L(M') & \Leftrightarrow (s',w) \sststile{M'}{\hspace{0.25cm} * \hspace{0.2
 & \Leftrightarrow  w\in L(M'')
 \end{align*}
 $\therefore L(M')=L(M'')$
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item Sea el autómata: \\
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[state,initial,initial text=] (q_0) {$q_0$};
+\node[state] (q_1) at (2,2) {$q_1$};
+\node[state] (q_2) at (2,0) {$q_2$};
+\node[state] (q_3) at (4,2) {$q_3$};
+\node[state,accepting] (q_4) at (4,0) {$q_4$};
+
+\path[->,line width=0.25mm] (q_0) edge node[,below,right] {$\lambda$} (q_1);
+\path[->,line width=0.25mm] (q_0) edge node[,below] {$b$} (q_2);
+\path[->,line width=0.25mm] (q_1) edge node[] {$\lambda$} (q_2);
+\path[->,line width=0.25mm] (q_1) edge node[] {$\lambda$} (q_3);
+\path[->,line width=0.25mm] (q_2) edge node[,below] {$b$} (q_4);
+\path[->,line width=0.25mm] (q_1) edge node[,left=.25cm , below] {$a$} (q_4);
+\path[->,line width=0.25mm] (q_3) edge node[left] {$a$} (q_4);
+\path[->,line width=0.25mm,bend right] (q_4) edge node[right] {$\lambda$} (q_3);
+\path[->,line width=0.25mm,bend right] (q_1) edge node[above,left] {$a$} (q_0);
+%bend left
+\end{tikzpicture}
+\end{figure}
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Estados Viejos & Entrada ($\lambda$) & Entrada ($a$) & Entrada ($b$) \\ 
+\hline 
+$q_0$ & $q_0,q_1,q_2,q_3$ & $q_0,q_1,q_2,q_3,q_4$ & $q_2,q_3,q_4$ \\ 
+\hline 
+$q_1$ & $q_1,q_2,q_3$ & $q_0,q_1,q_2,q_3,q_4$ & $q_3,q_4$ \\ 
+\hline 
+$q_2$ & $q_2$ & - & $q_3,q_4$ \\ 
+\hline 
+$q_3$ & $q_3$ & $q_3,q_4$ & - \\ 
+\hline 
+$q_4$ & $q_3,q_4$ & $q_3,q_4$ & - \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+\end{itemize}
 \section{Propiedades de los Lenguajes Aceptados por AF's}
 \subsubsection*{Teorema}
 La clase de Lenguajes aceptados por AF's es cerrada bajo la:
