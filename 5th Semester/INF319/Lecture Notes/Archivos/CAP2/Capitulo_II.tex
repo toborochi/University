@@ -236,12 +236,12 @@ $\therefore L(M')=L(M'')$
 \path[->,line width=0.25mm,bend right] (q_1) edge node[above,left] {$a$} (q_0);
 %bend left
 \end{tikzpicture}
-\end{figure}
+\end{figure} \\
+Realizamos su tabla de transiciones para realizar el algoritmo de Thompson:
 \begin{center}
-
 \begin{tabular}{|c|c|c|c|}
 \hline 
-Estados Viejos & Entrada ($\lambda$) & Entrada ($a$) & Entrada ($b$) \\ 
+ {\footnotesize  \shortstack{\vspace{1pt} \\ Estados \\ Viejos}} & {\scriptsize \shortstack{Entrada \\ $\lambda$}} & {\scriptsize \shortstack{Entrada \\  $a$}} & {\scriptsize \shortstack{Entrada \\ $b$}} \\ 
 \hline 
 $q_0$ & $q_0,q_1,q_2,q_3$ & $q_0,q_1,q_2,q_3,q_4$ & $q_2,q_3,q_4$ \\ 
 \hline 
@@ -255,6 +255,34 @@ $q_4$ & $q_3,q_4$ & $q_3,q_4$ & - \\
 \hline 
 \end{tabular} 
 \end{center}
+Finalmente tenemos el \textbf{AFD} equivalente:
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+\node[state,initial,initial text=,rectangle] (q_0) {$\{ q_0 ,q_1 ,q_2,q_3 \}$};
+\node[state,rectangle,accepting,label={\color{red}{\small $Q_1$}}] (q_1) at (3,2) {$\{ q_0 ,q_1 ,q_2,q_3,q_4 \}$};
+\node[state,rectangle,accepting,label={\color{red}{\small $Q_2$}}] (q_2) at (3,-2) {$\{ q_2,q_3,q_4\}$};
+\node[state,rectangle,accepting,label=  {\color{red} {\small $Q_3$}}] (q_3) at (6,0) {$\{ q_3,q_4\}$};
+\node[state,rectangle] (q_4) at (9,0) {$\emptyset$};
+
+\path[->,line width=0.25mm] (q_0) edge node[,below,right,sloped,left,above] {$a$} (q_1);
+\path[->,line width=0.25mm] (q_1) edge node[left,below=0.1cm,sloped] {$b$} (q_3);
+\path[->,line width=0.25mm] (q_0) edge node[sloped] {$b$} (q_2);
+\path[->,line width=0.25mm] (q_2) edge node[sloped] {$a,b$} (q_3);
+\path[->,line width=0.25mm] (q_3) edge node[sloped] {$b$} (q_4);
+\path[->,line width=0.25mm,loop right] (q_1) edge node[,right] {$a$} (q_1);
+\path[->,line width=0.25mm,loop below] (q_3) edge node[,below] {$a$} (q_3);
+\path[->,line width=0.25mm,loop above] (q_4) edge node[,above] {$a,b$} (q_4);
+%bend left
+\end{tikzpicture}
+\end{figure} \\
+De este autómata podemos realizar una verificación de los estados finales con su \textbf{AFN}: $F = \{ q_4 \}$. \\${ }$\\
+Para este \textbf{AFD}:
+\begin{align*}
+Q_1 \cap F = \{ q_4 \} \neq \emptyset \\
+Q_2 \cap F = \{ q_4 \} \neq \emptyset \\
+Q_3 \cap F = \{ q_4 \} \neq \emptyset
+\end{align*}
 
 \end{itemize}
 \section{Propiedades de los Lenguajes Aceptados por AF's}
@@ -481,14 +509,14 @@ L(\gamma) = L(\alpha^*)&= L(\alpha)^* & \\
 \end{itemize}
 \item Si un lenguaje es aceptado por un AF entonces es un lenguaje regular.
 \subsubsection*{Prueba}
-$R=L(M)$ \\
+Sea $M = (K,\Sigma,\delta,s,F)$ el \textbf{AFD} que acepta $L(M)$: \\${ }$\\
+\textbf{p.d.} $R=L(M)$ \\${ }$\\
 Representaremos $L(M)$ como la unión de muchos (pero en número finito) lenguajes simples.
 \\${ }$\\
 Sea $k=\{q_1,q_2,q_3,\ldots,q_n \} , s =q_1$ para $i,j = 1,2,\ldots,n ; k = 1,2,\ldots,n+1$ \\ ${ }$\\
 Definimos $R(i,j,k)$ como el conjunto de todas las palabras que nos llevan de $q_i$ a $q_j$ sin pasar por estados con subíndice $k$ o mayores.
 \subsubsection*{Formalmente}
-$$
-R(i,j,k)= \{ x\in\Sigma^* / (q_i,x)\sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_j,\lambda) \wedge (q_i,x) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_l,y) \text{ entonces } l<k \vee (y=\lambda \wedge l=j) \vee (y=x \wedge l=i) \}
+$$R(i,j,k)= \{ x\in\Sigma^* / (q_i,x)\sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_j,\lambda) \wedge (q_i,x) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_l,y) \text{ entonces } l<k \vee (y=\lambda \wedge l=j) \vee (y=x \wedge l=i) \}
 $$
 Si $k=n+1$:\footnote{Notese que no es posible llegar a $n+1$ ya que $k$ tiene $n$ estados}
 $$
@@ -542,6 +570,130 @@ R(i,j,k+1) = \underbrace{\underbrace{R(i,j,k)}_{Regular} \cup \underbrace{\under
 $$
 $R(i,j,k)$ es regular por la clausura de lenguaje regular respecto a la unión, concatenación y Estrella de Kleene.
 \end{enumerate}
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item Dada la \textbf{ER} $\alpha = (ab \cup aab)^*$ hallar un autómata $M$ tal que: $L(M) = L(\alpha)$. \\${ }$\\
+El lenguaje generado por $\alpha$ sería: $L(\alpha) =\{ \lambda,ab,aab,abaab,abab,\ldots \}$
+\begin{enumerate}[label=\textbf{Paso} \arabic*:]
+\item $a,b$
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (a) at (0,0) {${}$};
+\node[state,accepting] (b) at (1.5,0) {${}$};
+\path[->,line width=0.25mm] (a) edge node[] {$a$} (b);
+
+\node[state,initial,initial text=] (c) at (3.5,0) {${}$};
+\node[state,accepting] (d) at (5,0) {${}$};
+\path[->,line width=0.25mm] (c) edge node[] {$b$} (d);
+
+\end{tikzpicture}
+\end{figure}
+\item $ab,aab$
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (a) at (0,0) {${}$};
+\node[state] (b) at (1.5,0) {${}$};
+\node[state] (c) at (3,0) {${}$};
+\node[state,accepting] (d) at (4.5,0) {${}$};
+\path[->,line width=0.25mm] (a) edge node[] {$a$} (b);
+\path[->,line width=0.25mm] (b) edge node[] {$\lambda$} (c);
+\path[->,line width=0.25mm] (c) edge node[] {$b$} (d);
+
+\node[state,initial,initial text=] (e) at (0,-1.5) {${}$};
+\node[state] (f) at (1.5,-1.5) {${}$};
+\node[state] (g) at (3,-1.5) {${}$};
+\node[state] (h) at (4.5,-1.5) {${}$};
+\node[state] (i) at (6,-1.5) {${}$};
+\node[state,accepting] (j) at (7.5,-1.5) {${}$};
+
+\path[->,line width=0.25mm] (e) edge node[] {$a$} (f);
+\path[->,line width=0.25mm] (f) edge node[] {$\lambda$} (g);
+\path[->,line width=0.25mm] (g) edge node[] {$a$} (h);
+\path[->,line width=0.25mm] (h) edge node[] {$\lambda$} (i);
+\path[->,line width=0.25mm] (i) edge node[] {$b$} (j);
+\end{tikzpicture}
+\end{figure}
+\item $ab\cup aab$
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+
+
+\node[state,,initial,initial text=] (z) at (-1.5,1.5) {};
+
+
+
+\node[state] (a) at (0,3) {${}$};
+\node[state] (b) at (1.5,3) {${}$};
+\node[state] (c) at (3,3) {${}$};
+\node[state,accepting] (d) at (4.5,3) {${}$};
+\path[->,line width=0.25mm] (a) edge node[] {$a$} (b);
+\path[->,line width=0.25mm] (b) edge node[] {$\lambda$} (c);
+\path[->,line width=0.25mm] (c) edge node[] {$b$} (d);
+
+\node[state] (e) at (0,0) {${ }$};
+\node[state] (f) at (1.5,0) {${ }$};
+\node[state] (g) at (3,0) {${ }$};
+\node[state] (h) at (4.5,0) {${ }$};
+\node[state] (i) at (6,0) {${ }$};
+\node[state,accepting] (j) at (7.5,0) {${ }$};
+
+\path[->,line width=0.25mm] (e) edge node[] {$a$} (f);
+\path[->,line width=0.25mm] (f) edge node[] {$\lambda$} (g);
+\path[->,line width=0.25mm] (g) edge node[] {$a$} (h);
+\path[->,line width=0.25mm] (h) edge node[] {$\lambda$} (i);
+\path[->,line width=0.25mm] (i) edge node[below] {$b$} (j);
+
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (a);
+\path[->,line width=0.25mm] (z) edge node[below=0.2cm,left] {$\lambda$} (e);
+
+
+
+\end{tikzpicture}
+\end{figure}
+\item $(ab\cup aab)^*$
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+
+\node[state,initial,initial text=,accepting] (z0) at (-3,1.5) {};
+\node[state] (z) at (-1.5,1.5) {};
+
+
+
+\node[state] (a) at (0,3) {${}$};
+\node[state] (b) at (1.5,3) {${}$};
+\node[state] (c) at (3,3) {${}$};
+\node[state,accepting] (d) at (4.5,3) {${}$};
+\path[->,line width=0.25mm] (a) edge node[] {$a$} (b);
+\path[->,line width=0.25mm] (b) edge node[] {$\lambda$} (c);
+\path[->,line width=0.25mm] (c) edge node[] {$b$} (d);
+
+\node[state] (e) at (0,0) {${ }$};
+\node[state] (f) at (1.5,0) {${ }$};
+\node[state] (g) at (3,0) {${ }$};
+\node[state] (h) at (4.5,0) {${ }$};
+\node[state] (i) at (6,0) {${ }$};
+\node[state,accepting] (j) at (7.5,0) {${ }$};
+
+\path[->,line width=0.25mm] (e) edge node[] {$a$} (f);
+\path[->,line width=0.25mm] (f) edge node[] {$\lambda$} (g);
+\path[->,line width=0.25mm] (g) edge node[] {$a$} (h);
+\path[->,line width=0.25mm] (h) edge node[] {$\lambda$} (i);
+\path[->,line width=0.25mm] (i) edge node[below] {$b$} (j);
+
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (a);
+\path[->,line width=0.25mm] (z) edge node[below=0.2cm,left] {$\lambda$} (e);
+
+\path[->,line width=0.25mm,bend left=16] (d) edge node[above] {$\lambda$} (z);
+\path[->,line width=0.25mm,bend right=7] (j) edge node[] {$\lambda$} (z);
+\path[->,line width=0.25mm] (z0) edge node[] {$\lambda$} (z);
+\end{tikzpicture}
+\end{figure}
+\end{enumerate}
+\end{itemize}
 \section{Lenguajes no Regulares}
 \subsection{Teoría}
 Sea $L$ un lenguaje regular infinito. Entonces existen palabras $x,y,z$ tales que $y\neq \lambda$ y $xy^n z\in L$. {\color{red} Para cada $n\geq 0$}.
@@ -590,7 +742,12 @@ Tendriamos crecimiento de ``b's.
 \begin{center}
 Tendriamos intercalado.
 \end{center}
+
 \end{itemize}
+\item Demostrar que:
+	$$
+	L =\{ a^n : n \text{ es primo} \} \text{ es \textbf{no regular.}}
+	$$
 \end{itemize}
 \section{Gramáticas}
 \subsection{Definición}
@@ -858,7 +1015,7 @@ Una máquina de Turing es una cuadrupla $M=(K,\Sigma,\delta,s)$ donde:
 
 \end{tikzpicture}
 \\
-En una Máquina de Turing la \textit{cinta} es infinita a la derecha.
+En una Máquina de Turing la \textit{cinta} es infinita a la derecha. Donde $\#$ es el símbolo en blanco.
 \end{center}
 \subsubsection*{Teorema}
 Los siguientes modelos de máquinas de Turing son igualmente poderosos:

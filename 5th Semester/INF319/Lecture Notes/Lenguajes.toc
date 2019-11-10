@@ -74,25 +74,26 @@
 \contentsline {subsubsection}{Ejemplo(s)}{20}{section*.54}
 \contentsline {section}{\numberline {2.4}Propiedades de los Lenguajes Aceptados por AF's}{21}{section.2.4}
 \contentsline {subsubsection}{Prueba}{21}{section*.56}
-\contentsline {section}{\numberline {2.5}Automatas Finitos y Expresiones Regulares}{23}{section.2.5}
-\contentsline {section}{\numberline {2.6}Lenguajes no Regulares}{24}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Teor\IeC {\'\i }a}{24}{subsection.2.6.1}
-\contentsline {subsubsection}{Ejemplo(s)}{24}{section*.63}
-\contentsline {section}{\numberline {2.7}Gram\IeC {\'a}ticas}{25}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Definici\IeC {\'o}n}{25}{subsection.2.7.1}
-\contentsline {subsubsection}{Notaci\IeC {\'o}n}{25}{section*.64}
-\contentsline {subsubsection}{Derivaci\IeC {\'o}n}{25}{section*.65}
-\contentsline {subsubsection}{Lenguaje Generado por $G$}{26}{section*.66}
-\contentsline {subsection}{\numberline {2.7.2}Gram\IeC {\'a}ticas Regulares}{26}{subsection.2.7.2}
-\contentsline {subsubsection}{Definici\IeC {\'o}n}{26}{section*.67}
-\contentsline {subsubsection}{Teorema}{26}{section*.68}
-\contentsline {subsubsection}{Ejemplo(s)}{26}{section*.72}
-\contentsline {section}{\numberline {2.8}Aut\IeC {\'o}mata con Pila}{26}{section.2.8}
-\contentsline {subsubsection}{Definici\IeC {\'o}n}{26}{section*.73}
-\contentsline {subsection}{\numberline {2.8.1}Configuraci\IeC {\'o}n}{27}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Aut\IeC {\'o}matas con Pila y Gram\IeC {\'a}ticas Libre de Contexto}{27}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Propiedades de los Lenguajes Libres de Contexto}{28}{subsection.2.8.3}
-\contentsline {subsubsection}{Teorema de Pumping}{28}{section*.89}
-\contentsline {subsubsection}{Teorema}{28}{section*.90}
-\contentsline {section}{\numberline {2.9}M\IeC {\'a}quinas de Turing }{28}{section.2.9}
-\contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{29}{section*.92}
+\contentsline {section}{\numberline {2.5}Automatas Finitos y Expresiones Regulares}{24}{section.2.5}
+\contentsline {subsubsection}{Ejemplo(s)}{25}{section*.63}
+\contentsline {section}{\numberline {2.6}Lenguajes no Regulares}{26}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Teor\IeC {\'\i }a}{26}{subsection.2.6.1}
+\contentsline {subsubsection}{Ejemplo(s)}{26}{section*.64}
+\contentsline {section}{\numberline {2.7}Gram\IeC {\'a}ticas}{26}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Definici\IeC {\'o}n}{26}{subsection.2.7.1}
+\contentsline {subsubsection}{Notaci\IeC {\'o}n}{27}{section*.65}
+\contentsline {subsubsection}{Derivaci\IeC {\'o}n}{27}{section*.66}
+\contentsline {subsubsection}{Lenguaje Generado por $G$}{27}{section*.67}
+\contentsline {subsection}{\numberline {2.7.2}Gram\IeC {\'a}ticas Regulares}{27}{subsection.2.7.2}
+\contentsline {subsubsection}{Definici\IeC {\'o}n}{27}{section*.68}
+\contentsline {subsubsection}{Teorema}{27}{section*.69}
+\contentsline {subsubsection}{Ejemplo(s)}{28}{section*.73}
+\contentsline {section}{\numberline {2.8}Aut\IeC {\'o}mata con Pila}{28}{section.2.8}
+\contentsline {subsubsection}{Definici\IeC {\'o}n}{28}{section*.74}
+\contentsline {subsection}{\numberline {2.8.1}Configuraci\IeC {\'o}n}{28}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Aut\IeC {\'o}matas con Pila y Gram\IeC {\'a}ticas Libre de Contexto}{29}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}Propiedades de los Lenguajes Libres de Contexto}{29}{subsection.2.8.3}
+\contentsline {subsubsection}{Teorema de Pumping}{30}{section*.90}
+\contentsline {subsubsection}{Teorema}{30}{section*.91}
+\contentsline {section}{\numberline {2.9}M\IeC {\'a}quinas de Turing }{30}{section.2.9}
+\contentsline {subsubsection}{Interpretaci\IeC {\'o}n}{30}{section*.93}
