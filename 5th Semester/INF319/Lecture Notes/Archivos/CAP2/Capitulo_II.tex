@@ -507,69 +507,7 @@ L(\gamma) = L(\alpha^*)&= L(\alpha)^* & \\
 	                       &= L(M_1)^*      =L(M)
 \end{align*}
 \end{itemize}
-\item Si un lenguaje es aceptado por un AF entonces es un lenguaje regular.
-\subsubsection*{Prueba}
-Sea $M = (K,\Sigma,\delta,s,F)$ el \textbf{AFD} que acepta $L(M)$: \\${ }$\\
-\textbf{p.d.} $R=L(M)$ \\${ }$\\
-Representaremos $L(M)$ como la unión de muchos (pero en número finito) lenguajes simples.
-\\${ }$\\
-Sea $k=\{q_1,q_2,q_3,\ldots,q_n \} , s =q_1$ para $i,j = 1,2,\ldots,n ; k = 1,2,\ldots,n+1$ \\ ${ }$\\
-Definimos $R(i,j,k)$ como el conjunto de todas las palabras que nos llevan de $q_i$ a $q_j$ sin pasar por estados con subíndice $k$ o mayores.
-\subsubsection*{Formalmente}
-$$R(i,j,k)= \{ x\in\Sigma^* / (q_i,x)\sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_j,\lambda) \wedge (q_i,x) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_l,y) \text{ entonces } l<k \vee (y=\lambda \wedge l=j) \vee (y=x \wedge l=i) \}
-$$
-Si $k=n+1$:\footnote{Notese que no es posible llegar a $n+1$ ya que $k$ tiene $n$ estados}
-$$
-R(i,j,n+1)=\{ x\in\Sigma^* / (q_i,x) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_j,\lambda)\}
-$$
-Esto es:
-$$
-L(M) = \cup\{ R(1,j,n+1),q_j \in F \}
-$$
-\textbf{p.d.} $R(i,j,k)$ son regulares (inducción) $k=1$
-$$
-R(i,j,1) =
-\begin{cases}
-\{ \sigma\in\Sigma / \delta(q_i,\sigma)=q_j \},  i\neq j \\ \\
-\{\lambda \} \cup \{ \sigma\in\Sigma / \delta(q_i,\sigma)=q_j \} , i\neq j
-\end{cases}
-$$
-Son regulares ya que $R(i,j,1)$ son \textbf{finitos}. \\${ }$\\
-\textbf{HI} \\
-Para $k=1,2,\ldots,n$ $R(i,j,k)$ son Regulares. \\${ }$\\
-\textbf{p.d.} Para $k+1$ es decir $R(i,j,k+1)$ es regular:
 
-\tikzset{every loop/.style={min distance=5mm,in=340,out=20,looseness=20}}
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
-
-\node[state] at ({sin(0+30)*2},{cos(0+30)*2}) (q_i) {$q_i$};
-\node[state] at ({sin(120+30)*2},{cos(120+30)*2}) (q_j) {$q_j$};
-\node[state] at ({sin(240+30)*2},{cos(240+30)*2}) (q_k) {$q_k$};
-%\node[align=left] at (2.75,-1.5) {\textbf{ssi} $s_0$ es un estado inicial.};
-
- \path (q_k) edge [decorate,decoration={snake,amplitude=.6mm,segment length=2mm,post length=10mm,pre length=10mm},loop right,line width=0.25mm] node {} (q_k);
- 
- \path[->, line width=0.25mm,decoration={coil,segment length=4,amplitude=.6mm,
-  post=lineto,post length=8mm,pre length=8mm}] (q_i) edge[decorate] node[] {} (q_j);
- 
- \path[->,line width=0.25mm,decoration={coil,segment length=4,amplitude=.6mm,
-  post=lineto,post length=8mm,pre length=8mm}] (q_i) edge[decorate] node[] {} (q_k);
- 
- \path[->,line width=0.25mm,decoration={coil,segment length=4,amplitude=.6mm,
-  post=lineto,post length=8mm,pre length=8mm}] (q_k) edge[decorate] node[] {} (q_j);
- 
- \draw[line width=0.25mm] (0,0) circle (1.3cm);
-%\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
-\end{tikzpicture}
-\end{figure}
-
-$$
-R(i,j,k+1) = \underbrace{\underbrace{R(i,j,k)}_{Regular} \cup \underbrace{\underbrace{R(i,k,k)}_{Regular} \underbrace{R(k,k,k)^* }_{Regular}\underbrace{R(k,j,k)}_{Regular} }_{Regular}}_{Regular}
-$$
-$R(i,j,k)$ es regular por la clausura de lenguaje regular respecto a la unión, concatenación y Estrella de Kleene.
-\end{enumerate}
 \subsubsection{Ejemplo(s)}
 \begin{itemize}
 \item Dada la \textbf{ER} $\alpha = (ab \cup aab)^*$ hallar un autómata $M$ tal que: $L(M) = L(\alpha)$. \\${ }$\\
@@ -693,7 +631,195 @@ El lenguaje generado por $\alpha$ sería: $L(\alpha) =\{ \lambda,ab,aab,abaab,ab
 \end{tikzpicture}
 \end{figure}
 \end{enumerate}
+\pagebreak
+\item Dada la \textbf{ER} $\alpha = b(a\cup b)^* b$ hallar un autómata $M$ tal que: $L(M) = L(\alpha)$. 
+\begin{enumerate}[label=\textbf{Paso} \arabic*:]
+\item $a,b$
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (a) at (0,0) {${}$};
+\node[state,accepting] (b) at (1.5,0) {${}$};
+\path[->,line width=0.25mm] (a) edge node[] {$a$} (b);
+
+\node[state,initial,initial text=] (c) at (3.5,0) {${}$};
+\node[state,accepting] (d) at (5,0) {${}$};
+\path[->,line width=0.25mm] (c) edge node[] {$b$} (d);
+
+\end{tikzpicture}
+\end{figure}
+\item $a\cup b$
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (z) at (-1.5,0) {${}$};
+\node[state] (a) at (0,1) {${}$};
+\node[state,accepting] (b) at (1.5,1) {${}$};
+\path[->,line width=0.25mm] (a) edge node[] {$a$} (b);
+
+\node[state] (c) at (0,-1) {${}$};
+\node[state,accepting] (d) at (1.5,-1) {${}$};
+\path[->,line width=0.25mm] (c) edge node[] {$b$} (d);
+
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (a);
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (c);
+
+\end{tikzpicture}
+\end{figure}
+\item $(a\cup b)^*$
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state] (z) at (-1.5,0) {${}$};
+\node[state,accepting,initial,initial text=] (z1) at (-3,0) {${}$};
+
+
+\node[state] (a) at (0,1) {${}$};
+\node[state,accepting] (b) at (1.5,1) {${}$};
+\path[->,line width=0.25mm] (a) edge node[] {$a$} (b);
+
+\node[state] (c) at (0,-1) {${}$};
+\node[state,accepting] (d) at (1.5,-1) {${}$};
+\path[->,line width=0.25mm] (c) edge node[] {$b$} (d);
+
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (a);
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (c);
+\path[->,line width=0.25mm] (z1) edge node[] {$\lambda$} (z);
+
+\path[->,line width=0.25mm,bend right=100] (b) edge node[above] {$\lambda$} (z);
+\path[->,line width=0.25mm,bend left=100] (d) edge node[below] {$\lambda$} (z);
+
+\end{tikzpicture}
+\end{figure}
+\item $b(a\cup b)^*$
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state] (z) at (-1.5,0) {${}$};
+\node[state,accepting] (z1) at (-3,0) {${}$};
+\node[state] (z2) at (-4.5,0) {${}$};
+\node[state,initial,initial text=] (z3) at (-6,0) {${}$};
+
+\node[state] (a) at (0,1) {${}$};
+\node[state,accepting] (b) at (1.5,1) {${}$};
+\path[->,line width=0.25mm] (a) edge node[] {$a$} (b);
+
+\node[state] (c) at (0,-1) {${}$};
+\node[state,accepting] (d) at (1.5,-1) {${}$};
+\path[->,line width=0.25mm] (c) edge node[] {$b$} (d);
+
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (a);
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (c);
+\path[->,line width=0.25mm] (z1) edge node[] {$\lambda$} (z);
+
+\path[->,line width=0.25mm,bend right=100] (b) edge node[above] {$\lambda$} (z);
+\path[->,line width=0.25mm,bend left=100] (d) edge node[below] {$\lambda$} (z);
+\path[->,line width=0.25mm] (z3) edge node[] {$b$} (z2);
+\path[->,line width=0.25mm] (z2) edge node[] {$\lambda$} (z1);
+\end{tikzpicture}
+\end{figure}
+\item $b(a\cup b)^* b$
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state] (z) at (-1.5,0) {${}$};
+\node[state] (z1) at (-3,0) {${}$};
+\node[state] (z2) at (-4.5,0) {${}$};
+\node[state,initial,initial text=] (z3) at (-6,0) {${}$};
+\node[state] (e) at (3,0) {${}$};
+\node[state,accepting] (f) at (4.5,0) {${}$};
+
+\node[state] (a) at (0,1) {${}$};
+\node[state] (b) at (1.5,1) {${}$};
+\path[->,line width=0.25mm] (a) edge node[] {$a$} (b);
+
+\node[state] (c) at (0,-1) {${}$};
+\node[state] (d) at (1.5,-1) {${}$};
+\path[->,line width=0.25mm] (c) edge node[] {$b$} (d);
+
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (a);
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (c);
+\path[->,line width=0.25mm] (z1) edge node[] {$\lambda$} (z);
+
+\path[->,line width=0.25mm,bend right=100] (b) edge node[above] {$\lambda$} (z);
+\path[->,line width=0.25mm,bend left=100] (d) edge node[below] {$\lambda$} (z);
+\path[->,line width=0.25mm] (z3) edge node[] {$b$} (z2);
+\path[->,line width=0.25mm] (z2) edge node[] {$\lambda$} (z1);
+
+\path[->,line width=0.25mm] (d) edge node[below] {$\lambda$} (e);
+\path[->,line width=0.25mm] (b) edge node[] {$\lambda$} (e);
+\path[->,line width=0.25mm] (z) edge node[] {$\lambda$} (e);
+\path[->,line width=0.25mm] (e) edge node[] {$b$} (f);
+\end{tikzpicture}
+\end{figure}
+\end{enumerate}
 \end{itemize}
+
+\pagebreak
+\item Si un lenguaje es aceptado por un AF entonces es un lenguaje regular.
+\subsubsection*{Prueba}
+Sea $M = (K,\Sigma,\delta,s,F)$ el \textbf{AFD} que acepta $L(M)$: \\${ }$\\
+\textbf{p.d.} $R=L(M)$ \\${ }$\\
+Representaremos $L(M)$ como la unión de muchos (pero en número finito) lenguajes simples.
+\\${ }$\\
+Sea $k=\{q_1,q_2,q_3,\ldots,q_n \} , s =q_1$ para $i,j = 1,2,\ldots,n ; k = 1,2,\ldots,n+1$ \\ ${ }$\\
+Definimos $R(i,j,k)$ como el conjunto de todas las palabras que nos llevan de $q_i$ a $q_j$ sin pasar por estados con subíndice $k$ o mayores.
+\subsubsection*{Formalmente}
+$$R(i,j,k)= \{ x\in\Sigma^* / (q_i,x)\sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_j,\lambda) \wedge (q_i,x) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_l,y) \text{ entonces } l<k \vee (y=\lambda \wedge l=j) \vee (y=x \wedge l=i) \}
+$$
+Si $k=n+1$:\footnote{Notese que no es posible llegar a $n+1$ ya que $k$ tiene $n$ estados}
+$$
+R(i,j,n+1)=\{ x\in\Sigma^* / (q_i,x) \sststile{M}{\hspace{0.25cm} * \hspace{0.25cm}} (q_j,\lambda)\}
+$$
+Esto es:
+$$
+L(M) = \cup\{ R(1,j,n+1),q_j \in F \}
+$$
+\textbf{p.d.} $R(i,j,k)$ son regulares (inducción) $k=1$
+$$
+R(i,j,1) =
+\begin{cases}
+\{ \sigma\in\Sigma / \delta(q_i,\sigma)=q_j \},  i\neq j \\ \\
+\{\lambda \} \cup \{ \sigma\in\Sigma / \delta(q_i,\sigma)=q_j \} , i\neq j
+\end{cases}
+$$
+Son regulares ya que $R(i,j,1)$ son \textbf{finitos}. \\${ }$\\
+\textbf{HI} \\
+Para $k=1,2,\ldots,n$ $R(i,j,k)$ son Regulares. \\${ }$\\
+\textbf{p.d.} Para $k+1$ es decir $R(i,j,k+1)$ es regular:
+
+\tikzset{every loop/.style={min distance=5mm,in=340,out=20,looseness=20}}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto]
+
+\node[state] at ({sin(0+30)*2},{cos(0+30)*2}) (q_i) {$q_i$};
+\node[state] at ({sin(120+30)*2},{cos(120+30)*2}) (q_j) {$q_j$};
+\node[state] at ({sin(240+30)*2},{cos(240+30)*2}) (q_k) {$q_k$};
+%\node[align=left] at (2.75,-1.5) {\textbf{ssi} $s_0$ es un estado inicial.};
+
+ \path (q_k) edge [decorate,decoration={snake,amplitude=.6mm,segment length=2mm,post length=10mm,pre length=10mm},loop right,line width=0.25mm] node {} (q_k);
+ 
+ \path[->, line width=0.25mm,decoration={coil,segment length=4,amplitude=.6mm,
+  post=lineto,post length=8mm,pre length=8mm}] (q_i) edge[decorate] node[] {} (q_j);
+ 
+ \path[->,line width=0.25mm,decoration={coil,segment length=4,amplitude=.6mm,
+  post=lineto,post length=8mm,pre length=8mm}] (q_i) edge[decorate] node[] {} (q_k);
+ 
+ \path[->,line width=0.25mm,decoration={coil,segment length=4,amplitude=.6mm,
+  post=lineto,post length=8mm,pre length=8mm}] (q_k) edge[decorate] node[] {} (q_j);
+ 
+ \draw[line width=0.25mm] (0,0) circle (1.3cm);
+%\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
+\end{tikzpicture}
+\end{figure}
+
+$$
+R(i,j,k+1) = \underbrace{\underbrace{R(i,j,k)}_{Regular} \cup \underbrace{\underbrace{R(i,k,k)}_{Regular} \underbrace{R(k,k,k)^* }_{Regular}\underbrace{R(k,j,k)}_{Regular} }_{Regular}}_{Regular}
+$$
+$R(i,j,k)$ es regular por la clausura de lenguaje regular respecto a la unión, concatenación y Estrella de Kleene.
+\end{enumerate}
+
 \section{Lenguajes no Regulares}
 \subsection{Teoría}
 Sea $L$ un lenguaje regular infinito. Entonces existen palabras $x,y,z$ tales que $y\neq \lambda$ y $xy^n z\in L$. {\color{red} Para cada $n\geq 0$}.
@@ -709,13 +835,8 @@ $L$ es regular infinito.
 \end{center}
 \begin{itemize}
 \item \textbf{Caso} 1: Si $y$ consta exclusivamente de ``a''s.
-$$
-	x=a^p , y=a^q , z=a^r b^s
-$$
-
-$$
-	s,q >0 \hspace{0.25cm} p,r\geq 0
-$$
+$$x=a^p , y=a^q , z=a^r b^s$$
+$$s,q >0 \hspace{0.25cm} p,r\geq 0$$
 \begin{multicols}{2}
 \begin{align*}
 xy^n z & \in L \\
@@ -743,11 +864,29 @@ Tendriamos crecimiento de ``b's.
 Tendriamos intercalado.
 \end{center}
 
+	$\therefore$ $L$ no es regular.
 \end{itemize}
 \item Demostrar que:
 	$$
 	L =\{ a^n : n \text{ es primo} \} \text{ es \textbf{no regular.}}
 	$$
+	\textbf{Prueba (RAA)} \\${ }$\\
+	Supongamos $L$ es regular infinito.
+	$$ x=a^p ,y=a^q ,z=a^r $$
+	$$q >0 \hspace{0.25cm} p,r\geq 0$$
+	\begin{align*}
+		xy^nz &\in L , \forall n\geq 0 \\
+		a^p(q^q)^n a^r &\in L , \forall n\geq 0 \\
+		a^{p+qn+r} &\in L , \forall n\geq 0 
+	\end{align*}
+	$$ n = p + 2q + r + 2$$
+	\begin{align*}
+		p+ q(p+2q+r+2)+r &= p + qp + 2q^2 +qr + 2q \\
+				     &= p(q+1) + 2q(q+1) + r(q+1) \\
+				     &= \underbrace{(q+1)}_{\heartsuit}(p+2q+r)
+	\end{align*}
+	$\heartsuit$ $q$ debe ser cuanto mínimo 1 pero tenemos $q+1$, por lo cual no puede ser, ya que no cumpliría con un caso. \\${ }$\\
+	$\therefore$ $L$ no es regular.
 \end{itemize}
 \section{Gramáticas}
 \subsection{Definición}
@@ -788,6 +927,45 @@ $$
 L(G) = \Big\{ w\in \Sigma^* / S \xRightarrow[G]{*} w \Big\} 
 $$
 Un lenguaje es libre de contexto \textbf{ssi} existe una gramatica libre de contexto que genera el Lenguaje.
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item Un ejemplo de una gramática: $\alpha = a(a^* \cup b^* ) b$.
+$$
+S \rightarrow aMb
+$$
+\begin{align*}
+M &\rightarrow A & \hspace{0.25cm} M&\rightarrow B \\
+A &\rightarrow \lambda & \hspace{0.25cm} B&\rightarrow \lambda \\
+A &\rightarrow aA & \hspace{0.25cm}  B&\rightarrow bB \\
+\end{align*}
+\item Del anterior ejemplo, esta sería la notación: $G=(V,\Sigma,R,S)$ donde:
+\begin{itemize}
+\item $V=\{ S,M,A,B,a,b \}$
+\item $\Sigma =\{ a,b \}$ 
+\item $S\in V-\Sigma$
+\item $R = \{ (S,aMb),(M,A),(M,B),(A,\lambda),(B,\lambda),(B,bB),(A,aA) \}$
+\end{itemize}
+\item Del ejemplo anterior podemos ver algunas \textbf{ER} generadas:
+\begin{itemize}
+\item $S \Rightarrow  \underline{a}M\underline{b} 
+	   \Rightarrow  \underline{a}B\underline{b} 
+	   \Rightarrow  \underline{ab}B\underline{b} 
+	   \Rightarrow  \underline{ab}\lambda\underline{b} 
+	   \Rightarrow  abb
+	$
+	\\${ }$\\
+	$ \therefore S \xRightarrow[\text{}]{\text{*}} abb , abb\in L(G) $
+\item $S \Rightarrow  \underline{a}M\underline{b} 
+	   \Rightarrow  \underline{aa}A\underline{b} 
+	   \Rightarrow  \underline{aaa}A\underline{b} 
+	   \Rightarrow  \underline{aaaa}A\underline{b} 
+	   \Rightarrow  \underline{aaaa}\lambda\underline{b} 
+	   \Rightarrow  aaaab
+	$
+	\\${ }$\\
+	$ \therefore S \xRightarrow[\text{}]{\text{*}} aaaab , aaaab\in L(G) $
+\end{itemize}
+\end{itemize}
 \subsection{Gramáticas Regulares}
 \subsubsection{Definición}
 Una Gramática Libre de Contexto $G=(V,\Sigma,R,S)$ es regular ssi:
@@ -1017,6 +1195,150 @@ Una máquina de Turing es una cuadrupla $M=(K,\Sigma,\delta,s)$ donde:
 \\
 En una Máquina de Turing la \textit{cinta} es infinita a la derecha. Donde $\#$ es el símbolo en blanco.
 \end{center}
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item Sea la siguiente tabla de transiciones de una Máquina de Turing:
+\begin{center}
+\begin{tabular}{|c|cc|}
+\hline 
+ & $a$ & $\#$ \\ 
+\hline 
+$\underline{q_0}$ & $(q_1,\#)$ & $(h,\#)$ \\ 
+
+$q_1$ & $(q_0,a)$ & $(q_0,R)$ \\ 
+\hline 
+\end{tabular} 
+\end{center}
+$S = q_0$ \hspace{0.25cm} Procesar: $aaa$.
+\begin{center}
+\begin{tikzpicture}
+\draw(-5,5) -- (1,5);
+\draw(-5,4) -- (1,4);
+\draw [decorate, decoration={zigzag}] (1,5) -- (1,4);
+\newcount\foo
+\foo=-5
+\loop
+  \message{\the\foo}
+  \draw(\foo,5) -- (\foo,4);
+  \advance \foo 1
+\ifnum \foo<1
+\repeat
+
+\node[] at (-4.5,4.5) 
+    {a};
+\node[] at (-3.5,4.5) 
+    {a};
+\node[] at (-2.5,4.5) 
+    {a};
+\node[] at (-1.5,4.5) 
+    {$\#$};
+\node[] at (-0.5,4.5) 
+    {$\#$};
+\node[] at (0.5,4.5) 
+    {$\#$};
+\node[] at (-5.5,4.5) 
+    {$q_0$};
+    
+\draw[line width=0.4mm, red] (-5.1,3.9) -- (-3.9,3.9) -- (-3.9,5.1) -- (-5.1,5.1) -- (-5.1,3.9);
+\end{tikzpicture}
+\linebreak
+\linebreak
+\begin{tikzpicture}
+\draw(-5,5) -- (1,5);
+\draw(-5,4) -- (1,4);
+\draw [decorate, decoration={zigzag}] (1,5) -- (1,4);
+\newcount\foo
+\foo=-5
+\loop
+  \message{\the\foo}
+  \draw(\foo,5) -- (\foo,4);
+  \advance \foo 1
+\ifnum \foo<1
+\repeat
+
+\node[] at (-4.5,4.5) 
+    {{\color{red}\#}};
+\node[] at (-3.5,4.5) 
+    {a};
+\node[] at (-2.5,4.5) 
+    {a};
+\node[] at (-1.5,4.5) 
+    {$\#$};
+\node[] at (-0.5,4.5) 
+    {$\#$};
+\node[] at (0.5,4.5) 
+    {$\#$};
+\node[] at (-5.5,4.5) 
+    {$q_1$};
+
+\draw[line width=0.4mm, red] (-5.1,3.9) -- (-3.9,3.9) -- (-3.9,5.1) -- (-5.1,5.1) -- (-5.1,3.9);
+\end{tikzpicture}
+\linebreak
+\linebreak
+\begin{tikzpicture}
+\draw(-5,5) -- (1,5);
+\draw(-5,4) -- (1,4);
+\draw [decorate, decoration={zigzag}] (1,5) -- (1,4);
+\newcount\foo
+\foo=-5
+\loop
+  \message{\the\foo}
+  \draw(\foo,5) -- (\foo,4);
+  \advance \foo 1
+\ifnum \foo<1
+\repeat
+
+\node[] at (-4.5,4.5) 
+    {{\color{red}\#}};
+\node[] at (-3.5,4.5) 
+    {a};
+\node[] at (-2.5,4.5) 
+    {a};
+\node[] at (-1.5,4.5) 
+    {$\#$};
+\node[] at (-0.5,4.5) 
+    {$\#$};
+\node[] at (0.5,4.5) 
+    {$\#$};
+\node[] at (-5.5,4.5) 
+    {$q_0$};
+    
+\draw[line width=0.4mm, red] (-4.1,3.9) -- (-2.9,3.9) -- (-2.9,5.1) -- (-4.1,5.1) -- (-4.1,3.9);
+\end{tikzpicture}
+\linebreak
+\linebreak
+\begin{tikzpicture}
+\draw(-5,5) -- (1,5);
+\draw(-5,4) -- (1,4);
+\draw [decorate, decoration={zigzag}] (1,5) -- (1,4);
+\newcount\foo
+\foo=-5
+\loop
+  \message{\the\foo}
+  \draw(\foo,5) -- (\foo,4);
+  \advance \foo 1
+\ifnum \foo<1
+\repeat
+
+\node[] at (-4.5,4.5) 
+    {{\color{red}\#}};
+\node[] at (-3.5,4.5) 
+    {{\color{red}\#}};
+\node[] at (-2.5,4.5) 
+    {a};
+\node[] at (-1.5,4.5) 
+    {$\#$};
+\node[] at (-0.5,4.5) 
+    {$\#$};
+\node[] at (0.5,4.5) 
+    {$\#$};
+\node[] at (-5.5,4.5) 
+    {$q_1$};
+    
+\draw[line width=0.4mm, red] (-4.1,3.9) -- (-2.9,3.9) -- (-2.9,5.1) -- (-4.1,5.1) -- (-4.1,3.9);
+\end{tikzpicture}
+\end{center}
+\end{itemize}
 \subsubsection*{Teorema}
 Los siguientes modelos de máquinas de Turing son igualmente poderosos:
 \begin{itemize}
