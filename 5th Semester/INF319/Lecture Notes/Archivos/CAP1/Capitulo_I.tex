@@ -140,7 +140,7 @@ w \in L & \wedge a\in\Sigma \\
 |w| = |w'| & \wedge a\in\Sigma \text{ \textbf{HI}}
 \end{align*}
 \textbf{p.d.} $wa\in L$ \\
-\textbf{p.d.} 
+\textbf{p.d.} $|(wa)'|=|aw'|$
 \begin{align*}
 | (wa)' | & = | aw' | \\
 	    & = |a| + |w'| \\
@@ -182,6 +182,35 @@ Sea $L$ un conjunto de palabras sobre $\Sigma$ con las propiedades:
 \end{enumerate}
 \subsubsection{Entonces}
 $L=\Sigma^*$, (es decir, todas las palabras sobre $\Sigma$ están en $L$.)
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item Demostrar: $|uv| =|u| + |v|$ $\forall u,v\in\Sigma^*$ \\
+\textbf{Prueba}
+$$ L = \{ v\in\Sigma^* / |uv| = |u| +|v| \} $$
+\begin{enumerate}[label=\alph*)]
+\item ¿$\lambda \in L$?
+$$ {\color{red}|u\lambda|} = |u| = |u| +0 ={\color{red} |u| + |\lambda|} $$
+\textbf{i) }$\therefore \lambda\in L$
+\item ¿$w\in L$? \\${ }$\\
+\textbf{p.d.} $w\in L \wedge a \in\Sigma \Rightarrow wa \in L$\\
+Sea
+\begin{align*}
+w \in L & \wedge a\in\Sigma \\
+|uw| = |u|+|w| & \wedge a\in\Sigma \text{ \textbf{HI}}
+\end{align*}
+\textbf{p.d.} $wa\in L$ \\
+\textbf{p.d.} $|u(wa)| = |u| + |wa|$
+\begin{align*}
+|u(wa)|   & = | (uw)a | \\
+	    & = |uw|  + 1 \\
+	    & = |u| + |w| +1 \\
+	    & = |u| + (|w|+1) \\
+	    & = |u| + |wa|
+\end{align*}
+\textbf{ii)} $\therefore w\in L \wedge a \in\Sigma \Rightarrow wa\in L$ \\${ }$\\
+Entonces: $L=\Sigma^*$
+\end{enumerate}
+\end{itemize}
 \subsection{Prefijos, Sufijos y Subpalabras}
 Sean $v,z \in \Sigma^*$:
 \begin{itemize}
@@ -274,6 +303,14 @@ $$A^* = \{w\in\Sigma^* / w=w_1 w_2 \ldots w_n \text{ para algún } k\in\mathbb{N
 \end{itemize}
 \subsubsection{Ejemplo(s)}
 \begin{itemize}
+\item Dado $A =\{ b,ab \} , B=\{ ba, bab \}$ realizar:
+\begin{enumerate}[label = \alph*)]
+\item $A' = \{ b,ba \}$
+\item $B' = \{ ab,bab \}$
+\item $AB = \{ bba,bbab,abba,abbab \}$
+\item $A^* = \{ \lambda,b,ab,bb,bab,abb,abab,bbb,babb,bbab,\ldots \}$
+\end{enumerate}
+
 \item Sea $\Sigma =\{ a,b \}$ y sean $P=\{a,ab\}, Q=\{ \lambda, a,ba \}$ realizar:
 \begin{enumerate}[label = \alph*)]
 \item $P\cup Q= \{ a,ab,ba,\lambda \}$
@@ -469,6 +506,42 @@ Un lenguaje es regular ssi es generado por una expresión regular.
 \end{itemize}
 
 \subsection{Módulos}
+Antes de comenzar con las formalidades de un módulo, es bastante práctico contar con una introducción simple. Imaginemos que tenemos una correa transportadora controlada por una llave:
+\begin{center}
+\begin{multicols}{2}
+\textbf{Movimiento de la Correa}
+\begin{itemize}
+\item Parada
+\item Derecha
+\item Izquierda
+\end{itemize}
+\columnbreak
+\textbf{Posición de la Llave}
+\begin{itemize}
+\item Superior
+\item Inferior
+\end{itemize}
+\end{multicols}
+\end{center}
+Su funcionamiento estaría dado de la siguiente manera:
+\begin{center}
+\begin{tabular}{|c|cc|}
+    \hline
+    \backslashbox{Correa}{\vspace{0.1pt}\\Llave} & Inferior & Superior \\ \hline
+                Parada             &  Izquierda   &  Derecha \\ 
+                Derecha            &  Izquierda   &  Derecha \\ 
+                Izquierda          &  Parada      &  Derecha \\ \hline
+\end{tabular} 
+\end{center}
+El \textbf{movimiento} realizado por la correo estaría dado por el siguiente conjunto:
+$$ k = \{ p,i,d \} \text{ siendo $p,i,d$ parada,izquierda,derecha respectivamente.}$$
+Y los \textbf{estados} de la llave serían:
+$$ \Sigma = \{ +,- \} \text{ siendo $+,-$  superior, inferior.}$$
+El funcionamiento podríamos verlo como una función definida de la siguiente manera: $f:k\times\Sigma \rightarrow k$ \\
+Donde:
+\begin{itemize}
+\item $k\times\Sigma = \{ (p,+),(p,-),(i,+),(i,-),(d,+),(d,-) \}$
+\end{itemize}
 \subsubsection*{Definición}
 Un módulo es una tripleta $D=(k,\Sigma,f)$ donde:
 \begin{itemize}
@@ -487,7 +560,6 @@ Un módulo se puede interpretar como un dispositivo que en determinados instante
 %\path[->] (q_0) edge node[swap] {$\sigma$} (q_1);
 \end{tikzpicture}
 \end{center}
-\pagebreak
 \subsubsection*{Representación}
 \begin{itemize}
 
@@ -520,6 +592,37 @@ Un módulo se puede interpretar como un dispositivo que en determinados instante
 \end{tikzpicture}
 \caption{ssi: $f(s_i,\sigma)=s_j$}
 \end{figure}
+\end{itemize}
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item Para el anterior ejemplo:
+\begin{enumerate}[label=\alph*)]
+\item Tabla de transición:
+\begin{center}
+\begin{tabular}{|c|cc|}
+    \hline
+    \backslashbox{$k$}{\vspace{0.1pt}\\$\Sigma$} & $+$ & $-$ \\ \hline
+                $p$             &   $d$   &  $i$\\ 
+                $i$             &   $d$   &  $i$\\ 
+                $d$             &   $d$   &  $p$ \\ \hline
+\end{tabular} 
+\end{center}
+\item Grafo:
+\begin{center}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state] (p) at (-1,1.25) {$p$};
+\node[state] (d) at (1,1.25) {$d$};
+\node[state] (i) at (0,0) {$i$};
+
+\path[->,line width=0.25mm,bend left] (p) edge node[] {$+$} (d);
+\path[->,line width=0.25mm,bend left] (d) edge node[] {$-$} (p);
+\path[->,line width=0.25mm,bend right] (p) edge node[left] {$-$} (i);
+\path[->,line width=0.25mm,bend right] (i) edge node[right] {$+$} (d);
+\path[->,line width=0.25mm,loop right] (d) edge node[] {$+$} (d);
+\path[->,line width=0.25mm,loop below] (i) edge node[] {$-$} (i);
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
 \end{itemize}
 \subsubsection{Comportamiento Dinámico}
 Sea $D=(k,\sigma,f)$ un módulo: \\
@@ -574,6 +677,36 @@ f:k \rightarrow k \text{ tal que: } f_w(s)=\widehat{f}(s,w)
 s
 $$
 \end{itemize}
+\subsubsection{Ejemplo(s)}
+\begin{itemize}
+\item Digamos que tenemos un edificio de 3 plantas y este posee un ascensor: \\
+Donde: 
+\begin{itemize}
+\item $p,s,t$ se refiere a primero, segundo, tercero respectivamente 
+\item $-,+$ se refiere a bajar y subir, respectivamente.
+\end{itemize}
+\begin{center}
+\begin{tabular}{|c|cc|}
+    \hline
+    \backslashbox{$k$}{\vspace{0.1pt}\\$\Sigma$} & $-$ & $+$ \\ \hline
+                $p$             &   $p$   &  $s$\\ 
+                $s$             &   $p$   &  $t$\\ 
+                $t$             &   $s$   &  $t$ \\ \hline
+\end{tabular} 
+\end{center}
+Procesar $\hat{f}(s,--++)$. Podemos procesarlo de la siguiente manera:
+$$ s \xrightarrow[]{-} p \xrightarrow[]{-} p \xrightarrow[]{+} s \xrightarrow[]{+} t$$
+o bien, de una manera mas formal:
+\begin{align*}
+\hat{f}(s,--++) & = \hat{f}[f(s,-),-++] \\
+		    & = \hat{f}(p,-++) \\
+		    & = \hat{f}[f(p,-),++] \\
+		    & = \hat{f}(p,++) \\
+		    & = \hat{f}[f(p,+),+] \\
+		    & = \hat{f}(s,+) = f(s,+) = t
+\end{align*}
+
+\end{itemize}
 \subsection{Alcanzabilidad}
 Sea $D =(k,\Sigma,f)$ un módulo y sean $s,t\in K$.
 \begin{itemize}
@@ -609,7 +742,6 @@ La alcanzabilidad no implica $k$ alcanzabilidad \\
 La $k$ alcanzabilidad implica alcanzabilidad
 
 \subsubsection{Ejemplo(s)}
-
 \begin{itemize}
 \item Tengamos el ejemplo de una \textit{neurona}. \\
 Donde:
@@ -629,7 +761,7 @@ $$S(k+1)=
 0 \text{ \textbf{e.o.c.} }
 \end{cases}
 $$
-\begin{figure}[ht]
+\begin{figure}[ht!]
 \centering
 \begin{tabular}{|c|cccccccc|}
     \hline
@@ -658,7 +790,7 @@ t(k+1) &=
 0 & \text{ \textbf{e.o.c.} }
 \end{cases}
 \end{align*}
-\begin{figure}[ht]
+\begin{figure}[ht!]
 \centering
 \begin{tabular}{|c|cccc|}
     \hline
