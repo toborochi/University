@@ -770,8 +770,7 @@ $$
                 $0$ & $0$ & $1$  & $0$ & $0$ & $1$ & $1$ & $0$ & $1$ \\ \hline
 \end{tabular} 
 \end{figure}
-\item Veamos con dos \textit{neuronas}: \\
-Denotaciones $s(i) \rightarrow M , t(i) \rightarrow N,e(i)$
+\item Veamos con dos \textit{neuronas}: Denotaciones $s(i) \rightarrow M , t(i) \rightarrow N,e(i)$
 \begin{figure}[ht!]
 \centering
 \scalebox{.5}{
@@ -801,6 +800,57 @@ t(k+1) &=
 \end{figure}
 \end{itemize}
 \subsection{Máquinas}
+Al igual que la sección de Módulos (\textit{1.2.15}) sería bueno tener un ejemplo previo a las definiciones formales. Digamos que dos personas lanzan una moneda repetidamente. En cada instante, el dispositivo $n$:
+\begin{itemize}
+\item Recibe uno de los símbolos $a$ (simbolizando cara) o $b$ (simbolizando cruz).
+\item Emite un símbolo que puede ser $1$ o $2$ indicando respectivamente que el primero o segundo jugador recibe un punto.
+\item Puede estar en uno de los siguientes tres estados:
+\begin{itemize}
+\item $c$: Indicando que el lanzamiento anterior fue cara.
+\item $p$: Indicando que la cruz que salió en el lanzamiento anterior fue la primera de una sucesión de cruces.
+\item $d$: Indicando que ya salieron 2 o mas cruces en la sucesión actual de cruces.
+\end{itemize}
+\end{itemize}
+El funcionamiento del sistema será el siguiente:
+\begin{itemize}
+\item Recibiendo el símbolo $a$ pasará al estado $c$, independientemente del estado actual y emitirá el $2$ si estaba en el estado $c$ y $1$ en caso contrario.
+\item Recibiendo el símbolo $b$ emitirá el símbolo $1$, quedando en el mismo estado si estaba en $d$, caso contrario la salida será $2$ y si estaba en $c$ pasará a $p$, si estaba en $p$ pasará a $d$.
+\end{itemize}
+El funcionamiento puede ser descrito por dos funciones:
+
+\begin{equation*}
+f \left( 
+\begin{matrix}
+    Estado & Simbolo\\ 
+    Actual, &Leido 
+\end{matrix}
+ \right) = \begin{matrix}
+    Proximo\\ 
+    Estado
+\end{matrix}
+\hspace{0.5cm}
+g \left( 
+\begin{matrix}
+    Estado & Simbolo\\ 
+    Actual, &Leido 
+\end{matrix}
+ \right) = \begin{matrix}
+    Salida\\ 
+    Emitida
+\end{matrix}
+\end{equation*}
+Ademas tenemos los conjuntos que definen estos estados y transiciones: \\
+$$k=\{c,p,d\},\Sigma = \{ a,b \} ,k\times\Sigma = \{ (c,a),(c,b),(p,a),(p,b),(d,a),(d,b) \} $$
+Por lo que finalmente el dispositivo $n$ estaría descrito de la siguiente manera:
+\begin{align*}
+f:k\times\Sigma\rightarrow k  \hspace{1cm} & g:k\times\Sigma\rightarrow \Delta \\
+f(c,a) = c \hspace{1cm}  & g(c,a) = 2 \\
+f(c,b) = p \hspace{1cm}  & g(c,b) = 2 \\
+f(p,a) = c \hspace{1cm}  & g(p,a) = 1 \\
+f(p,b) = d \hspace{1cm}  & g(p,b) = 2 \\
+f(d,a) = c \hspace{1cm}  & g(d,a) = 1 \\
+f(d,b) = d \hspace{1cm}  & g(d,a) = 1 
+\end{align*}
 \subsubsection{Definición}
 Una máquina es una quíntupla $M=(k,\Sigma,\Delta,f,g)$ donde:
 \begin{itemize}
@@ -854,6 +904,36 @@ Una máquina se puede interpretar como un dispositivo que en determinados instan
 \caption{ssi: $f(s_i,\sigma)=s_j \hspace{0.5cm} g(s_i,\sigma)=\delta$ }
 \end{figure}
 \end{itemize}
+\subsubsection{Ejemplo(s)}
+La representación del ejemplo anterior:
+\begin{enumerate}[label=\alph*)]
+\item Tabla 
+\begin{center}
+\begin{tabular}{|c|cc|}
+    \hline
+    \backslashbox{$k$}{\vspace{0.1pt}\\$\Sigma$} & $a$ & $b$ \\ \hline
+                $c$             &   $c/2$   &  $p/2$\\ 
+                $p$             &   $c/1$   &  $d/2$\\ 
+                $d$             &   $c/1$   &  $d/1$ \\ \hline
+\end{tabular} 
+\end{center}
+\item Grafo
+\begin{center}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state] (c) at (-1,1.25) {$c$};
+\node[state] (p) at (1,1.25) {$p$};
+\node[state] (d) at (0,0) {$d$};
+
+\path[->,line width=0.25mm,bend left] (c) edge node[] {$b/2$} (p);
+\path[->,line width=0.25mm,bend left] (p) edge node[] {$a/2$} (c);
+\path[->,line width=0.25mm,bend left] (p) edge node[] {$b/2$} (d);
+\path[->,line width=0.25mm,bend left] (d) edge node[] {$a/1$} (c);
+\path[->,line width=0.25mm,loop left] (c) edge node[] {$a/2$} (c);
+\path[->,line width=0.25mm,loop below] (d) edge node[below] {$b/1$} (d);
+%\path[->,line width=0.25mm,loop below] (i) edge node[] {$-$} (i);
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
 \subsubsection{Comportamiento Dinámico}
 Sea $M=(k,\Sigma,\Delta,f,g)$ una máquina: \\
 \begin{center}
