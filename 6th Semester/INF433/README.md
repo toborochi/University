@@ -1,20 +1,28 @@
-### Trabajos 
-
-1. Modelo OSI
-2. Medios de Transmision
-3. Fibra Optica
-4. Calculo de Fibra Optica en base a una preforma
-5. Fibra Optica: Pulidos, Conectores y Multiplexacion
-6. Medios de Transmision no Guiados
-7. Sistemas Satelitales
-8. Orbitas
-9. Codigos Detectores de Errores
-10. HDLC
-11. Funcionamiento de la Trama Supervision y de la Ventana Deslizante
-12. Ventana Deslizanta (Calculo)
-13. Ethernet
-14. Preambulo de Ethernet Y Codificacion Manchester
-15. Internet Protocol (IP)
-16. Tipos de IPs
-17. CIDR (Classless Inter-Domain Routing)
-18. Calculo Subnetting
+## Redes I (II-2019)
+1. Modelo OSI (9 Agosto)
+2. Medios de Transmisión Guiados (12 Agosto)
+3. Fibra Óptica (14 Agosto)
+4. Cálculo de Preforma (16 Agosto)
+5. Fibra Óptica: Pulidos, Conectores y Multiplexación (19 Agosto)
+6. Congestión "Una mirada introspectiva a un informe sin datos" (21 Agosto)
+7. Medios de Transmisión No Guiados (23 Agosto)
+8. Sistemas Satelitales (26 Agosto)
+9. Orbitas (30 Agosto)
+10. Códigos Detectores de Errores (7 Septiembre)
+11. HDLC (9 Septiembre)
+12. Funcionamiento de la Trama Supervisión y Ventana Deslizante (11 Septiembre)
+13. Ventana Deslizante (13 Septiembre)
+14. Ethernet (16 Septiembre)
+15. Preámbulo de Ethernet y Código Manchester (18 Septiembre)
+16. Internet Protocol (27 Septiembre)
+17. Tipos de IPs (7 Octubre)
+18. CIDR (9 Octubre)
+19. Cálculo Subnetting (14 Octubre)
+20. IOS Router (16 Octubre)
+21. Subnetting (21 Octubre)
+22. TCP(20 Noviembre)
+23. Tipos TCP (22 Noviembre)
+24. Preguntas TCP (25 Noviembre)
+25. FTP, TFTP, TELNET & SMTP (29 Noviembre)
+26. FTP & TFTP (2 Diciembre)
+27. TELNET & SMTP (4 Diciembre)
