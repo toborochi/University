@@ -1,0 +1,64 @@
+\documentclass[10pt,letterpaper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{xparse}
+
+\newsavebox{\fminipagebox}
+\NewDocumentEnvironment{fminipage}{m O{\fboxsep}}
+ {\par\kern#2\noindent\begin{lrbox}{\fminipagebox}
+  \begin{minipage}{#1}\ignorespaces}
+ {\end{minipage}\end{lrbox}%
+  \makebox[#1]{%
+    \kern\dimexpr-\fboxsep-\fboxrule\relax
+    \fbox{\usebox{\fminipagebox}}%
+    \kern\dimexpr-\fboxsep-\fboxrule\relax
+  }\par\kern#2
+ }
+
+
+\author{Leonardo H. Añez Vladimirovna}
+\title{Proyecto IO2\\Analisis sobre colas en el sistema Bancario}
+\begin{document}
+\maketitle
+\textbf{Datos Documento}
+\begin{fminipage}{\textwidth}
+Ubicación: Banco Economico, Calle Ingavi.\\
+Cantidad: 516 Muestras
+\end{fminipage}
+
+\section*{Introducción}
+Este informe pretende hallar datos respecto a el sistema Bancario, específicamente en el empleo de teoría de Colas en el estudio de las mismas. Usando una basta cantidad de datos. Se pretende dar un vistazo y analisis sobre los resultados recopilados en funcion a datos reales de la fecha \textit{18 de Noviembre}.
+\section*{Estructura de los Datos}
+Los datos han sido recopilados a partir de una muestra obtenida de una maquina expendedora de tickets, en una jornada completa y en una única sucursal, donde todos los clientes han sido atendidos. Se cuenta con varias cajas (es decir varias filas virtuales) ademas de distintos tipos de servicios otorgados a ciertos grupos de clientes.
+\subsection*{Datos}
+\begin{itemize}
+\item \textbf{Cajas:} Se cuenta con hasta 10 cajas de atención.
+\item \textbf{Clientela:} existen clasificaciones de servicios. En la siguiente tabla se ven reflejados.
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\texttt{CN} & Caja Normal \\ 
+\hline 
+\texttt{CT} & Caja Tercera Edad \\ 
+\hline 
+\texttt{CF} & Caja Fraccionamiento \\ 
+\hline 
+\texttt{CE} & Caja Discapacitados \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{itemize}
+\section*{Resultados}
+Los resultados a observar serán:
+\begin{itemize}
+\item $\bar{x}$: tiempo promedio de espera. 
+\item $\bar{t}$: tiempo promedio en el sistema. 
+\item $\bar{s}$: tiempo promedio en el servidor. 
+\end{itemize}
+
+\end{document}
