@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  8 DEC 2019 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  8 DEC 2019 09:52
 entering extended mode
 **./INFOMRE.tex
 (INFOMRE.tex
@@ -1862,6 +1862,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks56
 \@floatcapt=\box117
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 56.
+
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithm2e\algorit
 hm2e.sty"
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
@@ -1944,45 +1946,66 @@ File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
 .................................................
 . LaTeX info: "xparse/define-environment"
 . 
-. Defining environment 'fminipage' with sig. 'm O{\fboxsep }' on line 99.
+. Defining environment 'fminipage' with sig. 'm O{\fboxsep }' on line 108.
 .................................................
- (INFOMRE.aux
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.s
+ty"
+Package: pdfpages 2019/11/21 v0.5o Insert pages of external PDF documents (AM)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty
+"
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+)
+\AM@pagewidth=\dimen381
+\AM@pageheight=\dimen382
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.d
+ef"
+File: pppdftex.def 2019/11/21 v0.5o Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box127
+\AM@global@opts=\toks58
+\AM@toc@title=\toks59
+\c@AM@survey=\count386
+\AM@templatesizebox=\box128
+) (INFOMRE.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `INFOMRE.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count386
-\scratchdimen=\dimen381
-\scratchbox=\box127
-\nofMPsegments=\count387
-\nofMParguments=\count388
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count389
-\MPscratchDim=\dimen382
-\MPnumerator=\count390
-\makeMPintoPDFobject=\count391
-\everyMPtoPDFconversion=\toks59
+\scratchcounter=\count387
+\scratchdimen=\dimen383
+\scratchbox=\box129
+\nofMPsegments=\count388
+\nofMParguments=\count389
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count390
+\MPscratchDim=\dimen384
+\MPnumerator=\count391
+\makeMPintoPDFobject=\count392
+\everyMPtoPDFconversion=\toks61
 )
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
 ase.sty"
@@ -2037,8 +2060,8 @@ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
-\AtBeginShipoutBox=\box128
-Package hyperref Info: Link coloring ON on input line 104.
+\AtBeginShipoutBox=\box130
+Package hyperref Info: Link coloring ON on input line 116.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
 y"
@@ -2048,39 +2071,50 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 string.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count392
+\c@section@level=\count393
 )
-LaTeX Info: Redefining \ref on input line 104.
-LaTeX Info: Redefining \pageref on input line 104.
-LaTeX Info: Redefining \nameref on input line 104.
+LaTeX Info: Redefining \ref on input line 116.
+LaTeX Info: Redefining \pageref on input line 116.
+LaTeX Info: Redefining \nameref on input line 116.
  (INFOMRE.out) (INFOMRE.out)
 \@outlinefile=\write4
 \openout4 = `INFOMRE.out'.
 
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.
+sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.sty
+"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 123.
  [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
@@ -2098,17 +2132,17 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 {C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 117.
+LaTeX Font Info:    Try loading font information for U+msa on input line 129.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 117.
+LaTeX Font Info:    Try loading font information for U+msb on input line 129.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 117.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 129.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -2120,111 +2154,218 @@ Package pdftex.def Info: svg/Diagrama_en_blanco.pdf , page1 used on input line
 56.
 (pdftex.def)             Requested size: 572.1375pt x 139.43771pt.
 )
-
-! Package inputenc Error: Unicode char ​ (U+200B)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 El método de Montecarlo​
-                                  es un método no determinista o estadísti...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 151.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.139 \subsection
+l.151 \subsection
                  *{Origen} [1 <./svg/Diagrama_en_blanco.pdf>]
+
+Package pdfpages Warning: Option `page' is unknow to \includepdf.
+(pdfpages)                Did you mean `pages'? (Note the `s'!)
+(pdfpages)                OK, I'll proceed as if it were `pages'.
+
+<Tabla.pdf, id=33, 597.432pt x 844.95674pt>
+File: Tabla.pdf Graphic file (type pdf)
+<use Tabla.pdf>
+Package pdftex.def Info: Tabla.pdf  used on input line 173.
+(pdftex.def)             Requested size: 597.43054pt x 844.95468pt.
+File: Tabla.pdf Graphic file (type pdf)
+<use Tabla.pdf>
+Package pdftex.def Info: Tabla.pdf  used on input line 173.
+(pdftex.def)             Requested size: 597.43054pt x 844.95468pt.
+<Tabla.pdf, id=36, page=1, 597.432pt x 844.95674pt>
+File: Tabla.pdf Graphic file (type pdf)
+<use Tabla.pdf, page 1>
+Package pdftex.def Info: Tabla.pdf , page1 used on input line 173.
+(pdftex.def)             Requested size: 597.43054pt x 844.95468pt.
+File: Tabla.pdf Graphic file (type pdf)
+<use Tabla.pdf, page 1>
+Package pdftex.def Info: Tabla.pdf , page1 used on input line 173.
+(pdftex.def)             Requested size: 562.71655pt x 795.85818pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 161.
- [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
+(babel)             in language  on input line 173.
+[2]
+File: Tabla.pdf Graphic file (type pdf)
+<use Tabla.pdf, page 1>
+Package pdftex.def Info: Tabla.pdf , page1 used on input line 173.
+(pdftex.def)             Requested size: 562.71655pt x 795.85818pt.
+File: Tabla.pdf Graphic file (type pdf)
+<use Tabla.pdf, page 1>
+Package pdftex.def Info: Tabla.pdf , page1 used on input line 173.
+(pdftex.def)             Requested size: 562.71655pt x 795.85818pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 173.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 173.
+File: Tabla.pdf Graphic file (type pdf)
+<use Tabla.pdf, page 1>
+Package pdftex.def Info: Tabla.pdf , page1 used on input line 173.
+(pdftex.def)             Requested size: 562.71655pt x 795.85818pt.
+ [3 <./Tabla.pdf>]
+<./images/QueueSim_screenshot.png, id=65, 448.67625pt x 451.98863pt>
+File: ./images/QueueSim_screenshot.png Graphic file (type png)
+<use ./images/QueueSim_screenshot.png>
+Package pdftex.def Info: ./images/QueueSim_screenshot.png  used on input line 1
+76.
+(pdftex.def)             Requested size: 224.33757pt x 225.99376pt.
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 188
+.
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 192.
+[4 <./images/QueueSim_screenshot.png>]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 197.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 197.
+ [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (INFOMRE.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
 Package rerunfilecheck Info: File `INFOMRE.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 52471 strings out of 493305
- 1232801 string characters out of 3130237
- 1575908 words of memory out of 3000000
- 55201 multiletter control sequences out of 15000+200000
- 539946 words of font info for 56 fonts, out of 3000000 for 9000
+ 53152 strings out of 493305
+ 1244231 string characters out of 3130237
+ 1588124 words of memory out of 3000000
+ 55852 multiletter control sequences out of 15000+200000
+ 540256 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,10n,127p,718b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,18n,127p,718b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Asus/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Asus/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Asus/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/User
-s/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
-b><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr8.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmtt10.pfb>
-Output written on INFOMRE.pdf (3 pages, 143165 bytes).
+s/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Asus/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Asus/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Asus/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.p
+fb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr6.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on INFOMRE.pdf (6 pages, 697720 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
