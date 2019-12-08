@@ -1,0 +1,35 @@
+\begin{enumerate}
+\item ¿Cuál es el concepto de Base de Datos Consistente?
+
+\item Al ejecutar una o más instrucciones SQL ¿Cuáles son las posibles razones para que las instrucciones SQL NO terminen de ejecutarse?
+\item Al ejecutar dos o más instrucciones SQL. Defina el concepto de Ejecución Serializable.
+\item Al ejecutar dos o más instrucciones SQL. Defina el concepto de Atomicidad.
+\item ¿Qué es una Transacción?¨
+\item ¿Las Transacciones resuelven el problema de Seriabilidad y Atomicidad?
+\item ¿Cuándo usar Transacciones?
+\item ¿Cuáles son los beneficios de usar Transacciones?
+\item ¿Cuáles es el Rol de las Transacciones en una Base de Datos ?
+\item ¿Cómo se inicia una transacción?
+\item ¿Defina el concepto de COMMIT en las transacciones?
+\item ¿Defina el concepto de ROLLBACK en las transacciones?
+\item ¿Describa las propiedades ACID de la transacciones?
+\item ¿Describa los diferentes estado de las Transacciones?
+\item ¿Describa el concepto de BITACORA en una Base de Datos?
+\item ¿Cuál es el rol de la BITACORA en una Base de Datos?
+Escriba las instrucciones básicas que debe incluir una Transacción. 
+\begin{lstlisting}[language=SQL]
+DECLARE @d float
+DECLARE @n float
+DECLARE @r float
+
+SET @d = 0
+SET @n = 255
+
+BEGIN TRY
+	SET @r = @n/@d
+END TRY
+BEGIN CATCH
+	PRINT 'Division entre 0 Imposible!'
+END CATCH
+\end{lstlisting}
+\end{enumerate}
