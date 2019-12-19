@@ -1,0 +1,26 @@
+\begin{itemize}
+\item \texttt{READ UNCOMMITTED}
+
+Leer no comprometido es el nivel de aislamiento más bajo. En este nivel, una transacción puede leer cambios aún no confirmados realizados por otra transacción, lo que permite lecturas sucias. En este nivel, las transacciones no están aisladas entre sí.
+
+\item \texttt{READ COMMITTED  }
+
+Este nivel de aislamiento garantiza que cualquier lectura de datos se confirma en el momento en que se lee. Por lo tanto, no permite la lectura sucia. La transacción mantiene un bloqueo de lectura o escritura en la fila actual y, por lo tanto, evita que otras transacciones la lean, actualicen o eliminen.
+
+\item \texttt{REPEATABLE READ  }
+
+Este es el nivel de aislamiento más restrictivo. La transacción contiene bloqueos de lectura en todas las filas a las que hace referencia y escribe bloqueos en todas las filas que inserta, actualiza o elimina. Como otras transacciones no pueden leer, actualizar o eliminar estas filas, en consecuencia, evita la lectura no repetible.
+
+\item \texttt{SNAPSHOT  }
+
+En un sistema aislado de instantánea, cada transacción parece operar en una instantánea independiente y consistente de la base de datos. Sus cambios son visibles solo para esa transacción hasta el momento de confirmación, cuando todos los cambios se vuelven visibles atómicamente. Si la transacción T1 ha modificado un objeto x, y otra transacción T2 confirmó una escritura en x después de que comenzó la instantánea de T1, y antes de la confirmación de T1, entonces T1 debe abortar.
+
+El aislamiento de instantáneas es un modelo transaccional: las operaciones (generalmente denominadas "transacciones") pueden involucrar varias suboperaciones primitivas realizadas en orden. También es una propiedad de varios objetos: las operaciones pueden actuar sobre múltiples objetos en el sistema.
+
+El aislamiento de instantáneas no puede estar totalmente disponible; en presencia de particiones de red, algunos o todos los nodos pueden no ser capaces de avanzar. Para obtener una disponibilidad total, a costa de permitir anomalías de bifurcación larga, considere el aislamiento de instantáneas paralelas o la lectura (más débil, pero más comúnmente compatible) confirmada.
+
+\item \texttt{SERIALIZABLE  }
+
+Este es el nivel de aislamiento más alto. Se garantiza que una ejecución serializable sea serializable. La ejecución serializable se define como una ejecución de operaciones en las que la ejecución simultánea de transacciones parece estar ejecutándose en serie.
+
+\end{itemize}

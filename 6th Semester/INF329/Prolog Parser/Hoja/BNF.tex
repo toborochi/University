@@ -1,0 +1,62 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\usepackage{xparse}
+
+\newsavebox{\fminipagebox}
+\NewDocumentEnvironment{fminipage}{m O{\fboxsep}}
+ {\par\kern#2\noindent\begin{lrbox}{\fminipagebox}
+  \begin{minipage}{#1}\ignorespaces}
+ {\end{minipage}\end{lrbox}%
+  \makebox[#1]{%
+    \kern\dimexpr-\fboxsep-\fboxrule\relax
+    \fbox{\usebox{\fminipagebox}}%
+    \kern\dimexpr-\fboxsep-\fboxrule\relax
+  }\par\kern#2
+ }
+
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Leonardo H. Añez Vladimirovna}
+\title{{\normalsize \texttt{COMPILADORES \\ \vspace{-0.5cm} INF329(SA)}}\\ Prolog List BNF}
+
+\date{19 de Diciembre de 2019}
+
+\begin{document}
+\maketitle
+
+Definir una $BNF$ para listas de \texttt{Prolog} cuyo elementos son \texttt{NUM}$\geq 0$. Tambien, los elementos pueden ser sumas (y restas) de estos \texttt{NUM}s. Ejemplos:
+\begin{itemize}
+\item \texttt{[]} \cmark
+\item \texttt{[2,-4,8]} \xmark \texttt{ // Tiene un numero negativo: -4}
+\item \texttt{[2+3,6-5-2+0,4,[],[27,9],9] } \cmark
+\end{itemize}
+
+Definir un \textbf{Parser} que verifique la sintaxis y también evalue la lista según este criterio:
+$$
+L = [e_1,e_2,e_3]
+$$
+\noindent Evaluación = $e_1 + e_2 + e_3$, Si $e_i$ es una lista se le resta su evaluación.
+\\ ${ }$ \\
+La \textbf{BNF}:
+\begin{fminipage}{\textwidth}
+\begin{align*}
+Lista & \rightarrow \texttt{[} elem \texttt{]} \\
+elem & \rightarrow expr \text{ } iter | Lista \text{ } iter | \lambda \\
+iter & \rightarrow \texttt{,} elem | \lambda \\
+expr & \rightarrow \texttt{NUM } expr1 \\
+expr1 & \rightarrow op \texttt{ NUM } expr1 | \lambda \\
+op & \rightarrow \texttt{+} | \texttt{-} \\
+\end{align*}
+\end{fminipage}
+
+
+
+\end{document}

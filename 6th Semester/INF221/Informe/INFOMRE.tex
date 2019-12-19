@@ -110,7 +110,7 @@
 \graphicspath{ {./images/} }
 \author{Leonardo H. Añez Vladimirovna}
 \title{Proyecto IO2\\Analisis sobre colas en el sistema Bancario}
-
+\date{9 de Diciembre de 2019}
 \usepackage{pdfpages}
 
 \begin{document}
@@ -169,18 +169,26 @@ Los resultados a observar serán:
 \end{itemize}
 \section*{Datos Computados}
 \subsection*{Computo sin Simulación}
-Cargando el archivo \texttt{Cajas.xlsx} el cual contiene los datos de las colas obtenemos la siguiente tabla generada:
+Cargando el archivo \texttt{Cajas.xlsx} el cual contiene los datos de las colas. Filtramos los clientes atendidos a partir de dos valores, en este caso, tomaremos la caja 11 y filtraremos acorde a los clientes clasificados como \texttt{CN}. Los datos arrojados por el programa \texttt{QueueSim 1.0.0.0}
 \includepdf[page={1}]{Tabla}
-Filtramos los clientes atendidos a partir de dos valores, en este caso, tomaremos la caja 11 y filtraremos acorde a los clientes clasificados como \texttt{CN}. Los datos arrojados por el programa \texttt{QueueSim 1.0.0.0}
+\subsection*{Computos Método Monte Carlo}
+\begin{center}
+\vspace{-2cm}
+\includegraphics[page=1,scale=0.9]{Tabla2.pdf}
+\end{center}
+%\includepdf[scale=0.8,page={1}]{Tabla2}
 \begin{center}
 \includegraphics[scale=0.5]{QueueSim_screenshot}
 \end{center}
 \subsubsection*{Promedios Computados}
+De los datos originales obtenemos los siguientes resultados:
 $$
 \bar{x}=20.6 min. \hspace{1cm} \bar{s}=8.5 min. \hspace{1cm}  \bar{t}=29.21 min.
 $$
-\subsection*{Computos Método Monte Carlo}
-
+Ademas, luego de realizar la simulación de Monte Carlo, obtenemos los siguientes resultados:
+$$
+\bar{x}_{MC}=24.1 min. \hspace{1cm} \bar{s}_{MC}=9.3 min. \hspace{1cm}  \bar{t}_{MC}=34.7 min.
+$$
 
 \section*{Conclusiones}
 De acuerdo al documento de ``Recopilación de normas para Bancos y Entidades Financieras'' elaborado por la la Autoridad de Supervisión del Sistema Financiero (ASFI), en la Sección 2 (sobre la atención de clientes y usuarios en cajas) en el artículo Nº4 dice lo siguiente:
@@ -192,6 +200,7 @@ Y de acuerdo a los datos computados, podemos ver que en este caso el tiempo de e
 \section*{Anexos}
 \begin{itemize}
 \item Recopilación de normas para Bancos y Entidades Financieras, ASFI.\\ \href{https://servdmzw.asfi.gob.bo/circular/Textos/T11.pdf}{\texttt{https://servdmzw.asfi.gob.bo/circular/Textos/T11.pdf}}
+\item Aplicando  Teorı́a  de  Colas  en Dirección de Operaciones, José Pedro García Sabater, 2016. \\ \href{http://personales.upv.es/jpgarcia/linkeddocuments/teoriadecolasdoc.pdf}{http://personales.upv.es/jpgarcia/linkeddocuments/teoriadecolasdoc.pdf}}
 \end{itemize}
 
 \end{document}

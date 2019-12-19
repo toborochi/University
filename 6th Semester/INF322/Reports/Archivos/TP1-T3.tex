@@ -1,35 +1,101 @@
 \begin{enumerate}
 \item ¿Cuál es el concepto de Base de Datos Consistente?
 
+Es el estado coherente en la información o datos que contiene y que relaciona, en el cual la información cumple las necesidades o expectativas de quien la requiera. 
+
 \item Al ejecutar una o más instrucciones SQL ¿Cuáles son las posibles razones para que las instrucciones SQL NO terminen de ejecutarse?
+
+\begin{itemize}
+\item Situación excepcional detectada que hace que el programa no pueda continuar.
+\item Falla del programa.
+\item Falla del software de BD.
+\item Falla del Sistema Operativo.
+\item Falla del hardware.
+\item Falla de energía eléctrica.
+\item Control de concurrencia ha detectado un conflicto.
+\item Control de concurrencia ha detectado un deadlock.
+\end{itemize}
+       
+
 \item Al ejecutar dos o más instrucciones SQL. Defina el concepto de Ejecución Serializable.
+
+El resultado es la capacidad de volver a cargar los datos iniciales y reproducir una serie de transacciones para finalizar con los datos en el mismo estado en que estaban después de realizar transacciones originales. 
+
 \item Al ejecutar dos o más instrucciones SQL. Defina el concepto de Atomicidad.
-\item ¿Qué es una Transacción?¨
+
+Una transacción se ejecuta completamente o de otra manera se eliminan los cambios parciales realizados.
+
+\item ¿Qué es una Transacción?
+
+Colección de operaciones que forman una única unidad lógica de trabajo en una base de datos realizada para una o mássentencias SQL estrechamente relacionadas. Es una unidad de la ejecución de un programa que lee y escribe datos a y desde la Base de Datos. Puede consistir en varias operaciones de acceso a la base de datos.
+
 \item ¿Las Transacciones resuelven el problema de Seriabilidad y Atomicidad?
-\item ¿Cuándo usar Transacciones?
+
+Los problemas de serialización y atomicidad se resuelven usando transacciones.
+
+\item ¿Cuándo usar Transacciones
+
+Cuando queramos hacer varias operaciones y para evitar algún fallo, es muy necesario siempre mantener la consistencia de datos. 
+
 \item ¿Cuáles son los beneficios de usar Transacciones?
+
+Que podemos mantener la consistencia de los datos, si llegase aparecer alguna falla justo cuando se estáejecutando una línea de código donde este modificando la base datos, puede deshacer el proceso y volverla a su estado origen. 
+
 \item ¿Cuáles es el Rol de las Transacciones en una Base de Datos ?
+
+Proteger los datos de las fallas del software, hardware y potencia eléctrica. Permitir el aislamiento de datos de tal forma que varios usuarios pueden acceder simultáneamente a los datos sin interferencia. 
+
 \item ¿Cómo se inicia una transacción?
+
+Se debe utilizar la cláusula“begin tran” con la cláusula“begin try” y “begin catch”. 
+
 \item ¿Defina el concepto de COMMIT en las transacciones?
+
+Es la acción de comprometer, se refiere a la idea de consignar un conjunto de cambios “tentativos” de forma permanente. 
+
 \item ¿Defina el concepto de ROLLBACK en las transacciones?
+
+Es una operación que devuelve a la base de datos a algún estado previo. Los rollback son importante para la integridad de la base de datos, a causa de que significan que la base de datos puede ser restaurada auna copia limpia incluso despuésde ejecutarse operaciones erróneas.
+
 \item ¿Describa las propiedades ACID de la transacciones?
+
+\begin{itemize}
+\item Atomicidad: Se ejecuta todo o nada. 
+\item Consistencia: Solo se empieza lo que se pueda terminar y no rompen las reglas. 
+\item Aislamiento: Una operación no puede afectar a otra.
+\item Durabilidad: Una vez ejecutada la operación, persistirá para siempre. 
+\end{itemize}
 \item ¿Describa los diferentes estado de las Transacciones?
+
+\textbf{Activa:} Es el estado inicial, permanece en este estado durante la ejecución. 
+
+\textbf{Parcialmente comprometida:} Después de ejecutarse la última instrucción. 
+
+\textbf{Fallida:} Se descubre que no puede continuar con la ejecución normal. 
+
+\textbf{Abortada:} Después de haber retrocedido la transacción y restablecido la BD a su estado anterior al comienzo de la transacción. 
+
+\textbf{Comprometida:} Se completa con éxito, los cambios realizados son permanentes en la BD.
+
 \item ¿Describa el concepto de BITACORA en una Base de Datos?
+
+Es la estructura más común que usan los sistemas de BD para guardar las modificaciones realizadas. Está formada por una secuencia de registros y mantiene un registro de todas las actividades de actualización de la BD. 
+
 \item ¿Cuál es el rol de la BITACORA en una Base de Datos?
-Escriba las instrucciones básicas que debe incluir una Transacción. 
+
+Recuperar información ante incidentes de seguridad. Detección de comportamiento inusual. Información para resolver problemas. Evidencia legal.
+
+\item Escriba las instrucciones básicas que debe incluir una Transacción. 
 \begin{lstlisting}[language=SQL]
-DECLARE @d float
-DECLARE @n float
-DECLARE @r float
-
-SET @d = 0
-SET @n = 255
-
-BEGIN TRY
-	SET @r = @n/@d
-END TRY
-BEGIN CATCH
-	PRINT 'Division entre 0 Imposible!'
-END CATCH
+Begin
+  begin tran 
+    begin try
+      rollback tran
+    end try
+    begin catch
+      commit tran 
+    end catch 
+end tran 
+end 
 \end{lstlisting}
 \end{enumerate}

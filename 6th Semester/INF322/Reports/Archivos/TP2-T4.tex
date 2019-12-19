@@ -1,0 +1,85 @@
+\begin{enumerate}
+\item Defina que es un Bloqueo (Lock)
+
+Es una estructura que solo puede ser adquirida por una transacción en ejecución a la vez. Si dos transacciones en ejecución tratan de obtener un lock para actualizar una tabla, la primera que trate de obtenerla tendrá acceso exclusivo a la tabla, la segunda debe esperar a que la primera lo desbloquee.
+
+\item Defina que un Desbloqueo (UnLock)
+
+Quita un bloque establecido dentro del contexto de la transacción que está activa en ese momento.
+
+\item Para qué sirve la tabla de Bloqueo (Table Lock)
+
+Sirve para garantizar que no haya interferencia entre transacciones, el planificador de transacciones del SGBD utiliza la tabla lock para bloquear ciertas operaciones de manera que sea seguro ejecutar toda transacción.
+
+\item Cuáles son los niveles de granularidad de los Lock
+
+\begin{itemize}
+\item Tablas
+\item Atributos
+\item Filas
+\item Base de datos
+\end{itemize}
+
+\item Qué condiciones debe cumplir  un Plan que usa Lock para ser considerado "legal"
+
+\begin{itemize}
+\item Una transacción solo puede leer y escribir un elemento si se solicitó un bloqueo y este no se ha liberado
+\item Si una transacción bloquea un elemento, debe liberarlo posteriormente
+\end{itemize}
+
+\item Que característica debe cumplir un Bloque de dos Fases (Two-phase locking - 2PL)
+
+Todos los locks proceden a todos los unlocks.El problema 2PL, caer en abrazo mortal.
+
+\item Qué problema puede darse al usar Bloque de dos Fases “(2PL)
+
+Se puede dar una inconsistencia de datos y puede faltar datos y causar falla y falta de dineros en las transacciones.
+
+\item Explique el concepto de Bloqueo Compartido (Shared Lock).
+
+Shared lock.-Cuando un transacción Ti bloquea en modo Share Lock (Ls) el dato X, permiten que otra transacción Tj pueda solamente leer el dato X, por lo tanto Tj debe esperar hasta que Ti lo libere (Unlock) para poder escribir X.
+
+\item Explique el concepto de Bloqueo Exclusivo (Exclusive Lock).
+
+No permite que otra transacción pueda leer/Escribir el dato, por lo tanto debe esperar hasta que lo libere.
+
+\item Defina el concepto de Nivel de Aislamiento en las Transacciones
+
+En SQL Server las transacciones especifican un nivel de aislamiento que define el grado en que se debe aislar una transacción de las modificaciones de recursos o datos realizadas por otras transacciones.Los niveles de aislamiento de transacciones controlan si una operación de lectura que hace referencia a filas modificadas por otra transacción:
+
+\begin{itemize}
+\item Se bloquea hasta que se libera el bloqueo exclusivo de la fila.
+\item Recupera la versión confirmada de la fila que existía en el momento en el que se inició la instrucción o la transacción.
+\item Lee la modificación de los datos no confirmada.
+\end{itemize}
+
+\item Cite los Nivel de Aislamiento en SQL Server
+
+\begin{table}[ht!]
+\begin{tabular}{|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}READ UNCOMMITTED\\ (Lectura no confirmada)\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Especifica  que  las  instrucciones  pueden  leer  filas  que  han  sido \\ modificadas  por  otras  transacciones  pero  todavía  no  se  han \\ confirmado.\end{tabular}}                                                                                                                                                                                                                                                                                                                                                          & \begin{tabular}[c]{@{}l@{}}Lec\\ tura Sucia\\ Lectura \\ no \\ repetible\\ Datos Fantasma\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}READ COMMITTED\\ (Lectura confirmada)\end{tabular}                            & \begin{tabular}[c]{@{}l@{}}Especifica que las instrucciones no pueden leer datos que hayan \\ sido modificados, pero no confirmados, por otras transacciones\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                           & \begin{tabular}[c]{@{}l@{}}Lectura \\ no \\ repetible\\ Datos Fantasma\end{tabular}                    \\ \hline
+\begin{tabular}[c]{@{}l@{}}REPEAT\\ ABLE READ\\ (Lectura repetible)\end{tabular}                         & \begin{tabular}[c]{@{}l@{}}Especifica  que  las  instrucciones  no  pueden  leer  datos  que  han \\ sido    modificados    pero    aún    no    confirmados    por    otras \\ transacciones y que ninguna otra transacción puede modificar los \\ datos leídos por la transacción actual hasta que\\ ésta finalice\end{tabular}                                                                                                                                                                                                                                                   &                                                                                                        \\ \hline
+\begin{tabular}[c]{@{}l@{}}SNAPSHOT\\ (instantánea)\end{tabular}                                         & \begin{tabular}[c]{@{}l@{}}Especifica  que  los  datos  leídos  por  cualquier  instrucción  de  una \\ transacción  sean  la  versión  coherente,  desde  el  punto  de  vista \\ transaccional,   de   los   datos   existentes   al   comienzo   de   la \\ transacción\end{tabular}                                                                                                                                                                                                                                                                                             &                                                                                                        \\ \hline
+\begin{tabular}[c]{@{}l@{}}SERIALIZABLE\\ (Serializable)\end{tabular}                                    & \begin{tabular}[c]{@{}l@{}}Especifica lo siguiente:\\ Las   instrucciones   no   pueden   leer   datos   que   hayan   sido \\ modificados, pero aún no confirmados, por otras transacciones.\\ Ninguna otra transacción puede modificar los datos leídos por la \\ transacción actual h\\ asta que la transacción actual finalice.\\ Otras transacciones no pueden insertar filas  nuevas con valores \\ de clave que pudieran estar incluidos en el intervalo de claves leído \\ por  las  instrucciones  de  la  transacción  actual  hasta  que  ésta \\ finalice.\end{tabular} &                                                                                                        \\ \hline
+\end{tabular}
+\end{table}
+
+
+\item Explique Bloqueo Compartido por tabla en SQL Server
+
+Con esta instrucción se obtiene bloqueos compartidos para una tabla, es decir puedo bloquear todas las filas de una tabla, mientras mi transacción este activa, sin embargo otras transacciones solamente pueden leer los datos de la tabla.
+
+\item Explique Bloqueo Exclusivo por tabla en SQL Server
+
+Con esta instrucción se obtiene bloqueos compartidos para una tabla, es decir puedo bloquear todas las filas de una tabla, mientras mi transacción este activa, sin embargo otras transacciones no pueden leer ni escribir los datos de la tabla.
+
+\item Explique Bloqueo Compartido por fila en SQL Server
+
+Con esta instrucción se obtiene bloqueos compartidos por fila, es decir puedo bloquear la fila de una tabla, mientras mi transacción este activa.
+
+\item Explique Bloqueo Exclusivo por fila en SQL Server
+
+Con esta instrucción se obtiene bloqueos exclusivos por fila, es decir puedo bloquear la fila de una tabla, mientras mi transacción este activa.
+\end{enumerate}
