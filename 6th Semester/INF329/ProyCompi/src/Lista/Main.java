@@ -7,13 +7,9 @@ import java.io.InputStreamReader;
 public class Main {
     
     public static void main(String[] args) throws IOException   {    
+       
        Parser parser = new Parser();
        
-       
-               
-       
-         
-    
        String lista = "";
        
        while(lista.compareTo("kill")!=0){
@@ -31,9 +27,6 @@ public class Main {
             
             
        }
-       
-       
-        
     }
     
 }

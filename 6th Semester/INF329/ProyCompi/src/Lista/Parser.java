@@ -1,3 +1,9 @@
+
+/**
+ * Faculty of Engineering in Computer Science and Telecomunications
+ * Author: Anez Vladimirovna Leonardo
+ */
+
 package Lista;
 
 import java.util.List;
