@@ -1,0 +1,24 @@
+EL CIDR (Enrutamiento entre Dominios sin clase), es un esquema de direccionamiento IP que mejora la asignación de direcciones IP. Reemplazando el sitema de clases \texttt{A},\texttt{B} y \texttt{C}. Este esquema ayuda a extender en gran medida la vida util de \texttt{IPv4}, así como retrasar el crecimiento de las tablas de enrutamiento.
+
+\subsection*{Problema con el direccionamiento IP basado en clases}
+El problema comunmente ocurría cuando una organización requería mas de cierta cantidad de IPs, debian escoger direcciones IP de la clase adecuada. Cada clase disponía de un numero distinto de octetos para identificar a las redes. Los octetos restantes determinaban cuantos hosts (direcciones, dominios) podrían alojarse en la red. Recordando las clases:
+\subsubsection*{Clases}
+\begin{itemize}
+\item \fbox{\texttt{A}} : \texttt{0.0.0.0} a \texttt{127.255.255.255}  (16 millones de hosts).
+\item \fbox{\texttt{B}} : \texttt{128.0.0.0} a \texttt{191.255.255.255}  (65535 de hosts). 
+\item \fbox{\texttt{C}} : \texttt{192.0.0.0} a \texttt{223.255.255.255}  (254 de hosts).
+\item \fbox{\texttt{D}} : \texttt{224.0.0.0} a \texttt{239.255.255.255}
+\item \fbox{\texttt{E}} : \texttt{240.0.0.0} a \texttt{255.255.255.255}
+\end{itemize}
+Los ultimos dos tienen otros propósitos. \\${ }$\\
+Esta clasificación resulta poco práctica e inflexible. Para empresas, 254 hosts es demasiado pequeña y las grandes solo necesitan miles. Esto significaba que su una empresa con poco mas de 254 hosts tendría que usar tipo \texttt{B} a pesar de tener mucho menos de 65535 hosts. Por lo que se desperdician mas de 65000 hosts. Lo que disminuia la disponibilidad de direcciones \texttt{IPv4} innecesariamente.
+
+CIDR se basa en el enmascaramiento de subred de longitud variable (VLSM\footnote{Para los que fueron al CAI: \texttt{VLSM} = \textbf{V}ariable \textbf{L}ength \textbf{S}ubnet \textbf{M}ask}). Esto le permite definir prefijos de longitudes arbitrarias, lo que lo hace eficiente. Se componen de dos conjuntos de números: La dirección de red se escribe como un prefijo, como una IP normal, la segunda es el sufijo que indica cuantos bits hay en la dirección completa.
+\\ ${ }$ \\
+Una IP CIDR luce de la siguiente manera:
+
+\begin{center}
+\texttt{192.255.255.255/12}
+\end{center}
+
+El prefijo de red tambien se especifica como parte de la direccion IP. Esto varía segun la cantidad de bits requeridos. Por lo tanto. Tomando el ejemplo decimos que los primeros 12 bits son parte de la dirección y los últimos 20 son para el host.

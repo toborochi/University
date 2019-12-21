@@ -18,6 +18,8 @@
 \usepackage{mathtools}
 \usepackage{pstricks}
 \usepackage{pgfplots}
+\usepackage{qtree} %QTREE
+\usepackage{tikz-qtree}
 \usepackage{babel}
 \usepackage{tikz}
 \usetikzlibrary{babel}
@@ -35,6 +37,7 @@
 \usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
 \usepackage{empheq}
 \usepackage{svg}
+\usepackage{booktabs}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,allcolors=gray}
 \usepackage{hypcap}
@@ -98,12 +101,10 @@
     squar/.style={draw, fill=yellow!10, text width=4.75cm, text centered, minimum height=3.75cm, rounded corners}
 }
 
-
 \def\blockdist{5}
 \def\edgedist{5}
 \graphicspath{ {./Imagenes/} }
 \begin{document}
 \subfile{Archivos/Introduccion}
 \subfile{Archivos/SEC1}
-
 \end{document}
