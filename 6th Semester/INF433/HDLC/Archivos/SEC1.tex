@@ -1,0 +1,33 @@
+Es un grupo de protocolos de comunicaciones de la capa de \textbf{Enlace de Datos} para transmitir datos entre puntos o nodos de la red. Como se trata de un protocolo de enlace de datos los datos se organizan en tramas (frames).  Se transmite una trama a traves de la red al destino que verifica su llegada exitosa. Es un protocolo \textbf{orientado a bits} que es aplicable tanto para comunicaciones punto a punto como multipunto.
+\subsubsection*{Características Básicas}
+Se definen tres tipos de estaciones:
+\begin{itemize}
+\item \textbf{Estación Primaria}: Controla el funcionamiento del enlace. Sus tramas se denominan ``ordenes''.
+\item \textbf{Estación Secundaria}: Es controlada por la estación primaria. Sus tramas se denominan respuestas. La primaria establece un enlace lógico con cada una de las estaciones secundarias presentes en la línea.
+\item \textbf{Estación Combinada}: Combina las caracteristicas de las dos anteriores. Emite ordenes y respuestas.
+\end{itemize}
+Se definen dos configuraciones del enlace:
+\begin{itemize}
+\item \textbf{Configuración no Balanceada:} formada por una estación primaria y una o mas secundarias. Es Full-Duplex y Half-Duplex.
+\item \textbf{Configuración Balanceada:} dos estaciones combinadas. Full-Duplex y Half-Duplex.
+\end{itemize}
+Se definen tres modos de transferencia de datos:
+\begin{itemize}
+\item \textbf{Modo de Respuesta Normal (\texttt{NRM})}: Se utiliza en la configuración no balanceada. La estación primaria puede iniciar la transferencia de datos a la secundaria, pero la secundaria solo puede transmitir datos usando respuestas a las ordenes de la primaria.
+\item \textbf{Modo Balanceado Asíncrono (\texttt{ABM})}: Se utiliza en la configuración balanceada. En este modo cualquier estación combinada podrá iniciar la transmisión sin necesidad de recibir permiso por parte de la otra estación combinada.
+\item \textbf{Modo de Respuesta Asíncrono (\texttt{ARM})}: Se utiliza en la configuración no balanceada. La estación secundaria puede iniciar la transmisión sin tener permiso explicito por parte de la primaria. La estación primaria sigue teniendo la responsabilidad del funcionamiento de la línea, incluyendo la iniciación, recuperación de errores y desconexión.
+\end{itemize}
+
+\subsection*{Tramas de Transmisión}
+Todas las transmisiones de un enlace HDLC se organizan en ``tramas''.
+
+% GRAFICA ACA
+
+Esta le permite al receptor:
+\begin{itemize}
+\item Saber cuando comienza o acaba la transmisión.
+\item Si la trama tiene o no error.
+\item Si una determinada transmisión corresponde a esa estación receptora.
+\item Qué acciones deben tomarse de acuerdo a la transmisión recibida.
+\item La información específica enviada a esa estacion receptora.
+\end{itemize}
