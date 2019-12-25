@@ -19,9 +19,15 @@ Se definen tres modos de transferencia de datos:
 \end{itemize}
 
 \subsection*{Tramas de Transmisión}
-Todas las transmisiones de un enlace HDLC se organizan en ``tramas''.
+Todas las transmisiones de un enlace HDLC se organizan en ``tramas''.\\
 
-% GRAFICA ACA
+\begin{figure}[ht!]
+\centering
+\scalebox{.5}{
+\import{images/}{HDLCim.pdf_tex}
+}
+\caption{Ejemplo de la Trama.}
+\end{figure}
 
 Esta le permite al receptor:
 \begin{itemize}
@@ -30,4 +36,29 @@ Esta le permite al receptor:
 \item Si una determinada transmisión corresponde a esa estación receptora.
 \item Qué acciones deben tomarse de acuerdo a la transmisión recibida.
 \item La información específica enviada a esa estacion receptora.
+\end{itemize}
+
+\subsection*{Descripción de la Trama}
+\begin{itemize}
+\item \textbf{Flag de Inicio} (\texttt{F}): Se denomina ``bandera'' o ``flag'' al primer octeto de la cabecera y al ultimo octeto de la cola. El primer flag sirve como referencia a todos los octetos que siguen. En hexadecimal \texttt{7E}. Todas las estaciones activas conectadas a los enlaces buscan continuamente el flag para sincronizar el inicio de la trama. Una vez recibida continúa buscando el flag final para determinar le fin.
+\item \textbf{Campo de Dirección} (\texttt{A}): Tiene el mismo proposito que la direccion de destinatario o del remitente en una carta enviada por correo tradicional. Siempre la trama contiene la dirección de la estación secundaria. Es un octeto entre \texttt{1} y \texttt{FE}.
+\item \textbf{Campo de Control} (\texttt{C}): Explica el proposito de la trama. Establece todas las funciones de control sobre un enlace de datos.  Define la funcion de tres tipos:
+\begin{itemize}
+\item \textbf{Trama de Información} (\texttt{I}): Su función principal es transportar los datos del usuario. Contiene el campo de control, las cuentas de las tramas transmitidas y recibidas.
+\item \textbf{Trama de Supervisión} (\texttt{S}): Transportan información necesaria para las funciones de control de supervisión. Tiene las siguientes características:
+\begin{itemize}
+\item No transportan informacion del usuario.
+\item Confirman tramas recibidas.
+\item Transportan condiciones de ocupación o disponibilidad.
+\end{itemize}
+\item \textbf{Trama de Numerada} (\texttt{U}): Proporciona funciones de control de enlace:
+\begin{itemize}
+\item Inicialización o desconexión de una estación.
+\item Controlar el modo de respuesta de las estaciones secundarias.
+\item Reportan ciertos errores de los procedimientos.
+\end{itemize}
+\end{itemize}
+\item \textbf{Campo de Información} (\texttt{I}): Despues del campo de control puede o no seguir este campo. Es requerido en una trama de información \texttt{I}. Es opcional, en algunos no numerados (\texttt{U}) y no permitido en supervisión (\texttt{S}).
+\item \textbf{Campo de Secuencia de Control de Trama} (\texttt{FCS}): El proposito de este campo es supervisar y detectar los errores de trama que pueda tener una trama recibida. Este campo resulta de computar los contenidos del campo de dirección, control e información. Los flags son excluidos. Se usa \texttt{CRC}\footnote{\texttt{CRC}= \textbf{C}yclic \textbf{R}edundancy \textbf{C}heck}.
+\item \textbf{Flag Final} (\texttt{F}): Cierra la trama.
 \end{itemize}

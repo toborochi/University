@@ -1,0 +1,2066 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  22 DEC 2019 12:18
+entering extended mode
+**"./Unguided Transmission Media.tex"
+("Unguided Transmission Media.tex"
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)) ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.st
+y"
+Package: babel 2018/02/14 3.18 The Babel package
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def"
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-spanish\spani
+sh.ldf"
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.de
+f")
+\bbl@dirlevel=\count88
+)
+\es@quottoks=\toks16
+\es@quotdepth=\count89
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+"
+Package: amstext 2000/06/29 v2.01 AMS text
+ ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen104
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+) ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
+y"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks18
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks19
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.s
+ty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.st
+y"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.s
+ty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.s
+ty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphi
+cs.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex
+.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\import\import.sty"
+Package: import 2009/03/23  v 5.1
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfiles\subfiles.s
+ty"
+Package: subfiles 2012/05/23 Federico Garcia
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks23
+\verbatim@line=\toks24
+\verbatim@in@stream=\read1
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.s
+ty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip46
+\enit@outerparindent=\dimen115
+\enit@toks=\toks25
+\enit@inbox=\box28
+\enitdp@description=\count102
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\preprint\authblk.st
+y"
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip47
+\@affilsep=\skip48
+\c@Maxaffil=\count103
+\c@authors=\count104
+\c@affil=\count105
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\makecell\makecell.s
+ty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen116
+\extrarowheight=\dimen117
+\NC@list=\toks26
+\extratabsurround=\skip49
+\backup@length=\skip50
+)
+\rotheadsize=\dimen118
+\c@nlinenum=\count106
+\TeXr@lab=\toks27
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen119
+\TX@old@table=\dimen120
+\TX@old@col=\dimen121
+\TX@target=\dimen122
+\TX@delta=\dimen123
+\TX@cols=\count107
+\TX@ftn=\toks28
+) ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.st
+y"
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count108
+\mult@box=\box29
+\multicol@leftmargin=\dimen124
+\c@unbalance=\count109
+\c@collectmore=\count110
+\doublecol@number=\count111
+\multicoltolerance=\count112
+\multicolpretolerance=\count113
+\full@width=\dimen125
+\page@free=\dimen126
+\premulticols=\dimen127
+\postmulticols=\dimen128
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box30
+\last@line=\box31
+\maxbalancingoverflow=\dimen129
+\mult@rightbox=\box32
+\mult@grightbox=\box33
+\mult@gfirstbox=\box34
+\mult@firstbox=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\c@columnbadness=\count114
+\c@finalcolumnbadness=\count115
+\last@try=\dimen130
+\multicolovershoot=\dimen131
+\multicolundershoot=\dimen132
+\mult@nat@firstbox=\box53
+\colbreak@box=\box54
+\mc@col@check@num=\count116
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\slashbox\slashbox.s
+ty"
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box55
+\@slashboxb=\box56
+\@slashboxc=\box57
+\@slashboxwd=\count117
+\@slashboxht=\count118
+\@slashsepl=\dimen133
+\@slashsepr=\dimen134
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\diagbox\diagbox.sty
+"
+Package: diagbox 2016/12/28 v2.2 Making table heads with diagonal lines
+ ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pict2e\pict2e.sty"
+Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
+ ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pict2e\pict2e.cfg"
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 119.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pict2e\p2e-pdftex.d
+ef"
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks29
+\@arclen=\dimen135
+\@arcrad=\dimen136
+\@tempdimd=\dimen137
+) ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp.sty"
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpattern.sty"
+Package: defpattern 1994/10/12
+\actioncount=\count119
+) ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic.sty"
+Package: fp-basic 1996/05/13
+\FP@xs=\count120
+\FP@xia=\count121
+\FP@xib=\count122
+\FP@xfa=\count123
+\FP@xfb=\count124
+\FP@rega=\count125
+\FP@regb=\count126
+\FP@regs=\count127
+\FP@times=\count128
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addons.sty"
+Package: fp-addons 1995/03/15
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-snap.sty"
+Package: fp-snap 1995/04/05
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-exp.sty"
+Package: fp-exp 1995/04/03
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty"
+Package: fp-trigo 1995/04/14
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-pas.sty"
+Package: fp-pas 1994/08/29
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-random.sty"
+Package: fp-random 1995/02/23
+\FPseed=\count129
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
+Package: fp-eqn 1995/04/03
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
+Package: fp-upn 1996/10/21
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eval.sty"
+Package: fp-eval 1995/04/03
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count130
+\calc@Bcount=\count131
+\calc@Adimen=\dimen138
+\calc@Bdimen=\dimen139
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count132
+\calc@Cskip=\skip55
+)
+\diagbox@boxa=\box58
+\diagbox@boxb=\box59
+\diagbox@boxm=\box60
+\diagbox@wd=\dimen140
+\diagbox@ht=\dimen141
+\diagbox@insepl=\dimen142
+\diagbox@insepr=\dimen143
+\diagbox@outsepl=\dimen144
+\diagbox@outsepr=\dimen145
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.s
+ty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip56
+\multirow@cntb=\count133
+\multirow@dima=\skip57
+\bigstrutjot=\dimen146
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtools
+.sty"
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.s
+ty"
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count134
+\l_MT_multwidth_dim=\dimen147
+\origjot=\skip58
+\l_MT_shortvdotswithinadjustabove_dim=\dimen148
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen149
+\l_MT_above_intertext_sep=\dimen150
+\l_MT_below_intertext_sep=\dimen151
+\l_MT_above_shortintertext_sep=\dimen152
+\l_MT_below_shortintertext_sep=\dimen153
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pstricks\pstricks.s
+ty"
+Package: pstricks 2018/01/06 v0.67 LaTeX wrapper for `PSTricks' (RN,HV)
+ ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\iftex\iftex.sty"
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
+and LuaTeX
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\shellesc.sty"
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+) ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.
+cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\pst-xkey.
+tex"
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.t
+ex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.
+tex"
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
+)
+\XKV@depth=\count135
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pstricks\pstricks
+.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pstricks\pst-fp.t
+ex" `pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count136
+\pstFP@xia=\count137
+\pstFP@xib=\count138
+\pstFP@xfa=\count139
+\pstFP@xfb=\count140
+\pstFP@rega=\count141
+\pstFP@regb=\count142
+\pstFP@regs=\count143
+\pstFP@times=\count144
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-common.tex"
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen154
+\pgfutil@tempdimb=\dimen155
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-common-lists.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keys.code.tex"
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks35
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+for.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathc
+alc.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathu
+til.code.tex"
+\pgf@x=\dimen156
+\pgf@xa=\dimen157
+\pgf@xb=\dimen158
+\pgf@xc=\dimen159
+\pgf@y=\dimen160
+\pgf@ya=\dimen161
+\pgf@yb=\dimen162
+\pgf@yc=\dimen163
+\c@pgf@counta=\count145
+\c@pgf@countb=\count146
+\c@pgf@countc=\count147
+\c@pgf@countd=\count148
+\pgfutil@tempcnta=\count149
+\pgfutil@tempcntb=\count150
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathp
+arser.code.tex"
+\pgfmath@dimen=\dimen164
+\pgfmath@count=\count151
+\pgfmath@box=\box61
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.basic.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.trigonometric.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.random.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.comparison.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.base.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.round.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.misc.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.integerarithmetics.code.tex")))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+loat.code.tex"
+\c@pgfmathroundto@lastzeros=\count152
+))
+\pgffor@iter=\dimen165
+\pgffor@skip=\dimen166
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+)
+\psLoopIndex=\count153
+
+`PSTricks' v2.82  <2018/01/06> (tvz,hv)
+\pst@dima=\dimen167
+\pst@dimb=\dimen168
+\pst@dimc=\dimen169
+\pst@dimd=\dimen170
+\pst@dimg=\dimen171
+\pst@dimh=\dimen172
+\pst@dimm=\dimen173
+\pst@dimn=\dimen174
+\pst@dimo=\dimen175
+\pst@dimp=\dimen176
+\pst@hbox=\box62
+\pst@ibox=\box63
+\pst@boxg=\box64
+\pst@cnta=\count154
+\pst@cntb=\count155
+\pst@cntc=\count156
+\pst@cntd=\count157
+\pst@cntg=\count158
+\pst@cnth=\count159
+\pst@cntm=\count160
+\pst@cntn=\count161
+\pst@cnto=\count162
+\pst@cntp=\count163
+\@zero=\count164
+\pst@toks=\toks41
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pstricks\pstricks
+.con")
+\psunit=\dimen177
+\psxunit=\dimen178
+\psyunit=\dimen179
+\pst@C@@rType=\count165
+\pslinewidth=\dimen180
+\psk@startLW=\dimen181
+\psk@endLW=\dimen182
+\pst@customdefs=\toks42
+\pslinearc=\dimen183
+\pst@symbolStep=\dimen184
+\pst@symbolWidth=\dimen185
+\pst@symbolLinewidth=\dimen186
+\everypsbox=\toks43
+\psframesep=\dimen187
+\pslabelsep=\dimen188
+\sh@wgridXunit=\dimen189
+\sh@wgridYunit=\dimen190
+\pst@shift=\dimen191
+)
+File: pstricks.tex 2018/01/06 v2.82 `PSTricks' (tvz,hv)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pstricks\pst-fp.t
+ex")
+File: pst-fp.tex 2018/01/06 v2.82 `PST-fp' (hv)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.s
+ty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.revision.tex")
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\t
+ikz.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.
+sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrc
+s.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-common.tex"
+\pgfutil@everybye=\toks44
+\pgfutil@tempdima=\dimen192
+\pgfutil@tempdimb=\dimen193
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-common-lists.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-latex.def"
+\pgfutil@abb=\box65
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+rcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfc
+ore.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgf
+sys.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keys.code.tex")
+\pgf@x=\dimen194
+\pgf@y=\dimen195
+\pgf@xa=\dimen196
+\pgf@ya=\dimen197
+\pgf@xb=\dimen198
+\pgf@yb=\dimen199
+\pgf@xc=\dimen256
+\pgf@yc=\dimen257
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count166
+\c@pgf@countb=\count167
+\c@pgf@countc=\count168
+\c@pgf@countd=\count169
+\t@pgf@toka=\toks45
+\t@pgf@tokb=\toks46
+\t@pgf@tokc=\toks47
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count170
+\pgfsyssoftpath@bigbuffer@items=\count171
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen258
+\pgf@picmaxx=\dimen259
+\pgf@picminy=\dimen260
+\pgf@picmaxy=\dimen261
+\pgf@pathminx=\dimen262
+\pgf@pathmaxx=\dimen263
+\pgf@pathminy=\dimen264
+\pgf@pathmaxy=\dimen265
+\pgf@xx=\dimen266
+\pgf@xy=\dimen267
+\pgf@yx=\dimen268
+\pgf@yy=\dimen269
+\pgf@zx=\dimen270
+\pgf@zy=\dimen271
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen272
+\pgf@path@lasty=\dimen273
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen274
+\pgf@shorten@start@additional=\dimen275
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box66
+\pgf@hbox=\box67
+\pgf@layerbox@main=\box68
+\pgf@picture@serial@count=\count172
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen276
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen277
+\pgf@pt@y=\dimen278
+\pgf@pt@temp=\dimen279
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen280
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen281
+\pgf@sys@shading@range@num=\count173
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box69
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+duleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box70
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+duleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
+gfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen282
+\pgf@nodesepend=\dimen283
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
+gfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgffo
+r.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfke
+ys.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keys.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.st
+y"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+for.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex")
+\pgffor@iter=\dimen284
+\pgffor@skip=\dimen285
+\pgffor@stack=\toks48
+\pgffor@toks=\toks49
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count174
+\pgfplotmarksize=\dimen286
+)
+\tikz@lastx=\dimen287
+\tikz@lasty=\dimen288
+\tikz@lastxsaved=\dimen289
+\tikz@lastysaved=\dimen290
+\tikzleveldistance=\dimen291
+\tikzsiblingdistance=\dimen292
+\tikz@figbox=\box71
+\tikz@figbox@bg=\box72
+\tikz@tempbox=\box73
+\tikz@tempbox@bg=\box74
+\tikztreelevel=\count175
+\tikznumberofchildren=\count176
+\tikznumberofcurrentchild=\count177
+\tikz@fig@count=\count178
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+dulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count179
+\pgfmatrixcurrentcolumn=\count180
+\pgf@matrix@numberofcolumns=\count181
+)
+\tikz@expandcount=\count182
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+core.code.tex"
+\t@pgfplots@toka=\toks50
+\t@pgfplots@tokb=\toks51
+\t@pgfplots@tokc=\toks52
+\pgfplots@tmpa=\dimen293
+\c@pgfplots@coordindex=\count183
+\c@pgfplots@scanlineindex=\count184
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfp
+lotssysgeneric.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\pgf
+plotslibrary.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfco
+mpatib\pgfplotsoldpgfsupp_loader.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryfpu.code.tex")
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfco
+mpatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfco
+mpatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count185
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfco
+mpatib\pgfplotsoldpgfsupp_leq.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotsutil.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
+cture\pgfplotsliststructure.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
+cture\pgfplotsliststructureext.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
+cture\pgfplotsarray.code.tex"
+\c@pgfplotsarray@tmp=\count186
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
+cture\pgfplotsmatrix.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\numtable
+\pgfplotstableshared.code.tex"
+\c@pgfplotstable@counta=\count187
+\t@pgfplotstable@a=\toks53
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststru
+cture\pgfplotsdeque.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotsbinary.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotsbinary.data.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotsutil.verb.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\pgf
+librarypgfplots.surfshading.code.tex"
+\c@pgfplotslibrarysurf@no=\count188
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfl
+ibrarypgfplots.surfshading.pgfsys-pdftex.def")))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotscolormap.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pgf
+plotscolor.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+stackedplots.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+plothandlers.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+meshplothandler.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+meshplotimage.code.tex")))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.scaling.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+coordprocessing.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.errorbars.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.markers.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+ticks.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots
+.paths.code.tex")
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+duledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen294
+\pgfdecoratedremainingdistance=\dimen295
+\pgfdecoratedinputsegmentcompleteddistance=\dimen296
+\pgfdecoratedinputsegmentremainingdistance=\dimen297
+\pgf@decorate@distancetomove=\dimen298
+\pgf@decorate@repeatstate=\count189
+\pgfdecorationsegmentamplitude=\dimen299
+\pgfdecorationsegmentlength=\dimen300
+)
+\tikz@lib@dec@box=\box75
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\dec
+orations\pgflibrarydecorations.pathmorphing.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\dec
+orations\pgflibrarydecorations.pathreplacing.code.tex"))
+\pgfplots@numplots=\count190
+\pgfplots@xmin@reg=\dimen301
+\pgfplots@xmax@reg=\dimen302
+\pgfplots@ymin@reg=\dimen303
+\pgfplots@ymax@reg=\dimen304
+\pgfplots@zmin@reg=\dimen305
+\pgfplots@zmax@reg=\dimen306
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryplotmarks.code.tex"
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryplotmarks.code.tex"
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\qtree\qtree.sty"
+Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+\c@treecount=\count191
+\c@branchcount=\count192
+\parentbox=\box76
+\treebox=\box77
+\treeboxone=\box78
+\treeboxtwo=\box79
+\treeboxthree=\box80
+\treeboxfour=\box81
+\treeboxfive=\box82
+\treeboxsix=\box83
+\treeboxseven=\box84
+\treeboxeight=\box85
+\treeboxnine=\box86
+\treeboxten=\box87
+\treeboxeleven=\box88
+\treeboxtwelve=\box89
+\treeboxthirteen=\box90
+\treeboxfourteen=\box91
+\treeboxfifteen=\box92
+\treeboxsixteen=\box93
+\treeboxseventeen=\box94
+\treeboxeighteen=\box95
+\treeboxnineteen=\box96
+\treeboxtwenty=\box97
+\treeoffsetone=\skip59
+\treeoffsettwo=\skip60
+\treeoffsetthree=\skip61
+\treeoffsetfour=\skip62
+\treeoffsetfive=\skip63
+\treeoffsetsix=\skip64
+\treeoffsetseven=\skip65
+\treeoffseteight=\skip66
+\treeoffsetnine=\skip67
+\treeoffsetten=\skip68
+\treeoffseteleven=\skip69
+\treeoffsettwelve=\skip70
+\treeoffsetthirteen=\skip71
+\treeoffsetfourteen=\skip72
+\treeoffsetfifteen=\skip73
+\treeoffsetsixteen=\skip74
+\treeoffsetseventeen=\skip75
+\treeoffseteighteen=\skip76
+\treeoffsetnineteen=\skip77
+\treeoffsettwenty=\skip78
+\treeshiftone=\skip79
+\treeshifttwo=\skip80
+\treeshiftthree=\skip81
+\treeshiftfour=\skip82
+\treeshiftfive=\skip83
+\treeshiftsix=\skip84
+\treeshiftseven=\skip85
+\treeshifteight=\skip86
+\treeshiftnine=\skip87
+\treeshiftten=\skip88
+\treeshifteleven=\skip89
+\treeshifttwelve=\skip90
+\treeshiftthirteen=\skip91
+\treeshiftfourteen=\skip92
+\treeshiftfifteen=\skip93
+\treeshiftsixteen=\skip94
+\treeshiftseventeen=\skip95
+\treeshifteighteen=\skip96
+\treeshiftnineteen=\skip97
+\treeshifttwenty=\skip98
+\treewidthone=\skip99
+\treewidthtwo=\skip100
+\treewidththree=\skip101
+\treewidthfour=\skip102
+\treewidthfive=\skip103
+\treewidthsix=\skip104
+\treewidthseven=\skip105
+\treewidtheight=\skip106
+\treewidthnine=\skip107
+\treewidthten=\skip108
+\treewidtheleven=\skip109
+\treewidthtwelve=\skip110
+\treewidththirteen=\skip111
+\treewidthfourteen=\skip112
+\treewidthfifteen=\skip113
+\treewidthsixteen=\skip114
+\treewidthseventeen=\skip115
+\treewidtheighteen=\skip116
+\treewidthnineteen=\skip117
+\treewidthtwenty=\skip118
+\daughteroffsetone=\skip119
+\daughteroffsettwo=\skip120
+\daughteroffsetthree=\skip121
+\daughteroffsetfour=\skip122
+\branchwidthone=\skip123
+\branchwidthtwo=\skip124
+\branchwidththree=\skip125
+\branchwidthfour=\skip126
+\parentoffset=\skip127
+\treeoffset=\skip128
+\daughteroffset=\skip129
+\branchwidth=\skip130
+\parentwidth=\skip131
+\treewidth=\skip132
+\qta=\toks54
+\qtb=\toks55
+\nbranches=\count193
+\qroofx=\count194
+\qroofy=\count195
+\@qrscratchbox=\box98
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikz-qtree\tikz-qtr
+ee.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikz-qtree\pgftree.
+sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikz-qtree\pgfsubpi
+c.sty"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tikz-qtree\pgfsub
+pic.tex"
+\pgf@subpicminx=\dimen307
+\pgf@subpicminy=\dimen308
+\pgf@subpicmaxx=\dimen309
+\pgf@subpicmaxy=\dimen310
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tikz-qtree\pgftre
+e.tex"
+\levelsep=\dimen311
+\subtreesep=\dimen312
+\smuggle@levelsep=\dimen313
+\smuggle@subtreesep=\dimen314
+\this@levelsep=\dimen315
+\this@subtreesep=\dimen316
+\pgftree@childx=\dimen317
+\pgftree@savechildx=\dimen318
+\pgftree@childy=\dimen319
+\pgftree@savechildy=\dimen320
+\pgftree@childi=\count196
+\pgftree@savechildi=\count197
+\pgftree@level=\count198
+\pgftree@depth=\dimen321
+\pgf@subpic@hbox@children=\box99
+\pgf@subpic@minx@children=\dimen322
+\pgf@subpic@miny@children=\dimen323
+\pgf@subpic@maxx@children=\dimen324
+\pgf@subpic@maxy@children=\dimen325
+\pgftree@lastchildx=\dimen326
+\pgftree@lastchildy=\dimen327
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tikz-qtree\tikz-q
+tree.tex"
+\@result=\toks56
+\child@list=\toks57
+\root@node=\toks58
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarybabel.code.tex"
+File: tikzlibrarybabel.code.tex 2013/06/24 v3.0.1a (rcs-revision 1.1)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryshapes.code.tex"
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryshapes.geometric.code.tex"
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sha
+pes\pgflibraryshapes.geometric.code.tex"
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryshapes.misc.code.tex"
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sha
+pes\pgflibraryshapes.misc.code.tex"
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryshapes.symbols.code.tex"
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sha
+pes\pgflibraryshapes.symbols.code.tex"
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryshapes.arrows.code.tex"
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sha
+pes\pgflibraryshapes.arrows.code.tex"
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryshapes.callouts.code.tex"
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sha
+pes\pgflibraryshapes.callouts.code.tex"))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryshapes.multipart.code.tex"
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\sha
+pes\pgflibraryshapes.multipart.code.tex"
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box100
+\pgfnodeparttwobox=\box101
+\pgfnodepartthreebox=\box102
+\pgfnodepartfourbox=\box103
+\pgfnodeparttwentybox=\box104
+\pgfnodepartnineteenbox=\box105
+\pgfnodeparteighteenbox=\box106
+\pgfnodepartseventeenbox=\box107
+\pgfnodepartsixteenbox=\box108
+\pgfnodepartfifteenbox=\box109
+\pgfnodepartfourteenbox=\box110
+\pgfnodepartthirteenbox=\box111
+\pgfnodeparttwelvebox=\box112
+\pgfnodepartelevenbox=\box113
+\pgfnodeparttenbox=\box114
+\pgfnodepartninebox=\box115
+\pgfnodeparteightbox=\box116
+\pgfnodepartsevenbox=\box117
+\pgfnodepartsixbox=\box118
+\pgfnodepartfivebox=\box119
+)))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen328
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+\pgf@layerbox@background=\box120
+\pgf@layerboxsaved@background=\box121
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count199
+\float@exts=\toks59
+\float@box=\box122
+\@float@everytoks=\toks60
+\@floatcapt=\box123
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarytrees.code.tex"
+File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarychains.code.tex"
+File: tikzlibrarychains.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.6)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarymatrix.code.tex"
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.s
+ty"
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\empheq.st
+y"
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+\l_EQ_equationtype_int=\count266
+\l_EQ_alignmentmode_int=\count267
+\l_EQ_totalwidth_dim=\dimen329
+\l_EQ_displaywidth_dim=\dimen330
+\l_EQ_temp_linewidth_dim=\dimen331
+\EmphEqdelimitershortfall=\dimen332
+\EmphEqdelimiterfactor=\count268
+\g_EQ_toptag_height_dim=\dimen333
+\g_EQ_bottomtag_depth_dim=\dimen334
+\g_EQ_toprow_height_dim=\dimen335
+\g_EQ_bottomrow_depth_dim=\dimen336
+\g_EQ_widesttag_dim=\dimen337
+\EQ_mathdisplay_box=\box124
+\EQ_tag_box=\box125
+\g_EQ_temprow_int=\count269
+) ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\svg\svg.sty"
+Package: svg 2017/11/29 v2.01 (include SVG pictures)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrbase
+.sty"
+Package: scrbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlfil
+e.sty"
+Package: scrlfile 2018/03/30 v3.25 KOMA-Script package (loading files)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.s
+ty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluatex
+.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.st
+y"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexcm
+ds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarer
+r.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.
+sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+\c@svg@param@lastpage=\count270
+\c@svg@param@currpage=\count271
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\transparen
+t.sty"
+Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
+
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.st
+y"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+))
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.s
+ty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen338
+\lightrulewidth=\dimen339
+\cmidrulewidth=\dimen340
+\belowrulesep=\dimen341
+\belowbottomsep=\dimen342
+\aboverulesep=\dimen343
+\abovetopsep=\dimen344
+\cmidrulesep=\dimen345
+\cmidrulekern=\dimen346
+\defaultaddspace=\dimen347
+\@cmidla=\count272
+\@cmidlb=\count273
+\@aboverulesep=\dimen348
+\@belowrulesep=\dimen349
+\@thisruleclass=\count274
+\@lastruleclass=\count275
+\@thisrulewidth=\dimen350
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.s
+ty"
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-h
+yperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-g
+eneric.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.
+sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen351
+\Hy@linkcounter=\count276
+\Hy@pagecounter=\count277
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+"
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count278
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.c
+fg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count279
+ ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen352
+\Fld@menulength=\count280
+\Field@Width=\dimen353
+\Fld@charsize=\dimen354
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count281
+\c@Item=\count282
+\c@Hfootnote=\count283
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.de
+f"
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count284
+\c@bookmark@seq@number=\count285
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilec
+heck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip133
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 44.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\hypcap.sty
+"
+Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
+ty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count286
+\Gm@cntv=\count287
+\c@Gm@tempcnt=\count288
+\Gm@bindingoffset=\dimen355
+\Gm@wd@mp=\dimen356
+\Gm@odd@mp=\dimen357
+\Gm@even@mp=\dimen358
+\Gm@layoutwidth=\dimen359
+\Gm@layoutheight=\dimen360
+\Gm@layouthoffset=\dimen361
+\Gm@layoutvoffset=\dimen362
+\Gm@dimlist=\toks61
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
+fg")) ("Unguided Transmission Media.aux"
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+)
+\openout1 = `"Unguided Transmission Media.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Info: Redefining \. on input line 111.
+LaTeX Info: Redefining \% on input line 111.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
+i"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count289
+\scratchdimen=\dimen363
+\scratchbox=\box126
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks62
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen364
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks63
+)
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
+ase.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+) ABD: EveryShipout initializing macros
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
+
+\AtBeginShipoutBox=\box127
+Package hyperref Info: Link coloring ON on input line 111.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
+y"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitle
+string.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count295
+)
+LaTeX Info: Redefining \ref on input line 111.
+LaTeX Info: Redefining \pageref on input line 111.
+LaTeX Info: Redefining \nameref on input line 111.
+ ("Unguided Transmission Media.out")
+("Unguided Transmission Media.out")
+\@outlinefile=\write4
+\openout4 = `"Unguided Transmission Media.out"'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(Archivos/Introduccion.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 16.
+
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)) (Archivos/SEC1.tex
+<./Imagenes/ESPECTRO.png, id=6, 478.48763pt x 261.67763pt>
+File: ./Imagenes/ESPECTRO.png Graphic file (type png)
+<use ./Imagenes/ESPECTRO.png>
+Package pdftex.def Info: ./Imagenes/ESPECTRO.png  used on input line 15.
+(pdftex.def)             Requested size: 287.09479pt x 157.00777pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 18.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 18.
+ [1
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
+
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
+{C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<./Imagenes/ANTENA.png, id=25, 458.61337pt x 125.56912pt>
+File: ./Imagenes/ANTENA.png Graphic file (type png)
+<use ./Imagenes/ANTENA.png>
+Package pdftex.def Info: ./Imagenes/ANTENA.png  used on input line 24.
+(pdftex.def)             Requested size: 275.17014pt x 75.34204pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 58.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 58.
+ [2 <./Imagenes/ESPECTRO.png> <./Imagenes/ANTENA.png>])
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 114.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 114.
+ [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
+ ("Unguided Transmission Media.aux"
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
+Package rerunfilecheck Info: File `"Unguided Transmission Media".out' has not c
+hanged.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
+ ) 
+Here is how much of TeX's memory you used:
+ 35350 strings out of 493305
+ 822440 string characters out of 3130237
+ 1081258 words of memory out of 3000000
+ 38150 multiletter control sequences out of 15000+200000
+ 13353 words of font info for 54 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 73i,14n,127p,753b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmbx10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Asus/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Asus/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Asus/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/User
+s/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
+b><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Asus/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/Asus/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on "Unguided Transmission Media.pdf" (3 pages, 303739 bytes).
+PDF statistics:
+ 86 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+
