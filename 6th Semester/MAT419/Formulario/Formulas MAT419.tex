@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+ \usepackage{float}
 \usepackage{graphicx}
 \usepackage{subfiles}
 \usepackage{enumitem}
@@ -25,7 +26,6 @@
 \usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
 \usepackage{empheq}
 \usepackage{svg}
-\usepackage{hyperref}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Leonardo H. Añez Vladimirovna \footnote{Para cualquier cambio, observación y/o sugerencia pueden enviarme un mensaje al siguiente correo: \texttt{toborochi98@outlook.com}}}
 \title{Fórmulas Investigación Operativa II \texttt{(MAT419)}\footnote{Esta es una recopilación de las formulas utilizadas en la materia, sin teoría.}\\{\normalsize Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones}\\ \vspace{-0.025cm}\normalsize Universidad Autónoma Gabriel René Moreno}
@@ -103,6 +103,10 @@ $$C_T = C_1 D + C_2 \left( \dfrac{D}{Q_0} \right) + C_3 \left( \dfrac{Q_0}{2} \r
 \item $C_3 \left( \dfrac{Q_0}{2} \right)$: Costo Anual de Mantener el Inventario
 \end{itemize}
 \vspace{0.1cm}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{EOQ.pdf}
+\end{figure}
 \subsection{Clasificación ABC de Inventarios}
 \noindent
 \begin{minipage}[t]{.5\textwidth}
@@ -122,6 +126,10 @@ $$
 \text{Costo Anual}[\$] = \text{Demanda Anual}[u]\cdot \text{Costo Unitario}\left[ \frac{\$}{u}\right]
 $$
 \end{minipage}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{ABC.pdf}
+\end{figure}
 \subsection{Modelo de Producción de Inventarios}
 \begin{itemize}
 \item Si o sí producen por tantas.
@@ -185,9 +193,14 @@ $$
 C_T = C_1\cdot D + C_2 \left( \dfrac{D}{Q_0} \right) + C_3 \left(\dfrac{Q_0}{2} \right)  \left( 1- \dfrac{D}{P} \right)
 $$
 \end{enumerate}
-
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{PROD.pdf}
+\end{figure}
 \subsection{Modelo Probabilístico}
 \begin{itemize}
+\item $\mu = [\frac{u}{\text{año}}]$
+\item $\sigma = [\frac{u}{\text{año}}]$
 \item Se conoce $C_1,C_2,C_3$
 \item Se conoce $L$ (Tiempo de Reposición)
 \item Se determina $\alpha$ (grado de confianza)
@@ -254,6 +267,10 @@ $$
 \item $z=$ Desviación Normalizada
 \item $\sigma_L=$ Desviación Estandar por tiempo guía
 \end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{PROB.pdf}
+\end{figure}
 \section{Decisiones}
 \subsection{Riesgo}
 \begin{minipage}[t]{.5\textwidth}
@@ -284,7 +301,7 @@ $$
 \begin{itemize}
 \item Llegadas aleatorias, distribución tipo Poisson.
 \item Tasa de servicio aleatoria
-\item $\mu \geq \lambda$
+\item $\mu \geq \lambda$\footnote{Si $\lambda\geq\mu$ la cola crece al infinito.}
 \end{itemize}
 \begin{enumerate}
 
@@ -317,18 +334,32 @@ L_q = \dfrac{\lambda^2}{\mu\cdot (\mu - \lambda)}
 $$
 \end{minipage}
 \\${ }$\\ 
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.20\textwidth}
 \raggedright
-\item Probabilidad del sistema ocupado
+\item Probabilidad del \\ sistema ocupado
 $$
-L_q = \dfrac{\lambda^2}{\mu\cdot (\mu - \lambda)}
+p=\dfrac{\lambda}{\mu}
 $$
 \end{minipage}%
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[t]{.3\textwidth}
 \raggedright
-\item Probabilidad del sistema vacío
+\item Probabilidad sistema vacío \\(no hay clientes en cola ni servidor)
 $$
-L_q = \dfrac{\lambda^2}{\mu\cdot (\mu - \lambda)}
+p_0 = 1-\dfrac{\lambda}{\mu}
+$$
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+\raggedright
+\item Probabilidad $n$ clientes \\ en el sistema
+$$
+p_{n}=\left[ \dfrac{\lambda}{\mu} \right]^{n} p_0
+$$
+\end{minipage}%
+\begin{minipage}[t]{.25\textwidth}
+\raggedright
+\item Probabilidad de mas de $n$ clientes en el sistema
+$$
+p_{>n}=\left[ \dfrac{\lambda}{\mu} \right]^{n+1}
 $$
 \end{minipage}
 \end{enumerate}
