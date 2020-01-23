@@ -12,6 +12,7 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{lstlinebgrd}
+\usepackage{float}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
 
@@ -32,6 +33,7 @@
 % Nombre de archivos de Codigo por defecto
 \newcommand{\mystr}{Ejercicio}
 \newcommand{\enun}{Enunciado}
+\newcommand{\imag}{screenshot}
 
 % Interlineado (\doublespacing, \onehalfspacing, \singlespacing)
 \onehalfspacing
@@ -50,7 +52,7 @@
 \definecolor{pred}{rgb}{0.9,0,0}
 \definecolor{pgrey}{rgb}{0.46,0.45,0.48}
 
-\definecolor{claro}{RGB}{240,240,240}
+\definecolor{claro}{RGB}{245,245,245}
 
 \usepackage{listings}
 
@@ -68,8 +70,23 @@
   moredelim=[il][\textcolor{pgrey}]{${}$},
   moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
 }
+\newcommand\realnumberstyle[1]{}
+\newcommand{\zebra}[3]{%
+    {\realnumberstyle{#3}}%
+    \begingroup
+    \lst@basicstyle
+    \ifodd\value{lstnumber}%
+        \color{#1}%
+    \else
+        \color{#2}%
+    \fi
+        \rlap{\hspace*{\lst@numbersep}%
+        \color@block{\linewidth}{\ht\strutbox}{\dp\strutbox}%
+        }%
+    \endgroup
+}
 
-
+\graphicspath{ {./Images/} }
 
 \begin{document}
 
@@ -88,7 +105,15 @@
 {%
   \section*{\mystr\text{ }\arabic{ct}:}
   \subfile{TeXFiles/\enun\arabic{ct}}
-  \lstinputlisting[language=Java,breaklines=true]{Code/\mystr\arabic{ct}.java}
+  \IfFileExists{Images/\imag\arabic{ct}.png}{
+  \begin{figure}[H]
+  \centering
+    \includegraphics[width={0.5\textwidth}]{\imag\arabic{ct}}
+  \end{figure}}{
+	  
+  }
+  \lstinputlisting[language=Java,linebackgroundcolor={\ifodd\value{lstnumber}\color{claro}\fi}]{Code/\mystr\arabic{ct}.java}
+  \pagebreak
   %\includegraphics[scale=0.75]{\mystr\arabic{ct}}
   %\mystr\arabic{ct}
 }

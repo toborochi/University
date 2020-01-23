@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  23 JAN 2020 01:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  23 JAN 2020 09:59
 entering extended mode
 **./Template.tex
 (Template.tex
@@ -544,6 +544,14 @@ rd.sty"
 Package: lstlinebgrd 2012/05/03 v0.1 Provides 'listings' options to color the b
 ackground of lines
 )
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count110
+\float@exts=\toks26
+\float@box=\box30
+\@float@everytoks=\toks27
+\@floatcapt=\box31
+)
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.s
 ty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -561,9 +569,9 @@ Package ifvtex Info: VTeX not detected.
 ty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count110
-\Gm@cntv=\count111
-\c@Gm@tempcnt=\count112
+\Gm@cnth=\count111
+\Gm@cntv=\count112
+\c@Gm@tempcnt=\count113
 \Gm@bindingoffset=\dimen119
 \Gm@wd@mp=\dimen120
 \Gm@odd@mp=\dimen121
@@ -572,7 +580,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen124
 \Gm@layouthoffset=\dimen125
 \Gm@layoutvoffset=\dimen126
-\Gm@dimlist=\toks26
+\Gm@dimlist=\toks28
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
 fg"))
@@ -751,13 +759,13 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 ex"
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.
 tex"
-\XKV@toks=\toks27
-\XKV@tempa@toks=\toks28
+\XKV@toks=\toks29
+\XKV@tempa@toks=\toks30
 )
-\XKV@depth=\count113
+\XKV@depth=\count114
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\zifour@ocount=\count114
+\zifour@ocount=\count115
 )
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.s
 ty"
@@ -768,42 +776,42 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `Template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 91.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
+\scratchcounter=\count116
 \scratchdimen=\dimen127
-\scratchbox=\box30
-\nofMPsegments=\count116
-\nofMParguments=\count117
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count118
+\scratchbox=\box32
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count119
 \MPscratchDim=\dimen128
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
-\everyMPtoPDFconversion=\toks30
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
+\everyMPtoPDFconversion=\toks32
 )
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
 ase.sty"
@@ -863,7 +871,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count121
+\c@lstlisting=\count122
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -916,32 +924,56 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) (Files/Comment.tex) [1
 
 {C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-\c@ct=\count122
-\c@n=\count123
+\c@ct=\count123
+\c@n=\count124
  (TeXFiles/Enunciado1.tex)
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 94.
+<./Images/screenshot1.png, id=11, 262.581pt x 205.36725pt>
+File: ./Images/screenshot1.png Graphic file (type png)
+<use ./Images/screenshot1.png>
+Package pdftex.def Info: ./Images/screenshot1.png  used on input line 119.
+(pdftex.def)             Requested size: 250.24199pt x 195.71823pt.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 119.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.f
 d"
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 94.
- (Code/Ejercicio1.java [2] [3]) (TeXFiles/Enunciado2.tex)
-(Code/Ejercicio2.java [4] [5] [6]) (TeXFiles/Enunciado3.tex)
-(Code/Ejercicio3.java [7] [8] [9]) (TeXFiles/Enunciado4.tex)
-(Code/Ejercicio4.java [10] [11] [12]) [13] (Template.aux
+(Font)              scaled to size 10.0pt on input line 119.
+ (Code/Ejercicio1.java [2 <./Images/screenshot1.png>] [3] [4]) [5]
+(TeXFiles/Enunciado2.tex)
+<./Images/screenshot2.png, id=28, 262.581pt x 205.36725pt>
+File: ./Images/screenshot2.png Graphic file (type png)
+<use ./Images/screenshot2.png>
+Package pdftex.def Info: ./Images/screenshot2.png  used on input line 119.
+(pdftex.def)             Requested size: 250.24199pt x 195.71823pt.
+ (Code/Ejercicio2.java [6 <./Images/screenshot2.png>]
+[7] [8]) [9] (TeXFiles/Enunciado3.tex)
+<./Images/screenshot3.png, id=43, 524.25862pt x 577.25662pt>
+File: ./Images/screenshot3.png Graphic file (type png)
+<use ./Images/screenshot3.png>
+Package pdftex.def Info: ./Images/screenshot3.png  used on input line 119.
+(pdftex.def)             Requested size: 250.24199pt x 275.53859pt.
+ (Code/Ejercicio3.java [10 <./Images/screenshot3.png>] [11] [12]) [13] (TeXFile
+s/Enunciado4.tex)
+<./Images/screenshot4.png, id=58, 262.581pt x 205.36725pt>
+File: ./Images/screenshot4.png Graphic file (type png)
+<use ./Images/screenshot4.png>
+Package pdftex.def Info: ./Images/screenshot4.png  used on input line 119.
+(pdftex.def)             Requested size: 250.24199pt x 195.71823pt.
+ (Code/Ejercicio4.java
+[14 <./Images/screenshot4.png>] [15]) [16] (Template.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 7453 strings out of 493305
- 100802 string characters out of 3130237
- 234778 words of memory out of 3000000
- 10817 multiletter control sequences out of 15000+200000
+ 7566 strings out of 493305
+ 102436 string characters out of 3130237
+ 253166 words of memory out of 3000000
+ 10919 multiletter control sequences out of 15000+200000
  10273 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,72p,714b,1722s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,72p,714b,1724s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata
 /i4-t1-0.enc} <C:\Users\Asus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\ecbx1440.pk> <C:\Users\Asus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
@@ -953,9 +985,9 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb
 ><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb>
-Output written on Template.pdf (13 pages, 114829 bytes).
+Output written on Template.pdf (16 pages, 271461 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
+ 211 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
