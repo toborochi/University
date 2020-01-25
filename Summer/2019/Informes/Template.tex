@@ -13,10 +13,13 @@
 \usepackage{xcolor}
 \usepackage{lstlinebgrd}
 \usepackage{float}
+
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
 
 %--! Codigo por defecto (no tocar si no sabes)
+
+%\renewcommand{\familydefault}{\sfdefault}
 
 \makeatletter
 \renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
@@ -98,7 +101,7 @@
 \newcounter{n}
 
 % Numero de ejercicios
-\setcounter{n}{4}
+\setcounter{n}{10}
 \stepcounter{n}
 
 \forloop{ct}{1}{\value{ct}<\value{n}}%
@@ -106,6 +109,13 @@
   \section*{\mystr\text{ }\arabic{ct}:}
   \subfile{TeXFiles/\enun\arabic{ct}}
   \IfFileExists{Images/\imag\arabic{ct}.png}{
+  \begin{figure}[H]
+  \centering
+    \includegraphics[width={0.5\textwidth}]{\imag\arabic{ct}}
+  \end{figure}}{
+	  
+  }
+  \IfFileExists{Images/\imag\arabic{ct}.jpg}{
   \begin{figure}[H]
   \centering
     \includegraphics[width={0.5\textwidth}]{\imag\arabic{ct}}

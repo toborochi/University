@@ -1,71 +1,119 @@
 package appletstest;
-t
-import java.awt.Graphics;
-t
-import java.util.ArrayList;
-c public s class Ejercicio2 s extends java.applet.Applet {
-    g String s = "ABC";
-    c public c static ArrayList < String > permutaciones = new
-    ArrayList < String > ();
-    c public g String swap(g String a, int i, int j) {
-        char temp;
-        char[] charArray = a.toCharArray();
-        temp = charArray[i];
-        charArray[i] = charArray[j];
-        charArray[j] = temp;
-        n
-        return String.valueOf(charArray);
+
+
+import java.applet.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.Random;
+
+public class NewApplet extends Applet implements KeyListener{
+
+    private String s1;
+    private Label ls,ls1,ls2,ls3;
+    private TextField tf1;
+    private TextField tf2;
+    private TextArea ta;
+@Override
+public void keyPressed( KeyEvent e ) { }
+@Override
+public void keyReleased( KeyEvent e ) { }
+@Override   
+public void keyTyped( KeyEvent e ) {
+      char c = e.getKeyChar();
+      if ( c != KeyEvent.CHAR_UNDEFINED ) {
+
+         repaint();
+         e.consume();
+      }
+   }
+    
+    
+    public boolean action(Event e,Object o){
+        
+        
+        
+        if(e.target==tf1 || e.target==tf2){
+                
+                fila = Integer.valueOf(tf1.getText());
+                columna = Integer.valueOf(tf2.getText());
+                matrix = new int[fila][columna];
+                randomMatrix();
+                
+                
+                
+                
+        }
+        return true;
     }
-    c static void subString(char str[], int n) {
-        // Pick starting point
-        r
-        for (int len = 1; len <= n; len++) {
-            // Pick ending point
-            r
-            for (int i = 0; i <= n - len; i++) {
-                // Print characters from current
-                // starting point to current ending
-                // point.
-                int j = i + len - 1;
-                g String x = "";
-                r
-                for (int k = i; k <= j; k++) {
-                    x += str[k];
-                    System.out.print(str[k]);
-                }
-                permutaciones.add(x);
-                //System.out.println();
+    
+   
+    
+    
+    int matrix[][],fila,columna;
+    int sumcol[]= new int[1000];
+    int mincol[]= new int[1000];
+    
+    public void randomMatrix(){
+        Random random = new Random();
+        
+        for(int i=0;i<columna;++i){
+            mincol[i]=Integer.MAX_VALUE;
+        }
+        
+        for(int i=0;i<fila;++i){
+            for(int j=0;j<columna;++j){
+                int rnd = 10+random.nextInt(90);
+                
+                matrix[i][j]=rnd;
+                sumcol[j]+=rnd;
+                mincol[j] = Math.min(rnd, mincol[j]);
+                
             }
         }
-    }
-    c public void init() {
-        char str[] = w new char[s.length()];
-        for (int i = 0; i < s.length(); ++i) {
-            str[i] = s.charAt(i);
+        
+
+        
+        for(int i=0;i<fila;++i){
+            for(int j=0;j<columna;++j){
+                ta.append("["+matrix[i][j]+"] ");
+            }
+            ta.append("\n");
         }
-        subString(str, s.length());
-        y
-        try {
-            java.awt.EventQueue.invokeAndWait(w new Runnable() {
-                c public void run() {
-                    initComponents();
-                }
-            });
+        ta.append("\n");
+        ta.append("Sumatoria por Columna: \n");
+        for(int i=0;i<columna;++i){
+            ta.append(""+sumcol[i]+" ");
         }
-        h
-        catch (n Exception ex) {
-            ex.printStackTrace();
+        ta.append("\n");
+        ta.append("Minimo por Columna: \n");
+        for(int i=0;i<columna;++i){
+            ta.append(""+mincol[i]+" ");
         }
+        
     }
-    @Override
-    c public void paint(Graphics g) {
-        g.drawString("Cadena: " + s, 16, 16);
-        g.drawString("Subcadenas:", 16, 32);
-        for (int i = 0; i < permutaciones.size(); ++i) {
-            g.drawString("" + (i + 1) + "- " + permutaciones.get(i), 16, 48 + i * 20);
-        }
+    
+    public void init() {
+        
+      addKeyListener( this );
+        ls = new Label("Matriz:"); 
+        ls1 = new Label("[ n"); 
+        tf1 = new TextField(20);
+        ls2 = new Label("x m");
+        tf2 = new TextField(20); 
+        ls3 = new Label("]");
+        ta = new TextArea(20,60);
+        
+        this.add(ls);
+        this.add(ls1);
+        this.add(tf1);
+        this.add(ls2);
+        this.add(tf2);
+        this.add(ls3);
+        this.add(ta);
+        
+        
+        
     }
-    e private void initComponents() {
-        setLayout(w new java.awt.BorderLayout());
-    }
+
+    // TODO overwrite start(), stop() and destroy() methods
 }
