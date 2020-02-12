@@ -1,6 +1,0 @@
-﻿  RT1WK.cpp
-c:\users\asus\source\repos\rt1wk\rt1wk\rt1wk.cpp(16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\asus\source\repos\rt1wk\rt1wk\rt1wk.cpp(17): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\asus\source\repos\rt1wk\rt1wk\rt1wk.cpp(17): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-c:\users\asus\source\repos\rt1wk\rt1wk\rt1wk.cpp(56): warning C4305: 'argumento': truncamiento de 'double' a 'const float'
-  RT1WK.vcxproj -> C:\Users\Asus\source\repos\RT1WK\Debug\RT1WK.exe
