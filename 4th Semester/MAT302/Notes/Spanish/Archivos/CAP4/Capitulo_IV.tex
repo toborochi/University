@@ -47,3 +47,57 @@ Si $Sesgo(\widehat{\Theta})=0$, entonces $\widehat{\Theta}$ es un estimador inse
 \subsubsection{EMC}
 $$ ECM(\Theta) = E[(\widehat{\Theta}-\Theta)^2] = V(\Theta) + (Sesgo(\Theta))^2$$
 \section{Estimación por Intervalo}
+Consiste en la estimación de un parámetro poblacional mediante la obtención de un intervalo aleatorio llamado \textbf{Intervalo de Confianza} cuyos limites superior e inferior:
+$$ L_i \wedge L_s $$
+Son funciones de las v.a. observadas que dependen de cierto estimador $\widehat{\Theta}$ parametro $\Theta$ con una probabilidad:
+$$ 1-\alpha$$
+que representa el nivel o coeficiente de confianza deseado, esto es, probabilidad de que el parámetro esté comprendido:
+$$\mathcal{P}(L_i \leq \Theta \leq L_s) = 1-\alpha$$
+El objetivo de la estimación por intervalo es obtener, el intervalo:
+$$L_i \leq \Theta \leq L_s$$
+y se espera que $100(1-\alpha)\%$ de ello, abarque  el parametro de la población $\Theta$.
+\subsection{Formulación General de los Intervalos}
+Consideremos $z = \dfrac{\widehat{\Theta}-\Theta}{\sigma_\Theta}$ de aquí; se tiene:
+\begin{align*}
+&\mathcal{P}\left( -z_{1-\dfrac{\sigma}{2}} \leq z \leq  z_{1-\dfrac{\sigma}{2}} \right) = 1-\sigma \\
+\Leftrightarrow & \mathcal{P}\left(-z_{1-\dfrac{\sigma}{2}} \leq \dfrac{\widehat{\Theta}-\Theta}{\sigma_\Theta} \leq  z_{1-\dfrac{\sigma}{2}}   \right) = 1-\sigma \\
+\Leftrightarrow & \mathcal{P}\left(-z_{1-\dfrac{\sigma}{2}}\cdot\sigma_\Theta \leq \widehat{\Theta}-\Theta \leq  z_{1-\dfrac{\sigma}{2}} \cdot \sigma_\Theta  \right) = 1-\sigma \\ 
+\Leftrightarrow & \mathcal{P}\left(-z_{1-\dfrac{\sigma}{2}}\cdot\sigma_\Theta - \widehat{\Theta} \leq -\Theta \leq  z_{1-\dfrac{\sigma}{2}} \cdot \sigma_\Theta -\widehat{\Theta} \right) = 1-\sigma \\
+\Leftrightarrow & \mathcal{P}\left( z_{1-\dfrac{\sigma}{2}}\cdot\sigma_\Theta + \widehat{\Theta} \geq \Theta \geq  -z_{1-\dfrac{\sigma}{2}} \cdot \sigma_\Theta +\widehat{\Theta} \right) = 1-\sigma \\
+\Leftrightarrow & \mathcal{P}\left( -z_{1-\dfrac{\sigma}{2}}\cdot\sigma_\Theta + \widehat{\Theta} \leq \Theta \leq    z_{1-\dfrac{\sigma}{2}} \cdot \sigma_\Theta +\widehat{\Theta} \right) = 1-\sigma 
+\end{align*}
+\subsection{Interpretación de Intervalo de Confianza}
+Si se selecciona repetidamente 100 veces muestras de tamaño $n$ tendremos 100 intervalos semejantes al estimador $\widehat{\Theta}\pm z_{\pm \dfrac{\alpha}{2}}\cdot \sigma_{\widehat{\Theta}}$ y esperamos que $100(1-\alpha)\%$ incluyan al parametro y $100\alpha\%$ no lo incluirá.
+%TODO Falta Graficos
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  no markers, domain=0:8, samples=100,
+  axis lines*=left, xlabel=$\widehat{\theta}$, ylabel=$f(\widehat{\theta})$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+  \addplot [fill=red!20, draw=none, domain=0:2.5] {gauss(4,1.5)} \closedcycle;
+  \addplot [fill=red!20, draw=none, domain=5.5:8] {gauss(4,1.5)} \closedcycle;
+  \addplot [very thick,black!50!black,line width=0.2mm] {gauss(4,1.5)};
+  \node[below] at (axis cs:4,0)  {$\theta$}; 
+  \node[below] at (axis cs:2.5,0)  {$L_i$}; 
+  \node[below] at (axis cs:5.5,0)  {$L_s$}; 
+  
+  \draw [very thick, dotted,line width=0.2mm]  (axis cs:2.5,0) -- (axis cs:2.5,0.16);
+    \draw [very thick, dotted,line width=0.2mm]  (axis cs:5.5,0) -- (axis cs:5.5,0.16);
+    \draw [very thick, dotted,line width=0.2mm]  (axis cs:4,0) -- (axis cs:4,0.27);
+    
+    \draw (2,0.05) node[] {$\dfrac{\alpha}{2}$};
+    \draw (6,0.05) node[] {$\dfrac{\alpha}{2}$};
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
+\section{Estimaciones por Intervalo}
