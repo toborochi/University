@@ -68,7 +68,6 @@ Consideremos $z = \dfrac{\widehat{\Theta}-\Theta}{\sigma_\Theta}$ de aquí; se t
 \end{align*}
 \subsection{Interpretación de Intervalo de Confianza}
 Si se selecciona repetidamente 100 veces muestras de tamaño $n$ tendremos 100 intervalos semejantes al estimador $\widehat{\Theta}\pm z_{\pm \dfrac{\alpha}{2}}\cdot \sigma_{\widehat{\Theta}}$ y esperamos que $100(1-\alpha)\%$ incluyan al parametro y $100\alpha\%$ no lo incluirá.
-%TODO Falta Graficos
 
 \begin{center}
 \begin{tikzpicture}
@@ -100,4 +99,73 @@ Si se selecciona repetidamente 100 veces muestras de tamaño $n$ tendremos 100 i
 
 \end{tikzpicture}
 \end{center}
-\section{Estimaciones por Intervalo}
+\subsection{Estimación por Intervalo de la media Poblacional}
+\begin{enumerate}[label=\textbf{(\Roman*)}]
+  \item $\mathcal{P}\left(\bar{x} - z_{1-\dfrac{\alpha}{2}}\cdot \dfrac{\sigma}{\sqrt{n}}\leq \mu \leq \bar{x} + z_{1-\dfrac{\alpha}{2}}\cdot \dfrac{\sigma}{\sqrt{n}} \right)=1-\alpha$\\${ }$\\
+  La estadística $z$ se usa en los siguientes casos:
+  \begin{enumerate}[label=\textbf{(\roman*)}]
+  \item Muestra grande, Varianza Poblacional conocida y Poblacion normal o no.
+  \item Muestra pequeña, Varianza Poblacional conocida y población normal.
+  \item Muestra grande, Varianza desconocida y poblacion normal o no. 
+  \end{enumerate}
+  \item $\mathcal{P}\left(\bar{x} - t_{1-\dfrac{\alpha}{2}}(r)\cdot \dfrac{\widehat{S}}{\sqrt{n}}\leq \mu \leq \bar{x} + t_{1-\dfrac{\alpha}{2}}(r)\cdot \dfrac{\widehat{S}}{\sqrt{n}} \right)=1-\alpha$\\
+  La estadística $t$ se usa cuando:
+  \begin{enumerate}[label=\textbf{(\roman*)}]
+  \item %TODO
+  \item La varianza poblacional es desconocida.
+  \item La poblacion debe ser normal
+  \end{enumerate}
+\end{enumerate}
+Donde: $r = n - 1$ \textbf{g.l.}
+\subsection{Estimación por Intervalo de la Diferencia o suma de medias}
+\begin{enumerate}[label=\textbf{(\Roman*)}]
+  \item $\mathcal{P}\left( (\bar{x}\pm\bar{y}) - z_{1-\dfrac{\alpha}{2}}\cdot \sqrt{\dfrac{\sigma_{x}^2}{n_1}+\dfrac{\sigma_{y}^2}{n_2}} \leq \mu_x\pm\mu_y \leq (\bar{x}\pm\bar{y}) + z_{1-\dfrac{\alpha}{2}}\cdot \sqrt{\dfrac{\sigma_{x}^2}{n_1}+\dfrac{\sigma_{y}^2}{n_2}} \right)=1-\alpha$ \\${ }$\\
+  La Estadística $z$ se aplica en los siguientes casos:
+  \begin{enumerate}[label=\textbf{(\roman*)}]
+  \item Muestras grandes, varianza poblacional conocida y población normal o no.
+  \item Muestra pequeña, varianzas poblacionales conocidos y población normal.
+  \item Muestra grande, variables poblacionales desconocidos y población normal o no.
+  \end{enumerate}
+  $$ \sigma_x^2 \simeq S_x^2 \hspace{0.5cm} \wedge \hspace{0.5cm} \sigma_y^2 \simeq S_y^2 $$
+  \item $\mathcal{P}\left( (\bar{x}\pm\bar{y})-t_{1-\dfrac{\alpha
+  }{2}}(r)\cdot\beta\leq \mu_x\pm\mu_y \leq (\bar{x}\pm\bar{y})+t_{1-\dfrac{\alpha
+  }{2}}(r)\cdot\beta\right)=1-\alpha$\vspace{0.5cm}\\${ }$\\
+	La Estadística $t$ se usa cuando:  
+  \begin{enumerate}[label=\textbf{(\roman*)}]
+  \item La muestra pequeña.
+  \item Varianzas poblacionales desconocidas.
+  \item Poblaciones son normales.
+  \end{enumerate}
+  Donde:
+  \begin{itemize}
+  \item $\beta = \sqrt{\dfrac{(n_1-1)\hat{S_x}^2+(n_2-1)\hat{S_y}^2}{n_1+n_2-2}\cdot\left(\dfrac{1}{n_1}+\dfrac{1}{n_2}\right)}$
+  \item $r=n_1+n_2-2$ \textbf{g.l.}
+   \end{itemize}
+\end{enumerate}
+\subsection{Estimación por Intervalo para Proporciones}
+\begin{enumerate}[label=\textbf{(\Roman*)}]
+\item $\mathcal{P}\left(\hat{p}-z_{1-\dfrac{\alpha}{2}}\cdot\sqrt{\dfrac{\hat{p}(1-\hat{p})}{n}}\leq p \leq \hat{p}+z_{1-\dfrac{\alpha}{2}}\cdot\sqrt{\dfrac{\hat{p}(1-\hat{p})}{n}}  \right)=1-\alpha$
+\item $\mathcal{P}\left((\widehat{p_1}\pm\widehat{p_2})-z_{1-\dfrac{\alpha}{2}}\cdot\beta\leq p_1\pm p_2\leq (\widehat{p_1}\pm\widehat{p_2})+z_{1-\dfrac{\alpha}{2}}\cdot\beta\right)=1-\alpha$\\
+ Donde:
+  \begin{itemize}
+  \item $\beta = \sqrt{\dfrac{\hat{p_1}(1-\hat{p_1})}{n_1}+\dfrac{\hat{p_2}(1-\hat{p_2})}{n_2}} $
+   \end{itemize}
+\end{enumerate}
+Si alguna de las poblaciones binomiales son finitos se debe incorporar el factor de correción por población finita.
+\subsection{Relación entre el Error de Estimación y el Riesgo de Estimación}
+$$ E=|\widehat{\Theta}-\Theta | \text{ Estimador - Parámetro)} $$
+
+$$z = \dfrac{\widehat{\Theta}-\Theta}{\sigma_{\widehat{\Theta}}}$$ \\{ }\\
+$$ -z_{1-\dfrac{\alpha}{2}} \leq z \leq z_{1-\dfrac{\alpha}{2}} $$
+
+\subsection{Relación entre el Error de Estimación y el tamaño de la Muestra}
+\begin{enumerate}[label=\textbf{(\Roman*)}]
+  \item En la Distribución de la \textbf{Media Muestral}
+  \begin{align*}
+  E=|\overline{x}-\mu| \Rightarrow & E\geq z_{1-\dfrac{\alpha}{2}} \sigma_{\overline{x}} \\
+  			     \Rightarrow & E\geq z_{1-\dfrac{\alpha}{2}} \dfrac{\sigma}{\sqrt{n}}\\
+  			     \Rightarrow & \sqrt{n}\geq  \dfrac{z_{1-\dfrac{\alpha}{2}}\cdot\sigma}{E} \\
+  			     \Rightarrow & n\geq  \left(\dfrac{z_{1-\dfrac{\alpha}{2}}\cdot\sigma}{E}\right)^2
+  \end{align*}
+  \item En la Distribución de la \textbf{Proporción Muestral}
+\end{enumerate}
