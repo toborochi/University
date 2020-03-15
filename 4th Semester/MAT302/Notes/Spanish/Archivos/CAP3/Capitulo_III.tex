@@ -1,0 +1,49 @@
+\chapter{Muestreo y Distribuciones de Muestreo}
+\section{Distribuciones de Muestreo}
+\subsection{Estadígrafos y Estadísticos}
+\subsubsection*{Estadígrafos}
+Es todo número $\widehat{\Theta}$ obtenido a partir de los datos muestrales con el proposito de estimar los parámetros poblacionales.
+$$ \widehat{\Theta}_1 = f(x_1,x_2,\ldots,x_n)$$
+donde $x_1,x_2,\ldots,x_n$ son los valores muestrales de las correspondientes v.a. $X_1,X_2,\ldots,X_n$, es decir un estadigrafo es un número obtenido por una función únicamente de las v.a.
+$$X_1,X_2,\ldots,X_n$$
+\subsubsection*{Estadística o Estadístico}
+Si seleccionamos $k$ muestras aleatorias de la misma población, obtendremos $k$ valores para $\widehat{\Theta}$, tambien aleatorios. Así $\widehat{\Theta}$ es a su vez una v.a. llamada estadística o estadístico cuyos valores son estadígrafos.
+\subsection{Desigualdad Chebyshev}
+Si $X$ es una v.a. con una media $\mu$ y varianza $\sigma^2$ entonces:
+$$ P(|x-\mu| < k\sigma ) \geq 1 - \dfrac{1}{k^2} \text{;\hspace{1cm} donde $k>0$}$$
+Si $X$ es v.a. normal, entonces:
+\begin{align*}
+P(|x-\mu| < k\sigma ) = & P( -k\sigma < x-\mu < k\sigma ) \\
+			    =  &   P( -k < z < k ) \\
+			     = & \O(k)- \O(-k) \\
+			      =&\O(k) - (1-\O(k))\\
+			      =& 2\O(k) -1
+\end{align*}
+
+$$\therefore P(|x-\mu| < k\sigma ) = 2\O(k)-1$$
+\section{Distribución de la Media Muestral}
+Si:
+$$X \sim f(x;\mu,\sigma^2)$$
+
+donde: $E(x) = \mu$ y $V(x) =\sigma^2$, entonces:
+$$E(\overline{x}) = \mu_{\overline{x}} = \mu$$
+
+$$
+V(\overline{x}) = \sigma^2_{\overline{x}}= 
+\begin{cases}
+\dfrac{\sigma^2}{n} ;&\text{si la poblacion es infinita}\\
+& \\
+\dfrac{\sigma^2}{n}\left(\dfrac{N-n}{N-1}\right) ;& \text{si la poblacion es finita de tamaño $N$.}
+\end{cases}
+$$
+donde: $\dfrac{N-n}{N-1}$ es el factor de corrección por poblacion finita.
+\subsubsection{Demostración}
+Sea $\{x_1,x_2,\ldots,x_n\}$ donde $x_1,x_2,\ldots,x_n$ son los valores muestrales de las v.a.'s independientes tales que:
+\begin{align*}
+E(\overline{x}) =& E\left(\dfrac{\displaystyle\sum_{i=1}^{n} x_i}{n}\right) = \dfrac{1}{n}E\left(  \displaystyle\sum_{i=1}^{n} x_i \right) \\
+=& \dfrac{1}{n} \left(  \displaystyle\sum_{i=1}^{n} E(x_i) \right) \\ 
+=& \dfrac{1}{n}\displaystyle\sum_{i=1}^{n} \mu \\
+=& \dfrac{1}{n} (n\mu) \\
+=& \mu
+\end{align*}
+$\therefore E(\overline{x}) = \mu$

@@ -1,0 +1,49 @@
+\chapter{Estimación Estadística}
+La Estimación Estadística es parte de la inferencia estadistica, cuyo objetivo es estimar los parámetros de una población mediante muestras aleatorias provenientes de ellas. Existen básicamente dos formas de estimación de un parámetro poblacional: Estimación Puntual y Estimación por Intervalo.
+\section{Estimación Puntual}
+Sean $X_1,X_2,\ldots,X_n$ m.a.'s de tamaño $n$, seleccionada de una población, cuya distribución es $f(x,\theta)$ siendo $\theta$ el parámetro. Se denomina \textbf{Estimador Puntual} del parámetro $\theta$ a cualquier estadístico (v.a.) $\widehat{\theta}=H(X_1,X_2,\ldots,X_n)$, cuyo valor numérico (estadígrafo) proporcionará una \textbf{Estimación Puntual} del parametro $\theta$.
+\begin{center}
+ \begin{tabular}{|c|c|}
+\hline 
+Parámetros & Estadígrafos \\ 
+\hline 
+$\mu$ & $\bar{x}$ \\ 
+$\sigma^2$ & $S^2$ ó $\hat{S}^2$ \\
+$p,\pi$ & $\hat{p},\hat{\pi}$\\
+\hline 
+\end{tabular}
+ \end{center} 
+\subsection{Propiedades de los Estimadores Puntuales}
+No toda función de la muestra es un buen estimador de parametro. Un buen estimador es aquel que está mas cerca del parametro que se estima. Para que un estimador puntual sea bueno, debe poseer ciertas propiedades como:
+\begin{itemize}
+\item Insesgadez (Insesgabilidad)
+\item Eficiencia
+\item Consistencia
+\item Suficiencia
+\end{itemize}
+\subsubsection{Estimador Insesgado}
+$\widehat{\Theta}$ es un estimador Insesgado del parametro $\Theta$:
+$$E(\widehat{\Theta})=\Theta$$
+\subsubsection{Estimador Eficiente}
+$\widehat{\Theta}_1$ es un estimador mas eficiente que $\widehat{\Theta}_2$ (ambos insesgados) del parametro $\Theta$ ssi:
+$$ V(\widehat{\Theta}_1) < V(\widehat{\Theta}_2) $$
+\subsubsection{Estimador Consistente}
+$\widehat{\Theta}$ es un estimador consistente del parametro $\Theta$ ssi:
+$$
+\begin{cases}
+\textbf{i)} \displaystyle\lim_{x\to\infty} E(\widehat{\Theta})=0 \\
+\textbf{ii)} \displaystyle\lim_{x\to\infty} V(\widehat{\Theta})=0
+\end{cases}
+$$
+\subsubsection{Estimador Suficiente}
+$\widehat{\Theta}$ es un estimador suficiente con parametro  $\Theta$ ssi: \\${ }$\\
+
+``$\widehat{\Theta}$ aporta tanta informacion acerca de los parametros que se estiman, tomando una muestra del parametro.''
+\subsection{Sesgo y Error Cuadrático Medio de un Estimador (ECM)}
+\subsubsection{Sesgo}
+Sesgo del estimador $\widehat{\Theta}$:
+$$Sesgo(\widehat{\Theta}) =  E(\widehat{\Theta}) - \Theta$$
+Si $Sesgo(\widehat{\Theta})=0$, entonces $\widehat{\Theta}$ es un estimador insesgado:
+\subsubsection{EMC}
+$$ ECM(\Theta) = E[(\widehat{\Theta}-\Theta)^2] = V(\Theta) + (Sesgo(\Theta))^2$$
+\section{Estimación por Intervalo}
