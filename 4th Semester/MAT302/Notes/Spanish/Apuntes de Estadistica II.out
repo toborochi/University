@@ -39,15 +39,17 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{Estad\355grafos y Estad\355sticos}{section.3.1}% 39
 \BOOKMARK [2][-]{subsection.3.1.2}{Desigualdad Chebyshev}{section.3.1}% 40
 \BOOKMARK [1][-]{section.3.2}{Distribuci\363n de la Media Muestral}{chapter.3}% 41
-\BOOKMARK [0][-]{chapter.4}{Estimaci\363n Estad\355stica}{}% 42
-\BOOKMARK [1][-]{section.4.1}{Estimaci\363n Puntual}{chapter.4}% 43
-\BOOKMARK [2][-]{subsection.4.1.1}{Propiedades de los Estimadores Puntuales}{section.4.1}% 44
-\BOOKMARK [2][-]{subsection.4.1.2}{Sesgo y Error Cuadr\341tico Medio de un Estimador \(ECM\)}{section.4.1}% 45
-\BOOKMARK [1][-]{section.4.2}{Estimaci\363n por Intervalo}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.2.1}{Formulaci\363n General de los Intervalos}{section.4.2}% 47
-\BOOKMARK [2][-]{subsection.4.2.2}{Interpretaci\363n de Intervalo de Confianza}{section.4.2}% 48
-\BOOKMARK [2][-]{subsection.4.2.3}{Estimaci\363n por Intervalo de la media Poblacional}{section.4.2}% 49
-\BOOKMARK [2][-]{subsection.4.2.4}{Estimaci\363n por Intervalo de la Diferencia o suma de medias}{section.4.2}% 50
-\BOOKMARK [2][-]{subsection.4.2.5}{Estimaci\363n por Intervalo para Proporciones}{section.4.2}% 51
-\BOOKMARK [2][-]{subsection.4.2.6}{Relaci\363n entre el Error de Estimaci\363n y el Riesgo de Estimaci\363n}{section.4.2}% 52
-\BOOKMARK [2][-]{subsection.4.2.7}{Relaci\363n entre el Error de Estimaci\363n y el tama\361o de la Muestra}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.3.2.1}{Distribuci\363n de Muestras de la diferencia o suma de Medias}{section.3.2}% 42
+\BOOKMARK [2][-]{subsection.3.2.2}{Distribuci\363n de la Proporci\363n Muestral}{section.3.2}% 43
+\BOOKMARK [0][-]{chapter.4}{Estimaci\363n Estad\355stica}{}% 44
+\BOOKMARK [1][-]{section.4.1}{Estimaci\363n Puntual}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.1.1}{Propiedades de los Estimadores Puntuales}{section.4.1}% 46
+\BOOKMARK [2][-]{subsection.4.1.2}{Sesgo y Error Cuadr\341tico Medio de un Estimador \(ECM\)}{section.4.1}% 47
+\BOOKMARK [1][-]{section.4.2}{Estimaci\363n por Intervalo}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.2.1}{Formulaci\363n General de los Intervalos}{section.4.2}% 49
+\BOOKMARK [2][-]{subsection.4.2.2}{Interpretaci\363n de Intervalo de Confianza}{section.4.2}% 50
+\BOOKMARK [2][-]{subsection.4.2.3}{Estimaci\363n por Intervalo de la media Poblacional}{section.4.2}% 51
+\BOOKMARK [2][-]{subsection.4.2.4}{Estimaci\363n por Intervalo de la Diferencia o suma de medias}{section.4.2}% 52
+\BOOKMARK [2][-]{subsection.4.2.5}{Estimaci\363n por Intervalo para Proporciones}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.6}{Relaci\363n entre el Error de Estimaci\363n y el Riesgo de Estimaci\363n}{section.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.2.7}{Relaci\363n entre el Error de Estimaci\363n y el tama\361o de la Muestra}{section.4.2}% 55

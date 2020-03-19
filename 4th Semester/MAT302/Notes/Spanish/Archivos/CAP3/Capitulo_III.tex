@@ -39,6 +39,14 @@ $$
 donde: $\dfrac{N-n}{N-1}$ es el factor de corrección por poblacion finita.
 \subsubsection{Demostración}
 Sea $\{x_1,x_2,\ldots,x_n\}$ donde $x_1,x_2,\ldots,x_n$ son los valores muestrales de las v.a.'s independientes tales que:
+
+$$ \forall i\in I
+\begin{cases}
+E(x_i) =&\mu \\
+V(x_i) =&\sigma^2
+\end{cases}
+$$
+
 \begin{align*}
 E(\overline{x}) =& E\left(\dfrac{\displaystyle\sum_{i=1}^{n} x_i}{n}\right) = \dfrac{1}{n}E\left(  \displaystyle\sum_{i=1}^{n} x_i \right) \\
 =& \dfrac{1}{n} \left(  \displaystyle\sum_{i=1}^{n} E(x_i) \right) \\ 
@@ -47,3 +55,24 @@ E(\overline{x}) =& E\left(\dfrac{\displaystyle\sum_{i=1}^{n} x_i}{n}\right) = \d
 =& \mu
 \end{align*}
 $\therefore E(\overline{x}) = \mu$
+%TODO Falta hacer la demostracion de V(x)
+\subsection{Distribución de Muestras de la diferencia o suma de Medias}
+\subsection{Distribución de la Proporción Muestral}
+\begin{enumerate}[label=\textbf{(\Roman*)}]
+\item Si la estadística $\widehat{p}$ es la proporción de éxitos en una m.a. de tamaño $n$ extraída de una población binomial infinita con proporción de éxitos $p$, entonces:
+
+ $$z=\dfrac{\widehat{p}-p}{\sqrt{\dfrac{p(1-p)}{n}}}$$
+ es una v.a. cuya distribución se aproxima a la normal estándar cuando $n\rightarrow\infty$. \\
+ Si la población binomial es finita de tamaño $N$, entonces:
+ $$z=\dfrac{\widehat{p}-p}{\sqrt{\dfrac{p(1-p)}{n}}\left(\dfrac{N-n}{N-1}\right)}$$
+ Ademas, como se pasa de una v.a. discreta (binomial) a una continua (normal), se debe introducir el factor de corrección de cantidad $\dfrac{1}{2n}$, sumando este factor al límite superior y restando al límite inferior.
+ $$\hat{p}=\dfrac{x}{n}$$
+Si $n$ es suficientemente grande, se puede obviar el factor de corrección:
+  $$E(\hat{p})=\mu_{\hat{p}}=p$$
+  $$V(\hat{p})=\sigma_{\hat{p}}^2=\dfrac{p(1-p)}{n}$$
+\item Si las estadísticas $\widehat{p_1},\widehat{p_2}$ son las proporciones de éxito en m.a.'s $n_1,n_2$ extraídas de dos poblaciones binomiales infinitas con proporción de éxito $p_1,p_2$ respectivamente, entonces:
+$$z=\dfrac{(\hat{p_1}-\hat{p_2})-(p_1-p_2)}{\sqrt{\dfrac{p_1(1-p_1)}{n_1}+\dfrac{p_2(1-p_2)}{n_2}}}$$
+es una v.a. cuya distribución se aproxima a la normal estandar cuando $n_1,n_2\rightarrow\infty$. \\
+Si las poblaciones binomiales son finitas de tamaño $N_1,N_2$ respectivamente, entonces:
+$$z=\dfrac{(\hat{p_1}-\hat{p_2})-(p_1-p_2)}{\sqrt{\dfrac{p_1(1-p_1)}{n_1}\left( \dfrac{N_1-n_1}{N_1-1}\right) +\dfrac{p_2(1-p_2)}{n_2}\left( \dfrac{N_2-n_2}{N_2-1}\right) }}$$
+\end{enumerate}

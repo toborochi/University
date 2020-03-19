@@ -152,12 +152,29 @@ Donde: $r = n - 1$ \textbf{g.l.}
    \end{itemize}
 \end{enumerate}
 Si alguna de las poblaciones binomiales son finitos se debe incorporar el factor de correción por población finita.
+\subsubsection{Tabla: Coeficientes de Confianza o valores críticos $(1-\frac{\alpha}{2})$}
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline 
+$1-\alpha$ & 0.9973 & 0.99 & 0.98 & 0.96 & 0.9545 & 0.95 & 0.90 & 0.68 \\ 
+\hline 
+$100(1-\alpha)\%$ & 99.73 & 99 & 98 & 96 & 95.45 & 95 & 90 & 68 \\ 
+\hline 
+$z_{1-\frac{\alpha}{2}}$ & 3.00 & 2.58 & 2.33 & 2.05 & 2.00 & 1.96 & 1.64 & 1.00 \\ 
+\hline
+\end{tabular}
+ \end{center} 
+
 \subsection{Relación entre el Error de Estimación y el Riesgo de Estimación}
-$$ E=|\widehat{\Theta}-\Theta | \text{ Estimador - Parámetro)} $$
+$$ E=|\widehat{\Theta}-\Theta | \text{ (Estimador - Parámetro)} $$
 
 $$z = \dfrac{\widehat{\Theta}-\Theta}{\sigma_{\widehat{\Theta}}}$$ \\{ }\\
 $$ -z_{1-\dfrac{\alpha}{2}} \leq z \leq z_{1-\dfrac{\alpha}{2}} $$
-
+  $$\Updownarrow$$
+  $$ -z_{1-\dfrac{\alpha}{2}} \leq \dfrac{\widehat{\theta}-\theta}{\sigma_{\widehat{\theta}}} \leq z_{1-\dfrac{\alpha}{2}} $$
+  $$-z_{1-\dfrac{\alpha}{2}}\cdot\sigma_{\widehat{\theta}} \leq {\widehat{\theta}-\theta} \leq z_{1-\dfrac{\alpha}{2}}\cdot\sigma_{\widehat{\theta}}$$
+  $$|{\widehat{\theta}-\theta} | < z_{1-\dfrac{\alpha}{2}}\cdot\sigma_{\widehat{\theta}} $$
+  $$ E  < z_{1-\dfrac{\alpha}{2}}\cdot\sigma_{\widehat{\theta}}$$
 \subsection{Relación entre el Error de Estimación y el tamaño de la Muestra}
 \begin{enumerate}[label=\textbf{(\Roman*)}]
   \item En la Distribución de la \textbf{Media Muestral}
@@ -168,4 +185,20 @@ $$ -z_{1-\dfrac{\alpha}{2}} \leq z \leq z_{1-\dfrac{\alpha}{2}} $$
   			     \Rightarrow & n\geq  \left(\dfrac{z_{1-\dfrac{\alpha}{2}}\cdot\sigma}{E}\right)^2
   \end{align*}
   \item En la Distribución de la \textbf{Proporción Muestral}
+  \begin{multicols}{3}
+\begin{itemize}
+\item $n=\dfrac{z_{1-\dfrac{\alpha}{2}}^2\cdot p\cdot q}{E^2}$
+\end{itemize}
+Población Infinita
+\columnbreak
+\begin{itemize}
+\item $n=\dfrac{z_{1-\dfrac{\alpha}{2}}^2}{4E^2}$
+\end{itemize}
+$q = p = 0.5 $
+\columnbreak
+\begin{itemize}
+\item $n=\dfrac{N\cdot z_{1-\dfrac{\alpha}{2}}^2 \cdot p\cdot q}{(N-1)E^2 + z_{1-\dfrac{\alpha}{2}}^2 \cdot p\cdot q}$
+\end{itemize}
+Población Finita
+\end{multicols}
 \end{enumerate}
