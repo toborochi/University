@@ -21,6 +21,8 @@ P(|x-\mu| < k\sigma ) = & P( -k\sigma < x-\mu < k\sigma ) \\
 \end{align*}
 
 $$\therefore P(|x-\mu| < k\sigma ) = 2\O(k)-1$$
+\section{Distribución de Muestreo}
+Si $\widehat{\Theta} = \overline{x}$ la distribución de la estadística $\overline{x}$ se llama \textbf{distribución de la media muestral} o distribución de muestreo de la media. Si $\widehat{\Theta}=S^2$, la distribución de la estadística $S^2$ se llama \textbf{distribución de la varianza muestral} o distribución de muestreo de la varianza.
 \section{Distribución de la Media Muestral}
 Si:
 $$X \sim f(x;\mu,\sigma^2)$$
@@ -57,6 +59,22 @@ E(\overline{x}) =& E\left(\dfrac{\displaystyle\sum_{i=1}^{n} x_i}{n}\right) = \d
 $\therefore E(\overline{x}) = \mu$
 %TODO Falta hacer la demostracion de V(x)
 \subsection{Distribución de Muestras de la diferencia o suma de Medias}
+\begin{enumerate}[label=\textbf{(\Roman*)}]
+\item Si $\overline{x},\overline{y}$ son las medias de m.a.'s independientes de tamaño $n_1,n_2$, extraidas de dos poblaciones infinitas con medias $\mu_x,\mu_y$ y varianza $\sigma_{x}^2,\sigma_{y}^2$, respectivamente:
+$$z=\dfrac{(\bar{x}\pm\bar{y})-(\mu_x\pm\mu_y)}{\sqrt{\dfrac{\sigma_{x}^2}{n_1}+\dfrac{\sigma_{y}^2}{n_2}}}$$
+es una v.a cuya distribución se \textbf{aproxima} a la normal estándar cuando $n_1,n_2\rightarrow\infty$. \\
+Si las poblaciones son normales $z$ es una v.a. cuya distribución es \textbf{exactamente} la normal estándar, aun cuando $n_1$ o $n_2$ sean pequeños.\\Si las poblaciones son finitas de tamaño $N_1,N_2$, respectivamente, entonces:
+$$z=\dfrac{(\bar{x}\pm\bar{y})-(\mu_x\pm\mu_y)}{\sqrt{\dfrac{\sigma_{x}^2}{n_1}\left(\dfrac{N_1-n_1}{N_1 - 1}\right)  +\dfrac{\sigma_{y}^2}{n_2}}\left(\dfrac{N_2-n_2}{N_2 - 1}\right)}  $$
+\item Distribución $t$-Student \\${ }$\\
+Distribución de la diferencia o suma de medias, cuando las varianzas poblacionales son desconodidas, muestras pequeñas y poblaciones normales homoceclásticas. \\
+Si $\overline{x},\overline{y}$, son las medias de m.a.'s independientes de tamaño $n_1,n_2$ (ambos pequeños), extraídos de dos poblaciones normales homoceclasticas, con media $\mu_x,\mu_y$ y varianzas poblacionales desconocidas, entonces:
+$$t=\dfrac{(\bar{x}\pm\bar{y})-(\mu_x\pm\mu_y)}{\sqrt{\dfrac{(n_1-1)\hat{S}_x^2+(n_2-1)\hat{S}_y^2}{n_1 + n_2 - 2}\left( \dfrac{1}{n_1}+\dfrac{1}{n_2} \right) }}$$
+es el valor de una v.a. cuya distribución es la $t$-Student con:
+$r = n_1 +n_2 -2$ \textbf{g.l.}
+\item Si las muestras grandes y las varianzas muestrales son desconocidas estas se pueden estimar a partir de las varianzas muestrales ordinarias:
+$$ \sigma_{x}^2 \simeq S_{x}^2 , \sigma_{y}^2 \simeq S_{y}^2$$
+Y en lugar de usar $t$, se usa $z$, y esto es valido aun en los casos en los que las poblaciones no sean normales.
+\end{enumerate}
 \subsection{Distribución de la Proporción Muestral}
 \begin{enumerate}[label=\textbf{(\Roman*)}]
 \item Si la estadística $\widehat{p}$ es la proporción de éxitos en una m.a. de tamaño $n$ extraída de una población binomial infinita con proporción de éxitos $p$, entonces:
