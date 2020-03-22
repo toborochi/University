@@ -191,7 +191,49 @@ f(x) =
 $$
 Parámetros: $a,b$ \\$ { } $\\
 La gráfica de esta función se muestra en la siguiente figura:
-%PENDIENTE
+
+\begin{center}
+\begin{tikzpicture}[
+    declare function={gamma(\z)=
+    2.506628274631*sqrt(1/\z)+ 0.20888568*(1/\z)^(1.5)+ 0.00870357*(1/\z)^(2.5)- (174.2106599*(1/\z)^(3.5))/25920- (715.6423511*(1/\z)^(4.5))/1244160)*exp((-ln(1/\z)-1)*\z;},
+    declare function={gammapdf(\x,\k,\theta) = 1/(\theta^\k)*1/(gamma(\k))*\x^(\k-1)*exp(-\x/\theta);}
+]
+
+\begin{axis}[
+  no markers, domain=0:4, samples=300,
+  axis lines*=left, xlabel=$x$, ylabel=$f(x)$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=8cm,
+  yticklabels={,,},
+  xticklabels={,,},
+  enlargelimits=false, clip=false, axis on top,
+    ytick=\empty,
+  xtick=\empty,
+  major tick style = {thick, white}
+  ]
+\end{axis}
+
+\node[below] at (1,-0.1)  {$a$}; 
+\node[below] at (3,-0.1)  {$b$}; 
+
+\node[left] at (0,2)  {$\dfrac{1}{b-a}$}; 
+
+\draw [very thick,dotted, line width=0.4mm]  (1,0) -- (1,2);
+\draw [very thick,dotted, line width=0.4mm]  (3,0) -- (3,2);
+
+\draw [very thick, line width=0.4mm]  (0,0) -- (1,0);
+\draw [very thick, line width=0.4mm]  (1,2) -- (3,2);
+\draw [very thick, line width=0.4mm]  (3,0) -- (5,0);
+\node[] at (1,2) {$\bullet$}; 
+\node[] at (3,2)  {$\bullet$}; 
+
+\node[circle,fill=white, draw=black!80, thick, inner sep=0pt, minimum size=6pt] (1) at (1,0) {};
+\node[circle,fill=white, draw=black!80, thick, inner sep=0pt, minimum size=6pt] (1) at (3,0) {};
+
+\end{tikzpicture}
+\end{center}
+
 La \textbf{F.D.A.} de $X$, distribuida uniformemente, está dada por:
 $$
 F(x)=P(X\leq x)=
@@ -202,7 +244,45 @@ F(x)=P(X\leq x)=
 \end{cases}
 $$ 
 La gráfica de $F$ es:
-%PENDIENTE
+
+\begin{center}
+\begin{tikzpicture}[
+    declare function={gamma(\z)=
+    2.506628274631*sqrt(1/\z)+ 0.20888568*(1/\z)^(1.5)+ 0.00870357*(1/\z)^(2.5)- (174.2106599*(1/\z)^(3.5))/25920- (715.6423511*(1/\z)^(4.5))/1244160)*exp((-ln(1/\z)-1)*\z;},
+    declare function={gammapdf(\x,\k,\theta) = 1/(\theta^\k)*1/(gamma(\k))*\x^(\k-1)*exp(-\x/\theta);}
+]
+
+\begin{axis}[
+  no markers, domain=0:4, samples=300,
+  axis lines*=left, xlabel=$x$, ylabel=$F(x)$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=8cm,
+  yticklabels={,,},
+  xticklabels={,,},
+  enlargelimits=false, clip=false, axis on top,
+    ytick=\empty,
+  xtick=\empty,
+  major tick style = {thick, white}
+  ]
+\end{axis}
+
+\node[below] at (1,-0.1)  {$a$}; 
+\node[below] at (3,-0.1)  {$b$}; 
+\draw [very thick,dotted, line width=0.4mm]  (3,0) -- (3,2);
+\draw [very thick,dotted, line width=0.4mm]  (0,2) -- (3,2);
+\node[left] at (0,2)  {$1$}; 
+
+
+
+\draw [very thick, line width=0.4mm]  (0,0) -- (1,0);
+\draw [very thick, line width=0.4mm]  (1,0) -- (3,2);
+\draw [very thick, line width=0.4mm]  (3,2) -- (5,2);
+
+
+\end{tikzpicture}
+\end{center}
+
 $$
 X \sim U(x;a,b)\Rightarrow 
 \begin{cases}
@@ -223,7 +303,32 @@ $$
 Parámetro: $\lambda>0$ \\${ }$\\
 La gráfica de $f$, se muestra en la siguiente figura:
 
-%TODO
+
+\begin{center}
+\begin{tikzpicture}[
+    declare function={gamma(\z)=
+    2.506628274631*sqrt(1/\z)+ 0.20888568*(1/\z)^(1.5)+ 0.00870357*(1/\z)^(2.5)- (174.2106599*(1/\z)^(3.5))/25920- (715.6423511*(1/\z)^(4.5))/1244160)*exp((-ln(1/\z)-1)*\z;},
+    declare function={gammapdf(\x,\k,\theta) = 1/(\theta^\k)*1/(gamma(\k))*\x^(\k-1)*exp(-\x/\theta);}
+]
+
+\begin{axis}[
+  no markers, domain=0:4, samples=300,
+  axis lines*=left, xlabel=$x$, ylabel=$f(x)$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=8cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+\addplot [very thick,black,domain=0:3] {gammapdf(x,1,0.5)};
+\node[below] at (axis cs:-0.2,2.1)  {$\lambda$}; 
+\node[below] at (axis cs:0,2.1)  {$\bullet$}; 
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
 
 La \textbf{F.D.A.} de $X$, distribuida exponencialmente está dada por:
 $$
@@ -234,7 +339,30 @@ F(x)=P(X\leq x)=
 \end{cases}
 $$
 La gráfica de $F$, es la siguiente:
-%PENDIENTE
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  no markers, domain=0:4.25,
+  axis lines*=left, xlabel=${ }$, ylabel=$F(x)$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=east},
+  height=5cm, width=8cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+\addplot[domain=0.001:1.25, samples=300, black, ,line width=0.3mm] {(1-e^(-5*x)-exp(-10*x))*0.7};
+\draw [very thick, dotted,line width=0.2mm]  (axis cs:0,0.7) -- (axis cs:1.25,0.7);
+
+\node[below] at (axis cs:-0.07,0.7)  {$1$}; 
+\node[below] at (axis cs:0,0.76)  {$\bullet$}; 
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
 $$
 X\sim exp(x;\lambda)\Rightarrow
 \begin{cases}
@@ -269,6 +397,119 @@ La gráfica de $f(x)$ es la siguiente:
 \end{enumerate}
 \subsubsection{Distribución Normal Estándar}
 \subsection{Distribución Chi Cuadrado}
+Se dice que una v.a. contínua se se distribuye según $\chi^2$ con $r$ grados de libertad y se representa por $X\sim\chi^2(r)$, si su función de densidad está dada por:
+$$
+f(x)=
+\begin{cases}
+\dfrac{1}{2^{\frac{r}{2}}\Gamma\Big( \dfrac{r}{2} \Big)}\cdot x^{\frac{r}{2}-1} \cdot e^{-\frac{1}{2}x} &; x>0 \\
+0 &; \text{otro caso}
+\end{cases}
+$$
+La gráfica de esta función se representa en la siguiente figura:
+
+
+\begin{center}
+\pgfplotsset{
+        compat=1.7,
+        % define your own legend style here
+        my ybar legend/.style={
+            legend image code/.code={
+                \draw [##1] (0cm,-0.6ex) rectangle +(2em,1.5ex);
+            },
+        },
+    }
+\begin{tikzpicture}[
+    declare function={gamma(\z)=
+    2.506628274631*sqrt(1/\z)+ 0.20888568*(1/\z)^(1.5)+ 0.00870357*(1/\z)^(2.5)- (174.2106599*(1/\z)^(3.5))/25920- (715.6423511*(1/\z)^(4.5))/1244160)*exp((-ln(1/\z)-1)*\z;},
+    declare function={gammapdf(\x,\k,\theta) = 1/(\theta^\k)*1/(gamma(\k))*\x^(\k-1)*exp(-\x/\theta);}
+]
+
+\begin{axis}[
+  no markers, domain=0:4, samples=300,
+  axis lines*=left, xlabel=$x$, ylabel=$f(x)$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+\addplot [very thick,dotted,red,domain=0:3] {gammapdf(x,1,0.5)};
+\addplot [very thick,blue,dashed,domain=0:3] {gammapdf(x,5,0.1)};
+\addplot [very thick,cyan,domain=0:3] {gammapdf(x,12,0.1)};
+
+\legend{
+            r=1,
+            r=6,
+            r=12,
+        }
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+donde $r\in\mathbb{Z}^+$
+
+$$
+X\sim\chi^2(r)\Rightarrow
+\begin{cases}
+E(x)=\mu=r \\
+V(x)=\sigma^2 = 2r \\
+D(x)=\sigma=\sqrt{2r}
+\end{cases}
+$$
+
+\subsubsection{Observaciones}
+\begin{itemize}
+\item La distribución \textbf{chi-cuadrado} es un caso particular de la distribución \textbf{gamma} cuando: $\alpha = \frac{r}{2},\beta = \frac{1}{2}$.
+\item \textbf{Grados de Libertad} (g.l.) es el número de variables que pueden variar libremente.
+\end{itemize}
+\subsubsection{Propiedades}
+\begin{enumerate}
+\item Si $Z\sim N(0,1)$, entonces $Z^2 \sim \chi^2(1)$
+\item Si $Z_1,Z_2,Z_3,\ldots,Z_r$ son $r$ v.a.'s independientes tales que $ Z_i\sim N(0,1) $, para cada $i=1,2,\ldots,r$ entonces:
+$$ \displaystyle\sum_{i=1}^r Z_{i}^2\sim \chi^2(r) $$
+\item Si $X_1,X_2,X_3,\ldots,X_k$ son $k$ v.a.'s independientes, tales que  $X_i\sim \chi^2(r_i)$, para cada $i=1,2,\ldots,k$ entonces:
+$$ \displaystyle\sum_{i=1}^k X_{i}^2\sim \chi^2(r_1 + r_2 + r_3 + \ldots + r_k) $$
+\end{enumerate}
+\subsubsection{Uso de Tabla}
+Si $X\sim\chi^2(r)$, entonces en la tabla de probabilidades se puede encontrar una probabilidad $1-\alpha$ o un valor $c = \chi_{1-\alpha}^2(r)$, mediante la relación $P(X\leq c) = 1-\alpha$ o $P(x\leq \chi_{1-\alpha}^2(r)) = 1-\alpha$ como se indica en la siguiente figura:
+
+\begin{center}
+\begin{tikzpicture}[
+    declare function={gamma(\z)=
+    2.506628274631*sqrt(1/\z)+ 0.20888568*(1/\z)^(1.5)+ 0.00870357*(1/\z)^(2.5)- (174.2106599*(1/\z)^(3.5))/25920- (715.6423511*(1/\z)^(4.5))/1244160)*exp((-ln(1/\z)-1)*\z;},
+    declare function={gammapdf(\x,\k,\theta) = 1/(\theta^\k)*1/(gamma(\k))*\x^(\k-1)*exp(-\x/\theta);}
+]
+
+\begin{axis}[
+  no markers, domain=0:4, samples=300,
+  axis lines*=left, xlabel=$x$, ylabel=$f(x)$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+
+\addplot [fill=red!20, draw=none, domain=0:0.8] {gammapdf(x,6,0.1)} \closedcycle;
+\addplot [very thick,black,domain=0:3,line width=0.3mm] {gammapdf(x,6,0.1)};
+\draw [very thick, dotted,line width=0.2mm]  (axis cs:0.8,0) -- (axis cs:0.8,0.85);
+\draw (0.5,0.6) node[] {$1-\alpha$};
+\node[below] at (axis cs:0.8,0)  {$c = \chi_{1-\alpha}^2(r)$}; 
+\end{axis}
+\end{tikzpicture}
+\end{center}
+La tabla ayuda a resolver dos tipos de problemas :
+\begin{enumerate}
+\item Dados $1-\alpha$ y $r$, encontrar $c=\chi_{1-\alpha}^2(r)$
+\item Dados $c=\chi_{1-\alpha}^2(r)$ y $r$ encontrar $1-\alpha$.
+\end{enumerate}
+
+
 \subsection{Distribución T-Student}
 \subsection{Distribución F (Fisher-Snedecor)}
 Una v.a. contínua $X$ tiene distribución $F$, con $r_1$ grados de libertad en el numerador y $r_2$ grados de libertad en el denominador y se representa por:
@@ -276,7 +517,7 @@ $$ X \sim F(r_1,r_2) $$
 Si su función de densidad está definida por:
 
 $$
-f(z)=
+f(x)=
 \begin{cases}
 \dfrac{\Big(\dfrac{r_1}{r_2}\Big)^{\frac{r_1}{2}}\Gamma\Big(\dfrac{r_1+r_2}{2}\Big) }{\Gamma\Big(\dfrac{r_1}{2}\Big)\Gamma\Big(\dfrac{r_2}{2}\Big)}\cdot \dfrac{x^{\frac{r_1}{2}-1}}{\Big(1+\dfrac{r_1}{r_2}x\Big)^{\frac{r_1+r_2}{2}}} &;x>0 \\
 0 &;\text{otro caso}
@@ -383,7 +624,3 @@ Si:
 $$ X\sim F(r_1,r_2) \text{ entonces } \dfrac{1}{X}\sim F(r_2,r_1)$$
 esto es:
 $$ F_{1-\alpha}(r_1,r_2) = \dfrac{1}{F_{\alpha}(r_2,r_1)} $$
-
-\subsection{Distribución Gamma}
-\subsection{Distribución Beta}
-\subsection{Distribución de Weibull}

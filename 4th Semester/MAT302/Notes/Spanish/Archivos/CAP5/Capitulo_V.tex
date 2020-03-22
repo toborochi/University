@@ -1,0 +1,158 @@
+\chapter{Prueba de Hipótesis}
+Aparte de la estimación de parámetros poblacionales, la inferencia estadística provee una forma para la toma de decisiones sobre una población basada en una m.a. Esto significa que, partiendo de información muestral es posible tomar una decisión que afecte a toda la población. Esta técnica se conoce como:
+\begin{itemize}
+\item Prueba de Hipótesis
+\item Contrastación de Hipótesis
+\item Computación de Hipótesis
+\item Docimacia de Hipótesis
+\item Verificación de Hipótesis
+\end{itemize}
+\textbf{Hipótesis} se define como:
+\begin{enumerate}
+\item Afirmación que esta sujeta a verificación.
+\item Una suposición que se utiliza como base para una acción.
+\end{enumerate}
+Una vez planteada la hipótesis de investigación, generalmente hay que volver a plantearlo de tal forma que se pueda comprobar por medio de métodos estadísticos.
+\section{Tipos de Hipótesis Estadística}
+Son:
+\begin{itemize}
+\item \textbf{Hipótesis Nula $H_0$:} conocida como hipótesis de ninguno diferencia es la hipótesis que se debe comprobar.
+\item \textbf{Hipótesis Alterna $H_1$:} es aquella que se acepta cuando la hipótesis nula es rechazada (contrario a la nula).
+\end{itemize}
+\section{Tipos Principales de Prueba de Hipótesis}
+La prueba de hipótesis depende del enunciado de la hipótesis alterna, es decir, la prueba de hipótesis en función de $H_1$.
+\subsection{Pruebas Unilaterales}
+\begin{itemize}
+\item \textbf{Prueba de Cola Inferior o Prueba de Cola a la Izquierda}
+$$ H_0: \theta > \theta_{0}$$
+$$ H_1: \theta < \theta_{0}$$
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  no markers, domain=0:8, samples=100,
+  axis lines*=left,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+  \addplot [fill=red!20, draw=none, domain=0:2.5] {gauss(4,1.5)} \closedcycle;
+  \addplot [very thick,black!50!black,line width=0.3mm] {gauss(4,1.5)};
+  \node[below,align=center] at (axis cs:4,0)  {RA\footnote{Región de Aceptación} \\ (Se Acepta $H_0$)}; 
+  \node[below,align=center] at (axis cs:2,0)  {RR\footnote{Región de Rechazo} \\ (Se Rechaza $H_0$)}; 
+  
+
+    \draw [very thick, dotted,line width=0.2mm]  (axis cs:2.5,0) -- (axis cs:2.5,0.16);
+
+    
+    \draw (4,0.05) node[] {$1-\alpha$};
+    \draw (2,0.05) node[] {$\alpha$};
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
+\item \textbf{Prueba de Cola Superior o Prueba de Cola a la Derecha}
+$$ H_0: \theta < \theta_{0}$$
+$$ H_1: \theta > \theta_{0}$$
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  no markers, domain=0:8, samples=100,
+  axis lines*=left,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+  \addplot [fill=red!20, draw=none, domain=5.5:8] {gauss(4,1.5)} \closedcycle;
+  \addplot [very thick,black!50!black,line width=0.3mm] {gauss(4,1.5)};
+  \node[below,align=center] at (axis cs:4,0)  {RA \\ (Se Acepta $H_0$)}; 
+  \node[below,align=center] at (axis cs:6,0)  {RR \\ (Se Rechaza $H_0$)}; 
+  
+
+    \draw [very thick, dotted,line width=0.2mm]  (axis cs:5.5,0) -- (axis cs:5.5,0.16);
+
+    
+    \draw (4,0.05) node[] {$1-\alpha$};
+    \draw (6,0.05) node[] {$\alpha$};
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
+\end{itemize}
+\subsection{Pruebas Bilaterales}
+$$ H_0: \theta = \theta_{0}$$
+$$ H_1: \theta \neq \theta_{0}$$
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  no markers, domain=0:8, samples=100,
+  axis lines*=left,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+  \addplot [fill=red!20, draw=none, domain=0:2.5] {gauss(4,1.5)} \closedcycle;
+  \addplot [fill=red!20, draw=none, domain=5.5:8] {gauss(4,1.5)} \closedcycle;
+  \addplot [very thick,black!50!black,line width=0.3mm] {gauss(4,1.5)};
+  \node[below] at (axis cs:4,0)  {RA}; 
+  \node[below] at (axis cs:2,0)  {RR}; 
+  \node[below] at (axis cs:6,0)  {RR}; 
+  
+  \draw [very thick, dotted,line width=0.2mm]  (axis cs:2.5,0) -- (axis cs:2.5,0.16);
+    \draw [very thick, dotted,line width=0.2mm]  (axis cs:5.5,0) -- (axis cs:5.5,0.16);
+
+    
+    \draw (2,0.05) node[] {$\dfrac{\alpha}{2}$};
+    \draw (6,0.05) node[] {$\dfrac{\alpha}{2}$};
+        \draw (4,0.05) node[] {$1-\alpha$};
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
+\section{Tipos de Errores al tomar una Decisión}
+Hay dos tipos de errores:
+\begin{itemize}
+\item \textbf{Error Tipo I ($\alpha$):} Es aquel que consiste en rechazar la hipótesis nula siendo esta verdadera:
+$$ P(\text{Rechaza }H_0 / H_0 \text{ es verdadero}) = \alpha $$
+$$ P(\text{Aceptar }H_1 / H_1 \text{ es falso}) = \alpha $$
+\item \textbf{Error Tipo II ($\beta$) :} Consiste en aceptar la hipótesis siendo esta falsa:
+$$ P(\text{Aceptar }H_0 / H_0 \text{ es falsa}) = \beta $$
+$$ P(\text{Rechazar }H_1 / H_1 \text{ es verdadera}) = \beta $$
+\end{itemize}
+\textbf{Tabla de Decisión}  \\
+\begin{table}[]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multirow{2}{*}{Decisión} & \multicolumn{2}{c|}{Hipótesis Nula ($H_0$)}                     \\ \cline{2-3} 
+                          & Verdadera                      & Falsa                          \\ \hline
+Rechazar                  & Error Tipo I                   & Decisión Correcta ($1-\alpha$) \\ \hline
+Aceptar                   & Decisión Correcta ($1-\alpha$) & Error Tipo II                  \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Procedimiento para la prueba de Hipótesis}
+\begin{enumerate}
+\item Planteamiento de las hipótesis.
+\item Selección del nivel de significación.
+\item Descripción de la población que interesa y planteamiento de las suposiciones necesarias.
+\item Selección del estadístico pertinente.
+\item Especificación del estadístico de prueba y consideración de su distribución.
+\item Especificación de las regiones de rechazo y de aceptación.
+\item  Recolección de datos y cálculo de los estadísticos necesarios.
+\item Decisión estadística.
+\item Conclusión.
+\end{enumerate}

@@ -29,26 +29,30 @@
 \BOOKMARK [2][-]{subsection.2.2.4}{Distribuci\363n Chi Cuadrado}{section.2.2}% 29
 \BOOKMARK [2][-]{subsection.2.2.5}{Distribuci\363n T-Student}{section.2.2}% 30
 \BOOKMARK [2][-]{subsection.2.2.6}{Distribuci\363n F \(Fisher-Snedecor\)}{section.2.2}% 31
-\BOOKMARK [2][-]{subsection.2.2.7}{Distribuci\363n Gamma}{section.2.2}% 32
-\BOOKMARK [2][-]{subsection.2.2.8}{Distribuci\363n Beta}{section.2.2}% 33
-\BOOKMARK [2][-]{subsection.2.2.9}{Distribuci\363n de Weibull}{section.2.2}% 34
-\BOOKMARK [0][-]{chapter.3}{Muestreo y Distribuciones de Muestreo}{}% 35
-\BOOKMARK [1][-]{section.3.1}{Distribuciones de Muestreo}{chapter.3}% 36
-\BOOKMARK [2][-]{subsection.3.1.1}{Estad\355grafos y Estad\355sticos}{section.3.1}% 37
-\BOOKMARK [2][-]{subsection.3.1.2}{Desigualdad Chebyshev}{section.3.1}% 38
-\BOOKMARK [1][-]{section.3.2}{Distribuci\363n de Muestreo}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.3}{Distribuci\363n de la Media Muestral}{chapter.3}% 40
-\BOOKMARK [2][-]{subsection.3.3.1}{Distribuci\363n de Muestras de la diferencia o suma de Medias}{section.3.3}% 41
-\BOOKMARK [2][-]{subsection.3.3.2}{Distribuci\363n de la Proporci\363n Muestral}{section.3.3}% 42
-\BOOKMARK [0][-]{chapter.4}{Estimaci\363n Estad\355stica}{}% 43
-\BOOKMARK [1][-]{section.4.1}{Estimaci\363n Puntual}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.1.1}{Propiedades de los Estimadores Puntuales}{section.4.1}% 45
-\BOOKMARK [2][-]{subsection.4.1.2}{Sesgo y Error Cuadr\341tico Medio de un Estimador \(ECM\)}{section.4.1}% 46
-\BOOKMARK [1][-]{section.4.2}{Estimaci\363n por Intervalo}{chapter.4}% 47
-\BOOKMARK [2][-]{subsection.4.2.1}{Formulaci\363n General de los Intervalos}{section.4.2}% 48
-\BOOKMARK [2][-]{subsection.4.2.2}{Interpretaci\363n de Intervalo de Confianza}{section.4.2}% 49
-\BOOKMARK [2][-]{subsection.4.2.3}{Estimaci\363n por Intervalo de la media Poblacional}{section.4.2}% 50
-\BOOKMARK [2][-]{subsection.4.2.4}{Estimaci\363n por Intervalo de la Diferencia o suma de medias}{section.4.2}% 51
-\BOOKMARK [2][-]{subsection.4.2.5}{Estimaci\363n por Intervalo para Proporciones}{section.4.2}% 52
-\BOOKMARK [2][-]{subsection.4.2.6}{Relaci\363n entre el Error de Estimaci\363n y el Riesgo de Estimaci\363n}{section.4.2}% 53
-\BOOKMARK [2][-]{subsection.4.2.7}{Relaci\363n entre el Error de Estimaci\363n y el tama\361o de la Muestra}{section.4.2}% 54
+\BOOKMARK [0][-]{chapter.3}{Muestreo y Distribuciones de Muestreo}{}% 32
+\BOOKMARK [1][-]{section.3.1}{Distribuciones de Muestreo}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.1.1}{Estad\355grafos y Estad\355sticos}{section.3.1}% 34
+\BOOKMARK [2][-]{subsection.3.1.2}{Desigualdad Chebyshev}{section.3.1}% 35
+\BOOKMARK [1][-]{section.3.2}{Distribuci\363n de Muestreo}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.3}{Distribuci\363n de la Media Muestral}{chapter.3}% 37
+\BOOKMARK [2][-]{subsection.3.3.1}{Distribuci\363n de Muestras de la diferencia o suma de Medias}{section.3.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.2}{Distribuci\363n de la Proporci\363n Muestral}{section.3.3}% 39
+\BOOKMARK [0][-]{chapter.4}{Estimaci\363n Estad\355stica}{}% 40
+\BOOKMARK [1][-]{section.4.1}{Estimaci\363n Puntual}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.1.1}{Propiedades de los Estimadores Puntuales}{section.4.1}% 42
+\BOOKMARK [2][-]{subsection.4.1.2}{Sesgo y Error Cuadr\341tico Medio de un Estimador \(ECM\)}{section.4.1}% 43
+\BOOKMARK [1][-]{section.4.2}{Estimaci\363n por Intervalo}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.2.1}{Formulaci\363n General de los Intervalos}{section.4.2}% 45
+\BOOKMARK [2][-]{subsection.4.2.2}{Interpretaci\363n de Intervalo de Confianza}{section.4.2}% 46
+\BOOKMARK [2][-]{subsection.4.2.3}{Estimaci\363n por Intervalo de la media Poblacional}{section.4.2}% 47
+\BOOKMARK [2][-]{subsection.4.2.4}{Estimaci\363n por Intervalo de la Diferencia o suma de medias}{section.4.2}% 48
+\BOOKMARK [2][-]{subsection.4.2.5}{Estimaci\363n por Intervalo para Proporciones}{section.4.2}% 49
+\BOOKMARK [2][-]{subsection.4.2.6}{Relaci\363n entre el Error de Estimaci\363n y el Riesgo de Estimaci\363n}{section.4.2}% 50
+\BOOKMARK [2][-]{subsection.4.2.7}{Relaci\363n entre el Error de Estimaci\363n y el tama\361o de la Muestra}{section.4.2}% 51
+\BOOKMARK [0][-]{chapter.5}{Prueba de Hip\363tesis}{}% 52
+\BOOKMARK [1][-]{section.5.1}{Tipos de Hip\363tesis Estad\355stica}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.2}{Tipos Principales de Prueba de Hip\363tesis}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.2.1}{Pruebas Unilaterales}{section.5.2}% 55
+\BOOKMARK [2][-]{subsection.5.2.2}{Pruebas Bilaterales}{section.5.2}% 56
+\BOOKMARK [1][-]{section.5.3}{Tipos de Errores al tomar una Decisi\363n}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.4}{Procedimiento para la prueba de Hip\363tesis}{chapter.5}% 58
