@@ -42,49 +42,55 @@
 \contentsline {subsubsection}{Propiedad Amn\IeC {\'e}sica}{15}{section*.16}
 \contentsline {subsection}{\numberline {2.2.3}Distribuci\IeC {\'o}n Normal}{15}{subsection.2.2.3}
 \contentsline {subsubsection}{Caracter\IeC {\'\i }sticas de la Curva Normal}{15}{section*.17}
-\contentsline {subsubsection}{Distribuci\IeC {\'o}n Normal Est\IeC {\'a}ndar}{16}{section*.18}
-\contentsline {subsection}{\numberline {2.2.4}Distribuci\IeC {\'o}n Chi Cuadrado}{16}{subsection.2.2.4}
-\contentsline {subsubsection}{Observaciones}{16}{section*.19}
-\contentsline {subsubsection}{Propiedades}{16}{section*.20}
-\contentsline {subsubsection}{Uso de Tabla}{17}{section*.21}
-\contentsline {subsection}{\numberline {2.2.5}Distribuci\IeC {\'o}n T-Student}{17}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Distribuci\IeC {\'o}n F (Fisher-Snedecor)}{17}{subsection.2.2.6}
-\contentsline {subsubsection}{Teorema}{17}{section*.22}
-\contentsline {subsubsection}{Corolario}{18}{section*.23}
-\contentsline {subsubsection}{$\bigstar $ Manejo de la Tabla:}{18}{section*.24}
-\contentsline {subsubsection}{Teorema}{18}{section*.25}
-\contentsline {chapter}{\numberline {3}Muestreo y Distribuciones de Muestreo}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Distribuciones de Muestreo}{19}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Estad\IeC {\'\i }grafos y Estad\IeC {\'\i }sticos}{19}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Desigualdad Chebyshev}{19}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Distribuci\IeC {\'o}n de Muestreo}{19}{section.3.2}
-\contentsline {section}{\numberline {3.3}Distribuci\IeC {\'o}n de la Media Muestral}{20}{section.3.3}
-\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{20}{section*.28}
-\contentsline {subsection}{\numberline {3.3.1}Distribuci\IeC {\'o}n de Muestras de la diferencia o suma de Medias}{20}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Distribuci\IeC {\'o}n de la Proporci\IeC {\'o}n Muestral}{21}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Estimaci\IeC {\'o}n Estad\IeC {\'\i }stica}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Estimaci\IeC {\'o}n Puntual}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Propiedades de los Estimadores Puntuales}{23}{subsection.4.1.1}
-\contentsline {subsubsection}{Estimador Insesgado}{23}{section*.29}
-\contentsline {subsubsection}{Estimador Eficiente}{23}{section*.30}
-\contentsline {subsubsection}{Estimador Consistente}{23}{section*.31}
-\contentsline {subsubsection}{Estimador Suficiente}{24}{section*.32}
-\contentsline {subsection}{\numberline {4.1.2}Sesgo y Error Cuadr\IeC {\'a}tico Medio de un Estimador (ECM)}{24}{subsection.4.1.2}
-\contentsline {subsubsection}{Sesgo}{24}{section*.33}
-\contentsline {subsubsection}{EMC}{24}{section*.34}
-\contentsline {section}{\numberline {4.2}Estimaci\IeC {\'o}n por Intervalo}{24}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Formulaci\IeC {\'o}n General de los Intervalos}{24}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Interpretaci\IeC {\'o}n de Intervalo de Confianza}{25}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Estimaci\IeC {\'o}n por Intervalo de la media Poblacional}{25}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Estimaci\IeC {\'o}n por Intervalo de la Diferencia o suma de medias}{25}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Estimaci\IeC {\'o}n por Intervalo para Proporciones}{26}{subsection.4.2.5}
-\contentsline {subsubsection}{Tabla: Coeficientes de Confianza o valores cr\IeC {\'\i }ticos $(1-\frac {\alpha }{2})$}{26}{section*.35}
-\contentsline {subsection}{\numberline {4.2.6}Relaci\IeC {\'o}n entre el Error de Estimaci\IeC {\'o}n y el Riesgo de Estimaci\IeC {\'o}n}{26}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Relaci\IeC {\'o}n entre el Error de Estimaci\IeC {\'o}n y el tama\IeC {\~n}o de la Muestra}{27}{subsection.4.2.7}
-\contentsline {chapter}{\numberline {5}Prueba de Hip\IeC {\'o}tesis}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Tipos de Hip\IeC {\'o}tesis Estad\IeC {\'\i }stica}{29}{section.5.1}
-\contentsline {section}{\numberline {5.2}Tipos Principales de Prueba de Hip\IeC {\'o}tesis}{29}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Pruebas Unilaterales}{29}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Pruebas Bilaterales}{30}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Tipos de Errores al tomar una Decisi\IeC {\'o}n}{30}{section.5.3}
-\contentsline {section}{\numberline {5.4}Procedimiento para la prueba de Hip\IeC {\'o}tesis}{31}{section.5.4}
+\contentsline {subsubsection}{Areas bajo la curva normal}{16}{section*.18}
+\contentsline {subsubsection}{Distribuci\IeC {\'o}n Normal Est\IeC {\'a}ndar}{16}{section*.19}
+\contentsline {subsubsection}{Relaci\IeC {\'o}n entre las funciones de densidad de $X$ y $z$}{16}{section*.20}
+\contentsline {subsubsection}{Manejo de la tabla}{16}{section*.21}
+\contentsline {subsubsection}{Distribuci\IeC {\'o}n Normal como aproximaci\IeC {\'o}n de la Binomial}{16}{section*.22}
+\contentsline {subsection}{\numberline {2.2.4}Distribuci\IeC {\'o}n Chi Cuadrado}{17}{subsection.2.2.4}
+\contentsline {subsubsection}{Observaciones}{17}{section*.23}
+\contentsline {subsubsection}{Propiedades}{17}{section*.24}
+\contentsline {subsubsection}{Uso de Tabla}{17}{section*.25}
+\contentsline {subsection}{\numberline {2.2.5}Distribuci\IeC {\'o}n T-Student}{18}{subsection.2.2.5}
+\contentsline {subsubsection}{Propiedades}{18}{section*.26}
+\contentsline {subsubsection}{Uso de la Tabla}{18}{section*.27}
+\contentsline {subsection}{\numberline {2.2.6}Distribuci\IeC {\'o}n F (Fisher-Snedecor)}{19}{subsection.2.2.6}
+\contentsline {subsubsection}{Teorema}{19}{section*.28}
+\contentsline {subsubsection}{Corolario}{19}{section*.29}
+\contentsline {subsubsection}{$\bigstar $ Manejo de la Tabla:}{19}{section*.30}
+\contentsline {subsubsection}{Teorema}{20}{section*.31}
+\contentsline {chapter}{\numberline {3}Muestreo y Distribuciones de Muestreo}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Distribuciones de Muestreo}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Estad\IeC {\'\i }grafos y Estad\IeC {\'\i }sticos}{21}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Desigualdad Chebyshev}{21}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Distribuci\IeC {\'o}n de Muestreo}{21}{section.3.2}
+\contentsline {section}{\numberline {3.3}Distribuci\IeC {\'o}n de la Media Muestral}{22}{section.3.3}
+\contentsline {subsubsection}{Demostraci\IeC {\'o}n}{22}{section*.34}
+\contentsline {subsection}{\numberline {3.3.1}Distribuci\IeC {\'o}n de Muestras de la diferencia o suma de Medias}{22}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Distribuci\IeC {\'o}n de la Proporci\IeC {\'o}n Muestral}{23}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {4}Estimaci\IeC {\'o}n Estad\IeC {\'\i }stica}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Estimaci\IeC {\'o}n Puntual}{25}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Propiedades de los Estimadores Puntuales}{25}{subsection.4.1.1}
+\contentsline {subsubsection}{Estimador Insesgado}{25}{section*.35}
+\contentsline {subsubsection}{Estimador Eficiente}{25}{section*.36}
+\contentsline {subsubsection}{Estimador Consistente}{25}{section*.37}
+\contentsline {subsubsection}{Estimador Suficiente}{26}{section*.38}
+\contentsline {subsection}{\numberline {4.1.2}Sesgo y Error Cuadr\IeC {\'a}tico Medio de un Estimador (ECM)}{26}{subsection.4.1.2}
+\contentsline {subsubsection}{Sesgo}{26}{section*.39}
+\contentsline {subsubsection}{EMC}{26}{section*.40}
+\contentsline {section}{\numberline {4.2}Estimaci\IeC {\'o}n por Intervalo}{26}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Formulaci\IeC {\'o}n General de los Intervalos}{26}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Interpretaci\IeC {\'o}n de Intervalo de Confianza}{27}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Estimaci\IeC {\'o}n por Intervalo de la media Poblacional}{27}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Estimaci\IeC {\'o}n por Intervalo de la Diferencia o suma de medias}{27}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Estimaci\IeC {\'o}n por Intervalo para Proporciones}{28}{subsection.4.2.5}
+\contentsline {subsubsection}{Tabla: Coeficientes de Confianza o valores cr\IeC {\'\i }ticos $(1-\frac {\alpha }{2})$}{28}{section*.41}
+\contentsline {subsection}{\numberline {4.2.6}Relaci\IeC {\'o}n entre el Error de Estimaci\IeC {\'o}n y el Riesgo de Estimaci\IeC {\'o}n}{28}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Relaci\IeC {\'o}n entre el Error de Estimaci\IeC {\'o}n y el tama\IeC {\~n}o de la Muestra}{29}{subsection.4.2.7}
+\contentsline {chapter}{\numberline {5}Prueba de Hip\IeC {\'o}tesis}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Tipos de Hip\IeC {\'o}tesis Estad\IeC {\'\i }stica}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}Tipos Principales de Prueba de Hip\IeC {\'o}tesis}{31}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Pruebas Unilaterales}{31}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Pruebas Bilaterales}{32}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Tipos de Errores al tomar una Decisi\IeC {\'o}n}{32}{section.5.3}
+\contentsline {section}{\numberline {5.4}Procedimiento para la prueba de Hip\IeC {\'o}tesis}{33}{section.5.4}

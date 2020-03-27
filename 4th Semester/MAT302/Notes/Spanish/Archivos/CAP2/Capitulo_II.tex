@@ -381,7 +381,10 @@ $$
 f(x) = N(x;\mu,\sigma^2)=N(\mu,\sigma^2)=\dfrac{1}{\sigma \cdot \sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})}, x\in \mathbb{R}
 $$
 La gráfica de $f(x)$ es la siguiente:
-%PENDIENTE
+
+%TODO
+
+
 \subsubsection{Características de la Curva Normal}
 \begin{enumerate}
 \item $f'(x)=0\Leftrightarrow x=\mu$
@@ -395,7 +398,81 @@ La gráfica de $f(x)$ es la siguiente:
 \item El área total bajo la curva normal y arriba del eje horizontal, es igual a 1.
 \item La curva de la distribución normal se extiende $]-\infty,+\infty[$.
 \end{enumerate}
+La \textbf{FDA} de la v.a. $X$, distribuida normalmente esta dada por:
+$$F(x)=
+\displaystyle\int_{-\infty}^{x} \dfrac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2} (\frac{t-\mu}{\sigma})^2 } dt
+$$
+
+\subsubsection{Areas bajo la curva normal}
+Estan limitadas por dos puntos: $x=a,x=b$.
+
+%TODO Grafica
+
+$$
+P(a\leq x \leq b) = \displaystyle\int_{a}^{b} \dfrac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2} (\frac{t-\mu}{\sigma})^2 } dt
+$$
+
 \subsubsection{Distribución Normal Estándar}
+Una v.a. $z$ tiene distribución normal con media $\mu=0$ y varianza $\sigma^2 = 1$, significa que $z$ es una v.a. estándar cuya función de densidad está dada por:
+
+$$
+f(z)=N(z;0,1)=N(0,1)=\dfrac{1}{\sqrt{2\pi}}\cdot e^{-\frac{1}{2}z^2} \hspace{0.5cm} z\in\mathbb{R}
+$$
+La gráfica de $f$ es la siguiente:
+
+%TODO Grafica
+
+La \textbf{FDA} de ka v.a. $z$, distribuida en forma normal estandar esta dada por:
+
+$$
+F(z)=P(Z\leq z)=\phi (z)=\displaystyle\int_{-\infty}^{z} \dfrac{1}{\sqrt{2\pi}}\cdot e^{-\frac{1}{2}r} dr
+$$
+
+La gráfica esta dada por:
+
+%TODO Grafica
+
+Transformación de una v.a. $x$ con media $\mu$ y varianza $\sigma^2$ a una v.a. $z$ con media $\mu=0$ y varianza $\sigma^2=1$. Si $X\sim N(x,\mu,\sigma^2)$ entonces la $\eqcirc$ de transformación es:
+$$X\sim N(x;\mu,\sigma^2) \Rightarrow z = \dfrac{x-\mu}{\sigma} \sim N(z;0,1) \text{ ó } N(0,1)$$
+
+\subsubsection{Relación entre las funciones de densidad de $X$ y $z$}
+
+%TODO Grafica
+
+\subsubsection{Manejo de la tabla}
+\begin{enumerate}
+\item $P(X<a)=P(X\leq a) = P \Bigg( \dfrac{x-\mu}{\sigma}\leq\dfrac{a-\mu}{\sigma}\Bigg) 
+= P\Bigg( z\leq \dfrac{a-\mu}{\sigma}\Bigg) 
+=\phi\Bigg( \dfrac{a-\mu}{\sigma} \Bigg)$
+\item 
+$
+P(X>a) =1-P(X\leq a) 
+	 =1-\phi\Bigg(\dfrac{a-\mu}{\sigma}\Bigg)
+$
+\item 
+$
+P(a\leq X\leq b)= P(X\leq b)-P(X\leq a) 
+                = P\Bigg(z\leq \dfrac{b-\mu}{\sigma}\Bigg)-\Bigg(z\leq \dfrac{a-\mu}{\sigma}\Bigg) 
+                =\phi\Bigg(\dfrac{b-\mu}{\sigma}\Bigg)-\phi\Bigg(\dfrac{a-\mu}{\sigma}\Bigg)
+$
+\item 
+$
+P(x\leq -a) = 1-P(X\leq a)
+            = 1-\phi\Bigg( \dfrac{a-\mu}{\sigma}\Bigg)
+$
+\item 
+$P(|X|<a) = P(|X|\leq a) 
+         = P(-a\leq X \leq a) 
+         = \phi\Bigg(\dfrac{a-\mu}{\sigma}\Bigg)-\phi\Bigg(\dfrac{-a-\mu}{\sigma}\Bigg)$
+\item $
+P(|x|>a) = 1-P(|x|\leq a) 
+	   = 1-P(-a \leq x \leq a) 
+	   = 1 - \phi\Bigg(\dfrac{a-\mu}{\sigma}\Bigg)+\phi\Bigg(\dfrac{-a-\mu}{\sigma}\Bigg)$
+
+
+\end{enumerate}
+\subsubsection{Distribución Normal como aproximación de la Binomial}
+Si $X\sim b(x;n,p)$, cuando $n$ aumenta sin restricción $(n\geq 30)$ y $p$ moderada $(0.10 \leq p \leq 0.90)$ tal que $np$ sea constante:
 \subsection{Distribución Chi Cuadrado}
 Se dice que una v.a. contínua se se distribuye según $\chi^2$ con $r$ grados de libertad y se representa por $X\sim\chi^2(r)$, si su función de densidad está dada por:
 $$
@@ -511,6 +588,93 @@ La tabla ayuda a resolver dos tipos de problemas :
 
 
 \subsection{Distribución T-Student}
+Se dice que una v.a. continua $T$ se distribuye según $t$ de Student (mas brevemente según $t$) con $r$ grados de libertad y se representa por $T\sim t(r)$, si su función de densidad está dada por:
+
+$$
+f(t)=\dfrac{\Gamma\left( \dfrac{r+1}{2}\right)}{\Gamma\left(\dfrac{r}{2}\right)\sqrt{\pi r}}\left(1+ \dfrac{t^2}{r}\right)^{-\dfrac{r+1}{2}}, t\in \mathbb{R}
+$$
+Su gráfico es de forma de campana como se muestra en la figura siguente:
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  no markers, domain=0:8, samples=100,
+  axis lines*=left, xlabel=$t$, ylabel=${ }$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+
+  \addplot [very thick,black!50!black,line width=0.3mm] {gauss(4,1.5)};
+
+
+
+  
+   
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:4,0) -- (axis cs:4,0.27);
+  \node[below] at (axis cs:4,0)  {$0$}; 
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
+
+Si $Z$ y $V$ son v.a.'s independientes, tales que $Z\sim N(0,1)$ y $V\sim\chi^2(r)$, entonces:
+
+$$ T =  \dfrac{Z}{\sqrt{\dfrac{V}{r}}}\sim t(r)$$
+
+\subsubsection{Propiedades}
+
+\begin{enumerate}
+\item $X \sim t(r) \Rightarrow
+\begin{cases}
+E(x)=0&,\forall r>1 \\
+V(x)=\dfrac{r}{r-2}&,\forall r>2 \\
+D(x) = \sqrt{\dfrac{r}{r-2}}&,\forall r>2
+\end{cases}
+$
+\item Su gráfica tiene la forma de campana de Gauss simétrica en $\mu = 0$
+\item La varianza de la distribución $t$ es mayor que la distribución $N(0,1)$, pero cuando $r\rightarrow\infty$, la varianza de $t$ tiende a $1$.
+\item La distribución $t$ se aproxima a una distribución $N(0,1)$ cuando $r\rightarrow\infty$. La aproximación es buena si $r\geq 30$.
+\end{enumerate}
+
+\subsubsection{Uso de la Tabla}
+Si $T\sim t(r)$, entonces en la tabla de probabilidad de $t$-student, se puede encontrar una probabilidad $1-\alpha$ o un valor $c=t_{1-\alpha}(r)$, mediante la relación: 
+
+$$P(T\leq c) = 1-\alpha \vee P(T\leq t_{1-\alpha}(r) = 1-\alpha $$
+
+Como se indica en la siguiente figura:
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  no markers, domain=0:8, samples=100,
+  axis lines*=left, xlabel=$t$, ylabel=${ }$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+  \addplot [fill=red!20, draw=none, domain=0:5.5] {gauss(4,1.5)} \closedcycle;
+  \addplot [very thick,black!50!black,line width=0.3mm] {gauss(4,1.5)};
+
+
+  \node[below] at (axis cs:5.5,0)  {$c=t_{1-\alpha}(r)$}; 
+  
+    \draw [very thick, dotted,line width=0.2mm]  (axis cs:5.5,0) -- (axis cs:5.5,0.16);
+    
+    \draw (4,0.12) node[] {$1-\alpha$};
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
+
 \subsection{Distribución F (Fisher-Snedecor)}
 Una v.a. contínua $X$ tiene distribución $F$, con $r_1$ grados de libertad en el numerador y $r_2$ grados de libertad en el denominador y se representa por:
 $$ X \sim F(r_1,r_2) $$
@@ -575,7 +739,7 @@ $$
 Si $X\sim F(r_1,r_2)$, entonces en la tabla de probabilidad $F$, se puede encontrar una probabilidad $1-\alpha$ o un valor $c = F_{1-\alpha}(r_1,r_2)$ mediante la relación:
 $$P(X \leq c) = 1-\alpha \hspace{0.5cm}\vee\hspace{0.5cm} P(X\leq F_{1-\alpha}(r_1,r_2))=1-\alpha$$
 como se indica en la siguiente figura:
-%TODO Hacer la grafica de F
+
 
 \begin{center}
 
