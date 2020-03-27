@@ -382,7 +382,47 @@ f(x) = N(x;\mu,\sigma^2)=N(\mu,\sigma^2)=\dfrac{1}{\sigma \cdot \sqrt{2\pi}}e^{-
 $$
 La gráfica de $f(x)$ es la siguiente:
 
-%TODO
+\begin{center}
+\begin{tikzpicture}
+\pgfmathdeclarefunction{gausss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{axis}[
+  no markers, domain=-4:4, samples=100,
+  axis lines*=left, xlabel=$x$, ylabel=$f(x)$,
+  every axis y label/.style={at=(current axis.north west),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+
+  \addplot [very thick,black!50!black,line width=0.3mm] {gausss(0,1)};
+
+
+
+  
+   
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:0,0) -- (axis cs:0,0.4);
+        
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:-1.5,0) -- (axis cs:-1.5,0.13);
+        
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:1.5,0) -- (axis cs:1.5,0.13);
+     
+	     \draw [very thick, dotted,line width=0.2mm]  (axis cs:-4,0.13) -- (axis cs:1.5,0.13);     
+     
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:-4,0.4) -- (axis cs:0,0.4); 
+     
+  \node[below] at (axis cs:0,0)  {$\mu$}; 
+  \node[below] at (axis cs:-1.5,0)  {$\mu-\sigma$}; 
+  \node[below] at (axis cs:1.5,0)  {$\mu+\sigma$}; 
+  
+  \node[above] at (axis cs:0,0.45)  {$\dfrac{1}{\sigma\sqrt{2\pi}}$}; 
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
 
 
 \subsubsection{Características de la Curva Normal}
@@ -406,7 +446,43 @@ $$
 \subsubsection{Areas bajo la curva normal}
 Estan limitadas por dos puntos: $x=a,x=b$.
 
-%TODO Grafica
+
+\begin{center}
+\begin{tikzpicture}
+\pgfmathdeclarefunction{gausss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{axis}[
+  no markers, domain=-4:4, samples=100,
+  axis lines*=left, xlabel=$x$, ylabel=$f(x)$,
+  every axis y label/.style={at=(current axis.north west),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+\addplot [fill=red!20, draw=none, domain=-1.5:1.5] {gausss(0,1)} \closedcycle;
+  \addplot [very thick,black!50!black,line width=0.3mm] {gausss(0,1)};
+
+        
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:-1.5,0) -- (axis cs:-1.5,0.13);
+        
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:1.5,0) -- (axis cs:1.5,0.13);
+     
+	     
+     
+     
+     
+  \node[below] at (axis cs:0,0)  {$\mu$}; 
+  \node[below] at (axis cs:-1.5,0)  {$a$}; 
+  \node[below] at (axis cs:1.5,0)  {$b$}; 
+  
+  \node[above] at (axis cs:0,0.45)  {$P(a\leq x \leq b)$}; 
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
 
 $$
 P(a\leq x \leq b) = \displaystyle\int_{a}^{b} \dfrac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2} (\frac{t-\mu}{\sigma})^2 } dt
@@ -420,7 +496,28 @@ f(z)=N(z;0,1)=N(0,1)=\dfrac{1}{\sqrt{2\pi}}\cdot e^{-\frac{1}{2}z^2} \hspace{0.5
 $$
 La gráfica de $f$ es la siguiente:
 
-%TODO Grafica
+\begin{center}
+\begin{tikzpicture}
+\pgfmathdeclarefunction{gausss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{axis}[
+  no markers, domain=-4:4, samples=100,
+  axis lines*=left, xlabel=$x$, ylabel=$f(x)$,
+  every axis y label/.style={at=(current axis.north west),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+  \addplot [very thick,black!50!black,line width=0.3mm] {gausss(0,1)};
+  \draw [very thick, dotted,line width=0.2mm]  (axis cs:0,0) -- (axis cs:0,0.4);  
+  \node[below] at (axis cs:0,0)  {$\mu=0$}; 
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
 
 La \textbf{FDA} de ka v.a. $z$, distribuida en forma normal estandar esta dada por:
 
@@ -430,14 +527,109 @@ $$
 
 La gráfica esta dada por:
 
-%TODO Grafica
+\begin{center}
+\begin{tikzpicture}[declare function={sigma(\x)=1/(1+exp(-\x));
+sigmap(\x)=sigma(\x)*(1-sigma(\x));}]
+\begin{axis}[
+  no markers, domain=-4:4, samples=100,
+  axis lines*=left, xlabel=$x$, ylabel=$f(x)$,
+  every axis y label/.style={at=(current axis.north west),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=6cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+  \addplot[very thick,black!50!black,line width=0.3mm]   (x,{sigma(x)});
+  \draw [very thick, dotted,line width=0.2mm]  (axis cs:-4,1) -- (axis cs:4,1);
+  \draw [very thick, dotted,line width=0.2mm]  (axis cs:-4,0.5) -- (axis cs:4,0.5);
+    \node[below] at (axis cs:0,0)  {$0$}; 
+    \node[left] at (axis cs:0,0.5)  {$0.5$}; 
+    \node[above] at (axis cs:0,1)  {$1$}; 
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
 
 Transformación de una v.a. $x$ con media $\mu$ y varianza $\sigma^2$ a una v.a. $z$ con media $\mu=0$ y varianza $\sigma^2=1$. Si $X\sim N(x,\mu,\sigma^2)$ entonces la $\eqcirc$ de transformación es:
 $$X\sim N(x;\mu,\sigma^2) \Rightarrow z = \dfrac{x-\mu}{\sigma} \sim N(z;0,1) \text{ ó } N(0,1)$$
 
 \subsubsection{Relación entre las funciones de densidad de $X$ y $z$}
 
-%TODO Grafica
+\begin{center}
+\begin{tikzpicture}
+\pgfmathdeclarefunction{gausss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{axis}[
+  no markers, domain=-4:4, samples=100,
+  axis lines*=left, xlabel=$x$, ylabel=$f(x)$,
+  every axis y label/.style={at=(current axis.north west),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+\addplot [fill=red!20, draw=none, domain=-1:1] {gausss(0,1)} \closedcycle;
+  \addplot [very thick,black!50!black,line width=0.3mm] {gausss(0,1)};
+
+        
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:-1,0) -- (axis cs:-1,0.23);
+        
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:1,0) -- (axis cs:1,0.23);
+     
+	\draw [very thick, dotted,line width=0.2mm]  (axis cs:0,0) -- (axis cs:0,0.4);
+     
+     
+     
+  \node[below] at (axis cs:0,0)  {$\mu$}; 
+  \node[below] at (axis cs:-1,0)  {$\mu-\sigma$}; 
+  \node[below] at (axis cs:1,0)  {$\mu+\sigma$}; 
+  
+  \node[] at (axis cs:0,0.16)  {$68.26\%$}; 
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}
+\pgfmathdeclarefunction{gausss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{axis}[
+  no markers, domain=-4:4, samples=100,
+  axis lines*=left, xlabel=$x$, ylabel=$f(x)$,
+  every axis y label/.style={at=(current axis.north west),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick=\empty, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+
+\addplot [fill=red!20, draw=none, domain=-1:1] {gausss(0,1)} \closedcycle;
+  \addplot [very thick,black!50!black,line width=0.3mm] {gausss(0,1)};
+
+        
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:-1,0) -- (axis cs:-1,0.23);
+        
+     \draw [very thick, dotted,line width=0.2mm]  (axis cs:1,0) -- (axis cs:1,0.23);
+     
+	\draw [very thick, dotted,line width=0.2mm]  (axis cs:0,0) -- (axis cs:0,0.4);
+     
+     
+     
+  \node[below] at (axis cs:0,0)  {$0$}; 
+  \node[below] at (axis cs:-1,0)  {$-1$}; 
+  \node[below] at (axis cs:1,0)  {$1$}; 
+  
+  \node[] at (axis cs:0,0.16)  {$68.26\%$}; 
+\end{axis}
+
+\end{tikzpicture}
+\end{center}
 
 \subsubsection{Manejo de la tabla}
 \begin{enumerate}
@@ -472,7 +664,21 @@ P(|x|>a) = 1-P(|x|\leq a)
 
 \end{enumerate}
 \subsubsection{Distribución Normal como aproximación de la Binomial}
-Si $X\sim b(x;n,p)$, cuando $n$ aumenta sin restricción $(n\geq 30)$ y $p$ moderada $(0.10 \leq p \leq 0.90)$ tal que $np$ sea constante:
+Si $X\sim b(x;n,p)$, cuando $n$ aumenta sin restricción $(n\geq 30)$ y $p$ moderada $(0.10 \leq p \leq 0.90)$ tal que $np$ sea constante. Entonces $b(x;n,p)$ se aproxima a una distribución normal, con media $\mu = n\cdot p$ y varianza $\sigma^2 = n\cdot p \cdot q$; está es:
+\begin{align*}
+\displaystyle\lim_{n\rightarrow 100} b(x;n,p) \simeq N(x;n\cdot p,n\cdot p \cdot q)
+\end{align*}
+Como en $b(x;n,p)$ $x$ es el valor de una v.a. discreta y en $N(x,\mu,\sigma^2)$, $x$ es el valor de una v.a. continua, se introduce un factor de corrección de continuidad que consiste en sumar $\frac{1}{2}$ al limite superior y restar $\frac{1}{2}$ al limite inferior, esto es:
+
+$$
+P(x_1\leq X\leq x_2)=\displaystyle\sum_{x=x_1}^{x_2} b(x;n,p)\simeq\displaystyle\int_{x_1-\frac{1}{2}}^{x_2+\frac{1}{2}} N(x;np,npq) dx = \displaystyle\int_{z_1}^{z_2} N(z;0,1) dz
+$$
+Donde:
+\begin{itemize}
+\item $z_1=\dfrac{(x_1-\frac{1}{2})-np}{\sqrt{npq}}$
+\item $z_2=\dfrac{(x_2+\frac{1}{2})-np}{\sqrt{npq}}$
+\end{itemize}
+
 \subsection{Distribución Chi Cuadrado}
 Se dice que una v.a. contínua se se distribuye según $\chi^2$ con $r$ grados de libertad y se representa por $X\sim\chi^2(r)$, si su función de densidad está dada por:
 $$

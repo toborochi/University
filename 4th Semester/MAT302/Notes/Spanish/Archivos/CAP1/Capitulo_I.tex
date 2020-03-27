@@ -3,7 +3,7 @@ Una variable aleatoria $x$ (desde ahora denotada por \textbf{v.a.}) es una funci
 
 $$x=X(w) \in Rec_X \subseteq \mathbb{R}$$ 
 \subsubsection{Gráficamente}
-%Pendiente
+%TODO Grafica
 \subsubsection{Notación Conjuntista}
 $$X = \lbrace (w,x)\ w\in S, x=X(w)\in \mathbb{R} \rbrace \subseteq S\times  \mathbb{R}$$
 Donde:
@@ -65,13 +65,64 @@ $p(x_i)$ & $p(x_1)$ & $p(x_2)$ & $\ldots$ & $p(x_n)$ \\
 \end{tabular} 
 \end{center}
 \item \textbf{Una Gráfica:}
+\begin{center}
+\begin{tikzpicture}[
+    declare function={gamma(\z)=
+    2.506628274631*sqrt(1/\z)+ 0.20888568*(1/\z)^(1.5)+ 0.00870357*(1/\z)^(2.5)- (174.2106599*(1/\z)^(3.5))/25920- (715.6423511*(1/\z)^(4.5))/1244160)*exp((-ln(1/\z)-1)*\z;},
+    declare function={gammapdf(\x,\k,\theta) = 1/(\theta^\k)*1/(gamma(\k))*\x^(\k-1)*exp(-\x/\theta);}
+]
+
+\begin{axis}[
+  no markers, domain=0:4, samples=300,
+  axis lines*=left, xlabel=$x$, ylabel=$F(x)$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=8cm,
+  yticklabels={,,},
+  xticklabels={,,},
+  enlargelimits=false, clip=false, axis on top,
+    ytick=\empty,
+  xtick=\empty,
+  major tick style = {thick, white}
+  ]
+\end{axis}
+
+\node[below] at (1,-0.1)  {$x_1$}; 
+\node[below] at (2,-0.1)  {$x_2$}; 
+\node[below] at (3,-0.1)  {$x_3$}; 
+\node[below] at (4,-0.1)  {$\cdots$}; 
+
+\node[left] at (0,1)  {$F(x_1)$}; 
+\node[left] at (0,2)  {$F(x_2)$}; 
+\node[left] at (0,3)  {$F(x_3)$}; 
+
+\draw [very thick,dotted, line width=0.4mm]  (1,0) -- (1,1);
+\draw [very thick,dotted, line width=0.4mm]  (2,1) -- (2,2);
+\draw [very thick,dotted, line width=0.4mm]  (3,2) -- (3,3);
+\draw [very thick,dotted, line width=0.4mm]  (4,3) -- (4,4);
+
+\draw [very thick, line width=0.4mm]  (0,0) -- (1,0);
+\draw [very thick, line width=0.4mm]  (1,1) -- (2,1);
+\draw [very thick, line width=0.4mm]  (2,2) -- (3,2);
+\draw [very thick, line width=0.4mm]  (3,3) -- (4,3);
+
+\node[] at (1,1) {$\bullet$}; 
+\node[] at (2,2)  {$\bullet$}; 
+\node[] at (3,3)  {$\bullet$}; 
+
+\node[circle,fill=white, draw=black!80, thick, inner sep=0pt, minimum size=6pt] (1) at (1,0) {};
+\node[circle,fill=white, draw=black!80, thick, inner sep=0pt, minimum size=6pt] (1) at (2,1) {};
+\node[circle,fill=white, draw=black!80, thick, inner sep=0pt, minimum size=6pt] (1) at (3,2) {};
+
+\end{tikzpicture}
+\end{center}
 \end{itemize}
 \section{Función de Distribución Acumulada (FDA)}
 El valor de la \textbf{FDA} de una \textbf{v.a.} discreta $X$, que es $F(x)$, viene dada por la sumatoria de las probabilidades, desde un valor mínimo $t$ hasta un valor específico $x$; esto es:
 $$F(x)=P(X\leq x)=\displaystyle\sum_{t\leq x} P(t),\hspace{0.25cm} \forall x\in \mathbb{R}$$
 \subsection{Representación Gráfica}
 Valores $F(x)$ aumentan en \textit{saltos}, presentando entonces la forma de una escalera:
-%Hacer la grafica
+%TODO Grafica
 \subsection{Caso Continuo}
 \subsubsection{Función de Densidad}
 $f$ es función densidad, si $f(x)$ cumple las siguientes condiciones:
