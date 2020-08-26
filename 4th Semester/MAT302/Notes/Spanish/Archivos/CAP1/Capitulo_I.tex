@@ -3,7 +3,11 @@ Una variable aleatoria $x$ (desde ahora denotada por \textbf{v.a.}) es una funci
 
 $$x=X(w) \in Rec_X \subseteq \mathbb{R}$$ 
 \subsubsection{Gráficamente}
-%TODO Grafica
+
+\begin{center}
+\includegraphics[scale=0.75]{cap1.pdf}
+\end{center}
+
 \subsubsection{Notación Conjuntista}
 $$X = \lbrace (w,x)\ w\in S, x=X(w)\in \mathbb{R} \rbrace \subseteq S\times  \mathbb{R}$$
 Donde:
@@ -65,6 +69,46 @@ $p(x_i)$ & $p(x_1)$ & $p(x_2)$ & $\ldots$ & $p(x_n)$ \\
 \end{tabular} 
 \end{center}
 \item \textbf{Una Gráfica:}
+
+\begin{center}
+\begin{tikzpicture}
+
+\begin{axis}[
+    ybar=15,            
+    %ymin=0,
+    %ymax=120,            
+    symbolic x coords={$x_1$,$x_2$,$x_3$},
+    xtick=data,
+    yticklabels={,,},
+  xticklabels={,,},
+  axis lines*=left, xlabel=$x$, ylabel=$p(x_i)$,
+  every axis y label/.style={at=(current axis.north west),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  ytick=\empty,
+  major tick style = {thick, black}]
+  
+  \addplot[ybar,fill=black] coordinates {
+                ($x_1$,   50)
+                ($x_2$,  70)
+                ($x_3$,   80)
+            };
+\end{axis}
+
+\node[below] at (0.6,-0.2)  {$x_1$}; 
+\node[below] at (3.4,-0.2)  {$x_2$}; 
+\node[below] at (4.8,-0.2)  {$\cdots$}; 
+\node[below] at (6.2,-0.2)  {$x_n$}; 
+
+
+\end{tikzpicture}
+\end{center}
+
+\end{itemize}
+\section{Función de Distribución Acumulada (FDA)}
+El valor de la \textbf{FDA} de una \textbf{v.a.} discreta $X$, que es $F(x)$, viene dada por la sumatoria de las probabilidades, desde un valor mínimo $t$ hasta un valor específico $x$; esto es:
+$$F(x)=P(X\leq x)=\displaystyle\sum_{t\leq x} P(t),\hspace{0.25cm} \forall x\in \mathbb{R}$$
+\subsection{Representación Gráfica}
+Valores $F(x)$ aumentan en \textit{saltos}, presentando entonces la forma de una escalera:
 \begin{center}
 \begin{tikzpicture}[
     declare function={gamma(\z)=
@@ -116,13 +160,6 @@ $p(x_i)$ & $p(x_1)$ & $p(x_2)$ & $\ldots$ & $p(x_n)$ \\
 
 \end{tikzpicture}
 \end{center}
-\end{itemize}
-\section{Función de Distribución Acumulada (FDA)}
-El valor de la \textbf{FDA} de una \textbf{v.a.} discreta $X$, que es $F(x)$, viene dada por la sumatoria de las probabilidades, desde un valor mínimo $t$ hasta un valor específico $x$; esto es:
-$$F(x)=P(X\leq x)=\displaystyle\sum_{t\leq x} P(t),\hspace{0.25cm} \forall x\in \mathbb{R}$$
-\subsection{Representación Gráfica}
-Valores $F(x)$ aumentan en \textit{saltos}, presentando entonces la forma de una escalera:
-%TODO Grafica
 \subsection{Caso Continuo}
 \subsubsection{Función de Densidad}
 $f$ es función densidad, si $f(x)$ cumple las siguientes condiciones:
