@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/States/State.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/States/StateManager.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Rendering/Texture.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Core/Action.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Rendering/SpriteSheet.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/iagridgrapher/IAGridGrapher.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/MazeCore/Regla.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Utils/ResourceManager.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Grapher/GridState.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Utils/Fonts.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Rendering/Sprite.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Core/Entity.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Core/GameObject.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/MazeCore/Laberinto.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Input/MouseInput.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Core/ThreadEntity.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Utils/TextureManager.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Entities/Person.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/iagridgrapher/Game.java</file>
+            <file>file:/C:/Users/Asus/Documents/NetBeansProjects/IAGridGrapher/src/Input/KeyInput.java</file>
+        </group>
+    </open-files>
+</project-private>
