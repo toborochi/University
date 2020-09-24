@@ -109,17 +109,18 @@
 %\subfile{Files/Comment}
 %\pagebreak
 
-{\LARGE \textbf{IV.} Permutaciones con Repeticiones} \\
+{\LARGE \textbf{E.} Modificación de los anteriores puntos} \\
+Modificar la estructura de los algoritmos anteriores y ejecutar bajo los mismos casos y encontrar las mismas salidas. (El Algoritmos modificado, deberá tener una estructura de llamadas recursivas dentro de un ciclo).
 \newcounter{ct}
 \newcounter{n}
 
 % Numero de ejercicios
-\setcounter{n}{2}
+\setcounter{n}{1}
 \stepcounter{n}
 
 \forloop{ct}{1}{\value{ct}<\value{n}}%
 {%
-  \section*{\mystr\text{ }\arabic{ct}:}
+  %\section*{\mystr\text{ }\arabic{ct}:}
   \subfile{TeXFiles/\enun\arabic{ct}}
   \IfFileExists{Images/\imag\arabic{ct}.png}{
   \begin{figure}[H]

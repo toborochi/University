@@ -1,26 +1,37 @@
-public static boolean isPerfectSquare(double x)  
-    { 
-        double sr = Math.sqrt(x); 
-        return ((sr - Math.floor(sr)) == 0); 
-    } 
-    
-    public static boolean cuadradosPerfectos(LinkedList<Integer> L){
-        for(int i=0;i<L.size();++i){
-            if(!isPerfectSquare(L.get(i)))
-                return false;
-        }
-        return true;
-    }
-    
-    public static void productosCuadrados(LinkedList<Integer> L,int i,int n){
-        int prod = producto(L);
-        if(prod>n)return;
-        if(prod==n && cuadradosPerfectos(L)){System.out.println(L);}
-        for(int k=i;k<=n;++k){
-            if(n%k==0){
-                L.add(k);
-                productosImpares(L,k,n);
-                L.removeLast();
-            }
-        }
-    }
+1 2 3 4 5 
+-1 13 12 11 6 
+-1 -1 -1 10 7 
+-1 -1 -1 9 8 
+-1 -1 -1 -1 -1 
+
+1 2 5 6 7 
+-1 3 4 9 8 
+-1 -1 -1 10 11 
+-1 -1 -1 13 12 
+-1 -1 -1 -1 -1 
+
+1 2 5 6 7 
+-1 3 4 9 8 
+-1 -1 -1 10 13 
+-1 -1 -1 11 12 
+-1 -1 -1 -1 -1 
+
+1 2 5 6 7 
+-1 3 4 13 8 
+-1 -1 -1 12 9 
+-1 -1 -1 11 10 
+-1 -1 -1 -1 -1 
+
+1 2 5 6 13 
+-1 3 4 7 12 
+-1 -1 -1 8 11 
+-1 -1 -1 9 10 
+-1 -1 -1 -1 -1 
+
+1 2 13 12 11 
+-1 3 4 5 10 
+-1 -1 -1 6 9 
+-1 -1 -1 7 8 
+-1 -1 -1 -1 -1 
+
+Total: 6

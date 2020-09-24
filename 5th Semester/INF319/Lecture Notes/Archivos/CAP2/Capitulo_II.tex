@@ -1016,7 +1016,7 @@ $$
 R(i,j,1) =
 \begin{cases}
 \{ \sigma\in\Sigma / \delta(q_i,\sigma)=q_j \},  i\neq j \\ \\
-\{\lambda \} \cup \{ \sigma\in\Sigma / \delta(q_i,\sigma)=q_j \} , i\neq j
+\{\lambda \} \cup \{ \sigma\in\Sigma / \delta(q_i,\sigma)=q_j \} , i= j
 \end{cases}
 $$
 Son regulares ya que $R(i,j,1)$ son \textbf{finitos}. \\${ }$\\
@@ -1181,25 +1181,25 @@ A &\rightarrow aA & \hspace{0.25cm}  B&\rightarrow bB \\
 \item $S\in V-\Sigma$
 \item $R = \{ (S,aMb),(M,A),(M,B),(A,\lambda),(B,\lambda),(B,bB),(A,aA) \}$
 \end{itemize}
-\item Del ejemplo anterior podemos ver algunas \textbf{ER} generadas:
+\item Del ejemplo anterior podemos ver algunas palabras generadas:
 \begin{itemize}
 \item $S \Rightarrow  \underline{a}M\underline{b} 
 	   \Rightarrow  \underline{a}B\underline{b} 
 	   \Rightarrow  \underline{ab}B\underline{b} 
 	   \Rightarrow  \underline{ab}\lambda\underline{b} 
-	   \Rightarrow  abb
+	   =  abb
 	$
 	\\${ }$\\
-	$ \therefore S \xRightarrow[\text{}]{\text{*}} abb , abb\in L(G) $
+	$ \therefore S \xRightarrow[\text{}]{\text{*}} abb ; abb\in L(G) $
 \item $S \Rightarrow  \underline{a}M\underline{b} 
 	   \Rightarrow  \underline{aa}A\underline{b} 
 	   \Rightarrow  \underline{aaa}A\underline{b} 
 	   \Rightarrow  \underline{aaaa}A\underline{b} 
 	   \Rightarrow  \underline{aaaa}\lambda\underline{b} 
-	   \Rightarrow  aaaab
+	   =  aaaab
 	$
 	\\${ }$\\
-	$ \therefore S \xRightarrow[\text{}]{\text{*}} aaaab , aaaab\in L(G) $
+	$ \therefore S \xRightarrow[\text{}]{\text{*}} aaaab ; aaaab\in L(G) $
 \end{itemize}
 \end{itemize}
 \subsection{Gramáticas Regulares}

@@ -1,21 +1,21 @@
-public static boolean impares(LinkedList<Integer> L){
-        for(int i=0;i<L.size();++i){
-            if(L.get(i)%2==0)
-                return false;
-        }
-        return true;
-    }
-    
-    
-    public static void productosImpares(LinkedList<Integer> L,int i,int n){
-        int prod = producto(L);
-        if(prod>n)return;
-        if(prod==n && impares(L)){System.out.println(L);}
-        for(int k=i;k<=n;++k){
-            if(n%k==0){
-                L.add(k);
-                productosImpares(L,k,n);
-                L.removeLast();
-            }
-        }
-    }
+1 0 0 6 3 
+-1 5 2 0 0 
+0 -1 -1 4 7 
+0 -1 -1 0 0 
+0 0 -1 0 -1 
+
+1 0 0 6 3 
+-1 5 2 0 0 
+0 -1 -1 4 7 
+0 -1 -1 0 0 
+0 0 -1 8 -1 
+
+...
+
+1 0 5 0 7 
+-1 0 2 0 4 
+0 -1 -1 6 0 
+0 -1 -1 3 0 
+0 0 -1 0 -1 
+
+Total: 62

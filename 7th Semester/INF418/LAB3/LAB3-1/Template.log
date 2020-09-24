@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  10 AUG 2020 23:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  7 SEP 2020 22:49
 entering extended mode
 **./Template.tex
 (Template.tex
@@ -883,8 +883,8 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (Template.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
 )
 \openout1 = `Template.aux'.
 
@@ -960,6 +960,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 104.
 LaTeX Info: Redefining \pageref on input line 104.
 LaTeX Info: Redefining \nameref on input line 104.
+ (Template.out) (Template.out)
 \@outlinefile=\write3
 \openout3 = `Template.out'.
 
@@ -1003,64 +1004,45 @@ LaTeX Info: Redefining \nameref on input line 104.
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 113.
+\c@ct=\count134
+\c@n=\count135
+ (TeXFiles/Enunciado1.tex)
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 152.
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\inconsolata\t1zi4.f
 d"
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 113.
-\c@ct=\count134
-\c@n=\count135
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--117
-
- []
-
-(TeXFiles/Enunciado1.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
-
-("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
-
-("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) (Code/Ejercicio1.java) (TeXFiles/Enunciado2.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--152
-
- []
-
+(Font)              scaled to size 10.0pt on input line 152.
+ (Code/Ejercicio1.java
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 152.
-[1
+(babel)             in language  on input line 42.
+ [1
 
-{C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(Code/Ejercicio2.java)
+{C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 157.
@@ -1094,38 +1076,27 @@ LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
-
-
-Package rerunfilecheck Warning: File `Template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Template.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `Template.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
- 10903 strings out of 493305
- 153586 string characters out of 3130237
- 294422 words of memory out of 3000000
- 14219 multiletter control sequences out of 15000+200000
- 10265 words of font info for 29 fonts, out of 3000000 for 9000
+ 10868 strings out of 493305
+ 152984 string characters out of 3130237
+ 357422 words of memory out of 3000000
+ 14197 multiletter control sequences out of 15000+200000
+ 6247 words of font info for 18 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,5n,72p,591b,1197s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Asus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-cbx1000.pk> <C:\Users\Asus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecbx1440.pk> <C:\Users\Asus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecrm1728.pk>{C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/f
-onts/enc/dvips/inconsolata/i4-t1-0.enc} <C:\Users\Asus\AppData\Local\MiKTeX\2.9
-\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Asus\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk><C:/Users/Asus/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb>
-<C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb>
-Output written on Template.pdf (2 pages, 76975 bytes).
+ 38i,6n,72p,227b,1941s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/inconsolata/
+i4-t1-0.enc} <C:\Users\Asus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecrm1000.pk> <C:\Users\Asus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\ecrm1728.pk> <C:\Users\Asus\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\jknappen\ec\dpi600\ecbx1728.pk><C:/Users/Asus/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb>
+Output written on Template.pdf (2 pages, 48311 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

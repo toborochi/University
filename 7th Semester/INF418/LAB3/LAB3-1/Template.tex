@@ -109,19 +109,19 @@
 %\subfile{Files/Comment}
 %\pagebreak
 \noindent
-{\LARGE \textbf{Aplicaciones de Permutaciones y Combinaciones.}} \\
-Revisar la web, libros, publicaciones y otros, buscar problemas propuestos sobre Combinaciones y Permutaciones con y sin repeticiones de elementos. Aplicar los algoritmos de \texttt{combinacionesSR()}, \texttt{combinacionesCR()},\\ \texttt{permutacionesSR()},\texttt{permutacionesCR()} o modificarlos para dar solución a los problemas propuestos en esas fuentes de información. Aplicar al menos 1 problemas cualesquiera para cada Algoritmo, por cada integrante de grupo. Citar Fuentes.\\{ }\\
-{\LARGE \textbf{I.} Combinaciones sin Repeticiones}
+
+{\LARGE \textbf{A.} Todos los caminos posibles}\\
+Mostrar todos los caminos posibles que se recorren para los problemas del laberinto, movimiento del rey, movimiento del caballo, con un punto de partida de cualquier posición de la matriz.
 \newcounter{ct}
 \newcounter{n}
 
 % Numero de ejercicios
-\setcounter{n}{2}
+\setcounter{n}{1}
 \stepcounter{n}
 
 \forloop{ct}{1}{\value{ct}<\value{n}}%
 {%
-  \section*{\mystr\text{ }\arabic{ct}:}
+  %\section*{\mystr\text{ }\arabic{ct}:}
   \subfile{TeXFiles/\enun\arabic{ct}}
   \IfFileExists{Images/\imag\arabic{ct}.png}{
   \begin{figure}[H]
