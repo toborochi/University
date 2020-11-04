@@ -1,3 +1,7 @@
 # Semestre I-2020
 
-![s1-2020.png](SEM-1-2020.png)
+<p align="center">
+<img src="SEM-1-2020.png" alt="alt text" width="500" height="whatever">
+</p>
+
+
