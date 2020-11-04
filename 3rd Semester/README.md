@@ -1,11 +1,4 @@
-# Third Semester
-
-
-| Subjects                      | Code   | Professor              |
-| ----------------------------- |:------:| ---------------------- |
-| Probability and Statistic I   | MAT202 | Cáceres Chacón Braulio |
-| Programming II                | INF210 | Juan Contreras         |
-| Diferential Equations         | MAT207 | Carlos Miranda         |
-| Computers Architecture        | INF211 | Said Hinojosa          |
-| Economy                       | ADM100 | Marcos Flores          |
-| Accounting                    | ADM200 | Marcos Flores          |
+# Semestre I-2018
+<p align="center">
+<img src="SEM-1-2018.png" alt="alt text" width="640" height="whatever">
+</p>
