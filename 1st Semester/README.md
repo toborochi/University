@@ -1,9 +1,4 @@
-# First Semester
-
-| Subjects                       |  Code  | Professor              |
-| ------------------------------ |:------:| ---------------------- |
-| Physics I                      | FIS100 | Chao Wong Jorge        |
-| English I                      | LIN100 | Wilma Zúñiga           |
-| Introduction to Programming    | INF100 | Zuna Villagomez        |
-| Calculus I                     | MAT101 | Carlos Miranda         |
-| Discrete Structures            | INF119 | Cáceres Chacón Braulio |
+# Semestre I-2017
+<p align="center">
+<img src="SEM-1-2017.png" alt="alt text" width="640" height="whatever">
+</p>
