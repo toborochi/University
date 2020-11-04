@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  27 SEP 2020 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.11)  8 OCT 2020 00:44
 entering extended mode
-**"./telefonia arq.tex"
-("telefonia arq.tex"
+**./x25.tex
+(x25.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -1583,18 +1583,11 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@dimlist=\toks53
 
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
-fg")) ("telefonia arq.aux"
+fg")) (x25.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
-
-
-LaTeX Warning: Label `3g4g4' multiply defined.
-
-
-LaTeX Warning: Label `SBA' multiply defined.
-
 )
-\openout1 = `"telefonia arq.aux"'.
+\openout1 = `x25.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
 LaTeX Font Info:    ... okay on input line 117.
@@ -1662,9 +1655,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 117.
 LaTeX Info: Redefining \pageref on input line 117.
 LaTeX Info: Redefining \nameref on input line 117.
- ("telefonia arq.out") ("telefonia arq.out")
+ (x25.out) (x25.out)
 \@outlinefile=\write4
-\openout4 = `"telefonia arq.out"'.
+\openout4 = `x25.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1717,62 +1710,39 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 18.
 ("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )) (Archivos/SEC1.tex
-<Imagenes/arqUMTS.pdf, id=6, 327.14218pt x 187.66109pt>
-File: Imagenes/arqUMTS.pdf Graphic file (type pdf)
-<use Imagenes/arqUMTS.pdf>
-Package pdftex.def Info: Imagenes/arqUMTS.pdf  used on input line 9.
-(pdftex.def)             Requested size: 294.42523pt x 168.89342pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--12
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
-("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
-<Imagenes/arqUMTS_UE.pdf, id=7, 141.6492pt x 112.50029pt>
-File: Imagenes/arqUMTS_UE.pdf Graphic file (type pdf)
-<use Imagenes/arqUMTS_UE.pdf>
-Package pdftex.def Info: Imagenes/arqUMTS_UE.pdf  used on input line 15.
-(pdftex.def)             Requested size: 120.40236pt x 95.62569pt.
-<Imagenes/arqUMTS_UTRAN.pdf, id=8, 312.20638pt x 214.8828pt>
-File: Imagenes/arqUMTS_UTRAN.pdf Graphic file (type pdf)
-<use Imagenes/arqUMTS_UTRAN.pdf>
-Package pdftex.def Info: Imagenes/arqUMTS_UTRAN.pdf  used on input line 22.
-(pdftex.def)             Requested size: 265.37665pt x 182.65123pt.
-<Imagenes/arqUMTS_CN.pdf, id=9, 331.2375pt x 313.17pt>
-File: Imagenes/arqUMTS_CN.pdf Graphic file (type pdf)
-<use Imagenes/arqUMTS_CN.pdf>
-Package pdftex.def Info: Imagenes/arqUMTS_CN.pdf  used on input line 30.
-(pdftex.def)             Requested size: 264.99034pt x 250.53633pt.
+<Imagenes/x25.pdf, id=6, 2569.6pt x 1816.7875pt>
+File: Imagenes/x25.pdf Graphic file (type pdf)
+<use Imagenes/x25.pdf>
+Package pdftex.def Info: Imagenes/x25.pdf  used on input line 7.
+(pdftex.def)             Requested size: 334.05972pt x 236.19066pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 19.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 32.
-
+(babel)             in language  on input line 19.
 [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
@@ -1789,182 +1759,55 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
-{C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Imagenes/a
-rqUMTS.pdf> <./Imagenes/arqUMTS_UE.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+{C:/Users/Asus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Imagenes/x
+25.pdf>]
+<Imagenes/x25lapb.pdf, id=30, 405.43468pt x 134.4222pt>
+File: Imagenes/x25lapb.pdf Graphic file (type pdf)
+<use Imagenes/x25lapb.pdf>
+Package pdftex.def Info: Imagenes/x25lapb.pdf  used on input line 22.
+(pdftex.def)             Requested size: 304.07526pt x 100.81639pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 29.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
-
- []
-
+("C:\Users\Asus\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 45.
-[2 <./Imagenes/arqUMTS_UTRAN.pdf> <./Imagenes/arqUMTS_CN.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+(babel)             in language  on input line 53.
 
- []
+[2 <./Imagenes/x25lapb.pdf>]
+<Imagenes/x25layer.pdf, id=48, 211.7511pt x 139.4811pt>
+File: Imagenes/x25layer.pdf Graphic file (type pdf)
+<use Imagenes/x25layer.pdf>
+Package pdftex.def Info: Imagenes/x25layer.pdf  used on input line 57.
+(pdftex.def)             Requested size: 190.5742pt x 125.53181pt.
 
-<Imagenes/arqUMTS_35.pdf, id=81, 211.7511pt x 118.5228pt>
-File: Imagenes/arqUMTS_35.pdf Graphic file (type pdf)
-<use Imagenes/arqUMTS_35.pdf>
-Package pdftex.def Info: Imagenes/arqUMTS_35.pdf  used on input line 69.
-(pdftex.def)             Requested size: 148.22475pt x 82.96538pt.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 79.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 79.
-[3 <./Imagenes/arqUMTS_35.pdf>]
-<Imagenes/arq4G.pdf, id=105, 356.29109pt x 177.7842pt>
-File: Imagenes/arq4G.pdf Graphic file (type pdf)
-<use Imagenes/arq4G.pdf>
-Package pdftex.def Info: Imagenes/arq4G.pdf  used on input line 87.
-(pdftex.def)             Requested size: 285.03325pt x 142.22752pt.
-<Imagenes/arq4GEUTRAN.pdf, id=106, 348.34138pt x 183.8067pt>
-File: Imagenes/arq4GEUTRAN.pdf Graphic file (type pdf)
-<use Imagenes/arq4GEUTRAN.pdf>
-Package pdftex.def Info: Imagenes/arq4GEUTRAN.pdf  used on input line 95.
-(pdftex.def)             Requested size: 278.67348pt x 147.04555pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-<Imagenes/arq4GEPC.pdf, id=107, 348.34138pt x 176.5797pt>
-File: Imagenes/arq4GEPC.pdf Graphic file (type pdf)
-<use Imagenes/arq4GEPC.pdf>
-Package pdftex.def Info: Imagenes/arq4GEPC.pdf  used on input line 106.
-(pdftex.def)             Requested size: 278.67348pt x 141.26392pt.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 112.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 112.
-[4 <./Imagenes/arq4G.pdf> <./Imagenes/arq4GEUTRAN.pdf>]
-<Imagenes/arq5G.pdf, id=141, 341.35529pt x 284.98468pt>
-File: Imagenes/arq5G.pdf Graphic file (type pdf)
-<use Imagenes/arq5G.pdf>
-Package pdftex.def Info: Imagenes/arq5G.pdf  used on input line 122.
-(pdftex.def)             Requested size: 273.08458pt x 227.98804pt.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 128.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 128.
- [5 <./Imagenes/arq4GEPC.pdf> <./Imagenes/arq5G.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-[]\OT1/cmr/m/n/10 3G UMTS Net-work Ar-chi-tec-tu-re. [][]https://www.electronic
-s-notes.com/articles/connectivity/3g-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-[]\OT1/cmr/m/n/10 *HSPA+ Nue-va y po-de-ro-sa Tec-no-loga con la me-jor RED d
-el Con-ti-nen-te
- []
-
-
-Overfull \hbox (7.10074pt too wide) in paragraph at lines 161--162
-[]\OT1/cmr/m/n/10 Differences on 1G 2G 2.5G 3G 3.5G 3.75G 3.9G 4G [][]https://v
-ctechblog.wordpress.com/2015/10/01/differences-
- []
-
-
-Underfull \hbox (badness 4492) in paragraph at lines 183--184
-[]\OT1/cmr/m/n/10 5G Service-Based Ar-chi-tec-tu-re (SBA) [][]https://medium.co
-m/5g-nr/5g-service-based-architecture-sba-
+Underfull \hbox (badness 1057) in paragraph at lines 73--74
+[]\OT1/cmr/m/n/10 Link Ac-cess Pro-ce-du-re, Ba-lan-ced (LAPB) Fra-me For-mat [
+][]https://www.geeksforgeeks.org/link-access-
  []
 
 )
@@ -1992,43 +1835,27 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 121.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 121.
- [6pdfTeX warning (ext4): destination with the same identifier (name{cite.3g4g4
-}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.121 \end{document}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{cite.SBA}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.121 \end{document}
-                    ]
+ [3 <./Imagenes/x25layer.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
- ("telefonia arq.aux"
+ (x25.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
-Package rerunfilecheck Info: File `"telefonia arq".out' has not changed.
+Package rerunfilecheck Info: File `x25.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
  ) 
 Here is how much of TeX's memory you used:
- 34703 strings out of 493305
- 811591 string characters out of 3130237
- 1069329 words of memory out of 3000000
- 37528 multiletter control sequences out of 15000+200000
- 13383 words of font info for 55 fonts, out of 3000000 for 9000
+ 34639 strings out of 493305
+ 809909 string characters out of 3130237
+ 1068958 words of memory out of 3000000
+ 37485 multiletter control sequences out of 15000+200000
+ 13344 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,8n,127p,732b,822s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,7n,127p,754b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/font
@@ -2036,19 +1863,16 @@ s/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Asus/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Asus/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/
-Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 <C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr8.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Asus/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Asus/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users
-/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pf
-b>
-Output written on "telefonia arq.pdf" (6 pages, 811734 bytes).
+/cmsy10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmti12.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Asus/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/Asus/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on x25.pdf (3 pages, 810349 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
