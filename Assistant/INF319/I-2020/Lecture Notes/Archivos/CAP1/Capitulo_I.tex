@@ -1,0 +1,148 @@
+\section*{Convertir AFN's a AFD}
+
+Dados los siguientes \textbf{AFN's} convertir a su \textbf{AFD} equivalente: \\
+
+\noindent
+\begin{minipage}[t]{.5\textwidth}
+\raggedright
+
+\tikzset{every loop/.style={min distance=10mm,in=240,out=300,looseness=10,line width=0.25mm}}
+
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (0,0) {$q_0$};
+\node[state] (q_1) at (2,1.5) {$q_1$};
+\node[state] (q_2) at (2,-1.5) {$q_2$};
+\node[state,accepting] (q_3) at (5,1.5) {$q_3$};
+
+\path[->,line width=0.25mm] (q_0) edge node[swap] {$\lambda$} (q_1);
+\path[->,line width=0.25mm] (q_0) edge node[swap] {$a$} (q_2); 
+\path[->,line width=0.25mm] (q_2) edge node[swap] {$b$} (q_1);
+\path[->,line width=0.25mm] (q_1) edge node[swap] {$b$} (q_3);
+\path[->] (q_3) edge  [in=240,out=300,loop below] node {$a,b$} (q_3);
+
+
+\end{tikzpicture}
+
+
+
+\end{minipage}% <---------------- Note the use of "%"
+\begin{minipage}[t]{.5\textwidth}
+\raggedright
+\tikzset{every loop/.style={min distance=10mm,in=330,out=30,looseness=10,line width=0.25mm}}
+
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (0,0) {$q_0$};
+\node[state] (q_1) at (2,1.5) {$q_1$};
+\node[state] (q_2) at (2,-1.5) {$q_2$};
+\node[state] (q_3) at (5,1.5) {$q_3$};
+\node[state,accepting] (q_4) at (5,-1.5) {$q_4$};
+
+\path[->,line width=0.25mm] (q_0) edge node[swap] {$a$} (q_1);
+\path[->,line width=0.25mm] (q_0) edge node[swap] {$b$} (q_2); 
+\path[->,line width=0.25mm] (q_2) edge node[swap] {$a$} (q_1);
+\path[->,line width=0.25mm] (q_1) edge node[] {$a$} (q_3);
+\path[->,line width=0.25mm] (q_3) edge node[] {$\lambda$} (q_4);
+\path[->,line width=0.25mm] (q_4) edge node[] {$b$} (q_2);
+\path[->,line width=0.25mm] (q_1) edge node[] {$b$} (q_4);
+\path[->] (q_3) edge  [loop right] node {$a$} (q_3);
+\end{tikzpicture}
+
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}[t]{.5\textwidth}
+\raggedright
+
+\tikzset{every loop/.style={min distance=10mm,in=240,out=300,looseness=10,line width=0.25mm}}
+
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (0,0) {$q_0$};
+\node[state,accepting] (q_1) at (2,1.5) {$q_1$};
+\node[state] (q_2) at (2,-1.5) {$q_2$};
+\node[state,accepting] (q_3) at (4,0) {$q_3$};
+
+\path[->,line width=0.25mm] (q_0) edge node[] {$a$} (q_1);
+\path[->,line width=0.25mm] (q_0) edge node[swap] {$b$} (q_2); 
+\path[->,line width=0.25mm] (q_2) edge node[swap] {$c$} (q_3);
+\path[->,line width=0.25mm] (q_3) edge node[swap] {$a$} (q_1);
+\path[->] (q_3) edge  [loop below] node {$c$} (q_3);
+
+\tikzset{every loop/.style={min distance=10mm,in=120,out=60,looseness=10,line width=0.25mm}}
+
+\path[->] (q_2) edge  [loop above] node {$b$} (q_2);
+
+\end{tikzpicture}
+
+
+
+\end{minipage}% <---------------- Note the use of "%"
+\begin{minipage}[t]{.5\textwidth}
+\raggedright
+\tikzset{every loop/.style={line width=0.25mm,min distance=5mm,in=120,out=60,looseness=10}}
+
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (0,0) {$q_0$};
+\node[state] (q_1) at (2,0) {$q_1$};
+\node[state] (q_2) at (4,0) {$q_2$};
+\node[state,accepting] (q_3) at (2,-2) {$q_3$};
+
+\path[->,line width=0.25mm] (q_0) edge node[swap] {$xy$} (q_1);
+\path[->,line width=0.25mm] (q_1) edge node[swap] {$yx$} (q_2); 
+\path[->,line width=0.25mm] (q_1) edge node[swap] {$\lambda$} (q_3); 
+\path[->] (q_1) edge  [loop above] node {$x$} (q_1);
+\end{tikzpicture}
+
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}[t]{.5\textwidth}
+\raggedright
+
+\tikzset{every loop/.style={min distance=10mm,in=240,out=300,looseness=10,line width=0.25mm}}
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial text=] (q_0) at (0,0) {$q_0$};
+\node[state,initial above,initial text=] (q_1) at (2.5,0) {$q_1$};
+\node[state,accepting] (q_2) at (5,0) {$q_2$};
+
+\path[->,line width=0.25mm] (q_1) edge node[] {$0$} (q_0);
+\path[->,line width=0.25mm] (q_0) edge[bend right] node[swap] {$\lambda$} (q_2); 
+\path[->,line width=0.25mm] (q_0) edge[bend left] node[] {$1$} (q_1); 
+\path[->,line width=0.25mm] (q_2) edge[bend right] node[swap] {$1$} (q_1); 
+\tikzset{every loop/.style={min distance=10mm,in=120,out=60,looseness=10,line width=0.25mm}}
+
+\path[->] (q_2) edge  [loop above] node {$0$} (q_2);
+\tikzset{every loop/.style={min distance=10,in=340,out=10,looseness=10,line width=0.25mm}}
+\path[->] (q_1) edge  [loop right] node {$1$} (q_1);
+
+\end{tikzpicture}
+
+
+
+\end{minipage}% <---------------- Note the use of "%"
+\begin{minipage}[t]{.5\textwidth}
+\raggedright
+
+\begin{tikzpicture}[>={Triangle[width=1.5mm,length=1.5mm]},->,node distance=2cm,auto,state/.style={circle, draw, minimum size=0.5cm}]
+\node[state,initial,initial text=] (q_0) at (0,0) {$q_0$};
+\node[state] (q_1) at (2.5,1.5) {$q_1$};
+\node[state] (q_2) at (2.5,-1.5) {$q_2$};
+\node[state,accepting] (q_3) at (5,0) {$q_3$};
+\node[state] (q_4) at (6,-1.5) {$q_4$};
+
+\path[->,line width=0.25mm] (q_0) edge node[swap] {$\lambda$} (q_1);
+\path[->,line width=0.25mm] (q_0) edge node[swap] {$\lambda$} (q_2); 
+\path[->,line width=0.25mm] (q_1) edge node[] {$\lambda$} (q_3); 
+\path[->,line width=0.25mm] (q_2) edge[bend left] node[] {$\lambda$} (q_3); 
+\path[->,line width=0.25mm] (q_4) edge[bend left] node[swap] {$b$} (q_2); 
+\path[->,line width=0.25mm] (q_2) edge[bend left] node[swap] {$a$} (q_4); 
+\tikzset{every loop/.style={line width=0.25mm,min distance=5mm,in=240,out=300,looseness=10}}
+\path[->] (q_1) edge  [loop below] node {$a$} (q_1);
+\tikzset{every loop/.style={line width=0.25mm,min distance=5mm,in=120,out=60,looseness=10}}
+\path[->] (q_3) edge  [loop above] node {$b$} (q_3);
+\end{tikzpicture}
+
+\end{minipage}

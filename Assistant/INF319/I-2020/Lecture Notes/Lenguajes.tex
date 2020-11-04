@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx,import}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage[affil-it]{authblk}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{slashbox}
+\usepackage{diagbox}
+\usepackage{slashbox,multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{pstricks}
+\usepackage{pgfplots}
+
+\usepackage{circuitikz}
+\usetikzlibrary{arrows, shapes.gates.logic.US, calc}
+
+
+\usepackage{tikz}
+\usetikzlibrary{automata, arrows,babel,}
+\usetikzlibrary{arrows.meta,positioning,shapes}
+\usetikzlibrary{shapes.multipart}
+\usetikzlibrary{calc,trees,positioning,arrows,fit,shapes,calc}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{turnstile}
+\usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
+\usepackage{empheq}
+\usepackage{svg}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=gray}
+\usepackage{hypcap}
+\usepackage{float}
+\usepackage[spanish,onelanguage,linesnumbered,ruled,vlined]{algorithm2e}
+\DeclarePairedDelimiter{\Ex}{[}{]}
+\newcommand{\E}{\Ex}
+\usepackage{multido}
+\newcommand{\forLoop}[4][1]{\multido{\i=#2+#1}{#3}{#4}}
+
+\pgfplotsset{compat=1.16}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\newcommand{\varstackrel}[3][T]{\stackrel{\raisebox{0.5ex}{\clap{\scriptsize#2}}}{#3}}
+
+
+\newcommand{\salto}{\\${ }$\\}
+
+\newlist{legal}{enumerate}{10}
+\setlist[legal]{label*=\arabic*.}
+
+\tikzstyle{startstop} = [draw, rounded rectangle, text centered, draw=black,thick]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, text centered]
+\tikzstyle{process} = [rectangle, text centered, draw=black,thick]
+\tikzstyle{decision} = [diamond, text centered, draw=black,thick]
+\tikzstyle{arrow} = [-{Stealth[scale=1.2]},rounded corners,thick]
+
+
+
+\begin{document}
+
+\subfile{Archivos/Introduccion}
+\subfile{Archivos/CAP1/Capitulo_I}
+%\subfile{Archivos/CAP2/Capitulo_II}
+%\subfile{Archivos/CAP3/Capitulo_III}
+%\subfile{Archivos/CAP4/Capitulo_IV}
+%\subfile{Archivos/CAP5/Capitulo_V}
+%\subfile{Archivos/Bibliografia}
+\end{document}
