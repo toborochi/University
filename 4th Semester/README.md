@@ -1,8 +1,4 @@
-| Subjects                      | Code   | Professor              |
-| ----------------------------- |:------:| ---------------------- |
-| Probability and Statistic II  | MAT302 | Cáceres Chacón Braulio |
-| Data Structures I             | INF220 | Mario Winnipeg         |
-| Data Bases I                  | INF312 | Obed Hinojosa          |
-| Assembler                     | INF221 | Vallet Vallet Corrado  |
-| Numerical Analysis            | MAT205 | Antonio Gianella       |
-| Physics III                   | FIS200 | Franklin Calderon      |
+# Semestre Ii-2018
+<p align="center">
+<img src="SEM-2-2018.png" alt="alt text" width="640" height="whatever">
+</p>
