@@ -1,0 +1,353 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage[affil-it]{authblk}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{slashbox}
+\usepackage{diagbox}
+\usepackage{slashbox,multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{pstricks}
+\usepackage{pgfplots}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
+\usepackage{empheq}
+\usepackage{svg}
+\usepackage{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Leonardo H. Añez Vladimirovna \footnote{Para cualquier cambio, observación y/o sugerencia pueden enviarme un mensaje al siguiente correo: \texttt{toborochi98@outlook.com}}}
+\title{Fórmulas de Probabilidad y Estadística I \texttt{(MAT202)}\footnote{Esta es una recopilación de las formulas utilizadas en la materia, sin teoría.}\\{\normalsize Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones}\\ \vspace{-0.025cm}\normalsize Universidad Autónoma Gabriel René Moreno}
+ \pgfplotsset{compat=1.16}
+\begin{document}
+\maketitle
+\begin{multicols}{4}
+\begin{flushleft}
+\textbf{Marca de Clase}\\
+\vspace{0.25cm}
+\noindent $y_i=\dfrac{y_{i-1}'+y_i'}{2}$
+\end{flushleft}
+\columnbreak
+\begin{flushleft}
+\textbf{Recorrido ($R$)}\\
+\begin{itemize}
+\item \textbf{Datos Originales:}\\ $R=y_k -y_i$
+\item \textbf{Datos Agrupados:}\\ $R=y_k' -y_i'$
+\end{itemize}
+\end{flushleft}
+\columnbreak
+\begin{flushleft}
+\textbf{Amplitud ($C$)}\\
+\vspace{0.25cm}
+$C_j=y_j'-y_{j-1}'$
+
+
+\end{flushleft}
+\columnbreak
+\begin{flushleft}
+\textbf{\# Intervalos}\\
+\vspace{0.25cm}
+$k=\dfrac{R}{C_j} = \begin{cases} \sqrt{n} & n> 25 \\ 5 & n\leq 25 \end{cases}$\\
+
+\vspace{0.4cm}
+$k=1+3.3log(n)$
+\end{flushleft}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{flushleft}
+\textbf{Frec. Abs. Acumulada}\\
+\vspace{0.25cm}
+$F_i=\displaystyle\sum_{j=1}^{i}f_j$
+\end{flushleft}
+\columnbreak
+\begin{flushleft}
+\textbf{Frec. Rel. Simple}\\
+\vspace{0.25cm}
+$h_j=\dfrac{f_j}{n}$
+\end{flushleft}
+\columnbreak
+\begin{flushleft}
+\textbf{Frec. Rel. Acumulada}\\
+\vspace{0.25cm}
+$H_i=\dfrac{F_i}{n}=\displaystyle\sum_{j=1}^{i}h_j$
+\end{flushleft}
+\end{multicols}
+
+\section{Media Aritmética Simple}
+\begin{multicols}{2}
+\subsubsection*{Datos Originales}
+\begin{flushleft}
+Notación:  $M(x)=\overline{x}=\dfrac{\displaystyle\sum_{i=1}^{n} x_i }{n}$
+\end{flushleft}
+\columnbreak
+\subsubsection*{Datos Agrupados}
+\begin{flushleft}
+Notación:  $M(y)=\overline{y}=\dfrac{\displaystyle\sum_{i=1}^{k} y_i\cdot f_i }{n}$
+\end{flushleft}
+\end{multicols}
+
+\subsection{Método Abreviado}
+
+
+\begin{multicols}{2}
+\noindent $1º$
+  $$\overline{y}=O_t + \dfrac{\displaystyle\sum_{i=1}^{k} z_i'f_i}{n}$$
+  \\
+  $2º$
+  $$\overline{y}=O_t + C\cdot\dfrac{\displaystyle\sum_{i=1}^{k} z_i''f_i}{n}$$
+  Donde:
+\begin{itemize}
+\item $z_i'=y_i-O_t $
+\item $z_i''=\dfrac{y_i-O_t}{C}=\dfrac{z_i'}{C}$
+\end{itemize}
+  
+\columnbreak
+\subsubsection*{Distribuciones Simétricas}
+\begin{itemize}
+\item $k$ impar:  $y_\frac{k+1}{2}$
+\item $k$ par:    $y_\frac{k}{2}'$
+\end{itemize}
+\subsubsection*{Submuestras}
+$$\overline{x}=\dfrac{\displaystyle\sum_{i=1}^{r}\overline{x_i}\cdot f_i}{\displaystyle\sum_{i=1}^{r}f_i};\displaystyle\sum_{i=1}^{r}f_i = n$$
+\end{multicols}
+
+
+\section{Media Aritmética Ponderada ($\overline{x_p}$)}
+$$ \overline{x_p}=\dfrac{\displaystyle\sum_{i=1}^{n}x_i\cdot w_i }{\displaystyle\sum_{i=1}^{n}w_i} $$
+
+\section{Mediana ($M_e$)}
+
+\begin{multicols}{3}
+\subsubsection*{Datos Originales}
+\begin{itemize}
+\item $n$ impar: $M_e=x_{\frac{n+1}{2}}$
+\item $n$ par: $M_e = \dfrac{x_{\frac{n}{2}}+x_{\frac{n}{2}+1}}{2}$
+\end{itemize}
+\columnbreak
+\subsubsection*{Agrupados en Int. de Clase}
+\begin{flushleft}
+$M_e = y_{j-1}' + C_j \cdot \dfrac{\dfrac{n}{2}-F_{j-1}}{f_j}$
+\end{flushleft}
+\columnbreak
+\subsubsection*{Agrupados No en Int. de Clase}
+\begin{flushleft}
+$M_e = F_i$ Escogiendo hacia arriba.
+\end{flushleft}
+\end{multicols}
+
+\subsubsection*{Distribuciones Simétricas}
+\begin{multicols}{2}
+\begin{flushleft}
+$k$ impar: $M_e=y_{\frac{k+1}{2}}$
+\end{flushleft}
+\columnbreak
+\begin{flushleft}
+$k$ par: $M_e=y_{\frac{k}{2}}'$
+\end{flushleft}
+\end{multicols}
+
+\section{Cuantiles}
+
+\begin{align*}
+\phantom{x} & \textbf{Datos Originales} & \textbf{Datos Agrupados} \\
+ \textbf{Cuartil} \phantom{xxx}& Q_i=x_{\frac{i(n+1)}{4}}; \phantom{x} i=\{1,2,3\} &Q_i= y_{j-1}' + C_j \cdot \dfrac{i\cdot\dfrac{n}{4}-F_{j-1} }{f_j}\\
+ \textbf{Decil} \phantom{xxx}& D_i=x_{\frac{i(n+1)}{10}}; \phantom{x} i=\{1,\ldots , 9\} & D_i= y_{j-1}' + C_j \cdot \dfrac{i\cdot\dfrac{n}{10}-F_{j-1} }{f_j} \\
+ \textbf{Percentil} \phantom{xxx} & P_i=x_{\frac{i(n+1)}{100}}; \phantom{x} i=\{1,\ldots , 99\}  &P_i= y_{j-1}' + C_j \cdot \dfrac{i\cdot\dfrac{n}{100}-F_{j-1} }{f_j} 
+\end{align*}
+\subsubsection*{No Exacto}
+$Q_i=D_i=P_i=x_i+(x_{i+1}-x_i)\cdot 3$
+\subsubsection*{Recorrido Intercuantílico}
+$RI=Q_3 -Q_1$
+\section{Moda o Modo ($M_o$)}
+
+
+\noindent\textbf{No en Int. de Clase}\\
+$M_o=\text{MAX frecuencia}$
+
+\subsubsection*{En Int. de Clase}
+\begin{multicols}{2}
+\begin{flushleft}
+\begin{itemize}
+\item \textbf{Amplitud Constante}
+$M_o=y_{j-1}' + C_j\cdot \dfrac{f_j - f_{j-1}}{(f_j-f_{j-1})+(f_j-f{j+1})}$
+\columnbreak
+\item \textbf{Amplitud Variable}
+$M_o=y_{j-1}' + C_j\cdot \dfrac{h_{j+1}}{h_{j+1}+h_{j-1}}$
+\end{itemize}
+\end{flushleft}
+\end{multicols}
+
+\section{Media Geométrica ($M_g$)}
+
+\begin{multicols}{3}
+\subsubsection*{Datos no Agrupados}
+\begin{itemize}
+\item $M_g=\sqrt[n]{\displaystyle\prod_{i=1}^{n} x_i}$
+\item $M_g=antilog\left[ \dfrac{1}{n}\displaystyle\sum_{i=1}^{n}log(x_i) \right]$
+\end{itemize}
+\columnbreak
+\subsubsection*{Datos Agrupados}
+\begin{itemize}
+\item $M_g=\sqrt[n]{\displaystyle\prod_{i=1}^{k} {y_i}^{f_i}}$
+\item $M_g=antilog\left[ \dfrac{1}{n}\displaystyle\sum_{i=1}^{k}f_i\cdot log(y_i) \right]$
+\end{itemize}
+\columnbreak
+\subsubsection*{Cálculo de Taza Media}
+$P_n=P_o\cdot (1+i)^n$
+\end{multicols}
+
+\section{Media Armónica ($M_n$)}
+
+\begin{multicols}{2}
+\subsubsection*{Datos no Agrupados}
+$M_n=\dfrac{n}{\displaystyle\sum_{i=1}^{n} \dfrac{1}{x_i}}$
+\columnbreak
+\subsubsection*{Datos Agrupados}
+$M_n=\dfrac{n}{\displaystyle\sum_{i=1}^{k} \dfrac{1}{y_i}\cdot f_i}$
+\end{multicols}
+
+\section{Media Cuadrática ($\overline{x_c},M_c(x)$)}
+\begin{multicols}{2}
+\subsubsection*{Datos Originales}
+$\overline{x}_c=\sqrt{\dfrac{\displaystyle\sum_{i=1}^{n}{x_i}^2}{n}}$
+\columnbreak
+\subsubsection*{Datos Agrupados}
+$\overline{y}_c=\sqrt{\dfrac{\displaystyle\sum_{i=1}^{k}{y_i}^2\cdot f_i}{n}}$
+\end{multicols}
+
+\section{Desviación Media ($DM$)}
+
+\begin{multicols}{2}
+\subsubsection*{Para Datos no Agrupados}
+$DM=\dfrac{\displaystyle\sum_{i=1}^{n}|x_i-\overline{x}|}{n}$
+\columnbreak
+\subsubsection*{Para Datos Agrupados}
+$DM=\dfrac{\displaystyle\sum_{i=1}^{k}|y_i-\overline{y}|\cdot f_i}{n}$
+\end{multicols}
+
+
+\section{Varianza ($S^2,\widehat{S}^2,V(x)$)}
+
+\begin{multicols}{3}
+\subsubsection*{Datos Originales}
+\begin{itemize}
+\item $V(x)=\dfrac{\displaystyle\sum_{i=1}^{n}(x_i-\overline{x})^2}{n}; \text{ }n\geq 30$
+\item $V(x)=\dfrac{\displaystyle\sum_{i=1}^{n}(x_i-\overline{x})^2}{n-1}; \text{ }n <30$
+\end{itemize}
+\columnbreak
+\subsubsection*{Datos Agrupados}
+\begin{itemize}
+\item $V(y)=\dfrac{\displaystyle\sum_{i=1}^{k}(y_i-\overline{y})^2\cdot f_i}{n}$
+\item $V(y)=\dfrac{\displaystyle\sum_{i=1}^{k}(y_i-\overline{y})^2\cdot f_i}{n-1}$
+\end{itemize}
+\columnbreak
+\subsubsection*{Intervarianza (${S_b}^2,V(\overline{y}_h)$)}
+${S_b}^2=\dfrac{\displaystyle\sum_{h=1}^{L}(\overline{y}_h-\overline{y})^2\cdot f_h}{n}$
+\subsubsection*{Intravarianza (${S_w}^2,M({S_n}^2)$)}
+${S_w}^2=\dfrac{\displaystyle\sum_{h=1}^{L}{S_h}^2\cdot f_h}{n}$
+\end{multicols}
+$\bigstar\text{   } S^2={S_b}^2+{S_w}^2$
+\subsubsection*{Metodos Abreviados}
+\begin{multicols}{2}
+\begin{center}
+$S^2 =\dfrac{\displaystyle\sum_{i=1}^{n}{x_i}^2}{n}$
+\end{center}
+\columnbreak
+\begin{center}
+$S^2 =\dfrac{\displaystyle\sum_{i=1}^{k}{y_i}\cdot f_i}{n}-\overline{y}$
+\end{center}
+\end{multicols}
+\section{Desviación Estándar (Típica)}
+$S=D(x)=\sigma=\sqrt{V(x)}$
+\begin{itemize}
+\item $D(ax)=|a|\cdot D(x)$
+\item $D(ax\pm b)=|a|\cdot D(x)$
+\end{itemize}
+\section{Coeficiente de Variación ($CV$)}
+\begin{multicols}{2}
+\begin{center}
+$CV=\dfrac{S}{\overline{x}} \phantom{xx}\vee\phantom{xx} 	CV=\dfrac{S}{\overline{x}}\cdot 100\%$
+\end{center}
+\columnbreak
+\begin{center}
+$CV=\dfrac{S}{\overline{y}} \phantom{xx}\vee\phantom{xx} 	CV=\dfrac{S}{\overline{y}}\cdot 100\%$
+\end{center}
+\end{multicols}
+\section{Momentos}
+
+\begin{multicols}{3}
+\subsubsection*{Respecto a un Punto}
+\begin{itemize}
+\item \textbf{Datos no Agrupados}
+$$M_{r,A}=\dfrac{\displaystyle\sum_{i=1}^{n}(x_i-A)^r}{n}$$
+\item \textbf{Datos Agrupados}
+$$M_{r,k}=\dfrac{\displaystyle\sum_{i=1}^{k}(y_i-A)^r\cdot f_i}{n}$$
+\end{itemize}
+\columnbreak
+\subsubsection*{Respecto del Origen}
+\begin{itemize}
+\item \textbf{Datos Originales}
+$$M_r'=\dfrac{\displaystyle\sum_{i=1}^{n}(x_i)^r}{n}$$
+\item \textbf{Datos Agrupados}
+$$M_r'=\dfrac{\displaystyle\sum_{i=1}^{k}(y_i)^r\cdot f_i}{n}$$
+\end{itemize}
+\columnbreak
+\subsubsection*{Centrales}
+\begin{itemize}
+\item \textbf{Datos Originales}
+$$M_r=\dfrac{\displaystyle\sum_{i=1}^{n}(x_i-\overline{x})^r}{n}$$
+\item \textbf{Datos Agrupados}
+$$M_r=\dfrac{\displaystyle\sum_{i=1}^{k}(y_i-\overline{y})^r\cdot f_i}{n}$$
+\end{itemize}
+\end{multicols}
+\section{Coeficiente de Asimétria}
+\begin{multicols}{4}
+\subsubsection*{1er Coef. Person\footnote{Para distribuciones Unimodales.}}
+$S_p=\dfrac{\overline{x}-M_o}{S}$
+\columnbreak
+\subsubsection*{2do Coef. Person}
+$S_p=\dfrac{3(\overline{x}-M_e)}{S}$
+\columnbreak
+\subsubsection*{Bowley}
+$S_q=\dfrac{Q_3-2Q_2+Q_1}{Q_3-Q_1}$
+\columnbreak
+\subsubsection*{Fisher}
+$S_m=\dfrac{M_3}{S^3}=\dfrac{M_3}{\sqrt{{M_2}^3}}$
+\end{multicols}
+Donde:
+\begin{itemize}
+\item $S=\sqrt{\dfrac{\displaystyle\sum_{i=1}^{n}(x_i-\overline{x})^2}{n}}$
+\end{itemize}
+\section{Indice de Gini}
+
+\begin{multicols}{3}
+\begin{flushleft}
+$G=\frac{\displaystyle\sum_{i=1}^{k-1} (p_i-q_i)}{\displaystyle\sum_{i=1}^{k-1} p_i}$
+\end{flushleft}
+
+\columnbreak
+\begin{flushleft}
+$p_A=\dfrac{f_i}{\sum f_i}$\\
+\vspace{0.2cm}
+$q_A=\dfrac{y_i\cdot f_i}{\sum y_i\cdot f_i}$
+\end{flushleft}
+\columnbreak
+$p_i=\sum p_a$ (\% Acumulado)\\
+
+\vspace{0.3cm}
+\noindent $q_i=\sum q_a$ (\% Acumulado)
+\end{multicols}
+%\section{Curtosis en Función del Momento}
+\end{document}

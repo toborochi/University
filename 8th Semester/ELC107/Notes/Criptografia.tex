@@ -1,0 +1,130 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{enumitem}
+\usepackage[affil-it]{authblk}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{slashbox}
+\usepackage{diagbox}
+\usepackage{slashbox,multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{pstricks}
+\usepackage{pgfplots}
+\usepackage{babel}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,%
+    decorations.pathreplacing,decorations.pathmorphing,shapes,%
+    matrix,shapes.symbols}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{mathrsfs} %Contiene el Signo de Transformada de Laplace
+\usepackage{empheq}
+\usepackage{svg}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=gray}
+\usepackage{hypcap}
+\DeclarePairedDelimiter{\Ex}{[}{]}
+\newcommand{\E}{\Ex}
+
+\pgfplotsset{compat=1.16}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\newcommand{\varstackrel}[3][T]{\stackrel{\raisebox{0.5ex}{\clap{\scriptsize#2}}}{#3}}
+
+\tikzset{
+>=stealth',
+  punktchain/.style={
+    rectangle, 
+    rounded corners, 
+    % fill=black!10,
+    draw=black, very thick,
+    text width=10em, 
+    minimum height=3em, 
+    text centered, 
+    on chain},
+  line/.style={draw, thick, <-},
+  element/.style={
+    tape,
+    top color=white,
+    bottom color=blue!50!black!60!,
+    minimum width=8em,
+    draw=blue!40!black!90, very thick,
+    text width=10em, 
+    minimum height=3.5em, 
+    text centered, 
+    on chain},
+  every join/.style={->, thick,shorten >=1pt},
+  decoration={brace},
+  tuborg/.style={decorate},
+  tubnode/.style={midway, right=2pt},
+}
+
+\begin{document}
+\subfile{Archivos/Introduccion}
+\chapter{Conceptos Básicos}
+\section{Seguridad Informatica o Seguridad de la Informacion}
+
+\subsection*{No es lo mismo seguridad informática que seguridad de la información.}
+
+Hoy en día  esta demostrado que la información es uno de los activos mas importantes para una empresa u organización y  por otra parte, ésta se enfrenta a una variada y cada vez más a diferentes amenazas. Asi mismo, tendremos que entender que nuestra información personal también es importante. Por lo tanto, la conclusión lógica a la que se llega tras un elemental primer análisis de los riesgos a los que se enfrenta dicha información, es que debemos protegerla en sus cuatro estados posibles, esto es cuando dicha información se crea, cuando se transmite, cuando se almacena y cuando se destruye, es decir durante todo su ciclo de vida.
+\\{ }\\
+\textbf{Vamos a pensar un poco.}
+¿Por qué crees que tiene sentido proteger a la información cuando ésta se destruye? Pon algún ejemplo.
+\\{ }\\
+Hasta finales del siglo XX y muy especialmente en entornos no universitarios, era bastante común apreciar una confusión ante la definición y los alcances de la seguridad informática y la seguridad de la información, una situación que hacía suponer a mucha gente que ambos términos eran sinónimos y que, por tanto, significaban lo mismo. Como a fecha de hoy se sigue observando dicha confusión y dado que la diferencia entre ambas es ya muy marcada, resulta recomendable dedicar esta primera lección para aclarar conceptos, observar similitudes y resaltar sus diferencias. No obstante, ante la duda de usar un término u otro, tal como veremos en esta lección, hoy en día lo más correcto sería referirnos a todo esto como seguridad de la información, al ser este último término más amplio que el de seguridad informática.
+
+\subsection*{Seguridad informática}
+Cuando nos referimos a seguridad informática, estamos centrando nuestra atención sólo en los aspectos de seguridad que inciden o tienen que ver directamente con la informática; es decir, en los medios informáticos en los que se genera, gestiona, almacena o destruye esta información, pero sin profundizar en aspectos sistémicos de la gestión de esa seguridad. Ateniéndonos entonces en primera instancia a las temáticas propias de la seguridad informática, entendida ésta según lo indicado en el párrafo anterior, que por lo demás es como se conocía a esta especialidad en sus inicios desde el nacimiento de la computación, podríamos representarla en 7 grandes apartados, cada uno de ellos con entidad suficiente como para convertirse en una especialidad tecnológica:
+\begin{enumerate}
+\item Protección y seguridad de los datos
+\item Criptografía
+\item Seguridad y fortificación de redes
+\item Seguridad en aplicaciones informáticas,programas y bases de datos.
+\item Gestión de seguridad en equipos y sistemas informáticos
+\item Informática forense
+\item Ciberdelito, ciberseguridad
+\end{enumerate}
+\subsection*{Seguridad de la información}
+Cuando además de lo anterior tenemos en cuenta aquellos aspectos sistémicos de la gestión de la seguridad, como podrían ser por ejemplo en una empresa u organización las políticas y planes de seguridad con su respectivo análisis y gestión del riesgo, la continuidad del negocio, la adecuación al entorno legal y a las normativas internacionales, entonces es más propio hablar de seguridad de la información. Esto es debido a que en la actualidad existen otras temáticas muy importantes que están relacionadas con la seguridad de la información y la protección de los datos pero que, a diferencia de los apartados vistos anteriormente, su entorno no está físicamente tan cerca de los equipos informáticos y de las redes, sino de la gestión, de la gerencia y del buen gobierno de la empresa. Entre estos otros temas más propios de un entorno empresarial, se pueden contemplar también 7 grandes apartados, a saber:
+
+\begin{enumerate}
+
+\item Gestión de la seguridad de la información
+
+\item Asesoría y auditoría de la seguridad
+
+\item Análisis y gestión de riesgos
+
+\item Continuidad de negocio
+
+\item Buen gobierno
+
+\item Comercio electrónico
+
+\item Legislación relacionada con seguridad
+
+\end{enumerate}
+
+\end{document}
